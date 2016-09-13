@@ -1,0 +1,35 @@
+\BOOKMARK [0][-]{section*.2}{List of Tables}{}% 1
+\BOOKMARK [0][-]{section*.3}{List of Figures}{}% 2
+\BOOKMARK [0][-]{section*.4}{List of Acronyms}{}% 3
+\BOOKMARK [0][-]{chapter.1}{Introduction}{}% 4
+\BOOKMARK [1][-]{section.1.1}{A brief design introduction}{chapter.1}% 5
+\BOOKMARK [1][-]{section.1.2}{A bit of history}{chapter.1}% 6
+\BOOKMARK [2][-]{subsection.1.2.1}{A focus on SUPERPHENIX}{section.1.2}% 7
+\BOOKMARK [2][-]{subsection.1.2.2}{International feedback}{section.1.2}% 8
+\BOOKMARK [0][-]{chapter.2}{Case study}{}% 9
+\BOOKMARK [1][-]{section.2.1}{astrid}{chapter.2}% 10
+\BOOKMARK [1][-]{section.2.2}{Case study}{chapter.2}% 11
+\BOOKMARK [2][-]{subsection.2.2.1}{Generic}{section.2.2}% 12
+\BOOKMARK [2][-]{subsection.2.2.2}{Reactor core}{section.2.2}% 13
+\BOOKMARK [2][-]{subsection.2.2.3}{Reactor structure}{section.2.2}% 14
+\BOOKMARK [2][-]{subsection.2.2.4}{Primary circuit components}{section.2.2}% 15
+\BOOKMARK [2][-]{subsection.2.2.5}{Secondary circuit components}{section.2.2}% 16
+\BOOKMARK [2][-]{subsection.2.2.6}{Tertiary circuit components}{section.2.2}% 17
+\BOOKMARK [0][-]{chapter.3}{Identification of potential system failures}{}% 18
+\BOOKMARK [1][-]{section.3.1}{Primary circuit components failure}{chapter.3}% 19
+\BOOKMARK [1][-]{section.3.2}{Secondary circuit components failure}{chapter.3}% 20
+\BOOKMARK [1][-]{section.3.3}{Tertiary circuit components failure}{chapter.3}% 21
+\BOOKMARK [1][-]{section.3.4}{Reactor structure components failure}{chapter.3}% 22
+\BOOKMARK [1][-]{section.3.5}{Aggressions}{chapter.3}% 23
+\BOOKMARK [0][-]{chapter.4}{High-level failure identification}{}% 24
+\BOOKMARK [1][-]{section.4.1}{Reliability Block Diagram}{chapter.4}% 25
+\BOOKMARK [1][-]{section.4.2}{Failure Modes and Effects Analysis}{chapter.4}% 26
+\BOOKMARK [0][-]{appendix.A}{Reliability Block Diagram}{}% 27
+\BOOKMARK [1][-]{section.A.1}{Global system}{appendix.A}% 28
+\BOOKMARK [1][-]{section.A.2}{Primary system}{appendix.A}% 29
+\BOOKMARK [2][-]{subsection.A.2.1}{Primary system redundancies}{section.A.2}% 30
+\BOOKMARK [1][-]{section.A.3}{Secondary system}{appendix.A}% 31
+\BOOKMARK [2][-]{subsection.A.3.1}{Secondary system redundancies}{section.A.3}% 32
+\BOOKMARK [1][-]{section.A.4}{Tertiary system}{appendix.A}% 33
+\BOOKMARK [2][-]{subsection.A.4.1}{Tertiary system redundancies}{section.A.4}% 34
+\BOOKMARK [0][-]{section*.7}{Bibliography}{}% 35

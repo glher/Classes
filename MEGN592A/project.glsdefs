@@ -1,0 +1,270 @@
+\ifglsentryexists{sfr}{}%
+{%
+\gls@defglossaryentry{sfr}%
+{%
+name={SFR},%
+sort={SFR},%
+type={acronym},%
+first={Sodium-cooled Fast Reactor\glsspace (SFR)},%
+firstplural={Sodium-cooled Fast Reactors\glsspace (SFRs)},%
+text={SFR},%
+plural={SFRs},%
+description={Sodium-cooled Fast Reactor},%
+descriptionplural={Sodium-cooled Fast Reactor\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Sodium-cooled Fast Reactor},%
+longplural={Sodium-cooled Fast Reactors},%
+short={SFR},%
+shortplural={SFRs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{astrid}{}%
+{%
+\gls@defglossaryentry{astrid}%
+{%
+name={ASTRID},%
+sort={ASTRID},%
+type={acronym},%
+first={Advanced Sodium Technological Reactor for Industrial Demonstration\glsspace (ASTRID)},%
+firstplural={Advanced Sodium Technological Reactor for Industrial Demonstrations\glsspace (ASTRIDs)},%
+text={ASTRID},%
+plural={ASTRIDs},%
+description={Advanced Sodium Technological Reactor for Industrial Demonstration},%
+descriptionplural={Advanced Sodium Technological Reactor for Industrial Demonstration\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Advanced Sodium Technological Reactor for Industrial Demonstration},%
+longplural={Advanced Sodium Technological Reactor for Industrial Demonstrations},%
+short={ASTRID},%
+shortplural={ASTRIDs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{ebr}{}%
+{%
+\gls@defglossaryentry{ebr}%
+{%
+name={EBR},%
+sort={EBR},%
+type={acronym},%
+first={Experimental Breeder Reactor\glsspace (EBR)},%
+firstplural={Experimental Breeder Reactors\glsspace (EBRs)},%
+text={EBR},%
+plural={EBRs},%
+description={Experimental Breeder Reactor},%
+descriptionplural={Experimental Breeder Reactor\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Experimental Breeder Reactor},%
+longplural={Experimental Breeder Reactors},%
+short={EBR},%
+shortplural={EBRs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{cfv}{}%
+{%
+\gls@defglossaryentry{cfv}%
+{%
+name={CFV},%
+sort={CFV},%
+type={acronym},%
+first={Coeur a Faible Vidange, Low Void Worth Core\glsspace (CFV)},%
+firstplural={Coeur a Faible Vidange, Low Void Worth Cores\glsspace (CFVs)},%
+text={CFV},%
+plural={CFVs},%
+description={Coeur a Faible Vidange, Low Void Worth Core},%
+descriptionplural={Coeur a Faible Vidange, Low Void Worth Core\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Coeur a Faible Vidange, Low Void Worth Core},%
+longplural={Coeur a Faible Vidange, Low Void Worth Cores},%
+short={CFV},%
+shortplural={CFVs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{fmea}{}%
+{%
+\gls@defglossaryentry{fmea}%
+{%
+name={FMEA},%
+sort={FMEA},%
+type={acronym},%
+first={Failure Modes and Effects Analysis\glsspace (FMEA)},%
+firstplural={Failure Modes and Effects Analysiss\glsspace (FMEAs)},%
+text={FMEA},%
+plural={FMEAs},%
+description={Failure Modes and Effects Analysis},%
+descriptionplural={Failure Modes and Effects Analysis\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Failure Modes and Effects Analysis},%
+longplural={Failure Modes and Effects Analysiss},%
+short={FMEA},%
+shortplural={FMEAs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{fmeca}{}%
+{%
+\gls@defglossaryentry{fmeca}%
+{%
+name={FMECA},%
+sort={FMECA},%
+type={acronym},%
+first={Failure Modes, Effects and Criticality Analysis\glsspace (FMECA)},%
+firstplural={Failure Modes, Effects and Criticality Analysiss\glsspace (FMECAs)},%
+text={FMECA},%
+plural={FMECAs},%
+description={Failure Modes, Effects and Criticality Analysis},%
+descriptionplural={Failure Modes, Effects and Criticality Analysis\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Failure Modes, Effects and Criticality Analysis},%
+longplural={Failure Modes, Effects and Criticality Analysiss},%
+short={FMECA},%
+shortplural={FMECAs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{rbd}{}%
+{%
+\gls@defglossaryentry{rbd}%
+{%
+name={RBD},%
+sort={RBD},%
+type={acronym},%
+first={Reliability Block Diagram\glsspace (RBD)},%
+firstplural={Reliability Block Diagrams\glsspace (RBDs)},%
+text={RBD},%
+plural={RBDs},%
+description={Reliability Block Diagram},%
+descriptionplural={Reliability Block Diagram\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Reliability Block Diagram},%
+longplural={Reliability Block Diagrams},%
+short={RBD},%
+shortplural={RBDs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{rpn}{}%
+{%
+\gls@defglossaryentry{rpn}%
+{%
+name={RPN},%
+sort={RPN},%
+type={acronym},%
+first={Risk Priority Number\glsspace (RPN)},%
+firstplural={Risk Priority Numbers\glsspace (RPNs)},%
+text={RPN},%
+plural={RPNs},%
+description={Risk Priority Number},%
+descriptionplural={Risk Priority Number\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Risk Priority Number},%
+longplural={Risk Priority Numbers},%
+short={RPN},%
+shortplural={RPNs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{phm}{}%
+{%
+\gls@defglossaryentry{phm}%
+{%
+name={PHM},%
+sort={PHM},%
+type={acronym},%
+first={Prognostic Health Management\glsspace (PHM)},%
+firstplural={Prognostic Health Managements\glsspace (PHMs)},%
+text={PHM},%
+plural={PHMs},%
+description={Prognostic Health Management},%
+descriptionplural={Prognostic Health Management\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Prognostic Health Management},%
+longplural={Prognostic Health Managements},%
+short={PHM},%
+shortplural={PHMs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
