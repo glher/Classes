@@ -164,7 +164,8 @@
 \usepackage{longtable,rotating}			%Long tab environments including rotation. 
 \usepackage[applemac]{inputenc}			%Needed to encode non-english characters 
 									%directly for mac
-\usepackage{colortbl}					%Makes coloured tables
+%\usepackage{colortbl}					%Makes coloured tables
+\usepackage{afterpage}
 \usepackage{wasysym}					%More math symbols
 \usepackage{mathrsfs}					%Even more math symbols
 \usepackage{float}						%Helps to place figures, tables, etc. 
@@ -397,6 +398,7 @@
 % And the appendix goes here
 \appendix
 \import{chapters/appendices/}{app0A.tex}
+\import{chapters/appendices/}{app0B.tex}
 \clearemptydoublepage
 %
 % Apparently the guidelines don't say anything about citations or

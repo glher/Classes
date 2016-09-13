@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.8.24)  13 SEP 2016 09:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.8.24)  13 SEP 2016 16:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -998,19 +998,11 @@ Package: inputenc 2015/03/17 v1.2c Input encoding file
 (/usr/share/texlive/texmf-dist/tex/latex/base/applemac.def
 File: applemac.def 2015/03/17 v1.2c Input encoding file
 ))
-(/usr/share/texlive/texmf-dist/tex/latex/colortbl/colortbl.sty
-Package: colortbl 2012/02/13 v1.0a Color table columns (DPC)
-
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
-Package: color 2016/01/03 v1.1b Standard LaTeX Color (DPC)
-
-(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
-File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
-)
-Package color Info: Driver file: pdftex.def on input line 143.
-)
-\everycr=\toks47
-\minrowclearance=\skip289
+(/usr/share/texlive/texmf-dist/tex/latex/tools/afterpage.sty
+Package: afterpage 2014/10/28 v1.08 After-Page Package (DPC)
+\AP@output=\toks47
+\AP@partial=\box38
+\AP@footins=\box39
 )
 (/usr/share/texlive/texmf-dist/tex/latex/wasysym/wasysym.sty
 Package: wasysym 2003/10/30 v2.0 Wasy-2 symbol support package
@@ -1026,9 +1018,9 @@ Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count312
 \float@exts=\toks48
-\float@box=\box38
+\float@box=\box40
 \@float@everytoks=\toks49
-\@floatcapt=\box39
+\@floatcapt=\box41
 )
 (/usr/share/texlive/texmf-dist/tex/latex/was/upgreek.sty
 Package: upgreek 2003/02/12 v2.0 (WaS)
@@ -1039,8 +1031,8 @@ LaTeX Font Info:    Overwriting symbol font `ugrf@m' in version `bold'
 )
 (/usr/share/texlive/texmf-dist/tex/latex/natbib/natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
-\bibhang=\skip290
-\bibsep=\skip291
+\bibhang=\skip289
+\bibsep=\skip290
 LaTeX Info: Redefining \cite on input line 694.
 \c@NAT@ctr=\count313
 )
@@ -1090,6 +1082,14 @@ Language: english 2012/08/20 v3.3p English support from the babel system
 \l@australian = a dialect from \language\l@british 
 \l@newzealand = a dialect from \language\l@british 
 ))
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2016/01/03 v1.1b Standard LaTeX Color (DPC)
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package color Info: Driver file: pdftex.def on input line 143.
+)
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2012/11/06 v6.83m Hypertext links for LaTeX
 
@@ -1199,11 +1199,11 @@ Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
 )
-\Hy@SectionHShift=\skip292
+\Hy@SectionHShift=\skip291
 )
 (/usr/share/texlive/texmf-dist/tex/latex/mdwtools/footnote.sty
 Package: footnote 1997/01/28 1.13 Save footnotes around boxes
-\fn@notes=\box40
+\fn@notes=\box42
 \fn@width=\dimen169
 )
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype.sty
@@ -1220,7 +1220,7 @@ File: microtype-pdftex.def 2013/05/23 v2.5a Definitions specific to pdftex (RS)
 
 LaTeX Info: Redefining \lsstyle on input line 915.
 LaTeX Info: Redefining \lslig on input line 915.
-\MT@outer@space=\skip293
+\MT@outer@space=\skip292
 )
 Package microtype Info: Loading configuration file microtype.cfg.
 
@@ -1243,7 +1243,7 @@ Package: alltt 1997/06/16 v2.0g defines alltt environment
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.t
 ex)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
-\pgfutil@abb=\box41
+\pgfutil@abb=\box43
 (/usr/share/texlive/texmf-dist/tex/latex/ms/everyshi.sty
 Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
 ))
@@ -1330,7 +1330,7 @@ Package: pgfcore 2010/04/11 v3.0.1a (rcs-revision 1.7)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
 \pgfmath@dimen=\dimen181
 \pgfmath@count=\count336
-\pgfmath@box=\box42
+\pgfmath@box=\box44
 \pgfmath@toks=\toks59
 \pgfmath@stack@operand=\toks60
 \pgfmath@stack@operation=\toks61
@@ -1388,9 +1388,9 @@ File: pgfcorepathusage.code.tex 2014/11/02  (rcs-revision 1.24)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.te
 x
 File: pgfcorescopes.code.tex 2015/05/08  (rcs-revision 1.46)
-\pgfpic=\box43
-\pgf@hbox=\box44
-\pgf@layerbox@main=\box45
+\pgfpic=\box45
+\pgf@hbox=\box46
+\pgf@layerbox@main=\box47
 \pgf@picture@serial@count=\count338
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.c
@@ -1432,7 +1432,7 @@ File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.
 tex
 File: pgfcoreexternal.code.tex 2014/07/09  (rcs-revision 1.21)
-\pgfexternal@startupbox=\box46
+\pgfexternal@startupbox=\box48
 ))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.te
 x
@@ -1448,7 +1448,7 @@ File: pgfcorepatterns.code.tex 2013/11/07  (rcs-revision 1.5)
 )))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
 File: pgfmoduleshapes.code.tex 2014/03/21  (rcs-revision 1.35)
-\pgfnodeparttextbox=\box47
+\pgfnodeparttextbox=\box49
 ) (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
 File: pgfmoduleplot.code.tex 2015/08/03  (rcs-revision 1.13)
 )
@@ -1485,10 +1485,10 @@ File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
 \tikz@lastysaved=\dimen273
 \tikzleveldistance=\dimen274
 \tikzsiblingdistance=\dimen275
-\tikz@figbox=\box48
-\tikz@figbox@bg=\box49
-\tikz@tempbox=\box50
-\tikz@tempbox@bg=\box51
+\tikz@figbox=\box50
+\tikz@figbox@bg=\box51
+\tikz@tempbox=\box52
+\tikz@tempbox@bg=\box53
 \tikztreelevel=\count341
 \tikznumberofchildren=\count342
 \tikznumberofcurrentchild=\count343
@@ -1585,7 +1585,7 @@ Package: fp-eval 1995/04/03
 )))
 \@dtl@toks=\toks66
 \@dtl@tmpcount=\count361
-\dtl@tmplength=\skip294
+\dtl@tmplength=\skip293
 \dtl@sortresult=\count362
 \@dtl@numgrpsepcount=\count363
 \@dtl@datatype=\count364
@@ -1617,7 +1617,7 @@ File: glossaries-spanish.ldf 2014/11/23 v1.0
 noenc.ldf))
 \gls@level=\count368
 \@gls@tmpb=\toks67
-\gls@tmplen=\skip295
+\gls@tmplen=\skip294
 
 
 Package glossaries Warning: Overriding \printglossary on input line 5218.
@@ -1636,11 +1636,11 @@ y
 Package: glossary-hypernav 2016/01/24 v4.21 (NLCT)
 ) (/usr/share/texlive/texmf-dist/tex/latex/glossaries/styles/glossary-list.sty
 Package: glossary-list 2016/01/24 v4.21 (NLCT)
-\glslistdottedwidth=\skip296
+\glslistdottedwidth=\skip295
 ) (/usr/share/texlive/texmf-dist/tex/latex/glossaries/styles/glossary-long.sty
 Package: glossary-long 2016/01/24 v4.21 (NLCT)
-\glsdescwidth=\skip297
-\glspagelistwidth=\skip298
+\glsdescwidth=\skip296
+\glspagelistwidth=\skip297
 ) (/usr/share/texlive/texmf-dist/tex/latex/glossaries/styles/glossary-super.sty
 Package: glossary-super 2016/01/24 v4.21 (NLCT)
 
@@ -1648,9 +1648,9 @@ Package: glossary-super 2016/01/24 v4.21 (NLCT)
 Package: supertabular 2004/02/20 v4.1e the supertabular environment
 \c@tracingst=\count369
 \ST@wd=\dimen277
-\ST@rightskip=\skip299
-\ST@leftskip=\skip300
-\ST@parfillskip=\skip301
+\ST@rightskip=\skip298
+\ST@leftskip=\skip299
+\ST@parfillskip=\skip300
 \ST@pageleft=\dimen278
 \ST@headht=\dimen279
 \ST@tailht=\dimen280
@@ -1661,11 +1661,11 @@ Package: supertabular 2004/02/20 v4.1e the supertabular environment
 \ST@prevht=\dimen285
 \ST@toadd=\dimen286
 \ST@dimen=\dimen287
-\ST@pbox=\box52
+\ST@pbox=\box54
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/glossaries/styles/glossary-tree.sty
 Package: glossary-tree 2016/01/24 v4.21 (NLCT)
-\glstreeindent=\skip302
+\glstreeindent=\skip301
 ))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
 zlibraryarrows.code.tex
@@ -1727,26 +1727,26 @@ File: tikzlibraryshapes.multipart.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1
 s.multipart.code.tex
 File: pgflibraryshapes.multipart.code.tex 2010/01/07 v3.0.1a (rcs-revision 1.2)
 
-\pgfnodepartlowerbox=\box53
-\pgfnodeparttwobox=\box54
-\pgfnodepartthreebox=\box55
-\pgfnodepartfourbox=\box56
-\pgfnodeparttwentybox=\box57
-\pgfnodepartnineteenbox=\box58
-\pgfnodeparteighteenbox=\box59
-\pgfnodepartseventeenbox=\box60
-\pgfnodepartsixteenbox=\box61
-\pgfnodepartfifteenbox=\box62
-\pgfnodepartfourteenbox=\box63
-\pgfnodepartthirteenbox=\box64
-\pgfnodeparttwelvebox=\box65
-\pgfnodepartelevenbox=\box66
-\pgfnodeparttenbox=\box67
-\pgfnodepartninebox=\box68
-\pgfnodeparteightbox=\box69
-\pgfnodepartsevenbox=\box70
-\pgfnodepartsixbox=\box71
-\pgfnodepartfivebox=\box72
+\pgfnodepartlowerbox=\box55
+\pgfnodeparttwobox=\box56
+\pgfnodepartthreebox=\box57
+\pgfnodepartfourbox=\box58
+\pgfnodeparttwentybox=\box59
+\pgfnodepartnineteenbox=\box60
+\pgfnodeparteighteenbox=\box61
+\pgfnodepartseventeenbox=\box62
+\pgfnodepartsixteenbox=\box63
+\pgfnodepartfifteenbox=\box64
+\pgfnodepartfourteenbox=\box65
+\pgfnodepartthirteenbox=\box66
+\pgfnodeparttwelvebox=\box67
+\pgfnodepartelevenbox=\box68
+\pgfnodeparttenbox=\box69
+\pgfnodepartninebox=\box70
+\pgfnodeparteightbox=\box71
+\pgfnodepartsevenbox=\box72
+\pgfnodepartsixbox=\box73
+\pgfnodepartfivebox=\box74
 )))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
 zlibrarysnakes.code.tex
@@ -1772,7 +1772,7 @@ e.tex
 \pgfdecorationsegmentamplitude=\dimen294
 \pgfdecorationsegmentlength=\dimen295
 )
-\tikz@lib@dec@box=\box73
+\tikz@lib@dec@box=\box75
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrary
 decorations.pathmorphing.code.tex))
@@ -1791,8 +1791,8 @@ File: tikzlibraryautomata.code.tex 2008/07/14 v3.0.1a (rcs-revision 1.3)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
 zlibrarybackgrounds.code.tex
 File: tikzlibrarybackgrounds.code.tex 2013/07/18 v3.0.1a (rcs-revision 1.3)
-\pgf@layerbox@background=\box74
-\pgf@layerboxsaved@background=\box75
+\pgf@layerbox@background=\box76
+\pgf@layerboxsaved@background=\box77
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
 zlibrarypetri.code.tex
@@ -1808,8 +1808,8 @@ File: lettrine.sty 2015/08/31 v1.9 (Daniel Flipo)
 \DefaultNindent=\dimen297
 \DefaultSlope=\dimen298
 \DiscardVskip=\dimen299
-\L@lbox=\box76
-\L@tbox=\box77
+\L@lbox=\box78
+\L@tbox=\box79
 \c@L@lines=\count374
 \c@L@depth=\count375
 \L@Pindent=\dimen300
@@ -1837,76 +1837,76 @@ Loading lettrine.cfg
 \glo@main@file=\write7
 \openout7 = `project.glo'.
 
-Package glossaries Info: Writing glossary file project.glo on input line 331.
+Package glossaries Info: Writing glossary file project.glo on input line 332.
 \glo@acronym@file=\write8
 \openout8 = `project.acn'.
 
-Package glossaries Info: Writing glossary file project.acn on input line 331.
+Package glossaries Info: Writing glossary file project.acn on input line 332.
  (./project.aux)
 \openout1 = `project.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 334.
-LaTeX Font Info:    ... okay on input line 334.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 334.
-LaTeX Font Info:    ... okay on input line 334.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 334.
-LaTeX Font Info:    ... okay on input line 334.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 334.
-LaTeX Font Info:    ... okay on input line 334.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 334.
-LaTeX Font Info:    ... okay on input line 334.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 334.
-LaTeX Font Info:    ... okay on input line 334.
-LaTeX Font Info:    Checking defaults for FML/fncmi/m/it on input line 334.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 335.
+LaTeX Font Info:    ... okay on input line 335.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 335.
+LaTeX Font Info:    ... okay on input line 335.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 335.
+LaTeX Font Info:    ... okay on input line 335.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 335.
+LaTeX Font Info:    ... okay on input line 335.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 335.
+LaTeX Font Info:    ... okay on input line 335.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 335.
+LaTeX Font Info:    ... okay on input line 335.
+LaTeX Font Info:    Checking defaults for FML/fncmi/m/it on input line 335.
 LaTeX Font Info:    Try loading font information for FML+fncmi on input line 33
-4.
+5.
  (/usr/share/texlive/texmf-dist/tex/latex/fouriernc/fmlfncmi.fd
 File: fmlfncmi.fd 2005/12/20 Fontinst v1.928 font definitions for FML/fncmi.
 )
-LaTeX Font Info:    ... okay on input line 334.
-LaTeX Font Info:    Checking defaults for FMS/fncm/m/n on input line 334.
-LaTeX Font Info:    Try loading font information for FMS+fncm on input line 334
+LaTeX Font Info:    ... okay on input line 335.
+LaTeX Font Info:    Checking defaults for FMS/fncm/m/n on input line 335.
+LaTeX Font Info:    Try loading font information for FMS+fncm on input line 335
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/fouriernc/fmsfncm.fd
 File: fmsfncm.fd 2005/12/20 Fontinst v1.928 font definitions for FMS/fncm.
 )
-LaTeX Font Info:    ... okay on input line 334.
-LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 334.
-LaTeX Font Info:    Try loading font information for FMX+futm on input line 334
+LaTeX Font Info:    ... okay on input line 335.
+LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 335.
+LaTeX Font Info:    Try loading font information for FMX+futm on input line 335
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/fourier/fmxfutm.fd
 File: fmxfutm.fd futm-extension
 )
-LaTeX Font Info:    ... okay on input line 334.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 334.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 334.
+LaTeX Font Info:    ... okay on input line 335.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 335.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 335.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 334.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 334.
-LaTeX Font Info:    ... okay on input line 334.
-LaTeX Font Info:    Try loading font information for T1+fnc on input line 334.
+LaTeX Font Info:    ... okay on input line 335.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 335.
+LaTeX Font Info:    ... okay on input line 335.
+LaTeX Font Info:    Try loading font information for T1+fnc on input line 335.
 
 (/usr/share/texlive/texmf-dist/tex/latex/fouriernc/t1fnc.fd
 File: t1fnc.fd 2005/12/13 scaled font definitions for T1/fnc.
 )
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 10.18341pt on input line 334.
-Package nag Info: pgf.sty is broken: disabling dollar check on input line 334.
+(Font)              scaled to size 10.18341pt on input line 335.
+Package nag Info: pgf.sty is broken: disabling dollar check on input line 335.
 
 
-Package layouts Warning: Layout scale set to 0.5 on input line 334.
+Package layouts Warning: Layout scale set to 0.5 on input line 335.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count382
 \scratchdimen=\dimen312
-\scratchbox=\box78
+\scratchbox=\box80
 \nofMPsegments=\count383
 \nofMParguments=\count384
 \everyMPshowfont=\toks72
@@ -1930,8 +1930,8 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-\AtBeginShipoutBox=\box79
-Package hyperref Info: Link coloring ON on input line 334.
+\AtBeginShipoutBox=\box81
+Package hyperref Info: Link coloring ON on input line 335.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -1943,15 +1943,15 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 Redoing nameref's sectioning
 Redoing nameref's label
-LaTeX Info: Redefining \nameref on input line 334.
-LaTeX Info: Redefining \ref on input line 334.
-LaTeX Info: Redefining \pageref on input line 334.
-LaTeX Info: Redefining \nameref on input line 334.
+LaTeX Info: Redefining \nameref on input line 335.
+LaTeX Info: Redefining \ref on input line 335.
+LaTeX Info: Redefining \pageref on input line 335.
+LaTeX Info: Redefining \nameref on input line 335.
 (./project.out) (./project.out)
 \@outlinefile=\write9
 \openout9 = `project.out'.
 
-LaTeX Info: Redefining \microtypecontext on input line 334.
+LaTeX Info: Redefining \microtypecontext on input line 335.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -1968,13 +1968,13 @@ Package microtype Info: Loading generic settings for font family
  ABD: EveryShipout initializing macros
 (./project.glsdefs)
 Package nag Info: Command \caption@xlabel not defined, skipping amendment on in
-put line 334.
+put line 335.
 Package nag Info: Command \captionabove not defined, skipping amendment on inpu
-t line 334.
+t line 335.
 Package nag Info: Command \captionbelow not defined, skipping amendment on inpu
-t line 334.
+t line 335.
 Package nag Info: Command \hc@caption not defined, skipping amendment on input 
-line 334.
+line 335.
  (./frontmatter/title.tex
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
 (Font)              scaled to size 23.13821pt on input line 25.
@@ -1987,7 +1987,7 @@ LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
 LaTeX Font Info:    Font shape `T1/fnc/m/sc' will be
 (Font)              scaled to size 11.15991pt on input line 32.
 
-<logos/CSM.png, id=147, 306.14375pt x 309.155pt>
+<logos/CSM.png, id=151, 306.14375pt x 309.155pt>
 File: logos/CSM.png Graphic file (type png)
  <use logos/CSM.png>
 Package pdftex.def Info: logos/CSM.png used on input line 34.
@@ -2087,7 +2087,7 @@ l.24 \clearpage
 as been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.359 \clearemptydoublepage
+l.360 \clearemptydoublepage
                             [2
 
 
@@ -2102,9 +2102,9 @@ LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
 (Font)              scaled to size 10.18341pt on input line 2.
 [3])
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 9.29993pt on input line 365.
+(Font)              scaled to size 9.29993pt on input line 366.
 LaTeX Font Info:    Font shape `T1/fnc/m/sc' will be
-(Font)              scaled to size 9.29993pt on input line 365.
+(Font)              scaled to size 9.29993pt on input line 366.
  [4] (./project.lot
 LaTeX Font Info:    Font shape `T1/fnc/bx/sc' in size <10.95> not available
 (Font)              Font shape `T1/fnc/b/sc' tried instead on input line 2.
@@ -2133,7 +2133,7 @@ LaTeX Font Info:    Font shape `T1/fnc/m/sc' will be
 \openout10 = `project.glsdefs'.
 
 
-<chapters/chapter01/fig01/Sodium-Cooled_Fast_Reactor_Schemata.png, id=305, 2007
+<chapters/chapter01/fig01/Sodium-Cooled_Fast_Reactor_Schemata.png, id=310, 2007
 .5pt x 1438.37375pt>
 File: chapters/chapter01/fig01/Sodium-Cooled_Fast_Reactor_Schemata.png Graphic 
 file (type png)
@@ -2143,7 +2143,7 @@ Package pdftex.def Info: chapters/chapter01/fig01/Sodium-Cooled_Fast_Reactor_Sc
 hemata.png used on input line 24.
 (pdftex.def)             Requested size: 444.22446pt x 318.30014pt.
 
-<chapters/chapter01/fig01/SFR_pool_loop_types.png, id=307, 987.69pt x 530.98375
+<chapters/chapter01/fig01/SFR_pool_loop_types.png, id=312, 987.69pt x 530.98375
 pt>
 File: chapters/chapter01/fig01/SFR_pool_loop_types.png Graphic file (type png)
  <use chapters/chapter01/fig01/SFR_pool_loop_types.png>
@@ -2172,7 +2172,7 @@ LaTeX Font Info:    Font shape `T1/fnc/bx/n' in size <12> not available
 LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
 (Font)              scaled to size 11.15991pt on input line 67.
 
-<chapters/chapter01/fig01/superphenix_timeline.png, id=320, 627.09282pt x 413.2
+<chapters/chapter01/fig01/superphenix_timeline.png, id=326, 627.09282pt x 413.2
 9407pt>
 File: chapters/chapter01/fig01/superphenix_timeline.png Graphic file (type png)
 
@@ -2194,7 +2194,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\gls' on input line 11.
 
 
-<chapters/chapter02/fig02/astrid_simplified.png, id=357, 568.1225pt x 680.5425p
+<chapters/chapter02/fig02/astrid_simplified.png, id=362, 568.1225pt x 680.5425p
 t>
 File: chapters/chapter02/fig02/astrid_simplified.png Graphic file (type png)
  <use chapters/chapter02/fig02/astrid_simplified.png>
@@ -2232,13 +2232,8 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 ]
-[18]
-Overfull \hbox (42.05931pt too wide) in paragraph at lines 136--157
- [][] 
- []
-
-) [19] [20] [21] [22] (./chapters/appendices/app0A.tex
-<chapters/appendices/fig0a/main_RBD.png, id=459, 725.71124pt x 91.34125pt>
+[18]) [19] [20] (./chapters/appendices/app0A.tex
+<chapters/appendices/fig0a/main_RBD.png, id=456, 725.71124pt x 91.34125pt>
 File: chapters/appendices/fig0a/main_RBD.png Graphic file (type png)
 
 <use chapters/appendices/fig0a/main_RBD.png>
@@ -2250,13 +2245,13 @@ Overfull \hbox (57.81294pt too wide) in paragraph at lines 18--19
  [][] 
  []
 
-[23
+[21
 
 
- <./chapters/appendices/fig0a/main_RBD.png>] [24
+ <./chapters/appendices/fig0a/main_RBD.png>] [22
 
 ]
-<chapters/appendices/fig0a/Primary_system.png, id=469, 695.59875pt x 555.07375p
+<chapters/appendices/fig0a/Primary_system.png, id=466, 695.59875pt x 555.07375p
 t>
 File: chapters/appendices/fig0a/Primary_system.png Graphic file (type png)
  <use chapters/appendices/fig0a/Primary_system.png>
@@ -2268,8 +2263,8 @@ Overfull \hbox (30.66876pt too wide) in paragraph at lines 29--30
  [][] 
  []
 
-[25 <./chapters/appendices/fig0a/Primary_system.png>]
-<chapters/appendices/fig0a/primary/Primary_sensors_subsystem.png, id=476, 824.0
+[23 <./chapters/appendices/fig0a/Primary_system.png>]
+<chapters/appendices/fig0a/primary/Primary_sensors_subsystem.png, id=472, 824.0
 7875pt x 620.3175pt>
 File: chapters/appendices/fig0a/primary/Primary_sensors_subsystem.png Graphic f
 ile (type png)
@@ -2284,7 +2279,7 @@ Overfull \hbox (17.1401pt too wide) in paragraph at lines 39--40
  []
 
 
-<chapters/appendices/fig0a/primary/Primary_Pump_subsystem.png, id=477, 432.6162
+<chapters/appendices/fig0a/primary/Primary_Pump_subsystem.png, id=473, 432.6162
 6pt x 253.94875pt>
 File: chapters/appendices/fig0a/primary/Primary_Pump_subsystem.png Graphic file
  (type png)
@@ -2294,7 +2289,7 @@ Package pdftex.def Info: chapters/appendices/fig0a/primary/Primary_Pump_subsyst
 em.png used on input line 46.
 (pdftex.def)             Requested size: 433.8034pt x 254.63622pt.
 
-<chapters/appendices/fig0a/primary/Primary_HX_subsystem.png, id=478, 432.61626p
+<chapters/appendices/fig0a/primary/Primary_HX_subsystem.png, id=474, 432.61626p
 t x 334.24875pt>
 File: chapters/appendices/fig0a/primary/Primary_HX_subsystem.png Graphic file (
 type png)
@@ -2304,7 +2299,7 @@ Package pdftex.def Info: chapters/appendices/fig0a/primary/Primary_HX_subsystem
 .png used on input line 53.
 (pdftex.def)             Requested size: 412.0063pt x 318.30014pt.
 
-<chapters/appendices/fig0a/primary/Primary_SIS_subsystem.png, id=479, 613.29124
+<chapters/appendices/fig0a/primary/Primary_SIS_subsystem.png, id=475, 613.29124
 pt x 371.3875pt>
 File: chapters/appendices/fig0a/primary/Primary_SIS_subsystem.png Graphic file 
 (type png)
@@ -2319,7 +2314,7 @@ Overfull \hbox (25.06857pt too wide) in paragraph at lines 60--61
  []
 
 
-<chapters/appendices/fig0a/primary/Primary_DHR_subsystem.png, id=480, 793.96625
+<chapters/appendices/fig0a/primary/Primary_DHR_subsystem.png, id=476, 793.96625
 pt x 439.6425pt>
 File: chapters/appendices/fig0a/primary/Primary_DHR_subsystem.png Graphic file 
 (type png)
@@ -2333,12 +2328,12 @@ Overfull \hbox (11.84654pt too wide) in paragraph at lines 67--68
  [][] 
  []
 
-[26 <./chapters/appendices/fig0a/primary/Primary_sensors_subsystem.png>]
-[27 <./chapters/appendices/fig0a/primary/Primary_Pump_subsystem.png>] [28 <./ch
-apters/appendices/fig0a/primary/Primary_HX_subsystem.png>] [29 <./chapters/appe
-ndices/fig0a/primary/Primary_SIS_subsystem.png>] [30 <./chapters/appendices/fig
+[24 <./chapters/appendices/fig0a/primary/Primary_sensors_subsystem.png>]
+[25 <./chapters/appendices/fig0a/primary/Primary_Pump_subsystem.png>] [26 <./ch
+apters/appendices/fig0a/primary/Primary_HX_subsystem.png>] [27 <./chapters/appe
+ndices/fig0a/primary/Primary_SIS_subsystem.png>] [28 <./chapters/appendices/fig
 0a/primary/Primary_DHR_subsystem.png>]
-<chapters/appendices/fig0a/Secondary_system.png, id=506, 685.56125pt x 324.2112
+<chapters/appendices/fig0a/Secondary_system.png, id=503, 685.56125pt x 324.2112
 4pt>
 File: chapters/appendices/fig0a/Secondary_system.png Graphic file (type png)
  <use chapters/appendices/fig0a/Secondary_system.png>
@@ -2350,10 +2345,10 @@ Overfull \hbox (23.15483pt too wide) in paragraph at lines 78--79
  [][] 
  []
 
-[31
+[29
 
  <./chapters/appendices/fig0a/Secondary_system.png>]
-<chapters/appendices/fig0a/secondary/Secondary_Pump_subsystem.png, id=513, 432.
+<chapters/appendices/fig0a/secondary/Secondary_Pump_subsystem.png, id=509, 432.
 61626pt x 334.24875pt>
 File: chapters/appendices/fig0a/secondary/Secondary_Pump_subsystem.png Graphic 
 file (type png)
@@ -2363,7 +2358,7 @@ Package pdftex.def Info: chapters/appendices/fig0a/secondary/Secondary_Pump_sub
 system.png used on input line 88.
 (pdftex.def)             Requested size: 412.0063pt x 318.30014pt.
 
-<chapters/appendices/fig0a/secondary/Secondary_SG_subsystem.png, id=514, 432.61
+<chapters/appendices/fig0a/secondary/Secondary_SG_subsystem.png, id=510, 432.61
 626pt x 334.24875pt>
 File: chapters/appendices/fig0a/secondary/Secondary_SG_subsystem.png Graphic fi
 le (type png)
@@ -2372,19 +2367,19 @@ le (type png)
 Package pdftex.def Info: chapters/appendices/fig0a/secondary/Secondary_SG_subsy
 stem.png used on input line 95.
 (pdftex.def)             Requested size: 412.0063pt x 318.30014pt.
- [32 <./chapters/appendices/fig0a/secondary/Secondary_Pump_subsystem.png>] [33 
-<./chapters/appendices/fig0a/secondary/Secondary_SG_subsystem.png>] [34
+ [30 <./chapters/appendices/fig0a/secondary/Secondary_Pump_subsystem.png>] [31 
+<./chapters/appendices/fig0a/secondary/Secondary_SG_subsystem.png>] [32
 
 ]
-<chapters/appendices/fig0a/Tertiary_system.png, id=529, 595.22375pt x 474.77374
+<chapters/appendices/fig0a/Tertiary_system.png, id=526, 595.22375pt x 474.77374
 pt>
 File: chapters/appendices/fig0a/Tertiary_system.png Graphic file (type png)
  <use chapters/appendices/fig0a/Tertiary_system.png>
 Package pdftex.def Info: chapters/appendices/fig0a/Tertiary_system.png used on 
 input line 106.
 (pdftex.def)             Requested size: 399.07031pt x 318.30014pt.
- [35 <./chapters/appendices/fig0a/Tertiary_system.png>]
-<chapters/appendices/fig0a/tertiary/Tertiary_Subsystem_condensers.png, id=535, 
+ [33 <./chapters/appendices/fig0a/Tertiary_system.png>]
+<chapters/appendices/fig0a/tertiary/Tertiary_Subsystem_condensers.png, id=532, 
 472.76625pt x 253.94875pt>
 File: chapters/appendices/fig0a/tertiary/Tertiary_Subsystem_condensers.png Grap
 hic file (type png)
@@ -2394,7 +2389,7 @@ Package pdftex.def Info: chapters/appendices/fig0a/tertiary/Tertiary_Subsystem_
 condensers.png used on input line 116.
 (pdftex.def)             Requested size: 414.81645pt x 222.81398pt.
 
-<chapters/appendices/fig0a/tertiary/Tertiary_Subsystem_Pumps1.png, id=536, 472.
+<chapters/appendices/fig0a/tertiary/Tertiary_Subsystem_Pumps1.png, id=533, 472.
 76625pt x 253.94875pt>
 File: chapters/appendices/fig0a/tertiary/Tertiary_Subsystem_Pumps1.png Graphic 
 file (type png)
@@ -2404,7 +2399,7 @@ Package pdftex.def Info: chapters/appendices/fig0a/tertiary/Tertiary_Subsystem_
 Pumps1.png used on input line 123.
 (pdftex.def)             Requested size: 414.81645pt x 222.81398pt.
 
-<chapters/appendices/fig0a/tertiary/Tertiary_Subsystem_Pumps2.png, id=537, 472.
+<chapters/appendices/fig0a/tertiary/Tertiary_Subsystem_Pumps2.png, id=534, 472.
 76625pt x 183.68625pt>
 File: chapters/appendices/fig0a/tertiary/Tertiary_Subsystem_Pumps2.png Graphic 
 file (type png)
@@ -2414,7 +2409,7 @@ Package pdftex.def Info: chapters/appendices/fig0a/tertiary/Tertiary_Subsystem_
 Pumps2.png used on input line 130.
 (pdftex.def)             Requested size: 409.64413pt x 159.15007pt.
 
-<chapters/appendices/fig0a/tertiary/Tertiary_Subsystem_Turbines.png, id=538, 47
+<chapters/appendices/fig0a/tertiary/Tertiary_Subsystem_Turbines.png, id=535, 47
 2.76625pt x 253.94875pt>
 File: chapters/appendices/fig0a/tertiary/Tertiary_Subsystem_Turbines.png Graphi
 c file (type png)
@@ -2424,7 +2419,7 @@ Package pdftex.def Info: chapters/appendices/fig0a/tertiary/Tertiary_Subsystem_
 Turbines.png used on input line 137.
 (pdftex.def)             Requested size: 414.81645pt x 222.81398pt.
 
-<chapters/appendices/fig0a/tertiary/Tertiary_Subsystem_Generators.png, id=539, 
+<chapters/appendices/fig0a/tertiary/Tertiary_Subsystem_Generators.png, id=536, 
 472.76625pt x 183.68625pt>
 File: chapters/appendices/fig0a/tertiary/Tertiary_Subsystem_Generators.png Grap
 hic file (type png)
@@ -2434,11 +2429,26 @@ Package pdftex.def Info: chapters/appendices/fig0a/tertiary/Tertiary_Subsystem_
 Generators.png used on input line 144.
 (pdftex.def)             Requested size: 409.64413pt x 159.15007pt.
 )
-[36 <./chapters/appendices/fig0a/tertiary/Tertiary_Subsystem_condensers.png> <.
-/chapters/appendices/fig0a/tertiary/Tertiary_Subsystem_Pumps1.png>] [37 <./chap
-ters/appendices/fig0a/tertiary/Tertiary_Subsystem_Pumps2.png> <./chapters/appen
-dices/fig0a/tertiary/Tertiary_Subsystem_Turbines.png>] [38 <./chapters/appendic
-es/fig0a/tertiary/Tertiary_Subsystem_Generators.png>] (./project.bbl
+(./chapters/appendices/app0B.tex [34 <./chapters/appendices/fig0a/tertiary/Tert
+iary_Subsystem_condensers.png> <./chapters/appendices/fig0a/tertiary/Tertiary_S
+ubsystem_Pumps1.png>] [35 <./chapters/appendices/fig0a/tertiary/Tertiary_Subsys
+tem_Pumps2.png> <./chapters/appendices/fig0a/tertiary/Tertiary_Subsystem_Turbin
+es.png>] [36 <./chapters/appendices/fig0a/tertiary/Tertiary_Subsystem_Generator
+s.png>]
+Underfull \hbox (badness 2726) in paragraph at lines 29--29
+[]|\T1/fnc/m/n/10.95 (+20) Repeated bad main-te-
+ []
+
+
+Underfull \hbox (badness 2726) in paragraph at lines 45--45
+[]|\T1/fnc/m/n/10.95 (+20) Repeated bad main-te-
+ []
+
+[37
+
+] [38] [39] [40]) [41] [42
+
+] (./project.bbl
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
 (nag)                Use \scshape or \textsc instead on input line 4.
@@ -2499,11 +2509,10 @@ Package nag Warning: Command \sc is an old LaTeX 2.09 command.
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
 (nag)                Use \scshape or \textsc instead on input line 50.
 
-) [39
+) [43
 
 
-
-] [40
+] [44
 
 ]
 
@@ -2518,13 +2527,13 @@ Package nag Warning: 13 complaints in total.
 \tf@lof=\write13
 \openout13 = `project.lof'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 413.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 413.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 415.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 415.
 (./project.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 413.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 413.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 415.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 415.
 Package rerunfilecheck Info: File `project.out' has not changed.
-(rerunfilecheck)             Checksum: FA66DD3D8D7593272B26978EDDE94DFD;2376.
+(rerunfilecheck)             Checksum: 9ABB32182DD07E8B0BCD272EA193BD2A;2447.
 
 
 LaTeX Warning: There were undefined references.
@@ -2551,13 +2560,13 @@ LaTeX Warning: There were undefined references.
 (\end occurred when \ifx on line 32 was incomplete)
 (\end occurred when \ifx on line 25 was incomplete) 
 Here is how much of TeX's memory you used:
- 33694 strings out of 493029
- 617087 string characters out of 6136234
- 962523 words of memory out of 5000000
- 36006 multiletter control sequences out of 15000+600000
+ 33684 strings out of 493029
+ 616979 string characters out of 6136234
+ 959942 words of memory out of 5000000
+ 35989 multiletter control sequences out of 15000+600000
  85232 words of font info for 255 fonts, out of 8000000 for 9000
  1146 hyphenation exceptions out of 8191
- 52i,13n,80p,1920b,486s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 52i,13n,80p,1920b,490s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{
 glo:phm} has been referenced but does not exist, replaced by a fixed one
 
@@ -2570,10 +2579,10 @@ e1/public/fourier/fourier-ms.pfb></usr/share/texmf/fonts/type1/public/cm-super/
 sftt1095.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/ncntrsbk/uncb8a.pfb
 ></usr/share/texlive/texmf-dist/fonts/type1/urw/ncntrsbk/uncr8a.pfb></usr/share
 /texlive/texmf-dist/fonts/type1/urw/ncntrsbk/uncri8a.pfb>
-Output written on project.pdf (52 pages, 1271046 bytes).
+Output written on project.pdf (56 pages, 1280723 bytes).
 PDF statistics:
- 626 PDF objects out of 1000 (max. 8388607)
- 520 compressed objects within 6 object streams
- 142 named destinations out of 1000 (max. 500000)
- 38286 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 654 PDF objects out of 1000 (max. 8388607)
+ 544 compressed objects within 6 object streams
+ 147 named destinations out of 1000 (max. 500000)
+ 38294 words of extra memory for PDF output out of 42996 (max. 10000000)
 

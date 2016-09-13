@@ -1,0 +1,141 @@
+%
+% file: localoperator.tex
+% author: Victor Brena
+% description: Briefly describes properties of the local operator.
+%
+
+\chapter{Failure Modes and Effects Analysis}
+\label{app:app02}
+
+\initial{F}MEA asks for the creation of a table which associate a (Probability, Severity, Detectability)-triplet and a corresponding RPN to a (failure mode, cause)-doublet of a component. Potential mitigation action can also be added, as well as its cost and other useful information during the design process. Table~\ref{tab:fmea_risk} presents the(P, S, D)-triplets associated with a number of potential failures and causes. It is to be noted that, by essence of the real-world FMEA in a complex system, the list presented is not exhaustive. It shows the failure modes that the author thought were most likely to have a higher RPN.
+
+Table~\ref{tab:fmea_rpn_risk} presents, for each and every identified failure modes, possible mitigation action that could be taken.
+
+\begin{longtable}{ccp{4cm}p{4cm}ccc}
+    \hline
+    ID & Component & Failure & Cause & $P$ & $S$ & $D$ \\ \hline \hline
+    \endfirsthead
+    \multicolumn{3}{@{}l}{\ldots continued}\\\hline
+    ID & Component & Failure & Cause & $P$ & $S$ & $D$ \\ \hline \hline
+    \endhead
+    1.1 & \multirow{5}{3cm}{Fuel Assemblies} & Pin cladding ($< 5\%$) & Local peak power & 8 & 2 & 2 \\
+    1.2 &                                & Pin cladding ($> 10\%$) & Global peak power & 5 & 9 & 2 \\
+    1.3 &                                & Assemblies distorsion & Wear & 5 & 4 & 4 \\
+    1.4 &                                & Assemblies handling & Bad identification & 3 & 8 & 4 \\
+    1.5 &                                & Assemblies handling & Head damage & 5 & 2 & 10 \\ \hline
+    2.1 & \multirow{5}{3cm}{Primary pumps}  & Partial loss of capability for one pump & Wear & 4 & 5 & 4 \\
+    2.2 &                                & Complete loss of capability for one pump & Bad maintenance & 3 & 6 & 3 \\
+    2.3 &                                & Partial loss of capability for all pumps & Wear and bad maintenance & 2 & 9 & 2 \\
+    2.4 &                                & Complete loss of capability for all pumps & Repeated bad maintenance & 1 & 9 & 3 \\
+    2.5 &                                & Complete loss of capability for all pumps & External aggression & 2 & 9 & 10 \\ \hline
+    3.1 & \multirow{7}{3cm}{Control rods} & One rod does not fall & Gripped mechanical release & 3 & 6 & 4 \\
+    3.2 &                               & One rod fall too slowly & Distorsion & 6 & 4 & 2 \\
+    3.3 &                               & One rod gets stuck in & Distorsion & 4 & 2 & 3 \\
+    3.4 &                               & One rod gets stuck in & Seism & 2 & 5 & 8 \\
+    3.5 &                               & More than one rod don't fall & Gripped mechanical release & 2 & 10 & 1 \\
+    3.6 &                               & More than one rods fall too slowly & Distorsion & 5 & 6 & 2 \\
+    3.7 &                               & More than one rods get stuck in & Distorsion & 3 & 7 & 3 \\ \hline
+    4.1 & \multirow{4}{3cm}{Decay heat exchangers} & Large leak in one of the two & Faulty material & 2 & 7 & 7 \\
+    4.2 &                               & Small leak in one of the two & Wear & 3 & 6 & 6 \\
+    4.3 &                               & Large leak in the two & Faulty material and inspection & 1 & 9 & 7 \\
+    4.4 &                               & Small leak in the two & Wear and insufficient inspection & 2 & 8 & 6 \\ \hline
+    5.1 & \multirow{5}{3cm}{Heat removal system pumps}  & Partial loss of capability for one pump & Wear & 4 & 5 & 4 \\
+    5.2 &                                & Complete loss of capability for one pump & Bad maintenance & 3 & 7 & 3 \\
+    5.3 &                                & Partial loss of capability for all pumps & Wear and bad maintenance & 2 & 7 & 2 \\
+    5.4 &                                & Complete loss of capability for all pumps & Repeated bad maintenance & 1 & 9 & 3 \\
+    5.5 &                                & Complete loss of capability for all pumps & External aggression & 2 & 9 & 10 \\ \hline
+    6.1 & \multirow{4}{3cm}{Sodium purifier}  & Partial loss of capability & Wear & 4 & 4 & 3 \\
+    6.2 &                                & Partial loss of capability & Aggression & 2 & 4 & 10 \\
+    6.3 &                                & Complete loss of capability & Wear & 3 & 8 & 2 \\
+    6.4 &                                & Complete loss of capability & Aggression & 1 & 8 & 10 \\ \hline
+    7.1 & \multirow{2}{3cm}{Argon tank}  & Small leak & Wear & 3 & 3 & 3 \\
+    7.2 &                                & Large leak & Aggression & 2 & 7 & 10 \\ \hline
+    8.1 & \multirow{4}{3cm}{Detectors}  & No signal from one & Electronic components & 6 & 1 & 9 \\
+    8.2 &                               & No signal from any & Electronic components & 2 & 8 & 8 \\
+    8.3 &                               & Wrong signal from one & Electronic components & 7 & 1 & 3 \\
+    8.4 &                               & Wrong signal from all & Electronic components & 5 & 8 & 10 \\ \hline
+    9.1 & \multirow{4}{3cm}{Thermocouples}  & No signal from one & Electronic components & 4 & 1 & 9 \\
+    9.2 &                               & No signal from any & Electronic components & 1 & 8 & 8 \\
+    9.3 &                               & Wrong signal from one & Electronic components & 5 & 1 & 3 \\
+    9.4 &                               & Wrong signal from all & Electronic components & 3 & 7 & 10 \\ \hline
+    10.1 & \multirow{2}{3cm}{Inner vessel}  & Small breach & Wear & 3 & 7 & 3 \\
+    10.2 &                               & Large breach & Wear & 1 & 8 & 1 \\ \hline
+    11.1 & \multirow{4}{3cm}{Main vessel}  & Small breach & Wear & 3 & 8 & 1 \\
+    11.2 &                               & Small breach & Aggression & 3 & 10 & 10 \\
+    11.3 &                               & Large breach & Wear & 2 & 9 & 1 \\
+    11.4 &                               & Large breach & Aggression & 2 & 10 & 10 \\ \hline
+    12.1 & \multirow{4}{3cm}{Safety vessel}  & Small breach & Wear & 2 & 8 & 1 \\
+    12.2 &                               & Small breach & Aggression & 3 & 8 & 10 \\
+    12.3 &                               & Large breach & Wear & 2 & 9 & 1 \\
+    12.4 &                               & Large breach & Aggression & 3 & 9 & 10 \\ \hline
+\caption{FMEA}
+\label{tab:fmea_risk}
+\end{longtable}
+
+
+\begin{longtable}{ccp{10cm}}
+    \hline
+    ID & RPN & Mitigation \\ \hline\hline
+    \endfirsthead
+    \multicolumn{3}{@{}l}{\ldots continued}\\\hline
+    ID & RPN & Mitigation \\ \hline \hline
+    \endhead
+    1.1 & 32  & Better material, stay in the normal operation range \\
+    1.2 & 90  & Better material, stay in the normal operation range \\
+    1.3 & 80  & Better detectability and positioning in the core \\
+    1.4 & 96  & Better cameras and labels \\
+    1.5 & 100 & Solid assembly heads, maintenance training \\
+    2.1 & 80  & Better \gls{phm} \\
+    2.2 & 54  & Better maintenance and inspection \\
+    2.3 & 36  & Better PHM, maintenance and inspection \\
+    2.4 & 27  & Better PHM to limit maintenance \\
+    2.5 & 180 & Protect the pumps physically \\
+    3.1 & 72  & Extend PHM to detect the failure, go toward a electromagnetic attachment \\
+    3.2 & 48  & Check the assemblies when unloading to know their distorsion and mitigate the effects \\
+    3.3 & 24  & Check the assemblies when unloading to know their distorsion and mitigate the effects \\
+    3.4 & 80  & Take seisms into account when reloading distorded assemblies \\
+    3.5 & 20  & Extend PHM to detect the failure, go toward a electromagnetic attachment, improve startup checks \\
+    3.6 & 60  & Check the assemblies when unloading to know their distorsion and mitigate the effects \\
+    3.7 & 63  & Check the assemblies when unloading to know their distorsion and mitigate the effects \\
+    4.1 & 98  & Good testing of the material, regular inspection \\
+    4.2 & 108 & Regular inspection \\
+    4.3 & 63  & Good testing of the material, regular inspection \\
+    4.4 & 96  & Regular inspection \\
+    5.1 & 80  & Regular inspection \\
+    5.2 & 63  & Regular inspection, maintenance training \\
+    5.3 & 28  & Regular inspection, maintenance training, PHM \\
+    5.4 & 27  & Regular inspection, maintenance training, better PHM to limit the maintenance \\
+    5.5 & 180 & Protect the pumps physically \\
+    6.1 & 48  & Inspection, PHM \\
+    6.2 & 80  & Protect from physical threats \\
+    6.3 & 48  & Inspection, PHM \\
+    6.4 & 80  & Protect from physical threats \\
+    7.1 & 27  & Inspection and PHM \\
+    7.2 & 140 & Protect the tank physically \\
+    8.1 & 54  & Check the detectors \\
+    8.2 & 128 & Check the detectors \\
+    8.3 & 21  & Calibrate the detectors \\
+    8.4 & 400 & Calibrate the detectors frequently, use different kind, use other ways to determine reactor power output \\
+    9.1 & 36  & Check the sensors \\
+    9.2 & 64 & Check the sensors \\
+    9.3 & 15  & Calibrate the sensors \\
+    9.4 & 210 & Calibrate the sensors frequently, use different kind, use other ways to determine reactor power output \\
+    10.1 & 63 & Good material testing, inspection and fluence reduction \\
+    10.2 & 8  & Good material testing and inspection and fluence reduction \\
+    11.1 & 24 & Good material testing and inspection and fluence reduction \\
+    11.2 & 300 & Good material and large width, external defense \\
+    11.3 & 18 & Good material testing and inspection and fluence reduction \\
+    11.4 & 200 & Good material and large width, external defense \\
+    12.1 & 16 & Good material testing and inspection and fluence reduction \\
+    12.2 & 240 & Good material and large width, external defense \\
+    12.3 & 18 & Good material testing and inspection and fluence reduction \\
+    12.4 & 270 & Good material and large width, external defense \\
+    \caption{FMEA: RPN and mitigation}\label{tab:fmea_rpn_risk}
+\end{longtable}
+
+
+
+
+
+
+\

@@ -45,7 +45,7 @@ Those three factors give the designers a score, the \gls{rpn}, for each identifi
 RPN = P * S * D
 \end{equation}
 
-The designers can then estimate the need for corrections from the highest impacting failure to the lowest. Important shortcomings of this method are to be noted~\cite{liu2013}. It heavily depends on the designers producing the analysis, and their biases (wishful thinking, knowledge, background, ...). Moreover, it can basically only take into account regular failures, that have happened before, and is not adequate for identifying possible "Black Swan" events. It is also not applicable to an early design stage, and thus can generate costly changes that could have been avoided before the conpetion became too advanced.
+The designers can then estimate the need for corrections from the highest impacting failure to the lowest. Important shortcomings of this method are to be noted~\cite{liu2013}. It heavily depends on the designers producing the analysis, and their biases (wishful thinking, knowledge, background, ...). Moreover, it can basically only take into account regular failures, that have happened before, and is not adequate for identifying possible "Black Swan" events. It is also not applicable to an early design stage, and thus can generate costly changes that could have been avoided before the conpetion became too advanced. Additionally, the coherence of the RPN formula has been debated. Indeed, one can see from table~\ref{tab:fmea_risk} and~\ref{tab:fmea_rpn_risk} that the RPN is higher for a (3,6,6) (P, S, D)-triplet than for a (2,7,7) one, implying that in this specific case, the probability of the event occuring is more important than both the severity and the detectability, which can obviously be contested. This also goes to show the huge impact a optimistic or pessimistic estimation can have on the whole RPN ranking and associated conlusions.
 
 Several other FMEA-based methodologies have been developed over the years, to try and cover the shortcomings of FMEA, some examples being the \gls{fmeca} or the fuzzy rule-based system FMEA~\cite{bowles1995}. If a FMEA is to be performed, it is important for the designers to consider the best FMEA method for their project. A classic FMEA was applied to the case study presented in this paper. Even though it is an imperfect method, it can give, and do give, the designers precious information on a high-level.
 
@@ -86,7 +86,7 @@ According to some literature~\cite{garcia2013}, the reference tables giving the 
         Very high  & The effect can affect both the safety and operation, as the environment, potentially causing damage to property or persons and/or breaking any laws.  & 9 and 10 \\
         High       & Reductions in the power level of the plant and/or weakening the plant safety.  & 7 and 8 \\
         Moderate   & Reduce the system efficiency, generating work stresses which lead the plant to operate in level of risk over of the one in normal condition.  & 4, 5 and 6 \\
-        Minor      & The failure effects don’t interfere in the plant operation, but reduce shortly the system performance.  & 2 and 3 \\
+        Minor      & The failure effects don't interfere in the plant operation, but reduce shortly the system performance.  & 2 and 3 \\
         Remote     & The failure effect is almost not perceived.  & 1 \\
                                      
         \end{tabular}
@@ -101,7 +101,7 @@ According to some literature~\cite{garcia2013}, the reference tables giving the 
         Very high  & The effect can affect the operation, potentially causing damage to property or persons and/or breaking any laws. Off-grid time.  & 9 and 10 \\
         High       & Reductions in the power level of the plant.  & 6, 7 and 8 \\
         Moderate   & Reduce the system efficiency, generating work stresses.  & 5 \\
-        Low        & The failure effects don’t interfere in the plant operation, but reduce shortly the system performance.  & 3 and 4 \\
+        Low        & The failure effects don't interfere in the plant operation, but reduce shortly the system performance.  & 3 and 4 \\
         Minor      & The failure effect is almost not perceived.  & 2 \\
         Remote     & The failure effect is not perceived on the plant power generation.  & 1 \\
                                      
@@ -130,60 +130,6 @@ According to some literature~\cite{garcia2013}, the reference tables giving the 
 \end{table}
 
 
-
-\begin{table}[!htb]
-    \centering
-        \begin{tabular}{ccp{5cm}p{5cm}ccc}
-        \hline
-        ID & Component & Failure & Cause & $P$ & $S$ & $D$ \\ \hline\hline
-        1.1 & \multirow{5}{*}{Fuel Assemblies} & Pin cladding ($< 5\%$) & Local peak power & 8 & 2 & 2 \\
-        1.2 &                                & Pin cladding ($> 10\%$) & Global peak power & 5 & 9 & 2 \\
-        1.3 &                                & Assemblies distorsion & Wear & 5 & 4 & 4 \\
-        1.4 &                                & Assemblies handling & Bad identification & 3 & 8 & 4 \\
-        1.5 &                                & Assemblies handling & Head damage & 5 & 2 & 10 \\ \hline
-        2.1 & \multirow{5}{*}{Primary pumps}  & Partial loss of capability for one pump & Wear & 4 & 5 & 3 \\
-        2.2 &                                & Complete loss of capability for one pump & Bad maintenance & 3 & 6 & 2 \\
-        2.3 &                                & Partial loss of capability for all pumps & Wear and bad maintenance & 2 & 9 & 1 \\
-        2.4 &                                & Complete loss of capability for all pumps & Repeated bad maintenance & 1 & 9 & 1 \\
-        2.5 &                                & Complete loss of capability for all pumps & External aggression & 1 & 9 & 1 \\ \hline
-        3.1 & \multirow{7}{*}{Control rods} & One rod does not fall & Gripped mechanical release & 3 & 6 & 4 \\
-        3.2 &                               & One rod fall too slowly & Distorsion & 6 & 4 & 2 \\
-        3.3 &                               & One rod gets stuck in & Distorsion & 4 & 2 & 3 \\
-        3.4 &                               & One rod gets stuck in & Seism & 2 & 5 & 8 \\
-        3.5 &                               & More than one rod don't fall & Gripped mechanical release & 2 & 10 & 1 \\
-        3.6 &                               & More than one rods fall too slowly & Distorsion & 5 & 6 & 2 \\
-        3.7 &                               & More than one rods get stuck in & Distorsion & 3 & 7 & 3 \\ \hline
-        \end{tabular}
-        \caption{FMEA}\label{tab:fmea_risk}
-\end{table}
-
-
-
-\begin{table}[!htb]
-    \centering
-        \begin{tabular}{ccp{10cm}}
-        \hline
-        ID & RPN & Mitigation \\ \hline\hline
-        1.1 & 32 & Better material, stay in the normal operation range \\
-        1.2 & 90 & Better material, stay in the normal operation range \\
-        1.3 & 80 & Better detectability and positioning in the core \\
-        1.4 & 96 & Better cameras and labels \\
-        1.5 & 100 & Solid assembly heads, operator training \\
-        2.1 & 60 & Better \gls{phm} \\
-        2.2 & 36 & Better maintenance and checks \\
-        2.3 & 18 & Better PHM, maintenance and checks \\
-        2.4 & 9 & Better PHM to limit maintenance \\
-        2.5 & 9 & Protect the pumps physically \\
-        3.1 & 72 & Extend PHM to detect the failure, go toward a electromagnetic attachment \\
-        3.2 & 48 & Check the assemblies when unloading to know their distorsion and mitigate the effects \\
-        3.3 & 24 & Check the assemblies when unloading to know their distorsion and mitigate the effects \\
-        3.4 & 80 & Take seisms into account when reloading distorded assemblies \\
-        3.5 & 20 & Extend PHM to detect the failure, go toward a electromagnetic attachment, improve startup checks \\
-        3.6 & 60 & Check the assemblies when unloading to know their distorsion and mitigate the effects \\
-        3.7 & 63 & Check the assemblies when unloading to know their distorsion and mitigate the effects \\
-        \end{tabular}
-        \caption{FMEA: RPN and mitigation}\label{tab:fmea_rpn_risk}
-\end{table}
 
 
 
