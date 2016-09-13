@@ -1,0 +1,190 @@
+%
+% File: chap02.tex
+%
+\let\textcircled=\pgftextcircled
+\chapter{High-level failure identification}
+\label{chap:rbd_fmea}
+
+\newacronym{fmea}{FMEA}{Failure Modes and Effects Analysis}
+\newacronym{fmeca}{FMECA}{Failure Modes, Effects and Criticality Analysis}
+\newacronym{rbd}{RBD}{Reliability Block Diagram}
+\newacronym{rpn}{RPN}{Risk Priority Number}
+\newacronym{phm}{PHM}{Prognostic Health Management}
+
+\initial{H}igh-level reasoning about a system necessitates to know how the system's component interact with one another. This allows for the estimation of the impact of different component failures on the whole system. System mapping can be achieved through what is known as the \gls{rbd}. Armed with that graphical visualisation of the system at hand, it is possible to perform \gls{fmea} to estimate how it might fail and an associated score.
+
+\section{Reliability Block Diagram}
+\label{sec:rbd}
+
+In this paper, RBD will only be used as a graphical tool, a way to communicate about the system components and their interactions. It can however also be used to compute unreliability probability, by computing the probability of failure of each component within the system, in series, parallels or in a hybrid mix. This is mostly useful for simple straightforward system. The main interest of RBD in our case study is to define the system and various interactions, and get a first feel for risk and reliability issues.
+
+The diagrams are presented in appendix~\ref{app:app01}. In order to facilitate the reading, the case study has been divided in four systems, as defined in section~\ref{sec2:case_study}: primary, secondary, tertiary and structure (figure~\ref{fig:rbd_global}). For each of those systems, the redundant components are indicated by a block instead of a simple rectangle. Those blocks are then analyzed in more details in subsequent figures.
+
+
+\section{Failure Modes and Effects Analysis}
+\label{sec:fmea}
+
+Failure Modes and Effects Analysis is a method that ultimately allows designers to identify weaknesses in their systems, by taking into account the probability of a failure to occur ($P$), the severity of the consequences on the system ($S$) and the detectability ($D$). Let us first define these different factors.
+
+\begin{description}
+
+\item[Probability (P)]
+On a scale from 0 to 10, this represents the probability of the given failure happening in the considered component, 1 being almost never and 10 being all the time.
+
+\item[Severity (S)]
+On a scale from 0 to 10, this represents the consequence of the component failure on the whole system, 0 being no consequence and 10 being catastrophic failure.
+
+\item[Detectability (D)]
+On a scale from 0 to 10, this represents the probability to detect the failure and to fix or mitigate the effects, 0 being easy detection and repair and 10 being no possible detection nor action.
+
+\end{description}
+
+Those three factors give the designers a score, the \gls{rpn}, for each identified potential failure throughout the system.
+
+\begin{equation}
+RPN = P * S * D
+\end{equation}
+
+The designers can then estimate the need for corrections from the highest impacting failure to the lowest. Important shortcomings of this method are to be noted~\cite{liu2013}. It heavily depends on the designers producing the analysis, and their biases (wishful thinking, knowledge, background, ...). Moreover, it can basically only take into account regular failures, that have happened before, and is not adequate for identifying possible "Black Swan" events. It is also not applicable to an early design stage, and thus can generate costly changes that could have been avoided before the conpetion became too advanced.
+
+Several other FMEA-based methodologies have been developed over the years, to try and cover the shortcomings of FMEA, some examples being the \gls{fmeca} or the fuzzy rule-based system FMEA~\cite{bowles1995}. If a FMEA is to be performed, it is important for the designers to consider the best FMEA method for their project. A classic FMEA was applied to the case study presented in this paper. Even though it is an imperfect method, it can give, and do give, the designers precious information on a high-level.
+
+This study will present a FMEA performed with relation to risks to the system. In the nuclear industry, this is the main one, since it directly impacts communication to the public.
+
+Another FMEA could have been performed with relation to reliability, most useful to the plant operators. The major parameter impacted betwen the two different analyses is the severity. For example, the loss of a generator might be given a 8 on the 10-points scale in the "reliability" study, yet only a 1 in the "risk" study.
+
+This categorization was chosen not to be explicited in details in this paper for clarity reasons. The risk FMEA englobes the reliability ones, with of course a different emphasis.
+
+According to some literature~\cite{garcia2013}, the reference tables giving the meaning of each 10-point scale for the Probability, Severity (risk-oriented and reliability-oriented for information) and Detectability parameters score are displayed respectively in tables~\ref{tab:probability},~\ref{tab:severity_risk},~\ref{tab:severity_reliability} and~\ref{tab:detectability}.
+
+
+\begin{table}[!htb]
+    \centering
+        \begin{tabular}{ ccc }
+        \hline
+        Probability & Index & Probability estimate \\ \hline\hline
+        \multirow{2}{*}{Inevitable} & 10 & $\geq 0.5$\\
+                                    & 9  & $0.1$ \\
+        \multirow{2}{*}{Frequent}   & 8  & $0.05$\\
+                                    & 7  & $0.02$ \\
+        \multirow{3}{*}{Occasional}   & 6  & $0.01$\\
+                                    & 5  & $0.005$ \\
+                                    & 4  & $0.001$ \\
+        \multirow{2}{*}{Minor}   & 3  & $0.0005$\\
+                                    & 2  & $0.0001$ \\
+        Exceptionally & 1  & $< 0.0001$ \\
+                                     
+        \end{tabular}
+        \caption{Probability index}\label{tab:probability}
+\end{table}
+
+\begin{table}[!htb]
+    \centering
+        \begin{tabular}{ cp{10cm}c }
+        \hline
+        Severity & Characteristics & Index \\ \hline\hline
+        Very high  & The effect can affect both the safety and operation, as the environment, potentially causing damage to property or persons and/or breaking any laws.  & 9 and 10 \\
+        High       & Reductions in the power level of the plant and/or weakening the plant safety.  & 7 and 8 \\
+        Moderate   & Reduce the system efficiency, generating work stresses which lead the plant to operate in level of risk over of the one in normal condition.  & 4, 5 and 6 \\
+        Minor      & The failure effects don’t interfere in the plant operation, but reduce shortly the system performance.  & 2 and 3 \\
+        Remote     & The failure effect is almost not perceived.  & 1 \\
+                                     
+        \end{tabular}
+        \caption{Detectability index for a risk-centered method}\label{tab:severity_risk}
+\end{table}
+
+\begin{table}[!htb]
+    \centering
+        \begin{tabular}{ cp{10cm}c }
+        \hline
+        Severity & Characteristics & Index \\ \hline\hline
+        Very high  & The effect can affect the operation, potentially causing damage to property or persons and/or breaking any laws. Off-grid time.  & 9 and 10 \\
+        High       & Reductions in the power level of the plant.  & 6, 7 and 8 \\
+        Moderate   & Reduce the system efficiency, generating work stresses.  & 5 \\
+        Low        & The failure effects don’t interfere in the plant operation, but reduce shortly the system performance.  & 3 and 4 \\
+        Minor      & The failure effect is almost not perceived.  & 2 \\
+        Remote     & The failure effect is not perceived on the plant power generation.  & 1 \\
+                                     
+        \end{tabular}
+        \caption{Detectability index for a reliability-centered method}\label{tab:severity_reliability}
+\end{table}
+
+\begin{table}[!htb]
+    \centering
+        \begin{tabular}{ ccc }
+        \hline
+        Detectability & Index & Detectability estimate \\ \hline\hline
+        Very high                   & 1  & 86\% to 100\% \\
+        \multirow{2}{*}{High}       & 2  & 76\% to 85\% \\
+                                    & 3  & 66\% to 75\% \\
+        \multirow{3}{*}{Moderate}   & 4  & 56\% to 65\% \\
+                                    & 5  & 46\% to 55\%\\
+                                    & 6  & 36\% to 45\% \\
+        \multirow{2}{*}{Low}        & 7  & 26\% to 35\% \\
+                                    & 8  & 13\% to 25\%\\
+        \multirow{2}{*}{Minor}      & 9  & 6\% to 15\% \\
+                                    & 10 & 0\% to 6\% \\
+                                     
+        \end{tabular}
+        \caption{Detectability index}\label{tab:detectability}
+\end{table}
+
+
+
+\begin{table}[!htb]
+    \centering
+        \begin{tabular}{ccp{5cm}p{5cm}ccc}
+        \hline
+        ID & Component & Failure & Cause & $P$ & $S$ & $D$ \\ \hline\hline
+        1.1 & \multirow{5}{*}{Fuel Assemblies} & Pin cladding ($< 5\%$) & Local peak power & 8 & 2 & 2 \\
+        1.2 &                                & Pin cladding ($> 10\%$) & Global peak power & 5 & 9 & 2 \\
+        1.3 &                                & Assemblies distorsion & Wear & 5 & 4 & 4 \\
+        1.4 &                                & Assemblies handling & Bad identification & 3 & 8 & 4 \\
+        1.5 &                                & Assemblies handling & Head damage & 5 & 2 & 10 \\ \hline
+        2.1 & \multirow{5}{*}{Primary pumps}  & Partial loss of capability for one pump & Wear & 4 & 5 & 3 \\
+        2.2 &                                & Complete loss of capability for one pump & Bad maintenance & 3 & 6 & 2 \\
+        2.3 &                                & Partial loss of capability for all pumps & Wear and bad maintenance & 2 & 9 & 1 \\
+        2.4 &                                & Complete loss of capability for all pumps & Repeated bad maintenance & 1 & 9 & 1 \\
+        2.5 &                                & Complete loss of capability for all pumps & External aggression & 1 & 9 & 1 \\ \hline
+        3.1 & \multirow{7}{*}{Control rods} & One rod does not fall & Gripped mechanical release & 3 & 6 & 4 \\
+        3.2 &                               & One rod fall too slowly & Distorsion & 6 & 4 & 2 \\
+        3.3 &                               & One rod gets stuck in & Distorsion & 4 & 2 & 3 \\
+        3.4 &                               & One rod gets stuck in & Seism & 2 & 5 & 8 \\
+        3.5 &                               & More than one rod don't fall & Gripped mechanical release & 2 & 10 & 1 \\
+        3.6 &                               & More than one rods fall too slowly & Distorsion & 5 & 6 & 2 \\
+        3.7 &                               & More than one rods get stuck in & Distorsion & 3 & 7 & 3 \\ \hline
+        \end{tabular}
+        \caption{FMEA}\label{tab:fmea_risk}
+\end{table}
+
+
+
+\begin{table}[!htb]
+    \centering
+        \begin{tabular}{ccp{10cm}}
+        \hline
+        ID & RPN & Mitigation \\ \hline\hline
+        1.1 & 32 & Better material, stay in the normal operation range \\
+        1.2 & 90 & Better material, stay in the normal operation range \\
+        1.3 & 80 & Better detectability and positioning in the core \\
+        1.4 & 96 & Better cameras and labels \\
+        1.5 & 100 & Solid assembly heads, operator training \\
+        2.1 & 60 & Better \gls{phm} \\
+        2.2 & 36 & Better maintenance and checks \\
+        2.3 & 18 & Better PHM, maintenance and checks \\
+        2.4 & 9 & Better PHM to limit maintenance \\
+        2.5 & 9 & Protect the pumps physically \\
+        3.1 & 72 & Extend PHM to detect the failure, go toward a electromagnetic attachment \\
+        3.2 & 48 & Check the assemblies when unloading to know their distorsion and mitigate the effects \\
+        3.3 & 24 & Check the assemblies when unloading to know their distorsion and mitigate the effects \\
+        3.4 & 80 & Take seisms into account when reloading distorded assemblies \\
+        3.5 & 20 & Extend PHM to detect the failure, go toward a electromagnetic attachment, improve startup checks \\
+        3.6 & 60 & Check the assemblies when unloading to know their distorsion and mitigate the effects \\
+        3.7 & 63 & Check the assemblies when unloading to know their distorsion and mitigate the effects \\
+        \end{tabular}
+        \caption{FMEA: RPN and mitigation}\label{tab:fmea_rpn_risk}
+\end{table}
+
+
+
+

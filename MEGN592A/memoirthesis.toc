@@ -1,0 +1,41 @@
+\select@language {english}
+\par \penalty \@M \unhbox \voidb@x \hbox {}\hfill {\nag@@warning@vi \bfseries Page}\par \penalty \@M 
+\contentsline {chapter}{List of Tables}{v}{section*.2}
+\contentsline {chapter}{List of Figures}{vii}{section*.3}
+\contentsline {chapter}{List of Acronyms}{ix}{section*.4}
+\contentsline {chapter}{\chapternumberline {1}Introduction}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}A brief design introduction}{1}{section.1.1}
+\contentsline {section}{\numberline {1.2}A bit of history}{2}{section.1.2}
+\contentsline {subsection}{\numberline {1.2.1}A focus on SUPERPHENIX}{3}{subsection.1.2.1}
+\contentsline {subsection}{\numberline {1.2.2}International feedback}{5}{subsection.1.2.2}
+\contentsline {subsubsection}{\numberline {1.2.2.1}American power plants}{5}{subsubsection.1.2.2.1}
+\contentsline {subsubsection}{\numberline {1.2.2.2}French power plants}{5}{subsubsection.1.2.2.2}
+\contentsline {subsubsection}{\numberline {1.2.2.3}Russian power plants}{6}{subsubsection.1.2.2.3}
+\contentsline {subsubsection}{\numberline {1.2.2.4}Japanese power plants}{6}{subsubsection.1.2.2.4}
+\contentsline {chapter}{\chapternumberline {2}Case study}{7}{chapter.2}
+\contentsline {section}{\numberline {2.1}\gls {astrid}}{7}{section.2.1}
+\contentsline {section}{\numberline {2.2}Case study}{8}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Generic}{9}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}Reactor core}{9}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.3}Reactor structure}{10}{subsection.2.2.3}
+\contentsline {subsection}{\numberline {2.2.4}Primary circuit components}{11}{subsection.2.2.4}
+\contentsline {subsection}{\numberline {2.2.5}Secondary circuit components}{11}{subsection.2.2.5}
+\contentsline {subsection}{\numberline {2.2.6}Tertiary circuit components}{12}{subsection.2.2.6}
+\contentsline {chapter}{\chapternumberline {3}Identification of potential system failures}{13}{chapter.3}
+\contentsline {section}{\numberline {3.1}Primary circuit components failure}{14}{section.3.1}
+\contentsline {section}{\numberline {3.2}Secondary circuit components failure}{15}{section.3.2}
+\contentsline {section}{\numberline {3.3}Tertiary circuit components failure}{15}{section.3.3}
+\contentsline {section}{\numberline {3.4}Reactor structure components failure}{16}{section.3.4}
+\contentsline {section}{\numberline {3.5}Aggressions}{16}{section.3.5}
+\contentsline {chapter}{\chapternumberline {4}High-level failure identification}{17}{chapter.4}
+\contentsline {section}{\numberline {4.1}Reliability Block Diagram}{17}{section.4.1}
+\contentsline {section}{\numberline {4.2}Failure Modes and Effects Analysis}{18}{section.4.2}
+\contentsline {appendix}{\chapternumberline {A}Reliability Block Diagram}{23}{appendix.A}
+\contentsline {section}{\numberline {A.1}Global system}{23}{section.A.1}
+\contentsline {section}{\numberline {A.2}Primary system}{25}{section.A.2}
+\contentsline {subsection}{\numberline {A.2.1}Primary system redundancies}{26}{subsection.A.2.1}
+\contentsline {section}{\numberline {A.3}Secondary system}{31}{section.A.3}
+\contentsline {subsection}{\numberline {A.3.1}Secondary system redundancies}{32}{subsection.A.3.1}
+\contentsline {section}{\numberline {A.4}Tertiary system}{35}{section.A.4}
+\contentsline {subsection}{\numberline {A.4.1}Tertiary system redundancies}{36}{subsection.A.4.1}
+\contentsline {chapter}{Bibliography}{39}{section*.7}

@@ -1,0 +1,120 @@
+%
+% File: chap02.tex
+%
+\let\textcircled=\pgftextcircled
+\chapter{Identification of potential system failures}
+\label{chap:potential_failures}
+
+\initial{B}ased on the historical data gathered, from SFRs design and other nuclear power generation design, a list of common macro failure modes can be computed. Different serious failures can now be identified, in order to assess their impact on the plant. Five main categories of impacting events have been considered:
+
+\begin{itemize}
+\item Primary circuit component functional failure,
+\item Secondary circuit component functional failure,
+\item Tertiary circuit component functional failure,
+\item Reactor structure failure,
+\item Aggressions.
+\end{itemize}
+
+Generic components (e.g. pipes, valves) failures can by definition happen in any subsystem, and thus will be considered accross all of them.
+
+The following sections present a non-echaustive list of different past and potential failures, and describe succinctly the foreseen impact on the plant safety and reliability. Three main categories can be seen: the failures which do not lead to a catastrophic failure by themselves but are likely aggravating factors in the event of another issue, the failures which are mainly responsible for a disastrous event, and the failures which cause reliability-related issues.
+
+This section does not fully consider the system as complex, its goal is to simply give a feel for the things that can go, and have gone wrong, in the system at a macro-level.
+
+
+\section{Primary circuit components failure}
+\label{sec3:primary_failures}
+
+All the components in the primary circuit subsystem can fail, with varying probabilities, and they all can have various impacts on the whole system and the environment outside the system. To simplify this macrostudy, only the main components can be looked at to identify source of failures and their consequences. Those main components comprise the core, the primary mechanical pump, the decay heat removal system anf the intermediate heat exchanger.
+
+
+The core will be discretized into the fuel assemblies, the control rods, the detectors and the fuel handling procedures. When looking at each of this components separately and applying past events or potential failures considered, one can estimate roughly the potential consequences on the system.
+
+For example, a complete fuel cladding failure means that the radioactive materials held in the assemblies can be released in the primary circuit, the equivalent of a meltdown. A partial fuel caldding failure will not by itself cause a meltdown, but it can and will be an aggravating factor if something else happens. A problem that has been on the rise in some nuclear plants is the distorsion of assemblies, slowing the insertion of the control rods and potentially preventing an automatic shutdown of the reactor, and impacting its neighboring assemblies. It also causes a reliability issue, since the reloading of a distorted assembly is more difficult and time-consuming. Other issues can appear, notably a detector failure, causing the operators to operate blindly, or worse, a detector malfunction, causing the operators to misinterpret the actual state of the core. Moreover, human errors are not to be forgotten, as the Dampierre's reactor reloading error shows~\cite{verdier2005}. A mistake made when handling fuel can create a criticality event and put the workers and the environment at risk. Several other events have also been observed in reactor cores: a missing fuel pin in an assembly, a control rods pin stuck in another one, ... Those incidents did not cause the safety analyses to be proven wrong, thanks to the consequent uncertainties margin considered, but they make it more difficult to argue for a relaxation of those high margins.
+
+Even though the core is a central element in a nuclear reactor, it can be seen that a failure in this subsystem would usually not by itself lead to a full meltdown of the fuel. Indeed, a loss of coolant is often needed for that to happen.
+
+A failure in one of the other primary system components can cause a loss of cooling abilities and start a core meltdown. Redundancy, maintenance and emergency procedures are primordial in this part of the design.
+
+The mechanical pump failure can indeed prevent the sodium coolant to circulate though the core, and thus potentially melting down the core. However, as tested in EBR-II, the negative void coefficient displayed by the selected core would shut down the reaction before the fuel assemblies melt down. The decay heat would still need to be dealt with though. A failure of the decay heat removal system might thus cause a meltdown of the fuel, having lost the cooling abilities. This is partly what happened in March 2011 at Fukushima, a loss of power caused a loss of the decay heat removal systems, and seawater had to be used on the core to cool it down.
+If the intermediate heat exchanger failed, in case of a pipe rupture, the intermediate system (between the primary and secondary circuit) can be contaminated, and there is a loss of cooling abilities, potentially causing a meltdown.
+
+Most of the primary system components are linked to the core cooling and moderation. Hence, if they fail, they are likely to have a consequential impact on the core, often leading to a meltdown.
+
+%\begin{table}[!htb]
+%    \begin{center}
+%        \begin{tabular}{ | l | p{5cm} | p{5cm} |}
+%        \hline
+%        Component & Failure & Consequences \\ \hline
+%        \multirow{6}{*}{Core} & \cellcolor{LightCoral} Complete fuel cladding failure & Loss of containment, fuel in the primary circuit. \\ \rule{0pt}{5ex}
+%                              & \cellcolor{LightSalmon} Partial fuel cladding failure & None direct. Fragilized cladding could however be an aggravating factor in case of an accident. \\ \rule{0pt}{5ex}
+%                              & \cellcolor{LightSalmon} Assemblies distorsion & Could prevent the insertion of the control rods, thus the automatic shutdown of the reactor. Also a reliability issue, the %reloading being more difficult and time-consuming. \\ \rule{0pt}{5ex}
+%                              & \cellcolor{LightSalmon} Control rods failure & If the mechanism of one or several control rods does not work properly, the automatic shutdown might not happen. \\ \rule{0pt}{5ex}
+%                              & \cellcolor{LightCoral} Fuel reload error & Early core divergence, criticality accident. \\ \rule{0pt}{5ex}
+%                              & \cellcolor{LightSalmon} Detector failure in operation & Core surveillance compromised, operating blind, some safety systems offline. \\ \rule{0pt}{5ex}
+%                              & \cellcolor{LightCyan} Detector failure at startup & Core surveillance compromised, start-up blind, some safety systems offline. \\ \hline
+%        Primary mechanical pump & \cellcolor{LightCoral} Pump failure & This causes the loss of the sodium coolant. The core design is primordial here (void coefficient). Potential meltdown. \\ \hline
+%        Decay heat removal & \cellcolor{LightCoral} System failure & If this system fails, the decay heat cannot be removed after shutdown. During an accidental transient, this can become problematic. Potential meltdown. \\ \hline   
+%        Intermediate heat exchanger & \cellcolor{LightCoral} Pipe rupture & Contamination of intermediate system and loss of heat removal abilities. Potential meltdown and contamination. \\ \hline
+%        \end{tabular}
+%        \caption{Primary components failure consequences}\label{tab:c3t1}
+%    \end{center}
+%\end{table}
+
+
+
+\section{Secondary circuit components failure}
+\label{sec3:secondary_failures}
+
+
+The secondary system is possibly even more impacting to the plant safety than the primary system. Most failures on this system would cause a loss of coolant, or a diminution of the cooling abilities. If the coolant is lost, then the core heat cannot be controlled and the fuel cladding will start to melt. As said previously, this adds an emphasis on the need for maintenance and redundancy and emergency systems and procedures.
+
+The secondary system is defined by the secondary eletromagnetic pump and the steam generator. It contains the secondary circuit sodium, used to transfer heat from the primary circuit sodium to the tertiary circuit water. Any failure in this circuit endangers the whole system safety, by potentially causing a meltdown due to a loss of coolant abilities. A leak in this subsystem means that the secondary system is not able to get as much heat off of the primary circuit, and it may also cause a contamination, the sodium in the secondary circuit being weakly activated when passing through the intermediate heat exchanger. In the same vein, a failure of the pump means that sodium does not get to the heat exchanger, and cause a loss of cooling abilities. The core would still be immerged, until the temperature reaches the boiling point of sodium and starts to uncover the core. This is why a specific core design with a negative void coefficient is important.
+
+%\begin{table}[!htb]
+%    \begin{center}
+%        \begin{tabular}{ | l | p{5cm} | p{5cm} |}
+%        \hline
+%        Component & Failure & Consequences \\ \hline
+%        Secondary EM pump & \cellcolor{LightCoral} Pump failure & Loss of heat removal abilities. Potential meltdown. \\ \hline
+%        \multirow{2}{*}{Steam generator} & \cellcolor{LightCoral} Pipe rupture & Contamination of secondary system and loss of heat removal abilities. Potential meltdown. \\ \rule{0pt}{5ex}
+%                              & \cellcolor{LightCoral} Function failure & Loss of heat removal abilities. Potential meltdown. \\ \hline
+%        \multirow{2}{*}{Electricity generation} & \cellcolor{LightCyan} Turbine malfunction & Loss of electrical power generation. No output. \\ \rule{0pt}{5ex}
+%                              & \cellcolor{LightCyan} Generator malfuntion & Loss of electrical power generation. No output. \\ \hline
+%        Condenser & \cellcolor{LightCoral} Condenser failure & Vapor in the pump, potential steam generator failure. \\ \hline
+%        Heat sink & \cellcolor{LightCoral} Unavailability & Condenser failure. \\ \hline
+%        \end{tabular}
+%        \caption{Secondary components failure consequences}\label{tab:c3t2}
+%    \end{center}
+%\end{table}
+
+
+
+\section{Tertiary circuit components failure}
+\label{sec3:tertiary_failures}
+
+The tertiary system does not contain sodium, but water, and is used primarily for electricity generation. It is also used for secondary sodium cooling. So, two subsystems can be considered here, the electricity generation system, containing the turbine and the generator, and the secondary/tertiary heat exchange system, containing the heat sink, the condenser, and the tertiary system pump. A failure in the former would cause a loss of electricity generation, i.e. a reliability issue, but would have no consequences on the reactor integrity. A failure in the latter would cause a lack of cooling of the secondary sodium, which would in turn impact negatively the heat exchange between the primary and secondary circuit. For example, a leak in the condenser, or a problem with the heat sink, could mean that vapor reaches the tertiary pump and fails it completely, hence no water sent to the steam generator and poor heat exchange capabilities.
+
+Once again, this could be mitigated only with good maintenance, and most importantly redundancies in all the systems.
+
+
+
+\section{Reactor structure components failure}
+\label{sec3:structure_failures}
+
+The reactor structure integrity is extremely important when it comes to radioactive contamination. The different vessels act as containment. In the eventuality of a large breach, or a small breach left unchecked, the core can even be uncovered and melt down. Reactor vessel integrity issues have been detected in the past~\cite{nrc200201} without safety consequences, but with high cost in termsof lost production time. The case study design has the added difficulty of having to prevent sodium interaction with air and water. One of the main source of failure for the reactor structure is aging, especially within a highly radioactive environment. 
+
+It is quite difficult to add redundancy in those cases. Different systems are thought of in case of a failure and a meltdown, e.g the core catcher. But these components require extensive surveillance and state-of-the-art conception and materials at the design stage.
+
+
+\section{Aggressions}
+\label{sec4:aggressions}
+
+When considering aggressions to the nuclear power plant, two types are discerned and analyzed, external and internal.
+
+In the external category, the common-cause failure mode are considered. Those events usually happen site-wide, such as a flood or earthquake, or with the potential of spreading, such as fire. In a sodium-cooled power plant, fire is especially a concern, as demonstrated in the design operations feedback. Terrorism is also considered in this category, nuclear power plant being an ideal target for an attack. Plane crash, bomb and hacking should thus be taken into account.
+
+Those external aggressions have a direct impact on the plant component, as well as an indirect impact, by preventing repairs or human intervention. For example, a flood can prevent repair crew and materials from getting on-site. An example of external aggression is the accident that happened in Fukushima. A seism caused all the powered unit to shut down quickly, as it was designed to. However, the flooding caused by the tsunami that followed was not considered, and caused a complete loss of on-site power, including the backup generators. The redundancy in this case existed, but was not designed to withstand a "Black Swan" event.
+
+The internal threat has been defined as the failure of a component affecting an uncoupled other, and human error, whether it is operations, maintenance, engineering or manufacturing. Three Miles island is an example of such event, where human engineering caused an erroneous interpretations from the operators who then followed incomplete procedures to counter automatic plant actions. This category will be difficult to address fully, and design should aim at diminishing the amount of procedures by increasing the number of passive safety systems, and avoiding complexity when possible. Surveillance systems should also be made redundant in the design part to prevent erroneous readings and interpretations in the control room and during maintenance.
+

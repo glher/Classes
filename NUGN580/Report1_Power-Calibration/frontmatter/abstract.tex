@@ -1,0 +1,28 @@
+%
+% File: abstract.tex
+% Author: V?ctor Bre?a-Medina
+% Description: Contains the text for thesis abstract
+%
+% UoB guidelines:
+%
+% Each copy must include an abstract or summary of the dissertation in not
+% more than 300 words, on one side of A4, which should be single-spaced in a
+% font size in the range 10 to 12. If the dissertation is in a language other
+% than English, an abstract in that language and an abstract in English must
+% be included.
+
+\chapter*{Abstract}
+\begin{SingleSpace}
+\initial{L}icensed reactors have to respect a power limit in terms of thermal output, specified in the licensing documents. The thermal power output is correlated to the measured neutron leakage. Hence, the power instruments must be adjusted so that the indicated thermal power output equals the actual thermal power output. In order to do so, the actual power output needs to be measured and used to calibrate the instruments. This was performed on September 7th, 2016, at the GSTR facility.
+
+Several methods can be applied to measure the actual thermal power output. The method mostly used in nuclear power plants is the calorimetric power calibration. The GSTR does not have a primary water flow instrument, so the mass flow rate usually measured to compute the heat transferred cannot be used. Instead, we use the heat capacity to determine the change in heat in a given amount of water, the temperature varying.
+
+To measure the temperature in the tank water, two sensors are used. This will allow us to compute an average. A water mixer is also installed in the tank, to compensate for the absence of cooling and support natural thermal convection. This allows us to get better temperature reading by avoiding stagnant water around the sensors. The calibration needs the system to be isolated, thus the cooling system is turned off and the discharge valves are closed. The temperature will be scrutinized and the reactor will shut down if it reaches 60\degree C.
+
+After the reactor reaches a given thermal power output, according to the different detectors to be calibrated, the temperature measurements are taken every two minutes. This allows us to obtain the slope for each temperature sensors and using the net constant of the GSTR, corrected for the water level in the tank, one can compute the actual power output. We see in this report that at an aimed 850 kW of thermal power, the actual thermal power output measured is 910 kW.
+
+All three detectors in the reactor (NM1000, NPP1000 and NP1000) display a lower than measured thermal power output (respectively 840, 870 and 850 kW versus 910 kW, or approximately -7\%). This discrepancy can be caused by badly calibrated instruments. In that case, the three detectors will need to be re-calibrated soon in order to give the operators the correct thermal power output, and not be in violation of the GSTR license. Other causes could be thought of to explain this difference. One of them is a quite new 8 inches beam tube, which might have been isolating some water and thus lower the actual amount of water in the tank. However, a quick calculation shows that this is unlikely to be the cause, at least by itself. Another potential cause to explain at least part of the difference could be the measurement uncertainties in the system.
+
+The instruments have not been adjusted following this experiment, because of time-constraints and because an official calibration was already scheduled. This second calibration was performed on September 8th, 2016~\cite{reactor02}. It showed similar results, all power instruments reading lower than the actual measured power. The power channels were thus adjusted and they are now all correctly calibrated.
+\end{SingleSpace}
+\clearpage

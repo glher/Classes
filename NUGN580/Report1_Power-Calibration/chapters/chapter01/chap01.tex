@@ -1,0 +1,92 @@
+%
+% File: chap01.tex
+%
+\let\textcircled=\pgftextcircled
+\chapter{Theory}
+\label{chap:intro}
+
+\initial{L}icensed reactors have to respect a power limit in terms of thermal output, specified in the licensing documents. The thermal power output is correlated to the measured neutron leakage. Hence, the power instruments must be adjusted so that the indicated thermal power output equals the actual thermal power output. In order to do so, the actual power output needs to be measured and used to calibrate the instruments.
+
+In the GSTR, three detectors are able to give the thermal power output of the reactor based on the neutron flux, the NM1000, NP1000 and NPP1000. These are the instruments we aim at calibrating in this experiment, displayed in appendix~\ref{app:app03}.
+
+The theory and procedure is issued from handouts from the USGS-Reactor Lab course at the Colorado School of Mines~\cite{reactor01}.
+
+%=======
+\section{Power calibration}
+\label{sec:powercalib}
+
+Several methods can be applied to measure the actual thermal power output. The method mostly used in nuclear power plants is the calorimetric power calibration. This consists of measuring the heat transferred to the tank water:
+
+\begin{equation}\label{eq1}
+Q' = m'\Delta h
+\end{equation}
+
+The mass flow rate can be easily measured by flow sensors, and the enthalpy can be determined from pressure, temperature and steam quality (two phases).
+
+\section{Application to the GSTR}
+
+Unfortunately, the GSTR does not have a primary water flow sensor, hence the water flow rate cannot be used. Instead, heat capacity is used to determine the change in heat in a known amount of water as the temperature changes:
+
+
+\begin{equation}\label{eq2}
+Q = \sum{(m_i c_i)}\Delta T
+\end{equation}
+
+In order to use this method, one has to assume that the reactor tank is thermally insulated from its surrounding during the time of the measurement, approximately 45 minutes. The water flow in and out of the reactor has to be stopped, the cooling and purification systems are thus turned off. The lights inside the tank are also turned off. While of low energy, only 60W, they can still have an impact on the temperature sensors. To avoid stagnant water around the temperature sensors and support natural convection, a water mixer is installed. Since we are going to run the reactor with no cooling system for the calibration, it is important to start at a low water temperature.
+
+Due to an issue with the original tank, the GSTR has the particularity of having a newer second tank inside the designed one, with an air gap in between the two. This, even though it was not the objective, allows for a better insulation of the water in the tank.
+
+The GSTR has an approved net heat constant of 28.1\degree C per MWh. This heat constant varies slightly with the mass of water in the tank, approximately 0.35\% per inch. Before starting the power calibration, we can compute this datum.
+
+In our case, we know that the water level is 13 inches below the upper lip of the tank. So it is possible to read from table~\ref{tab:corr} the value for the adjusted heat constant. In our case, $H = 28.396$.
+
+Then, the slopes $S_{i,j}$ can be computed, with i the sensor number and j the time point:
+
+\begin{equation}\label{eq3}
+S_{i,j} = \frac{y_{i,j} - y_{i,0}}{x_{i,j} - x_{i,0}}
+\end{equation}
+
+We then only need to make sure the unit conversion are made, by multiplying by 1000 for MW to kW and by 60 for minutes to hours, and we can finally compute the measured thermal power output:
+
+\begin{equation}\label{eq4}
+P_{kW} = \frac{\sum\limits_{i=1}^{N}{\frac{1000*60*S_{i,j}}{H}}}{N}
+\end{equation}
+
+
+\section{Procedure}
+
+Now that the calculations are ready, we need to measure our unknowns. Several steps are important:
+
+\begin{enumerate}
+\item Preparation
+\item Calibration
+\item Adjustment
+\end{enumerate}
+
+\subsection{Preparation}
+
+This step traces all the necessary actions to take before starting up the reactor. As seen previously, the tank water level should be adjusted to be as close as possible to 10 inches below the upper lip of the tank. Since tank water removal is not designed in the TRIGA reactors, one needs to be careful or risk overfilling the tank. The water must be cooled down, to at least 25\degree C. In our calibration, the water temperature was around 17\degree C at startup.
+
+As discussed, to help create a flow within the tank, a water mixer is to be installed. Moreover, obviously, a second temperature probe will be inserted in the tank. This sensor should be held in place so as to not mess with the measurements by being moved by currents.
+
+The lights can be turn off. They would not be significantly impacting the measurements, but it is an easy steps to take to improve them.
+
+Finally, when the water temperature is low enough, the reactor cooling system will be shut down. This includes the closing of the primary pump suction and discharge valves, the purification system valve and the ${}^{16}N$ diffuser water valve.
+
+
+\subsection{Calibration}
+
+To actually calibrate our instruments, we first obviously need to start up the reactor. When that is done, the power is increased to around 80\% of nominal power. In the GSTR case, that represents between 750 and 900 kW. It is to be noted that if a large error is suspected in the instrumentation readings, the calibration should be done first at low power in order to estimate the delta. However, a re-run at the higher power will be necessary.
+
+Then, we can start actually measuring the temperatures in the two (or more) sensors. The time interval and time length to be used are recommended at 2 minutes intervals for 20 to 50 minutes, when the thermal power output measured has stabilized. The first few data points may be discarded as they may not be representative of the system.
+
+
+\subsection{Adjustment}
+
+Due to time constraints, and the fact that a real calibration is coming up within the month, this part was not covered. Considering the results seen in the following sections, an adjustment might be necessary. Indeed, a 7\% relative difference was observed between the power-indicating channel and the actual measured thermal power. The regulations forces the instruments to be adjusted within 1.5\% of the thermal power obtained during the calibration.
+
+In order to adjust the instrumentation, they can simply be moved vertically in the tank. By doing so, they receive a different flux of particles and give a correct ouput. This method is easier than actually adjusting the gain in each of the detectors, which would see some other parameters adjusted too.
+
+This positional adjustment of two detectors is made while in AUTO mode, and the reactor is controlled in MANUAL mode for the third detector adjustment.
+
+Once this is done, the reactor can be set back to normal operations, by turning the cooling and purification systems on. A safe shut down can then be done, and the water mixer and temporary temperature probes can be removed.
