@@ -68,6 +68,30 @@ Table~\ref{tab:fmea_rpn_risk} presents, for each and every identified failure mo
     12.2 &                               & Small breach & Aggression & 3 & 8 & 10 \\
     12.3 &                               & Large breach & Wear & 2 & 9 & 1 \\
     12.4 &                               & Large breach & Aggression & 3 & 9 & 10 \\ \hline
+    13.1 & \multirow{2}{3cm}{Core catcher} & Small breach & Wear & 2 & 2 & 3 \\
+    13.2 &                               & Large breach & Wear & 1 & 4 & 1 \\ \hline
+    14.1 & \multirow{4}{3cm}{Heat exchangers}  & Small breach in one of them & Wear & 3 & 4 & 6 \\
+    14.2 &                               & Large breach in one of them & Wear & 3 & 7 & 5 \\
+    14.3 &                               & Small breach in all of them & Wear & 2 & 8 & 4 \\
+    14.4 &                               & Large breach in all of them & Wear & 1 & 9 & 3 \\ \hline
+    15.1 & \multirow{4}{3cm}{Steam generators}  & Small breach in one of them & Wear & 3 & 4 & 5 \\
+    15.2 &                               & Large breach in one of them & Wear & 3 & 7 & 4 \\
+    15.3 &                               & Small breach in all of them & Wear & 2 & 8 & 3 \\
+    15.4 &                               & Large breach in all of them & Wear & 1 & 9 & 2 \\ \hline
+    16.1 & \multirow{5}{3cm}{Secondary pumps}  & Partial loss of capability for one pump & Wear & 4 & 4 & 4 \\
+    16.2 &                                & Complete loss of capability for one pump & Air in the pump & 3 & 5 & 3 \\
+    16.3 &                                & Partial loss of capability for all pumps & Wear and bad maintenance & 2 & 7 & 2 \\
+    16.4 &                                & Complete loss of capability for all pumps & Repeated bad maintenance & 2 & 7 & 3 \\
+    16.5 &                                & Complete loss of capability for all pumps & External aggression & 2 & 7 & 10 \\ \hline
+    17.1 & \multirow{2}{3cm}{Turbine} & Failure of one & Wear & 6 & 5 & 7 \\
+    17.2 &                               & Failure of all & Wear & 2 & 7 & 6 \\ \hline
+    18.1 & \multirow{2}{3cm}{Condenser} & Failure of one & Wear & 4 & 7 & 6 \\
+    18.2 &                               & Failure of all & Wear & 1 & 8 & 5 \\ \hline
+    19.1 & \multirow{5}{3cm}{Tertiary pumps}  & Partial loss of capability for one pump & Wear & 4 & 4 & 4 \\
+    19.2 &                                & Complete loss of capability for one pump & Air in the pump & 3 & 5 & 3 \\
+    19.3 &                                & Partial loss of capability for all pumps & Wear and bad maintenance & 2 & 7 & 2 \\
+    19.4 &                                & Complete loss of capability for all pumps & Repeated bad maintenance & 2 & 7 & 3 \\
+    19.5 &                                & Complete loss of capability for all pumps & External aggression & 2 & 7 & 10 \\ \hline
 \caption{FMEA}
 \label{tab:fmea_risk}
 \end{longtable}
@@ -80,56 +104,80 @@ Table~\ref{tab:fmea_rpn_risk} presents, for each and every identified failure mo
     \multicolumn{3}{@{}l}{\ldots continued}\\\hline
     ID & RPN & Mitigation \\ \hline \hline
     \endhead
-    1.1 & 32  & Better material, stay in the normal operation range \\
-    1.2 & 90  & Better material, stay in the normal operation range \\
-    1.3 & 80  & Better detectability and positioning in the core \\
-    1.4 & 96  & Better cameras and labels \\
-    1.5 & 100 & Solid assembly heads, maintenance training \\
-    2.1 & 80  & Better \gls{phm} \\
-    2.2 & 54  & Better maintenance and inspection \\
-    2.3 & 36  & Better PHM, maintenance and inspection \\
-    2.4 & 27  & Better PHM to limit maintenance \\
-    2.5 & 180 & Protect the pumps physically \\
-    3.1 & 72  & Extend PHM to detect the failure, go toward a electromagnetic attachment \\
-    3.2 & 48  & Check the assemblies when unloading to know their distorsion and mitigate the effects \\
-    3.3 & 24  & Check the assemblies when unloading to know their distorsion and mitigate the effects \\
-    3.4 & 80  & Take seisms into account when reloading distorded assemblies \\
-    3.5 & 20  & Extend PHM to detect the failure, go toward a electromagnetic attachment, improve startup checks \\
-    3.6 & 60  & Check the assemblies when unloading to know their distorsion and mitigate the effects \\
-    3.7 & 63  & Check the assemblies when unloading to know their distorsion and mitigate the effects \\
-    4.1 & 98  & Good testing of the material, regular inspection \\
-    4.2 & 108 & Regular inspection \\
-    4.3 & 63  & Good testing of the material, regular inspection \\
-    4.4 & 96  & Regular inspection \\
-    5.1 & 80  & Regular inspection \\
-    5.2 & 63  & Regular inspection, maintenance training \\
-    5.3 & 28  & Regular inspection, maintenance training, PHM \\
-    5.4 & 27  & Regular inspection, maintenance training, better PHM to limit the maintenance \\
-    5.5 & 180 & Protect the pumps physically \\
-    6.1 & 48  & Inspection, PHM \\
-    6.2 & 80  & Protect from physical threats \\
-    6.3 & 48  & Inspection, PHM \\
-    6.4 & 80  & Protect from physical threats \\
-    7.1 & 27  & Inspection and PHM \\
-    7.2 & 140 & Protect the tank physically \\
-    8.1 & 54  & Check the detectors \\
-    8.2 & 128 & Check the detectors \\
-    8.3 & 21  & Calibrate the detectors \\
-    8.4 & 400 & Calibrate the detectors frequently, use different kind, use other ways to determine reactor power output \\
-    9.1 & 36  & Check the sensors \\
-    9.2 & 64 & Check the sensors \\
-    9.3 & 15  & Calibrate the sensors \\
-    9.4 & 210 & Calibrate the sensors frequently, use different kind, use other ways to determine reactor power output \\
-    10.1 & 63 & Good material testing, inspection and fluence reduction \\
-    10.2 & 8  & Good material testing and inspection and fluence reduction \\
-    11.1 & 24 & Good material testing and inspection and fluence reduction \\
+    1.1 & 32   & Better material, stay in the normal operation range \\
+    1.2 & 90   & Better material, stay in the normal operation range \\
+    1.3 & 80   & Better detectability and positioning in the core \\
+    1.4 & 96   & Better cameras and labels \\
+    1.5 & 100  & Solid assembly heads, maintenance training \\
+    2.1 & 80   & Better \gls{phm} \\
+    2.2 & 54   & Better maintenance and inspection \\
+    2.3 & 36   & Better PHM, maintenance and inspection \\
+    2.4 & 27   & Better PHM to limit maintenance \\
+    2.5 & 180  & Protect the pumps physically \\
+    3.1 & 72   & Extend PHM to detect the failure, go toward a electromagnetic attachment \\
+    3.2 & 48   & Check the assemblies when unloading to know their distorsion and mitigate the effects \\
+    3.3 & 24   & Check the assemblies when unloading to know their distorsion and mitigate the effects \\
+    3.4 & 80   & Take seisms into account when reloading distorded assemblies \\
+    3.5 & 20   & Extend PHM to detect the failure, go toward a electromagnetic attachment, improve startup checks \\
+    3.6 & 60   & Check the assemblies when unloading to know their distorsion and mitigate the effects \\
+    3.7 & 63   & Check the assemblies when unloading to know their distorsion and mitigate the effects \\
+    4.1 & 98   & Good testing of the material, regular inspection \\
+    4.2 & 108  & Regular inspection \\
+    4.3 & 63   & Good testing of the material, regular inspection \\
+    4.4 & 96   & Regular inspection \\
+    5.1 & 80   & Regular inspection \\
+    5.2 & 63   & Regular inspection, maintenance training \\
+    5.3 & 28   & Regular inspection, maintenance training, PHM \\
+    5.4 & 27   & Regular inspection, maintenance training, better PHM to limit the maintenance \\
+    5.5 & 180  & Protect the pumps physically \\
+    6.1 & 48   & Inspection, PHM \\
+    6.2 & 80   & Protect from physical threats \\
+    6.3 & 48   & Inspection, PHM \\
+    6.4 & 80   & Protect from physical threats \\
+    7.1 & 27   & Inspection and PHM \\
+    7.2 & 140  & Protect the tank physically \\
+    8.1 & 54   & Check the detectors \\
+    8.2 & 128  & Check the detectors \\
+    8.3 & 21   & Calibrate the detectors \\
+    8.4 & 400  & Calibrate the detectors frequently, use different kind, use other ways to determine reactor power output \\
+    9.1 & 36   & Check the sensors \\
+    9.2 & 64   & Check the sensors \\
+    9.3 & 15   & Calibrate the sensors \\
+    9.4 & 210  & Calibrate the sensors frequently, use different kind, use other ways to determine reactor power output \\
+    10.1 & 63  & Good material testing, inspection and fluence reduction \\
+    10.2 & 8   & Good material testing and inspection and fluence reduction \\
+    11.1 & 24  & Good material testing and inspection and fluence reduction \\
     11.2 & 300 & Good material and large width, external defense \\
-    11.3 & 18 & Good material testing and inspection and fluence reduction \\
+    11.3 & 18  & Good material testing and inspection and fluence reduction \\
     11.4 & 200 & Good material and large width, external defense \\
-    12.1 & 16 & Good material testing and inspection and fluence reduction \\
+    12.1 & 16  & Good material testing and inspection and fluence reduction \\
     12.2 & 240 & Good material and large width, external defense \\
-    12.3 & 18 & Good material testing and inspection and fluence reduction \\
+    12.3 & 18  & Good material testing and inspection and fluence reduction \\
     12.4 & 270 & Good material and large width, external defense \\
+    13.1 & 12  & Good material testing and inspection \\
+    13.2 & 4   & Good material and inspection \\
+    14.1 & 72  & Inspection \\
+    14.2 & 105  & Inspection \\
+    14.3 & 64  & Inspection \\
+    14.4 & 27  & Inspection \\
+    15.1 & 60  & Inspection \\
+    15.2 & 84  & Inspection \\
+    15.3 & 48  & Inspection \\
+    15.4 & 18  & Inspection \\
+    16.1 & 64  & Inspection \\
+    16.2 & 45  & PHM, stop the pump when it detects vapor \\
+    16.3 & 28  & Inspection \\
+    16.4 & 42  & Inspection \\
+    16.5 & 140  & Protect the pumps physically from falling objects or other \\
+    17.1 & 210  & Redundancies, stay within operational range \\
+    17.2 & 84  & Redundancies, stay within operational range, diversify technologies \\
+    18.1 & 168  & Inspection \\
+    18.2 & 40  & Inspection \\
+    19.1 & 64  & Inspection \\
+    19.2 & 45  & PHM, stop the pump when it detects vapor \\
+    19.3 & 28  & Inspection \\
+    19.4 & 42  & Inspection \\
+    19.5 & 140  & Protect the pumps physically from falling objects or other \\
     \caption{FMEA: RPN and mitigation}\label{tab:fmea_rpn_risk}
 \end{longtable}
 
