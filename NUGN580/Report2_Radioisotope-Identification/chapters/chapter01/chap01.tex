@@ -1,0 +1,113 @@
+%
+% File: chap01.tex
+%
+\let\textcircled=\pgftextcircled
+\chapter{Theory}
+\label{chap:intro}
+
+\initial{R}esearch nuclear reactors such as the GSTR are capable of identifying the composition of unknown samples. This is done by bombarding them with neutrons to activate them, obtaining the half-life of the activation products and identify the gamma-ray discrete energies released. A library can then be used on the spectrum to identify which nucleides decay generated the various peaks.
+
+The procedure is issued from handouts from the USGS-Reactor Lab course at the Colorado School of Mines~\cite{reactor01}.
+
+%=======
+\section{Radioisotope half-life}
+\label{sec:halflife}
+
+The neutron bombardment of samples at the GSTR facility activates the nucleides in the samples with an excess of neutron. The decay of those radioisotopes gives way to mostly $\beta$ and $\gamma$.
+
+Every isotope emits radiation with a constant decay rate and at discrete energies for gamma rays. Hence, the half-life -- time after which half of the radioisotopes have decayed -- and the gamma ray energies can be used to identify the radioisotope.
+
+The decay of a radioisotope is given by:
+
+\begin{equation}\label{eq1}
+A_f = A_0 e^{-\lambda t}
+\end{equation}
+where:
+\begin{conditions}
+ A_f   &  Final activity \\
+ A_0   &  Initial activity \\   
+ \lambda &  Decay constant \\
+ t      &  Decay time
+\end{conditions}
+
+The half-life can easily be determined from the data fit using equations~\ref{eq2} to~\ref{eq4}:
+\begin{equation}\label{eq2}
+\frac{A_0}{2} = A_0 e^{-\lambda t_{1/2}}
+\end{equation}
+
+\begin{equation}\label{eq3}
+\ln(\frac{A_0}{2}) = \ln(A_0 e^{-\lambda t_{1/2}})
+\end{equation}
+
+\begin{equation}\label{eq4}
+t_{1/2} = \frac{\ln(2)}{\lambda}
+\end{equation}
+
+After measuring the counts per set amount of time during a period of time covering at least a rough half-life estimate (activity divided by two), it is consequently trivial to fit the data to the exponential function described in equation~\ref{eq1}, thus finding the decay constant $\lambda$ and the half-life.
+
+The $R^2$ value, representing the fit quality, can be found using the mean ($\bar{y}$), the total sum of squares ($SS_{tot}$), and the residual sum of squares ($SS_{res}$). Each is defined as:
+
+\begin{equation}\label{eq5}
+\bar{y} = \frac{1}{n}\sum\limits_{i=1}^{n}{y_i}
+\end{equation}
+
+\begin{equation}\label{eq6}
+SS_{tot} = \sum_{i}{(y_i-\bar{y})^2}
+\end{equation}
+
+\begin{equation}\label{eq7}
+SS_{res} = \sum_{i}{(y_i-f_i)^2}
+\end{equation}
+
+\begin{equation}\label{eq8}
+R^2 = 1 - \frac{SS_{res}}{SS_{tot}}
+\end{equation}
+
+where:
+
+\begin{conditions}
+ f_i  &  Exponential decay function value at point $x_i$
+\end{conditions}
+
+The decay constant and half life alone cannot be used to determine the isotopic composition of an unknown sample. Indeed, several activated isotopes are present and their resepctive activity and decay constants interfere. It can however narrow the possibilties. The spectrometry is then used to determine the different gamma ray emission energies and from that, determine the possible isotopes emitting such radiation.
+
+\section{Spectrometry}
+\label{sec:spectro}
+
+Most radioactive sources produce gamma rays, which are of various energies and intensities. When these emissions are detected and analyzed with a spectroscopy system, a gamma-ray energy spectrum can be produced. A detailed analysis of this spectrum is typically used to determine the identity and quantity of gamma emitters present in a gamma source, and is a necessary tool in a geochemical composition investigation. The gamma spectrum is characteristic of the gamma-emitting nuclides contained in the source. It is easy, once the emitting nuclides have been identified, to link them to their non-activated parent.
+
+In order to get the most precise meausrement possible, an energy calibration must be performed. This consists of using a well-known sample to compare the measurements from the spectrometer to the expected gamma ray energies. The wanted precision is within 1keV, corresponding to the identification energy tolerance of the software used.
+
+In a gamma-ray spectrometer there is a finite processing time required to measure and record each detected gamma ray, typically in the range of microseconds to tens of microseconds. During this processing time, called "dead time", the spectrometer is not able to respond to another gamma ray. This dead time implies that since gamma-ray photons arrive at the detector with a random distribution in time, some photons will not be measured or counted. The dead time should thus not exceed 10\% in order to not lose too much information.
+
+A software is used to process the data and remove gamma ray interference. A library is then used to link the measured peaks with emitting nuclides.
+
+
+\section{Procedure}
+\label{sec:procedure}
+
+This experiment has three components:
+
+\begin{enumerate}
+\item Irradiation of the sample
+\item Half-life and decay constant determination
+\item Sample spectrometry
+\end{enumerate}
+
+\subsection{Irradiation}
+
+In order to irradiate the sample, the reactor is set at full power. The sample (<0.01 g) is then lowered into a sample tube in the reactor bay, and is left within the neutron flux (approximately $1e^{12} n.cm^{-2}.s$  for a set period of time, between 10 seconds and five minutes.
+
+The samples are then taken out of the reactor and brought to the lab for analysis.
+
+\subsection{Half-life and decay constant}
+
+The background radiation is measured, in order to substract it from the sample radiation, even though it is negligible and well within the measurement uncertainties.
+
+The G-M (Geiger-Muller) detector is set up with the sample using an appropriate fixed geometry. The counts per second should not exceed 1500 to avoid the detector saturation. At chosen time intervals, the count data is recorded and plotted. When the count has been divided by two, half-life has been reached and no more data points are needed.
+
+The data can then be fit to equation~\ref{eq1} and the half-life and decay constant can be found.
+
+\subsection{Spectrometry}
+
+The sample is then inserted inside a previously-calibrated using a common source (Europium at the GSTR facility). The gamma ray spectrum is then measured and analyzed automatically by the spectrometer software.
