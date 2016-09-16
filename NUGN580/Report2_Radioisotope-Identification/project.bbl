@@ -1,5 +1,10 @@
 \begin{thebibliography}{1}
 
+\bibitem{imel95}
+{\sc G.~R. Imel and P.~Hart}, {\em The performance of hafnium and gadolinium
+  self powered neutron detectors in the {TREAT} reactor}, Nuclear Instruments
+  and Methods in Physics Research, 111 (1995), pp.~325--336.
+
 \bibitem{iaea_nds}
 {\sc {Nuclear Data Services -- IAEA}}, {\em {ENSDF} database maintained by the
   {International Nuclear Structure and Decay Data Network}}.

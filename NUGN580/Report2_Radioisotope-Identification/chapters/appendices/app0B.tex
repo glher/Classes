@@ -1,18 +1,18 @@
 \chapter{Detailed data tables}
 \label{app:app02}
 
-\initial{T}his appendix presents the data measured during the spectrometry. Given the extensive peak analysis report automatically done by the spectrometer software, only the peaks presenting a net peak area greater than a thousand have been considered. The most likely elements, based on the gamma ray peak energy and average half-life on the sample of around 36 minutes, have been selected. In this regards, for example, potential parent candidates with a half-life of less than a minutes were discarded, their significant presence one hour after irradiation being ruled out. In the same vein, potential parent candidates with a half-life of more than a year were also discarded in favor of shorter lived isotopes.
+\initial{T}his appendix presents the data measured during the spectrometry. Given the extensive peak analysis report automatically done by the spectrometer software, only the peaks presenting a net peak area greater than a thousand have been considered. The most likely elements, based on the gamma ray peak energy and average half-life on the sample of around 36 minutes, have been selected. In this regards, for example, potential parent candidates with a half-life of less than a minute were discarded, their significant presence one hour after irradiation being ruled out. In the same vein, potential parent candidates with a half-life of more than a year were also discarded in favor of shorter lived isotopes.
 
-The data used comes from the NDS (Nuclear Data Services) department of the IAEA~\cite{iaea_nds}.
+The data used comes from the NDS (Nuclear Data Services) department of the IAEA~\cite{iaea_nds}. Table~\ref{tab:specdata_p} displays the potential parents emitting the gamma ray at the measured energies, while table~\ref{tab:specdata_d} displays the resulting daughters, showing the original sample possible composition.
 
 \renewcommand{\arraystretch}{2}
 \begin{table}[!htb]
     \centering
         \begin{tabular}{cccc}
         \hline
-        Peak number & Energy (keV) & Net Peak Area & Possible parent \\ \hline\hline
+        Peak number & Energy (keV) & Net Peak Area & Possible parents \\ \hline\hline
 		2           & 86.52        & 7888.57       & $^{155}_{\phantom{0}65}Tb_{90}$ \\
-		4           & 92.88        & 2639.50       & $^{67}_{\phantom{0}29}Cu_{38}$, $^{178m}_{\phantom{0}71}Lu_{107}$, $^{178m}_{\phantom{0}73}Ta_{105}$, $^{180m}_{\phantom{0}72}Hf_{108}$ \\
+		4           & 92.88        & 2639.50       & $^{67}_{\phantom{0}29}Cu_{38}$, $^{178m}_{\phantom{0}71}Lu_{107}$, $^{180}_{\phantom{0}71}Lu_{109}$, $^{178m}_{\phantom{0}73}Ta_{105}$, $^{180m}_{\phantom{0}72}Hf_{108}$ \\
 		5           & 94.88        & 4650.38       & $^{172}_{\phantom{0}73}Ta_{99}$ \\
 		8           & 108.20       & 1322.32       & $^{105}_{\phantom{0}43}Tc_{62}$, $^{131m1}_{\phantom{0}56}Ba_{75}$, $^{131}_{\phantom{0}57}La_{74}$, $^{137}_{\phantom{0}61}Pm_{76}$, $^{151}_{\phantom{0}65}Tb_{86}$ \\
 		13          & 162.43       & 1132.79       & $^{190}_{\phantom{0}74}W_{116}$, $^{244}_{\phantom{0}93}Np_{151}$ \\
@@ -21,10 +21,27 @@ The data used comes from the NDS (Nuclear Data Services) department of the IAEA~
 		40          & 459.14       & 3313.21       & $^{183}_{\phantom{0}72}Hf_{111}$\\
 		56          & 669.74       & 1186.98       & $^{205}_{\phantom{0}85}At_{120}$
         \end{tabular}
-        \caption{Spectrometry data}\label{tab:specdata}
+        \caption{Spectrometry data - Potential emitters}\label{tab:specdata_p}
 \end{table}
 
-
+\renewcommand{\arraystretch}{2}
+\begin{table}[!htb]
+    \centering
+        \begin{tabular}{cccc}
+        \hline
+        Peak number & Energy (keV) & Net Peak Area & Possible daughters \\ \hline\hline
+		2           & 86.52        & 7888.57       & $^{155}_{\phantom{0}64}Gd_{91}$ \\
+		4           & 92.88        & 2639.50       & $^{67}_{\phantom{0}30}Zn_{37}$, $^{178}_{\phantom{0}72}Hf_{106}$, $^{180}_{\phantom{0}72}Hf_{108}$ \\
+		5           & 94.88        & 4650.38       & $^{172}_{\phantom{0}72}Hf_{100}$ \\
+		8           & 108.20       & 1322.32       & $^{105}_{\phantom{0}44}Ru_{61}$, $^{131}_{\phantom{0}56}Ba_{75}$, $^{137}_{\phantom{0}60}Nd_{77}$, $^{151}_{\phantom{0}64}Gd_{87}$ \\
+		13          & 162.43       & 1132.79       & $^{190}_{\phantom{0}75}Re_{115}$, $^{244}_{\phantom{0}94}Pu_{150}$ \\
+		14          & 169.15       & 1613.15       & $^{182}_{\phantom{0}74}W_{108}$, $^{124}_{\phantom{0}55}Cs_{69}$, $^{164}_{\phantom{0}66}Dy_{98}$ \\
+		27          & 311.77       & 1583.95       & $^{133}_{\phantom{0}53}I_{80}$, $^{173}_{\phantom{0}71}Lu_{102}$, $^{177}_{\phantom{0}72}Hf_{105}$\\
+		40          & 459.14       & 3313.21       & $^{183}_{\phantom{0}73}Ta_{110}$\\
+		56          & 669.74       & 1186.98       & $^{205}_{\phantom{0}84}Po_{121}$
+        \end{tabular}
+        \caption{Spectrometry data - Potential sample}\label{tab:specdata_d}
+\end{table}
 
 
 \

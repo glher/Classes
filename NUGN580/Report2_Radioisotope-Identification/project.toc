@@ -12,7 +12,8 @@
 \contentsline {chapter}{\chapternumberline {2}Results}{5}{chapter.2}
 \contentsline {section}{\numberline {2.1}Sample activity}{5}{section.2.1}
 \contentsline {section}{\numberline {2.2}Sample emissions}{5}{section.2.2}
-\contentsline {chapter}{\chapternumberline {3}Conclusion}{7}{chapter.3}
-\contentsline {appendix}{\chapternumberline {A}Activity measurements}{9}{appendix.A}
-\contentsline {appendix}{\chapternumberline {B}Detailed data tables}{11}{appendix.B}
-\contentsline {chapter}{Bibliography}{13}{section*.5}
+\contentsline {section}{\numberline {2.3}Uncertainties}{6}{section.2.3}
+\contentsline {chapter}{\chapternumberline {3}Conclusion}{9}{chapter.3}
+\contentsline {appendix}{\chapternumberline {A}Activity measurements}{11}{appendix.A}
+\contentsline {appendix}{\chapternumberline {B}Detailed data tables}{13}{appendix.B}
+\contentsline {chapter}{Bibliography}{15}{section*.5}

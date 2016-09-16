@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.8.24)  15 SEP 2016 16:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.8.24)  16 SEP 2016 10:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1835,7 +1835,7 @@ LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
 (Font)              scaled to size 11.15991pt on input line 30.
 LaTeX Font Info:    Font shape `T1/fnc/m/sc' will be
 (Font)              scaled to size 11.15991pt on input line 32.
- <logos/CSM.png, id=71, 306.14375pt x 309.155pt>
+ <logos/CSM.png, id=75, 306.14375pt x 309.155pt>
 File: logos/CSM.png Graphic file (type png)
 
 <use logos/CSM.png>
@@ -1989,7 +1989,7 @@ LaTeX Font Info:    Font shape `T1/fnc/bx/n' in size <12> not available
 LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
 (Font)              scaled to size 11.15991pt on input line 97.
  [3]) (./chapters/chapter02/chap02.tex
-[4] <chapters/chapter02/fig02/plot.png, id=164, 1059.4782pt x 533.3526pt>
+[4] <chapters/chapter02/fig02/plot.png, id=171, 1059.4782pt x 533.3526pt>
 File: chapters/chapter02/fig02/plot.png Graphic file (type png)
 
 <use chapters/chapter02/fig02/plot.png>
@@ -2001,29 +2001,37 @@ Overfull \hbox (57.82782pt too wide) in paragraph at lines 16--17
  [][] 
  []
 
-) (./chapters/conclusion/conclusion.tex [5
+[5
 
-] [6 <./chapters/chapter02/fig02/plot.png>]) (./chapters/appendices/app0A.tex [
-7
+]) (./chapters/conclusion/conclusion.tex [6 <./chapters/chapter02/fig02/plot.pn
+g>] [7] [8
 
-] [8
+]) (./chapters/appendices/app0A.tex [9] [10
 
 ])
-(./chapters/appendices/app0B.tex [9] [10]
-Overfull \hbox (13.05847pt too wide) in paragraph at lines 11--24
+(./chapters/appendices/app0B.tex [11] [12]
+Overfull \hbox (39.28534pt too wide) in paragraph at lines 11--24
  [][] 
  []
 
-) [11
+) [13
 
-] [12] (./project.bbl
+]
+
+LaTeX Warning: Text page 14 contains only floats.
+
+[14] (./project.bbl
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
 (nag)                Use \scshape or \textsc instead on input line 4.
 
 LaTeX Font Info:    Font shape `T1/fnc/m/it' will be
 (Font)              scaled to size 10.18341pt on input line 4.
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 6.
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 9.
+
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 11.
 (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
@@ -2034,13 +2042,13 @@ Package microtype Info: Loading generic settings for font family
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 10.
+(nag)                Use \scshape or \textsc instead on input line 15.
 
 )
 
-Package nag Warning: 3 complaints in total.
+Package nag Warning: 4 complaints in total.
 
-[13
+[15
 
 
 ]
@@ -2059,15 +2067,15 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 402.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 402.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 402.
 Package rerunfilecheck Info: File `project.out' has not changed.
-(rerunfilecheck)             Checksum: D760486F8732D3CF4373C915C4E71800;911.
+(rerunfilecheck)             Checksum: D80E7733F809342F4B6A14C21FD77DD5;971.
  )
 (\end occurred when \ifx on line 17 was incomplete) 
 Here is how much of TeX's memory you used:
- 29366 strings out of 493029
- 543173 string characters out of 6136234
- 819584 words of memory out of 5000000
- 32013 multiletter control sequences out of 15000+600000
- 86678 words of font info for 192 fonts, out of 8000000 for 9000
+ 29386 strings out of 493029
+ 543386 string characters out of 6136234
+ 822745 words of memory out of 5000000
+ 32018 multiletter control sequences out of 15000+600000
+ 87222 words of font info for 199 fonts, out of 8000000 for 9000
  1146 hyphenation exceptions out of 8191
  52i,15n,80p,1007b,416s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/
@@ -2079,10 +2087,10 @@ r/share/texmf/fonts/type1/public/cm-super/sftt1095.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/urw/ncntrsbk/uncb8a.pfb></usr/share/texlive/texmf-dist/fonts
 /type1/urw/ncntrsbk/uncr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/n
 cntrsbk/uncri8a.pfb>
-Output written on project.pdf (19 pages, 171913 bytes).
+Output written on project.pdf (21 pages, 176912 bytes).
 PDF statistics:
- 255 PDF objects out of 1000 (max. 8388607)
- 220 compressed objects within 3 object streams
- 54 named destinations out of 1000 (max. 500000)
- 39063 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 277 PDF objects out of 1000 (max. 8388607)
+ 240 compressed objects within 3 object streams
+ 59 named destinations out of 1000 (max. 500000)
+ 39071 words of extra memory for PDF output out of 42996 (max. 10000000)
 
