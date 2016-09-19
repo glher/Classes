@@ -11,6 +11,10 @@
 \newblock \url{https://www-nds.iaea.org/relnsd/NdsEnsdf/QueryForm.html}.
 \newblock Accessed: 2016-09-15.
 
+\bibitem{pomme01}
+{\sc S.~Pomme}, {\em The uncertainty of the half-life}, Metrologia, 52 (2015),
+  pp.~51--65.
+
 \bibitem{reactor01}
 {\sc \vspace{0mm}T. Debey}, {\em {USGS} reactor lab: Radioiostope
   identification}.

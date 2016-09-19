@@ -3,44 +3,44 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: project.aux
 The style file: siam.bst
 Database file #1: biblioproject.bib
-You've used 3 entries,
+You've used 4 entries,
             2030 wiz_defined-function locations,
-            515 strings with 4240 characters,
-and the built_in function-call counts, 836 in all, are:
-= -- 78
-> -- 27
+            522 strings with 4308 characters,
+and the built_in function-call counts, 1154 in all, are:
+= -- 110
+> -- 34
 < -- 0
-+ -- 12
-- -- 8
-* -- 50
-:= -- 135
-add.period$ -- 7
-call.type$ -- 3
-change.case$ -- 13
++ -- 16
+- -- 10
+* -- 72
+:= -- 182
+add.period$ -- 8
+call.type$ -- 4
+change.case$ -- 17
 chr.to.int$ -- 0
-cite$ -- 3
-duplicate$ -- 37
-empty$ -- 74
-format.name$ -- 8
-if$ -- 180
+cite$ -- 4
+duplicate$ -- 54
+empty$ -- 100
+format.name$ -- 10
+if$ -- 252
 int.to.chr$ -- 0
-int.to.str$ -- 3
-missing$ -- 1
-newline$ -- 16
-num.names$ -- 6
-pop$ -- 21
+int.to.str$ -- 4
+missing$ -- 2
+newline$ -- 19
+num.names$ -- 8
+pop$ -- 23
 preamble$ -- 1
-purify$ -- 10
+purify$ -- 13
 quote$ -- 0
-skip$ -- 30
+skip$ -- 46
 stack$ -- 0
-substring$ -- 44
-swap$ -- 14
+substring$ -- 70
+swap$ -- 22
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 12
+type$ -- 16
 warning$ -- 0
-while$ -- 8
-width$ -- 4
-write$ -- 31
+while$ -- 12
+width$ -- 5
+write$ -- 40

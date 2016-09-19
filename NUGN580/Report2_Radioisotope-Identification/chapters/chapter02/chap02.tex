@@ -21,7 +21,7 @@ The data, presented in appendix~\ref{app:app01}, is plotted on figure~\ref{fig:a
 The exponential decay of the sample follows:
 
 \begin{equation}\label{eq9}
-{A_f} = 88877.6 e^{-0.01926 t}
+A_f = 88877.6 e^{-0.01926 t}
 \end{equation}
 
 Using the fitted value obtained for $\lambda$, equation~\ref{eq4} gives us the sample half-life $t_{1/2}$ at 35.98 minutes. This value is of no use to us in order to determine the isotopic composition of the sample.
@@ -39,6 +39,46 @@ Hafnium and Gadolinium are both neutron absorbers. Hafnium is often found in nuc
 
 Several uncertainties sources should also be taken into account.
 
-The measurements of the sample activity were for example not done exactly every minute, since a human action was necessary. This introduces an error on the half-life measured. Additionally, while good, an $R^2$ score of 99.5\% shows that the exponential fit is not perfect.
+The measurements of the sample activity were for example not done exactly every minute, since a human action was necessary. This introduces an error on the half-life measured. In any case, radioactivity is random, meaning that the incertitude on the measured count (N) and rate (R) can be depicted following equations~\ref{eq10} and~\ref{eq11}. Additionally, while good, an $R^2$ score of 99.5\% shows that the exponential fit is not perfect.
 
-The spectrometer dead time was quite low, 0.6\%, but still impacts the neutron peaks. In this study, it represents 3.2 seconds of data over roughly a ten minutes recording. This can be completely discarded, it does not change the peak area and energy values. The spectrometer used is given an energy tolerance of 1 keV after energy calibration, which explains the various potential candidates presented in table~\ref{tab:specdata_p}.
+\begin{equation}\label{eq10}
+\delta N = \sqrt{N}
+\end{equation}
+
+\begin{equation}\label{eq11}
+\delta R = \frac{\delta N}{T}
+\end{equation}
+
+
+According to~\cite{pomme01}, the  uncertainty  propagation  formula  for  a  half-life $T_{1/2} = \frac{T\ln(2)}{\ln(R)}$ determined from the activity ratio $R = \frac{A}{A_0}$ at time $t = 0$ and $t = T$ is:
+
+\begin{equation}\label{eq12}
+\frac{\sigma(T_{1/2})}{T_{1/2}} = \frac{1}{\ln(R)} \frac{\sigma(R)}{R} = \frac{1}{\lambda T} \sqrt{\frac{\sigma^2(A_0)}{A_0^2} + \frac{\sigma^2(A)}{A^2}}
+\end{equation}
+
+
+
+Assuming a hypothetical situation in which the relative uncertainty on the activity measurement $\frac{\sigma(A)}{A}$ is identical for each data point, that is if the data points are considered independent, the uncertainty propagation can be calculated in~\ref{eq13}:
+
+\begin{equation}\label{eq13}
+\frac{\sigma(T_{1/2})}{T_{1/2}} \approx \frac{2}{\lambda T} \sqrt{\frac{3(n-1)}{n(n+1)}} \frac{\sigma_A}{A}
+\end{equation}
+where:
+\begin{conditions}
+ T   &  duration of the campaign \\
+ n   &  number of activity measurements \\   
+ \sigma(A) &  Uncertainty for a typical activity measurement
+\end{conditions}
+
+
+In our case, we have:
+\begin{conditions}
+ T   &  38 minutes \\
+ n   &  39 points \\   
+ \sigma(A) &  $\frac{\sqrt{A(19)}}{1~\text{minute}} = \sqrt{62736} = 250$
+\end{conditions}
+
+Inserting this data into equation~\ref{eq13}, this gives us an uncertainty of roughly 0.1 minute for the half-life.
+
+
+The spectrometer dead time was quite low, 0.6\%, but still impacts the neutron peaks. In this study, it represents 3.2 seconds of data over roughly a ten minutes recording. This effect can be completely discarded, it does not change the peak area and energy values. The spectrometer used is given an energy tolerance of 1 keV after energy calibration, which explains the various potential candidates presented in table~\ref{tab:specdata_p}.
