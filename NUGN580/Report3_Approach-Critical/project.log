@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.9.11)  22 SEP 2016 21:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.8.24)  23 SEP 2016 10:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1686,26 +1686,7 @@ Loading lettrine.cfg
 \c@lema=\count358
 \c@cor=\count359
 \c@resu=\count360
- (./project.aux
-
-LaTeX Warning: Label `eq1' multiply defined.
-
-
-LaTeX Warning: Label `eq1' multiply defined.
-
-
-LaTeX Warning: Label `eq1' multiply defined.
-
-
-LaTeX Warning: Label `eq1' multiply defined.
-
-
-LaTeX Warning: Label `eq1' multiply defined.
-
-
-LaTeX Warning: Label `eq1' multiply defined.
-
-)
+ (./project.aux)
 \openout1 = `project.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 337.
@@ -1862,7 +1843,7 @@ LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
 (Font)              scaled to size 11.15991pt on input line 30.
 LaTeX Font Info:    Font shape `T1/fnc/m/sc' will be
 (Font)              scaled to size 11.15991pt on input line 32.
- <logos/CSM.png, id=71, 306.14375pt x 309.155pt>
+ <logos/CSM.png, id=39, 306.14375pt x 309.155pt>
 File: logos/CSM.png Graphic file (type png)
 
 <use logos/CSM.png>
@@ -2002,27 +1983,34 @@ LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
 (Font)              scaled to size 53.44917pt on input line 8.
 LaTeX Font Info:    Font shape `T1/fnc/m/sc' will be
 (Font)              scaled to size 53.44917pt on input line 8.
- [1
+
+
+Package natbib Warning: Citation `reactor01' on page 1 undefined on input line 
+10.
+
+[1
 
 
 ]
-<chapters/chapter01/fig01/neupop.png, id=152, 602.25pt x 372.39125pt>
+
+LaTeX Warning: Reference `app:app01' on page 2 undefined on input line 54.
+
+<chapters/chapter01/fig01/neupop.png, id=125, 602.25pt x 372.39125pt>
 File: chapters/chapter01/fig01/neupop.png Graphic file (type png)
 
 <use chapters/chapter01/fig01/neupop.png>
 Package pdftex.def Info: chapters/chapter01/fig01/neupop.png used on input line
  58.
 (pdftex.def)             Requested size: 411.82198pt x 254.63622pt.
-
-
-LaTeX Warning: Reference `' on page 2 undefined on input line 84.
-
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 9.29993pt on input line 85.
+(Font)              scaled to size 9.29993pt on input line 84.
 LaTeX Font Info:    Font shape `T1/fnc/m/sc' will be
-(Font)              scaled to size 9.29993pt on input line 85.
-[2]
-<chapters/chapter01/fig01/goodbaddet.png, id=165, 621.32124pt x 197.73875pt>
+(Font)              scaled to size 9.29993pt on input line 84.
+ [2]
+
+LaTeX Warning: Reference `' on page 3 undefined on input line 84.
+
+<chapters/chapter01/fig01/goodbaddet.png, id=138, 621.32124pt x 197.73875pt>
 File: chapters/chapter01/fig01/goodbaddet.png Graphic file (type png)
 
 <use chapters/chapter01/fig01/goodbaddet.png>
@@ -2030,32 +2018,48 @@ Package pdftex.def Info: chapters/chapter01/fig01/goodbaddet.png used on input
 line 94.
 (pdftex.def)             Requested size: 400.0523pt x 127.3181pt.
  [3 <./chapters/chapter01/fig01/neupop.png>]) (./chapters/chapter02/chap02.tex 
-[4 <./chapters/chapter01/fig01/goodbaddet.png>] [5
+[4 <./chapters/chapter01/fig01/goodbaddet.png>]
 
-]
-<chapters/chapter02/fig02/1overM.png, id=186, 602.25pt x 372.39125pt>
+LaTeX Warning: Reference `tab:nm100_rawdata' on page 5 undefined on input line 
+12.
+
+
+LaTeX Warning: Reference `tab:nm1000_avg' on page 5 undefined on input line 12.
+
+
+
+LaTeX Warning: Reference `fig:1overM' on page 5 undefined on input line 30.
+
+
+LaTeX Warning: Reference `app:app04' on page 5 undefined on input line 30.
+
+[5
+
+] <chapters/chapter02/fig02/1overM.png, id=154, 602.25pt x 372.39125pt>
 File: chapters/chapter02/fig02/1overM.png Graphic file (type png)
 
 <use chapters/chapter02/fig02/1overM.png>
 Package pdftex.def Info: chapters/chapter02/fig02/1overM.png used on input line
  34.
 (pdftex.def)             Requested size: 411.82198pt x 254.63622pt.
-LaTeX Font Info:    Font shape `T1/fnc/m/it' will be
-(Font)              scaled to size 10.18341pt on input line 39.
 
-<chapters/chapter02/fig02/prediction.png, id=188, 602.25pt x 372.39125pt>
+
+LaTeX Warning: Reference `fig:prediction' on page 6 undefined on input line 41.
+
+
+LaTeX Font Info:    Font shape `T1/fnc/m/it' will be
+(Font)              scaled to size 10.18341pt on input line 41.
+<chapters/chapter02/fig02/prediction.png, id=155, 602.25pt x 372.39125pt>
 File: chapters/chapter02/fig02/prediction.png Graphic file (type png)
 
 <use chapters/chapter02/fig02/prediction.png>
 Package pdftex.def Info: chapters/chapter02/fig02/prediction.png used on input 
-line 44.
+line 46.
 (pdftex.def)             Requested size: 411.82198pt x 254.63622pt.
-)
-(./chapters/conclusion/conclusion.tex [6 <./chapters/chapter02/fig02/1overM.png
->] [7 <./chapters/chapter02/fig02/prediction.png>] [8
+ [6 <./chapters/chapter02/fig02/1overM.png>]) (./chapters/conclusion/conclusion
+.tex [7 <./chapters/chapter02/fig02/prediction.png>] [8
 
-])
-(./chapters/appendices/app0A.tex [9] [10
+]) (./chapters/appendices/app0A.tex [9] [10
 
 ]
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
@@ -2108,7 +2112,7 @@ LaTeX Font Info:    Font shape `TS1/fnc/m/n' will be
 ] [16
 
 ]
-<chapters/appendices/figa/nm1000.jpg, id=237, 147.55125pt x 250.9375pt>
+<chapters/appendices/figa/nm1000.jpg, id=210, 147.55125pt x 250.9375pt>
 File: chapters/appendices/figa/nm1000.jpg Graphic file (type jpg)
 
 <use chapters/appendices/figa/nm1000.jpg>
@@ -2116,7 +2120,7 @@ Package pdftex.def Info: chapters/appendices/figa/nm1000.jpg used on input line
  18.
 (pdftex.def)             Requested size: 149.73477pt x 254.63622pt.
 
-<chapters/appendices/figa/np1000.jpg, id=238, 303.1325pt x 183.68625pt>
+<chapters/appendices/figa/np1000.jpg, id=211, 303.1325pt x 183.68625pt>
 File: chapters/appendices/figa/np1000.jpg Graphic file (type jpg)
 
 <use chapters/appendices/figa/np1000.jpg>
@@ -2164,6 +2168,9 @@ Package nag Warning: Command \sc is an old LaTeX 2.09 command.
 
 )
 
+Package natbib Warning: There were undefined citations.
+
+
 Package nag Warning: 2 complaints in total.
 
 [21
@@ -2180,33 +2187,44 @@ Package nag Warning: 2 complaints in total.
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 405.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 405.
- (./project.aux)
+ (./project.aux
+
+Package natbib Warning: Citation(s) may have changed.
+(natbib)                Rerun to get citations correct.
+
+)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 405.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 405.
-Package rerunfilecheck Info: File `project.out' has not changed.
-(rerunfilecheck)             Checksum: AB5B41196F6B5ECD3312B7D3F6578D59;911.
 
+
+Package rerunfilecheck Warning: File `project.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `project.out':
+(rerunfilecheck)             Before: BACFB913A1B8EB027A64F5C46CB4FEF5;443
+(rerunfilecheck)             After:  3A2E9988A35C7045CE1042CDC1406035;980.
 
 LaTeX Warning: There were undefined references.
 
 
-LaTeX Warning: There were multiply-defined labels.
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  )
 (\end occurred when \ifx on line 31 was incomplete)
 (\end occurred when \ifx on line 19 was incomplete)
-(\end occurred when \ifx on line 45 was incomplete)
+(\end occurred when \ifx on line 47 was incomplete)
 (\end occurred when \ifx on line 35 was incomplete)
 (\end occurred when \ifx on line 95 was incomplete)
 (\end occurred when \ifx on line 59 was incomplete) 
 Here is how much of TeX's memory you used:
- 29571 strings out of 493029
- 546979 string characters out of 6136234
- 834378 words of memory out of 5000000
- 32181 multiletter control sequences out of 15000+600000
- 107041 words of font info for 252 fonts, out of 8000000 for 9000
+ 29581 strings out of 493029
+ 547014 string characters out of 6136234
+ 832854 words of memory out of 5000000
+ 32180 multiletter control sequences out of 15000+600000
+ 107277 words of font info for 256 fonts, out of 8000000 for 9000
  1146 hyphenation exceptions out of 8191
- 52i,12n,80p,1007b,434s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 52i,13n,80p,1007b,485s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-di
 st/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/publi
 c/fourier/fourier-mex.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/fou
@@ -2214,10 +2232,10 @@ rier/fourier-mlit.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/fourier
 /fourier-ms.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/ncntrsbk/uncb8a.
 pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/ncntrsbk/uncr8a.pfb></usr/sh
 are/texlive/texmf-dist/fonts/type1/urw/ncntrsbk/uncri8a.pfb>
-Output written on project.pdf (27 pages, 343472 bytes).
+Output written on project.pdf (27 pages, 344343 bytes).
 PDF statistics:
- 307 PDF objects out of 1000 (max. 8388607)
- 257 compressed objects within 3 object streams
- 69 named destinations out of 1000 (max. 500000)
- 42672 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 283 PDF objects out of 1000 (max. 8388607)
+ 233 compressed objects within 3 object streams
+ 74 named destinations out of 1000 (max. 500000)
+ 42608 words of extra memory for PDF output out of 42996 (max. 10000000)
 

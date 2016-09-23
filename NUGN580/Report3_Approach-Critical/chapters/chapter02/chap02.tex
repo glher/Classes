@@ -27,7 +27,7 @@ The subcritical multiplication factor, $M$, is calculated using the NM1000 raw m
     \caption{$\frac{1}{M}$ calculation and criticality prediction}\label{tab:critpred}
 \end{table}
 
-Fitting this data linearly should give us, at the intersection with the x-axis -- that is, when M is infinite and thus the core is critical -- the amount of fuel rods needed in the core. One can see on figure~\ref{fig:1overM} that the linearity is debatable, with only an $R^2$ of 95\%. As a reminder, appendix~\ref{app:app04} goes into more details for the calculation of $R^2$. This is expected, since not all the fuel rods have the same worth, some being more irradiated than other, due to their position or time spent in the core, or their initial uranium mass for example.
+Fitting this data linearly should give us, at the intersection with the x-axis -- that is, when M is infinite and thus the core is critical -- the amount of fuel rods needed in the core. One can see on figure~\ref{fig:1overM} that the linearity is not ideal, with an $R^2$ of only 97\%. As a reminder, appendix~\ref{app:app04} goes into more details for the calculation of $R^2$. This imperfect linearity is expected, since not all the fuel rods have the same worth, some being more irradiated than other, due to their position or time spent in the core, or their initial uranium mass for example. Moreover, the source positioning impacts the reading.
 
 \begin{figure}[t!]
 	\centering
@@ -35,6 +35,8 @@ Fitting this data linearly should give us, at the intersection with the x-axis -
 	\mycaption[$\frac{1}{M}$ as a function of the number of fuel rods in the core]{$\frac{1}{M}$ as a function of the number of fuel rods in the core.}
 	\label{fig:1overM}
 \end{figure}
+
+\section{Criticality prediction}
 
 One can see the evolution of the prediction as a function of the number of fuel rods in the core on figure~\ref{fig:prediction}. Keeping in mind that the actual criticality was achieved with 126 fuel rods compared to a full core of 127 rods, one can see that the estimates were lower. \emph{That is good}. Indeed, this means that the approach to criticality was made, by design, in a very conservative way. The method told the operators that less fissile material was needed to achieve criticality, which allowed for a slower reload and no unexpected criticality incident.
 
@@ -45,3 +47,20 @@ One can see the evolution of the prediction as a function of the number of fuel 
 	\mycaption[Evolution of the criticality prediction]{Evolution of the criticality prediction.}
 	\label{fig:prediction}
 \end{figure}
+
+The reactor became critical at approximately 4 watts with one fuel element still out of the core and control rods at the following positions:
+\begin{enumerate}
+\item Transient: full up,
+\item Shim 1: full up,
+\item Shim 2: 897 units.
+\end{enumerate}
+
+From historical data, the operators can know that the insertion of Shim 2 rod by a hundred unit injected 4 cents of reactivity to the core. The reactivity excess for the entire core (all fuel elements in) was measured at \$3.88 that day, and the reactivity of the regulating rod, which was left fully down, was \$3.088.
+
+The reactivity missing from the last element (E-16) not being inserted and the reactor being exactly critical is, in dollars:
+
+\begin{equation}\label{eq8}
+\rho = 3.88 - 3.088 - 0.04 = 0.752
+\end{equation}
+
+
