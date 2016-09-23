@@ -80,7 +80,7 @@ In order to get the most precise meausrement possible, an energy calibration mus
 
 In a gamma-ray spectrometer there is a finite processing time required to measure and record each detected gamma ray, typically in the range of microseconds to tens of microseconds. During this processing time, called "dead time", the spectrometer is not able to respond to another gamma ray. This dead time implies that since gamma-ray photons arrive at the detector with a random distribution in time, some photons will not be measured or counted. The dead time should thus not exceed 10\% in order to not lose too much information.
 
-A software is used to process the data and remove gamma ray interference. A library is then used to link the measured peaks with emitting nuclides.
+A software is used to process the data and remove gamma ray interference. A library is then used to link the measured peaks with emitting nuclides. The impact of the library used is consequent, considering that some nucleides are altogether absent from some libraries. For example, as will be seen in this report, $^{233}Th$ decays energies are not given by the ENSDF table, but are given by the LNHB data~\cite{lnhb01}. 
 
 
 \section{Procedure}

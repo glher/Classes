@@ -30,16 +30,20 @@ Using the fitted value obtained for $\lambda$, equation~\ref{eq4} gives us the s
 
 The spectrometer use was a little less straightforward. The peak analysis report is missing quite crucial information about the actual elements associated to the peaks. The results with the peaks of interests (cut off at a net peak area of 1000) are given in appendix~\ref{app:app02}. The most likely elements, based on the gamma ray peak energy and average half-life on the sample of around 36 minutes, have been selected. In this regards, for example, potential parent candidates with a half-life of less than a minute were discarded, their significant presence one hour after irradiation being ruled out. In the same vein, potential parent candidates with a half-life of more than a year were also discarded in favor of shorter lived isotopes.
 
-Using table~\ref{tab:specdata_d}, we can try and guess the isotopic composition of the sample. One can see that if the spectrometer was correctly calibrated, the sample is likely to contain Gadolinium and Hafnium primarily, and some Tantalum, product of Hafnium disintegration.
+Using table~\ref{tab:specdata_d} and ENSDF data~\cite{iaea_nds}, we can try and guess the isotopic composition of the sample. One can see that if the spectrometer was correctly calibrated, and the ENSDF library correctly populated, the sample is likely to contain Gadolinium and Hafnium primarily, and some Tantalum, product of Hafnium disintegration.
 
 Hafnium and Gadolinium are both neutron absorbers. Hafnium is often found in nuclear reactors control rods, while Gadolinium can be used in fresh fuel to compensate an excess of reactivity. The extensive use of those two elements in the same component is not known to the author, though the two elements have been used together in the past to build a neutron detector~\cite{imel95}.
+
+However, it is known that the sample contains at least some Thorium, which is not seen in the spectrometry data. A closer look at other nuclides libraries (\cite{lnhb01}) shows that some of the peaks were misidentified. Indeed, table~\ref{tab:lnhb_th} shows the different gamma ray emission from the decay of $^{233}Th$, and one can see that they closely relate to several measured peaks. Considering this new data, one can compute the more likely sample composition, which is shown in table~\ref{tab:specdata_final}. It can thus be seen that the sample is made primarily of Thorium ($^{232}Th$), whose half-life is 22.15 minutes, close from the 36 minutes half-life measured for our sample considering the expected impurities.
+
+This goes to show the obvious gigantic impact of the library used on the radioisotope identification. ENSDF data did not contain the Thorium emitters, and as such could not identify it in the sample, causing a wholly different conclusion on the sample composition, when Thorium was in fact the most present element.
 
 
 \section{Uncertainties}
 
 Several uncertainties sources should also be taken into account.
 
-The measurements of the sample activity were for example not done exactly every minute, since a human action was necessary. This introduces an error on the half-life measured. In any case, radioactivity is random, meaning that the incertitude on the measured count (N) and rate (R) can be depicted following equations~\ref{eq10} and~\ref{eq11}. Additionally, while good, an $R^2$ score of 99.5\% shows that the exponential fit is not perfect.
+The measurements of the sample activity were for example not done exactly every minute, since a human action was necessary. This introduces an error on the half-life measured. In any case, radioactivity is random, meaning that the incertitude on the measured count (N) and rate (R) can be depicted following equations~\ref{eq10} and~\ref{eq11}. Additionally, while good, an $R^2$ score of 99.5\% shows that the exponential fit is not perfect. The sample is also impure, and any half-life obtained would be a combination of several decay process, making this method unreliable to identify any element by itself. It can however be used as a good approximation of the magnitude of the main elements half-life in the sample.
 
 \begin{equation}\label{eq10}
 \delta N = \sqrt{N}

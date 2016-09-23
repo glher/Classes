@@ -5,6 +5,12 @@
   self powered neutron detectors in the {TREAT} reactor}, Nuclear Instruments
   and Methods in Physics Research, 111 (1995), pp.~325--336.
 
+\bibitem{lnhb01}
+{\sc {Laboratoire National Henri Becquerel -- LNHB}}, {\em Database maintained
+  by the {Laboratoire National Henri Becquerel}}.
+\newblock \url{http://www.nucleide.org/DDEP_WG/DDEPdata.htm}.
+\newblock Accessed: 2016-09-20.
+
 \bibitem{iaea_nds}
 {\sc {Nuclear Data Services -- IAEA}}, {\em {ENSDF} database maintained by the
   {International Nuclear Structure and Decay Data Network}}.

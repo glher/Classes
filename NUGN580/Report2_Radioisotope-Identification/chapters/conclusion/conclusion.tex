@@ -7,7 +7,9 @@
 
 \initial{T}he USGS TRIGA research nuclear reactor (GSTR) have been used to irradiate a sample in order to determine its isotopic composition. While this method can also give the quantities (mass) of each nucleide in the sample, only an energy calibration of the spectrometer was performed, rendering this information unavailable. Instead, the elements in the sample have been identified, using the activated sample activity and a spectrometry.
 
-The sample was found to have a 36 minutes half-life. The spectrometry generated low confidence data, due to potential ongoing work on the library. Nonetheless, if the results from the measurements are considered correct within the usual 1 keV uncertainty, it has been derived that the sample contained Hafnium and Gadolinium mostly, with an accumulation of Tantalum probably caused by the activation of Hafnium.
+The sample was found to have a 36 minutes half-life. The spectrometry generated low confidence data, due to potential ongoing work on the library. Indeed, some elements such as thorium were missing from it. A likely explanation is that the ongoing work on the library used by the software was set to use only data originating from ENSDF database, discarding secondary libraries such as the one maintained by the CEA (LNHB) for example.
+
+A manual look into the gamma ray peaks, with the knowledge that Thorium was present in the sample, pointed toward the fact that the main element in the activated sample was $^{233}Th$, responsible for several of the highest peaks (notably the three highest ones). This indicates the presence of $^{232}Th$ in the original sample. Impurities can be seen from the approximated half-life (36 minutes versus 22 minutes) and several gamma ray peaks of lower amplitude in the system.
 
 %=======
 
