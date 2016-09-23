@@ -1,0 +1,15 @@
+\select@language {english}
+\par \penalty \@M \textbf {{\scshape Figure} \hfill Page}\par \penalty \@M 
+\addvspace {10pt}
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Neutron population with a fixed source at different $k_{eff}$ values}}{3}{figure.1.1}
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Correct neutron source positioning in the core}}{4}{figure.1.2}
+\addvspace {10pt}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces $\frac {1}{M}$ as a function of the number of fuel rods in the core}}{6}{figure.2.1}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Evolution of the criticality prediction}}{7}{figure.2.2}
+\addvspace {10pt}
+\addvspace {10pt}
+\addvspace {10pt}
+\addvspace {10pt}
+\contentsline {figure}{\numberline {C.1}{\ignorespaces NM1000}}{18}{figure.C.1}
+\contentsline {figure}{\numberline {C.2}{\ignorespaces NP/NPP1000}}{18}{figure.C.2}
+\addvspace {10pt}

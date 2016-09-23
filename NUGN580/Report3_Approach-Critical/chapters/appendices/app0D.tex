@@ -1,0 +1,37 @@
+%
+% file: localoperator.tex
+% author: Victor Brena
+% description: Briefly describes properties of the local operator.
+%
+
+\chapter{Coefficient of determination $R^2$}
+\label{app:app04}
+
+\initial{T}his appendix presents the mathematics behind the confidence factor, also known as the $R^2$ value. The $R^2$ value, representing the fit quality, can be found using the mean ($\bar{y}$), the total sum of squares ($SS_{tot}$), and the residual sum of squares ($SS_{res}$).
+
+Each is defined as:
+
+\begin{equation}\label{eqd1}
+\bar{y} = \frac{1}{n}\sum\limits_{i=1}^{n}{y_i}
+\end{equation}
+
+\begin{equation}\label{eqd2}
+SS_{tot} = \sum_{i}{(y_i-\bar{y})^2}
+\end{equation}
+
+\begin{equation}\label{eqd3}
+SS_{res} = \sum_{i}{(y_i-f_i)^2}
+\end{equation}
+
+\begin{equation}\label{eqd4}
+R^2 = 1 - \frac{SS_{res}}{SS_{tot}}
+\end{equation}
+
+where:
+
+\begin{conditions}
+ f_i  &  Fitting function value at point $x_i$
+\end{conditions}
+
+
+\

@@ -1,0 +1,15 @@
+\select@language {english}
+\par \penalty \@M \textbf {{\scshape Table} \hfill Page}\par \penalty \@M 
+\addvspace {10pt}
+\addvspace {10pt}
+\contentsline {table}{\numberline {2.1}{\ignorespaces $\frac {1}{M}$ calculation and criticality prediction}}{5}{table.2.1}
+\addvspace {10pt}
+\addvspace {10pt}
+\contentsline {table}{\numberline {A.1}{\ignorespaces Neutron population from a 100-neutrons source, considering $k_{eff} = 0.99$}}{11}{table.A.1}
+\contentsline {table}{\numberline {A.2}{\ignorespaces Neutron population from a 100-neutrons source, considering $k_{eff} = 0.8$}}{12}{table.A.2}
+\contentsline {table}{\numberline {A.3}{\ignorespaces Neutron population from a 100-neutrons source, considering $k_{eff} = 0.5$}}{12}{table.A.3}
+\addvspace {10pt}
+\contentsline {table}{\numberline {B.1}{\ignorespaces NM1000 count rate - raw data}}{14}{table.B.1}
+\contentsline {table}{\numberline {B.2}{\ignorespaces NM1000 count rate - average data}}{14}{table.B.2}
+\addvspace {10pt}
+\addvspace {10pt}
