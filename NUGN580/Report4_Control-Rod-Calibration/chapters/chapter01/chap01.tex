@@ -1,0 +1,96 @@
+%
+% File: chap01.tex
+%
+\let\textcircled=\pgftextcircled
+\chapter{Theory}
+\label{chap:intro}
+
+\initial{T}he differential and integral worth of the control rods must be measured and calibrated from time to time, to check for the rods efficiency. Several limits must be respected, such as the maximum core reactivity, the maximum pulse reactivity, the maximum reactivity insertion rate and, for research reactors, the maximum experiment reactivity. This is done by using the reactivity values of the control rods, hence the utmost importance of having precise values for these parameters. The procedure is issued from handouts from the USGS-Reactor Lab course at the Colorado School of Mines~\cite{reactor01}.
+
+\section{Reactor period}
+
+The reactor period is the time required for the reactor power to change by a factor of $e$, Euler's number. Its unit is the second. The relationship between power and period in a nuclear reactor is:
+
+
+\begin{equation}\label{eq1}
+P(t) = P(t=0)*e^{\frac{t}{\tau}}
+\end{equation}
+\begin{conditions}
+ P(t)   &  Reactor power at time t \\
+ \tau   &  Reactor period, in seconds \\
+ t   &  Time interval, in seconds
+\end{conditions}
+
+The smaller the value of $\tau$, the more rapid the change in reactor power. A positive period means that power is increasing. A period of less than 3 seconds is too short for an operator to be able to act, so a rod withdrawal interlock exists on this parameter. Some reactors even have an automatic SCRAM if they pass below this threshold.
+
+Hence, we can obtain the period:
+
+\begin{equation}\label{eq2}
+\tau = \frac{t}{\ln\left(\frac{P(t)}{P(t=0)}\right)}
+\end{equation}
+
+\section{Delayed neutrons}
+
+The link between the period and the reactivity of the core is made by looking at the change in prompt and delayed neutron populations. For delayed critical operations, the stable period is controlled by delayed neutrons only.
+
+A little digression about the importance of delayed neutrons in a nuclear reactor is given in appendix~\ref{app:app01}.
+
+Delayed neutrons precursors are usually categorized into six groups, arranged by half-life. Table~\ref{tab:precursors} presents the different group characteristics.
+
+\begin{table}[!htb]
+    \centering
+\begin{tabular}{cccp{2.5cm}p{4cm}}
+Group & Half-life $T_{1/2}$ (s) & Mean life $\tau_m$ (s) & Decay constant $\lambda (s^{-1})$ & Fraction of total thermal neutrons $f$ \\ \hline\hline
+1 & 55.7 & 80.2 & 0.0124 & 0.000231 \\
+2 & 22.7 & 32.7 & 0.0305 & 0.00153  \\
+3 &  6.2 &  8.9 & 0.111  & 0.00137  \\ 
+4 &  2.3 &  3.3 & 0.301  & 0.00277  \\
+5 & 0.61 & 0.88 & 1.14   & 0.000805 \\
+6 & 0.23 & 0.33 & 3.01   & 0.000294
+\end{tabular}
+        \caption{Precursors groups data}\label{tab:precursors}
+\end{table}
+
+One can note that the sum of the groups fractions adds to the effective delayed neutron fraction.
+
+\section{Reactivity inference}
+
+Using the reactor period and the delayed neutrons groups characteristics, it is possible to compute the reactivity, thanks to the Inhour equation:
+
+\begin{equation}\label{eq3}
+\rho = \frac{I}{\tau} + \sum_{i=1,6}{\frac{f_i}{1+\lambda_i \tau}}
+\end{equation}
+\begin{conditions}
+ I   &  Prompt neutron lifetime ($\approx 39 \text{\micro s}$) \\
+ \tau    &  Reactor period, in seconds \\
+ f_i   &  Precursor group fraction \\
+ \lambda_i & Precursor group decay constant
+\end{conditions}
+
+One can divide this equation by the effective delayed neutron fraction $\beta_{eff}$ to obtain the reactivity in dollars. It is important to note that the Inhour equation is valid if and only if the period is stable. Thus, when measuring reactivity for control rod calibrations, the reactor must be in a stable critical state.
+
+However, the transient effect can be approximated in case the period is not stable, using:
+
+\begin{equation}\label{eq4}
+\tau = \frac{l^*}{\rho} + \frac{\beta_{eff} - \rho}{\lambda_{eff}\rho + \dot{\rho}}
+\end{equation}
+\begin{conditions}
+ l^*   &  Prompt neutron lifetime ($\approx 39 \micro s$) \\
+ \tau    &  Reactor period, in seconds \\
+ \beta_{eff}   &  Effective delayed neutron fraction \\
+ \rho  & Reactivity \\
+ \lambda_{eff} & Effective delayed neutron precursor decay constant \\
+ \dot{\rho} & Rate of change in reactivity
+\end{conditions}
+
+The effective delayed neutron precursor decay constant represents the fraction of precursor atoms decaying in a second. It depends on the core critical state.
+
+
+
+\section{Procedure}
+
+The procedure for this experiment will be to get to a critical, stable state with the control rod to calibrate in its down position. Then, it will be taken up a discrete amount of steps, and the period will be to get a twenty-fold increase in power (from 20W to 400W) will be measured. Using the delayed neutron fractions and the period in the Inhour equation, the reactivity will be calculated.
+
+Using the three rods that are not being calibrated, the power will be brought to 2W. In Manual mode, since the rod positions needs to be stable, the reactor will be stabilized. This takes at least five minutes, time after which the delayed neutron population will have caught up with the prompt neutrons and stabilize. In order to use the Inhour equation, we saw that stability was primordial. Once that is done, a position for the transient rod will be chosen to add roughly 25 cents worth of reactivity in the core, and the transient rod will be moved up. The timers starts when the power hits 20W, and stops when it hits 400W. At that moment, the operator will lower the three rods not being calibrated in order to go back to a stable critical state at 2W. Repeat the procedure until the transient rod is fully up.
+
+At each step, the time taken to go up from 20W to 400W will give the period. This can then be used, in correlation with the delayed neutron information, to compute the reactivity brought in by the transient rod motion. The operator has to be mindful of the fact that the differential rod worth will be smaller when the rod is nearing the top of the core, and thus plan the steps carefully so as to avoid meaningless data for the end of the curves.

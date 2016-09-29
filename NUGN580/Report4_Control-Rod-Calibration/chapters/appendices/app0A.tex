@@ -1,0 +1,61 @@
+%
+% file: localoperator.tex
+% author: Victor Brena
+% description: Briefly describes properties of the local operator.
+%
+
+\chapter{Delayed neutrons}
+\label{app:app01}
+
+\initial{T}his appendix presents the importance of the delayed neutrons in a nuclear reactor. It presents, without going into detailed mathematics, the impact of their non-existence of a nuclear chain reaction.
+
+\section{Neutron lifetime}
+
+First, let's talk about the neutron lifetime. In a PWR reactor, it is $10^{-5}$ seconds ($10^{-7}$ seconds in a BWR). This means that after this time on average, the  neutron will have disappeared (absorbed, absorbed to induce fission, or  leaked out of the reactor).
+
+\section{Multiplication factor}
+The multiplication factor k leads to the critical, subcritical and supercritical states.
+$k < 1$ : Subcritical, the chain reaction dies
+$k = 1$ : Critical, the chain reaction is nice, the power is constant
+$k > 1$ : Supercritical, the neutron population increases with each generation, the power increases. No good.
+
+\section{A world without delayed neutrons}
+
+If we do not consider the delayed neutrons into the kinetics equation, and a multiplication factor equals to 1.001 (quite close to 1, we all agree) then we have the following evolution of the neutron population with time:
+
+\begin{equation}\label{eq6}
+n(t) = N*e^{k-1}*e^{\frac{t}{X}}
+\end{equation}
+
+Where X is the mean lifetime of the neutrons inside the reactor. So, in a PWR for example, and considering k = 1.001 (difficult to get closer to criticality in real operations):
+\begin{equation}\label{eq7}
+n(t) = N*e^{k-1}*e^{\frac{t}{10^{-5}}}
+\end{equation}
+
+This gives us :
+\begin{equation}\label{eq8}
+n(t) = N*e^{100t}
+\end{equation}
+
+This means that the neutron population is *not at all* under control. After 1 second, we have the original population (N) multiplied by $e^{100}$ (gigantic number). So the power in the reactor would increase very  quickly, even though the multiplication factor is as close as possible  to 1.
+So, what are we missing ? The \emph{delayed neutrons}.
+
+\section{The real world, with delayed neutrons}
+Where do they come from ? To answer that, we must be sure to understand where the neutrons come from in a reactor. Several possibilities :
+
+\begin{enumerate}
+\item Fission induced neutrons (mainly uranium-235 gets hits by a low energy neutron, and produce on average around 2 neutrons)
+
+\item External sources
+
+\item Different decay reactions (instead of undergoing fission, an atom, uranium-235 for example, would absorb one neutron and release two neutrons, and some other reactions like that)
+\end{enumerate}
+
+So, what are we missing ? Well, the fission of an atom creates two smaller atoms. Those are the ones (called precursors) that will release neutrons later, by decaying. Thus \emph{delayed neutrons}. Indeed, the mean lifetime of a precursor neutron is 13 seconds roughly (compared to the $10^{-5}$ seconds in a PWR).
+Delayed neutrons represents around 700 pcm (0.7\%) of the whole neutrons "produced" during a generation. This very small difference is what actually allow us to control the chain reaction in a nuclear reactor.
+
+
+
+
+
+\

@@ -9,6 +9,7 @@
 \contentsline {chapter}{\chapternumberline {2}Results}{5}{chapter.2}
 \contentsline {section}{\numberline {2.1}Subcritical multiplication factor}{5}{section.2.1}
 \contentsline {section}{\numberline {2.2}Criticality prediction}{6}{section.2.2}
+\contentsline {section}{\numberline {2.3}Uncertainties}{7}{section.2.3}
 \contentsline {chapter}{\chapternumberline {3}Conclusion}{9}{chapter.3}
 \contentsline {appendix}{\chapternumberline {A}Neutron population in a subcritical system}{11}{appendix.A}
 \contentsline {appendix}{\chapternumberline {B}Detailed data tables}{13}{appendix.B}

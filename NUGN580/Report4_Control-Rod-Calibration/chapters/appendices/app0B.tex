@@ -1,0 +1,41 @@
+\chapter{Detailed data tables}
+\label{app:app02}
+
+\initial{T}his appendix presents the raw data from the experiment in table~\ref{tab:time_rawdata}, that is the time measured as necessary to cover the power delta between 20W and 400W. It then explicits the various calulcation steps in table~\ref{tab:data}.
+
+\begin{table}[!htb]
+    \centering
+\begin{tabular}{llllll}
+Position & Start Power & Stop Power & Time 1 (s) & Time 2 (s) & Avg time (s) \\
+9        &             &            &            &            &              \\
+202      & 20          & 400        & 88.1       & 87.14      & 87.62        \\
+346      & 20          & 400        & 23         & 23.28      & 23.14        \\
+417      & 20          & 400        & 63.13      & 63         & 63.065       \\
+492      & 20          & 400        & 56.75      & 56.79      & 56.77        \\
+581      & 20          & 400        & 51.58      & 51.7       & 51.64        \\
+756      & 20          & 400        & 19.95      & 20         & 19.975       \\
+993      & 20          & 400        & 128.32     & 127.4      & 127.86      
+\end{tabular}
+        \caption{Raw data - Time to reach power differential}\label{tab:time_rawdata}
+\end{table}
+
+
+\begin{table}[!htb]
+    \centering
+\begin{tabular}{llllll}
+Position & Period & $\sum_{i=1,6}{\frac{f_i}{1+\lambda_i \tau}}$ & Differential worth & Integral worth  & Differential worth per step \\
+9        &        &            & 0.00 & 0.00 & 0.00                           \\
+202      & 29.25  & 1.61E-03   & 0.23 & 0.23 & 1.19E-03                       \\
+346      & 7.72   & 3.11E-03   & 0.45 & 0.68 & 3.09E-03                       \\
+417      & 21.05  & 1.94E-03   & 0.28 & 0.95 & 3.91E-03                       \\
+492      & 18.95  & 2.05E-03   & 0.29 & 1.25 & 3.91E-03                       \\
+581      & 17.24  & 2.16E-03   & 0.31 & 1.55 & 3.46E-03                       \\
+756      & 6.67   & 3.30E-03   & 0.47 & 2.03 & 2.70E-03                       \\
+993      & 42.68  & 1.27E-03   & 0.18 & 2.21 & 7.68E-04                      
+\end{tabular}
+        \caption{Data - Period, differeital and integral reactivity worth}\label{tab:data}
+\end{table}
+
+
+
+\
