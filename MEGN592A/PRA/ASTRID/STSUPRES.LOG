@@ -1,0 +1,12 @@
+If you are experiencing specific problems please forward this file UNCHANGED to your 
+application developers or to the SageST developers (warren.merrill@inl.gov).
+
+It is not necessary to forward this file unless you are having specific problems.
+
+This file is a log of Fatal or Minor errors encountered while the flags are set 
+to suppress showing them to screen.  If you are experiencing problems sending this 
+file may assist us to finds solutions to the problems. 
+
+2016/10/07 10:20:40.850 SAPHIRE.exe  134   Minor Error -   Block field must be cleared prior to action
+WriteRecord
+EvModel.DllBlock
