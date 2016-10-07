@@ -1,0 +1,8 @@
+\select@language {english}
+\par \penalty \@M \textbf {{\scshape Table} \hfill Page}\par \penalty \@M 
+\addvspace {10pt}
+\addvspace {10pt}
+\addvspace {10pt}
+\addvspace {10pt}
+\contentsline {table}{\numberline {A.1}{\ignorespaces Raw data - Critical state rods positions}}{12}{table.A.1}
+\contentsline {table}{\numberline {A.2}{\ignorespaces Data - Period, differeital and integral reactivity worth}}{13}{table.A.2}
