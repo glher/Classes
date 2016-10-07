@@ -1,0 +1,54 @@
+ASTRID, POWER-EXCURSION, IE-POWER-GT-MAX = 
+^WINVER2.1
+^PHASES 1 18 1  //# phases defined, max count sequences, initial phase
+PHASE_1 16155777 Phase 1
+^TOPS
+AUTO_DETECT_NEUTRON, AUTO_DETECT_FUEL, AUTO_DETECT_TEMP, AUTO_RODS_FALL, MANU_RODS_FALL, MATE_FUEL_CLAD
+^LOGIC 1                  // initial phase, following are offset
+ +1.0  2.0  3.0 +4.0  5.0  6.0
+                -4.0 +5.0 +6.0
+                          -6.0
+                     -5.0  6.0
+ -1.0 +2.0  3.0 +4.0  5.0  6.0
+                -4.0 +5.0 +6.0
+                          -6.0
+                     -5.0  6.0
+      -2.0 +3.0 +4.0  5.0  6.0
+                -4.0 +5.0  6.0
+                     -5.0  6.0
+           -3.0  4.0  5.0  6.0
+^SEQUENCES 0                          // offset from initial phase
+N, Sequence Name, Y, End State, N, Frequency, N, Comments, 
+Y, , Y, OK, Y, , Y, , , 
+Y, , Y, OK, Y, , Y, , , 
+Y, , Y, , Y, , Y, , , 
+Y, , Y, FAIL, Y, , Y, , , 
+Y, , Y, OK, Y, , Y, , , 
+Y, , Y, OK, Y, , Y, , , 
+Y, , Y, , Y, , Y, , , 
+Y, , Y, FAIL, Y, , Y, , , 
+Y, , Y, OK, Y, , Y, , , 
+Y, , Y, OK, Y, , Y, , , 
+Y, , Y, FAIL, Y, , Y, , , 
+Y, , Y, FAIL, Y, , Y, , , 
+^ENDSEQUENCES      //Now postprocess end names
+^TOPDESC
+"Steady-state power goes over "
+"the maximum permitted"
+!
+"Detection by the neutron "
+"flux detectors"
+!
+"Detection by the fuel temperature"
+!
+"Detection by the sodium temperature"
+!
+"Control rods inserted automatically"
+!
+"Control rods inserted manually"
+!
+"Resistance of the cladding"
+!
+^NODESUBS
+^TEXT
+^PARMS
