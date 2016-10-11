@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.9.11)  7 OCT 2016 09:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.8.24)  11 OCT 2016 16:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1990,12 +1990,7 @@ File: chapters/chapter01/fig01/xenon_chain.png Graphic file (type png)
 <use chapters/chapter01/fig01/xenon_chain.png>
 Package pdftex.def Info: chapters/chapter01/fig01/xenon_chain.png used on input
  line 20.
-(pdftex.def)             Requested size: 744.4154pt x 254.63622pt.
-
-Overfull \hbox (296.4154pt too wide) in paragraph at lines 20--21
- [][] 
- []
-
+(pdftex.def)             Requested size: 372.19017pt x 127.3181pt.
 
 <chapters/chapter01/fig01/xenon_chain_simp.png, id=129, 494.84875pt x 125.46875
 pt>
@@ -2003,38 +1998,22 @@ File: chapters/chapter01/fig01/xenon_chain_simp.png Graphic file (type png)
  <use chapters/chapter01/fig01/xenon_chain_simp.png>
 Package pdftex.def Info: chapters/chapter01/fig01/xenon_chain_simp.png used on 
 input line 27.
-(pdftex.def)             Requested size: 1004.404pt x 254.63622pt.
-
-Overfull \hbox (556.404pt too wide) in paragraph at lines 27--28
- [][] 
- []
-
-[1
+(pdftex.def)             Requested size: 251.09344pt x 63.66391pt.
+ [1
 
 
 ]
-
-LaTeX Warning: Text page 2 contains only floats.
-
-
-Overfull \vbox (1.89816pt too high) has occurred while \output is active []
-
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 9.29993pt on input line 36.
+(Font)              scaled to size 9.29993pt on input line 65.
 LaTeX Font Info:    Font shape `T1/fnc/m/sc' will be
-(Font)              scaled to size 9.29993pt on input line 36.
-
-[2 <./chapters/chapter01/fig01/xenon_chain.png> <./chapters/chapter01/fig01/xen
-on_chain_simp.png>] [3]
+(Font)              scaled to size 9.29993pt on input line 65.
+ [2 <./chapters/chapter01/fig01/xenon_chain.png> <./chapters/chapter01/fig01/xe
+non_chain_simp.png>]
 LaTeX Font Info:    Font shape `T1/fnc/bx/n' in size <12> not available
 (Font)              Font shape `T1/fnc/b/n' tried instead on input line 82.
 LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
 (Font)              scaled to size 11.15991pt on input line 82.
-
-Underfull \vbox (badness 5022) has occurred while \output is active []
-
- [4]
-[5]) (./chapters/chapter02/chap02.tex [6]
+[3] [4] [5]) (./chapters/chapter02/chap02.tex [6]
 <chapters/chapter02/fig02/xenon.png, id=173, 602.25pt x 372.39125pt>
 File: chapters/chapter02/fig02/xenon.png Graphic file (type png)
 
@@ -2107,7 +2086,7 @@ ourier-mlit.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/fourier/fouri
 er-ms.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/ncntrsbk/uncb8a.pfb></
 usr/share/texlive/texmf-dist/fonts/type1/urw/ncntrsbk/uncr8a.pfb></usr/share/te
 xlive/texmf-dist/fonts/type1/urw/ncntrsbk/uncri8a.pfb>
-Output written on project.pdf (21 pages, 137150 bytes).
+Output written on project.pdf (21 pages, 136925 bytes).
 PDF statistics:
  257 PDF objects out of 1000 (max. 8388607)
  216 compressed objects within 3 object streams
