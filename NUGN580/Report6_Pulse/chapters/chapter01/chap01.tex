@@ -1,0 +1,102 @@
+%
+% File: chap01.tex
+%
+\let\textcircled=\pgftextcircled
+\chapter{Theory}
+\label{chap:intro}
+
+\initial{W}hen the positive reactivity added to a critical core is equal to the effective delayed neutron franction, $\beta_{eff}$, prompt criticality is achieved. That corresponds to a positive reactivity of $1\$$. Super prompt critical states arise when the reactivity insertion is above this one dollar limit. Essentially, in this state of operation, the delayed neutrons do not control the reactor period, and the power grows exponentially.
+
+TRIGA reactors such as the GSTR are able to withstand this power excursion by design, due to the decrease in the thermal non-leakage probability caused by the fuel temperature effect. From pulsing, it is possible to compute the prompt neutron lifetime, the negative temperature coefficient and the specific heat of the core. The Fuchs-Nordheim model approximation will be tested against the experimental values obtained.
+
+\section{Super prompt criticality}
+
+TRIGA reactors have a particular fuel design in which a fuel temperature increase causes a negative feedback loop, causing the reactivity to decrease by modifying the thermal non-leakage probability. This is what allows this reactor design to pulse, as opposed to the power reactors, where power generation infers that the fuel high temperature cannot be designed to have such a high negative reactivity feedback.
+
+However, even though a voluntary pulse is not possible in a power reactor, it can happen in a specific accident, rod ejection. In that case, one control rod is ejected suddenly from the core, causing this pulse and damaging the fuel cladding of the neighboring fuel elements.
+
+\section{Fuchs-Nordheim model}
+
+The Fuchs-Nordheim model describes the time behavior of a reactor with a large prompt negative temperature coefficient, the case of the GSTR, when there is a sudden insertion of a large amount of positive reactivity. This model is based on two primary assumptions about the reactor behavior during the pulse, namely that the delayed neutrons can be neglected and that all heat generated remains in the fuel. Those assumptions can be intuitively considered pretty good considering the timescale of a pulse, of the order of tens to hundreds of milliseconds.
+
+The model relates parameters of flux, reactivity, temperature change and energy released. In the following, we will consider the notations given below:
+
+\begin{conditions}
+ l   &  Prompt neutron lifetime \\
+ \alpha & Prompt negative temperature coefficient \\
+ C & Total heat capacity of the core available to the prompt burst energy release \\
+ \Delta \bar{T} & the change in average core temperature produced by the prompt burst  \\
+ \Delta k_p & The portion of the step reactivity insertion which is above prompt critical.
+\end{conditions}
+
+
+If an insertion of reactivity is made, the reactor power will initially increase as $e^{\frac{t}{\tau}}$, where $\tau$ is the period and t the time.
+
+\begin{equation}
+\tau = \frac{l}{\Delta k_p}
+\end{equation}
+
+\begin{equation}
+\Delta k_p = (p\$ - 1) * \beta_{eff}
+\end{equation}
+
+
+Using the assumption of constant heat capacity and adiabatic conditions, we can obtain that the reactor temperature will rise by $\frac{\Delta k_p}{lt}$ until the reactivity insertion beyond prompt critical is just compensated by the fuel temperature rise. The reactor power peaks at this time and then falls while the core temperature continues to increase to a maximum value double the temperature at peak power.
+
+\begin{equation}
+\Delta \bar{T} = \frac{2\Delta k_p}{\alpha} = \frac{E}{C}
+\end{equation}
+
+The total energy release during the pulse is given by:
+
+\begin{equation}
+E = \frac{2 C \Delta k_p}{\alpha}
+\end{equation}
+
+The peak power is:
+
+\begin{equation}
+P_{max} = \frac{C (\Delta k_p)^2}{2l\alpha} + P_0
+\end{equation}
+
+However, we have that $P_0 << P_{max}$, so the initial power value can be neglected.
+
+From the equations derived above, we can say that the energy release from a pulse vary linearly with the prompt reactivity insertion, and the peak power vary as the second power of the prompt reactivity insertion. Both the energy release and the peak power depend on the specific heat of the core C.
+
+Moreover, the full width at half maximum can be linked to the prompt reactivity insertion:
+
+\begin{equation}{\label{eql}}
+FWHM = \frac{4l cosh^{-1}(\sqrt(2))}{\Delta k_p}
+\end{equation}
+
+From equation~\ref{eql}, one can deduce the prompt neutron lifetime:
+
+\begin{equation}
+l = \frac{FMWH * \Delta k_p}{4 cosh^{-1}(\sqrt(2))}
+\end{equation}
+
+The negative temperature coefficient and the specific heat of the core can be approximated for the TRIGA fuel by:
+
+\begin{equation}{\label{eqa}}
+\alpha = 11 * 10^{-5} + 8 * 10^{-8}(\bar{T}-T_{ini})
+\end{equation}
+
+
+\begin{equation}
+C_p = (740 + 1.48 (\bar{T}-T_{ini})) * N
+\end{equation}
+\begin{conditions}
+N & Number of fuel elements in the core (125)
+\end{conditions}
+
+Those approximations will be compared to the measurements made in the results section.
+
+\section{Procedure}
+
+In order to pulse the reactor, it must first be in a critical state. At that point, the transient rod is pneumatically withdrawn from the core, in a very short time span. As soon as the rod extraction caused a positive reactivity insertion higher than a dollar, the reactor enters the super prompt critical state and the power increases extremely quickly to a high value. In a TRIGA reactor, the fuel temperature negative reactivity feedback then kicks in and counteracts the reactivity insertion from the rod withdrawal.
+
+The final steady state depends on the reactivity insertion and the fuel itself (its heat transfer characteristics notably). If no action is performed after the pulse, the reactor would stabilize at a power depending on the initial value. A rule of thumb states that you need 0.25 cents of reactivity per kW. Hence, a pulse of \$2.50 would, without a SCRAM, stabilize the power at 1000 kW. However, that is true considering a low initial power. Had the initial power been higher, the steady state of the reactor would stabilize at higher power, exceeding the license limits.
+
+Consequently, before pulsing the reactor, the automatic SCRAM on high power needs to be checked. The pulse rod should drop within a seconds of its extraction, and the other three control rods after 15 seconds. In order to do so, it is possible to simulate a high power peak by sending a current to the NPP1000 detector. Due to the high power increase, it is also important to monitor the fuel temperature, to make sure the fuel cladding doesn't suffer any unexpected stress.
+
+Once the checks are done, the pulses can be initiated by putting the reactor in a stable critical state. Using the transient rod calibration curve, it is possible to obtain the desired height to be extracted from the core to generate a given pulse reactivity insertion. The results, mainly the power readings, are then automatically computed by the control computer and can be analyzed.

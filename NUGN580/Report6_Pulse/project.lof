@@ -1,0 +1,12 @@
+\select@language {english}
+\par \penalty \@M \textbf {{\scshape Figure} \hfill Page}\par \penalty \@M 
+\addvspace {10pt}
+\addvspace {10pt}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Pulses of the GSTR}}{6}{figure.2.1}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Negative temperature coefficient vs temperature}}{7}{figure.2.2}
+\addvspace {10pt}
+\addvspace {10pt}
+\contentsline {figure}{\numberline {A.1}{\ignorespaces Pulse energy as a function of the prompt reactivity inserted}}{12}{figure.A.1}
+\contentsline {figure}{\numberline {A.2}{\ignorespaces Pulse FWHM as a function of the prompt reactivity inserted}}{12}{figure.A.2}
+\contentsline {figure}{\numberline {A.3}{\ignorespaces Fuel temperature as a function of the prompt reactivity inserted}}{13}{figure.A.3}
+\contentsline {figure}{\numberline {A.4}{\ignorespaces Pulse period as a function of the prompt reactivity inserted}}{13}{figure.A.4}
