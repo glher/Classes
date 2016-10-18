@@ -24,13 +24,17 @@
 \BOOKMARK [0][-]{chapter.4}{High-level failure identification}{}% 24
 \BOOKMARK [1][-]{section.4.1}{Reliability Block Diagram}{chapter.4}% 25
 \BOOKMARK [1][-]{section.4.2}{Failure Modes and Effects Analysis}{chapter.4}% 26
-\BOOKMARK [0][-]{appendix.A}{Reliability Block Diagram}{}% 27
-\BOOKMARK [1][-]{section.A.1}{Global system}{appendix.A}% 28
-\BOOKMARK [1][-]{section.A.2}{Primary system}{appendix.A}% 29
-\BOOKMARK [2][-]{subsection.A.2.1}{Primary system redundancies}{section.A.2}% 30
-\BOOKMARK [1][-]{section.A.3}{Secondary system}{appendix.A}% 31
-\BOOKMARK [2][-]{subsection.A.3.1}{Secondary system redundancies}{section.A.3}% 32
-\BOOKMARK [1][-]{section.A.4}{Tertiary system}{appendix.A}% 33
-\BOOKMARK [2][-]{subsection.A.4.1}{Tertiary system redundancies}{section.A.4}% 34
-\BOOKMARK [0][-]{appendix.B}{Failure Modes and Effects Analysis}{}% 35
-\BOOKMARK [0][-]{section*.7}{Bibliography}{}% 36
+\BOOKMARK [0][-]{chapter.5}{Probabilistic Risk Assessment}{}% 27
+\BOOKMARK [1][-]{section.5.1}{PRA model}{chapter.5}% 28
+\BOOKMARK [1][-]{section.5.2}{PRA model applied to the case study}{chapter.5}% 29
+\BOOKMARK [0][-]{appendix.A}{Reliability Block Diagram}{}% 30
+\BOOKMARK [1][-]{section.A.1}{Global system}{appendix.A}% 31
+\BOOKMARK [1][-]{section.A.2}{Primary system}{appendix.A}% 32
+\BOOKMARK [2][-]{subsection.A.2.1}{Primary system redundancies}{section.A.2}% 33
+\BOOKMARK [1][-]{section.A.3}{Secondary system}{appendix.A}% 34
+\BOOKMARK [2][-]{subsection.A.3.1}{Secondary system redundancies}{section.A.3}% 35
+\BOOKMARK [1][-]{section.A.4}{Tertiary system}{appendix.A}% 36
+\BOOKMARK [2][-]{subsection.A.4.1}{Tertiary system redundancies}{section.A.4}% 37
+\BOOKMARK [0][-]{appendix.B}{Failure Modes and Effects Analysis}{}% 38
+\BOOKMARK [0][-]{appendix.C}{Probabilistic Risk Assessments}{}% 39
+\BOOKMARK [0][-]{section*.7}{Bibliography}{}% 40

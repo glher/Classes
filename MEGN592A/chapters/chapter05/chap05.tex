@@ -1,0 +1,54 @@
+%
+% File: chap05.tex
+%
+\let\textcircled=\pgftextcircled
+\chapter{Probabilistic Risk Assessment}
+\label{chap:pra}
+
+\newacronym{pra}{PRA}{Probabilistic Risk Assessment}
+
+\initial{R}isks assessments include the identification and analysis of initiating event, safety functions and accident sequences. The initiating events are the circumstances taht put a system in an off-normal condition. The safety functions represents the mitigating actions designed in the system. The accident sequences are the combinations of safety functions successes and failures used to describe the accident after the initiator. A successful response is obtained when the system transitions to a safe and stable end-state for a given period of time after the initiating event.
+
+\gls{pra} is used to compute the frequency and consequences of not achieving this safe and stable end-state.
+
+\section{PRA model}
+
+The goal of the PRA model is to model the system as-built and as-operated. This can be done using the design information, system drawings, operating experience data, system operating procedures, maintenance practices and a variety of other sources of information.
+
+PRA is based upon two primordial concepts, understanding the plant perturbation and understanding how the plant responds to the identified perturbations (physical responses, automatic system responses, operator responses).
+
+Those concepts can be used to define the end states. One can note that several different failed end states can be considered. Indeed, the system can fail with several degree of severeness (core damage, release and radiological consequences are the three levels usually used in the nuclear industry). Moreover, the Probability Risks Assessment method can be used as a Probability Reliability Assessment.
+
+It is thus important to properly define the goal of the analysis, as well as all the different hypotheses made.
+
+A PRA model consists of:
+
+\begin{enumerate}
+\item Event trees
+
+They describe the accident sequences, from the initiating event to an end state. Each event in an event tree is usually given two possible states, failure or success. Intermediate states can also be used in more advanced models.
+
+\item Fault trees
+
+They describe the failure of mitigating functions.
+\end{enumerate}
+
+Frequency and probability estimates are given for the failure of components or the happenstance of initiating events. One of the biggest challenges of this type of analysis, which is true for most risk and reliability analysis methods, is the difficulty to obtain those estimates. They can mostly be computed from operating experience data, expert elicitation.
+
+\section{PRA model applied to the case study}
+
+The PRA model that will be applied to the case study of the ASTRID reactor will be classical. Level-2 end-state will be considered, that is the system will be considered in a failed state if there is an unexpected release of radioactive materials in the atmosphere. Only two states will be used throughout the study, success or failure.
+
+Several initiating events will be analyzed:
+
+\begin{enumerate}
+\item Loss of offsite power
+\item Loss of coolant
+\item Power excursion
+\end{enumerate}
+
+Moreover, two subtrees (event trees used by the main trees) will be used, the SCRAM failure and the containment failure. Those two subtrees will also be analyzed independently, since they can be applied to a variety of initiating events.
+
+Due to the aforementionned difficulty to obtain real frequency and probability data for initiating and basic events, the values used in this study are estimated using the engineering knowledge of the author. The value presented are consequently used to illustrate the method, and should thus not be taken as face value.
+
+Table~\ref{tab:pra_basic} presents the probability of each event considered in this study.

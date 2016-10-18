@@ -1,0 +1,65 @@
+%
+% file: localoperator.tex
+% author: Victor Brena
+% description: Briefly describes properties of the local operator.
+%
+
+\chapter{Probabilistic Risk Assessments}
+\label{app:app03}
+
+\initial{P}robabilistic risk assessments consists of three categories of data, the event trees, the fault trees, and the frequencies associated with each basic and initiating events. This appendix lists in details the data used in the study.
+
+Table~\ref{tab:pra_basic} presents, for each and every identified basic event, their probability, on a per year basis.
+
+\begin{longtable}{p{7cm}cc}
+    \hline
+    Event & ID & Failure probability \\ \hline \hline
+    \endfirsthead
+    Event & ID & Failure probability \\ \hline \hline
+    \endhead
+No signal sent to the generator to start & NO\_START\_SIGNAL & \num{1e-3} \\
+No fuel for the generator & GENERATOR\_NO\_FUEL & \num{1e-3}\\
+No oil for the generator & GENERATOR\_NO\_OIL & \num{1e-3}\\
+Other failure (bearing, rust, etc) & GENERATOR\_OTHER\_FAIL & \num{1e-2}\\
+No signal sent to the generator & GENERATOR\_NO\_SIGNAL & \num{1e-2}\\
+\hline
+Fuel probes signal transmission & CORE\_DET\_FUEL\_TRANS & \num{1e-6}\\
+Fuel temperature sensor & CORE\_DET\_FUEL & \num{1e-2}\\
+\hline
+Neutron detectors signal transmission & CORE\_DET\_NEUT\_TRANS & \num{1e-5}\\
+Neutron flux detector & CORE\_DET\_NEUT & \num{1e-3} \\
+\hline
+Thermocouples signal transmission & CORE\_DET\_THER\_TRANS & \num{1e-5}\\
+Thermocouple & CORE\_DET\_THER & \num{1e-2} \\
+\hline
+Sensor detection of flow efficiency & SENSOR\_DETECTION & \num{1e-3}\\
+Sensor communication & SENSOR\_NO\_COMM &  \num{1e-3}\\
+\hline
+Check if the power if off & AUTO\_POWER\_CHACK & \num{1e-7} \\
+Signal communication & COMM\_SIGNAL\_POWER\_OFF &  \num{1e-3}\\
+\hline
+Decay heat removal system heat exchanger & DHR\_IHX &  \num{1e-4}\\
+DHR system pump & DHR\_PUMP &  \num{1e-4}\\
+Heat sink availability & HEAT\_SINK & \num{1e-3} \\
+Regular DHR power & DHR\_POWER & \num{1e-4}\\
+\hline
+Maintenance access to generator & MAINTENANCE\_NOT\_POSSIBLE & \num{1e-3}\\
+Repair of generator & GENERATOR\_REPAIR & \num{1e-1}\\
+\hline
+Signal to let rods fall & CORE\_RODS\_SIGNAL & \num{1e-5}\\
+Mechanical release of control rods & CORE\_RODS\_MECH & \num{1e-4} \\ 
+\hline
+Safety Injection System pump & SIS\_PUMP &  \num{1e-4}\\
+SIS Tank & SIS\_TANK &  \num{1e-5}\\
+Regular SIS power & SIS\_POWER & \num{1e-4}\\
+SIS valve & SIS\_VALVE & \num{1e-2}\\
+\caption{PRA: basic events}
+\label{tab:pra_basic}
+\end{longtable}
+
+
+
+
+
+
+\

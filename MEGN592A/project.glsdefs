@@ -268,3 +268,33 @@ parent={},%
 %
 }%
 }%
+\ifglsentryexists{pra}{}%
+{%
+\gls@defglossaryentry{pra}%
+{%
+name={PRA},%
+sort={PRA},%
+type={acronym},%
+first={Probabilistic Risk Assessment\glsspace (PRA)},%
+firstplural={Probabilistic Risk Assessments\glsspace (PRAs)},%
+text={PRA},%
+plural={PRAs},%
+description={Probabilistic Risk Assessment},%
+descriptionplural={Probabilistic Risk Assessment\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Probabilistic Risk Assessment},%
+longplural={Probabilistic Risk Assessments},%
+short={PRA},%
+shortplural={PRAs},%
+counter={page},%
+parent={},%
+%
+}%
+}%

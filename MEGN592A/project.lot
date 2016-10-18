@@ -13,5 +13,8 @@
 \contentsline {table}{\numberline {4.6}{\ignorespaces Excerpt from Table\ref {tab:fmea_rpn_risk} presenting the RPN and possible mitigation strategy for the perceived most severe failure modes}}{21}{table.4.6}
 \addvspace {10pt}
 \addvspace {10pt}
-\contentsline {table}{\numberline {B.1}{FMEA}}{42}{table.B.1}
-\contentsline {table}{\numberline {B.2}{FMEA: RPN and mitigation}}{45}{table.B.2}
+\addvspace {10pt}
+\contentsline {table}{\numberline {B.1}{FMEA}}{44}{table.B.1}
+\contentsline {table}{\numberline {B.2}{FMEA: RPN and mitigation}}{47}{table.B.2}
+\addvspace {10pt}
+\contentsline {table}{\numberline {C.1}{PRA basic}}{50}{table.C.1}
