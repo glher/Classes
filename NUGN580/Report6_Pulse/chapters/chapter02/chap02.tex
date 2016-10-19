@@ -80,11 +80,41 @@ Prompt reactivity insertion ($\$$) & Specific heat of the core ($W.s/Celsius$) &
 \end{table}
 
 
-It is possible to see on figures~\ref{fig:energy} to~\ref{fig:period} that the experiments agrees with the trend predicted by the Fuchs-Nordheim model. Indeed, the fuel temperature and the pulse energy correlates linearly with the prompt reactivity insertion (respectively $R^2 = 0.998$ and $R^2 = 0.999$). Moreover, the inverse dependance of the FWHM and the pulse period with the prompt reactivity insertion is confirmed.
+\begin{figure}[t!]
+	\centering
+	\includegraphics[height=0.4\textheight]{fig02/cp.png}
+	\mycaption[Total heat of the core vs temperature]{Total heat of the core vs temperature.}
+	\label{fig:cp}
+\end{figure}
+
+It is possible to see on figures~\ref{fig:energy} to~\ref{fig:period} that the experiment agrees with the trend predicted by the Fuchs-Nordheim model. Indeed, the fuel temperature and the pulse energy correlates linearly with the prompt reactivity insertion (respectively $R^2 = 0.998$ and $R^2 = 0.999$). Moreover, the inverse dependance of the FWHM and the pulse period with the prompt reactivity insertion is confirmed.
 
 The peak power also clearly shows a second degree polynomial trend, on figure~\ref{fig:power}.
 
 
 \section{Uncertainties}
 
+Several uncertainty sources must be considered. First and foremost, the prompt reactivity insertion is estimated through the use of the calibration curves. In that regards, the uncertainties observed when calculating this curve propagates here. In the case of the GSTR, it has been shown that the transient rod might be slightly off-centered, skewed toward the top of the core~\cite{lher01}.
 
+A telling way to obtain parts of the uncertainties in the system is to compare the two measurement made for a maximum pulse, with a \$2.3 prompt reactivity insertion. One can see that even though the conditions are supposed to be identical, some differences can be observed. Indeed, table~\ref{tab:comp} presents the relative errors.
+
+\begin{table}[!htb]
+    \centering
+\begin{tabular}{p{6cm}c}
+Parameter & Relative difference \\ \hline\hline
+Reactivity & 0\% \\
+FWHM & 1.5\% \\
+Pulse energy & 2.3\% \\
+Pulse period & 1.7\% \\
+Fuel temperature peak & 0.3\% \\
+\hline
+Neutron lifetime & 1.5\% \\
+Specific core heat & 2.3\% \\
+Prompt negative temperature coefficient & -0.3\%
+\end{tabular}
+        \caption{Relative difference between the different parameters for identical prompt reactivity insertion}\label{tab:comp}
+\end{table}
+
+This table does not represent all the uncertainties in the system, it merely illustrates a potential impact. It is however useful to give us an idea of the uncertainties of the measurements.
+
+One can see then that the estimates for $\alpha$ and $C$ are not very precise, and could gain to be calculated again, using figures~\ref{fig:alpha} and~\ref{fig:cp}.
