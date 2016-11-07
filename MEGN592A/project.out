@@ -27,14 +27,17 @@
 \BOOKMARK [0][-]{chapter.5}{Probabilistic Risk Assessment}{}% 27
 \BOOKMARK [1][-]{section.5.1}{PRA model}{chapter.5}% 28
 \BOOKMARK [1][-]{section.5.2}{PRA model applied to the case study}{chapter.5}% 29
-\BOOKMARK [0][-]{appendix.A}{Reliability Block Diagram}{}% 30
-\BOOKMARK [1][-]{section.A.1}{Global system}{appendix.A}% 31
-\BOOKMARK [1][-]{section.A.2}{Primary system}{appendix.A}% 32
-\BOOKMARK [2][-]{subsection.A.2.1}{Primary system redundancies}{section.A.2}% 33
-\BOOKMARK [1][-]{section.A.3}{Secondary system}{appendix.A}% 34
-\BOOKMARK [2][-]{subsection.A.3.1}{Secondary system redundancies}{section.A.3}% 35
-\BOOKMARK [1][-]{section.A.4}{Tertiary system}{appendix.A}% 36
-\BOOKMARK [2][-]{subsection.A.4.1}{Tertiary system redundancies}{section.A.4}% 37
-\BOOKMARK [0][-]{appendix.B}{Failure Modes and Effects Analysis}{}% 38
-\BOOKMARK [0][-]{appendix.C}{Probabilistic Risk Assessments}{}% 39
-\BOOKMARK [0][-]{section*.7}{Bibliography}{}% 40
+\BOOKMARK [0][-]{chapter.6}{Functional models}{}% 30
+\BOOKMARK [1][-]{section.6.1}{Functional model}{chapter.6}% 31
+\BOOKMARK [1][-]{section.6.2}{Function Failure Design Method}{chapter.6}% 32
+\BOOKMARK [0][-]{appendix.A}{Reliability Block Diagram}{}% 33
+\BOOKMARK [1][-]{section.A.1}{Global system}{appendix.A}% 34
+\BOOKMARK [1][-]{section.A.2}{Primary system}{appendix.A}% 35
+\BOOKMARK [2][-]{subsection.A.2.1}{Primary system redundancies}{section.A.2}% 36
+\BOOKMARK [1][-]{section.A.3}{Secondary system}{appendix.A}% 37
+\BOOKMARK [2][-]{subsection.A.3.1}{Secondary system redundancies}{section.A.3}% 38
+\BOOKMARK [1][-]{section.A.4}{Tertiary system}{appendix.A}% 39
+\BOOKMARK [2][-]{subsection.A.4.1}{Tertiary system redundancies}{section.A.4}% 40
+\BOOKMARK [0][-]{appendix.B}{Failure Modes and Effects Analysis}{}% 41
+\BOOKMARK [0][-]{appendix.C}{Probabilistic Risk Assessments}{}% 42
+\BOOKMARK [0][-]{section*.7}{Bibliography}{}% 43

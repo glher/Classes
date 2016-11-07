@@ -47,12 +47,24 @@ Maintenance access to generator & MAINTENANCE\_NOT\_POSSIBLE & \num{1e-3}\\
 Repair of generator & GENERATOR\_REPAIR & \num{1e-1}\\
 \hline
 Signal to let rods fall & CORE\_RODS\_SIGNAL & \num{1e-5}\\
+Signal to let rods fall & CORE\_RODS\_SIGNAL\_MANU & \num{1e-5}\\
 Mechanical release of control rods & CORE\_RODS\_MECH & \num{1e-4} \\ 
 \hline
 Safety Injection System pump & SIS\_PUMP &  \num{1e-4}\\
 SIS Tank & SIS\_TANK &  \num{1e-5}\\
 Regular SIS power & SIS\_POWER & \num{1e-4}\\
 SIS valve & SIS\_VALVE & \num{1e-2}\\
+\hline
+Breach in the main vessel & PRE\_BREACH\_CONT\_MAIN & \num{1e-5} \\
+Breach in the safety vessel & PRE\_BREACH\_CONT\_SAFE & \num{1e-5} \\
+\hline
+Operator interpretation to manually detect LOCA & INTERPRET\_OPERATOR & \num{5e-2} \\
+Control room communication isolated & OUTSIDE\_COMMUNICATION & \num{1e-4} \\
+Operator unavailable & OPERATOR\_PROBLEM & \num{1e-4} \\
+Manually add sodium to the core & MANU\_COOL & \num{5e-1}\\
+\hline
+Strenght of the cladding & CORE\_CLAD\_STREN & \num{1e-2}\\
+\hline
 \caption{PRA: basic events}
 \label{tab:pra_basic}
 \end{longtable}

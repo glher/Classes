@@ -33,14 +33,17 @@
 \contentsline {chapter}{\chapternumberline {5}Probabilistic Risk Assessment}{23}{chapter.5}
 \contentsline {section}{\numberline {5.1}PRA model}{23}{section.5.1}
 \contentsline {section}{\numberline {5.2}PRA model applied to the case study}{24}{section.5.2}
-\contentsline {appendix}{\chapternumberline {A}Reliability Block Diagram}{25}{appendix.A}
-\contentsline {section}{\numberline {A.1}Global system}{25}{section.A.1}
-\contentsline {section}{\numberline {A.2}Primary system}{27}{section.A.2}
-\contentsline {subsection}{\numberline {A.2.1}Primary system redundancies}{28}{subsection.A.2.1}
-\contentsline {section}{\numberline {A.3}Secondary system}{33}{section.A.3}
-\contentsline {subsection}{\numberline {A.3.1}Secondary system redundancies}{34}{subsection.A.3.1}
-\contentsline {section}{\numberline {A.4}Tertiary system}{37}{section.A.4}
-\contentsline {subsection}{\numberline {A.4.1}Tertiary system redundancies}{38}{subsection.A.4.1}
-\contentsline {appendix}{\chapternumberline {B}Failure Modes and Effects Analysis}{41}{appendix.B}
-\contentsline {appendix}{\chapternumberline {C}Probabilistic Risk Assessments}{49}{appendix.C}
-\contentsline {chapter}{Bibliography}{51}{section*.7}
+\contentsline {chapter}{\chapternumberline {6}Functional models}{25}{chapter.6}
+\contentsline {section}{\numberline {6.1}Functional model}{25}{section.6.1}
+\contentsline {section}{\numberline {6.2}Function Failure Design Method}{26}{section.6.2}
+\contentsline {appendix}{\chapternumberline {A}Reliability Block Diagram}{29}{appendix.A}
+\contentsline {section}{\numberline {A.1}Global system}{29}{section.A.1}
+\contentsline {section}{\numberline {A.2}Primary system}{31}{section.A.2}
+\contentsline {subsection}{\numberline {A.2.1}Primary system redundancies}{32}{subsection.A.2.1}
+\contentsline {section}{\numberline {A.3}Secondary system}{37}{section.A.3}
+\contentsline {subsection}{\numberline {A.3.1}Secondary system redundancies}{38}{subsection.A.3.1}
+\contentsline {section}{\numberline {A.4}Tertiary system}{41}{section.A.4}
+\contentsline {subsection}{\numberline {A.4.1}Tertiary system redundancies}{42}{subsection.A.4.1}
+\contentsline {appendix}{\chapternumberline {B}Failure Modes and Effects Analysis}{45}{appendix.B}
+\contentsline {appendix}{\chapternumberline {C}Probabilistic Risk Assessments}{53}{appendix.C}
+\contentsline {chapter}{Bibliography}{55}{section*.7}

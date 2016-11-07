@@ -298,3 +298,123 @@ parent={},%
 %
 }%
 }%
+\ifglsentryexists{fbed}{}%
+{%
+\gls@defglossaryentry{fbed}%
+{%
+name={FBED},%
+sort={FBED},%
+type={acronym},%
+first={Functional Basis for Engineering Design\glsspace (FBED)},%
+firstplural={Functional Basis for Engineering Designs\glsspace (FBEDs)},%
+text={FBED},%
+plural={FBEDs},%
+description={Functional Basis for Engineering Design},%
+descriptionplural={Functional Basis for Engineering Design\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Functional Basis for Engineering Design},%
+longplural={Functional Basis for Engineering Designs},%
+short={FBED},%
+shortplural={FBEDs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{ffip}{}%
+{%
+\gls@defglossaryentry{ffip}%
+{%
+name={FFIP},%
+sort={FFIP},%
+type={acronym},%
+first={Funtion Failure Identification and Propagation\glsspace (FFIP)},%
+firstplural={Funtion Failure Identification and Propagations\glsspace (FFIPs)},%
+text={FFIP},%
+plural={FFIPs},%
+description={Funtion Failure Identification and Propagation},%
+descriptionplural={Funtion Failure Identification and Propagation\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Funtion Failure Identification and Propagation},%
+longplural={Funtion Failure Identification and Propagations},%
+short={FFIP},%
+shortplural={FFIPs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{ffdm}{}%
+{%
+\gls@defglossaryentry{ffdm}%
+{%
+name={FFDM},%
+sort={FFDM},%
+type={acronym},%
+first={Function Failure Design Method\glsspace (FFDM)},%
+firstplural={Function Failure Design Methods\glsspace (FFDMs)},%
+text={FFDM},%
+plural={FFDMs},%
+description={Function Failure Design Method},%
+descriptionplural={Function Failure Design Method\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Function Failure Design Method},%
+longplural={Function Failure Design Methods},%
+short={FFDM},%
+shortplural={FFDMs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{uffsr}{}%
+{%
+\gls@defglossaryentry{uffsr}%
+{%
+name={UFFSR},%
+sort={UFFSR},%
+type={acronym},%
+first={Uncoupled Flow Failure State Reasoning\glsspace (UFFSR)},%
+firstplural={Uncoupled Flow Failure State Reasonings\glsspace (UFFSRs)},%
+text={UFFSR},%
+plural={UFFSRs},%
+description={Uncoupled Flow Failure State Reasoning},%
+descriptionplural={Uncoupled Flow Failure State Reasoning\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Uncoupled Flow Failure State Reasoning},%
+longplural={Uncoupled Flow Failure State Reasonings},%
+short={UFFSR},%
+shortplural={UFFSRs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
