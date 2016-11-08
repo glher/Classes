@@ -10,15 +10,16 @@
 \contentsline {table}{\numberline {4.3}{\ignorespaces Detectability index for a reliability-centered method}}{20}{table.4.3}
 \contentsline {table}{\numberline {4.4}{\ignorespaces Detectability index}}{21}{table.4.4}
 \contentsline {table}{\numberline {4.5}{\ignorespaces Excerpt from Table\ref {tab:fmea_risk} presenting the (P, S, D)-triplet for the perceived most severe failure modes}}{21}{table.4.5}
-\contentsline {table}{\numberline {4.6}{\ignorespaces Excerpt from Table\ref {tab:fmea_rpn_risk} presenting the RPN and possible mitigation strategy for the perceived most severe failure modes}}{21}{table.4.6}
+\contentsline {table}{\numberline {4.6}{\ignorespaces Excerpt from Table~\ref {tab:fmea_rpn_risk} presenting the RPN and possible mitigation strategy for the perceived most severe failure modes}}{21}{table.4.6}
 \addvspace {10pt}
 \addvspace {10pt}
 \contentsline {table}{\numberline {6.1}{\ignorespaces Excerpt from the functional basis reconciled function set}}{26}{table.6.1}
 \contentsline {table}{\numberline {6.2}{\ignorespaces Excerpt from the functional basis reconciled flow set}}{26}{table.6.2}
-\contentsline {table}{\numberline {6.3}{\ignorespaces FFDM database}}{27}{table.6.3}
+\contentsline {table}{\numberline {6.3}{\ignorespaces FFDM database}}{28}{table.6.3}
+\contentsline {table}{\numberline {6.4}{\ignorespaces FFDM normalized database}}{28}{table.6.4}
 \addvspace {10pt}
 \addvspace {10pt}
-\contentsline {table}{\numberline {B.1}{FMEA}}{49}{table.B.1}
-\contentsline {table}{\numberline {B.2}{FMEA: RPN and mitigation}}{52}{table.B.2}
+\contentsline {table}{\numberline {B.1}{FMEA}}{51}{table.B.1}
+\contentsline {table}{\numberline {B.2}{FMEA: RPN and mitigation}}{54}{table.B.2}
 \addvspace {10pt}
-\contentsline {table}{\numberline {C.1}{PRA: basic events}}{54}{table.C.1}
+\contentsline {table}{\numberline {C.1}{PRA: basic events}}{56}{table.C.1}
