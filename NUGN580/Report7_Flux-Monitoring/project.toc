@@ -10,7 +10,7 @@
 \contentsline {section}{\numberline {1.5}Procedure}{4}{section.1.5}
 \contentsline {chapter}{\chapternumberline {2}Results}{5}{chapter.2}
 \contentsline {section}{\numberline {2.1}Results}{5}{section.2.1}
-\contentsline {section}{\numberline {2.2}Uncertainties}{5}{section.2.2}
-\contentsline {chapter}{\chapternumberline {3}Conclusion}{7}{chapter.3}
-\contentsline {appendix}{\chapternumberline {A}Detailed data tables}{9}{appendix.A}
-\contentsline {chapter}{Bibliography}{11}{section*.5}
+\contentsline {section}{\numberline {2.2}Uncertainties}{6}{section.2.2}
+\contentsline {chapter}{\chapternumberline {3}Conclusion}{9}{chapter.3}
+\contentsline {appendix}{\chapternumberline {A}Detailed data tables}{11}{appendix.A}
+\contentsline {chapter}{Bibliography}{13}{section*.5}
