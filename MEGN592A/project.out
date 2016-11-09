@@ -30,14 +30,15 @@
 \BOOKMARK [0][-]{chapter.6}{Functional models}{}% 30
 \BOOKMARK [1][-]{section.6.1}{Functional model}{chapter.6}% 31
 \BOOKMARK [1][-]{section.6.2}{Function Failure Design Method}{chapter.6}% 32
-\BOOKMARK [0][-]{appendix.A}{Reliability Block Diagram}{}% 33
-\BOOKMARK [1][-]{section.A.1}{Global system}{appendix.A}% 34
-\BOOKMARK [1][-]{section.A.2}{Primary system}{appendix.A}% 35
-\BOOKMARK [2][-]{subsection.A.2.1}{Primary system redundancies}{section.A.2}% 36
-\BOOKMARK [1][-]{section.A.3}{Secondary system}{appendix.A}% 37
-\BOOKMARK [2][-]{subsection.A.3.1}{Secondary system redundancies}{section.A.3}% 38
-\BOOKMARK [1][-]{section.A.4}{Tertiary system}{appendix.A}% 39
-\BOOKMARK [2][-]{subsection.A.4.1}{Tertiary system redundancies}{section.A.4}% 40
-\BOOKMARK [0][-]{appendix.B}{Failure Modes and Effects Analysis}{}% 41
-\BOOKMARK [0][-]{appendix.C}{Probabilistic Risk Assessments}{}% 42
-\BOOKMARK [0][-]{section*.7}{Bibliography}{}% 43
+\BOOKMARK [1][-]{section.6.3}{Function Failure Identification and Propagation}{chapter.6}% 33
+\BOOKMARK [0][-]{appendix.A}{Reliability Block Diagram}{}% 34
+\BOOKMARK [1][-]{section.A.1}{Global system}{appendix.A}% 35
+\BOOKMARK [1][-]{section.A.2}{Primary system}{appendix.A}% 36
+\BOOKMARK [2][-]{subsection.A.2.1}{Primary system redundancies}{section.A.2}% 37
+\BOOKMARK [1][-]{section.A.3}{Secondary system}{appendix.A}% 38
+\BOOKMARK [2][-]{subsection.A.3.1}{Secondary system redundancies}{section.A.3}% 39
+\BOOKMARK [1][-]{section.A.4}{Tertiary system}{appendix.A}% 40
+\BOOKMARK [2][-]{subsection.A.4.1}{Tertiary system redundancies}{section.A.4}% 41
+\BOOKMARK [0][-]{appendix.B}{Failure Modes and Effects Analysis}{}% 42
+\BOOKMARK [0][-]{appendix.C}{Probabilistic Risk Assessments}{}% 43
+\BOOKMARK [0][-]{section*.7}{Bibliography}{}% 44

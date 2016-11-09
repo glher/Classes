@@ -36,14 +36,15 @@
 \contentsline {chapter}{\chapternumberline {6}Functional models}{25}{chapter.6}
 \contentsline {section}{\numberline {6.1}Functional model}{25}{section.6.1}
 \contentsline {section}{\numberline {6.2}Function Failure Design Method}{26}{section.6.2}
-\contentsline {appendix}{\chapternumberline {A}Reliability Block Diagram}{31}{appendix.A}
-\contentsline {section}{\numberline {A.1}Global system}{31}{section.A.1}
-\contentsline {section}{\numberline {A.2}Primary system}{33}{section.A.2}
-\contentsline {subsection}{\numberline {A.2.1}Primary system redundancies}{34}{subsection.A.2.1}
-\contentsline {section}{\numberline {A.3}Secondary system}{39}{section.A.3}
-\contentsline {subsection}{\numberline {A.3.1}Secondary system redundancies}{40}{subsection.A.3.1}
-\contentsline {section}{\numberline {A.4}Tertiary system}{43}{section.A.4}
-\contentsline {subsection}{\numberline {A.4.1}Tertiary system redundancies}{44}{subsection.A.4.1}
-\contentsline {appendix}{\chapternumberline {B}Failure Modes and Effects Analysis}{47}{appendix.B}
-\contentsline {appendix}{\chapternumberline {C}Probabilistic Risk Assessments}{55}{appendix.C}
-\contentsline {chapter}{Bibliography}{57}{section*.7}
+\contentsline {section}{\numberline {6.3}Function Failure Identification and Propagation}{29}{section.6.3}
+\contentsline {appendix}{\chapternumberline {A}Reliability Block Diagram}{33}{appendix.A}
+\contentsline {section}{\numberline {A.1}Global system}{33}{section.A.1}
+\contentsline {section}{\numberline {A.2}Primary system}{35}{section.A.2}
+\contentsline {subsection}{\numberline {A.2.1}Primary system redundancies}{36}{subsection.A.2.1}
+\contentsline {section}{\numberline {A.3}Secondary system}{41}{section.A.3}
+\contentsline {subsection}{\numberline {A.3.1}Secondary system redundancies}{42}{subsection.A.3.1}
+\contentsline {section}{\numberline {A.4}Tertiary system}{45}{section.A.4}
+\contentsline {subsection}{\numberline {A.4.1}Tertiary system redundancies}{46}{subsection.A.4.1}
+\contentsline {appendix}{\chapternumberline {B}Failure Modes and Effects Analysis}{49}{appendix.B}
+\contentsline {appendix}{\chapternumberline {C}Probabilistic Risk Assessments}{57}{appendix.C}
+\contentsline {chapter}{Bibliography}{59}{section*.7}

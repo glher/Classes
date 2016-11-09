@@ -144,4 +144,85 @@ FFDM can be used to select the most adequate components for a given functionalit
 
 By applying a propagation method to a functional model, it is possible to get some insights about the system early on. FFDM data can be used to translate historical component failure to function failure probabilities. FFIP uses this data to propagate the failure through various flows in the system after a given initializing event. Analyzing the system in such a way can reveal weak points in the design, where mitigation action could be taken at the design stage, such as adding a redundancy or redirecting a failure flow.
 
+An algorithm can be used to determine the propagation of the failure and the probability associated. This algorithm estimates the flow coming into a function and the impact on the function and the outgoing flows. Consider a tank of water (\textit{Provision - Store - Supply}. If the feeding pipe (\textit{Channel - Transfer}) fails, then the liquid flow can be degraded or reduced to zero. This in turn does not fail the tank of water which can still function and store water. However, the outgoing flow will eventually fail if nothing is done, since the tank will run out of water. In this example, the function did not directly fail but can be considered to have failed indirectly by not being able to deliver its liquid flow for lack of incoming flow. The zero-liquid flow will then potentially fail the next function in line and the failure propagate.
+
+\begin{algorithm}
+\caption{FFIP pseudocode - Function 1}\label{euclid}
+\begin{algorithmic}[1]
+\Procedure{Signal - Sense - Measure}{}
+\Require {\textit{Energy - Electrical}, \textit{Energy - Radioactive}}
+\Ensure {\textit{Signal}}
+\If {$\textit{Energy - Electrical}_{in} = 0$} \Return procedure failed
+\ElsIf {$\textit{Energy - Radioactive}_{in} > \max(\text{range})$} \Return procedure failed
+\ElsIf {$\textit{Energy - Radioactive}_{in} < \min(\text{range})$} \Return procedure failed
+\ElsIf {$\textit{Signal}_{out} = 0$} \Return procedure failed
+\Else{} \Return procedure operative
+\EndIf
+\EndProcedure
+\end{algorithmic}
+\end{algorithm}
+
+
+\begin{algorithm}
+\caption{FFIP pseudocode - Function 2}\label{euclid}
+\begin{algorithmic}[1]
+\Procedure{Signal - Process}{}
+\Require {\textit{Material - Human}, \textit{Energy - Electrical}, \textit{Signal}}
+\Ensure {\textit{Signal - Control}}
+\If {$\textit{Material - Human}_{in} = 0$ and $\textit{Energy - Electrical}_{in} = 0$} \Return procedure failed
+\ElsIf {$\textit{Material - Human}_{in} = 0$ and $\textit{Signal}_{in} = 0$} \Return procedure failed
+\ElsIf {$\textit{Signal - Control}_{out} = 0$} \Return procedure failed
+\Else{} \Return procedure operative
+\EndIf
+\EndProcedure
+\end{algorithmic}
+\end{algorithm}
+
+
+\begin{algorithm}
+\caption{FFIP pseudocode - Function 3}\label{euclid}
+\begin{algorithmic}[1]
+\Procedure{Control Magnitude - Regulate}{}
+\Require {\textit{Signal - Control}, \textit{Energy - Electrical}}
+\Ensure {\textit{Signal - Control}}
+\If {not $\textit{Signal - Control}_{in}$} \Return procedure SCRAM
+\ElsIf {$\textit{Signal - Control}_{in} = 0$ and $\textit{Signal - Control}_{out} != 0$} \Return procedure failed
+\ElsIf {$\textit{Signal - Control}_{in} = \pm 1$ and $\textit{Signal - Control}_{out}\ in\ [0, \mp \textit{Signal - Control}_{in}$]} \Return procedure failed
+\ElsIf {$\textit{Signal - Control}_{in}$ and $\textit{Energy - Electrical}_{in} = 0$} \Return procedure failed
+\Else{} \Return procedure operative
+\EndIf
+\EndProcedure
+\end{algorithmic}
+\end{algorithm}
+
+
+\begin{algorithm}
+\caption{FFIP pseudocode - Function 3}\label{euclid}
+\begin{algorithmic}[1]
+\Procedure{Convert - Convert}{}
+\Require {\textit{Signal - Control}, \textit{Energy - Electrical}}
+\Ensure {\textit{Energy - Mechanical}}
+\If {not $\textit{Signal - Control}_{in}$} \Return procedure SCRAM
+\ElsIf {$\textit{Signal - Control}_{in}$ and $\textit{Energy - Electrical}_{in} = 0$} \Return procedure failed
+\ElsIf {$\textit{Signal - Control}_{in}$ and $\textit{Energy - Mechanical}_{out} = 0$} \Return procedure failed
+\Else{} \Return procedure operative
+\EndIf
+\EndProcedure
+\end{algorithmic}
+\end{algorithm}
+
+
+\begin{algorithm}
+\caption{FFIP pseudocode - Function 3}\label{euclid}
+\begin{algorithmic}[1]
+\Procedure{Channel - Guide - Translate}{}
+\Require {\textit{Material - Mixture - Solid-Solid}, \textit{Energy - Mechanical}}
+\Ensure {\textit{Energy - Radioactive}}
+\If {$\textit{Energy - Radioactive}_{out}$ not change} \Return procedure failed
+\Else{} \Return procedure operative
+\EndIf
+\EndProcedure
+\end{algorithmic}
+\end{algorithm}
+
 In the case study at hand, several failure flow propagation were studied.
