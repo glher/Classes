@@ -2,7 +2,7 @@
 % File: chap06.tex
 %
 \let\textcircled=\pgftextcircled
-\chapter{Functional models}
+\chapter{Functional analyses}
 \label{chap:fm}
 
 \newacronym{fbed}{FBED}{Functional Basis for Engineering Design}
@@ -136,18 +136,52 @@ Channel - Guide - Translate & 0                                                 
 
 The FFDM database obtained shows that the failure mode \textit{Corrosion fatigue} is present with a high score in a number of function. This is something the design team should consider, notably when deciding what material to use and the operating conditions that it will be subject to. A very high number can be seen, the \textit{Mechanical stress} for the \textit{Channel - Guide - Translate} function. The score displayed is 20. Moreover, a score of 16.5 can be seen for the \textit{Electronic failure} of the function \textit{Signal - Sense - Measure}. This is explained by the fact that the failure mode are highly likely for the given function. It can be seen that no other function exhibit those failure modes. A particular attention should thus be ported on the two functions, whether it is redundancies or improving the system.
 
-A crucial information is missing from this analysis. The likelihood of a failure mode damaging a function can be computed, based on historical data and even based on expert judgement if needed. However, the consequences of these failure on the system cannot be calculated. This leaves a consequent unknown out of the design team reach, since they cannot from this data alone take an informed decision. Consequently, this method can be judged unsufficient for larger complex systems, but proves useful in the context of a concept generator, to choose a component that is better than another for a given functionality. FFDM can also be used in the very early stage of design to point toward the direction to follow for the design, potentially avoiding some costly changes late in the design phase.
+A crucial information is missing from this analysis. The likelihood of a failure mode damaging a function can be computed, based on historical data and even based on expert judgement if needed. However, the consequences of these failures on the system cannot be calculated. This leaves a consequent unknown out of the design team reach, since they cannot, from this data alone, take a fully informed decision. Consequently, this method can be judged insufficient for larger complex systems, but proves useful in the context of a concept generator.A concept generator allow slight modifications and information to link functions and components, selecting the better component from a historical database for a given functionality in a given environment. FFDM can also be used in the very early stage of design to point toward the direction to follow for the design, potentially avoiding some costly changes late in the design phase. It cannot be used as a stand-alone tool to make decision on the risk and reliability aspect of a system for all its design phases.
 
 \section{Function Failure Identification and Propagation}
 
-FFDM can be used to select the most adequate components for a given functionality in a system, based upon historical failure data. However, it does not show how a failure caused by one of these componenets can propagate through the system. Reliability Block diagrams can be used to calculate the failure propagation through the components of a system, but this is limited to the end stages of design, when the whole system is mapped out. It is however crucial, in terms of risk and reliability analysis as well as in terms of design costs, to be able to compute potential failure propagation in the early phase of the design. This allows the engineers to make informed decisions about risk in the system and ways to mitigate them.
+FFDM can be used to select the most adequate components for a given functionality in a system, based upon historical failure data. However, it does not show how a failure caused by one of these componenets can propagate through the system. Reliability Block diagrams can be used to calculate the failure propagation through the components of a system, but this is limited to the end stages of design, when the whole system is mapped out. It is however crucial, in terms of risk and reliability analysis as well as in terms of design costs, to be able to compute potential failure propagation in the early phase of the design. This allows the engineers to make informed decisions about risk in the system and ways to mitigate them early on, thus saving a lot of redesign cost and time, from potential prototype modification to manufacturer contracts.
 
 By applying a propagation method to a functional model, it is possible to get some insights about the system early on. FFDM data can be used to translate historical component failure to function failure probabilities. FFIP uses this data to propagate the failure through various flows in the system after a given initializing event. Analyzing the system in such a way can reveal weak points in the design, where mitigation action could be taken at the design stage, such as adding a redundancy or redirecting a failure flow.
 
-An algorithm can be used to determine the propagation of the failure and the probability associated. This algorithm estimates the flow coming into a function and the impact on the function and the outgoing flows. Consider a tank of water (\textit{Provision - Store - Supply}. If the feeding pipe (\textit{Channel - Transfer}) fails, then the liquid flow can be degraded or reduced to zero. This in turn does not fail the tank of water which can still function and store water. However, the outgoing flow will eventually fail if nothing is done, since the tank will run out of water. In this example, the function did not directly fail but can be considered to have failed indirectly by not being able to deliver its liquid flow for lack of incoming flow. The zero-liquid flow will then potentially fail the next function in line and the failure propagate.
+An algorithm can be used to determine the propagation of the failure and the probability associated. This algorithm is named Function State Logic (FSL). It estimates the flow coming into a function and the impact on the function and the outgoing flows. Consider a tank of water (\textit{Provision - Store - Supply}. If the feeding pipe (\textit{Channel - Transfer}) fails, then the liquid flow can be degraded or reduced to zero. This in turn does not fail the tank of water which can still function and store water. However, the outgoing flow will eventually fail if nothing is done, since the tank will run out of water. In this example, the function did not directly fail but can be considered to have failed indirectly by not being able to deliver its liquid flow for lack of incoming flow. The degraded or zero-liquid flow will then potentially fail the next function in line and the failure propagates.
+
+Two different end results will be considered, showing the versatility of FFIP. Indeed, the system risk can be computed, by selecting the function representing the core containment, but the reliability of the system can be computed at the same time, by selecting the function representing the final electricity generation and outgoing flow. The failure of the first is a severe issue for the risk as well as the reliability of the system, while the second is mostly important to the operators. Hence, the reliability probability of failure can afford to be higher than the risk probability of failure.
+
+In the case study at hand, several failure flow propagation were studied. Let us take the case of a loss of electrical power in all the neutron detectors. FFIP can give us precious information on how the failure propagates through the system and what can be done to mitigate this. Various scenarii are used to illustrate the method. A loss of the function representing the neutron detectors, a loss of the function representing the turbines and a loss of the function representing the condensers. In each case, FFIP is applied to propagate the failure and evaluate the impact on the critical risk function and the critical reliability function.
+
+It is important to note that this represents an exponential problem. The complexity of the system grows exponentially with the size of the system. It is thus also important to define viable cutsets and a threshold, very much like in PRA. Using FSL algorithm as seen in algorithm~\ref{alg:ffip1} to~\ref{alg:ffip5}, the number of possible paths through a system, from the same initiating event, grows very quickly, according to equation~\ref{eq:grow}
+
+\begin{equation}
+\label{eq:grow}
+N = \prod_i \sum_j P_{i,j}
+\end{equation}
+Where:
+\begin{conditions}
+N & Number of possible cutsets \\
+i & Function on the path \\
+j & Algorithm possibility
+\end{conditions}
+
+For example, considering the loss of the neutron detectors power source, one can illustrate how quickly the number of cutsets grows. The initiating event is the loss of the incoming flow, \textit{Energy - Electrical}. FSL can be used to compute the potential cutsets. The loss of the power source fails the function \textit{Signal - Sense - Measure}. Consequently, several case can be considered. The power source to the control room might be turned and no human present to manually shut down the reactor, independently of the loss of detector signal. The next function in line is to \textit{Regulate} the core output. Let us consider that it receives a zero signal if no action is asked, a negative signal to lower the control rods and a positive signal to raise the control rods. If no signal is received, a SCRAM procedure is initiated. If the output of this function does not correspond to the demand, the function is considered failed. If it does receive a signal, but is not alimented in power, the function fails. Eventually, each scenario create a cutset, and propagates to the next function, generating a failure tree.
+
+In this case study, the cutsets studied extensively will be limited, the goal being to demonstrate the methodology. We will apply the full FFIP method to the risk assessment following the initiating event \textit{loss of neutron detectors power source}~\ref{fig:ffip1}. Similar to the event tree in PRA, probabilities can be assigned to each potential failure propagation potential. These probabilities can then be used to compute the impact of the initiating event on the system risk assessment, according to equation~\ref{eq:probfail}.
+
+The outcome of a function, as given by FSL, can be decided by the design team. In the simplest case, a binary choice can be taken, function failed or not. However, different impact on the outgoing flows can be considered, such as degraded flows or  flows-back. For the sake of simplicity, we only consider a function failed or healthy.
+
+\begin{equation}
+\label{eq:probfail}
+P_f = \prod_i (P_i)
+\end{equation}
+Where:
+\begin{conditions}
+P_f & Probability of failure of the critical risk function \\
+P_i & Probability associated to the outcome of the function (FSL cutset)
+\end{conditions}
+
 
 \begin{algorithm}
-\caption{FFIP pseudocode - Function 1}\label{euclid}
+\caption{FFIP pseudocode - Function 1}\label{alg:ffip1}
 \begin{algorithmic}[1]
 \Procedure{Signal - Sense - Measure}{}
 \Require {\textit{Energy - Electrical}, \textit{Energy - Radioactive}}
@@ -164,7 +198,7 @@ An algorithm can be used to determine the propagation of the failure and the pro
 
 
 \begin{algorithm}
-\caption{FFIP pseudocode - Function 2}\label{euclid}
+\caption{FFIP pseudocode - Function 2}\label{alg:ffip2}
 \begin{algorithmic}[1]
 \Procedure{Signal - Process}{}
 \Require {\textit{Material - Human}, \textit{Energy - Electrical}, \textit{Signal}}
@@ -180,7 +214,7 @@ An algorithm can be used to determine the propagation of the failure and the pro
 
 
 \begin{algorithm}
-\caption{FFIP pseudocode - Function 3}\label{euclid}
+\caption{FFIP pseudocode - Function 3}\label{alg:ffip3}
 \begin{algorithmic}[1]
 \Procedure{Control Magnitude - Regulate}{}
 \Require {\textit{Signal - Control}, \textit{Energy - Electrical}}
@@ -197,7 +231,7 @@ An algorithm can be used to determine the propagation of the failure and the pro
 
 
 \begin{algorithm}
-\caption{FFIP pseudocode - Function 3}\label{euclid}
+\caption{FFIP pseudocode - Function 4}\label{alg:ffip4}
 \begin{algorithmic}[1]
 \Procedure{Convert - Convert}{}
 \Require {\textit{Signal - Control}, \textit{Energy - Electrical}}
@@ -213,7 +247,7 @@ An algorithm can be used to determine the propagation of the failure and the pro
 
 
 \begin{algorithm}
-\caption{FFIP pseudocode - Function 3}\label{euclid}
+\caption{FFIP pseudocode - Function 5}\label{alg:ffip5}
 \begin{algorithmic}[1]
 \Procedure{Channel - Guide - Translate}{}
 \Require {\textit{Material - Mixture - Solid-Solid}, \textit{Energy - Mechanical}}
@@ -225,4 +259,3 @@ An algorithm can be used to determine the propagation of the failure and the pro
 \end{algorithmic}
 \end{algorithm}
 
-In the case study at hand, several failure flow propagation were studied.
