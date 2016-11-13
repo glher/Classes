@@ -418,3 +418,33 @@ parent={},%
 %
 }%
 }%
+\ifglsentryexists{fsl}{}%
+{%
+\gls@defglossaryentry{fsl}%
+{%
+name={FSL},%
+sort={FSL},%
+type={acronym},%
+first={Function State Logic\glsspace (FSL)},%
+firstplural={Function State Logics\glsspace (FSLs)},%
+text={FSL},%
+plural={FSLs},%
+description={Function State Logic},%
+descriptionplural={Function State Logic\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Function State Logic},%
+longplural={Function State Logics},%
+short={FSL},%
+shortplural={FSLs},%
+counter={page},%
+parent={},%
+%
+}%
+}%

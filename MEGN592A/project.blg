@@ -3,46 +3,47 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: project.aux
 The style file: siam.bst
 Database file #1: biblioproject.bib
+Warning--empty publisher in hunt01
 Warning--empty publisher in verdier2005
-You've used 16 entries,
+You've used 17 entries,
             2030 wiz_defined-function locations,
-            581 strings with 6229 characters,
-and the built_in function-call counts, 4363 in all, are:
-= -- 393
-> -- 203
+            585 strings with 6273 characters,
+and the built_in function-call counts, 4569 in all, are:
+= -- 406
+> -- 210
 < -- 0
-+ -- 81
-- -- 64
-* -- 339
-:= -- 730
-add.period$ -- 18
-call.type$ -- 16
-change.case$ -- 76
++ -- 85
+- -- 66
+* -- 353
+:= -- 764
+add.period$ -- 19
+call.type$ -- 17
+change.case$ -- 79
 chr.to.int$ -- 0
-cite$ -- 17
-duplicate$ -- 210
-empty$ -- 329
-format.name$ -- 64
-if$ -- 883
+cite$ -- 19
+duplicate$ -- 223
+empty$ -- 352
+format.name$ -- 66
+if$ -- 924
 int.to.chr$ -- 0
-int.to.str$ -- 16
-missing$ -- 17
-newline$ -- 53
-num.names$ -- 32
-pop$ -- 82
+int.to.str$ -- 17
+missing$ -- 19
+newline$ -- 56
+num.names$ -- 34
+pop$ -- 91
 preamble$ -- 1
-purify$ -- 62
+purify$ -- 65
 quote$ -- 0
-skip$ -- 146
+skip$ -- 151
 stack$ -- 0
-substring$ -- 209
-swap$ -- 64
+substring$ -- 215
+swap$ -- 66
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 60
-warning$ -- 1
-while$ -- 44
-width$ -- 18
-write$ -- 135
-(There was 1 warning)
+type$ -- 62
+warning$ -- 2
+while$ -- 46
+width$ -- 19
+write$ -- 142
+(There were 2 warnings)
