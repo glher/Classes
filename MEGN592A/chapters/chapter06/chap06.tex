@@ -10,8 +10,11 @@
 \newacronym{ffdm}{FFDM}{Function Failure Design Method}
 \newacronym{uffsr}{UFFSR}{Uncoupled Flow Failure State Reasoning}
 \newacronym{fsl}{FSL}{Function State Logic}
+\newacronym{phm}{PHM}{Prognostic and Health Management}
+\newacronym{sta}{STA}{Success Tree Analysis}
+\newacronym{hra}{HRA}{Human Reliability Assessment}
 
-\initial{A} different way of representing an engineering system is to embed it as a functional model. A functional model is a graphical representation of a system, that ties a component to a function, or a set of functions, fulfilled within the system. Function are interconnected by flows. One of the main advantage of functional modeling is its applicability in the early stages of design, when no components have been selected and the design is just a concept. Until recently, two main methods existed to create a functional method, NIST and ?. Each had their own volatile taxonomy, which limited the widespread use of this technique to other ends than system description. Stone and Wood proposed the \gls{fbed}~\cite{stone}, which reconciled sets of function and flows notably with relation to mechanical engineering design nomenclature. This common taxonomy allowed for automatic analysis methods and database maintenance, which paved the way to various risk and reliability methods based on functional models, such as \gls{ffdm}~\cite{stone2005}, \gls{ffip}~\cite{kurtoglu2007} or \gls{uffsr}~\cite{vanbossuyt2014},~\cite{ohalloran2015}.
+\initial{A} different way of representing an engineering system is to embed it as a functional model. A functional model is a graphical representation of a system, that ties a component to a function, or a set of functions, fulfilled within the system. Function are interconnected by flows. One of the main advantage of functional modeling is its applicability in the early stages of design, when no components have been selected and the design is just a concept. Until recently, two main methods existed to create a functional method, NIST and the Functional Basis. Each had their own volatile taxonomy, which limited the widespread use of this technique to other ends than system description. Stone and Wood proposed the \gls{fbed}~\cite{stone}, which reconciled sets of function and flows notably with relation to mechanical engineering design nomenclature. This common taxonomy allowed for automatic analysis methods and database maintenance, which paved the way to various risk and reliability methods based on functional models, such as \gls{ffdm}~\cite{stone2005}, \gls{ffip}~\cite{kurtoglu2007}, \gls{uffsr}~\cite{vanbossuyt2014},~\cite{ohalloran2015} of Prognostics-based analysis in early design (\cite{stack2015} and~\cite{lher2016}).
 
 
 \section{Functional model}
@@ -62,7 +65,7 @@ Energy & Thermal &             \\ \hline
 \end{tabular}
 \end{table}
 
-\begin{figure}[t]
+\begin{figure}[H]
 \centering
 \includegraphics[scale=.6]{fig/Functional_model}
 \caption{High-level simplified FBED representation of ASTRID reactor.}
@@ -279,7 +282,7 @@ y_0 & Initial height \\
 \theta & Initial angle
 \end{conditions}
 
-\begin{figure}[t]
+\begin{figure}[H]
 \centering
 \includegraphics[scale=.6]{fig/ProjectileRange}
 \caption{Range of a projectile.}
@@ -287,3 +290,391 @@ y_0 & Initial height \\
 \end{figure}
 
 Consequently, UFFSR can show cutsets that other methods either do not consider at all (PRA, FFIP, RBD, ...), or do not consider in a consistent manner (FMEA, ...). It requires a lot of time and computational power to be performed on a large system scale. However, UFFSR can quickly gives precious information about the system risks and reliability, though the conclusions drawn need to be refined as more details are available. In this case study, we saw that the turbine explosion was a real risk to the system, and that simple measures could be taken, such as the turbines orientations and a concrete wall, in order to mitigate the risks. The analysis done is a simplified case of what UFFSR can do. Indeed, the probability of an uncoupled flow was not considered in the scenario studied, only the possibility. The probability of an uncoupled flow reaching other functions in the system is a function of the distance between the initiating event and the analyzed function $d_{i, f}$, as well as the analyzed function resistance to the incoming flow $s_{f, i}$. It can be written $P = f(d_{i, f}, s_{f, i})$. There resides the real future strength of UFFSR, once a computational framework is created.
+
+\section{Prognostics in Early Functional Design}
+
+More and more systems use \gls{phm} hardware to detect future failures and allow for preventive maintenance and recovery actions, automated or manual. However, the hardware is often added on after the system has been built or during the late stages of the design. In the early stages of the design, PHM is currently not seriously considered, despite the consequent impact it can have on the system failure and the subsequent design choices made. Hence, a system can be designed with unnecessary expensive redundancies which could be deprecated by PHM hardware. The earlier in the design phase a system fault is discovered, the less costly the design required modifications can be. Being able to consider prognosis in the early phases by modeling the impact of PHM hardware allow the designer to limit the costly system changes and increase the system reliability.
+
+Probabilistic Risk Assessment (PRA) method is able to model failure detection and recovery actions, but is limited by its rigidness, time-consuming changes, and by its use in the late phases of design. FMEA or functional failure methods, such as FFDM or FFIP, are not able to model recovery actions in a dedicated framework.
+
+The Prognostics in Early Design method proposed in this paper creates a framework that enable the use of a functional failure method in various stages of design, notably early on, coupled with PHM hardware considerations. A Bayesian network is used to compute the functional failure propagation probabilities. The optimized configuration for PHM equipment positioning is automatically given to the system designer, 
+who can then decide to move forward with it or modify the system, according to the system failure probability returned by the algorithm.
+
+
+\subsection{Methodology}
+
+The methodology can be discretized into four main parts. This method is based upon a functional representation of a system as developed by Stone~\cite{stone}, augmented with \gls{sta}, the logical opposite of FTA. Four distinct databases are necessary to represent various system information. They comprise information about PHM hardware efficiency, emergent function weaknesses, impacts of function failure on subsequent linked flows quality, and tie the probability of corrective action success to each particular system function and flow. The selection and positioning of PHM hardware through the designed system is generated. The Bayesian network representing the complex system is consequently built following the framework shown in figure~\ref{fig:cptex}. A risk and reliability analysis is performed on the system. The positioning of PHM equipment can then iterately be modified to compute the best possible system configuration and supports the decision making.
+
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=.6]{fig/cptex}
+\caption{Example of the method prognostic bayes net.}
+\label{fig:cptex}
+\end{figure}
+
+
+In order to illustrate the algorithm presented, a small example is given. Figure~\ref{fig:fm} presents a very simple functional model, and Figure~\ref{fig:bn_example} its translation into the proposed method model, provided each function and flow are linked to a PHM device. The interaction with the various database, $\mathscr{F}$, $\mathscr{H}$, $\mathscr{M}$, $\mathscr{P}$ and $\mathscr{W}$ is also shown in Figure~\ref{fig:bn_example}. If the designer were to force the flow $f_{12}$ not to be equipped with a PHM hardware, the nodes \textit{Detection} $f_{12}$ and \textit{Correction} $f_{12}$ would disappear from the model, along with the connections.
+
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=.5]{fig/fm}
+\caption{Simple functional model.}
+\label{fig:fm}
+\end{figure}
+
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=.3]{fig/bn_example}
+\caption{Translation of a simple function model (Figure~\ref{fig:fm}) to its functional prognostic Bayesian network form.}
+\label{fig:bn_example}
+\end{figure}
+
+The Bayesian network used to describe the whole system is based upon the following algorithm steps.
+
+\textbf{Step 0}\hspace{5pt}
+This step is optional. In a Bayesian network, the designer can set the states of several functions and flows. While not particularly useful to generate the risk and reliability analysis on the system during the early design phase, it can be noted that this feature can be used simultaneously as a Prognostics and Diagnostics tool during the operational lifetime of the system.
+
+
+\textbf{Step 1}\hspace{5pt}
+The algorithm computes the probability of a function weakness, given the observed evidence (step 0) or $\mathscr{W}$. The function weakness nodes is a binary event, meaning that it can only take one of two potential states. Consequently, either there is a weakness or the function is in a nominal state, as represented by $W$ in Equation~\ref{mat_w_func} for the function $f_1$.
+
+\begin{equation}
+  P(W_{f_1}) = \kbordermatrix{
+    state  & \\
+    Y & \omega_{f_1} \\
+    N & \bar{\omega_{f_1}} = 1 - \omega_{f_1}
+  }
+\label{mat_w_func}
+\end{equation}
+
+
+\textbf{Step 2}\hspace{5pt}
+The weakness probability associated with $f_1$ has been computed in step 1. The probability of being in a state of detection by a PHM hardware can now be calculated. Several potential states can be described to link a weakness of a function to its detection. There could effectively be a weakness, and this weakness could be detected according to the attached hardware efficiency $\varepsilon_{phm, f_1}$. The probability of this event will be noted $d_{\varepsilon, f_1}$. Alternatively, there might be no function weakness, but a false alarm is raised by the hardware according to its false alarm rate $e_{phm, f_1}$. The probability of this event will be noted $d_{e, f_1}$. The combination of these two events forms the probability of a detection.
+
+The probability of being in the state of non detection, is trivially the complement of the probability of detection. Either the weakness is present and not detected, or there is no weakness, and no false alarm is raised.
+
+The different probability path leading to the probability of detection are represented in Table~\ref{tab:cpt_dcf}.
+
+
+\renewcommand{\arraystretch}{1.5}
+\begin{table}[t] \small
+\centering
+\caption{Conditional probability tables for the weakness detection, correction and failure of a function $f_1$}
+\label{tab:cpt_dcf}
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline
+$P(D_{f_1} | W_{f_1})$                           & Weakness $f_1$   & \multicolumn{2}{c|}{Y}                          & \multicolumn{2}{c|}{N}                \\ \hline
+\multirow{2}{*}{Detection $f_1$}                 & Y                & \multicolumn{2}{c|}{$\varepsilon_{phm, f_1}$}   & \multicolumn{2}{c|}{$e_{phm, f_1}$}   \\ \cline{2-6} 
+                                                 & N                & \multicolumn{2}{c|}{$1-\varepsilon_{phm, f_1}$} & \multicolumn{2}{c|}{$1-e_{phm, f_1}$} \\ \hline \hline
+\multirow{2}{*}{$P(C_{f_1} | W_{f_1}, D_{f_1})$} & Weakness $f_1$   & \multicolumn{2}{c|}{Y}                          & \multicolumn{2}{c|}{N}                \\ \cline{2-6} 
+                                                 & Detection $f_1$  & Y                        & N                    & Y                   & N               \\ \hline
+\multirow{2}{*}{Correction $f_1$}                & Y                & $\gamma_{f_1}$           & $\mu_{f_1}$          & $\gamma_{f_1}$      & $\mu_{f_1}$     \\ \cline{2-6} 
+                                                 & N                & $1-\gamma_{f_1}$         & $1-\mu_{f_1}$        & $1-\gamma_{f_1}$    & $1-\mu_{f_1}$   \\ \hline \hline
+\multirow{2}{*}{$P(F_{f_1} | W_{f_1}, C_{f_1})$} & Weakness $f_1$   & \multicolumn{2}{c|}{Y}                          & \multicolumn{2}{c|}{N}                \\ \cline{2-6} 
+                                                 & Correction $f_1$ & Y                        & N                    & Y                   & N               \\ \hline
+\multirow{2}{*}{Failure $f_1$}                   & Y                & $1-\rho_{f_1}$           & 1                    & $\beta_{f_1}$       & 0               \\ \cline{2-6} 
+                                                 & N                & $\rho_{f_1}$             & 0                    & $1-\beta_{f_1}$     & 1               \\ \hline
+\end{tabular}
+\end{table}
+
+Given the function weakness probability, the detection conditional probability matrix $P(D_{f_1} | W_{f_1})$ obtained is displayed in Equation~\ref{prob_d_func}.
+
+\begin{equation}
+  P(D_{f_1} | W_{f_1}) = \kbordermatrix{
+    state  & \\
+    Y & d_{\varepsilon, f_1} + d_{e, f_1} \\
+    N & d'_{\varepsilon, f_1} + d'_{e, f_1}
+  }
+\label{prob_d_func}
+\end{equation}
+Where:
+\begin{conditions}
+d_{\varepsilon, f_1} & $\omega_{f_1}\varepsilon_{phm, f_1}$ \\
+d_{e, f_1} & $(1-\omega_{f_1})e_{phm, f_1}$ \\
+d'_{\varepsilon, f_1} & $\omega_{f_1}(1-\varepsilon_{phm, f_1})$ \\
+d'_{e, f_1} & $(1-\omega_{f_1})(1-e_{phm, f_1})$
+\end{conditions}
+
+
+This step is performed if and only if the function of interest is equipped with a PHM hardware. Indeed, if a PHM hardware is not attached to the function, the detection is trivially non-existent, implying $\varepsilon_{phm, f_1} = 0$ and $e_{phm, f_1} = 0$. Entering these numbers in Equation~\ref{prob_d_func}, we obtain the relation~\ref{prob_d_func_nophm}.
+
+\begin{equation}
+  P(D_{f_1} | W_{f_1}) = \kbordermatrix{
+    state  & \\
+    Y & 0 \\
+    N & 1
+  }
+\label{prob_d_func_nophm}
+\end{equation}
+
+
+\textbf{Step 3}\hspace{5pt}
+The weakness probability and the detection probability have been computed respectively in step 1 and step 2. This third step estimates the probability of a corrective action being attempted. The potential scenarii leading to the corrective action are treated by the conditional probability table presented in Table~\ref{tab:cpt_dcf}. In the case of an actual weakness, the detector could detect the weakness ($d_{\varepsilon, f_1}$). Then, the maintenance team is sent to repair according to a decision probability $\gamma_{f_1}$ given by $\mathscr{M}$. Alternatively, the weakness is not detected ($d'_{\varepsilon, f_1}$) but a scheduled non required maintenance is done on the function, according to a probability $\mu_{f_1}$ also given by $\mathscr{M}$. The combination of these two events translate to a probability noted $c_{\omega, f_1}$. Maintenance can also be carried out on the function if no weakness actually happened. This event is true if a false alarm ($d_{e, f_1}$) caused the maintenance team to mobilize or if a scheduled non required maintence is performed. These two events can be combined to obtain a probability noted $c_{\bar{\omega}, f_1}$. Finally, the corrective action probability can be calculated by combining $c_{\omega, f_1}$ with $c_{\bar{\omega}, f_1}$.
+
+Considering the fact that the corrective action is a binary event, the probability of no corrective action being carried out is trivially the complement of the probability that a corrective action is performed.
+
+
+Given the function weakness probability $P(W_{f_1})$ and the detection probability matrice $P(D_{f_1} | W_{f_1})$, the conditional corrective action matrice obtained is displayed in Equation~\ref{prob_c_func}.
+
+\begin{equation}
+  P(C_{f_1} | W_{f_1}, D_{f_1}) = \kbordermatrix{
+    state  & \\
+    Y & c_{\omega, f_1} + c_{\bar{\omega}, f_1} \\
+    N & c'_{\omega, f_1} + c'_{\bar{\omega}, f_1}
+  }
+\label{prob_c_func}
+\end{equation}
+Where:
+\begin{conditions}
+c_{\omega, f_1} & $d_{\varepsilon, f_1}\gamma_{f_1} + d'_{\varepsilon, f_1}\mu_{f_1}$ \\
+c_{\bar{\omega}, f_1} & $d_{e, f_1}\gamma_{f_1} + d'_{e, f_1}\mu_{f_1}$ \\
+c'_{\omega, f_1} & $d_{\varepsilon, f_1}(1-\gamma_{f_1}) + d'_{\varepsilon, f_1}(1-\mu_{f_1})$ \\
+c'_{\bar{\omega}, f_1} & $d_{e, f_1}(1-\gamma_{f_1}) + d'_{e, f_1}(1-\mu_{f_1})$
+\end{conditions}
+
+
+\textbf{Step 4}\hspace{5pt}
+Based on the weakness probability and the corrective action probability, calculated respectively in step 1 and step 3, the algorithm computes the probability of the function failure using the conditional probability table displayed in Table~\ref{tab:cpt_dcf}. In the case of an actual weakness, the path leading to a failure can be that no corrective action was performed ($c'_{\omega, f_1}$), or that a corrective action was performed ($c_{\omega, f_1}$) but was unsuccessful, according to the $\rho_{f_1}$ value given in $\mathscr{H}$. Alternatively, a function can fail if there was no weakness but a corrective action was still performed ($c_{\bar{\omega}, f_1}$) and generated a function failure according to the mishandling probability $\beta_{f_1}$ given by $\mathscr{H}$. The failure probability of $f_1$ is obtained by combining these different scenarii.
+
+The probability that the function does not fail is obtained if a weakness was present but was corrected following the $\rho_{f_1}$ value, or no weakness was present and either no action were perforned or the performed action did not fail the function, according to the mishandling probability $\beta_{f_1}$. This corresponds to the complement of the probability of failure.
+
+
+Given the function weakness probability $P(W_{f_1})$ and the correction probability matrice $P(C_{f_1} | W_{f_1}, D_{f_1})$, the conditional failure matrice obtained is displayed in Equation~\ref{prob_f_func}.
+
+\begin{equation}
+  P(F_{f_1} | W_{f_1}, C_{f_1}) = \kbordermatrix{
+    state  & \\
+    Y & f_{f_1} \\
+    N & f'_{f_1}
+  }
+\label{prob_f_func}
+\end{equation}
+Where:
+\begin{conditions}
+f_{f_1} & $c_{\omega, f_1}(1-\rho_{f_1}) + c'_{\omega, f_1} + c_{\bar{\omega}, f_1}\beta_{f_1}$ \\
+f'_{f_1} & $c_{\omega, f_1}(\rho_{f_1}) + c'_{\bar{\omega}, f_1} + c_{\bar{\omega}, f_1}(1-\beta_{f_1})$
+\end{conditions}
+
+
+
+\textbf{Step 5}\hspace{5pt}
+A function failure can be linked to different outgoing flow quality. The flow quality represents a state of weakness and is modeled by a $s$-event. A $s$-event is an event that can take four distinct states of flow quality. The quality of a flow can be categorized as failed ($\lambda_f$), of low concern ($\lambda_l$), of high concern ($\lambda_h$), or nominal ($\lambda_n$). The algortihm considers that the quality of a flow cannot spontaneously change without an impact on the last function acting on it. This represents one of the simulation limitation, as discussed previously. Indeed, it does not allow for the treatment of failure flows going through a function without failing it.
+
+$\mathscr{F}$ contains the detailed data for each specific function-flow connection. The probability of weakness $P(W_{f_{12}} | F_{f_1})$ is displayed in Equation~\ref{prob_ftow_func}.
+
+\begin{equation}
+  P(W_{f_{12}} | F_{f_1}) = \kbordermatrix{
+    state  & \\
+    f & w_{f, f_{12}} \\
+    l & w_{l, f_{12}} \\
+    h & w_{h, f_{12}} \\
+    n & w_{n, f_{12}}
+  }
+\label{prob_ftow_func}
+\end{equation}
+Where:
+\begin{conditions}
+  w_{f, f_{12}} & $\lambda_{f, f_{12}}f_{f_1}$ \\
+  w_{l, f_{12}} & $\lambda_{l, f_{12}}f_{f_1}$ \\
+  w_{h, f_{12}} & $\lambda_{h, f_{12}}f_{f_1}$ \\
+  w_{n, f_{12}} & $f_{f_1} + f'_{f_1} - \sum_{i \in [f, h, l]}f_{f_1}\lambda_i$
+\end{conditions}
+
+
+\textbf{Step 6}\hspace{5pt}
+The weakness probability of $f_{12}$ has been computed in step 5. The probability of a detection can now be calculated. Similarily to step 2, several potential states can be described to link a weakness of a flow to its detection. There could effectively be a flow quality weakness, which is detected according to the attached hardware efficiencies. The hardware efficiencies for a flow are given for the three states of degraded operation, low concern ($\varepsilon_{phm, l, f_{12}}$), high concern ($\varepsilon_{phm, h, f_{12}}$) and failed ($\varepsilon_{phm, f, f_{12}}$). The probability of a scenario in which a weakness is present and detected will be noted $d_{\varepsilon_i, f_{12}}$, for $i \in [f, l, h]$. Alternatively, a detection might occur if there is no flow weakness, but a false alarm is raised by the hardware according to its false alarm rate $e_{phm, f_{12}}$. The probability of this event will be noted $d_{e, f_{12}}$. The combination of these two events forms the probability of a detection. This can be seen in Table~\ref{tab:cpt_dcf_flow}.
+
+The probability of not having a detection is the complement of the probability of having a detection. Indeed, if the flow quality is not nominal, the detector might fail to detect it, with a probability depending on its efficiency. If the flow quality is nominal, the detector can also not signal any issue, based on its false alarm rate.
+
+\renewcommand{\arraystretch}{1.5}
+\begin{table}[t] \tiny
+\centering
+\caption{Conditional probability tables for the weakness detection, correction and failure of a flow $f_{12}$}
+\label{tab:cpt_dcf_flow}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|}
+\hline
+$P(D_{f_{12}} | W_{f_{12}})$                              & Weakness $f_{12}$   & \multicolumn{2}{c|}{Failed}                           & \multicolumn{2}{c|}{Low concern}                      & \multicolumn{2}{c|}{High concern}                     & \multicolumn{2}{c|}{Nominal}                 \\ \hline
+\multirow{2}{*}{Detection $f_{12}$}                       & Y                   & \multicolumn{2}{c|}{$\varepsilon_{phm, f, f_{12}}$}   & \multicolumn{2}{c|}{$\varepsilon_{phm, l, f_{12}}$}   & \multicolumn{2}{c|}{$\varepsilon_{phm, h, f_{12}}$}   & \multicolumn{2}{c|}{$e_{phm, f_{12}}$}       \\ \cline{2-10} 
+                                                          & N                   & \multicolumn{2}{c|}{$1-\varepsilon_{phm, f, f_{12}}$} & \multicolumn{2}{c|}{$1-\varepsilon_{phm, l, f_{12}}$} & \multicolumn{2}{c|}{$1-\varepsilon_{phm, h, f_{12}}$} & \multicolumn{2}{c|}{$1-e_{phm, f_{12}}$}     \\ \hline \hline
+\multirow{2}{*}{$P(C_{f_{12}} | W_{f_{12}}, D_{f_{12}})$} & Weakness $f_{12}$   & \multicolumn{2}{c|}{Failed}                           & \multicolumn{2}{c|}{Low concern}                      & \multicolumn{2}{c|}{High concern}                     & \multicolumn{2}{c|}{Nominal}                 \\ \cline{2-10} 
+                                                          & Detection $f_{12}$  & Y                           & N                       & Y                           & N                       & Y                           & N                       & Y                      & N                   \\ \hline
+\multirow{2}{*}{Correction $f_{12}$}                      & Y                   & $\gamma_{f, f_{12}}$        & $\mu_{f, f_{12}}$       & $\gamma_{l, f_{12}}$        & $\mu_{l, f_{12}}$       & $\gamma_{h, f_{12}}$        & $\mu_{h, f_{12}}$       & $\gamma_{n, f_{12}}$   & $\mu_{n, f_{12}}$   \\ \cline{2-10} 
+                                                          & N                   & $1-\gamma_{f, f_{12}}$      & $1-\mu_{f, f_{12}}$     & $1-\gamma_{l, f_{12}}$      & $1-\mu_{l, f_{12}}$     & $1-\gamma_{h, f_{12}}$      & $1-\mu_{h, f_{12}}$     & $1-\gamma_{n, f_{12}}$ & $1-\mu_{n, f_{12}}$ \\ \hline \hline
+\multirow{2}{*}{$P(F_{f_{12}} | W_{f_{12}}, C_{f_{12}})$} & Weakness $f_{12}$   & \multicolumn{2}{c|}{Failed}                           & \multicolumn{2}{c|}{Low concern}                      & \multicolumn{2}{c|}{High concern}                     & \multicolumn{2}{c|}{Nominal}                 \\ \cline{2-10} 
+                                                          & Correction $f_{12}$ & Y                           & N                       & Y                           & N                       & Y                           & N                       & Y                      & N                   \\ \hline
+\multirow{2}{*}{Failure $f_{12}$}                            & Y                   & $1-\rho_{f, f_{12}}$        & 1                       & $1-\rho_{l, f_{12}}$        & 1                       & $1-\rho_{h, f_{12}}$        & 1                       & $\beta_{f_{12}}$       & 0                   \\ \cline{2-10} 
+                                                          & N                   & $\rho_{f, f_{12}}$          & 0                       & $\rho_{l, f_{12}}$          & 0                       & $\rho_{h, f_{12}}$          & 0                       & $1-\beta_{f_{12}}$     & 1                   \\ \hline
+\end{tabular}
+\end{table}
+
+Given the flow weakness probability, the detection conditional probability matrice $P(D_{f_{12}} | W_{f_{12}})$ obtained is displayed in Equation~\ref{prob_d_flow}.
+
+
+\begin{equation}
+  P(D_{f_{12}} | W_{f_{12}}) = \kbordermatrix{
+    state  & \\
+    Y & \sum_{i \in [f, h, l]} d_{\varepsilon_i, f_{12}} + d_{e, f_{12}} \\
+    N & \sum_{i \in [f, h, l]} d'_{\varepsilon_i, f_{12}} + d'_{e, f_{12}}
+  }
+\label{prob_d_flow}
+\end{equation}
+Where:
+\begin{conditions}
+d_{\varepsilon_i, f_{12}} & $\omega_{i, f_{12}}\varepsilon_{phm, i, f_{12}}$ \\
+d_{e, f_{12}} & $\omega_{n, f_{12}} e_{phm, f_{12}}$ \\
+d'_{\varepsilon_i, f_{12}} & $\omega_{i, f_{12}}(1-\varepsilon_{phm, i, f_{12}})$ \\
+d'_{e, f_{12}} & $\omega_{n, f_{12}}(1-e_{phm, f_{12}})$
+\end{conditions}
+
+This step is performed if and only if the function of interest is equipped with a PHM hardware. Indeed, if a PHM hardware is not attached to the function, the detection is trivially in a false state.
+
+
+\textbf{Step 7}\hspace{5pt}
+The flow weakness probability and the detection probability have been computed respectively in step 5 and step 6. This next step estimates the probability of a corrective action being attempted. The potential scenario leading to the corrective action are treated by the conditional probability table presented in Table~\ref{tab:cpt_dcf_flow}. In the case of an actual weakness, the detector could detect the weakness according to the corresponding hardware efficiency for each flow quality ($d_{\varepsilon_i, f_{12}}$ for $i \in [f, l, h]$). If the event is detected, the maintenance team is sent to repair according to a decision probability $\gamma_{i, f_{12}}$ for $i \in [f, l, h]$, based on the team management and the detected flow quality weakness. The decision probability is given by $\mathscr{M}$. Alternatively, the weakness could be undetected ($d'_{\varepsilon_i, f_{12}}$ for $i \in [f, l, h]$) but a scheduled non required maintenance could be performed on the system which would impact the flow, according to a probability $\mu_{f_{12}}$ also given by $\mathscr{M}$. The combination of these two events translates to a probability noted $c_{\omega, i, f_{12}}$ for $i \in [f, l, h]$. Maintenance can also be carried out on the system, with a direct impact on the flow $f_{12}$ if no weakness actually happened. This event is true if a false alarm ($d_{e, f_{12}}$) caused the maintenance team to mobilize or if a scheduled non required maintence is performed. These two events can be combined to obtain a probability noted $c_{\bar{\omega}, f_{12}}$. Finally, the corrective action probability can be calculated by combining $c_{\omega, i, f_{12}}$ with $c_{\bar{\omega}, f_{12}}$ for $i \in [f, l, h]$.
+
+The probability that no corrective action is attempted is the complement of the probability that a corrective action is carried out.
+
+
+Given the function weakness probability $P(W_{f_{12}} | F_{f_1})$ and the detection probability matrice $P(D_{f_{12}} | W_{f_{12}})$, the conditional corrective action matrice obtained is displayed in Equation~\ref{prob_c_flow}.
+
+\begin{equation}
+  P(C_{f_{12}} | W_{f_{12}}, D_{f_{12}}) = \kbordermatrix{
+    state  & \\
+    Y & \sum_{i \in [f, l, h, n]}c_{\omega_i, f_{12}} \\
+    N & \sum_{i \in [f, l, h, n]}c'_{\omega_i, f_{12}} 
+  }
+\label{prob_c_flow}
+\end{equation}
+Where, for $i \in [f, l, h]$:
+\begin{conditions}
+c_{\omega_i, f_{12}} & $d_{\varepsilon_i, f_{12}}\gamma_{i, f_{12}} + d'_{\varepsilon_i, f_{12}}\mu_{f_{12}}$ \\
+c_{\omega_n, f_{12}} & $d_{e, f_{12}}\gamma_{n, f_{12}} + d'_{e, f_{12}}\mu_{f_{12}}$ \\
+c'_{\omega_i, f_{12}} & $d_{\varepsilon_i, f_{12}}(1-\gamma_{i, f_{12}}) + d'_{\varepsilon_i, f_{12}}(1-\mu_{f_{12}})$ \\
+c'_{\omega_n, f_{12}} & $d_{e, f_{12}}(1-\gamma_{n, f_{12}}) + d'_{e, f_{12}}(1-\mu_{f_{12}})$
+\end{conditions}
+
+
+
+\textbf{Step 8}\hspace{5pt}
+Based on the flow weakness probability and the corrective action probability, calculated respectively in step 5 and step 7, the algorithm computes the probability of the flow failure using the conditional probability table displayed in Table~\ref{tab:cpt_dcf_flow}.
+
+In the case of an actual weakness, either of low concern, of high concern, or failed, the path leading to a failure can be that no corrective action was performed $\left(\sum_{i \in [f, l, h]}c'_{\omega_i, f_{12}}\right)$, or that a corrective action was performed $\left(\sum_{i \in [f, l, h]}c_{\omega_i, f_{12}}\right)$ but was unsuccessful, according to the $\rho_{i, f_{12}}$ values for $i \in [f, l, h]$ given in $\mathscr{H}$. Alternatively, the flow can fail if there was no weakness but a corrective action was still performed on the system ($c_{\omega_n, f_{12}}$) and generated a function failure according to the mishandling probability $\beta_{f_{12}}$ given by $\mathscr{H}$.
+
+
+Given the function weakness probability $P(W_{f_1})$ and the correction probability matrice $P(C_{f_1} | W_{f_1}, D_{f_1})$, the conditional failure matrice obtained is displayed in Equation~\ref{prob_f_flow}.
+
+\begin{equation}
+  P(F_{f_{12}} | W_{f_{12}}, C_{f_{12}}) = \kbordermatrix{
+    state  & \\
+    Y & f_{f_{12}} \\
+    N & f'_{f_{12}}
+  }
+\label{prob_f_flow}
+\end{equation}
+Where:
+\begin{conditions}
+f_{f_{12}} & $c_{\omega_n, f_{12}}\beta_{ f_{12}} + \sum_{i \in [f, l, h]} c_{\omega_i, f_{12}} (1-\rho_{i, f_{12}}) + c'_{\omega_i, f_{12}}$ \\
+f'_{f_{12}} & $c_{\omega_n, f_{12}}(1-\beta_{ f_{12}}) + c'_{\omega_n, f_{12}} + \sum_{i \in [f, l, h]} c_{\omega_i, f_{12}} \rho_{i, f_{12}}$
+\end{conditions}
+
+
+If the next Bayesian node in the model is a logical gate, the algorithm goes to step 9-b. Else, it goes back to step 9-a.
+
+
+
+\textbf{Step 9-a}\hspace{5pt}
+A failed flow is considered to fail a receiving function, since the function will not be able to perform its task without a necessary flow. The failure probability obtained in step 8 for the flow is thus passed fully to the next function in the model. The emergent weakness of the next function in the model is also considered. Consequently, given $P(F_{f_{12}} | W_{f_{12}}, C_{f_{12}})$, the weakness probability seen by the next function is displayed in the conditional failure matrice in Equation~\ref{prob_w_func_2}.
+
+
+\begin{equation}
+  P(W_{f_{2}} | F_{f_{12}}) = \kbordermatrix{
+    state  & \\
+    Y & f_{f_{12}} + \omega_{f_{2}} \\
+    N & f'_{f_{12}} - \omega_{f_{2}}
+  }
+\label{prob_w_func_2}
+\end{equation}
+
+The algorithm returns to step 1.
+
+
+\textbf{Step 9-b}\hspace{5pt}
+Logical gates can combine several flows and compute the next function weakness associated. Consider another flow, $f_{32}$, supplying a redundant flow to function $f_2$. An OR-gate is placed in the model, so that only one flow, $f_{12}$ or $f_{32}$ is needed for function $f_2$ to operate nominally.
+
+The probability that the flow failures propagate through the gate $g_{12, 32}$ to the next function weakness, $P(F_{f_2} | F_{f_{12}}, F_{f_{32}})$, is explicited in Equation~\ref{gateor}.
+
+\begin{equation}
+\begin{aligned}
+  P(F_{g_{12, 32}} | F_{f_{12}}, F_{f_{23}}) = \\ \kbordermatrix{
+    state  & \\
+    Y & f_{f_{12}} f_{f_{32}} \\
+    N & f'_{f_{12}} f_{f_{32}} + f_{f_{12}} f'_{f_{32}} + f'_{f_{12}} f'_{f_{32}}
+  }
+\end{aligned}
+\label{gateor}
+\end{equation}
+
+
+The gate failure probability becomes the new flow failure probability. The algorithm returns to step 9-a.
+
+\subsection{Application to the case study}
+
+The existing automatic tools to compute the optimized combination of PHM hardware in the system and the associated probability of failure is not yet able to run the simulation of a quite large functional models such as the one presented in figure~\ref{fig:fbed} on a local computer in a reasonable amount of time. Work is ongoing to parallelize the algortihm and optimize its runtime. In order to illustrate part of the method, a subset of the system will be considered. The failure of the turbine, as studied in the work relative to FFIP and UFFSR, is going to be considered. Two different sensors can be used to detect a weakness of the function. The change in the final probability of failure after taking into account the PHM hardware will be computed.
+
+Two different kind of sensors could be used to detect a potential failure of the function fo interest. In our case, we will consider a sensor giving the rotation speed of the turbine ($S$) and a sensor giving the vapor quality and flow ($Q$). $S$ is taken as having a $85\%$ chance of detecting an anomaly leading to a function failure. A false alarm rate of $0.001$ is imagined. Alternatively, $Q$ has a $98\%$ chance of detecting an anomaly and a false alarm rate of $0.1$.
+
+Table~\ref{tab:astrid_det} shows the chosen parameters.
+
+\begin{table}[t]
+\centering
+\caption{Detectors considered}
+\label{tab:astrid_det}
+\begin{tabular}{|c|c|c|}
+\hline
+Detector & $\varepsilon$ & $e$   \\ \hline
+$S$      & 0.80          & 0.001 \\ \hline
+$Q$      & 0.98          & 0.1   \\ \hline
+\end{tabular}
+\end{table}
+
+An "ideal" management is considered, based uniquely on PHM hardware data. Consequently, $\gamma = 1$ and $\mu = 0$. This implies that a maintenance team is sent if and only if a detector indicates a potential weakness.
+
+After detection of an anomaly, the repair success is computed according to \gls{hra}. In our case, we will consider that should a weakness be detected on the function \textit{Channel - Guide - Rotate} representing the turbine, the following algorithm should be followed to obtain the repair success probability. The assumptions made are presented in table~\ref{tab:hra}. The human error probability (HEP) is defined from the combination of the Performance Shaping Factors ($PSF_c$) corresponding to different essential parts of the maintenance success such as stress factor or task complexity. It follows Equation~\ref{eq:hra}. $NHEP$ is defined in HRA as being equal to 0.001 for action-based maintenance. The mishandling probability is computed from $PSF_c$ disregarding the time component.
+
+\begin{equation}
+HEP = \frac{NHEP * PSF_c}{NHEP * (PSF_c-1) + 1}
+\label{eq:hra}
+\end{equation}
+
+\begin{table}[t]
+\centering
+\caption{Estimates of the different HRA categories}
+\label{tab:hra}
+\begin{tabular}{|c|c|}
+\hline
+Category         & Level                          \\ \hline \hline
+available time   & Time available = time required \\ \hline
+stress           & Nominal                        \\ \hline
+complexity       & Nominal                        \\ \hline
+human training   & Low                            \\ \hline
+procedures       & Insufficient information       \\ \hline
+ergonomics       & Nominal                        \\ \hline
+fitness for duty & Nominal                        \\ \hline
+processes        & Good                           \\ \hline
+\end{tabular}
+\end{table}
+
+Consequently, we can compute $\rho = 0.985$ and $\beta = 0.0015$.
+
+Using these information, it is now possible to compute the impact of a detector on the probability of failure of the function of interest. We will consider an initial probability of weakness of 1, in order to compute directly the impact of the prognostics in early design method. The probability of failure is reduced to 0.035 using $Q$ and 0.21 using $S$. The higher false alarm rate is not a  big enough issue to make up for the efficiency difference. This is due to the fact that the repair or corrective action is considered simple. We consequently consider that the probability of failure of this function is lowered by almost two orders of magnitudes. This translates to the subsequent FFIP analysis of the system, lowering the probability of failure of the initiating event.
+
+A more detailed analysis of several functions and sensors accross the system is performed. The results can be seen in table~\ref{}.
+
+This demonstrates a small part of what this method can actually accomplish, seeing as it is not limited to one function or flow, and that it can attribute sensors to potentially every function or flow in the model. A more detailed case study, on a simplified pressurized water reactor design, is performed in~\cite{lher2016}.
+
+Taking into account Prognostics and Health Management systems early in the design can reduce cost, by avoiding costly and redundancies and using the strength of PHM instead.
+
+

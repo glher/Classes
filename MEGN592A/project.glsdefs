@@ -448,3 +448,93 @@ parent={},%
 %
 }%
 }%
+\ifglsentryexists{phm}{}%
+{%
+\gls@defglossaryentry{phm}%
+{%
+name={PHM},%
+sort={PHM},%
+type={acronym},%
+first={Prognostic Health Management\glsspace (PHM)},%
+firstplural={Prognostic Health Managements\glsspace (PHMs)},%
+text={PHM},%
+plural={PHMs},%
+description={Prognostic Health Management},%
+descriptionplural={Prognostic Health Management\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Prognostic Health Management},%
+longplural={Prognostic Health Managements},%
+short={PHM},%
+shortplural={PHMs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{sta}{}%
+{%
+\gls@defglossaryentry{sta}%
+{%
+name={STA},%
+sort={STA},%
+type={acronym},%
+first={Success Tree Analysis\glsspace (STA)},%
+firstplural={Success Tree Analysiss\glsspace (STAs)},%
+text={STA},%
+plural={STAs},%
+description={Success Tree Analysis},%
+descriptionplural={Success Tree Analysis\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Success Tree Analysis},%
+longplural={Success Tree Analysiss},%
+short={STA},%
+shortplural={STAs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{hra}{}%
+{%
+\gls@defglossaryentry{hra}%
+{%
+name={HRA},%
+sort={HRA},%
+type={acronym},%
+first={Human Reliability Assessment\glsspace (HRA)},%
+firstplural={Human Reliability Assessments\glsspace (HRAs)},%
+text={HRA},%
+plural={HRAs},%
+description={Human Reliability Assessment},%
+descriptionplural={Human Reliability Assessment\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Human Reliability Assessment},%
+longplural={Human Reliability Assessments},%
+short={HRA},%
+shortplural={HRAs},%
+counter={page},%
+parent={},%
+%
+}%
+}%

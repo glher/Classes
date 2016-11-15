@@ -41,6 +41,11 @@
   of functional failure in complex systems }}, International conference on
   Engineering Design,  (2007).
 
+\bibitem{lher2016}
+{\sc G.~{L'Her} and D.~L. {Van Bossuyt}}, {\em {Prognostic systems
+  representation in a function-based Bayesian model during engineering
+  design}}, TBD,  (TBD).
+
 \bibitem{liu2013}
 {\sc H.-C. Liu, L.~Liu, and N.~Liu}, {\em Risk evaluation approaches in failure
   mode and effects analysis: A literature review}, Expert Systems With
@@ -56,13 +61,20 @@
 {\sc A.~N. Society}, {\em Fermi-I: New Age for Nuclear Power}, American Nuclear
   Society, 1979.
 
+\bibitem{stack2015}
+{\sc C.~Stack and D.~L. {Van Bossuyt}}, {\em {Toward a Functional Failure
+  Modeling Method of Representing Prognostic Systems During the Early Phases of
+  Design}}, Proceedings of the ASME 2015 International Design Engineering
+  Technical Conference {\&} Computers and Information in Engineering
+  Conference,  (2015), pp.~DETC2015--46400.
+
 \bibitem{stone2005}
 {\sc R.~B. Stone, I.~Y. Tumer, and M.~V. Wie}, {\em {FFDM: The function failure
   design method }}, Journal of Mechanical Design,  (2005).
 
 \bibitem{stone}
 {\sc R.~B. Stone and K.~L. Wood}, {\em {Development of a Functional Basis for
-  Design}}, Journal of Mechanicla Design, 122 (2000), pp.~359--370.
+  Design}}, Journal of Mechanical Design, 122 (2000), pp.~359--370.
 
 \bibitem{vanbossuyt2014}
 {\sc D.~{Van Bossuyt} and I.~Ramp}, {\em {Toward an automated model-based

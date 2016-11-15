@@ -32,16 +32,19 @@
 \BOOKMARK [1][-]{section.6.2}{Function Failure Design Method}{chapter.6}% 32
 \BOOKMARK [1][-]{section.6.3}{Function Failure Identification and Propagation}{chapter.6}% 33
 \BOOKMARK [1][-]{section.6.4}{Uncoupled Flow Failure State Reasoning}{chapter.6}% 34
-\BOOKMARK [0][-]{appendix.A}{Reliability Block Diagram}{}% 35
-\BOOKMARK [1][-]{section.A.1}{Global system}{appendix.A}% 36
-\BOOKMARK [1][-]{section.A.2}{Primary system}{appendix.A}% 37
-\BOOKMARK [2][-]{subsection.A.2.1}{Primary system redundancies}{section.A.2}% 38
-\BOOKMARK [1][-]{section.A.3}{Secondary system}{appendix.A}% 39
-\BOOKMARK [2][-]{subsection.A.3.1}{Secondary system redundancies}{section.A.3}% 40
-\BOOKMARK [1][-]{section.A.4}{Tertiary system}{appendix.A}% 41
-\BOOKMARK [2][-]{subsection.A.4.1}{Tertiary system redundancies}{section.A.4}% 42
-\BOOKMARK [0][-]{appendix.B}{Failure Modes and Effects Analysis}{}% 43
-\BOOKMARK [0][-]{appendix.C}{Probabilistic Risk Assessments}{}% 44
-\BOOKMARK [0][-]{appendix.D}{Function Failure Identification and Propagation}{}% 45
-\BOOKMARK [0][-]{appendix.E}{Uncoupled Flow Failure State Reasoning}{}% 46
-\BOOKMARK [0][-]{section*.7}{Bibliography}{}% 47
+\BOOKMARK [1][-]{section.6.5}{Prognostics in Early Functional Design}{chapter.6}% 35
+\BOOKMARK [2][-]{subsection.6.5.1}{Methodology}{section.6.5}% 36
+\BOOKMARK [2][-]{subsection.6.5.2}{Application to the case study}{section.6.5}% 37
+\BOOKMARK [0][-]{appendix.A}{Reliability Block Diagram}{}% 38
+\BOOKMARK [1][-]{section.A.1}{Global system}{appendix.A}% 39
+\BOOKMARK [1][-]{section.A.2}{Primary system}{appendix.A}% 40
+\BOOKMARK [2][-]{subsection.A.2.1}{Primary system redundancies}{section.A.2}% 41
+\BOOKMARK [1][-]{section.A.3}{Secondary system}{appendix.A}% 42
+\BOOKMARK [2][-]{subsection.A.3.1}{Secondary system redundancies}{section.A.3}% 43
+\BOOKMARK [1][-]{section.A.4}{Tertiary system}{appendix.A}% 44
+\BOOKMARK [2][-]{subsection.A.4.1}{Tertiary system redundancies}{section.A.4}% 45
+\BOOKMARK [0][-]{appendix.B}{Failure Modes and Effects Analysis}{}% 46
+\BOOKMARK [0][-]{appendix.C}{Probabilistic Risk Assessments}{}% 47
+\BOOKMARK [0][-]{appendix.D}{Function Failure Identification and Propagation}{}% 48
+\BOOKMARK [0][-]{appendix.E}{Uncoupled Flow Failure State Reasoning}{}% 49
+\BOOKMARK [0][-]{section*.7}{Bibliography}{}% 50

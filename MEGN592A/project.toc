@@ -35,19 +35,22 @@
 \contentsline {section}{\numberline {5.2}PRA model applied to the case study}{24}{section.5.2}
 \contentsline {chapter}{\chapternumberline {6}Functional analyses}{25}{chapter.6}
 \contentsline {section}{\numberline {6.1}Functional model}{25}{section.6.1}
-\contentsline {section}{\numberline {6.2}Function Failure Design Method}{26}{section.6.2}
-\contentsline {section}{\numberline {6.3}Function Failure Identification and Propagation}{29}{section.6.3}
-\contentsline {section}{\numberline {6.4}Uncoupled Flow Failure State Reasoning}{32}{section.6.4}
-\contentsline {appendix}{\chapternumberline {A}Reliability Block Diagram}{39}{appendix.A}
-\contentsline {section}{\numberline {A.1}Global system}{39}{section.A.1}
-\contentsline {section}{\numberline {A.2}Primary system}{41}{section.A.2}
-\contentsline {subsection}{\numberline {A.2.1}Primary system redundancies}{42}{subsection.A.2.1}
-\contentsline {section}{\numberline {A.3}Secondary system}{47}{section.A.3}
-\contentsline {subsection}{\numberline {A.3.1}Secondary system redundancies}{48}{subsection.A.3.1}
-\contentsline {section}{\numberline {A.4}Tertiary system}{51}{section.A.4}
-\contentsline {subsection}{\numberline {A.4.1}Tertiary system redundancies}{52}{subsection.A.4.1}
-\contentsline {appendix}{\chapternumberline {B}Failure Modes and Effects Analysis}{55}{appendix.B}
-\contentsline {appendix}{\chapternumberline {C}Probabilistic Risk Assessments}{63}{appendix.C}
-\contentsline {appendix}{\chapternumberline {D}Function Failure Identification and Propagation}{65}{appendix.D}
-\contentsline {appendix}{\chapternumberline {E}Uncoupled Flow Failure State Reasoning}{71}{appendix.E}
-\contentsline {chapter}{Bibliography}{75}{section*.7}
+\contentsline {section}{\numberline {6.2}Function Failure Design Method}{28}{section.6.2}
+\contentsline {section}{\numberline {6.3}Function Failure Identification and Propagation}{30}{section.6.3}
+\contentsline {section}{\numberline {6.4}Uncoupled Flow Failure State Reasoning}{33}{section.6.4}
+\contentsline {section}{\numberline {6.5}Prognostics in Early Functional Design}{37}{section.6.5}
+\contentsline {subsection}{\numberline {6.5.1}Methodology}{38}{subsection.6.5.1}
+\contentsline {subsection}{\numberline {6.5.2}Application to the case study}{48}{subsection.6.5.2}
+\contentsline {appendix}{\chapternumberline {A}Reliability Block Diagram}{51}{appendix.A}
+\contentsline {section}{\numberline {A.1}Global system}{51}{section.A.1}
+\contentsline {section}{\numberline {A.2}Primary system}{53}{section.A.2}
+\contentsline {subsection}{\numberline {A.2.1}Primary system redundancies}{54}{subsection.A.2.1}
+\contentsline {section}{\numberline {A.3}Secondary system}{59}{section.A.3}
+\contentsline {subsection}{\numberline {A.3.1}Secondary system redundancies}{60}{subsection.A.3.1}
+\contentsline {section}{\numberline {A.4}Tertiary system}{63}{section.A.4}
+\contentsline {subsection}{\numberline {A.4.1}Tertiary system redundancies}{64}{subsection.A.4.1}
+\contentsline {appendix}{\chapternumberline {B}Failure Modes and Effects Analysis}{67}{appendix.B}
+\contentsline {appendix}{\chapternumberline {C}Probabilistic Risk Assessments}{77}{appendix.C}
+\contentsline {appendix}{\chapternumberline {D}Function Failure Identification and Propagation}{81}{appendix.D}
+\contentsline {appendix}{\chapternumberline {E}Uncoupled Flow Failure State Reasoning}{87}{appendix.E}
+\contentsline {chapter}{Bibliography}{91}{section*.7}

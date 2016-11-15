@@ -23,10 +23,14 @@
 \glossentry{fmeca}{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{19}}}%
 \glossentry{fsl}{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{29}}}\glsgroupskip
+		\setentrycounter[]{page}\glsnumberformat{31}}}\glsgroupskip
+\glsgroupheading{H}\relax \glsresetentrylist %
+\glossentry{hra}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{48}}}\glsgroupskip
 \glsgroupheading{P}\relax \glsresetentrylist %
 \glossentry{phm}{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{57}}}%
+		\setentrycounter[]{page}\glsnumberformat{37}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{72}}}%
 \glossentry{pra}{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{23}}}\glsgroupskip
 \glsgroupheading{R}\relax \glsresetentrylist %
@@ -36,7 +40,9 @@
 		\setentrycounter[]{page}\glsnumberformat{19}}}\glsgroupskip
 \glsgroupheading{S}\relax \glsresetentrylist %
 \glossentry{sfr}{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{1}}}\glsgroupskip
+		\setentrycounter[]{page}\glsnumberformat{1}}}%
+\glossentry{sta}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{38}}}\glsgroupskip
 \glsgroupheading{U}\relax \glsresetentrylist %
 \glossentry{uffsr}{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{25}}}%
