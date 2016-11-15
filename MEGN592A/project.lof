@@ -35,11 +35,19 @@
 \contentsline {figure}{\numberline {A.16}{\ignorespaces Reliability Block Diagram for the generators in the tertiary system}}{68}{figure.A.16}
 \addvspace {10pt}
 \addvspace {10pt}
+\contentsline {figure}{\numberline {C.1}{\ignorespaces Event tree for the loss of offsite power}}{81}{figure.C.1}
+\contentsline {figure}{\numberline {C.2}{\ignorespaces Event tree for the loss of coolant}}{81}{figure.C.2}
+\contentsline {figure}{\numberline {C.3}{\ignorespaces Event tree for the power excursion}}{82}{figure.C.3}
+\contentsline {figure}{\numberline {C.4}{\ignorespaces Event tree for the SCRAM and cooling}}{82}{figure.C.4}
+\contentsline {figure}{\numberline {C.5}{\ignorespaces Event tree for the containment}}{82}{figure.C.5}
+\contentsline {figure}{\numberline {C.6}{\ignorespaces Fault tree for the safety injection system}}{83}{figure.C.6}
+\contentsline {figure}{\numberline {C.7}{\ignorespaces Detailed fault tree for the safety injection system}}{83}{figure.C.7}
+\contentsline {figure}{\numberline {C.8}{\ignorespaces Fault tree for the manual use of the backup generator}}{84}{figure.C.8}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {D.1}{\ignorespaces FFIP - Initiating event: Loss of signal for the neutron detectors.}}{85}{figure.D.1}
-\contentsline {figure}{\numberline {D.2}{\ignorespaces FFIP - Initiating event: Loss of turbines.}}{86}{figure.D.2}
-\contentsline {figure}{\numberline {D.3}{\ignorespaces FFIP - Initiating event: Loss of condensers.}}{87}{figure.D.3}
-\contentsline {figure}{\numberline {D.4}{\ignorespaces FFIP - Initiating event: Loss of signal for the neutron detectors - Alternative scenario}}{88}{figure.D.4}
+\contentsline {figure}{\numberline {D.1}{\ignorespaces FFIP - Initiating event: Loss of signal for the neutron detectors.}}{87}{figure.D.1}
+\contentsline {figure}{\numberline {D.2}{\ignorespaces FFIP - Initiating event: Loss of turbines.}}{88}{figure.D.2}
+\contentsline {figure}{\numberline {D.3}{\ignorespaces FFIP - Initiating event: Loss of condensers.}}{89}{figure.D.3}
+\contentsline {figure}{\numberline {D.4}{\ignorespaces FFIP - Initiating event: Loss of signal for the neutron detectors - Alternative scenario}}{90}{figure.D.4}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {E.1}{\ignorespaces UFFSR - Initiating event: Turbine explosion - Secondary event: Loss of sodium supply for the SIS}}{90}{figure.E.1}
-\contentsline {figure}{\numberline {E.2}{\ignorespaces UFFSR - Arrestor Function - Initiating event: Turbine explosion - Secondary event: Loss of sodium supply for the SIS}}{91}{figure.E.2}
+\contentsline {figure}{\numberline {E.1}{\ignorespaces UFFSR - Initiating event: Turbine explosion - Secondary event: Loss of sodium supply for the SIS}}{92}{figure.E.1}
+\contentsline {figure}{\numberline {E.2}{\ignorespaces UFFSR - Arrestor Function - Initiating event: Turbine explosion - Secondary event: Loss of sodium supply for the SIS}}{93}{figure.E.2}

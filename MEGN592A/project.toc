@@ -51,6 +51,6 @@
 \contentsline {subsection}{\numberline {A.4.1}Tertiary system redundancies}{66}{subsection.A.4.1}
 \contentsline {appendix}{\chapternumberline {B}Failure Modes and Effects Analysis}{69}{appendix.B}
 \contentsline {appendix}{\chapternumberline {C}Probabilistic Risk Assessments}{79}{appendix.C}
-\contentsline {appendix}{\chapternumberline {D}Function Failure Identification and Propagation}{83}{appendix.D}
-\contentsline {appendix}{\chapternumberline {E}Uncoupled Flow Failure State Reasoning}{89}{appendix.E}
-\contentsline {chapter}{Bibliography}{93}{section*.7}
+\contentsline {appendix}{\chapternumberline {D}Function Failure Identification and Propagation}{85}{appendix.D}
+\contentsline {appendix}{\chapternumberline {E}Uncoupled Flow Failure State Reasoning}{91}{appendix.E}
+\contentsline {chapter}{Bibliography}{95}{section*.7}

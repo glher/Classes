@@ -7,7 +7,7 @@
 \chapter{Probabilistic Risk Assessments}
 \label{app:app03}
 
-\initial{P}robabilistic risk assessments consists of three categories of data, the event trees, the fault trees, and the frequencies associated with each basic and initiating events. This appendix lists in details the data used in the study.
+\initial{P}robabilistic risk assessments consists of three categories of data, the event trees, the fault trees, and the frequencies associated with each basic and initiating events. This appendix lists in details the data used in the study. It also shows the model implementation for the event trees and selected fault trees.
 
 Table~\ref{tab:pra_basic} presents, for each and every identified basic event, their probability, on a per year basis.
 
@@ -70,8 +70,60 @@ Strenght of the cladding & CORE\_CLAD\_STREN & \num{1e-2}\\
 \end{longtable}
 
 
+\begin{figure}[H]
+	\centering
+	\includegraphics[height=0.25\textheight]{fig0c/Event/B1_LOSS_OFFSITE_POWER}
+	\mycaption[Event tree for the loss of offsite power]{Event tree for the loss of offsite power.}
+	\label{fig:event_power}
+\end{figure}
 
+\begin{figure}[H]
+	\centering
+	\includegraphics[height=0.2\textheight]{fig0c/Event/LOSS_OF_COOLANT}
+	\mycaption[Event tree for the loss of coolant]{Event tree for the loss of coolant.}
+	\label{fig:event_coolant}
+\end{figure}
 
+\begin{figure}[H]
+	\centering
+	\includegraphics[height=0.2\textheight]{fig0c/Event/POWER_EXCURSION}
+	\mycaption[Event tree for the power excursion]{Event tree for power excursion.}
+	\label{fig:event_powexc}
+\end{figure}
 
+\begin{figure}[H]
+	\centering
+	\includegraphics[height=0.3\textheight]{fig0c/Event/SCRAM_COOLING}
+	\mycaption[Event tree for the SCRAM and cooling]{Event tree for the SCRAM and cooling.}
+	\label{fig:event_scram}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[height=0.2\textheight]{fig0c/Event/CONTAINMENT}
+	\mycaption[Event tree for the containment]{Event tree for the containment.}
+	\label{fig:event_cont}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[height=0.25\textheight]{fig0c/Fault/AUTO_SIS}
+	\mycaption[Fault tree for the safety injection system]{Fault tree for the safety injection system.}
+	\label{fig:fault_sis}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[height=0.5\textheight]{fig0c/Fault/SIS_TRAIN}
+	\mycaption[Detailed fault tree for the safety injection system]{Detailed fault tree for the safety injection system.}
+	\label{fig:fault_sis_d}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[height=0.4\textheight]{fig0c/Fault/MANU_BCKDSL}
+	\mycaption[Fault tree for the manual use of the backup generator]{Fault tree for the manual use of the backup generator.}
+	\label{fig:fault_bckgen}
+\end{figure}
 
 \
