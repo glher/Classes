@@ -8,46 +8,47 @@
 \contentsline {figure}{\numberline {2.1}{\ignorespaces ASTRID reactor building generic schematics}}{8}{figure.2.1}
 \addvspace {10pt}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Reliability Block Diagram for the primary system}}{18}{figure.4.1}
+\addvspace {10pt}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Reliability Block Diagram for the primary system}}{24}{figure.5.1}
 \addvspace {10pt}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {6.1}{\ignorespaces High-level simplified FBED representation of ASTRID reactor.}}{29}{figure.6.1}
-\contentsline {figure}{\numberline {6.2}{\ignorespaces Range of a projectile.}}{39}{figure.6.2}
-\contentsline {figure}{\numberline {6.3}{\ignorespaces Example of the method prognostic bayes net.}}{41}{figure.6.3}
-\contentsline {figure}{\numberline {6.4}{\ignorespaces Simple functional model.}}{41}{figure.6.4}
-\contentsline {figure}{\numberline {6.5}{\ignorespaces Translation of a simple function model (Figure~\ref {fig:fm}) to its functional prognostic Bayesian network form.}}{42}{figure.6.5}
+\contentsline {figure}{\numberline {7.1}{\ignorespaces High-level simplified FBED representation of ASTRID reactor.}}{35}{figure.7.1}
+\contentsline {figure}{\numberline {7.2}{\ignorespaces Range of a projectile.}}{45}{figure.7.2}
+\contentsline {figure}{\numberline {7.3}{\ignorespaces Example of the method prognostic bayes net.}}{47}{figure.7.3}
+\contentsline {figure}{\numberline {7.4}{\ignorespaces Simple functional model.}}{47}{figure.7.4}
+\contentsline {figure}{\numberline {7.5}{\ignorespaces Translation of a simple function model (Figure~\ref {fig:fm}) to its functional prognostic Bayesian network form.}}{48}{figure.7.5}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {A.1}{\ignorespaces Main Reliability Block Diagram architecture}}{53}{figure.A.1}
-\contentsline {figure}{\numberline {A.2}{\ignorespaces Reliability Block Diagram for the primary system}}{55}{figure.A.2}
-\contentsline {figure}{\numberline {A.3}{\ignorespaces Reliability Block Diagram for the core sensors in the primary system}}{56}{figure.A.3}
-\contentsline {figure}{\numberline {A.4}{\ignorespaces Reliability Block Diagram for the primary pumps in the primary system}}{57}{figure.A.4}
-\contentsline {figure}{\numberline {A.5}{\ignorespaces Reliability Block Diagram for the heat exchangers in the primary system}}{58}{figure.A.5}
-\contentsline {figure}{\numberline {A.6}{\ignorespaces Reliability Block Diagram for the safety injection system in the primary system}}{59}{figure.A.6}
-\contentsline {figure}{\numberline {A.7}{\ignorespaces Reliability Block Diagram for the decay heat removal in the primary system}}{60}{figure.A.7}
-\contentsline {figure}{\numberline {A.8}{\ignorespaces Reliability Block Diagram for the secondary system}}{61}{figure.A.8}
-\contentsline {figure}{\numberline {A.9}{\ignorespaces Reliability Block Diagram for the secondary pumps in the secondary system}}{62}{figure.A.9}
-\contentsline {figure}{\numberline {A.10}{\ignorespaces Reliability Block Diagram for the steam generators in the secondary system}}{63}{figure.A.10}
-\contentsline {figure}{\numberline {A.11}{\ignorespaces Reliability Block Diagram for the tertiary system}}{65}{figure.A.11}
-\contentsline {figure}{\numberline {A.12}{\ignorespaces Reliability Block Diagram for the condensers in the tertiary system}}{66}{figure.A.12}
-\contentsline {figure}{\numberline {A.13}{\ignorespaces Reliability Block Diagram for the tertiary-secondary pumps in the tertiary system}}{66}{figure.A.13}
-\contentsline {figure}{\numberline {A.14}{\ignorespaces Reliability Block Diagram for the boundary-tertiary pumps in the tertiary system}}{67}{figure.A.14}
-\contentsline {figure}{\numberline {A.15}{\ignorespaces Reliability Block Diagram for the turbines in the tertiary system}}{67}{figure.A.15}
-\contentsline {figure}{\numberline {A.16}{\ignorespaces Reliability Block Diagram for the generators in the tertiary system}}{68}{figure.A.16}
+\contentsline {figure}{\numberline {A.1}{\ignorespaces Main Reliability Block Diagram architecture}}{61}{figure.A.1}
+\contentsline {figure}{\numberline {A.2}{\ignorespaces Reliability Block Diagram for the primary system}}{63}{figure.A.2}
+\contentsline {figure}{\numberline {A.3}{\ignorespaces Reliability Block Diagram for the core sensors in the primary system}}{64}{figure.A.3}
+\contentsline {figure}{\numberline {A.4}{\ignorespaces Reliability Block Diagram for the primary pumps in the primary system}}{65}{figure.A.4}
+\contentsline {figure}{\numberline {A.5}{\ignorespaces Reliability Block Diagram for the heat exchangers in the primary system}}{66}{figure.A.5}
+\contentsline {figure}{\numberline {A.6}{\ignorespaces Reliability Block Diagram for the safety injection system in the primary system}}{67}{figure.A.6}
+\contentsline {figure}{\numberline {A.7}{\ignorespaces Reliability Block Diagram for the decay heat removal in the primary system}}{68}{figure.A.7}
+\contentsline {figure}{\numberline {A.8}{\ignorespaces Reliability Block Diagram for the secondary system}}{69}{figure.A.8}
+\contentsline {figure}{\numberline {A.9}{\ignorespaces Reliability Block Diagram for the secondary pumps in the secondary system}}{70}{figure.A.9}
+\contentsline {figure}{\numberline {A.10}{\ignorespaces Reliability Block Diagram for the steam generators in the secondary system}}{71}{figure.A.10}
+\contentsline {figure}{\numberline {A.11}{\ignorespaces Reliability Block Diagram for the tertiary system}}{73}{figure.A.11}
+\contentsline {figure}{\numberline {A.12}{\ignorespaces Reliability Block Diagram for the condensers in the tertiary system}}{74}{figure.A.12}
+\contentsline {figure}{\numberline {A.13}{\ignorespaces Reliability Block Diagram for the tertiary-secondary pumps in the tertiary system}}{74}{figure.A.13}
+\contentsline {figure}{\numberline {A.14}{\ignorespaces Reliability Block Diagram for the boundary-tertiary pumps in the tertiary system}}{75}{figure.A.14}
+\contentsline {figure}{\numberline {A.15}{\ignorespaces Reliability Block Diagram for the turbines in the tertiary system}}{75}{figure.A.15}
+\contentsline {figure}{\numberline {A.16}{\ignorespaces Reliability Block Diagram for the generators in the tertiary system}}{76}{figure.A.16}
 \addvspace {10pt}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {C.1}{\ignorespaces Event tree for the loss of offsite power}}{81}{figure.C.1}
-\contentsline {figure}{\numberline {C.2}{\ignorespaces Event tree for the loss of coolant}}{81}{figure.C.2}
-\contentsline {figure}{\numberline {C.3}{\ignorespaces Event tree for the power excursion}}{82}{figure.C.3}
-\contentsline {figure}{\numberline {C.4}{\ignorespaces Event tree for the SCRAM and cooling}}{82}{figure.C.4}
-\contentsline {figure}{\numberline {C.5}{\ignorespaces Event tree for the containment}}{82}{figure.C.5}
-\contentsline {figure}{\numberline {C.6}{\ignorespaces Fault tree for the safety injection system}}{83}{figure.C.6}
-\contentsline {figure}{\numberline {C.7}{\ignorespaces Detailed fault tree for the safety injection system}}{83}{figure.C.7}
-\contentsline {figure}{\numberline {C.8}{\ignorespaces Fault tree for the manual use of the backup generator}}{84}{figure.C.8}
+\contentsline {figure}{\numberline {C.1}{\ignorespaces Event tree for the loss of offsite power}}{89}{figure.C.1}
+\contentsline {figure}{\numberline {C.2}{\ignorespaces Event tree for the loss of coolant}}{89}{figure.C.2}
+\contentsline {figure}{\numberline {C.3}{\ignorespaces Event tree for the power excursion}}{90}{figure.C.3}
+\contentsline {figure}{\numberline {C.4}{\ignorespaces Event tree for the SCRAM and cooling}}{90}{figure.C.4}
+\contentsline {figure}{\numberline {C.5}{\ignorespaces Event tree for the containment}}{90}{figure.C.5}
+\contentsline {figure}{\numberline {C.6}{\ignorespaces Fault tree for the safety injection system}}{91}{figure.C.6}
+\contentsline {figure}{\numberline {C.7}{\ignorespaces Detailed fault tree for the safety injection system}}{91}{figure.C.7}
+\contentsline {figure}{\numberline {C.8}{\ignorespaces Fault tree for the manual use of the backup generator}}{92}{figure.C.8}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {D.1}{\ignorespaces FFIP - Initiating event: Loss of signal for the neutron detectors.}}{87}{figure.D.1}
-\contentsline {figure}{\numberline {D.2}{\ignorespaces FFIP - Initiating event: Loss of turbines.}}{88}{figure.D.2}
-\contentsline {figure}{\numberline {D.3}{\ignorespaces FFIP - Initiating event: Loss of condensers.}}{89}{figure.D.3}
-\contentsline {figure}{\numberline {D.4}{\ignorespaces FFIP - Initiating event: Loss of signal for the neutron detectors - Alternative scenario}}{90}{figure.D.4}
+\contentsline {figure}{\numberline {D.1}{\ignorespaces FFIP - Initiating event: Loss of signal for the neutron detectors.}}{95}{figure.D.1}
+\contentsline {figure}{\numberline {D.2}{\ignorespaces FFIP - Initiating event: Loss of turbines.}}{96}{figure.D.2}
+\contentsline {figure}{\numberline {D.3}{\ignorespaces FFIP - Initiating event: Loss of condensers.}}{97}{figure.D.3}
+\contentsline {figure}{\numberline {D.4}{\ignorespaces FFIP - Initiating event: Loss of signal for the neutron detectors - Alternative scenario}}{98}{figure.D.4}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {E.1}{\ignorespaces UFFSR - Initiating event: Turbine explosion - Secondary event: Loss of sodium supply for the SIS}}{92}{figure.E.1}
-\contentsline {figure}{\numberline {E.2}{\ignorespaces UFFSR - Arrestor Function - Initiating event: Turbine explosion - Secondary event: Loss of sodium supply for the SIS}}{93}{figure.E.2}
+\contentsline {figure}{\numberline {E.1}{\ignorespaces UFFSR - Initiating event: Turbine explosion - Secondary event: Loss of sodium supply for the SIS}}{100}{figure.E.1}
+\contentsline {figure}{\numberline {E.2}{\ignorespaces UFFSR - Arrestor Function - Initiating event: Turbine explosion - Secondary event: Loss of sodium supply for the SIS}}{101}{figure.E.2}

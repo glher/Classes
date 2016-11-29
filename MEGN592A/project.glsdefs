@@ -538,3 +538,33 @@ parent={},%
 %
 }%
 }%
+\ifglsentryexists{crffa}{}%
+{%
+\gls@defglossaryentry{crffa}%
+{%
+name={CRFFA},%
+sort={CRFFA},%
+type={acronym},%
+first={Cable Routing Function Failure Analysis\glsspace (CRFFA)},%
+firstplural={Cable Routing Function Failure Analysiss\glsspace (CRFFAs)},%
+text={CRFFA},%
+plural={CRFFAs},%
+description={Cable Routing Function Failure Analysis},%
+descriptionplural={Cable Routing Function Failure Analysis\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Cable Routing Function Failure Analysis},%
+longplural={Cable Routing Function Failure Analysiss},%
+short={CRFFA},%
+shortplural={CRFFAs},%
+counter={page},%
+parent={},%
+%
+}%
+}%

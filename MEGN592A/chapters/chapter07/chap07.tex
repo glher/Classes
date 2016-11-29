@@ -1,0 +1,96 @@
+%
+% File: chap05.tex
+%
+\let\textcircled=\pgftextcircled
+\chapter{Risk analysis takeaway}
+\label{chap:dec}
+
+\initial{R}isk analyses are mostly useless if their results cannot be communicated. Several methods can be used to efficiently communicate risk and allow for easy decisions to be made. Often, those decisions need to account for cost to the system in case of a failure, which is the cost of the repair ($C_r$) as well as the cost of the time during which the system is unusable ($C_e$). This has to be compared to the cost of preventive actions ($C_p$), whether these are changes in design or modified maintenance program.
+
+\section{Decision making}
+
+In order to make efficient decisions for a system, the risks to the system must be given, from a regulation standpoint as well as a cost standpoint. As mentionned, the cost effectiveness can be explicited as:
+
+\begin{equation}
+\text{cost effectiveness} = \text{risk probability} * (C_r + C_e) - C_p
+\end{equation}
+
+As long as the cost effectiveness is positive, the decision seems to be obvious. However, what happens when the design improvement cost is very high, and unaffordable to the company? In such cases, it is useful to present different scenarios, coming from various analysis methods. Indeed, a method such as Probabilistic Risk Assessment (PRA) could make the engineering team recommend adding an expensive redundancy to the system, when a method such as Prognostics in Early Functional Design could lower the risk probability to the system by adding a monitoring function and a paragraph in the procedures, at a low cost.
+
+The use of different methods on a system, though time-consuming, is highly recommended. A method could be better than another, at detecting potential faults or defining adequate workarounds for example, but they all by essence propose a narrow set of solutions. When confronted with decision making, the more options are available, with all the associated parameters (cost, time, likelihood, benefits, inconvenients), the easier the decision can be.
+
+Probabilities are often misunderstood by people. A solution is to present the probability values obtained as time and unit occurence. Thus, a probability of \num{1e-2} $y^{-1}$ would be translated to \textit{"It will happen on average once every hundred years for a unit. Build 100 units, and it will happen every year on one of the unit at least"}. Even though not correct per se, this wordy approximation gets the point across.
+
+\section{The case of ASTRID}
+
+Several methods were used on the case study, the Sodium-cooled fast reactor ASTRID. Even though the scope of these performed analyses might vary, with the system failure defined as reliability issue to the its impact on the environment, important facts can be taken from them.
+
+First and foremost, one thing appear from the present study. Nuclear systems, with all their existing redundancies, are extremely safe. ASTRID is a prototype for a new kind of reactors, taking into account thousands of years of historical data from existing nuclear plants, as well as a lot of even more relevant Sodium-cooled reactor data. The redundancies introduced in the system are the fruit of thousands of PRA and FMEA studies. It is however important to note that the state of the art in risk and reliability analyses changes, and that other methods can give more information and discern fault propagation path unseen by classical methods. Notably, what happens in today's engineering world is that a fault will be discovered in a similar system, or after a "close call", and a fix will be introduced to the system after that. Those are often times known as uncoupled failure, an unexpected, non nominal flow entering a component and failing it. Moreover, in recent years, the field of prognostics and health management has grown and sensors allowing to predict imminent failures are used more and more in complex systems, rendering recovery maintenance possible and cost-effective. Classical methods cannot account for such events, and new methods have been derived to consider these paths and mitigate them.
+
+\subsection{FMEA}
+
+More details on FMEA are given in section~\ref{chap:rbd_fmea}.
+
+A FMEA was carried out on the case study. It revealed several points where attention was necessary. Notably, the calibration of the detectors. Badly calibrated neutron flux detectors can give frankly erroneous flux values, which are used to compute the power level in the core. This false inforamtion can lead to high local temperature in the core without the operator's knowledge and damage the fuel. Frequent calibration are thus recommended to mitigate this issue, already reduced by the redundant detectors used.
+
+Another important risk to the system identified through FMEA, in terms of core damage and radioactivity release, is the external agressions risks, whether it is natural or human caused. This risk is relative to the strenght of the vessels separating the core from the outside world, and potential breaches caused. A reinforced vessel is recommended, as well as a heightened security to predict such event and take measures.
+
+That being said, one of the main issues of this kind of analysis is its subjectivity and the needs for expert elicitations to cover various physical ways of propagating a failure through the Reliability Block Diagram (RBD). Another engineer will likely obtain different scores and probably a different set of principal recommendations depending on their background.
+
+It would thus be interesting to have at least five independent FMEA studies of the same system in order to discern patterns and improve the confidence in the results.
+
+\subsection{PRA}
+
+More details on PRA are given in section~\ref{chap:pra}.
+
+On selected PRA trees, the likelihood of our system releasing radioactivity in the atmosphere is estimated at one in a billion in a year. This means that we expect a radioactivity accident once every billion years for our system. The PRA methods applied consequently show the system as being extremely safe. One of the takeaway is actually that some costly redundant system could be scraped off in order to increase the probability while still staying under reasonable threshold.
+
+It is a risky move, since regulations agencies and public opinions would not react well to a step backward in safety. Thus, if this were to be done, communications about it should be kept to a minimum and worded carefully.
+
+This is especially true considering the expertise needed to compute an accurate PRA model, with all the various parameters for the tiniest components, as well as the correct failure paths.
+
+\subsection{FFDM}
+
+More details on FFDM are given in section~\ref{chap:ffdm}.
+
+In the absence of adequate functional historical data for a nuclear power plant specific environment, failure modes defined in the FMEA analysis were used to compute function failure scores. Using this dataset, and the limitations it entails, notably from the expertise point of view as discussed previously, several function failure modes appear as noteworthy. The analysis revealed that corrosion fatigue was a failure mode to seriously consider when selecting appropriate materials. The function exhibited by the control rods insertion is deemed at high risk of mechanical stress failure, due to the distorsion of the irradiatied control rods. Finally, the electronic failure of the detectors appears to be a point of interest for the system.
+
+This demonstrates one of the weakness of FFDM when compared to more simple FMEA method, it does not account for the severity of an event, only its probability. It will thus detect more failure modes when used in conjonction with an adequate historical failure database, but it does not help any decision making, because the severity of the failure and its consequences on the studied system are not computed.
+
+Precious information can still be obtained by using FFDM, whether it is as a part of an improved FMEA or to help select material options.
+
+\subsection{FFIP}
+
+More details on FFIP are given in section~\ref{chap:ffip}.
+
+FFIP can use the failure modes identified by FFDM and propagate those failures through a functional model. This makes this methods really interesting from a risk and reliability analysis view point, as it requires less time-consuming, error-prone, human-made nominal propagation path as seen in PRA or hinted at in FMEA. This method is applied to the case study of ASTRID.
+
+In the scenario modeled, we see that the loss of power to one neutron flux detector and the propagation of this failure causes the reactor shutdown with a probability of roughly \num{1e-3}, hence a loss of reliability. We also compute that it causes a catastrophic failure, with a release of radioactivity in the environment, with a likelihood of \num{5e-11}, exceedingly low. To give a perspective on this number, a meteor utterly destroying the plant would be more likely to happen.
+
+\subsection{UFFSR}
+
+More details on UFFSR are given in section~\ref{chap:uffsr}.
+
+In every complex system, uncoupled flows, defined as flows that are not nominally expected, can fail any number of functions within the system. These failure flows can not be taken into account within PRA or FFIP methods, and are cumbersome to account for in FMEA. Integrating a functional model with a physics-based model, principal uncoupled flows can be identified and propagated using FFIP-like algorithm. The number of combinations of potential paths is extremely consequent.
+
+A catastrophic turbine failure (explosion with shrapnel) is considered to demonstrate the method. It is computed that the shrapnel can reach at least 125 meters from the turbine location, damaging a lot of uncoupled systems. From the results obtained, it is thus recommended not to move the turbine away, as it would result in efficiency loss, but to rotate the turbine so that shrapnel would not reach critical components, and to reinforce the building concrete if the cost increase is not prohibitive.
+
+The probability of a radioactivity release following this accident is calculated as being \num{1e-10}, low enough to be ignored. Thus, the final recommendation would be that the turbine and its building are oriented in such a way that shrapnel would not damage the rest of the plant extensively.
+
+\subsection{HRA and Prognostics in Early Design}
+
+More details on Prognostics in Early Design are given in section~\ref{chap:pefd}.
+
+This method is used to account for potential Prognostic and Health Management (PHM) equipment in the plant, and their impact on the maintenance and recovery actions taken after the detection of an imminent failure. Human Reliability Assessment (HRA) is used to estimate the likelihood of a successful recovery as well as the potential failure introduced by a maintenance team to the system due to faulty actions. Doing so, we can see for example that the probability of recovering from a detected imminent failure of the turbine is 98.5\%, and the chance of introducing a failure mode is 0.15\%. Using those numbers, we see that for an adequate sensor on the turbine, the probability of failure is reduced by an order of magnitude, going from once every thousand years to once every ten thousand years.
+
+This can be used to justify not adding redundancies but instead placing more sensors in the system. In the case of the turbine, this does not necessarily apply, since the cost of the turbine can be offset by the operation benefits. However, in the case of other type of components, such as backup generators, this can be used to eliminate unnecessary and expensive redundancies.
+
+\subsection{CRFFA}
+
+More details on CRFFA are given in section~\ref{chap:crffa}.
+
+The Cable Routing Function Failure Analysis (CRFFA) method can be used to select the best cable paths configuration, minimizing common-cause failure propagating through the system. In the case of a nuclear reactor, watchdogs limit the usefulness of this method in the case of risk analysis for power and signal cables, since the shutdown is initiated passively if no signal is received. However, it is quite interesting when considering the reliability side of it.
+
+It is thus recommended to isolate the various signal and power cables from and to the various detectors equipment in the core, in order to avoid potential common-cause failure mode that would render the operator blind to what is going on in the reactor and thus impact directly the reliability of the plant.
+
+But more importantly, the cables should be ordered and labeled correctly, since one of the main common failure cause in this case would be human mistake. An organized cable route would also allow for swift repairs.

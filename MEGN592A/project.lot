@@ -5,32 +5,33 @@
 \addvspace {10pt}
 \addvspace {10pt}
 \addvspace {10pt}
-\contentsline {table}{\numberline {4.1}{\ignorespaces Probability index}}{20}{table.4.1}
-\contentsline {table}{\numberline {4.2}{\ignorespaces Detectability index for a risk-centered method}}{20}{table.4.2}
-\contentsline {table}{\numberline {4.3}{\ignorespaces Detectability index for a reliability-centered method}}{20}{table.4.3}
-\contentsline {table}{\numberline {4.4}{\ignorespaces Detectability index}}{21}{table.4.4}
-\contentsline {table}{\numberline {4.5}{\ignorespaces Excerpt from Table\ref {tab:fmea_risk} presenting the (P, S, D)-triplet for the perceived most severe failure modes}}{21}{table.4.5}
-\contentsline {table}{\numberline {4.6}{\ignorespaces Excerpt from Table~\ref {tab:fmea_rpn_risk} presenting the RPN and possible mitigation strategy for the perceived most severe failure modes}}{21}{table.4.6}
 \addvspace {10pt}
-\contentsline {table}{\numberline {5.1}{\ignorespaces PRA cutsets}}{25}{table.5.1}
+\contentsline {table}{\numberline {5.1}{\ignorespaces Probability index}}{26}{table.5.1}
+\contentsline {table}{\numberline {5.2}{\ignorespaces Detectability index for a risk-centered method}}{26}{table.5.2}
+\contentsline {table}{\numberline {5.3}{\ignorespaces Detectability index for a reliability-centered method}}{26}{table.5.3}
+\contentsline {table}{\numberline {5.4}{\ignorespaces Detectability index}}{27}{table.5.4}
+\contentsline {table}{\numberline {5.5}{\ignorespaces Excerpt from Table\ref {tab:fmea_risk} presenting the (P, S, D)-triplet for the perceived most severe failure modes}}{27}{table.5.5}
+\contentsline {table}{\numberline {5.6}{\ignorespaces Excerpt from Table~\ref {tab:fmea_rpn_risk} presenting the RPN and possible mitigation strategy for the perceived most severe failure modes}}{27}{table.5.6}
 \addvspace {10pt}
-\contentsline {table}{\numberline {6.1}{\ignorespaces Excerpt from the functional basis reconciled function set}}{28}{table.6.1}
-\contentsline {table}{\numberline {6.2}{\ignorespaces Excerpt from the functional basis reconciled flow set}}{28}{table.6.2}
-\contentsline {table}{\numberline {6.3}{\ignorespaces FFDM database}}{31}{table.6.3}
-\contentsline {table}{\numberline {6.4}{\ignorespaces FFDM normalized database}}{32}{table.6.4}
-\contentsline {table}{\numberline {6.5}{\ignorespaces Propagation of failure in risk analysis}}{35}{table.6.5}
-\contentsline {table}{\numberline {6.6}{\ignorespaces Propagation of failure in risk analysis - Alternative scenario}}{35}{table.6.6}
-\contentsline {table}{\numberline {6.7}{\ignorespaces Propagation of failure in reliability analysis}}{36}{table.6.7}
-\contentsline {table}{\numberline {6.8}{\ignorespaces Conditional probability tables for the weakness detection, correction and failure of a function $f_1$}}{43}{table.6.8}
-\contentsline {table}{\numberline {6.9}{\ignorespaces Conditional probability tables for the weakness detection, correction and failure of a flow $f_{12}$}}{47}{table.6.9}
-\contentsline {table}{\numberline {6.10}{\ignorespaces Detectors considered}}{50}{table.6.10}
-\contentsline {table}{\numberline {6.11}{\ignorespaces Estimates of the different HRA categories}}{51}{table.6.11}
-\contentsline {table}{\numberline {6.12}{\ignorespaces Example of the impact of PHM sensors on the failure probability for specific functions/components}}{52}{table.6.12}
+\contentsline {table}{\numberline {6.1}{\ignorespaces PRA cutsets}}{31}{table.6.1}
+\addvspace {10pt}
+\contentsline {table}{\numberline {7.1}{\ignorespaces Excerpt from the functional basis reconciled function set}}{34}{table.7.1}
+\contentsline {table}{\numberline {7.2}{\ignorespaces Excerpt from the functional basis reconciled flow set}}{34}{table.7.2}
+\contentsline {table}{\numberline {7.3}{\ignorespaces FFDM database}}{37}{table.7.3}
+\contentsline {table}{\numberline {7.4}{\ignorespaces FFDM normalized database}}{38}{table.7.4}
+\contentsline {table}{\numberline {7.5}{\ignorespaces Propagation of failure in risk analysis}}{41}{table.7.5}
+\contentsline {table}{\numberline {7.6}{\ignorespaces Propagation of failure in risk analysis - Alternative scenario}}{41}{table.7.6}
+\contentsline {table}{\numberline {7.7}{\ignorespaces Propagation of failure in reliability analysis}}{42}{table.7.7}
+\contentsline {table}{\numberline {7.8}{\ignorespaces Conditional probability tables for the weakness detection, correction and failure of a function $f_1$}}{49}{table.7.8}
+\contentsline {table}{\numberline {7.9}{\ignorespaces Conditional probability tables for the weakness detection, correction and failure of a flow $f_{12}$}}{53}{table.7.9}
+\contentsline {table}{\numberline {7.10}{\ignorespaces Detectors considered}}{56}{table.7.10}
+\contentsline {table}{\numberline {7.11}{\ignorespaces Estimates of the different HRA categories}}{57}{table.7.11}
+\contentsline {table}{\numberline {7.12}{\ignorespaces Example of the impact of PHM sensors on the failure probability for specific functions/components}}{58}{table.7.12}
 \addvspace {10pt}
 \addvspace {10pt}
-\contentsline {table}{\numberline {B.1}{FMEA}}{73}{table.B.1}
-\contentsline {table}{\numberline {B.2}{FMEA: RPN and mitigation}}{77}{table.B.2}
+\contentsline {table}{\numberline {B.1}{FMEA}}{81}{table.B.1}
+\contentsline {table}{\numberline {B.2}{FMEA: RPN and mitigation}}{85}{table.B.2}
 \addvspace {10pt}
-\contentsline {table}{\numberline {C.1}{PRA: basic events}}{81}{table.C.1}
+\contentsline {table}{\numberline {C.1}{PRA: basic events}}{89}{table.C.1}
 \addvspace {10pt}
 \addvspace {10pt}

@@ -1,8 +1,8 @@
 \select@language {english}
 \par \penalty \@M \unhbox \voidb@x \hbox {}\hfill {\nag@@warning@vi \bfseries Page}\par \penalty \@M 
-\contentsline {chapter}{List of Tables}{v}{section*.2}
-\contentsline {chapter}{List of Figures}{vii}{section*.3}
-\contentsline {chapter}{List of Acronyms}{ix}{section*.4}
+\contentsline {chapter}{List of Tables}{vii}{section*.2}
+\contentsline {chapter}{List of Figures}{ix}{section*.3}
+\contentsline {chapter}{List of Acronyms}{xi}{section*.4}
 \contentsline {chapter}{\chapternumberline {1}Introduction}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}A brief design introduction}{1}{section.1.1}
 \contentsline {section}{\numberline {1.2}A bit of history}{2}{section.1.2}
@@ -21,36 +21,47 @@
 \contentsline {subsection}{\numberline {2.2.4}Primary circuit components}{11}{subsection.2.2.4}
 \contentsline {subsection}{\numberline {2.2.5}Secondary circuit components}{11}{subsection.2.2.5}
 \contentsline {subsection}{\numberline {2.2.6}Tertiary circuit components}{12}{subsection.2.2.6}
-\contentsline {chapter}{\chapternumberline {3}Identification of potential system failures}{13}{chapter.3}
-\contentsline {section}{\numberline {3.1}Primary circuit components failure}{14}{section.3.1}
-\contentsline {section}{\numberline {3.2}Secondary circuit components failure}{15}{section.3.2}
-\contentsline {section}{\numberline {3.3}Tertiary circuit components failure}{15}{section.3.3}
-\contentsline {section}{\numberline {3.4}Reactor structure components failure}{16}{section.3.4}
-\contentsline {section}{\numberline {3.5}Aggressions}{16}{section.3.5}
-\contentsline {chapter}{\chapternumberline {4}High-level failure identification}{17}{chapter.4}
-\contentsline {section}{\numberline {4.1}Reliability Block Diagram}{17}{section.4.1}
-\contentsline {section}{\numberline {4.2}Failure Modes and Effects Analysis}{18}{section.4.2}
-\contentsline {chapter}{\chapternumberline {5}Probabilistic Risk Assessment}{23}{chapter.5}
-\contentsline {section}{\numberline {5.1}PRA model}{23}{section.5.1}
-\contentsline {section}{\numberline {5.2}PRA model applied to the case study}{24}{section.5.2}
-\contentsline {chapter}{\chapternumberline {6}Functional analyses}{27}{chapter.6}
-\contentsline {section}{\numberline {6.1}Functional model}{27}{section.6.1}
-\contentsline {section}{\numberline {6.2}Function Failure Design Method}{30}{section.6.2}
-\contentsline {section}{\numberline {6.3}Function Failure Identification and Propagation}{32}{section.6.3}
-\contentsline {section}{\numberline {6.4}Uncoupled Flow Failure State Reasoning}{35}{section.6.4}
-\contentsline {section}{\numberline {6.5}Prognostics in Early Functional Design}{39}{section.6.5}
-\contentsline {subsection}{\numberline {6.5.1}Methodology}{40}{subsection.6.5.1}
-\contentsline {subsection}{\numberline {6.5.2}Application to the case study}{50}{subsection.6.5.2}
-\contentsline {appendix}{\chapternumberline {A}Reliability Block Diagram}{53}{appendix.A}
-\contentsline {section}{\numberline {A.1}Global system}{53}{section.A.1}
-\contentsline {section}{\numberline {A.2}Primary system}{55}{section.A.2}
-\contentsline {subsection}{\numberline {A.2.1}Primary system redundancies}{56}{subsection.A.2.1}
-\contentsline {section}{\numberline {A.3}Secondary system}{61}{section.A.3}
-\contentsline {subsection}{\numberline {A.3.1}Secondary system redundancies}{62}{subsection.A.3.1}
-\contentsline {section}{\numberline {A.4}Tertiary system}{65}{section.A.4}
-\contentsline {subsection}{\numberline {A.4.1}Tertiary system redundancies}{66}{subsection.A.4.1}
-\contentsline {appendix}{\chapternumberline {B}Failure Modes and Effects Analysis}{69}{appendix.B}
-\contentsline {appendix}{\chapternumberline {C}Probabilistic Risk Assessments}{79}{appendix.C}
-\contentsline {appendix}{\chapternumberline {D}Function Failure Identification and Propagation}{85}{appendix.D}
-\contentsline {appendix}{\chapternumberline {E}Uncoupled Flow Failure State Reasoning}{91}{appendix.E}
-\contentsline {chapter}{Bibliography}{95}{section*.7}
+\contentsline {chapter}{\chapternumberline {3}Risk analysis takeaway}{13}{chapter.3}
+\contentsline {section}{\numberline {3.1}Decision making}{13}{section.3.1}
+\contentsline {section}{\numberline {3.2}The case of ASTRID}{14}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}FMEA}{14}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}PRA}{15}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}FFDM}{15}{subsection.3.2.3}
+\contentsline {subsection}{\numberline {3.2.4}FFIP}{16}{subsection.3.2.4}
+\contentsline {subsection}{\numberline {3.2.5}UFFSR}{16}{subsection.3.2.5}
+\contentsline {subsection}{\numberline {3.2.6}HRA and Prognostics in Early Design}{17}{subsection.3.2.6}
+\contentsline {subsection}{\numberline {3.2.7}CRFFA}{17}{subsection.3.2.7}
+\contentsline {chapter}{\chapternumberline {4}Identification of potential system failures}{19}{chapter.4}
+\contentsline {section}{\numberline {4.1}Primary circuit components failure}{20}{section.4.1}
+\contentsline {section}{\numberline {4.2}Secondary circuit components failure}{21}{section.4.2}
+\contentsline {section}{\numberline {4.3}Tertiary circuit components failure}{21}{section.4.3}
+\contentsline {section}{\numberline {4.4}Reactor structure components failure}{22}{section.4.4}
+\contentsline {section}{\numberline {4.5}Aggressions}{22}{section.4.5}
+\contentsline {chapter}{\chapternumberline {5}High-level failure identification}{23}{chapter.5}
+\contentsline {section}{\numberline {5.1}Reliability Block Diagram}{23}{section.5.1}
+\contentsline {section}{\numberline {5.2}Failure Modes and Effects Analysis}{24}{section.5.2}
+\contentsline {chapter}{\chapternumberline {6}Probabilistic Risk Assessment}{29}{chapter.6}
+\contentsline {section}{\numberline {6.1}PRA model}{29}{section.6.1}
+\contentsline {section}{\numberline {6.2}PRA model applied to the case study}{30}{section.6.2}
+\contentsline {chapter}{\chapternumberline {7}Functional analyses}{33}{chapter.7}
+\contentsline {section}{\numberline {7.1}Functional model}{33}{section.7.1}
+\contentsline {section}{\numberline {7.2}Function Failure Design Method}{36}{section.7.2}
+\contentsline {section}{\numberline {7.3}Function Failure Identification and Propagation}{38}{section.7.3}
+\contentsline {section}{\numberline {7.4}Uncoupled Flow Failure State Reasoning}{41}{section.7.4}
+\contentsline {section}{\numberline {7.5}Prognostics in Early Functional Design}{45}{section.7.5}
+\contentsline {subsection}{\numberline {7.5.1}Methodology}{46}{subsection.7.5.1}
+\contentsline {subsection}{\numberline {7.5.2}Application to the case study}{56}{subsection.7.5.2}
+\contentsline {section}{\numberline {7.6}Cable and Pipe Routing}{58}{section.7.6}
+\contentsline {appendix}{\chapternumberline {A}Reliability Block Diagram}{61}{appendix.A}
+\contentsline {section}{\numberline {A.1}Global system}{61}{section.A.1}
+\contentsline {section}{\numberline {A.2}Primary system}{63}{section.A.2}
+\contentsline {subsection}{\numberline {A.2.1}Primary system redundancies}{64}{subsection.A.2.1}
+\contentsline {section}{\numberline {A.3}Secondary system}{69}{section.A.3}
+\contentsline {subsection}{\numberline {A.3.1}Secondary system redundancies}{70}{subsection.A.3.1}
+\contentsline {section}{\numberline {A.4}Tertiary system}{73}{section.A.4}
+\contentsline {subsection}{\numberline {A.4.1}Tertiary system redundancies}{74}{subsection.A.4.1}
+\contentsline {appendix}{\chapternumberline {B}Failure Modes and Effects Analysis}{77}{appendix.B}
+\contentsline {appendix}{\chapternumberline {C}Probabilistic Risk Assessments}{87}{appendix.C}
+\contentsline {appendix}{\chapternumberline {D}Function Failure Identification and Propagation}{93}{appendix.D}
+\contentsline {appendix}{\chapternumberline {E}Uncoupled Flow Failure State Reasoning}{99}{appendix.E}
+\contentsline {chapter}{Bibliography}{103}{section*.7}
