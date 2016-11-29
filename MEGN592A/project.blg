@@ -5,45 +5,45 @@ The style file: siam.bst
 Database file #1: biblioproject.bib
 Warning--empty publisher in hunt01
 Warning--empty publisher in verdier2005
-You've used 19 entries,
+You've used 21 entries,
             2030 wiz_defined-function locations,
-            594 strings with 6730 characters,
-and the built_in function-call counts, 5359 in all, are:
-= -- 490
-> -- 236
+            603 strings with 7092 characters,
+and the built_in function-call counts, 5819 in all, are:
+= -- 531
+> -- 262
 < -- 0
-+ -- 95
-- -- 74
-* -- 408
-:= -- 874
-add.period$ -- 21
-call.type$ -- 19
-change.case$ -- 89
++ -- 106
+- -- 83
+* -- 448
+:= -- 955
+add.period$ -- 23
+call.type$ -- 21
+change.case$ -- 100
 chr.to.int$ -- 0
-cite$ -- 21
-duplicate$ -- 263
-empty$ -- 409
-format.name$ -- 74
-if$ -- 1100
+cite$ -- 23
+duplicate$ -- 284
+empty$ -- 440
+format.name$ -- 83
+if$ -- 1188
 int.to.chr$ -- 0
-int.to.str$ -- 19
-missing$ -- 21
-newline$ -- 62
-num.names$ -- 38
-pop$ -- 100
+int.to.str$ -- 21
+missing$ -- 23
+newline$ -- 68
+num.names$ -- 41
+pop$ -- 110
 preamble$ -- 1
-purify$ -- 73
+purify$ -- 82
 quote$ -- 0
-skip$ -- 191
+skip$ -- 203
 stack$ -- 0
-substring$ -- 288
-swap$ -- 88
+substring$ -- 298
+swap$ -- 91
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 70
+type$ -- 78
 warning$ -- 2
-while$ -- 53
-width$ -- 21
-write$ -- 159
+while$ -- 56
+width$ -- 23
+write$ -- 175
 (There were 2 warnings)

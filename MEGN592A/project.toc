@@ -1,8 +1,8 @@
 \select@language {english}
 \par \penalty \@M \unhbox \voidb@x \hbox {}\hfill {\nag@@warning@vi \bfseries Page}\par \penalty \@M 
-\contentsline {chapter}{List of Tables}{vii}{section*.2}
-\contentsline {chapter}{List of Figures}{ix}{section*.3}
-\contentsline {chapter}{List of Acronyms}{xi}{section*.4}
+\contentsline {chapter}{List of Tables}{ix}{section*.3}
+\contentsline {chapter}{List of Figures}{xi}{section*.4}
+\contentsline {chapter}{List of Acronyms}{xiii}{section*.5}
 \contentsline {chapter}{\chapternumberline {1}Introduction}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}A brief design introduction}{1}{section.1.1}
 \contentsline {section}{\numberline {1.2}A bit of history}{2}{section.1.2}
@@ -64,4 +64,4 @@
 \contentsline {appendix}{\chapternumberline {C}Probabilistic Risk Assessments}{87}{appendix.C}
 \contentsline {appendix}{\chapternumberline {D}Function Failure Identification and Propagation}{93}{appendix.D}
 \contentsline {appendix}{\chapternumberline {E}Uncoupled Flow Failure State Reasoning}{99}{appendix.E}
-\contentsline {chapter}{Bibliography}{103}{section*.7}
+\contentsline {chapter}{Bibliography}{103}{section*.8}
