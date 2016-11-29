@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.8.24)  28 NOV 2016 17:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.8.24)  28 NOV 2016 17:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2579,10 +2579,6 @@ Package microtype Info: Loading generic settings for font family
 LaTeX Font Info:    Font shape `T1/fnc/m/it' will be
 (Font)              scaled to size 10.18341pt on input line 22.
  [14] [15]
-
-LaTeX Warning: Reference `chap:pefd' on page 16 undefined on input line 82.
-
-
 Underfull \vbox (badness 1810) has occurred while \output is active []
 
  [16])
@@ -2592,7 +2588,7 @@ Underfull \vbox (badness 1810) has occurred while \output is active []
 
 ] [20] [21]) [22]
 (./chapters/chapter04/chap04.tex
-<chapters/chapter04/fig04/Primary_system.png, id=682, 695.59875pt x 555.07375pt
+<chapters/chapter04/fig04/Primary_system.png, id=683, 695.59875pt x 555.07375pt
 >
 File: chapters/chapter04/fig04/Primary_system.png Graphic file (type png)
  <use chapters/chapter04/fig04/Primary_system.png>
@@ -2701,7 +2697,7 @@ LaTeX Font Info:    Font shape `U/futm/m/n' will be
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
 (Font)              scaled to size 6.99199pt on input line 32.
 
-<chapters/chapter06/fig/Functional_model.pdf, id=787, 850.17625pt x 1055.945pt>
+<chapters/chapter06/fig/Functional_model.pdf, id=788, 850.17625pt x 1055.945pt>
 File: chapters/chapter06/fig/Functional_model.pdf Graphic file (type pdf)
 <use chapters/chapter06/fig/Functional_model.pdf>
 Package pdftex.def Info: chapters/chapter06/fig/Functional_model.pdf used on in
@@ -2734,7 +2730,7 @@ Underfull \vbox (badness 5504) has occurred while \output is active []
 
  [43]
 [44]
-<chapters/chapter06/fig/ProjectileRange.jpg, id=871, 405.515pt x 306.14375pt>
+<chapters/chapter06/fig/ProjectileRange.jpg, id=872, 405.515pt x 306.14375pt>
 File: chapters/chapter06/fig/ProjectileRange.jpg Graphic file (type jpg)
 
 <use chapters/chapter06/fig/ProjectileRange.jpg>
@@ -2742,7 +2738,7 @@ Package pdftex.def Info: chapters/chapter06/fig/ProjectileRange.jpg used on inp
 ut line 291.
 (pdftex.def)             Requested size: 243.31087pt x 183.68765pt.
  [45 <./chapters/chapter06/fig/ProjectileRange.jpg>]
-<chapters/chapter06/fig/cptex.pdf, id=880, 614.295pt x 353.32pt>
+<chapters/chapter06/fig/cptex.pdf, id=881, 614.295pt x 353.32pt>
 File: chapters/chapter06/fig/cptex.pdf Graphic file (type pdf)
 
 <use chapters/chapter06/fig/cptex.pdf>
@@ -2753,14 +2749,14 @@ Package pdftex.def Info: chapters/chapter06/fig/cptex.pdf used on input line 31
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [46]
-<chapters/chapter06/fig/fm.pdf, id=889, 353.32pt x 62.2325pt>
+<chapters/chapter06/fig/fm.pdf, id=890, 353.32pt x 62.2325pt>
 File: chapters/chapter06/fig/fm.pdf Graphic file (type pdf)
 
 <use chapters/chapter06/fig/fm.pdf>
 Package pdftex.def Info: chapters/chapter06/fig/fm.pdf used on input line 327.
 (pdftex.def)             Requested size: 176.65956pt x 31.11617pt.
 
-<chapters/chapter06/fig/bn_example.pdf, id=890, 1225.57875pt x 1013.7875pt>
+<chapters/chapter06/fig/bn_example.pdf, id=891, 1225.57875pt x 1013.7875pt>
 File: chapters/chapter06/fig/bn_example.pdf Graphic file (type pdf)
 
 <use chapters/chapter06/fig/bn_example.pdf>
@@ -2804,7 +2800,7 @@ Underfull \vbox (badness 5548) has occurred while \output is active []
 [58]) [59] [60
 
 ] (./chapters/appendices/app0A.tex
-<chapters/appendices/fig0a/main_RBD.png, id=1006, 725.71124pt x 91.34125pt>
+<chapters/appendices/fig0a/main_RBD.png, id=1007, 725.71124pt x 91.34125pt>
 File: chapters/appendices/fig0a/main_RBD.png Graphic file (type png)
 
 <use chapters/appendices/fig0a/main_RBD.png>
@@ -2821,7 +2817,7 @@ Overfull \hbox (57.81294pt too wide) in paragraph at lines 18--19
  <./chapters/appendices/fig0a/main_RBD.png>] [62
 
 ]
-<chapters/appendices/fig0a/Primary_system.png, id=1016, 695.59875pt x 555.07375
+<chapters/appendices/fig0a/Primary_system.png, id=1017, 695.59875pt x 555.07375
 pt>
 File: chapters/appendices/fig0a/Primary_system.png Graphic file (type png)
  <use chapters/appendices/fig0a/Primary_system.png>
@@ -2834,7 +2830,7 @@ Overfull \hbox (30.66876pt too wide) in paragraph at lines 29--30
  []
 
 [63 <./chapters/appendices/fig0a/Primary_system.png>]
-<chapters/appendices/fig0a/primary/Primary_sensors_subsystem.png, id=1022, 824.
+<chapters/appendices/fig0a/primary/Primary_sensors_subsystem.png, id=1023, 824.
 07875pt x 620.3175pt>
 File: chapters/appendices/fig0a/primary/Primary_sensors_subsystem.png Graphic f
 ile (type png)
@@ -2849,7 +2845,7 @@ Overfull \hbox (17.1401pt too wide) in paragraph at lines 39--40
  []
 
 
-<chapters/appendices/fig0a/primary/Primary_Pump_subsystem.png, id=1023, 432.616
+<chapters/appendices/fig0a/primary/Primary_Pump_subsystem.png, id=1024, 432.616
 26pt x 253.94875pt>
 File: chapters/appendices/fig0a/primary/Primary_Pump_subsystem.png Graphic file
  (type png)
@@ -2859,7 +2855,7 @@ Package pdftex.def Info: chapters/appendices/fig0a/primary/Primary_Pump_subsyst
 em.png used on input line 46.
 (pdftex.def)             Requested size: 433.8034pt x 254.63622pt.
 
-<chapters/appendices/fig0a/primary/Primary_HX_subsystem.png, id=1024, 432.61626
+<chapters/appendices/fig0a/primary/Primary_HX_subsystem.png, id=1025, 432.61626
 pt x 334.24875pt>
 File: chapters/appendices/fig0a/primary/Primary_HX_subsystem.png Graphic file (
 type png)
@@ -2869,7 +2865,7 @@ Package pdftex.def Info: chapters/appendices/fig0a/primary/Primary_HX_subsystem
 .png used on input line 53.
 (pdftex.def)             Requested size: 412.0063pt x 318.30014pt.
 
-<chapters/appendices/fig0a/primary/Primary_SIS_subsystem.png, id=1025, 613.2912
+<chapters/appendices/fig0a/primary/Primary_SIS_subsystem.png, id=1026, 613.2912
 4pt x 371.3875pt>
 File: chapters/appendices/fig0a/primary/Primary_SIS_subsystem.png Graphic file 
 (type png)
@@ -2884,7 +2880,7 @@ Overfull \hbox (25.06857pt too wide) in paragraph at lines 60--61
  []
 
 
-<chapters/appendices/fig0a/primary/Primary_DHR_subsystem.png, id=1026, 793.9662
+<chapters/appendices/fig0a/primary/Primary_DHR_subsystem.png, id=1027, 793.9662
 5pt x 439.6425pt>
 File: chapters/appendices/fig0a/primary/Primary_DHR_subsystem.png Graphic file 
 (type png)
@@ -2903,7 +2899,7 @@ Overfull \hbox (11.84654pt too wide) in paragraph at lines 67--68
 apters/appendices/fig0a/primary/Primary_HX_subsystem.png>] [67 <./chapters/appe
 ndices/fig0a/primary/Primary_SIS_subsystem.png>] [68 <./chapters/appendices/fig
 0a/primary/Primary_DHR_subsystem.png>]
-<chapters/appendices/fig0a/Secondary_system.png, id=1053, 685.56125pt x 324.211
+<chapters/appendices/fig0a/Secondary_system.png, id=1054, 685.56125pt x 324.211
 24pt>
 File: chapters/appendices/fig0a/Secondary_system.png Graphic file (type png)
  <use chapters/appendices/fig0a/Secondary_system.png>
@@ -2918,7 +2914,7 @@ Overfull \hbox (23.15483pt too wide) in paragraph at lines 78--79
 [69
 
  <./chapters/appendices/fig0a/Secondary_system.png>]
-<chapters/appendices/fig0a/secondary/Secondary_Pump_subsystem.png, id=1059, 432
+<chapters/appendices/fig0a/secondary/Secondary_Pump_subsystem.png, id=1060, 432
 .61626pt x 334.24875pt>
 File: chapters/appendices/fig0a/secondary/Secondary_Pump_subsystem.png Graphic 
 file (type png)
@@ -2928,7 +2924,7 @@ Package pdftex.def Info: chapters/appendices/fig0a/secondary/Secondary_Pump_sub
 system.png used on input line 88.
 (pdftex.def)             Requested size: 412.0063pt x 318.30014pt.
 
-<chapters/appendices/fig0a/secondary/Secondary_SG_subsystem.png, id=1060, 432.6
+<chapters/appendices/fig0a/secondary/Secondary_SG_subsystem.png, id=1061, 432.6
 1626pt x 334.24875pt>
 File: chapters/appendices/fig0a/secondary/Secondary_SG_subsystem.png Graphic fi
 le (type png)
@@ -2941,7 +2937,7 @@ stem.png used on input line 95.
 <./chapters/appendices/fig0a/secondary/Secondary_SG_subsystem.png>] [72
 
 ]
-<chapters/appendices/fig0a/Tertiary_system.png, id=1077, 595.22375pt x 474.7737
+<chapters/appendices/fig0a/Tertiary_system.png, id=1078, 595.22375pt x 474.7737
 4pt>
 File: chapters/appendices/fig0a/Tertiary_system.png Graphic file (type png)
  <use chapters/appendices/fig0a/Tertiary_system.png>
@@ -2949,7 +2945,7 @@ Package pdftex.def Info: chapters/appendices/fig0a/Tertiary_system.png used on
 input line 106.
 (pdftex.def)             Requested size: 399.07031pt x 318.30014pt.
  [73 <./chapters/appendices/fig0a/Tertiary_system.png>]
-<chapters/appendices/fig0a/tertiary/Tertiary_Subsystem_condensers.png, id=1083,
+<chapters/appendices/fig0a/tertiary/Tertiary_Subsystem_condensers.png, id=1084,
  472.76625pt x 253.94875pt>
 File: chapters/appendices/fig0a/tertiary/Tertiary_Subsystem_condensers.png Grap
 hic file (type png)
@@ -2959,7 +2955,7 @@ Package pdftex.def Info: chapters/appendices/fig0a/tertiary/Tertiary_Subsystem_
 condensers.png used on input line 116.
 (pdftex.def)             Requested size: 414.81645pt x 222.81398pt.
 
-<chapters/appendices/fig0a/tertiary/Tertiary_Subsystem_Pumps1.png, id=1084, 472
+<chapters/appendices/fig0a/tertiary/Tertiary_Subsystem_Pumps1.png, id=1085, 472
 .76625pt x 253.94875pt>
 File: chapters/appendices/fig0a/tertiary/Tertiary_Subsystem_Pumps1.png Graphic 
 file (type png)
@@ -2969,7 +2965,7 @@ Package pdftex.def Info: chapters/appendices/fig0a/tertiary/Tertiary_Subsystem_
 Pumps1.png used on input line 123.
 (pdftex.def)             Requested size: 414.81645pt x 222.81398pt.
 
-<chapters/appendices/fig0a/tertiary/Tertiary_Subsystem_Pumps2.png, id=1085, 472
+<chapters/appendices/fig0a/tertiary/Tertiary_Subsystem_Pumps2.png, id=1086, 472
 .76625pt x 183.68625pt>
 File: chapters/appendices/fig0a/tertiary/Tertiary_Subsystem_Pumps2.png Graphic 
 file (type png)
@@ -2979,7 +2975,7 @@ Package pdftex.def Info: chapters/appendices/fig0a/tertiary/Tertiary_Subsystem_
 Pumps2.png used on input line 130.
 (pdftex.def)             Requested size: 409.64413pt x 159.15007pt.
 
-<chapters/appendices/fig0a/tertiary/Tertiary_Subsystem_Turbines.png, id=1086, 4
+<chapters/appendices/fig0a/tertiary/Tertiary_Subsystem_Turbines.png, id=1087, 4
 72.76625pt x 253.94875pt>
 File: chapters/appendices/fig0a/tertiary/Tertiary_Subsystem_Turbines.png Graphi
 c file (type png)
@@ -2989,7 +2985,7 @@ Package pdftex.def Info: chapters/appendices/fig0a/tertiary/Tertiary_Subsystem_
 Turbines.png used on input line 137.
 (pdftex.def)             Requested size: 414.81645pt x 222.81398pt.
 
-<chapters/appendices/fig0a/tertiary/Tertiary_Subsystem_Generators.png, id=1087,
+<chapters/appendices/fig0a/tertiary/Tertiary_Subsystem_Generators.png, id=1088,
  472.76625pt x 183.68625pt>
 File: chapters/appendices/fig0a/tertiary/Tertiary_Subsystem_Generators.png Grap
 hic file (type png)
@@ -3053,7 +3049,7 @@ Overfull \hbox (44.23663pt too wide) in alignment at lines 47--70
  []
 
 [87] [88]
-<chapters/appendices/fig0c/Event/B1_LOSS_OFFSITE_POWER.pdf, id=1159, 375.81303p
+<chapters/appendices/fig0c/Event/B1_LOSS_OFFSITE_POWER.pdf, id=1160, 375.81303p
 t x 123.29562pt>
 File: chapters/appendices/fig0c/Event/B1_LOSS_OFFSITE_POWER.pdf Graphic file (t
 ype pdf)
@@ -3068,7 +3064,7 @@ Overfull \hbox (37.15062pt too wide) in paragraph at lines 75--76
  []
 
 
-<chapters/appendices/fig0c/Event/LOSS_OF_COOLANT.pdf, id=1160, 257.26013pt x 75
+<chapters/appendices/fig0c/Event/LOSS_OF_COOLANT.pdf, id=1161, 257.26013pt x 75
 .87407pt>
 File: chapters/appendices/fig0c/Event/LOSS_OF_COOLANT.pdf Graphic file (type pd
 f)
@@ -3077,7 +3073,7 @@ Package pdftex.def Info: chapters/appendices/fig0c/Event/LOSS_OF_COOLANT.pdf us
 ed on input line 82.
 (pdftex.def)             Requested size: 431.72299pt x 127.3181pt.
 
-<chapters/appendices/fig0c/Event/POWER_EXCURSION.pdf, id=1161, 316.53658pt x 91
+<chapters/appendices/fig0c/Event/POWER_EXCURSION.pdf, id=1162, 316.53658pt x 91
 .68112pt>
 File: chapters/appendices/fig0c/Event/POWER_EXCURSION.pdf Graphic file (type pd
 f)
@@ -3090,7 +3086,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [89 <./chapters/appendices/fig0c/Event/B1_LOSS_OFFSITE_POWER.pdf> <./chapters/
 appendices/fig0c/Event/LOSS_OF_COOLANT.pdf>]
-<chapters/appendices/fig0c/Event/SCRAM_COOLING.pdf, id=1175, 435.09048pt x 186.
+<chapters/appendices/fig0c/Event/SCRAM_COOLING.pdf, id=1176, 435.09048pt x 186.
 52385pt>
 File: chapters/appendices/fig0c/Event/SCRAM_COOLING.pdf Graphic file (type pdf)
 
@@ -3099,7 +3095,7 @@ Package pdftex.def Info: chapters/appendices/fig0c/Event/SCRAM_COOLING.pdf used
  on input line 96.
 (pdftex.def)             Requested size: 445.5059pt x 190.98203pt.
 
-<chapters/appendices/fig0c/Event/CONTAINMENT.pdf, id=1176, 316.53658pt x 91.681
+<chapters/appendices/fig0c/Event/CONTAINMENT.pdf, id=1177, 316.53658pt x 91.681
 12pt>
 File: chapters/appendices/fig0c/Event/CONTAINMENT.pdf Graphic file (type pdf)
  <use chapters/appendices/fig0c/Event/CONTAINMENT.pdf>
@@ -3107,7 +3103,7 @@ Package pdftex.def Info: chapters/appendices/fig0c/Event/CONTAINMENT.pdf used o
 n input line 103.
 (pdftex.def)             Requested size: 439.57884pt x 127.3181pt.
 
-<chapters/appendices/fig0c/Fault/AUTO_SIS.pdf, id=1177, 80.22101pt x 116.18205p
+<chapters/appendices/fig0c/Fault/AUTO_SIS.pdf, id=1178, 80.22101pt x 116.18205p
 t>
 File: chapters/appendices/fig0c/Fault/AUTO_SIS.pdf Graphic file (type pdf)
  <use chapters/appendices/fig0c/Fault/AUTO_SIS.pdf>
@@ -3117,7 +3113,7 @@ nput line 110.
  [90 <./chapters/appendices/fig0c/Event/POWER_EXCURSION.pdf> <./chapters/append
 ices/fig0c/Event/SCRAM_COOLING.pdf> <./chapters/appendices/fig0c/Event/CONTAINM
 ENT.pdf>]
-<chapters/appendices/fig0c/Fault/SIS_TRAIN.pdf, id=1194, 393.20099pt x 312.1903
+<chapters/appendices/fig0c/Fault/SIS_TRAIN.pdf, id=1195, 393.20099pt x 312.1903
 2pt>
 File: chapters/appendices/fig0c/Fault/SIS_TRAIN.pdf Graphic file (type pdf)
  <use chapters/appendices/fig0c/Fault/SIS_TRAIN.pdf>
@@ -3125,7 +3121,7 @@ Package pdftex.def Info: chapters/appendices/fig0c/Fault/SIS_TRAIN.pdf used on
 input line 117.
 (pdftex.def)             Requested size: 400.89769pt x 318.30014pt.
 
-<chapters/appendices/fig0c/Fault/MANU_BCKDSL.pdf, id=1195, 158.46602pt x 165.18
+<chapters/appendices/fig0c/Fault/MANU_BCKDSL.pdf, id=1196, 158.46602pt x 165.18
 413pt>
 File: chapters/appendices/fig0c/Fault/MANU_BCKDSL.pdf Graphic file (type pdf)
  <use chapters/appendices/fig0c/Fault/MANU_BCKDSL.pdf>
@@ -3138,7 +3134,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [91 <./chapters/appendices/fig0c/Fault/AUTO_SIS.pdf> <./chapters/appendices/fi
 g0c/Fault/SIS_TRAIN.pdf>]) (./chapters/appendices/app0D.tex [92 <./chapters/app
 endices/fig0c/Fault/MANU_BCKDSL.pdf>]
-<chapters/appendices/fig0d/FFIP_1.pdf, id=1220, 850.17625pt x 1055.945pt>
+<chapters/appendices/fig0d/FFIP_1.pdf, id=1221, 850.17625pt x 1055.945pt>
 File: chapters/appendices/fig0d/FFIP_1.pdf Graphic file (type pdf)
 
 <use chapters/appendices/fig0d/FFIP_1.pdf>
@@ -3154,7 +3150,7 @@ Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
 put line 24.
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
 (Font)              scaled to size 8.36993pt on input line 26.
-<chapters/appendices/fig0d/FFIP_2.pdf, id=1221, 850.17625pt x 1055.945pt>
+<chapters/appendices/fig0d/FFIP_2.pdf, id=1222, 850.17625pt x 1055.945pt>
 File: chapters/appendices/fig0d/FFIP_2.pdf Graphic file (type pdf)
 
 <use chapters/appendices/fig0d/FFIP_2.pdf>
@@ -3166,7 +3162,7 @@ Overfull \hbox (19.59839pt too wide) in paragraph at lines 105--106
  [][] 
  []
 
-<chapters/appendices/fig0d/FFIP_3.pdf, id=1222, 850.17625pt x 1055.945pt>
+<chapters/appendices/fig0d/FFIP_3.pdf, id=1223, 850.17625pt x 1055.945pt>
 File: chapters/appendices/fig0d/FFIP_3.pdf Graphic file (type pdf)
 
 <use chapters/appendices/fig0d/FFIP_3.pdf>
@@ -3178,7 +3174,7 @@ Overfull \hbox (19.59839pt too wide) in paragraph at lines 112--113
  [][] 
  []
 
-<chapters/appendices/fig0d/FFIP_4.pdf, id=1223, 850.17625pt x 1055.945pt>
+<chapters/appendices/fig0d/FFIP_4.pdf, id=1224, 850.17625pt x 1055.945pt>
 File: chapters/appendices/fig0d/FFIP_4.pdf Graphic file (type pdf)
 
 <use chapters/appendices/fig0d/FFIP_4.pdf>
@@ -3195,7 +3191,7 @@ Overfull \hbox (19.59839pt too wide) in paragraph at lines 119--120
 ] [94] [95 <./chapters/appendices/fig0d/FFIP_1.pdf>] [96 <./chapters/appendices
 /fig0d/FFIP_2.pdf>] [97 <./chapters/appendices/fig0d/FFIP_3.pdf>] [98 <./chapte
 rs/appendices/fig0d/FFIP_4.pdf>]
-<chapters/appendices/fig0e/UFFSR_1.pdf, id=1267, 850.17625pt x 1085.05376pt>
+<chapters/appendices/fig0e/UFFSR_1.pdf, id=1268, 850.17625pt x 1085.05376pt>
 File: chapters/appendices/fig0e/UFFSR_1.pdf Graphic file (type pdf)
 
 <use chapters/appendices/fig0e/UFFSR_1.pdf>
@@ -3210,7 +3206,7 @@ Overfull \hbox (19.59839pt too wide) in paragraph at lines 16--17
 
 LaTeX Warning: Float too large for page by 1.09818pt on input line 19.
 
-<chapters/appendices/fig0e/UFFSR_2.pdf, id=1268, 850.17625pt x 1055.945pt>
+<chapters/appendices/fig0e/UFFSR_2.pdf, id=1269, 850.17625pt x 1055.945pt>
 File: chapters/appendices/fig0e/UFFSR_2.pdf Graphic file (type pdf)
 
 <use chapters/appendices/fig0e/UFFSR_2.pdf>
@@ -3380,10 +3376,10 @@ LaTeX Warning: There were undefined references.
 (\end occurred when \ifx on line 32 was incomplete)
 (\end occurred when \ifx on line 25 was incomplete) 
 Here is how much of TeX's memory you used:
- 44320 strings out of 493029
- 849805 string characters out of 6136234
+ 44319 strings out of 493029
+ 849794 string characters out of 6136234
  1141018 words of memory out of 5000000
- 46252 multiletter control sequences out of 15000+600000
+ 46251 multiletter control sequences out of 15000+600000
  130260 words of font info for 377 fonts, out of 8000000 for 9000
  1146 hyphenation exceptions out of 8191
  52i,18n,80p,10380b,931s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -3397,10 +3393,10 @@ r/share/texlive/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb></usr/share/texmf
 type1/urw/ncntrsbk/uncb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/nc
 ntrsbk/uncr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/ncntrsbk/uncri
 8a.pfb>
-Output written on project.pdf (118 pages, 5949110 bytes).
+Output written on project.pdf (118 pages, 5949180 bytes).
 PDF statistics:
- 1407 PDF objects out of 1440 (max. 8388607)
- 1192 compressed objects within 12 object streams
+ 1408 PDF objects out of 1440 (max. 8388607)
+ 1193 compressed objects within 12 object streams
  314 named destinations out of 1000 (max. 500000)
  53442 words of extra memory for PDF output out of 61914 (max. 10000000)
 
