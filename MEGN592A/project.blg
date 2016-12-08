@@ -3,47 +3,52 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: project.aux
 The style file: siam.bst
 Database file #1: biblioproject.bib
+You're missing a field name---line 182 of file biblioproject.bib
+ :   year = {2009}, 
+ :                  % I looked it up
+I'm skipping whatever remains of this entry
 Warning--empty publisher in hunt01
+Warning--empty publisher in bnbook
 Warning--empty publisher in verdier2005
-You've used 21 entries,
+You've used 23 entries,
             2030 wiz_defined-function locations,
-            603 strings with 7092 characters,
-and the built_in function-call counts, 5819 in all, are:
-= -- 531
-> -- 262
+            611 strings with 7335 characters,
+and the built_in function-call counts, 6271 in all, are:
+= -- 566
+> -- 282
 < -- 0
-+ -- 106
-- -- 83
-* -- 448
-:= -- 955
-add.period$ -- 23
-call.type$ -- 21
-change.case$ -- 100
++ -- 114
+- -- 89
+* -- 476
+:= -- 1030
+add.period$ -- 27
+call.type$ -- 23
+change.case$ -- 108
 chr.to.int$ -- 0
-cite$ -- 23
-duplicate$ -- 284
-empty$ -- 440
-format.name$ -- 83
-if$ -- 1188
+cite$ -- 26
+duplicate$ -- 306
+empty$ -- 485
+format.name$ -- 89
+if$ -- 1281
 int.to.chr$ -- 0
-int.to.str$ -- 21
-missing$ -- 23
-newline$ -- 68
-num.names$ -- 41
-pop$ -- 110
+int.to.str$ -- 23
+missing$ -- 25
+newline$ -- 76
+num.names$ -- 45
+pop$ -- 129
 preamble$ -- 1
-purify$ -- 82
+purify$ -- 89
 quote$ -- 0
-skip$ -- 203
+skip$ -- 214
 stack$ -- 0
-substring$ -- 298
-swap$ -- 91
+substring$ -- 308
+swap$ -- 95
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 78
-warning$ -- 2
-while$ -- 56
-width$ -- 23
-write$ -- 175
-(There were 2 warnings)
+type$ -- 84
+warning$ -- 3
+while$ -- 60
+width$ -- 25
+write$ -- 192
+(There was 1 error message)

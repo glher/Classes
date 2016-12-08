@@ -10,7 +10,7 @@
 \contentsline {table}{\numberline {5.2}{\ignorespaces Detectability index for a risk-centered method}}{26}{table.5.2}
 \contentsline {table}{\numberline {5.3}{\ignorespaces Detectability index for a reliability-centered method}}{26}{table.5.3}
 \contentsline {table}{\numberline {5.4}{\ignorespaces Detectability index}}{27}{table.5.4}
-\contentsline {table}{\numberline {5.5}{\ignorespaces Excerpt from Table\ref {tab:fmea_risk} presenting the (P, S, D)-triplet for the perceived most severe failure modes}}{27}{table.5.5}
+\contentsline {table}{\numberline {5.5}{\ignorespaces Excerpt from Table~\ref {tab:fmea_risk} presenting the (P, S, D)-triplet for the perceived most severe failure modes}}{27}{table.5.5}
 \contentsline {table}{\numberline {5.6}{\ignorespaces Excerpt from Table~\ref {tab:fmea_rpn_risk} presenting the RPN and possible mitigation strategy for the perceived most severe failure modes}}{27}{table.5.6}
 \addvspace {10pt}
 \contentsline {table}{\numberline {6.1}{\ignorespaces PRA cutsets}}{31}{table.6.1}
@@ -28,10 +28,13 @@
 \contentsline {table}{\numberline {7.11}{\ignorespaces Estimates of the different HRA categories}}{57}{table.7.11}
 \contentsline {table}{\numberline {7.12}{\ignorespaces Example of the impact of PHM sensors on the failure probability for specific functions/components}}{58}{table.7.12}
 \addvspace {10pt}
+\contentsline {table}{\numberline {8.1}{\ignorespaces Excerpt from the functional basis reconciled function set}}{64}{table.8.1}
+\contentsline {table}{\numberline {8.2}{\ignorespaces Excerpt from the functional basis reconciled flow set}}{64}{table.8.2}
 \addvspace {10pt}
-\contentsline {table}{\numberline {B.1}{FMEA}}{81}{table.B.1}
-\contentsline {table}{\numberline {B.2}{FMEA: RPN and mitigation}}{85}{table.B.2}
 \addvspace {10pt}
-\contentsline {table}{\numberline {C.1}{PRA: basic events}}{89}{table.C.1}
+\contentsline {table}{\numberline {B.1}{FMEA}}{93}{table.B.1}
+\contentsline {table}{\numberline {B.2}{FMEA: RPN and mitigation}}{96}{table.B.2}
+\addvspace {10pt}
+\contentsline {table}{\numberline {C.1}{PRA: basic events}}{98}{table.C.1}
 \addvspace {10pt}
 \addvspace {10pt}

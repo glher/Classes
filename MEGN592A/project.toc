@@ -52,16 +52,33 @@
 \contentsline {subsection}{\numberline {7.5.1}Methodology}{46}{subsection.7.5.1}
 \contentsline {subsection}{\numberline {7.5.2}Application to the case study}{56}{subsection.7.5.2}
 \contentsline {section}{\numberline {7.6}Cable and Pipe Routing}{58}{section.7.6}
-\contentsline {appendix}{\chapternumberline {A}Reliability Block Diagram}{61}{appendix.A}
-\contentsline {section}{\numberline {A.1}Global system}{61}{section.A.1}
-\contentsline {section}{\numberline {A.2}Primary system}{63}{section.A.2}
-\contentsline {subsection}{\numberline {A.2.1}Primary system redundancies}{64}{subsection.A.2.1}
-\contentsline {section}{\numberline {A.3}Secondary system}{69}{section.A.3}
-\contentsline {subsection}{\numberline {A.3.1}Secondary system redundancies}{70}{subsection.A.3.1}
-\contentsline {section}{\numberline {A.4}Tertiary system}{73}{section.A.4}
-\contentsline {subsection}{\numberline {A.4.1}Tertiary system redundancies}{74}{subsection.A.4.1}
-\contentsline {appendix}{\chapternumberline {B}Failure Modes and Effects Analysis}{77}{appendix.B}
-\contentsline {appendix}{\chapternumberline {C}Probabilistic Risk Assessments}{87}{appendix.C}
-\contentsline {appendix}{\chapternumberline {D}Function Failure Identification and Propagation}{93}{appendix.D}
-\contentsline {appendix}{\chapternumberline {E}Uncoupled Flow Failure State Reasoning}{99}{appendix.E}
-\contentsline {chapter}{Bibliography}{103}{section*.8}
+\contentsline {chapter}{\chapternumberline {8}Design loops consideration in the Prognostics in Early Design method}{61}{chapter.8}
+\contentsline {section}{\numberline {8.1}Introduction}{62}{section.8.1}
+\contentsline {section}{\numberline {8.2}Background}{63}{section.8.2}
+\contentsline {subsection}{\numberline {8.2.1}Prognostics and Health Management}{63}{subsection.8.2.1}
+\contentsline {subsection}{\numberline {8.2.2}Bayesian network}{63}{subsection.8.2.2}
+\contentsline {subsection}{\numberline {8.2.3}Functional model}{63}{subsection.8.2.3}
+\contentsline {subsection}{\numberline {8.2.4}PHM in risk and reliability analyses}{65}{subsection.8.2.4}
+\contentsline {section}{\numberline {8.3}Methodology}{66}{section.8.3}
+\contentsline {subsection}{\numberline {8.3.1}Functional model}{66}{subsection.8.3.1}
+\contentsline {subsection}{\numberline {8.3.2}Path computing}{67}{subsection.8.3.2}
+\contentsline {subsection}{\numberline {8.3.3}Prognostics in Early Design Solver}{67}{subsection.8.3.3}
+\contentsline {section}{\numberline {8.4}Case study}{68}{section.8.4}
+\contentsline {subsection}{\numberline {8.4.1}Logical functional model}{68}{subsection.8.4.1}
+\contentsline {subsection}{\numberline {8.4.2}Path computing}{70}{subsection.8.4.2}
+\contentsline {subsection}{\numberline {8.4.3}PEFD}{71}{subsection.8.4.3}
+\contentsline {subsection}{\numberline {8.4.4}Results interpretation}{71}{subsection.8.4.4}
+\contentsline {section}{\numberline {8.5}Conclusions and future work}{72}{section.8.5}
+\contentsline {appendix}{\chapternumberline {A}Reliability Block Diagram}{73}{appendix.A}
+\contentsline {section}{\numberline {A.1}Global system}{73}{section.A.1}
+\contentsline {section}{\numberline {A.2}Primary system}{75}{section.A.2}
+\contentsline {subsection}{\numberline {A.2.1}Primary system redundancies}{76}{subsection.A.2.1}
+\contentsline {section}{\numberline {A.3}Secondary system}{81}{section.A.3}
+\contentsline {subsection}{\numberline {A.3.1}Secondary system redundancies}{82}{subsection.A.3.1}
+\contentsline {section}{\numberline {A.4}Tertiary system}{85}{section.A.4}
+\contentsline {subsection}{\numberline {A.4.1}Tertiary system redundancies}{86}{subsection.A.4.1}
+\contentsline {appendix}{\chapternumberline {B}Failure Modes and Effects Analysis}{89}{appendix.B}
+\contentsline {appendix}{\chapternumberline {C}Probabilistic Risk Assessments}{97}{appendix.C}
+\contentsline {appendix}{\chapternumberline {D}Function Failure Identification and Propagation}{103}{appendix.D}
+\contentsline {appendix}{\chapternumberline {E}Uncoupled Flow Failure State Reasoning}{109}{appendix.E}
+\contentsline {chapter}{Bibliography}{113}{section*.8}

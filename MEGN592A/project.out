@@ -46,16 +46,33 @@
 \BOOKMARK [2][-]{subsection.7.5.1}{Methodology}{section.7.5}% 46
 \BOOKMARK [2][-]{subsection.7.5.2}{Application to the case study}{section.7.5}% 47
 \BOOKMARK [1][-]{section.7.6}{Cable and Pipe Routing}{chapter.7}% 48
-\BOOKMARK [0][-]{appendix.A}{Reliability Block Diagram}{}% 49
-\BOOKMARK [1][-]{section.A.1}{Global system}{appendix.A}% 50
-\BOOKMARK [1][-]{section.A.2}{Primary system}{appendix.A}% 51
-\BOOKMARK [2][-]{subsection.A.2.1}{Primary system redundancies}{section.A.2}% 52
-\BOOKMARK [1][-]{section.A.3}{Secondary system}{appendix.A}% 53
-\BOOKMARK [2][-]{subsection.A.3.1}{Secondary system redundancies}{section.A.3}% 54
-\BOOKMARK [1][-]{section.A.4}{Tertiary system}{appendix.A}% 55
-\BOOKMARK [2][-]{subsection.A.4.1}{Tertiary system redundancies}{section.A.4}% 56
-\BOOKMARK [0][-]{appendix.B}{Failure Modes and Effects Analysis}{}% 57
-\BOOKMARK [0][-]{appendix.C}{Probabilistic Risk Assessments}{}% 58
-\BOOKMARK [0][-]{appendix.D}{Function Failure Identification and Propagation}{}% 59
-\BOOKMARK [0][-]{appendix.E}{Uncoupled Flow Failure State Reasoning}{}% 60
-\BOOKMARK [0][-]{section*.8}{Bibliography}{}% 61
+\BOOKMARK [0][-]{chapter.8}{Design loops consideration in the Prognostics in Early Design method}{}% 49
+\BOOKMARK [1][-]{section.8.1}{Introduction}{chapter.8}% 50
+\BOOKMARK [1][-]{section.8.2}{Background}{chapter.8}% 51
+\BOOKMARK [2][-]{subsection.8.2.1}{Prognostics and Health Management}{section.8.2}% 52
+\BOOKMARK [2][-]{subsection.8.2.2}{Bayesian network}{section.8.2}% 53
+\BOOKMARK [2][-]{subsection.8.2.3}{Functional model}{section.8.2}% 54
+\BOOKMARK [2][-]{subsection.8.2.4}{PHM in risk and reliability analyses}{section.8.2}% 55
+\BOOKMARK [1][-]{section.8.3}{Methodology}{chapter.8}% 56
+\BOOKMARK [2][-]{subsection.8.3.1}{Functional model}{section.8.3}% 57
+\BOOKMARK [2][-]{subsection.8.3.2}{Path computing}{section.8.3}% 58
+\BOOKMARK [2][-]{subsection.8.3.3}{Prognostics in Early Design Solver}{section.8.3}% 59
+\BOOKMARK [1][-]{section.8.4}{Case study}{chapter.8}% 60
+\BOOKMARK [2][-]{subsection.8.4.1}{Logical functional model}{section.8.4}% 61
+\BOOKMARK [2][-]{subsection.8.4.2}{Path computing}{section.8.4}% 62
+\BOOKMARK [2][-]{subsection.8.4.3}{PEFD}{section.8.4}% 63
+\BOOKMARK [2][-]{subsection.8.4.4}{Results interpretation}{section.8.4}% 64
+\BOOKMARK [1][-]{section.8.5}{Conclusions and future work}{chapter.8}% 65
+\BOOKMARK [0][-]{appendix.A}{Reliability Block Diagram}{}% 66
+\BOOKMARK [1][-]{section.A.1}{Global system}{appendix.A}% 67
+\BOOKMARK [1][-]{section.A.2}{Primary system}{appendix.A}% 68
+\BOOKMARK [2][-]{subsection.A.2.1}{Primary system redundancies}{section.A.2}% 69
+\BOOKMARK [1][-]{section.A.3}{Secondary system}{appendix.A}% 70
+\BOOKMARK [2][-]{subsection.A.3.1}{Secondary system redundancies}{section.A.3}% 71
+\BOOKMARK [1][-]{section.A.4}{Tertiary system}{appendix.A}% 72
+\BOOKMARK [2][-]{subsection.A.4.1}{Tertiary system redundancies}{section.A.4}% 73
+\BOOKMARK [0][-]{appendix.B}{Failure Modes and Effects Analysis}{}% 74
+\BOOKMARK [0][-]{appendix.C}{Probabilistic Risk Assessments}{}% 75
+\BOOKMARK [0][-]{appendix.D}{Function Failure Identification and Propagation}{}% 76
+\BOOKMARK [0][-]{appendix.E}{Uncoupled Flow Failure State Reasoning}{}% 77
+\BOOKMARK [0][-]{section*.8}{Bibliography}{}% 78

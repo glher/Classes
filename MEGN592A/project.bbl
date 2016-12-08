@@ -36,6 +36,9 @@
   \url{https://www.iaea.org/PRIS/CountryStatistics/ReactorDetails.aspx?current=178}.
 \newblock Accessed: 2016-09-02.
 
+\bibitem{bnbook}
+{\sc D.~Koller and N.~Friedman}, {\em Probabilistic Graphical Models}, 2009.
+
 \bibitem{kurtoglu2007}
 {\sc T.~Kurtoglu and I.~Y. Tumer}, {\em {FFIP: A framework for early assessment
   of functional failure in complex systems }}, International conference on
@@ -72,6 +75,12 @@
 \bibitem{fermi1}
 {\sc A.~N. Society}, {\em Fermi-I: New Age for Nuclear Power}, American Nuclear
   Society, 1979.
+
+\bibitem{phm1}
+{\sc P.~Society}, {\em Product-oriented overviews of the application of phm
+  sensors, techniques, technology, and methodologies}.
+\newblock \url{http://phmconf.org/phmtopics.html}.
+\newblock Accessed: 2016-12-08.
 
 \bibitem{stack2015}
 {\sc C.~Stack and D.~L. {Van Bossuyt}}, {\em {Toward a Functional Failure
