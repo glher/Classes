@@ -1,0 +1,137 @@
+%
+% File: chap01.tex
+%
+\let\textcircled=\pgftextcircled
+\chapter{Homework 1}
+\label{chap:intro}
+
+\initial{S}everal exercises from the book written by M. M. El Wakil~\cite{book01} are tackled in this homework. The problems relate to the first chapter of the book, covering the subject of atomic and nuclear structures and reactions.
+
+%=======
+\section{Photodisintegration}
+\label{sec:prob1}
+
+\subsection{Problem}
+\textit{A relatively stationary Deuterium nucleus may be converted to a hydrogen nucleus by bombarding it with $\gamma$ radiation, a process called photodisintegration. How much minimum $\gamma$ energy is required for such conversion in Btu per gram of $D_2$?}
+
+\subsection{Solution}
+
+The photodisintegration process can be described using the reaction presented in Equation~\ref{rea1}.
+
+\begin{equation}\label{rea1}
+{}^2_1\textrm{D} + {}^{0}_{0}\gamma \to {}^{1}_{1}\textrm{H} + {}^1_0\textrm{n}
+\end{equation}
+
+Considering a stationary Deuterium nucleus, the energy in the system is carried by the various masses and the binding energy of the Deuterium. Hence, a photon being massless and using the principle of energy conservation, we can obtain Equation~\ref{eq2}.
+
+\begin{equation}\label{eq2}
+m({}^2_1\textrm{D}) = m_n + m({}^{1}_{1}\textrm{H}) - \frac{B}{c^2}
+\end{equation}
+Where:
+
+\begin{conditions}
+ B      &  Binding energy \\
+ c      & Speed of light
+\end{conditions}
+
+The following masses ($1 u = \text{\num{1.66e-24}} g$) are known.
+\begin{conditions}
+ m({}^2_1\textrm{D})   &  $2.014102 u$ \\
+ m({}^1_1\textrm{H})   &  $1.007825 u$ \\
+ m_n    &  $1.008665 u$
+\end{conditions}
+
+Using Equation~\ref{eq2}, we can obtain the binding energy, $B = 0.002388 u$. This corresponds to $0.002388 * 931.5 = 2.224 \text{MeV}$, or \num{3.377e-16} Btu.
+
+The binding energy, equivalent to the minimum energy needed from the $\gamma$ radiation, is equaled to \num{3.377e-16} Btu for $2.014102 u$, hence \num{1.01e8} Btu/g. 
+
+\section{Age of the earth}
+
+\subsection{Problem}
+
+\textit{Rutherford once assumed that when the earth was first formed it contained equal amount of $U^{235}$ and $U^{238}$. From this he was able to determine the age of the earth, and the answer was not very different from that found from astronomical data. Find the Rutherford age of the earth.}
+
+\subsection{Solution}
+
+Let us assume a Uranium sample of 100 grams, containing equal amount of $U^{235}$ and $U^{238}$. This simulates a sample from back when the earth was first formed, considering Rutherford's assumption. We know that today, a Uranium sample of 100 grams would contain approximately 0.7 grams of $U^{235}$.
+
+The half-life of $U^{235}$ is known, $T_{1/2} =$ \num{7.1e8} years. In order to go from 50 grams to 0.7g, roughly 6 doubling period are needed. Hence, Rutherford's method allows us to calculate that the earth is approximately $6 * \text{\num{7.1e8}} = \text{\num{4.3e9}}$ years.
+
+
+\section{Positron decay}
+
+\subsection{Problem}
+
+\textit{Phosphorous-30 is a radioactive isotope undergoing positron decay. Calculate the energy in MeV/reaction.}
+
+
+\subsection{Solution}
+
+The positron decay process can be described using the reaction presented in Equation~\ref{rea2}.
+
+\begin{equation}\label{rea2}
+{}^{30}_{15}\textrm{P} \to {}^{30}_{14}\textrm{Si} + {}^0_1\textrm{e} + \nu_e
+\end{equation}
+
+$\nu_e$ is an electron neutrino.
+
+The conservation of energy indicates that the excess energy in the system is given by Equation~\ref{eq4}.
+
+\begin{equation}\label{eq4}
+Q = \left[ m({30}_{15}\textrm{P}) - m({30}_{14}\textrm{Si}) - m_e - m_{\nu_e} \right] c^2
+\end{equation}
+
+Knowing the various masses, we can calculate the energy.
+\begin{conditions}
+ m({}^{30}_{15}\textrm{P})   &  $29.9783138 u$ \\
+ m({}^{30}_{14}\textrm{Si})   &  $29.97377017 u$ \\
+ m_e, m_{\nu_e}    &  $0.00054858 u$
+\end{conditions}
+
+Thus, $Q = 0.00344647 u * c^2$. We also have $1 u = 931.5 MeV/c^2$, hence, the energy per reaction is 3.21 MeV.
+
+
+\section{Illuminators}
+
+\subsection{Problem}
+
+\textit{The US Atomic Energy Commission allos, under license, the manufacture of illuminators for locks, watches, aircraft safety devices (switch plungers, control markers, exit signs, etc.) and other devices. The illuminators contain tritium plus a phosphor in the form of paint sealed in a plastic container. The low energy $\beta$ radiation emitted from tritium is too weak to escape the container and no hazard is encountered. However, it acts upon the phosphor to provide luminosity. No more than 15 millicuries may be used in an automobile lock, or 4 curies in an aircraft safety device. In each case, find (a) the maximum amount of tritium in grams that may be used and (b) the percent decrease in luminosity after 5 years of operation.}
+
+
+\subsection{Solution}
+
+The half-life of tritium is 12.3 years. It is possible to calculate the number of atoms $N$ needed to generate a given amount of Curies as a function of the decay constant $\lambda = \frac{ln(2)}{T_{1/2}}$, using Equation~\ref{eq5}.
+
+
+\begin{equation}\label{eq5}
+N = C * \frac{\text{\num{3.7e10}}}{\lambda}
+\end{equation}
+
+$N_A$ being the Avogadro constant and m(T) the mass of a mole of tritium, this number of atoms can then be translated into a mass as presented by Equation~\ref{eq6}.
+
+
+\begin{equation}\label{eq6}
+M = \frac{N}{N_A} * m(T)
+\end{equation}
+
+We thus obtain a maximum mass of \num{2.08e-6} grams in an automobile lock, and \num{5.55e-4} grams in an aircraft safety device. The luminosity is directly correlated to the tritium decay. After a given time t of operation, the activity of the tritium is given by $A = A_0e^{-\lambda t}$. Consequently, after 5 years of operation, the activity and thus the luminosity has changed by a factor $e^{-5y*\lambda} = 0.755$, thus exhibiting a decrease of 24.5\%.
+
+
+\section{Food irradiator}
+
+\subsection{Problem}
+
+\textit{A "food irradiator" contains a Cesium-137 source of 170,000 Curies. (It is used to irradiate potatoes for sprout control, wheat flour for insect disinfection, etc.) Food is passed by the irradiator source at the rate of 300 lb/hr. Cesium-137 is a $\beta$ emitter of 30 year half-life.}
+
+\textit{(a) What is the approximate mass of the source in grams?}
+
+\textit{(b) After 5 years of operation, what should be the rate of food processing in lb/hr if it were to receive the same dosage per lb?}
+
+\subsection{Solution}
+
+Knowing the curie level of the food irradiator, the mass and the half-life of the Cesium-137, we can use Equations~\ref{eq5} and~\ref{eq6} to compute the mass of the source. It is equaled to 1953.15 grams, or almost 2 kg.
+
+After 5 years of operation, the beta emitter efficiency would have changed by a factor $e^{-1/6} = 0.846$. Consequently, the rate of food processing must be lowered by $\frac{0.846 - 1}{0.846} = 18.2\%$ in order to compensate, resulting in a rate of 354.6 lb/hr.
+
+
+
