@@ -2,29 +2,28 @@
 % File: chap01.tex
 %
 \let\textcircled=\pgftextcircled
-\chapter{Homework 1}
-\label{chap:intro}
+\chapter{Atomic and nuclear structures and reactions}
 
-\initial{S}everal exercises from the book written by M. M. El Wakil~\cite{book01} are tackled in this homework. The problems relate to the first chapter of the book, covering the subject of atomic and nuclear structures and reactions.
+\initial{S}everal exercises from the book written by M. M. El Wakil~\cite{book01} are tackled in this homework. The problems in this section relate to the first chapter of the book, covering the subject of atomic and nuclear structures and reactions.
 
 %=======
 \section{Photodisintegration}
-\label{sec:prob1}
+\label{prob11}
 
 \subsection{Problem}
 \textit{A relatively stationary Deuterium nucleus may be converted to a hydrogen nucleus by bombarding it with $\gamma$ radiation, a process called photodisintegration. How much minimum $\gamma$ energy is required for such conversion in Btu per gram of $D_2$?}
 
 \subsection{Solution}
 
-The photodisintegration process can be described using the reaction presented in Equation~\ref{rea1}.
+The photodisintegration process can be described using the reaction presented in Equation~\ref{rea11}.
 
-\begin{equation}\label{rea1}
+\begin{equation}\label{rea11}
 {}^2_1\textrm{D} + {}^{0}_{0}\gamma \to {}^{1}_{1}\textrm{H} + {}^1_0\textrm{n}
 \end{equation}
 
-Considering a stationary Deuterium nucleus, the energy in the system is carried by the various masses and the binding energy of the Deuterium. Hence, a photon being massless and using the principle of energy conservation, we can obtain Equation~\ref{eq2}.
+Considering a stationary Deuterium nucleus, the energy in the system is carried by the various masses and the binding energy of the Deuterium. Hence, a photon being massless and using the principle of energy conservation, we can obtain Equation~\ref{eq12}.
 
-\begin{equation}\label{eq2}
+\begin{equation}\label{eq12}
 m({}^2_1\textrm{D}) = m_n + m({}^{1}_{1}\textrm{H}) - \frac{B}{c^2}
 \end{equation}
 Where:
@@ -41,11 +40,12 @@ The following masses ($1 u = \text{\num{1.66e-24}} g$) are known.
  m_n    &  $1.008665 u$
 \end{conditions}
 
-Using Equation~\ref{eq2}, we can obtain the binding energy, $B = 0.002388 u$. This corresponds to $0.002388 * 931.5 = 2.224 \text{MeV}$, or \num{3.377e-16} Btu.
+Using Equation~\ref{eq12}, we can obtain the binding energy, $B = 0.002388 u$. This corresponds to $0.002388 * 931.5 = 2.224 \text{MeV}$, or \num{3.377e-16} Btu.
 
 The binding energy, equivalent to the minimum energy needed from the $\gamma$ radiation, is equaled to \num{3.377e-16} Btu for $2.014102 u$, hence \num{1.01e8} Btu/g. 
 
 \section{Age of the earth}
+\label{prob12}
 
 \subsection{Problem}
 
@@ -59,6 +59,7 @@ The half-life of $U^{235}$ is known, $T_{1/2} =$ \num{7.1e8} years. In order to 
 
 
 \section{Positron decay}
+\label{prob13}
 
 \subsection{Problem}
 
@@ -67,18 +68,18 @@ The half-life of $U^{235}$ is known, $T_{1/2} =$ \num{7.1e8} years. In order to 
 
 \subsection{Solution}
 
-The positron decay process can be described using the reaction presented in Equation~\ref{rea2}.
+The positron decay process can be described using the reaction presented in Equation~\ref{rea12}.
 
-\begin{equation}\label{rea2}
+\begin{equation}\label{rea12}
 {}^{30}_{15}\textrm{P} \to {}^{30}_{14}\textrm{Si} + {}^0_1\textrm{e} + \nu_e
 \end{equation}
 
 $\nu_e$ is an electron neutrino.
 
-The conservation of energy indicates that the excess energy in the system is given by Equation~\ref{eq4}.
+The conservation of energy indicates that the excess energy in the system is given by Equation~\ref{eq14}.
 
-\begin{equation}\label{eq4}
-Q = \left[ m({30}_{15}\textrm{P}) - m({30}_{14}\textrm{Si}) - m_e - m_{\nu_e} \right] c^2
+\begin{equation}\label{eq14}
+Q = \left[ m({}^{30}_{15}\textrm{P}) - m({}^{30}_{14}\textrm{Si}) - m_e - m_{\nu_e} \right] c^2
 \end{equation}
 
 Knowing the various masses, we can calculate the energy.
@@ -92,6 +93,7 @@ Thus, $Q = 0.00344647 u * c^2$. We also have $1 u = 931.5 MeV/c^2$, hence, the e
 
 
 \section{Illuminators}
+\label{prob14}
 
 \subsection{Problem}
 
@@ -100,17 +102,17 @@ Thus, $Q = 0.00344647 u * c^2$. We also have $1 u = 931.5 MeV/c^2$, hence, the e
 
 \subsection{Solution}
 
-The half-life of tritium is 12.3 years. It is possible to calculate the number of atoms $N$ needed to generate a given amount of Curies as a function of the decay constant $\lambda = \frac{ln(2)}{T_{1/2}}$, using Equation~\ref{eq5}.
+The half-life of tritium is 12.3 years. It is possible to calculate the number of atoms $N$ needed to generate a given amount of Curies as a function of the decay constant $\lambda = \frac{ln(2)}{T_{1/2}}$, using Equation~\ref{eq15}.
 
 
-\begin{equation}\label{eq5}
+\begin{equation}\label{eq15}
 N = C * \frac{\text{\num{3.7e10}}}{\lambda}
 \end{equation}
 
-$N_A$ being the Avogadro constant and m(T) the mass of a mole of tritium, this number of atoms can then be translated into a mass as presented by Equation~\ref{eq6}.
+$N_A$ being the Avogadro constant and m(T) the mass of a mole of tritium, this number of atoms can then be translated into a mass as presented by Equation~\ref{eq16}.
 
 
-\begin{equation}\label{eq6}
+\begin{equation}\label{eq16}
 M = \frac{N}{N_A} * m(T)
 \end{equation}
 
@@ -118,6 +120,7 @@ We thus obtain a maximum mass of \num{2.08e-6} grams in an automobile lock, and 
 
 
 \section{Food irradiator}
+\label{prob15}
 
 \subsection{Problem}
 
@@ -129,7 +132,7 @@ We thus obtain a maximum mass of \num{2.08e-6} grams in an automobile lock, and 
 
 \subsection{Solution}
 
-Knowing the curie level of the food irradiator, the mass and the half-life of the Cesium-137, we can use Equations~\ref{eq5} and~\ref{eq6} to compute the mass of the source. It is equaled to 1953.15 grams, or almost 2 kg.
+Knowing the curie level of the food irradiator, the mass and the half-life of the Cesium-137, we can use Equations~\ref{eq15} and~\ref{eq16} to compute the mass of the source. It is equaled to 1953.15 grams, or almost 2 kg.
 
 After 5 years of operation, the beta emitter efficiency would have changed by a factor $e^{-1/6} = 0.846$. Consequently, the rate of food processing must be lowered by $\frac{0.846 - 1}{0.846} = 18.2\%$ in order to compensate, resulting in a rate of 354.6 lb/hr.
 

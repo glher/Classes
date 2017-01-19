@@ -1,0 +1,75 @@
+%
+% File: chap01.tex
+%
+\let\textcircled=\pgftextcircled
+\chapter{Neutrons and their interactions}
+\label{chap:intro}
+
+\initial{S}everal exercises from the book written by M. M. El Wakil~\cite{book01} are tackled in this homework. The problems in this section relate to the second chapter of the book, covering the subject of the neutrons and their interactions.
+
+%=======
+\section{Europium}
+\label{prob21}
+
+\subsection{Problem}
+\textit{Naturally occuring Europium is subjected to a neutron flux of \num{10e10} (thermal). Its density is $5.24 g/cm^3$. Find (a) the rate of absorption reactions per $s.cm^3$ and (b) the energy produced in absorption if all absorption reactions are of the (n, $\gamma$) type, in $MeV.s^{-1}.cm^{-3}$.}
+
+\subsection{Solution}
+
+The reaction rate $R$ is given by Equation~\ref{eq21}.
+
+\begin{equation}\label{eq21}
+R = \phi\Sigma = \phi N\sigma
+\end{equation}
+
+Where:
+
+\begin{conditions}
+\phi & Flux ($n.s^{-1}.cm^{-2}$) \\
+\Sigma & Total macroscopic cross section ($cm^{-1}$) \\
+\sigma & Total microscopic cross section ($cm^2$) \\
+N & Nuclear density ($n.cm^{-3}$)
+\end{conditions}
+
+Naturally occurring Europium is composed of two isotopes, $Eu^{151}$ and $Eu^{153}$ ($52.2\%$). The thermal absorption cross section is 9900 barn for $Eu^{151}$ and 340 barn for $Eu^{153}$~\cite{leinweber2012thermal}. Knowing the sample density, $\rho = 5.24 g.cm^{-3}$, it is possible to calculate the nuclear density of $Eu^{151}$ ($N_{151}$) and of $Eu^{153}$ ($N_{153}$) in the sample, using Equation~\ref{eq22}.
+
+\begin{equation}\label{eq22}
+N_{x} = p_{x} * \rho * \frac{N_A}{A_t(x)}
+\end{equation}
+
+Thus, the total macroscopic cross section for Europium, $\Sigma_a$, can be given by Equation~\ref{eq23}.
+
+\begin{equation}\label{eq23}
+\Sigma_a = N_{151} * \sigma_{a, 151} + N_{153} * \sigma_{a, 153}
+\end{equation}
+
+Consequently:
+
+
+\begin{conditions}
+N_{151} & \num{9.994e21} $n.cm^{-3}$ \\
+N_{153} & \num{1.077e22} $n.cm^{-3}$ \\
+\Sigma_a & 102.606 $cm^{-1}$
+\end{conditions}
+
+This gives us a total absorption reaction rate of \num{1.03e12} $r.s^{-1}.cm^{-3}$.
+
+The absorption reaction rate for $Eu^{153}$ is specifically \num{3.66e10} $r.s^{-1}.cm^{-3}$, while the reaction rate for $Eu^{151}$ is \num{9.89e11} $r.s^{-1}.cm^{-3}$. Assuming all reaction are of the type (n,$\gamma$), we have only the reactions given in Equation~\ref{eq24}, for $x \in \{151, 153\}$.
+
+\begin{equation}\label{eq24}
+{}^{x}_{63}\textrm{Eu} + {}^1_0\textrm{n} \to {}^{x+1}_{63}\textrm{Eu} + \gamma
+\end{equation}
+
+The energy being conserved, we can write the ernergy balance equation, using Equation~\ref{eq25}.
+
+\begin{equation}\label{eq25}
+Q = \left( m({}^{x}_{63}\textrm{Eu}) + m({}^1_0\textrm{n}) - m({}^{x+1}_{63}\textrm{Eu}) \right) c^2
+\end{equation}
+
+Using the method presented in section~\ref{prob13}, we obtain $Q(Eu^{153}) = 6.437 MeV$ and $Q(Eu^{151}) = 6.169 MeV$. Consequently, the energy produced is presented in Equation~\ref{eq26}.
+
+\begin{equation}\label{eq26}
+E_a = R_{153} * Q(Eu^{153}) + R_{151} * Q(Eu^{151})
+\end{equation}
+
+This gives us $E_a = \text{\num{6.34e12}} MeV.s^{-1}.cm^{-3}$
