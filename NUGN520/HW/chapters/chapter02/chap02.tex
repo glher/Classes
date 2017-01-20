@@ -66,10 +66,141 @@ The energy being conserved, we can write the ernergy balance equation, using Equ
 Q = \left( m({}^{x}_{63}\textrm{Eu}) + m({}^1_0\textrm{n}) - m({}^{x+1}_{63}\textrm{Eu}) \right) c^2
 \end{equation}
 
-Using the method presented in section~\ref{prob13}, we obtain $Q(Eu^{153}) = 6.437 MeV$ and $Q(Eu^{151}) = 6.169 MeV$. Consequently, the energy produced is presented in Equation~\ref{eq26}.
+Using the method presented in section~\ref{prob13}, we obtain $Q(Eu^{153}) = 6.437\ MeV$ and $Q(Eu^{151}) = 6.169\ MeV$. Consequently, the energy produced is presented in Equation~\ref{eq26}.
 
 \begin{equation}\label{eq26}
 E_a = R_{153} * Q(Eu^{153}) + R_{151} * Q(Eu^{151})
 \end{equation}
 
-This gives us $E_a = \text{\num{6.34e12}} MeV.s^{-1}.cm^{-3}$
+This gives us $E_a = \text{\num{6.34e12}}\ MeV.s^{-1}.cm^{-3}$
+
+
+\section{1/V absorber}
+\label{prob22}
+
+\subsection{Problem}
+\textit{The absorption mean free path for $2200\ m.s^{-1}$ neutrons in a $1/V$ absorber is 1 cm. The corresponding reaction rate is \num{1e12} $s^{-1}.cm^{-3}$. The absorber has an atomic mass of 10 and a density of $2.0\ g.cm^{-3}$. Find (a) the $2200\ m.s^{-1}$ flux and (b) the microscopic absorption cross section of 10-eV neutrons in barns.}
+
+\subsection{Solution}
+
+The mean free path $\lambda$ is the reciprocal of the macroscopic cross section, $\lambda = \frac{1}{\Sigma}$. Knowing that the neutrons with a speed of $2200\ m.s^{-1}$, equivalent to $0.0252\ eV$ according to Equation~\ref{eq27}, have a mean free path $\lambda$ of 1 cm, with a reaction rate $R$ of \num{1e12} $r.s^{-1}.cm^{-3}$, one can easily deduce the corresponding flux using Equation~\ref{eq28}
+
+\begin{equation}\label{eq27}
+E_n = \frac{1}{2}mV^2
+\end{equation}
+
+
+\begin{equation}\label{eq28}
+\phi = \frac{R}{\Sigma} = R\lambda
+\end{equation}
+
+The $2200\ m.s^{-1}$ neutrons flux is thus \num{1e12} $n.s^{-1}.cm^{-2}$.
+
+The neutron absorber has an atomic mass of 10, we can hence identify Boron-10. This nuclei has a wider $1/V$ region, up to 150 eV~\cite{book01}, encompassing the 10-eV neutrons. Consequently, we can use the fact that for the Boron, in the thermal region, the absorption cross section is inversely proportional to the square root of the neutron energy, as explicited in Equation~\ref{eq29}.
+
+
+\begin{equation}\label{eq29}
+\sigma_a = C_1 \sqrt{\frac{1}{E_n}}
+\end{equation}
+
+Using the knowledge of the macroscopic cross section $\Sigma = 1\ cm^{-1}$ for the neutrons of energy $0.025\ eV$, we can obtain the constant $C_1$ with Equation~\ref{eq210}.
+
+\begin{equation}\label{eq210}
+C_1 = \frac{\sigma_a}{\sqrt{\frac{1}{E_n}}}
+\end{equation}
+
+We can obtain $C_1$ if we first compute $\sigma_a$ as a function of $\Sigma_a$, which can be done by using Equation~\ref{eq211}.
+
+\begin{equation}\label{eq211}
+\sigma_a = \frac{\Sigma_a}{N} = \frac{A_t\Sigma_a}{\rho N_A}
+\end{equation}
+
+Consequently, $\sigma_a = \text{\num{8.303e-24}}\ cm^2$ for $2200\ m.s^{-1}$ neutrons, since $\Sigma_a = 1\ cm^{-1}$. This allows us to obtain $C_1 = \text{\num{1.318e-24}}$. Consequently, plugging this back into Equation~\ref{eq29} for 10-eV neutrons, we obtain $\sigma_{a, 10eV} = 0.417\ barn$.
+
+\section{Boron}
+\label{prob23}
+
+\subsection{Problem}
+\textit{Calculate the absorption macroscopic cross section in $cm^{-1}$ of boron (density $2.3\ g.cm^{-3}$ for (a) $2200\ m.s^{-1}$, and (b) 10 eV neutrons.}
+
+\subsection{Solution}
+
+Boron is composed of two isotopes, $B^{10}$ and $B^{11}\ (80.22\%)$. However, due to the huge difference in absorption microscopic cross section between the two isotopes, respectively 3840 barns and 0.005 barns at thermal energy (0.025 eV), the contribution of $B^{11}$ can be neglected.
+
+The macroscopic cross section is given by Equation~\ref{eq212}.
+
+
+\begin{equation}\label{eq212}
+\Sigma_a = N_{10} * \sigma_{a, 10} + N_{11} * \sigma_{a, 11} \approx N_{10} * \sigma_{a, 10}
+\end{equation}
+
+Considering Equation~\ref{eq211}, we can calculate $N_{10} = 19.78\% * \frac{\rho N_A}{10}$. We can thus obtain $\Sigma_{a, 0.025 eV} = 105.067\ cm^{-1}$.
+
+Similarly to Problem~\ref{prob22}, we can use Equation~\ref{eq29} after calculating $C_1$ from Equation~\ref{eq210}. We find that $C_1 = \text{\num{6.096e-22}}$, and consequently, $\Sigma_{a, 10 eV} = N_{10} * C_1 \sqrt{\frac{1}{10 eV}} = 5.274\ cm^{-1}$.
+
+
+\section{Integral}
+\label{prob24}
+
+\subsection{Problem}
+\textit{Evaluate:
+$$\int_0^{\infty} \frac{dx}{cosh(x)}$$}
+
+\subsection{Solution}
+
+\begin{equation}\label{eq213}
+\int_0^{\infty} \frac{dx}{cosh(x)}
+\end{equation}
+
+Knowing that $cosh(x) = \frac{1}{2}(e^x + e^{-x})$:
+
+\begin{equation}\label{eq214}
+\int_0^{\infty} \frac{dx}{cosh(x)} = \int_0^{\infty} \frac{2dx}{e^x + e^{-x}}
+\end{equation}
+
+A change of variable can be done, by defining $u = e^x$. It ensues that $1/u = e^{-x}$ and $\frac{du}{dx} = u$.
+
+\begin{equation}\label{eq215}
+\int_0^{\infty} \frac{dx}{cosh(x)} = 2\int_1^{\infty} \frac{du}{ u ( u + \frac{1}{u} ) }
+\end{equation}
+
+
+\begin{equation}\label{eq216}
+\int_0^{\infty} \frac{dx}{cosh(x)} = 2\int_1^{\infty} \frac{du}{(1 + u^2)}
+\end{equation}
+
+This is an identity integral, and we can thus write:
+
+
+\begin{equation}\label{eq217}
+\int_0^{\infty} \frac{dx}{cosh(x)} = 2\left[ arctan(u) + C\right]_1^{\infty}
+\end{equation}
+
+And finally:
+
+\begin{equation}\label{eq218}
+\int_0^{\infty} \frac{dx}{cosh(x)} = 2\left[ arctan(\infty) - arctan(1)\right] = \pi - \frac{\pi}{2} = \frac{\pi}{2}
+\end{equation}
+
+\section{Root-mean-square}
+\label{prob25}
+
+\subsection{Problem}
+\textit{Suppose that the following nuclei are in thermal equilibrium: ${}^{16}O$, ${}^{14}N$, ${}^{235}U$, and ${}^{238}U$. Arrange these nuclei in order of increasing root-mean-square speed.}
+
+\subsection{Solution}
+The root-mean-square speed is given by Equation~\ref{eq219}.
+
+\begin{equation}\label{eq219}
+V_{rms} = \sqrt{\frac{3RT}{M_m}}
+\end{equation}
+
+Where:
+
+\begin{conditions}
+R & molar gas constant \\
+M_m & molar mass of the gas in kilograms per mole \\
+T & Temperature (K)
+\end{conditions}
+
+Assuming thermal equilibrium, we can obtain that $\sqrt{3RT}$ is constant. The nuclei can thus be arranged as a function of their atomic mass. Consequently, the highest value of $V_{rms}$ is obtained for ${}^{14}N$, and the lowest value is for ${}^{238}U$.

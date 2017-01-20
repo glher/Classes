@@ -20,4 +20,16 @@
 \contentsline {section}{\numberline {2.1}Europium}{5}{section.2.1}
 \contentsline {subsection}{\numberline {2.1.1}Problem}{5}{subsection.2.1.1}
 \contentsline {subsection}{\numberline {2.1.2}Solution}{5}{subsection.2.1.2}
-\contentsline {chapter}{Bibliography}{7}{section*.2}
+\contentsline {section}{\numberline {2.2}1/V absorber}{7}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Problem}{7}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}Solution}{7}{subsection.2.2.2}
+\contentsline {section}{\numberline {2.3}Boron}{8}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Problem}{8}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}Solution}{8}{subsection.2.3.2}
+\contentsline {section}{\numberline {2.4}Integral}{8}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}Problem}{8}{subsection.2.4.1}
+\contentsline {subsection}{\numberline {2.4.2}Solution}{8}{subsection.2.4.2}
+\contentsline {section}{\numberline {2.5}Root-mean-square}{9}{section.2.5}
+\contentsline {subsection}{\numberline {2.5.1}Problem}{9}{subsection.2.5.1}
+\contentsline {subsection}{\numberline {2.5.2}Solution}{9}{subsection.2.5.2}
+\contentsline {chapter}{Bibliography}{11}{section*.2}
