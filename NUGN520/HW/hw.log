@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.8.24)  20 JAN 2017 16:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.9.11)  21 JAN 2017 15:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1979,7 +1979,7 @@ Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
 \ALG@tmplength=\skip314
 )
 Document Style - pseudocode environments for use with the `algorithmicx' style
-) (/home/glher_a/texmf/tex/latex/kbordermatrix.sty
+) (/home/glher/texmf/tex/latex/commonstuff/kbordermatrix.sty
 Package: kbordermatrix 2011/09/21 Bordered matrix with brackets
 \kbcolsep=\skip315
 \kbrowsep=\skip316
@@ -2161,7 +2161,14 @@ Package glossaries Info: Writing glossary file hw.glo on input line 343.
 \openout8 = `hw.acn'.
 
 Package glossaries Info: Writing glossary file hw.acn on input line 343.
- (./hw.aux)
+ (./hw.aux
+
+LaTeX Warning: Label `chap:intro' multiply defined.
+
+
+LaTeX Warning: Label `eq312' multiply defined.
+
+)
 \openout1 = `hw.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 346.
@@ -2179,8 +2186,7 @@ LaTeX Font Info:    ... okay on input line 346.
 LaTeX Font Info:    Checking defaults for FML/fncmi/m/it on input line 346.
 LaTeX Font Info:    Try loading font information for FML+fncmi on input line 34
 6.
-
-(/usr/share/texlive/texmf-dist/tex/latex/fouriernc/fmlfncmi.fd
+ (/usr/share/texlive/texmf-dist/tex/latex/fouriernc/fmlfncmi.fd
 File: fmlfncmi.fd 2005/12/20 Fontinst v1.928 font definitions for FML/fncmi.
 )
 LaTeX Font Info:    ... okay on input line 346.
@@ -2383,7 +2389,7 @@ LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
 (Font)              scaled to size 11.15991pt on input line 30.
 LaTeX Font Info:    Font shape `T1/fnc/m/sc' will be
 (Font)              scaled to size 11.15991pt on input line 32.
- <logos/CSM.png, id=139, 306.14375pt x 309.155pt>
+ <logos/CSM.png, id=155, 306.14375pt x 309.155pt>
 File: logos/CSM.png Graphic file (type png)
 
 <use logos/CSM.png>
@@ -2461,9 +2467,26 @@ ML/fncmi/m/it/10.95 :\T1/fnc/m/n/10.95 (-20) 78% \FMS/fncm/m/n/10.95 ^^C []$\T1
 m/m/n/10.95 Å
  []
 
-[8]) [9] [10
+[8]) (./chapters/chapter03/chap03.tex [9] [10
 
-] (./hw.bbl
+] [11]
+<chapters/chapter03/fig/bessel_j.png, id=341, 301.125pt x 228.855pt>
+File: chapters/chapter03/fig/bessel_j.png Graphic file (type png)
+
+<use chapters/chapter03/fig/bessel_j.png>
+Package pdftex.def Info: chapters/chapter03/fig/bessel_j.png used on input line
+ 81.
+(pdftex.def)             Requested size: 251.30292pt x 190.98203pt.
+
+<chapters/chapter03/fig/bessel_y.png, id=343, 301.125pt x 228.855pt>
+File: chapters/chapter03/fig/bessel_y.png Graphic file (type png)
+
+<use chapters/chapter03/fig/bessel_y.png>
+Package pdftex.def Info: chapters/chapter03/fig/bessel_y.png used on input line
+ 89.
+(pdftex.def)             Requested size: 251.30292pt x 190.98203pt.
+ [12] [13 <./chapters/chapter03/fig/bessel_j.png> <./chapters/chapter03/fig/bes
+sel_y.png>]) [14] (./hw.bbl
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
 (nag)                Use \scshape or \textsc instead on input line 4.
@@ -2481,45 +2504,51 @@ This document will not have a glossary.
 
 Package nag Warning: 3 complaints in total.
 
-[11
+[15
+
 
 ]
 \tf@toc=\write10
 \openout10 = `hw.toc'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 406.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 406.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 407.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 407.
  (./hw.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 406.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 406.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 407.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 407.
 Package rerunfilecheck Info: File `hw.out' has not changed.
-(rerunfilecheck)             Checksum: CFF36B877A23C04D3712621EBBBDC297;2011.
+(rerunfilecheck)             Checksum: 572AFD458919C63B700D84702C38D2B9;2248.
 
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 2.01195pt have occurred.
 
- ) 
+
+LaTeX Warning: There were multiply-defined labels.
+
+ )
+(\end occurred when \ifx on line 90 was incomplete)
+(\end occurred when \ifx on line 82 was incomplete) 
 Here is how much of TeX's memory you used:
- 42838 strings out of 493029
- 823050 string characters out of 6136234
- 1094527 words of memory out of 5000000
- 45296 multiletter control sequences out of 15000+600000
- 96201 words of font info for 250 fonts, out of 8000000 for 9000
+ 42916 strings out of 493029
+ 824184 string characters out of 6136234
+ 1097302 words of memory out of 5000000
+ 45331 multiletter control sequences out of 15000+600000
+ 96673 words of font info for 258 fonts, out of 8000000 for 9000
  1146 hyphenation exceptions out of 8191
  52i,13n,80p,10374b,907s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
-e/texmf-dist/fonts/type1/public/fourier/fourier-mex.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/public/fourier/fourier-ml.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/public/fourier/fourier-mlit.pfb></usr/share/texlive/texmf-dist/fo
-nts/type1/public/fourier/fourier-ms.pfb></usr/share/texlive/texmf-dist/fonts/ty
-pe1/urw/ncntrsbk/uncb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/ncnt
-rsbk/uncr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/ncntrsbk/uncri8a
-.pfb>
-Output written on hw.pdf (15 pages, 116340 bytes).
+{/usr/share/texlive/texmf-di
+st/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/publi
+c/fourier/fourier-mex.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/fou
+rier/fourier-ml.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/fourier/f
+ourier-mlit.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/fourier/fouri
+er-ms.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/ncntrsbk/uncb8a.pfb></
+usr/share/texlive/texmf-dist/fonts/type1/urw/ncntrsbk/uncr8a.pfb></usr/share/te
+xlive/texmf-dist/fonts/type1/urw/ncntrsbk/uncri8a.pfb>
+Output written on hw.pdf (19 pages, 151569 bytes).
 PDF statistics:
- 350 PDF objects out of 1000 (max. 8388607)
- 320 compressed objects within 4 object streams
- 76 named destinations out of 1000 (max. 500000)
- 42778 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 432 PDF objects out of 1000 (max. 8388607)
+ 394 compressed objects within 4 object streams
+ 99 named destinations out of 1000 (max. 500000)
+ 42820 words of extra memory for PDF output out of 42996 (max. 10000000)
 
