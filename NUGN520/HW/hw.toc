@@ -1,39 +1,19 @@
 \select@language {english}
 \par \penalty \@M \unhbox \voidb@x \hbox {}\hfill {\nag@@warning@vi \bfseries Page}\par \penalty \@M 
-\contentsline {chapter}{\chapternumberline {1}Atomic and nuclear structures and reactions}{1}{chapter.1}
-\contentsline {section}{\numberline {1.1}Photodisintegration}{1}{section.1.1}
+\contentsline {chapter}{\chapternumberline {1}Flux in the core}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}Finite cylinder}{1}{section.1.1}
 \contentsline {subsection}{\numberline {1.1.1}Problem}{1}{subsection.1.1.1}
 \contentsline {subsection}{\numberline {1.1.2}Solution}{1}{subsection.1.1.2}
-\contentsline {section}{\numberline {1.2}Age of the earth}{2}{section.1.2}
-\contentsline {subsection}{\numberline {1.2.1}Problem}{2}{subsection.1.2.1}
-\contentsline {subsection}{\numberline {1.2.2}Solution}{2}{subsection.1.2.2}
-\contentsline {section}{\numberline {1.3}Positron decay}{2}{section.1.3}
-\contentsline {subsection}{\numberline {1.3.1}Problem}{2}{subsection.1.3.1}
-\contentsline {subsection}{\numberline {1.3.2}Solution}{2}{subsection.1.3.2}
-\contentsline {section}{\numberline {1.4}Illuminators}{3}{section.1.4}
-\contentsline {subsection}{\numberline {1.4.1}Problem}{3}{subsection.1.4.1}
-\contentsline {subsection}{\numberline {1.4.2}Solution}{3}{subsection.1.4.2}
-\contentsline {section}{\numberline {1.5}Food irradiator}{4}{section.1.5}
-\contentsline {subsection}{\numberline {1.5.1}Problem}{4}{subsection.1.5.1}
-\contentsline {subsection}{\numberline {1.5.2}Solution}{4}{subsection.1.5.2}
-\contentsline {chapter}{\chapternumberline {2}Neutrons and their interactions}{5}{chapter.2}
-\contentsline {section}{\numberline {2.1}Europium}{5}{section.2.1}
-\contentsline {subsection}{\numberline {2.1.1}Problem}{5}{subsection.2.1.1}
-\contentsline {subsection}{\numberline {2.1.2}Solution}{5}{subsection.2.1.2}
-\contentsline {section}{\numberline {2.2}1/V absorber}{7}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}Problem}{7}{subsection.2.2.1}
-\contentsline {subsection}{\numberline {2.2.2}Solution}{7}{subsection.2.2.2}
-\contentsline {section}{\numberline {2.3}Boron}{8}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}Problem}{8}{subsection.2.3.1}
-\contentsline {subsection}{\numberline {2.3.2}Solution}{8}{subsection.2.3.2}
-\contentsline {section}{\numberline {2.4}Integral}{8}{section.2.4}
-\contentsline {subsection}{\numberline {2.4.1}Problem}{8}{subsection.2.4.1}
-\contentsline {subsection}{\numberline {2.4.2}Solution}{8}{subsection.2.4.2}
-\contentsline {section}{\numberline {2.5}Root-mean-square}{9}{section.2.5}
-\contentsline {subsection}{\numberline {2.5.1}Problem}{9}{subsection.2.5.1}
-\contentsline {subsection}{\numberline {2.5.2}Solution}{9}{subsection.2.5.2}
-\contentsline {chapter}{\chapternumberline {3}Flux in the core}{11}{chapter.3}
-\contentsline {section}{\numberline {3.1}Finite cylinder}{11}{section.3.1}
-\contentsline {subsection}{\numberline {3.1.1}Problem}{11}{subsection.3.1.1}
-\contentsline {subsection}{\numberline {3.1.2}Solution}{11}{subsection.3.1.2}
-\contentsline {chapter}{Bibliography}{15}{section*.2}
+\contentsline {section}{\numberline {1.2}Radioactivity}{4}{section.1.2}
+\contentsline {subsection}{\numberline {1.2.1}Problem}{4}{subsection.1.2.1}
+\contentsline {subsection}{\numberline {1.2.2}Solution}{4}{subsection.1.2.2}
+\contentsline {section}{\numberline {1.3}Thermal fission factor}{5}{section.1.3}
+\contentsline {subsection}{\numberline {1.3.1}Problem}{5}{subsection.1.3.1}
+\contentsline {subsection}{\numberline {1.3.2}Solution}{5}{subsection.1.3.2}
+\contentsline {section}{\numberline {1.4}Cubical reactor core}{6}{section.1.4}
+\contentsline {subsection}{\numberline {1.4.1}Problem}{6}{subsection.1.4.1}
+\contentsline {subsection}{\numberline {1.4.2}Solution}{6}{subsection.1.4.2}
+\contentsline {section}{\numberline {1.5}}{6}{section.1.5}
+\contentsline {subsection}{\numberline {1.5.1}Problem}{6}{subsection.1.5.1}
+\contentsline {subsection}{\numberline {1.5.2}Solution}{6}{subsection.1.5.2}
+\contentsline {chapter}{Bibliography}{9}{section*.2}
