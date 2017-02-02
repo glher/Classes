@@ -1,0 +1,99 @@
+%
+% File: chap01.tex
+%
+\let\textcircled=\pgftextcircled
+\chapter{Reactor Heat Generation}
+\label{chap:intro}
+
+\initial{S}everal exercises from the book written by M. M. El Wakil~\cite{book01} are tackled in this homework. The problems in this section relate to the fourth chapter of the book, covering the subject of the reactor heat generation.
+
+%=======
+\section{Uranyl Sulphate}
+\label{prob41}
+
+\subsection{Problem}
+\textit{Calculate the number density of $U^{235}$, nuclei/$cm^{3}$, in a 10 percent enriched uranyl sulphate ($UO_2SO_4$) in a 50 percent by mass aqueous solution at $500F$. Assume density of solution to be equal to that of water.}
+
+\subsection{Solution}
+
+We know that in order to obtain the fissionable fuel density $N_{ff}$, we can use Equation~\ref{eq41}.
+
+\begin{equation}\label{eq41}
+N_{ff} = \frac{N_A}{M_{ff}}\rho_{ff}
+\end{equation}
+
+Where,
+\begin{conditions}
+M_{ff} & Molecular mass of fissionable fuel used \\
+N_A & Avogadro number \\
+\rho_{ff} & Density of fissionable fuel used
+\end{conditions}
+
+In this equation, we know $M_{ff}$ and $N_A$. We thus have to compute $\rho_{ff}$, using Equation~\ref{eq42}.
+
+
+\begin{equation}\label{eq42}
+\rho_{ff} = rf\rho_{fm}
+\end{equation}
+
+Where,
+\begin{conditions}
+f & Mass fraction of the fuel in the fuel material \\
+r & Enrichment \\
+\rho_{fm} & Density of fuel material
+\end{conditions}
+
+The mass fraction is given by Equation~\ref{eq43}.
+
+
+\begin{equation}\label{eq43}
+f = \frac{rM_{ff} + (1-r)M_{nf}}{rM_{ff} + (1-r)M_{nf} + 7*M_{O} + M_S + 2*M_{H}} = 0.61947
+\end{equation}
+
+The density of the solution being taken equal to that of water, $1\ g.cm^{-3}$, we can calculate $N_{ff} = \text{\num{1.587e20}}\ cm^{-3}$.
+
+\section{Fission cross section}
+\label{prob42}
+
+\subsection{Problem}
+\textit{Calculate the effective fission cross section of 3 percent enriched $UO_2$ if it is used in an ordinary water-moderated thermal reactor. The core lattice arrangement is such that the fuel/moderator ratio is 1:1.9 by volume. Assume the moderator is at 500F and 2000 psia, and that the otherreactor-core materials contribute 2 barns of 1/V absorption per atom of hydrogen.}
+
+\subsection{Solution}
+
+The effective fission cross section is given by Equation~\ref{eq44}.
+
+
+\begin{equation}\label{eq44}
+\bar{\sigma_{f}} = 0.8862 f(T) \sigma_{f,0} \sqrt{\frac{T_0}{T}}
+\end{equation}
+
+For $T = 500 F = 533 K$, $f(T) = 0.93$ and $\sigma_{f, 0} = 577.1\ b$, we can calculate $\bar{\sigma_f} = 352.7\ b$.
+
+
+\section{Volumetric thermal source}
+\label{prob43}
+
+\subsection{Problem}
+\textit{Calculate the volumetric thermal source strength, $Btu.h^{-1}.ft^{-3}$ at a point 49.9\% of the radial distance and halfway above the centerplane of a cylindrical, homogeneous bare reactor core containing enriched $UO_2SO_4$ in solution in $H_2O$. The density of the fuel is 0.255 $g.cm^{-3}$. The temperature of the solution is 533K. The enrichment is 10 percent. The maximum neutron flux in the core is \num{1e14}.}
+
+\subsection{Solution}
+
+$N_{ff}$ can be calculated for the fuel at hand using Equations~\ref{eq41} and~\ref{eq42}. Using the density of the fuel given ($\rho_f = 0.255\ g.cm^{-3}$), we can obtain Equation~\ref{eq45}.
+
+\begin{equation}\label{eq45}
+N_{ff} = \frac{N_A}{235.0439}e\rho_{f} = \text{\num{6.533e19}}\ cm^{-3}
+\end{equation}
+
+The fission cross section for the fuel is given by problem~\ref{eq44}. We obtain $\bar{\sigma_{f}} = 352.7\ b$. If we assume the energy per fission to be $G = 180\ MeV$, we can use Equation~\ref{eq46}.
+
+\begin{equation}\label{eq46}
+q''' = G N_{ff} \bar{\sigma_{f}} \phi(r_1, z_1)
+\end{equation}
+
+The only unknown left in Equation~\ref{eq46} is the flux at the given point. It can be calculated using Equation~\ref{eq47}, with $r_1 = R/2$ and $z_1 = 49.9*H/100$.
+
+\begin{equation}\label{eq46}
+\phi(r_1, z_1) = \phi_0 \cos(\frac{\pi}{4}) J_0(\frac{49.9}{100}2.405) = \phi_0 * \frac{1}{sqrt{2}} * 0.671 = \text{\num{4.75e13}}
+\end{equation}
+
+Using a conversion constant ($1\ MeV.s-1.cm^{-3} = \text{\num{1.5477e-8}}\ Btu.h^{-1}.ft^{-3}$This gives us $q''' = \text{\num{3.049e6}}\ Btu.h^{-1}.ft^{-3}$.
