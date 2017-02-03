@@ -217,8 +217,61 @@ Considering $\nu = 2.43$, $\sigma_f^5 = 571.1\ b$, $\sigma_a^5 = \sigma_c^5 + \s
 
 \subsection{Solution}
 
-No fucking clue.
+The average flux is given by Equation~\ref{eq326}.
 
+\begin{equation}\label{eq326}
+\overline{\phi} = \frac{\iiint_V \phi(x,y,z) \,dx\,dy\,dz}{V}
+\end{equation}
+
+If we consider a flux sinusoidal in the x, y and z directions, then we have~\ref{eq327}, considering $a$ the side of the cube.
+
+\begin{equation}\label{eq327}
+\phi(x,y,z) = \phi_0\cos(\frac{\pi x}{a})\cos(\frac{\pi y}{a})\cos(\frac{\pi z}{a})
+\end{equation}
+
+The flux being maximum at the center of the cube, the integration has to be done from 0 to $a/2$. The triple integrals are independent from one another, and thus we can write Equation~\ref{eq328}.
+
+\begin{equation}\label{eq328}
+\overline{\phi(x,y,z)} = \frac{\phi_0}{V} \int_0^{a/2} \cos(\frac{\pi x}{a}) \,dx \int_0^{a/2} \cos(\frac{\pi y}{a}) \,dy \int_0^{a/2} \cos(\frac{\pi z}{a}) \,dz 
+\end{equation}
+
+
+Knowing Equation~\ref{eq331}, we can obtain Equation~\ref{eq329}.
+
+\begin{equation}\label{eq331}
+\int_0^{a/2} \cos(\frac{\pi x}{a}) \,dx = \left[ \frac{a \sin(\frac{\pi x}{a})}{\pi} \right]_0^{a/2} = \frac{a}{\pi}
+\end{equation}
+
+\begin{equation}\label{eq329}
+\overline{\phi(x,y,z)} = \frac{\phi_0 a^3}{V\pi^3} 
+\end{equation}
+
+The maximum flux being $\phi_0$, the ratio of average to maximum flux is equal to $\frac{a^3}{V\pi^3}$. V being $a^3$, it is easy to see that the ratio is $\frac{1}{\pi^3}$.
+
+Now, if we consider a flux sinusoidal in the x and y directions but uniform in the z direction, we can write Equation~\ref{eq328} as Equation~\ref{eq330}.
+
+
+\begin{equation}\label{eq330}
+\overline{\phi(x,y,z)} = \frac{\phi_0}{V} \int_0^{a/2} \cos(\frac{\pi x}{a}) \,dx \int_0^{a/2} \cos(\frac{\pi y}{a}) \,dy \int_0^{a/2} B \,dz 
+\end{equation}
+
+Knowing Equation~\ref{eq331} and Equation~\ref{eq332}, we can write Equation~\ref{eq333}.
+
+\begin{equation}\label{eq332}
+\int_0^{a/2} B \,dx = \left[ Bx + C \right]_0^{a/2} = \frac{Ba}{2}
+\end{equation}
+
+\begin{equation}\label{eq333}
+\overline{\phi(x,y,z)} = \frac{\phi_0 B a^3}{2 V\pi^2} 
+\end{equation}
+
+And thus, the ratio of average to maximum flux is equal to $\frac{B}{2 \pi^2}$.
+
+Finally, using the same reasoning, we can obtain Equation~\ref{eq334} for the last case (uniform flux B and C for y and z directions respectively).
+
+\begin{equation}\label{eq333}
+\frac{\overline{\phi(x,y,z)}}{\phi_{max}} = \frac{B C}{4 \pi} 
+\end{equation}
 
 \section{Nuclear temperature coefficient}
 \label{prob35}
@@ -274,3 +327,44 @@ The temperature coefficient at T is given for $T=T_0$, in which case:
 \begin{equation}\label{eq325}
 \frac{\delta \rho}{\delta T} = - \frac{B^2L^2}{2k_{\infty}T}
 \end{equation}
+
+\section{Spherical reactor}
+\label{prob36}
+
+\subsection{Problem}
+\textit{solve the diffusion equation ($\nabla^2 \phi + B^2\phi = 0$) for a bare spherical core of radius $R$ and extrapolated radius $R_e$.}
+
+\subsection{Solution}
+
+The spherical diffusion equation can be written using Equation~\ref{eq334}.
+
+
+\begin{equation}\label{eq334}
+\frac{\partial^2 \phi(r)}{\partial r^2} + \frac{2}{r}\frac{\partial \phi(r)}{\partial r} + B^2\phi(r) = 0
+\end{equation}
+
+Using the substitution $\phi(r) = \frac{\Phi(r)}{r}$, we can obtain Equation~\ref{eq335}.
+
+\begin{equation}\label{eq335}
+\frac{2}{r^3}\Phi(r) - \frac{2}{r^2}\frac{\partial \Phi(r)}{\partial r} + \frac{1}{r}\frac{\partial^2 \Phi(r)}{\partial r^2} - \frac{2}{r^3}\Phi(r) + \frac{2}{r^2}\frac{\partial \Phi(r)}{\partial r} + \frac{1}{r}B^2\Phi(r) = 0
+\end{equation}
+
+This equation can trivially be simplified to Equation~\ref{eq336}, by eliminating terms and multiplying both sides by $r$.
+
+\begin{equation}\label{eq336}
+\frac{1}{r}\frac{\partial^2 \Phi(r)}{\partial r^2} + \frac{1}{r}B^2\Phi(r) = 0
+\end{equation}
+
+Equation~\ref{eq336} is well known and has two possible solutions, $\sin(Br)$ and $\cos(Br)$. Consequently, $\Phi(r) = A\cos(Br) + C\sin(Br)$, and finally, $\phi(r) = \frac{A}{r}\cos(Br) + \frac{C}{r}\sin(Br)$.
+
+The flux has to be finite for every $r$, including $r=0$. This allows us to eliminate the cosinus part of the equation, because $\lim_{r\to 0} \frac{A}{r}\cos(Br) = - \infty$. So, $A = 0$.
+
+The solution is thus given by Equation~\ref{eq337}.
+
+\begin{equation}\label{eq337}
+\phi(r) = \frac{C}{r}\sin(Br)
+\end{equation}
+
+The flux has to be zero at a distance $R_e$. Consequently, $\frac{C}{R_e}\sin(BR_e) = 0$. This is possible if and only if $C = 0$ (trival zero solution) or $\sin(BR_e) = 0$. This is possible for $B = \frac{n\pi}{R_e}$, $n$ being an odd integer. The flux has to stay positive, and so only the first zero of the sinus function can be physically true, $n = 1$.
+
+Finally, the flux in the spherical reactor is $\phi(r) = \frac{C}{r}\sin(\frac{\pi}{R_e}r)$.
