@@ -139,7 +139,7 @@ The sample is composed of two independently radioactive isotopes. We assume that
 A(t) = A_{B, 0}e^{-\lambda_B t}
 \end{equation}
 
-Assuming that after 26 hours, the contribution comes only from isotope A implies that we can use the data points t=26h and t=28h to obtain a equations system. This system is needed to solve for $A_{B, 0}$ and for $\lambda_B$.
+Assuming that after 26 hours, the contribution comes only from isotope A. This implies that we can use the data points t=26h and t=28h to obtain a system of equation. This system is needed to solve for $A_{B, 0}$ and for $\lambda_B$.
 
 We can write Equations~\ref{eq315} and~\ref{eq316}.
 
@@ -154,7 +154,7 @@ A_{B,0} = 1010 * e^{\lambda_B (28*3600)} = 842.4
 
 Consequently, the half-life of isotope B is $T_{1/2, B} = 23.27h$.
 
-Subsituting the activity due to isotope B from the total measured, we can obtain the contribution of isotope C. Hence, $A(C, t=0) = 102000-842.4 = 101157.6$ and $A(C, t=4) = 26300 - A_{B, 0}e^{-\lambda_B 4*3600} = 25552$.
+Substituting the activity due to isotope B from the total measured, we can obtain the contribution of isotope C. Hence, $A(C, t=0) = 102000-842.4 = 101157.6$ and $A(C, t=4) = 26300 - A_{B, 0}e^{-\lambda_B 4*3600} = 25552$.
 
 Hence, using Equation~\ref{eq317}, we can obtain.
 
@@ -332,7 +332,7 @@ The temperature coefficient at T is given for $T=T_0$, in which case:
 \label{prob36}
 
 \subsection{Problem}
-\textit{solve the diffusion equation ($\nabla^2 \phi + B^2\phi = 0$) for a bare spherical core of radius $R$ and extrapolated radius $R_e$.}
+\textit{Solve the diffusion equation ($\nabla^2 \phi + B^2\phi = 0$) for a bare spherical core of radius $R$ and extrapolated radius $R_e$.}
 
 \subsection{Solution}
 
@@ -343,7 +343,18 @@ The spherical diffusion equation can be written using Equation~\ref{eq334}.
 \frac{\partial^2 \phi(r)}{\partial r^2} + \frac{2}{r}\frac{\partial \phi(r)}{\partial r} + B^2\phi(r) = 0
 \end{equation}
 
-Using the substitution $\phi(r) = \frac{\Phi(r)}{r}$, we can obtain Equation~\ref{eq335}.
+Using the substitution $\phi(r) = \frac{\Phi(r)}{r}$, as well as the product rule for the first derivative, shown in Equation~\ref{eq3351} and for the second derivative, shown in Equation~\ref{eq3352}, we can obtain Equation~\ref{eq335}.
+
+
+\begin{equation}\label{eq3351}
+\frac{\partial f(r)g(r)}{\partial r} = f'(r)g(r) + f(r)g'(r)
+\end{equation}
+
+\begin{equation}\label{eq3352}
+\frac{\partial^2 f(r)g(r)}{\partial r^2} = f''(r)g(r) + 2f'(r)g'(r) + f(r)g''(r)
+\end{equation}
+
+In our case, $f(r) = \frac{1}{r}$ and $g(r) = \Phi(r)$.
 
 \begin{equation}\label{eq335}
 \frac{2}{r^3}\Phi(r) - \frac{2}{r^2}\frac{\partial \Phi(r)}{\partial r} + \frac{1}{r}\frac{\partial^2 \Phi(r)}{\partial r^2} - \frac{2}{r^3}\Phi(r) + \frac{2}{r^2}\frac{\partial \Phi(r)}{\partial r} + \frac{1}{r}B^2\Phi(r) = 0
@@ -352,7 +363,7 @@ Using the substitution $\phi(r) = \frac{\Phi(r)}{r}$, we can obtain Equation~\re
 This equation can trivially be simplified to Equation~\ref{eq336}, by eliminating terms and multiplying both sides by $r$.
 
 \begin{equation}\label{eq336}
-\frac{1}{r}\frac{\partial^2 \Phi(r)}{\partial r^2} + \frac{1}{r}B^2\Phi(r) = 0
+\frac{\partial^2 \Phi(r)}{\partial r^2} + B^2\Phi(r) = 0
 \end{equation}
 
 Equation~\ref{eq336} is well known and has two possible solutions, $\sin(Br)$ and $\cos(Br)$. Consequently, $\Phi(r) = A\cos(Br) + C\sin(Br)$, and finally, $\phi(r) = \frac{A}{r}\cos(Br) + \frac{C}{r}\sin(Br)$.

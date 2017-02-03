@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.9.11)  30 JAN 2017 11:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.8.24)  3 FEB 2017 11:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1979,7 +1979,7 @@ Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
 \ALG@tmplength=\skip314
 )
 Document Style - pseudocode environments for use with the `algorithmicx' style
-) (/home/glher/texmf/tex/latex/commonstuff/kbordermatrix.sty
+) (/home/glher_a/texmf/tex/latex/kbordermatrix.sty
 Package: kbordermatrix 2011/09/21 Bordered matrix with brackets
 \kbcolsep=\skip315
 \kbrowsep=\skip316
@@ -2519,10 +2519,10 @@ LaTeX Warning: There were multiply-defined labels.
 (\end occurred when \ifx on line 90 was incomplete)
 (\end occurred when \ifx on line 82 was incomplete) 
 Here is how much of TeX's memory you used:
- 42841 strings out of 493029
- 823230 string characters out of 6136234
- 1098091 words of memory out of 5000000
- 45305 multiletter control sequences out of 15000+600000
+ 42845 strings out of 493029
+ 823246 string characters out of 6136234
+ 1098171 words of memory out of 5000000
+ 45307 multiletter control sequences out of 15000+600000
  96748 words of font info for 245 fonts, out of 8000000 for 9000
  1146 hyphenation exceptions out of 8191
  52i,13n,80p,10374b,764s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2534,10 +2534,10 @@ ourier-mlit.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/fourier/fouri
 er-ms.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/ncntrsbk/uncb8a.pfb></
 usr/share/texlive/texmf-dist/fonts/type1/urw/ncntrsbk/uncr8a.pfb></usr/share/te
 xlive/texmf-dist/fonts/type1/urw/ncntrsbk/uncri8a.pfb>
-Output written on hw.pdf (15 pages, 138992 bytes).
+Output written on hw.pdf (15 pages, 139768 bytes).
 PDF statistics:
- 320 PDF objects out of 1000 (max. 8388607)
- 287 compressed objects within 3 object streams
- 79 named destinations out of 1000 (max. 500000)
+ 324 PDF objects out of 1000 (max. 8388607)
+ 291 compressed objects within 3 object streams
+ 81 named destinations out of 1000 (max. 500000)
  42684 words of extra memory for PDF output out of 42996 (max. 10000000)
 
