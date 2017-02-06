@@ -379,3 +379,108 @@ The solution is thus given by Equation~\ref{eq337}.
 The flux has to be zero at a distance $R_e$. Consequently, $\frac{C}{R_e}\sin(BR_e) = 0$. This is possible if and only if $C = 0$ (trival zero solution) or $\sin(BR_e) = 0$. This is possible for $B = \frac{n\pi}{R_e}$, $n$ being an odd integer. The flux has to stay positive, and so only the first zero of the sinus function can be physically true, $n = 1$.
 
 Finally, the flux in the spherical reactor is $\phi(r) = \frac{C}{r}\sin(\frac{\pi}{R_e}r)$.
+
+
+\subsection{Problem}
+\textit{Consider a cylindrical reactor core and assume that the neutron flux $\phi$ is rotationally symmetric. Assume that the extrapolation length is negligible. Let $I(y)$ be the average of the flux taken in the x direction. Verify the relations $I(y) = 2 \int_0^{(R^2-y^2)^{1/2}} \phi(r)dx = 2 \int_y^R \frac{\phi(r)rdr}{(r^2-y^2)^{1/2}}$ and $\phi(r) = -\frac{1}{\pi} \int_r^R \frac{dI(y)}{dy} \frac{dy}{(y^2-r^2)^{1/2}}$. Thus, I and $\phi$ form an integral transform pair.}
+
+\subsection{Solution}
+
+$I(y)$, the average of the flux taken in the x direction, can be written using Equation~\ref{eq338}.
+
+
+\begin{equation}\label{eq338}
+I(y) = \int_{-\infty}^{\infty} \phi(r) dx = 2 \int_{0}^{\infty} \phi(r) dx 
+\end{equation}
+
+Considering that $x^2 + y^2 = r^2$, we can trivially obtain $x = \sqrt{r^2 - y^2}$. The core is a cylinder of radius R, and the flux is zero outside the core. Consequently, we can write Equation~\ref{eq339}.
+
+
+\begin{equation}\label{eq339}
+I(y) = 2 \int_{0}^{\sqrt{R^2-y^2}} \phi(r) dx
+\end{equation}
+
+We can now change the variable, by knowing that $dx = \frac{rdr}{\sqrt{r^2 - y^2}}$. Additionally, for $x = 0$, we have $r^2 = y^2$ and thus $r=y$. We obtain Equation~\ref{eq340}, proving the first part of the problem.
+
+
+\begin{equation}\label{eq340}
+I(y) = 2 \int_{y}^{R} \frac{\phi(r)rdr}{\sqrt{r^2 - y^2}}
+\end{equation}
+
+Now, this integral can be integrated by parts, following Equation~\ref{eq341}.
+
+
+\begin{equation}\label{eq341}
+I(y) = 2 \int_{y}^{R} \phi(r) \frac{d \sqrt{r^2-y^2}}{dr}dr = -2 \int_{y}^{R} \frac{d\phi(r)}{dr} \sqrt{r^2-y^2}dr + \left[ 2\phi(r)\sqrt{r^2-y^2} \right]_y^R
+\end{equation}
+
+The boundary conditions state that when $r=y$, the second term is zero, and when $r=R$, the flux is zero by assumption. The second term thus nullify, and we are left with Eqaution~\ref{eq342}.
+
+
+\begin{equation}\label{eq342}
+I(y) = -2 \int_{y}^{R} \frac{d\phi(r)}{dr} \sqrt{r^2-y^2}dr
+\end{equation}
+
+Now, we can can get the derivative of $I(y)$ with respect to $y$, in order to plug in into the second relation to verify. This is given by Equation~\ref{eq343}.
+
+
+\begin{equation}\label{eq343}
+\frac{dI(y)}{dy} = 2y \int_{y}^{R} \frac{d\phi(r)}{dr} \frac{1}{\sqrt{r^2-y^2}}dr
+\end{equation}
+
+We have to verify Equation~\ref{eq344}.
+
+
+\begin{equation}\label{eq344}
+\phi(r) = -\frac{1}{\pi} \int_r^R \frac{dI(y)}{dy} \frac{dy}{(y^2-r^2)^{1/2}}
+\end{equation}
+
+Substituting in the derivative of $I(y)$, we obtain Equation~\ref{eq345} by using a dummy variable $s = r$.
+
+
+\begin{equation}\label{eq345}
+\phi(r) = -\frac{1}{\pi} \int_r^R \int_y^R \frac{d\phi(s)}{ds} \frac{1}{\sqrt{s^2-y^2}} ds \frac{2ydy}{\sqrt{y^2-r^2}}
+\end{equation}
+
+Interchanging the variables in the integrals, according to Equation~\ref{eq346}, we can get~\ref{eq347}.
+
+
+\begin{equation}\label{eq346}
+\int_r^R dy \int_y^R ds = \int_r^R ds \int_r^S dy
+\end{equation}
+
+\begin{equation}\label{eq347}
+\phi(r) = -\frac{1}{\pi} \int_r^R \int_r^S \frac{2ydy}{\sqrt{(y^2-r^2)(s^2-y^2)}} \frac{d\phi(s)}{ds} ds 
+\end{equation}
+
+Now, we can look in more details at part of this equation, $\eta = \int_r^S \frac{2ydy}{\sqrt{(y^2-r^2)(s^2-y^2)}}$. If we let $u=y^2$ and thus $du = 2ydy$, we can compute Equation~\ref{eq348}.
+
+\begin{equation}\label{eq348}
+\eta = \int_{r^2}^{S^2} \frac{du}{\sqrt{(u-r^2)(s^2-u)}}
+\end{equation}
+
+Our goal now becomes to find an integral of the form $\int_0^1 t^{x-1} (1-t)^{y-1} dt$, since the solutions to this kind of integrals is well-known, the $\beta$-functions.
+
+Let $v = u-r^2$, then $u = v+r^2$ and we can write Equation~\ref{eq349}.
+
+
+\begin{equation}\label{eq349}
+\eta = \int_{0}^{S^2-r^2} \frac{dv}{\sqrt{v(s^2-r^2-v)}} = \frac{1}{\sqrt{s^2 - r^2}} \int_{0}^{S^2-r^2} \frac{dv}{\sqrt{v} \sqrt{1 - \frac{v}{s^2-r^2}}}
+\end{equation}
+
+And finally, if we let $w = \frac{v}{s^2-r^2}$, we can obtain Equation~\ref{eq350}.
+
+
+\begin{equation}\label{eq350}
+\eta = \int_{0}^{1} \frac{dw}{\sqrt{w} \sqrt{1-w}} = \beta(1/2, 1/2)
+\end{equation}
+
+And knowing that $\beta(x, y) = \frac{\Gamma(x)\Gamma(y)}{\Gamma(x+y)}$, as well as $\Gamma(1/2) = \sqrt{\pi}$ and $\Gamma(1) = 0! = 1$, $\eta = \pi$.
+
+Now, coming back to Equation~\ref{eq347}, and plugging in $\eta$, we can finally obtain Equation~\ref{eq351}.
+
+\begin{equation}\label{eq351}
+\phi(r) = - \int_r^R \frac{d\phi(s)}{ds} ds = \phi(r) - \phi(R) = \phi(r)
+\end{equation}
+
+We thus verify the relations.

@@ -19,4 +19,6 @@
 \contentsline {section}{\numberline {1.6}Spherical reactor}{8}{section.1.6}
 \contentsline {subsection}{\numberline {1.6.1}Problem}{8}{subsection.1.6.1}
 \contentsline {subsection}{\numberline {1.6.2}Solution}{8}{subsection.1.6.2}
-\contentsline {chapter}{Bibliography}{11}{section*.2}
+\contentsline {subsection}{\numberline {1.6.3}Problem}{9}{subsection.1.6.3}
+\contentsline {subsection}{\numberline {1.6.4}Solution}{10}{subsection.1.6.4}
+\contentsline {chapter}{Bibliography}{13}{section*.2}
