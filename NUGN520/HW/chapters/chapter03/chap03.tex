@@ -196,10 +196,10 @@ N_8 & Density of $U^{238}$ \\
 \sigma_c^8 & microscopic capture cross section of $U^{238}$
 \end{conditions}
 
-Knowing that the enrichment can be written $e = \frac{N_5}{N_5 + N_8}$, one can rewrite Equation~\ref{eq319} into Equation~\ref{eq320}.
+Knowing that the enrichment can be written $e = \frac{N_5}{N_5 + N_8}$, one can rewrite Equation~\ref{eq319} into Equation~\ref{eq3192}.
 
 
-\begin{equation}\label{eq319}
+\begin{equation}\label{eq3192}
 \eta = \nu\frac{e\sigma_f^5}{e\sigma_f^5 + e\sigma_c^5 + (1-e)\sigma_c^8}
 \end{equation}
 
@@ -232,7 +232,7 @@ If we consider a flux sinusoidal in the x, y and z directions, then we have~\ref
 The flux being maximum at the center of the cube, the integration has to be done from 0 to $a/2$. The triple integrals are independent from one another, and thus we can write Equation~\ref{eq328}.
 
 \begin{equation}\label{eq328}
-\overline{\phi(x,y,z)} = \frac{\phi_0}{V} \int_0^{a/2} \cos(\frac{\pi x}{a}) \,dx \int_0^{a/2} \cos(\frac{\pi y}{a}) \,dy \int_0^{a/2} \cos(\frac{\pi z}{a}) \,dz 
+\overline{\phi(x,y,z)} = \frac{8 \phi_0}{V} \int_0^{a/2} \cos(\frac{\pi x}{a}) \,dx \int_0^{a/2} \cos(\frac{\pi y}{a}) \,dy \int_0^{a/2} \cos(\frac{\pi z}{a}) \,dz 
 \end{equation}
 
 
@@ -243,16 +243,16 @@ Knowing Equation~\ref{eq331}, we can obtain Equation~\ref{eq329}.
 \end{equation}
 
 \begin{equation}\label{eq329}
-\overline{\phi(x,y,z)} = \frac{\phi_0 a^3}{V\pi^3} 
+\overline{\phi(x,y,z)} = \frac{8 \phi_0 a^3}{V\pi^3} 
 \end{equation}
 
-The maximum flux being $\phi_0$, the ratio of average to maximum flux is equal to $\frac{a^3}{V\pi^3}$. V being $a^3$, it is easy to see that the ratio is $\frac{1}{\pi^3}$.
+The maximum flux being $\phi_0$, the ratio of average to maximum flux is equal to $\frac{8 a^3}{V\pi^3}$. V being $a^3$, it is easy to see that the ratio is $\frac{8}{\pi^3}$.
 
 Now, if we consider a flux sinusoidal in the x and y directions but uniform in the z direction, we can write Equation~\ref{eq328} as Equation~\ref{eq330}.
 
 
 \begin{equation}\label{eq330}
-\overline{\phi(x,y,z)} = \frac{\phi_0}{V} \int_0^{a/2} \cos(\frac{\pi x}{a}) \,dx \int_0^{a/2} \cos(\frac{\pi y}{a}) \,dy \int_0^{a/2} B \,dz 
+\overline{\phi(x,y,z)} = \frac{8 \phi_0}{V} \int_0^{a/2} \cos(\frac{\pi x}{a}) \,dx \int_0^{a/2} \cos(\frac{\pi y}{a}) \,dy \int_0^{a/2} B \,dz 
 \end{equation}
 
 Knowing Equation~\ref{eq331} and Equation~\ref{eq332}, we can write Equation~\ref{eq333}.
@@ -262,15 +262,15 @@ Knowing Equation~\ref{eq331} and Equation~\ref{eq332}, we can write Equation~\re
 \end{equation}
 
 \begin{equation}\label{eq333}
-\overline{\phi(x,y,z)} = \frac{\phi_0 B a^3}{2 V\pi^2} 
+\overline{\phi(x,y,z)} = \frac{8 \phi_0 B a^3}{2 V\pi^2} 
 \end{equation}
 
-And thus, the ratio of average to maximum flux is equal to $\frac{B}{2 \pi^2}$.
+And thus, the ratio of average to maximum flux is equal to $\frac{4}{ \pi^2}$.
 
 Finally, using the same reasoning, we can obtain Equation~\ref{eq334} for the last case (uniform flux B and C for y and z directions respectively).
 
 \begin{equation}\label{eq333}
-\frac{\overline{\phi(x,y,z)}}{\phi_{max}} = \frac{B C}{4 \pi} 
+\frac{\overline{\phi(x,y,z)}}{\phi_{max}} = \frac{2}{\pi} 
 \end{equation}
 
 \section{Nuclear temperature coefficient}
@@ -281,7 +281,7 @@ Finally, using the same reasoning, we can obtain Equation~\ref{eq334} for the la
 
 \subsection{Solution}
 
-We know that $L=\sqrt{\frac{d}{\Sigma_a}}$ and that $D = \frac{\lambda_{tr}}{3}$.
+We know that $L=\sqrt{\frac{D}{\Sigma_a}}$ and that $D = \frac{\lambda_{tr}}{3}$.
 
 Consequently,
 
