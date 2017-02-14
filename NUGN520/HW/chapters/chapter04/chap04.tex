@@ -98,7 +98,7 @@ The only unknown left in Equation~\ref{eq46} is the flux at the given point. It 
 \phi(r_1, z_1) = \phi_0 \cos(\frac{\pi}{4}) J_0(\frac{49.9}{100}2.405) = \phi_0 * \frac{1}{sqrt{2}} * 0.671 = \text{\num{4.75e13}}
 \end{equation}
 
-Using a conversion constant ($1\ MeV.s-1.cm^{-3} = \text{\num{1.5477e-8}}\ Btu.h^{-1}.ft^{-3}$), this gives us $q''' = \text{\num{3.049e6}}\ Btu.h^{-1}.ft^{-3}$.
+Using a conversion constant ($1\ MeV.s^{-1}.cm^{-3} = \text{\num{1.5477e-8}}\ Btu.h^{-1}.ft^{-3}$), this gives us $q''' = \text{\num{3.049e6}}\ Btu.h^{-1}.ft^{-3}$.
 
 
 
@@ -131,7 +131,7 @@ The total heat generated in the core is given by $Q = \int \Delta Q$, where $\De
 
 
 \begin{equation}\label{eq411}
-Q = G N_{ff} \bar{\sigma_{f}} \phi_0 2\pi \int_0^{R} r dr \int_{-H/2}{H/2} \cos(\frac{\pi z}{H_e}) dz
+Q = G N_{ff} \bar{\sigma_{f}} \phi_0 2\pi \int_0^{R} r dr \int_{-H/2}^{H/2} \cos(\frac{\pi z}{H_e}) dz
 \end{equation}
 
 Solving the integrals, we obtain Equation~\ref{eq412}
@@ -176,11 +176,22 @@ We can subsitute this into the volume, as seen in Equation~\ref{eq415}.
 
 
 \begin{equation}\label{eq415}
-V = \pi R^2 H = \pi 2.405^2 * \frac{H}{B^2H^2-\pi^2}
+V = \pi R^2 H = \pi 2.405^2 * \frac{H^3}{B^2H^2-\pi^2}
 \end{equation}
 
-The minimum critical volume is given when the derivative of $V$ with respect to $H$ is zero, Equation~\ref{eq416}.
+The minimum critical volume is given when the derivative of $V$ with respect to $H$ is zero, Equation~\ref{eq416}. In order to obtain Equation~\ref{eq416}, one starts from Equation~\ref{eq417}.
 
+\begin{equation}\label{eq417}
+\frac{dV}{dH} = \pi 2.405^2 * \frac{H^3}{B^2H^2-\pi^2}
+\end{equation}
+
+Applying the multiplication rule, with $f(H) = \pi 2.405^2 * H^3$ and $g(H) = \frac{1}{B^2H^2-\pi^2}$, we can obtain Equation~\ref{eq418}. This is done by knowing that $\frac{d(fg)}{dH} = f'g + fg'$, and by calculating $f'(H) = 3 * \pi 2.405^2 * H^2$. $g'(H)$ can be obtained through the quotient rule, stating that if $g(H) = \frac{i(H)}{h(H)}$, then $g'(H) = \frac{i'(H)h(H) - i(H)h'(H)}{h^2(H)}$. Consequently, posing $i(H) = 1$ and $h(H) = B^2H^2 - \pi^2$, we can finally obtain $g'(H) = \frac{-2HB^2}{B^2H^2-\pi^2}$.
+
+\begin{equation}\label{eq418}
+\frac{dV}{dH} = \frac{3*\pi 2.405^2 * H^2}{B^2H^2-\pi^2} - \frac{2 * \pi 2.405^2 * H^4 B^2}{(B^2H^2-\pi^2)^2}
+\end{equation}
+
+And finally,
 
 \begin{equation}\label{eq416}
 \frac{dV}{dH} = \frac{2.405^2 H^2(\pi B^2H^2 - 3\pi^3)}{(\pi^2 - B^2H^2)^2} = 0
@@ -189,3 +200,11 @@ The minimum critical volume is given when the derivative of $V$ with respect to 
 This is possible if and only if $H^2 = \frac{3\pi^3}{\pi B^2} = 3\frac{\pi^2}{B^2}$, and hence $H = \frac{\sqrt{3}\pi}{B}$. In that case, we can compute $R^2 = \frac{2.405^2}{B^2-\frac{\pi^2 B^2}{3\pi^2}}$, and hence $R = \sqrt{\frac{3}{2}}\frac{2.405}{B}$.
 
 Plugging this back into the volume equation (Equation~\ref{eq415}), we obtain $V_{min} = \frac{148.3}{B^3}$.
+
+The surface area is given by Equation~\ref{eq419}.
+
+\begin{equation}\label{eq419}
+A = 2\pi RH + 2\pi R^2
+\end{equation}
+
+Plugging in the values for R and H obtained earlier, we trivially compute the surface area corresponding to the minimum critical volume, $A = \frac{155.2}{B^2}$.

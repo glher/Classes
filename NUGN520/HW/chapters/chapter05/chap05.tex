@@ -1,0 +1,140 @@
+%
+% File: chap01.tex
+%
+\let\textcircled=\pgftextcircled
+\chapter{Reactor Heat Generation}
+\label{chap:intro}
+
+\initial{S}everal exercises from the book written by M. M. El Wakil~\cite{book01} are tackled in this homework. The problems in this section relate to the fifth chapter of the book, covering the subject of heat conduction in reactor elements.
+
+%=======
+\section{}
+\label{prob51}
+
+\subsection{Problem}
+\textit{A 0.5-in.-diameter fuel element is made of 3 percent enriched $UO_2$. It is surrounded by a 0.003-in.-thick helium layer and a 0.03-in.-thick Zircaloy 2 cladding. A certain section of the element operates in boiling light water at 1000 psia. The boiling heat transfer coefficient is $10000\ Btu.h^{-1}.ft^{-2}.F$, and the temperature drop in the boiling film at the section is $30.4\ F$. Calculate the maximum fuel temperature at that section. $k_{He}=0.16$, $k_{clad} = 8\ Btu.h^{-1}.ft^{-2}.F$.}
+
+\subsection{Solution}
+
+
+The following assumption are made:
+
+\begin{enumerate}
+\item $T_{\infty}$ is the temperature a certain distance from the cladding
+\item $T_{\infty} = 70\ F$.
+\item The radius of the fuel element is $r_h$
+\item The helium layer thickness is $c_h$
+\item The full radius of the element is $r_z$
+\item The conductivity of $UO_2$ is taken at $800\ F$, $k_f = 2.5\ Btu.h^{-1}.ft^{-1}.F^{-1}$
+\end{enumerate}
+
+Let us first compute the temperature distribution in the fuel. We know that Equation~\ref{eq51} describes the heat conduction within our usual assumptions.
+
+\begin{equation}\label{eq51}
+q'''2\pi r\Delta rL = q_{r+\Delta r} - q_r
+\end{equation}
+
+We also know the relations~\ref{eq52} and~\ref{eq53}.
+
+
+\begin{equation}\label{eq52}
+q_r = -k_fA\frac{dT}{dr} = -2\pi Lk_fr\frac{dT}{dr}
+\end{equation}
+
+
+\begin{equation}\label{eq53}
+q_{r+\Delta r} = q_r + \frac{dq_r}{dr}\Delta r = -2\pi Lk_fr\frac{dT}{dr} - 2\pi Lk_f\left( r\frac{d^2T}{dr^2} + \frac{dT}{dr}\right)\Delta r
+\end{equation}
+
+Consequently, we can combine Equations~\ref{eq52} and~\ref{eq53} to obtain Equation~\ref{eq54}.
+
+
+\begin{equation}\label{eq54}
+- \frac{q'''}{k_f} = \left( \frac{d^2T}{dr^2} + \frac{1}{r}\frac{dT}{dr}\right)
+\end{equation}
+
+This equation can be written following Equation~\ref{eq55}.
+
+
+\begin{equation}\label{eq55}
+\frac{1}{r}\frac{d}{dr}\left( r\frac{dT}{dr}\right) + \frac{q'''}{k_f} = 0
+\end{equation}
+
+Multiplying both sides by $r$ and integrating, we obtain Equation~\ref{eq56}.
+
+
+\begin{equation}\label{eq56}
+r\frac{dT}{dr} = - \frac{q''' r^2}{2k_f} + C_1 = 0
+\end{equation}
+
+Now dividing both sides by $r$ and integrating again, we can compute Equation~\ref{eq57}.
+
+
+\begin{equation}\label{eq57}
+T(r) = - \frac{q''' r^2}{4k_f} + C_1\ln(r) + C_2 = 0
+\end{equation}
+
+Using the boundary conditions $\frac{dT}{dr}\bigg\rvert_{r=0} = 0$ and $T(r=0) = T_m$, we can respectively define $C_1 = 0$ and $C_2 = T_m$.
+
+Thus, we have Equation~\ref{eq58}.
+
+\begin{equation}\label{eq58}
+T_m - T(r_h) = \frac{q''' r_h^2}{4k_f}
+\end{equation}
+
+Now, we can solve for the temperature distribution in the Helium layer. In this layer, we can assume that no heat is generated, thus using Equation~\ref{eq59}.
+
+
+\begin{equation}\label{eq59}
+\frac{d}{dr}\left( rk_h\frac{dT}{dr}\right) = 0
+\end{equation}
+
+Integrating this Equation from $r_h$ to $r_h + c_h$, we can write Equation~\ref{eq510}.
+
+
+\begin{equation}\label{eq510}
+\int_{r_h}^{r_h+c_h}\frac{d}{dr}\left( rk_h\frac{dT}{dr}\right) = 0
+\end{equation}
+
+Knowing Equation~\ref{eq56}, we can see that $r_hk_hd\frac{dT}{dr} = -\frac{q'''r_h^2}{2}$, and we can consequently write Equation~\ref{eq511}.
+
+\begin{equation}\label{eq511}
+rk_h\frac{dT}{dr} + \frac{q'''r_h^2}{2} = 0
+\end{equation}
+
+Dividing by $rk_h$ and integrating, we obtain Equation~\ref{eq512}.
+
+
+
+\begin{equation}\label{eq512}
+T(r_h+c_h)-T(r_h) = \frac{q'''r_h^2}{2k_h} \ln \left( \frac{r_h}{r_h+c_h} \right)
+\end{equation}
+
+
+In the cladding $Zr_2$, the solution is identical. We can thus write Equation~\ref{eq513}.
+
+\begin{equation}\label{eq513}
+T(r_z)-T(r_h+c_h) = \frac{q'''(r_h+c_h)^2}{2k_z} \ln \left( \frac{r_h+c_h}{r_z} \right)
+\end{equation}
+
+Anf finally, we can express the heat flow to the coolant. We know that $q''(r_z)=-k_w\frac{dT}{dr}\bigg\rvert_{r_z} = h_w(T(r_z)-T_{\infty})$. We know, using Equation~\ref{eq56} that we can write Equation~\ref{eq514}.
+
+\begin{equation}\label{eq514}
+\frac{q'''(r_h+c_h)^2}{2} = h_wr_z(T(r_z)-T_{\infty})
+\end{equation}
+
+And finally, we can write Equation~\ref{eq515}.
+
+
+\begin{equation}\label{eq515}
+T(r_z)-T_{\infty} = \frac{q'''(r_h+c_h)^2}{2h_wr_z}
+\end{equation}
+
+We are given the temperature drop in the coolant, $30.4\ F$, as well as the boiling heat transfer coefficient $h_w = 10000\ Btu.h^{-1}.ft^{-2}.F^{-1}$. Converting the radii to feet, we can calculate $q'''$ from Equation~\ref{eq515}. We obtain $q''' = \text{\num{3.309e7}}\ Btu.h^{-1}.ft^{-3}$. We can now plug this value back into Equations~\ref{513} ($T(r_z)-T(r_h+c_h) = -121.8\ F$, ~\ref{eq512} ($T(r_h+c_h)-T(r_h) = -640.6\ F$) and~\ref{eq58} ($T_m - T(r_h) = 1431.6\ F$) to find the temperature $T_m$, which will be the maximum temperature at the section.
+
+Consequently, $T_m = T_{\infty} + 1431.6 + 640.6 + 121.8 + 30.4 = T_{\infty} + 2224.4\ F$. Assuming $T_{\infty} = 70$, we obtain $T_m = 2294.4\ F$.
+
+
+Nota bene: We did not use the fuel enrichment, nor did we use the water pressure information in our calculations. We could have used this information to compute the $q'''$, however the flux is unknown. In that regards, I am unsure as to the usefulness of this data.
+
+
