@@ -3,44 +3,50 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: hw.aux
 The style file: siam.bst
 Database file #1: biblioproject.bib
-You've used 2 entries,
+You're missing a field name---line 14 of file biblioproject.bib
+ : 
+ : %  title={Thermal Total Cross Sections of Europium from Neutron Capture and Transmission Measurements},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You've used 1 entry,
             2030 wiz_defined-function locations,
-            509 strings with 4103 characters,
-and the built_in function-call counts, 792 in all, are:
-= -- 62
-> -- 60
+            502 strings with 3789 characters,
+and the built_in function-call counts, 223 in all, are:
+= -- 14
+> -- 7
 < -- 0
-+ -- 24
-- -- 22
-* -- 68
-:= -- 140
-add.period$ -- 2
-call.type$ -- 2
-change.case$ -- 16
++ -- 3
+- -- 2
+* -- 14
+:= -- 44
+add.period$ -- 1
+call.type$ -- 1
+change.case$ -- 3
 chr.to.int$ -- 0
-cite$ -- 2
-duplicate$ -- 32
-empty$ -- 45
-format.name$ -- 22
-if$ -- 155
+cite$ -- 1
+duplicate$ -- 13
+empty$ -- 24
+format.name$ -- 2
+if$ -- 43
 int.to.chr$ -- 0
-int.to.str$ -- 2
-missing$ -- 3
-newline$ -- 9
-num.names$ -- 4
-pop$ -- 20
+int.to.str$ -- 1
+missing$ -- 2
+newline$ -- 6
+num.names$ -- 2
+pop$ -- 8
 preamble$ -- 1
-purify$ -- 15
+purify$ -- 3
 quote$ -- 0
-skip$ -- 23
+skip$ -- 5
 stack$ -- 0
-substring$ -- 18
-swap$ -- 12
+substring$ -- 5
+swap$ -- 2
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 6
+type$ -- 2
 warning$ -- 0
-while$ -- 5
-width$ -- 3
-write$ -- 19
+while$ -- 2
+width$ -- 2
+write$ -- 10
+(There was 1 error message)

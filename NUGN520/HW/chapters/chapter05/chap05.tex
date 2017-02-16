@@ -8,11 +8,11 @@
 \initial{S}everal exercises from the book written by M. M. El Wakil~\cite{book01} are tackled in this homework. The problems in this section relate to the fifth chapter of the book, covering the subject of heat conduction in reactor elements.
 
 %=======
-\section{}
+\section{[5.2] - Maximum fuel temperature}
 \label{prob51}
 
 \subsection{Problem}
-\textit{A 0.5-in.-diameter fuel element is made of 3 percent enriched $UO_2$. It is surrounded by a 0.003-in.-thick helium layer and a 0.03-in.-thick Zircaloy 2 cladding. A certain section of the element operates in boiling light water at 1000 psia. The boiling heat transfer coefficient is $10000\ Btu.h^{-1}.ft^{-2}.F$, and the temperature drop in the boiling film at the section is $30.4\ F$. Calculate the maximum fuel temperature at that section. $k_{He}=0.16$, $k_{clad} = 8\ Btu.h^{-1}.ft^{-2}.F$.}
+\textit{A 0.5-in.-diameter fuel element is made of 3 percent enriched $UO_2$. It is surrounded by a 0.003-in.-thick helium layer and a 0.03-in.-thick Zircaloy 2 cladding. A certain section of the element operates in boiling light water at 1000 psia. The boiling heat transfer coefficient is $10000\ Btu.h^{-1}.ft^{-2}.{}^\circ F$, and the temperature drop in the boiling film at the section is $30.4\ {}^\circ F$. Calculate the maximum fuel temperature at that section. $k_{He}=0.16$, $k_{clad} = 8\ Btu.h^{-1}.ft^{-2}.^\circ F$.}
 
 \subsection{Solution}
 
@@ -25,7 +25,7 @@ The following assumption are made:
 \item The radius of the fuel element is $r_h$
 \item The helium layer thickness is $c_h$
 \item The full radius of the element is $r_z$
-\item The conductivity of $UO_2$ is taken at $800\ F$, $k_f = 2.5\ Btu.h^{-1}.ft^{-1}.F^{-1}$
+\item The conductivity of $UO_2$ is taken at $800\ ^\circ F$, $k_f = 2.5\ Btu.h^{-1}.ft^{-1}.{}^\circ F^{-1}$
 \end{enumerate}
 
 Let us first compute the temperature distribution in the fuel. We know that Equation~\ref{eq51} describes the heat conduction within our usual assumptions.
@@ -130,11 +130,243 @@ And finally, we can write Equation~\ref{eq515}.
 T(r_z)-T_{\infty} = \frac{q'''(r_h+c_h)^2}{2h_wr_z}
 \end{equation}
 
-We are given the temperature drop in the coolant, $30.4\ F$, as well as the boiling heat transfer coefficient $h_w = 10000\ Btu.h^{-1}.ft^{-2}.F^{-1}$. Converting the radii to feet, we can calculate $q'''$ from Equation~\ref{eq515}. We obtain $q''' = \text{\num{3.309e7}}\ Btu.h^{-1}.ft^{-3}$. We can now plug this value back into Equations~\ref{513} ($T(r_z)-T(r_h+c_h) = -121.8\ F$, ~\ref{eq512} ($T(r_h+c_h)-T(r_h) = -640.6\ F$) and~\ref{eq58} ($T_m - T(r_h) = 1431.6\ F$) to find the temperature $T_m$, which will be the maximum temperature at the section.
+We are given the temperature drop in the coolant, $30.4\ {}^\circ F$, as well as the boiling heat transfer coefficient $h_w = 10000\ Btu.h^{-1}.ft^{-2}.{}^\circ F^{-1}$. Converting the radii to feet, we can calculate $q'''$ from Equation~\ref{eq515}. We obtain $q''' = \text{\num{3.309e7}}\ Btu.h^{-1}.ft^{-3}$. We can now plug this value back into Equation~\ref{eq513} ($T(r_z)-T(r_h+c_h) = -121.8\ {}^\circ F$), Equation~\ref{eq512} ($T(r_h+c_h)-T(r_h) = -640.6\ F$) and Equation~\ref{eq58} ($T_m - T(r_h) = 1431.6\ F$) to find the temperature $T_m$, which will be the maximum temperature at the section.
 
-Consequently, $T_m = T_{\infty} + 1431.6 + 640.6 + 121.8 + 30.4 = T_{\infty} + 2224.4\ F$. Assuming $T_{\infty} = 70$, we obtain $T_m = 2294.4\ F$.
-
-
-Nota bene: We did not use the fuel enrichment, nor did we use the water pressure information in our calculations. We could have used this information to compute the $q'''$, however the flux is unknown. In that regards, I am unsure as to the usefulness of this data.
+Consequently, $T_m = T_{\infty} + 1431.6 + 640.6 + 121.8 + 30.4 = T_{\infty} + 2224.4\ {}^\circ F$. Assuming $T_{\infty} = 70\ {}^\circ F$, we obtain $T_m = 2294.4\ {}^\circ F$.
 
 
+Nota bene: We did not use the fuel enrichment, nor did we use the water pressure information in our calculations. We could have used this information to compute the $q'''$, however the maximum flux is unknown. In that regards, I am unsure as to the usefulness of this data.
+
+\section{[5.5] - Spherical reactor pellet}
+\label{prob52}
+
+\subsection{Problem}
+\textit{A spherical reactor is 5 ft in diameter. It contains 20 percent enriched $UO_2$ spherical fuel pellets 1 in. in diameter each. In one of these pellets, the temperature drop from center to edge of fuel is $3000\ {}^\circ F$. The maximum flux in the core is \num{1e13}. What is the radial position of this pellet? Neglect extrapolation lengths. Take $k_f = 1.1\ Btu.h^{-1}.ft^{-1}.{}^\circ F^{-1}$, fuel density is $11\ g.cm^{-3}$, and $\bar{\sigma_f} = 500\ b$.}
+
+\subsection{Solution}
+
+We can start from the 1-D Poisson equation for spherical coordinates, seen in Equation~\ref{eq515}.
+
+
+\begin{equation}\label{eq515}
+\frac{d^2T}{dr^2} + \frac{2}{r}\frac{dT}{dr} + \frac{q'''}{k_f} = 0
+\end{equation}
+
+This equation should be written in a different form to ease solving it. We know that $\frac{df(r)g(r)}{dr} = f'(r)g(r) + f(r)g'(r)$. We want to compute $f$ and $g$ so that $f'g = \frac{2}{r}\frac{dT}{dr}$ and $fg' = \frac{d^2T}{dr^2}$.
+
+This is possible if $g = \frac{dT}{dr}$. Then, if $f = r^2$, we have Equation~\ref{eq516}, equivalent to Equation~\ref{eq515}.
+
+
+\begin{equation}\label{eq516}
+\frac{1}{r^2}\frac{d}{dr}\left(r^2\frac{dT}{dr} \right) + \frac{q'''}{k_f} = 0
+\end{equation}
+
+Consequently, integrating this equation, we obtain Equation~\ref{eq517}.
+
+
+\begin{equation}\label{eq517}
+r^2\frac{dT}{dr} = - \frac{q'''r^3}{3k_f} + C_1
+\end{equation}
+
+Which can be rewritten as Equation~\ref{eq518}.
+
+\begin{equation}\label{eq518}
+\frac{dT}{dr} = - \frac{q'''r}{3k_f} + \frac{C_1}{r^2}
+\end{equation}
+
+We know that the local flux will be maximum at $r=0$, in the center of the fuel pellet. Consequently, $\frac{dT}{dr}\bigg\rvert_{r=0} = 0$. This is possible if and only if $C_1 = 0$ in Equation~\ref{eq518}.
+
+Integrating again, we obtain Equation~\ref{eq519}.
+
+
+\begin{equation}\label{eq519}
+T(r) = - \frac{q'''r^2}{6k_f} + C_2
+\end{equation}
+
+Using the boundary conditions at $r=0$, we know that the temperature will be maximum and equal to a defined $T_m$. Consequently, $C_2 = T_m$, and Equation~\ref{eq519} can be rewritten as Equation~\ref{eq520} for $r=R_p$, where $R_p$ is the radius of the fuel pellet, and $T_s$ being the temperature at the pellet surface.
+
+
+\begin{equation}\label{eq520}
+\Delta T_p = T_m - T_s = \frac{q_p'''R_p^2}{6k_f}
+\end{equation}
+
+
+Knowing that $\Delta T_p = 3000\ {}^\circ F$, that $R_p = 0.5 in = 0.5*0.083 ft$ and that $k_f = 1.1\ Btu.h^{-1}.ft^{-1}.{}^\circ F^{-1}$, we can compute $q_p'''$, the volumetric thermal source strength in the pellet, Equation~\ref{eq521}.
+
+\begin{equation}\label{eq521}
+q_p''' = \frac{6*1.1*3000}{(0.5*0.083)^2} = \text{\num{1.14e7}}\ Btu.h^{-1}.ft^{-3}
+\end{equation}
+
+Now, let us consider that $r$ is relative to the core itself, instead of a simple pellet. We can write Equation~\ref{eq522}.
+
+\begin{equation}\label{eq522}
+q'''(r) = G_f N_f \bar{\sigma_f} \phi(r)
+\end{equation}
+
+$G_f$ is known and taken to be $180\ MeV$. $\bar{\sigma_f}$ is known, at $500\ b$. We can now calculate $N_f$, according to Equation~\ref{eq523}.
+
+\begin{equation}\label{eq523}
+N_f = \frac{N_A}{M_{ff}}e\rho_{fm}fi
+\end{equation}
+
+The problem states that the density of the fuel is $11\ g.cm^{-3}$. However, this corresponds to the density of the fuel material $UO_2$. Thus, the factor $f$ must be calculated, using equation~\ref{eq524}.
+
+
+\begin{equation}\label{eq524}
+f = \frac{e*M_{35} + (1-e)M_{38}}{e*M_{35} + (1-e)M_{38} + 2M_O} = 0.881
+\end{equation}
+
+Consequently, $N_f = \text{\num{4.97e21}}\ cm^{-3}$.
+
+So, Equation~\ref{eq522} becomes Equation~\ref{eq525}, with negligible extrapolation length.
+
+
+\begin{equation}\label{eq525}
+q'''(r) = 180 * \text{\num{4.97e21}} * \text{\num{500e24}} \text{\num{1e13}} * \frac{\sin(\frac{\pi r}{R})}{\frac{\pi r}{R}} = \text{\num{1.084e17}} \frac{\sin(0.041r)}{r}\ MeV.s^{-1}.cm^{-3}
+\end{equation}
+
+So, $q'''(r) = \text{\num{1.678e9}} \frac{\sin(0.041r)}{r}\ Btu.h^{-1}.ft^{-3}$, using the conversion factor $1\ MeV.s^{-1}.cm^{-3} = \text{\num{1.5477e-8}}\ Btu.h^{-1}.ft^{-3}$.
+
+We can find the radial position of the pellet by solving $q'''(r) = q_p'''$, as explicited in Equation~\ref{eq526}.
+
+\begin{equation}\label{eq526}
+\frac{\sin(0.041r)}{r} = \frac{\text{\num{1.14e7}}}{\text{\num{1.678e9}}} = 0.0068
+\end{equation}
+
+I tried to solve this equation using a Taylor series to solve $\frac{\sin(x)}{x} = 1.659$, for $x = 0.041r$. It gave me a quadratic equation for $y$ by letting $x^2 = y$. Unfortunately, the solution using this method was $r = 109.02\ cm$, out of the core. I believe this is due to the Taylor series approximation. The real solution (obtained from a graphical method) is $r = 65.386\ cm = 2.15\ ft$. The pellet considered is at $2.15\ ft$ from the center of the core.
+
+\section{[5.10] - Unclad hollow thick cylindrical fuel element}
+\label{prob53}
+
+\subsection{Problem}
+\textit{Derive expressions for (a) the position $r$ of maximum temperature, and (b) the heat transfer through the inner and outer surfaces of an unclad hollow thick cylindrical fuel element with uniform heat generation and known surface temperatures if heat is allowed to flow through both surfaces.}
+
+\subsection{Solution}
+
+We can solve the heat equation for cylindrical coordinates, Equation~\ref{eq527}.
+
+
+\begin{equation}\label{eq527}
+\frac{d^2T}{dr^2} + \frac{1}{r}\frac{dT}{dr} + \frac{q'''}{k_f} = 0
+\end{equation}
+
+We have seen in Problem~\ref{prob51} that the solution will be of the form presented in relation~\ref{eq528}.
+
+\begin{equation}\label{eq528}
+T(r) = -q'''\frac{r^2}{4k_f} + C_1\ln(r) + C_2
+\end{equation}
+
+Out of the outer surface, the boundary conditions are that $\frac{dT}{dr}\bigg\rvert_{r=r_i} = 0$, and that $T(r=r_i) = T_i$.
+
+Consequently, we can trivially see that $C_1 = \frac{q'''r_i^2}{2k_f}$, and that $C_2 = T_i - \frac{q'''r_i^2}{2k_f}\left( \ln(r_i) - \frac{1}{2}\right)$. We can thus write Equation~\ref{eq529}.
+
+
+\begin{equation}\label{eq529}
+T(r) = T_i - \frac{q'''r_i^2}{4k_f}\left[ \left( \frac{r}{r_i} \right)^2 - 2\ln\left( \frac{r}{r_i} \right) - 1 \right]
+\end{equation}
+
+For the inner surface, the solution is identical, but with different boundary conditions. Indeed, $\frac{dT}{dr}\bigg\rvert_{r=r_o} = 0$, and $T(r=r_o) = T_o$. We obtain Equation~\ref{eq530}.
+
+
+\begin{equation}\label{eq530}
+T(r) = T_o - \frac{q'''r_o^2}{4k_f}\left[ \left( \frac{r}{r_o} \right)^2 - 2\ln \left( \frac{r}{r_o} \right) - 1 \right]
+\end{equation}
+
+We can thus write $T_0$ following Equation~\ref{eq531}, by plugging in $r=r_0$ in Equation~\ref{eq529}.
+
+
+\begin{equation}\label{eq531}
+T_o = T_i - \frac{q'''r_o^2}{4k_f} + \frac{2q'''r_i^2}{4k_f}\ln \left( \frac{r_o}{r_i} \right) + \frac{q'''r_i^2}{4k_f}
+\end{equation}
+
+Starting from Equation~\ref{eq529}, we can write:
+
+
+\begin{equation}\label{eq532}
+T(r) = T_i - \frac{q'''r^2}{4k_f} + \frac{q'''r_i^2}{4k_f} + \frac{2q'''r_i^2}{4k_f}\ln\left( \frac{r}{r_i} \right)
+\end{equation}
+
+Let us define $\alpha = T_i - \frac{q'''r^2}{4k_f} + \frac{q'''r_i^2}{4k_f}$, so that $T(r) = \alpha + \frac{2q'''r_i^2}{4k_f}\ln\left( \frac{r}{r_i} \right)$.
+
+Knowing that we will want a solution factoring $\frac{\ln\left( \frac{r}{r_i} \right)}{\ln \left( \frac{r_o}{r_i} \right)}$, we can expand Equation~\ref{eq532} to obtain Equation~\ref{eq533}.
+
+\begin{equation}\label{eq533}
+T(r) = \alpha + \frac{2q'''r_i^2}{4k_f}\ln\left( \frac{r}{r_i} \right) + \frac{q'''r_o^2}{4k_f}\frac{\ln\left( \frac{r}{r_i} \right)}{\ln \left( \frac{r_o}{r_i} \right)} - \frac{q'''r_o^2}{4k_f}\frac{\ln\left( \frac{r}{r_i} \right)}{\ln \left( \frac{r_o}{r_i} \right)} + \frac{q'''r_i^2}{4k_f}\frac{\ln\left( \frac{r}{r_i} \right)}{\ln \left( \frac{r_o}{r_i} \right)} - \frac{q'''r_i^2}{4k_f}\frac{\ln\left( \frac{r}{r_i} \right)}{\ln \left( \frac{r_o}{r_i} \right)}
+\end{equation}
+
+Now we see several terms of interest appear, in Equation~\ref{eq534} and Equation~\ref{eq535}.
+
+\begin{equation}\label{eq534}
+\gamma = \frac{q'''r_o^2}{4k_f}\frac{\ln\left( \frac{r}{r_i} \right)}{\ln \left( \frac{r_o}{r_i} \right)} - \frac{q'''r_i^2}{4k_f}\frac{\ln\left( \frac{r}{r_i} \right)}{\ln \left( \frac{r_o}{r_i} \right)} = \frac{q'''}{4k_f}(r_o^2-r_i^2)\frac{\ln\left( \frac{r}{r_i} \right)}{\ln \left( \frac{r_o}{r_i} \right)}
+\end{equation}
+
+\begin{equation}\label{eq535}
+\beta = \frac{q'''r_i^2}{4k_f}\frac{\ln\left( \frac{r}{r_i} \right)}{\ln \left( \frac{r_o}{r_i} \right)} - \frac{q'''r_o^2}{4k_f}\frac{\ln\left( \frac{r}{r_i} \right)}{\ln \left( \frac{r_o}{r_i} \right)} + \frac{2q'''r_i^2}{4k_f}\ln\left( \frac{r}{r_i} \right)
+\end{equation}
+
+Consequently, we can factorize as to make $T_o$ (Equation~\ref{eq531}) appear into $\beta$ to obtain Equation~\ref{eq536}.
+
+\begin{equation}\label{eq536}
+\beta = \left( T_i - T_i + \frac{q'''r_o^2}{4k_f} - \frac{2q'''r_i^2}{4k_f}\ln \left( \frac{r_o}{r_i} \right) - \frac{q'''r_i^2}{4k_f}  \right) \frac{\ln\left( \frac{r}{r_i} \right)}{\ln \left( \frac{r_o}{r_i} \right)}
+\end{equation}
+
+And so, using $T(r) = \alpha - \beta + \gamma$, we finally get Equation~\ref{eq537}.
+
+\begin{equation}\label{eq537}
+T(r) = T_i - \frac{q'''(r^2 - r_i^2)}{4k_f} - \left[ (T_i - T_o) - \frac{q'''}{4k_f}(r_o^2-r_i^2) \right] \frac{\ln\left( \frac{r}{r_i} \right)}{\ln \left( \frac{r_o}{r_i} \right)}
+\end{equation}
+
+In order to compute the position $r_m$ of maximum temperature, we now need to solve $\frac{dT(r_m)}{dr} = 0$ (Equation~\ref{eq538}), because we know the temperature distribution is parabolic.
+
+\begin{equation}\label{eq538}
+\frac{dT(r_m)}{dr} = 0 = \frac{q'''r_m}{2k_f} - \frac{a}{r_m}
+\end{equation}
+
+Where:
+
+\begin{conditions}
+a & $\frac{2q'''r_i^2}{4k_f}$
+\end{conditions}
+
+Consequently, Equation~\ref{eq538} becomes Equation~\ref{eq539}.
+
+\begin{equation}\label{eq539}
+\frac{q'''r_m^2}{2k_f} = \frac{2q'''r_i^2}{4k_f}
+\end{equation}
+
+And so, the factor $a$ simplifying several parameters, $r = \frac{r_i}{\sqrt{\ln \left( \frac{r_o}{r_i} \right)}}$
+
+For example, if $r_i = 1\ in$ and $r_o = 2\ in$, then the maximum temperature would happen at $r_m = \frac{1}{\sqrt{\ln(2)}} = 1.2\ in$.
+
+In order to compute the heat transfer through the inner and outer surfaces, $q_s$, we know Equation~\ref{eq540}.
+
+\begin{equation}\label{eq540}
+q_{s,o} = \pi (r_o^2 - r_i^2)Lq'''
+\end{equation}
+
+We also know Equation~\ref{eq541}, using Equation~\ref{eq529} at $r=r_0$.
+
+\begin{equation}\label{eq541}
+T_i - T_o = \frac{q'''r_i^2}{4k_f}\left[ \left( \frac{r_o}{r_i} \right)^2 - 2\ln \left( \frac{r_o}{r_i} \right) - 1 \right]
+\end{equation}
+
+From Equation~\ref{eq541}, we can isolate $q''' = \frac{1}{r_i^2}\frac{4k_f(T_i - T_o)}{\left( \frac{r_o}{r_i} \right)^2 - 2\ln \left( \frac{r_o}{r_i} \right) - 1}$.
+
+And finally, we can rewrite $q_{s,o}$ with Equation~\ref{eq542}.
+
+\begin{equation}\label{eq542}
+q_{s,o} = 4\pi k_f L \frac{r_o^2 - r_i^2}{r_i^2}\frac{(T_i - T_o)}{\left( \frac{r_o}{r_i} \right)^2 - 2\ln \left( \frac{r_o}{r_i} \right) - 1}
+\end{equation}
+
+Similarly, we can obtain Equation~\ref{eq543} for the inner surface heat transfer.
+
+
+\begin{equation}\label{eq543}
+q_{s,i} = 4\pi k_f L \frac{r_i^2 - r_o^2}{r_o^2}\frac{(T_i - T_o)}{\left( \frac{r_i}{r_o} \right)^2 - 2\ln \left( \frac{r_i}{r_o} \right) - 1}
+\end{equation}
+
+The total heat transfer is assumed to be through both surfaces. Consequently, we can write Equation~\ref{eq544}.
+
+\begin{equation}\label{eq544}
+q_s = q_{s,i} + q_{s,o} = 4\pi k_f L (T_i - T_o) \left[ \frac{r_i^2 - r_o^2}{r_o^2}\frac{1}{\left( \frac{r_i}{r_o} \right)^2 - 2\ln \left( \frac{r_i}{r_o} \right) - 1} + \frac{r_o^2 - r_i^2}{r_i^2}\frac{1}{\left( \frac{r_o}{r_i} \right)^2 - 2\ln \left( \frac{r_o}{r_i} \right) - 1} \right]
+\end{equation}
