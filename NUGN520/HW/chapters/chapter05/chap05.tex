@@ -370,3 +370,98 @@ The total heat transfer is assumed to be through both surfaces. Consequently, we
 \begin{equation}\label{eq544}
 q_s = q_{s,i} + q_{s,o} = 4\pi k_f L (T_i - T_o) \left[ \frac{r_i^2 - r_o^2}{r_o^2}\frac{1}{\left( \frac{r_i}{r_o} \right)^2 - 2\ln \left( \frac{r_i}{r_o} \right) - 1} + \frac{r_o^2 - r_i^2}{r_i^2}\frac{1}{\left( \frac{r_o}{r_i} \right)^2 - 2\ln \left( \frac{r_o}{r_i} \right) - 1} \right]
 \end{equation}
+
+
+\section{[E1] - Fourier sine series solution of a telegraph equation}
+\label{prob53}
+
+\subsection{Problem}
+\textit{Download the Coffey and Colburn (2009) paper on the telegraph or hyperbolic heat equation and consider the Fourier series solution of Appendix A. Verify the results for either the zero Dirichlet or zero Neumann (insulation at both $x = 0$ and $x = L$) boundary conditions. Write an expression for the speed of heat propagation based upon the coefficients in equation (A1).}
+
+\subsection{Solution}
+
+The equation to solve is Equation~\ref{eq545}.
+
+\begin{equation}\label{eq545}
+b\frac{\partial^2 u(x,t)}{\partial t^2} + a\frac{\partial u(x,t)}{\partial t} - D\frac{\partial^2 u(x,t)}{\partial x^2} = 0
+\end{equation}
+
+Using the Dirichlet boundary conditions, we know that the solution is of the form $\sin \left( n\frac{\pi x}{L} \right)$. The Fourier sine series solution is thus of the form given in Equation~\ref{eq546}.
+
+\begin{equation}\label{eq546}
+u(x,t) = \sum_{n=1}^{\infty} \left[ A_n^{(+)}e^{\lambda_n^{(+)}t} + A_n^{(-)}e^{\lambda_n^{(-)}t} \right] \sin \left( n\frac{\pi x}{L} \right)
+\end{equation}
+
+We are know going to verify if this Fourier sine series solution form solves Equation~\ref{eq545}.
+
+\begin{equation}\label{eq547}
+\frac{\partial u(x,t)}{\partial t} = \sum_{n=1}^{\infty} \left[ A_n^{(+)}\lambda_n^{(+)}e^{\lambda_n^{(+)}t} + A_n^{(-)}\lambda_n^{(-)}e^{\lambda_n^{(-)}t} \right] \sin \left( n\frac{\pi x}{L} \right)
+\end{equation}
+
+\begin{equation}\label{eq548}
+\frac{\partial^2 u(x,t)}{\partial t^2} = \sum_{n=1}^{\infty} \left[ A_n^{(+)} \left( \lambda_n^{(+)} \right)^2 e^{\lambda_n^{(+)}t} + A_n^{(-)} \left( \lambda_n^{(-)} \right)^2 e^{\lambda_n^{(-)}t} \right] \sin \left( n\frac{\pi x}{L} \right)
+\end{equation}
+
+\begin{equation}\label{eq549}
+\frac{\partial^2 u(x,t)}{\partial x^2} = - \sum_{n=1}^{\infty} \left[ A_n^{(+)}e^{\lambda_n^{(+)}t} + A_n^{(-)}e^{\lambda_n^{(-)}t} \right] \frac{n^2\pi^2}{L^2} \sin \left( n\frac{\pi x}{L} \right)
+\end{equation}
+
+Plugging Equations~\ref{eq547},~\ref{eq548} and~\ref{eq549} into Equation~\ref{eq545}, we obtain Equation~\ref{eq550}.
+
+\begin{equation}\label{eq550}
+\begin{split}
+b\sum_{n=1}^{\infty} \left[ A_n^{(+)} \left( \lambda_n^{(+)} \right)^2 e^{\lambda_n^{(+)}t} + A_n^{(-)} \left( \lambda_n^{(-)} \right)^2 e^{\lambda_n^{(-)}t} \right] \\ + a\sum_{n=1}^{\infty} \left[ A_n^{(+)}\lambda_n^{(+)}e^{\lambda_n^{(+)}t} + A_n^{(-)}\lambda_n^{(-)}e^{\lambda_n^{(-)}t} \right] \sin \left( n\frac{\pi x}{L} \right) \\ + D\sum_{n=1}^{\infty} \left[ A_n^{(+)}e^{\lambda_n^{(+)}t} + A_n^{(-)}e^{\lambda_n^{(-)}t} \right] \frac{n^2\pi^2}{L^2} \sin \left( n\frac{\pi x}{L} \right) = 0
+\end{split}
+\end{equation}
+
+This equation can be rewritten into Equation~\ref{eq551}, by rearranging the summed terms to factor by $A_ne^{\lambda_n t}$.
+
+\begin{equation}\label{eq551}
+\sum_{n=1}^{\infty} \left[ A_n^{(+)}e^{\lambda_n^{(+)}t} \left( a\lambda_n^{(+)} + b\left( \lambda_n^{(+)} \right)^2 + D\frac{n^2\pi^2}{L^2}  \right)  +  A_n^{(-)}e^{\lambda_n^{(-)}t} \left( a\lambda_n^{(-)} + b\left( \lambda_n^{(-)} \right)^2 + D\frac{n^2\pi^2}{L^2}  \right)        \right] \sin \left( n\frac{\pi x}{L} \right) = 0
+\end{equation}
+
+We can note that the relations $a\lambda + b \lambda^2 + D\frac{n^2\pi^2}{L^2}$ appear, for which $\lambda$ is the zero solution. Consequently, we verify that the Fourier sine series given in Equation~\ref{eq546} is a solution for Equation~\ref{eq545}.
+
+We Know Equation~\ref{eq552}, as usual and in a completely obvious and trivial way by orthogonality. We also know Equation~\ref{eq553}, from the initial time derivative condition $\frac{\partial u}{\partial t}\bigg\rvert_{t=0} = 0$.
+
+
+\begin{equation}\label{eq552}
+A_n^{(+)} + A_n^{(-)} = \frac{2}{L} \int_0^L u(x,0) \sin \left( n\frac{\pi x}{L} \right) dx
+\end{equation}
+
+\begin{equation}\label{eq553}
+A_n^{(+)}\lambda_n^{(+)} + A_n^{(-)}\lambda_n^{(-)} = 0
+\end{equation}
+
+
+Consequently, by combining these two equations, we can write Equation~\ref{eq554}.
+
+
+\begin{equation}\label{eq554}
+A_n^{(+)}\lambda_n^{(+)} = - A_n^{(-)}\lambda_n^{(-)} = - \lambda_n^{(-)} \left( \frac{2}{L} \int_0^L u(x,0) \sin \left( n\frac{\pi x}{L} \right) dx - A_n^{(+)} \right)
+\end{equation}
+
+And finally, rearranging, we obtain Equation~\ref{eq555}.
+
+
+\begin{equation}\label{eq555}
+A_n^{(+)} = \frac{\lambda_n^{(-)}}{\lambda_n^{(-)} - \lambda_n^{(+)}} \frac{2}{L} \int_0^L u(x,0) \sin \left( n\frac{\pi x}{L} \right) dx
+\end{equation}
+
+In an identical way, we find Equation~\ref{eq556}.
+
+\begin{equation}\label{eq556}
+A_n^{(-)} = - \frac{\lambda_n^{(+)}}{\lambda_n^{(-)} - \lambda_n^{(+)}} \frac{2}{L} \int_0^L u(x,0) \sin \left( n\frac{\pi x}{L} \right) dx
+\end{equation}
+
+Now, Equation~\ref{eq546} can be written in terms of known parameters, by replacing $A_n$ and $\lambda_n$ with their respective values.
+
+
+The heat equation can be written using Equation~\ref{eq557}, corresponding to Equation~\ref{eq545} where $b=0$.
+
+
+\begin{equation}\label{eq557}
+a\frac{\partial u(x,t)}{\partial t} - D\frac{\partial^2 u(x,t)}{\partial x^2} = 0
+\end{equation}
+
+In this case, $\lambda_n = -Da\frac{n^2\pi^2}{L^2}$, and $u(x,t) = \sum_{n=1}^{\infty} \sin \left( n\frac{\pi x}{L} \right) e^{\lambda t}$.

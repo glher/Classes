@@ -10,4 +10,7 @@
 \contentsline {section}{\numberline {1.3}[5.10] - Unclad hollow thick cylindrical fuel element}{6}{section.1.3}
 \contentsline {subsection}{\numberline {1.3.1}Problem}{6}{subsection.1.3.1}
 \contentsline {subsection}{\numberline {1.3.2}Solution}{6}{subsection.1.3.2}
-\contentsline {chapter}{Bibliography}{11}{section*.2}
+\contentsline {section}{\numberline {1.4}[E1] - Fourier sine series solution of a telegraph equation}{9}{section.1.4}
+\contentsline {subsection}{\numberline {1.4.1}Problem}{9}{subsection.1.4.1}
+\contentsline {subsection}{\numberline {1.4.2}Solution}{9}{subsection.1.4.2}
+\contentsline {chapter}{Bibliography}{13}{section*.2}
