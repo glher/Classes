@@ -21,11 +21,9 @@ The following assumption are made:
 
 \begin{enumerate}
 \item $T_{\infty}$ is the temperature a certain distance from the cladding
-\item $T_{\infty} = 70\ F$.
 \item The radius of the fuel element is $r_h$
 \item The helium layer thickness is $c_h$
 \item The full radius of the element is $r_z$
-\item The conductivity of $UO_2$ is taken at $800\ ^\circ F$, $k_f = 2.5\ Btu.h^{-1}.ft^{-1}.{}^\circ F^{-1}$
 \end{enumerate}
 
 Let us first compute the temperature distribution in the fuel. We know that Equation~\ref{eq51} describes the heat conduction within our usual assumptions.
@@ -130,12 +128,13 @@ And finally, we can write Equation~\ref{eq515}.
 T(r_z)-T_{\infty} = \frac{q'''(r_h+c_h)^2}{2h_wr_z}
 \end{equation}
 
-We are given the temperature drop in the coolant, $30.4\ {}^\circ F$, as well as the boiling heat transfer coefficient $h_w = 10000\ Btu.h^{-1}.ft^{-2}.{}^\circ F^{-1}$. Converting the radii to feet, we can calculate $q'''$ from Equation~\ref{eq515}. We obtain $q''' = \text{\num{3.309e7}}\ Btu.h^{-1}.ft^{-3}$. We can now plug this value back into Equation~\ref{eq513} ($T(r_z)-T(r_h+c_h) = -121.8\ {}^\circ F$), Equation~\ref{eq512} ($T(r_h+c_h)-T(r_h) = -640.6\ F$) and Equation~\ref{eq58} ($T_m - T(r_h) = 1431.6\ F$) to find the temperature $T_m$, which will be the maximum temperature at the section.
+We are given the temperature drop in the coolant, $30.4\ {}^\circ F$, as well as the boiling heat transfer coefficient $h_w = 10000\ Btu.h^{-1}.ft^{-2}.{}^\circ F^{-1}$. Converting the radii to feet, we can calculate $q'''$ from Equation~\ref{eq515}. We obtain $q''' = \text{\num{3.309e7}}\ Btu.h^{-1}.ft^{-3}$. We can now plug this value back into Equation~\ref{eq513} ($T(r_z)-T(r_h+c_h) = -121.8\ {}^\circ F$), Equation~\ref{eq512} ($T(r_h+c_h)-T(r_h) = -640.6\ F$) and Equation~\ref{eq58} ($T_m - T(r_h) \bigg\rvert_{k_f = 2.5} = 1431.6\ F$) to find the temperature $T_m$, which will be the maximum temperature at the section.
 
-Consequently, $T_m = T_{\infty} + 1431.6 + 640.6 + 121.8 + 30.4 = T_{\infty} + 2224.4\ {}^\circ F$. Assuming $T_{\infty} = 70\ {}^\circ F$, we obtain $T_m = 2294.4\ {}^\circ F$.
+Consequently, $T_m\bigg\rvert_{k_f = 2.5} = T_{\infty} + 1431.6 + 640.6 + 121.8 + 30.4 = T_{\infty} + 2224.4\ {}^\circ F$.
 
+$T_{\infty}$ can be obtained using the data from Appendix D~\cite{book01}. For saturated dry steam at 1000 psia, the temperature $T_{\infty}$ is $544.6\ {}^\circ F$
 
-Nota bene: We did not use the fuel enrichment, nor did we use the water pressure information in our calculations. We could have used this information to compute the $q'''$, however the maximum flux is unknown. In that regards, I am unsure as to the usefulness of this data.
+And so, we can calculate $T_m\bigg\rvert_{k_f = 2.5} = 2769\ {}^\circ F$. This is far from the $800\ {}^\circ F$ at which $k_f = 2.5$. Considering $k_f = 1.1$, we calculate $T_m\bigg\rvert_{k_f = 1.1} = 3798\ {}^\circ F$. $k_f$ is equal to $1.1$ for $T_m > 2400\ {}^\circ F$, so we can assume this is a correct value for the thermal conductivity.
 
 \section{[5.5] - Spherical reactor pellet}
 \label{prob52}
@@ -145,10 +144,10 @@ Nota bene: We did not use the fuel enrichment, nor did we use the water pressure
 
 \subsection{Solution}
 
-We can start from the 1-D Poisson equation for spherical coordinates, seen in Equation~\ref{eq515}.
+We can start from the 1-D Poisson equation for spherical coordinates, seen in Equation~\ref{eq5151}.
 
 
-\begin{equation}\label{eq515}
+\begin{equation}\label{eq5151}
 \frac{d^2T}{dr^2} + \frac{2}{r}\frac{dT}{dr} + \frac{q'''}{k_f} = 0
 \end{equation}
 
@@ -392,7 +391,7 @@ Using the Dirichlet boundary conditions, we know that the solution is of the for
 u(x,t) = \sum_{n=1}^{\infty} \left[ A_n^{(+)}e^{\lambda_n^{(+)}t} + A_n^{(-)}e^{\lambda_n^{(-)}t} \right] \sin \left( n\frac{\pi x}{L} \right)
 \end{equation}
 
-We are know going to verify if this Fourier sine series solution form solves Equation~\ref{eq545}.
+We are now going to verify if this Fourier sine series solution form solves Equation~\ref{eq545}.
 
 \begin{equation}\label{eq547}
 \frac{\partial u(x,t)}{\partial t} = \sum_{n=1}^{\infty} \left[ A_n^{(+)}\lambda_n^{(+)}e^{\lambda_n^{(+)}t} + A_n^{(-)}\lambda_n^{(-)}e^{\lambda_n^{(-)}t} \right] \sin \left( n\frac{\pi x}{L} \right)
@@ -422,7 +421,7 @@ This equation can be rewritten into Equation~\ref{eq551}, by rearranging the sum
 
 We can note that the relations $a\lambda + b \lambda^2 + D\frac{n^2\pi^2}{L^2}$ appear, for which $\lambda$ is the zero solution. Consequently, we verify that the Fourier sine series given in Equation~\ref{eq546} is a solution for Equation~\ref{eq545}.
 
-We Know Equation~\ref{eq552}, as usual and in a completely obvious and trivial way by orthogonality. We also know Equation~\ref{eq553}, from the initial time derivative condition $\frac{\partial u}{\partial t}\bigg\rvert_{t=0} = 0$.
+We know Equation~\ref{eq552}, as usual and in a completely obvious and trivial way by orthogonality. We also know Equation~\ref{eq553}, from the initial time derivative condition $\frac{\partial u}{\partial t}\bigg\rvert_{t=0} = 0$.
 
 
 \begin{equation}\label{eq552}

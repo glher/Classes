@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.8.24)  17 FEB 2017 13:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.8.24)  22 FEB 2017 10:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2163,9 +2163,6 @@ Package glossaries Info: Writing glossary file hw.glo on input line 343.
 Package glossaries Info: Writing glossary file hw.acn on input line 343.
  (./hw.aux
 
-LaTeX Warning: Label `eq515' multiply defined.
-
-
 LaTeX Warning: Label `prob53' multiply defined.
 
 )
@@ -2458,7 +2455,7 @@ LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
 LaTeX Font Info:    Font shape `T1/fnc/m/sc' will be
 (Font)              scaled to size 9.29993pt on input line 95.
  [2] [3] [4]
-Overfull \hbox (15.76523pt too wide) in paragraph at lines 194--195
+Overfull \hbox (15.76523pt too wide) in paragraph at lines 193--194
 []\T1/fnc/m/n/10.95 (-20) Knowing that $\FML/fncm/m/it/10.95 ^^A\FML/fncmi/m/it
 /10.95 T[] \FMS/fncm/m/n/10.95 Å \T1/fnc/m/n/10.95 (-20) 3000 [][]\FML/fncmi/m/
 it/10.95 F$\T1/fnc/m/n/10.95 (-20) , that $\FML/fncmi/m/it/10.95 R[] \FMS/fncm/
@@ -2511,13 +2508,13 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 42825 strings out of 493029
- 822702 string characters out of 6136234
- 1104587 words of memory out of 5000000
- 45297 multiletter control sequences out of 15000+600000
- 95812 words of font info for 229 fonts, out of 8000000 for 9000
+ 42821 strings out of 493029
+ 822671 string characters out of 6136234
+ 1104627 words of memory out of 5000000
+ 45298 multiletter control sequences out of 15000+600000
+ 95694 words of font info for 227 fonts, out of 8000000 for 9000
  1146 hyphenation exceptions out of 8191
- 52i,17n,80p,10374b,818s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 52i,17n,80p,10374b,764s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/fourier/fourier-mex.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/public/fourier/fourier-ml.pfb></usr/share/texlive/texmf-dis
@@ -2526,10 +2523,10 @@ nts/type1/public/fourier/fourier-ms.pfb></usr/share/texlive/texmf-dist/fonts/ty
 pe1/urw/ncntrsbk/uncb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/ncnt
 rsbk/uncr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/ncntrsbk/uncri8a
 .pfb>
-Output written on hw.pdf (17 pages, 128943 bytes).
+Output written on hw.pdf (17 pages, 129114 bytes).
 PDF statistics:
- 357 PDF objects out of 1000 (max. 8388607)
- 325 compressed objects within 4 object streams
- 97 named destinations out of 1000 (max. 500000)
+ 355 PDF objects out of 1000 (max. 8388607)
+ 323 compressed objects within 4 object streams
+ 95 named destinations out of 1000 (max. 500000)
  42626 words of extra memory for PDF output out of 42996 (max. 10000000)
 
