@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.8.24)  22 FEB 2017 10:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.8.24)  27 FEB 2017 14:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1986,6 +1986,34 @@ Package: kbordermatrix 2011/09/21 Bordered matrix with brackets
 \br@kwd=\skip317
 \k@bordht=\skip318
 )
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count423
+\lst@gtempboxa=\box77
+\lst@token=\toks73
+\lst@length=\count424
+\lst@currlwidth=\dimen331
+\lst@column=\count425
+\lst@pos=\count426
+\lst@lostspace=\dimen332
+\lst@width=\dimen333
+\lst@newlines=\count427
+\lst@lineno=\count428
+\lst@maxwidth=\dimen334
+
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
+\c@lstnumber=\count429
+\lst@skipnumbers=\count430
+\lst@framebox=\box78
+)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2015/06/04 1.6 listings configuration
+))
+Package: listings 2015/06/04 1.6 (Carsten Heinz)
+
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2015/06/04 1.6 listings language file
+)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
 zlibraryarrows.code.tex
 File: tikzlibraryarrows.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
@@ -1993,7 +2021,7 @@ File: tikzlibraryarrows.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.code.
 tex
 File: pgflibraryarrows.code.tex 2013/09/23 v3.0.1a (rcs-revision 1.16)
-\arrowsize=\dimen331
+\arrowsize=\dimen335
 ))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
 zlibraryshapes.code.tex
@@ -2046,26 +2074,26 @@ File: tikzlibraryshapes.multipart.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1
 s.multipart.code.tex
 File: pgflibraryshapes.multipart.code.tex 2010/01/07 v3.0.1a (rcs-revision 1.2)
 
-\pgfnodepartlowerbox=\box77
-\pgfnodeparttwobox=\box78
-\pgfnodepartthreebox=\box79
-\pgfnodepartfourbox=\box80
-\pgfnodeparttwentybox=\box81
-\pgfnodepartnineteenbox=\box82
-\pgfnodeparteighteenbox=\box83
-\pgfnodepartseventeenbox=\box84
-\pgfnodepartsixteenbox=\box85
-\pgfnodepartfifteenbox=\box86
-\pgfnodepartfourteenbox=\box87
-\pgfnodepartthirteenbox=\box88
-\pgfnodeparttwelvebox=\box89
-\pgfnodepartelevenbox=\box90
-\pgfnodeparttenbox=\box91
-\pgfnodepartninebox=\box92
-\pgfnodeparteightbox=\box93
-\pgfnodepartsevenbox=\box94
-\pgfnodepartsixbox=\box95
-\pgfnodepartfivebox=\box96
+\pgfnodepartlowerbox=\box79
+\pgfnodeparttwobox=\box80
+\pgfnodepartthreebox=\box81
+\pgfnodepartfourbox=\box82
+\pgfnodeparttwentybox=\box83
+\pgfnodepartnineteenbox=\box84
+\pgfnodeparteighteenbox=\box85
+\pgfnodepartseventeenbox=\box86
+\pgfnodepartsixteenbox=\box87
+\pgfnodepartfifteenbox=\box88
+\pgfnodepartfourteenbox=\box89
+\pgfnodepartthirteenbox=\box90
+\pgfnodeparttwelvebox=\box91
+\pgfnodepartelevenbox=\box92
+\pgfnodeparttenbox=\box93
+\pgfnodepartninebox=\box94
+\pgfnodeparteightbox=\box95
+\pgfnodepartsevenbox=\box96
+\pgfnodepartsixbox=\box97
+\pgfnodepartfivebox=\box98
 )))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
 zlibrarysnakes.code.tex
@@ -2082,16 +2110,16 @@ zlibrarydecorations.pathmorphing.code.tex
 zlibrarydecorations.code.tex
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduledecorations.cod
 e.tex
-\pgfdecoratedcompleteddistance=\dimen332
-\pgfdecoratedremainingdistance=\dimen333
-\pgfdecoratedinputsegmentcompleteddistance=\dimen334
-\pgfdecoratedinputsegmentremainingdistance=\dimen335
-\pgf@decorate@distancetomove=\dimen336
-\pgf@decorate@repeatstate=\count423
-\pgfdecorationsegmentamplitude=\dimen337
-\pgfdecorationsegmentlength=\dimen338
+\pgfdecoratedcompleteddistance=\dimen336
+\pgfdecoratedremainingdistance=\dimen337
+\pgfdecoratedinputsegmentcompleteddistance=\dimen338
+\pgfdecoratedinputsegmentremainingdistance=\dimen339
+\pgf@decorate@distancetomove=\dimen340
+\pgf@decorate@repeatstate=\count431
+\pgfdecorationsegmentamplitude=\dimen341
+\pgfdecorationsegmentlength=\dimen342
 )
-\tikz@lib@dec@box=\box97
+\tikz@lib@dec@box=\box99
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrary
 decorations.pathmorphing.code.tex))
@@ -2110,134 +2138,131 @@ File: tikzlibraryautomata.code.tex 2008/07/14 v3.0.1a (rcs-revision 1.3)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
 zlibrarybackgrounds.code.tex
 File: tikzlibrarybackgrounds.code.tex 2013/07/18 v3.0.1a (rcs-revision 1.3)
-\pgf@layerbox@background=\box98
-\pgf@layerboxsaved@background=\box99
+\pgf@layerbox@background=\box100
+\pgf@layerboxsaved@background=\box101
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
 zlibrarypetri.code.tex
 File: tikzlibrarypetri.code.tex 2013/07/17 v3.0.1a (rcs-revision 1.3)
 )
-\c@proofcount=\count424
+\c@proofcount=\count432
 
 (/usr/share/texlive/texmf-dist/tex/latex/lettrine/lettrine.sty
 File: lettrine.sty 2015/08/31 v1.9 (Daniel Flipo)
-\c@DefaultLines=\count425
-\c@DefaultDepth=\count426
-\DefaultFindent=\dimen339
-\DefaultNindent=\dimen340
-\DefaultSlope=\dimen341
-\DiscardVskip=\dimen342
-\L@lbox=\box100
-\L@tbox=\box101
-\c@L@lines=\count427
-\c@L@depth=\count428
-\L@Pindent=\dimen343
-\L@Findent=\dimen344
-\L@Nindent=\dimen345
-\L@lraise=\dimen346
-\L@first=\dimen347
-\L@next=\dimen348
-\L@slope=\dimen349
-\L@height=\dimen350
-\L@novskip=\dimen351
-\LettrineWidth=\dimen352
-\LettrineHeight=\dimen353
-\LettrineDepth=\dimen354
+\c@DefaultLines=\count433
+\c@DefaultDepth=\count434
+\DefaultFindent=\dimen343
+\DefaultNindent=\dimen344
+\DefaultSlope=\dimen345
+\DiscardVskip=\dimen346
+\L@lbox=\box102
+\L@tbox=\box103
+\c@L@lines=\count435
+\c@L@depth=\count436
+\L@Pindent=\dimen347
+\L@Findent=\dimen348
+\L@Nindent=\dimen349
+\L@lraise=\dimen350
+\L@first=\dimen351
+\L@next=\dimen352
+\L@slope=\dimen353
+\L@height=\dimen354
+\L@novskip=\dimen355
+\LettrineWidth=\dimen356
+\LettrineHeight=\dimen357
+\LettrineDepth=\dimen358
 
 Loading lettrine.cfg
 (/usr/share/texlive/texmf-dist/tex/latex/lettrine/lettrine.cfg))
-\c@theo=\count429
-\c@prop=\count430
-\c@dfn=\count431
-\c@lema=\count432
-\c@cor=\count433
-\c@resu=\count434
+\c@theo=\count437
+\c@prop=\count438
+\c@dfn=\count439
+\c@lema=\count440
+\c@cor=\count441
+\c@resu=\count442
 \glswrite=\write6
 \glo@main@file=\write7
 \openout7 = `hw.glo'.
 
-Package glossaries Info: Writing glossary file hw.glo on input line 343.
+Package glossaries Info: Writing glossary file hw.glo on input line 368.
 \glo@acronym@file=\write8
 \openout8 = `hw.acn'.
 
-Package glossaries Info: Writing glossary file hw.acn on input line 343.
- (./hw.aux
-
-LaTeX Warning: Label `prob53' multiply defined.
-
-)
+Package glossaries Info: Writing glossary file hw.acn on input line 368.
+ (./hw.aux)
 \openout1 = `hw.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 346.
-LaTeX Font Info:    ... okay on input line 346.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 346.
-LaTeX Font Info:    ... okay on input line 346.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 346.
-LaTeX Font Info:    ... okay on input line 346.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 346.
-LaTeX Font Info:    ... okay on input line 346.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 346.
-LaTeX Font Info:    ... okay on input line 346.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 346.
-LaTeX Font Info:    ... okay on input line 346.
-LaTeX Font Info:    Checking defaults for FML/fncmi/m/it on input line 346.
-LaTeX Font Info:    Try loading font information for FML+fncmi on input line 34
-6.
- (/usr/share/texlive/texmf-dist/tex/latex/fouriernc/fmlfncmi.fd
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 371.
+LaTeX Font Info:    ... okay on input line 371.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 371.
+LaTeX Font Info:    ... okay on input line 371.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 371.
+LaTeX Font Info:    ... okay on input line 371.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 371.
+LaTeX Font Info:    ... okay on input line 371.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 371.
+LaTeX Font Info:    ... okay on input line 371.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 371.
+LaTeX Font Info:    ... okay on input line 371.
+LaTeX Font Info:    Checking defaults for FML/fncmi/m/it on input line 371.
+LaTeX Font Info:    Try loading font information for FML+fncmi on input line 37
+1.
+
+(/usr/share/texlive/texmf-dist/tex/latex/fouriernc/fmlfncmi.fd
 File: fmlfncmi.fd 2005/12/20 Fontinst v1.928 font definitions for FML/fncmi.
 )
-LaTeX Font Info:    ... okay on input line 346.
-LaTeX Font Info:    Checking defaults for FMS/fncm/m/n on input line 346.
-LaTeX Font Info:    Try loading font information for FMS+fncm on input line 346
+LaTeX Font Info:    ... okay on input line 371.
+LaTeX Font Info:    Checking defaults for FMS/fncm/m/n on input line 371.
+LaTeX Font Info:    Try loading font information for FMS+fncm on input line 371
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/fouriernc/fmsfncm.fd
 File: fmsfncm.fd 2005/12/20 Fontinst v1.928 font definitions for FMS/fncm.
 )
-LaTeX Font Info:    ... okay on input line 346.
-LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 346.
-LaTeX Font Info:    Try loading font information for FMX+futm on input line 346
+LaTeX Font Info:    ... okay on input line 371.
+LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 371.
+LaTeX Font Info:    Try loading font information for FMX+futm on input line 371
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/fourier/fmxfutm.fd
 File: fmxfutm.fd futm-extension
 )
-LaTeX Font Info:    ... okay on input line 346.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 346.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 346.
+LaTeX Font Info:    ... okay on input line 371.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 371.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 371.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 346.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 346.
-LaTeX Font Info:    ... okay on input line 346.
-LaTeX Font Info:    Try loading font information for T1+fnc on input line 346.
+LaTeX Font Info:    ... okay on input line 371.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 371.
+LaTeX Font Info:    ... okay on input line 371.
+LaTeX Font Info:    Try loading font information for T1+fnc on input line 371.
 
 (/usr/share/texlive/texmf-dist/tex/latex/fouriernc/t1fnc.fd
 File: t1fnc.fd 2005/12/13 scaled font definitions for T1/fnc.
 )
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 10.18341pt on input line 346.
-Package nag Info: pgf.sty is broken: disabling dollar check on input line 346.
+(Font)              scaled to size 10.18341pt on input line 371.
+Package nag Info: pgf.sty is broken: disabling dollar check on input line 371.
 
 
-Package layouts Warning: Layout scale set to 0.5 on input line 346.
+Package layouts Warning: Layout scale set to 0.5 on input line 371.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count435
-\scratchdimen=\dimen355
-\scratchbox=\box102
-\nofMPsegments=\count436
-\nofMParguments=\count437
-\everyMPshowfont=\toks73
-\MPscratchCnt=\count438
-\MPscratchDim=\dimen356
-\MPnumerator=\count439
-\makeMPintoPDFobject=\count440
-\everyMPtoPDFconversion=\toks74
+\scratchcounter=\count443
+\scratchdimen=\dimen359
+\scratchbox=\box104
+\nofMPsegments=\count444
+\nofMParguments=\count445
+\everyMPshowfont=\toks74
+\MPscratchCnt=\count446
+\MPscratchDim=\dimen360
+\MPnumerator=\count447
+\makeMPintoPDFobject=\count448
+\everyMPtoPDFconversion=\toks75
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
@@ -2253,8 +2278,8 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-\AtBeginShipoutBox=\box103
-Package hyperref Info: Link coloring ON on input line 346.
+\AtBeginShipoutBox=\box105
+Package hyperref Info: Link coloring ON on input line 371.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -2262,19 +2287,19 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count441
+\c@section@level=\count449
 )
 Redoing nameref's sectioning
 Redoing nameref's label
-LaTeX Info: Redefining \nameref on input line 346.
-LaTeX Info: Redefining \ref on input line 346.
-LaTeX Info: Redefining \pageref on input line 346.
-LaTeX Info: Redefining \nameref on input line 346.
+LaTeX Info: Redefining \nameref on input line 371.
+LaTeX Info: Redefining \ref on input line 371.
+LaTeX Info: Redefining \pageref on input line 371.
+LaTeX Info: Redefining \nameref on input line 371.
 (./hw.out) (./hw.out)
 \@outlinefile=\write9
 \openout9 = `hw.out'.
 
-LaTeX Info: Redefining \microtypecontext on input line 346.
+LaTeX Info: Redefining \microtypecontext on input line 371.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -2296,38 +2321,39 @@ Dictionary: translator-basic-dictionary, Language: English
 (/usr/share/texlive/texmf-dist/tex/latex/siunitx/siunitx-abbreviations.cfg
 File: siunitx-abbreviations.cfg 2016/03/01 v2.6q siunitx: Abbreviated units
 )
+\c@lstlisting=\count450
 Package nag Info: Command \caption@xlabel not defined, skipping amendment on in
-put line 346.
+put line 371.
 Package nag Info: Command \captionabove not defined, skipping amendment on inpu
-t line 346.
+t line 371.
 Package nag Info: Command \captionbelow not defined, skipping amendment on inpu
-t line 346.
+t line 371.
 Package nag Info: Command \hc@caption not defined, skipping amendment on input 
-line 346.
-\c__siunitx_mathsf_int=\count442
+line 371.
+\c__siunitx_mathsf_int=\count451
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 7.71893pt on input line 346.
+(Font)              scaled to size 7.71893pt on input line 371.
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 5.57996pt on input line 346.
+(Font)              scaled to size 5.57996pt on input line 371.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 10.07397pt on input line 346.
+(Font)              scaled to size 10.07397pt on input line 371.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 7.63599pt on input line 346.
+(Font)              scaled to size 7.63599pt on input line 371.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 346.
-LaTeX Font Info:    Try loading font information for FML+fncm on input line 346
+(Font)              scaled to size 5.51999pt on input line 371.
+LaTeX Font Info:    Try loading font information for FML+fncm on input line 371
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/fouriernc/fmlfncm.fd
 File: fmlfncm.fd 2005/12/20 Fontinst v1.928 font definitions for FML/fncm.
 )
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 10.07397pt on input line 346.
+(Font)              scaled to size 10.07397pt on input line 371.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 7.63599pt on input line 346.
+(Font)              scaled to size 7.63599pt on input line 371.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 346.
-LaTeX Font Info:    Try loading font information for U+msa on input line 346.
+(Font)              scaled to size 5.51999pt on input line 371.
+LaTeX Font Info:    Try loading font information for U+msa on input line 371.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
@@ -2335,7 +2361,7 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 346.
+LaTeX Font Info:    Try loading font information for U+msb on input line 371.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -2343,21 +2369,21 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
-LaTeX Font Info:    Try loading font information for U+stmry on input line 346.
+LaTeX Font Info:    Try loading font information for U+stmry on input line 371.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/stmaryrd/Ustmry.fd)
-LaTeX Font Info:    Try loading font information for U+lasy on input line 346.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 371.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-LaTeX Font Info:    Try loading font information for U+wasy on input line 346.
+LaTeX Font Info:    Try loading font information for U+wasy on input line 371.
 
 (/usr/share/texlive/texmf-dist/tex/latex/wasysym/uwasy.fd
 File: uwasy.fd 2003/10/30 v2.0 Wasy-2 symbol font definitions
 )
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 346.
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 371.
 
 (/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
@@ -2369,7 +2395,7 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             `cmss' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-\c__siunitx_mathtt_int=\count443
+\c__siunitx_mathtt_int=\count452
 Package microtype Info: Loading generic settings for font family
 (microtype)             `cmtt' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
@@ -2386,7 +2412,7 @@ LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
 (Font)              scaled to size 11.15991pt on input line 30.
 LaTeX Font Info:    Font shape `T1/fnc/m/sc' will be
 (Font)              scaled to size 11.15991pt on input line 32.
- <logos/CSM.png, id=63, 306.14375pt x 309.155pt>
+ <logos/CSM.png, id=27, 306.14375pt x 309.155pt>
 File: logos/CSM.png Graphic file (type png)
 
 <use logos/CSM.png>
@@ -2401,13 +2427,13 @@ Package pdftex.def Info: logos/CSM.png used on input line 34.
 
 ])
 LaTeX Font Info:    Font shape `T1/fnc/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/fnc/b/n' tried instead on input line 372.
+(Font)              Font shape `T1/fnc/b/n' tried instead on input line 397.
 LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
-(Font)              scaled to size 13.39188pt on input line 372.
+(Font)              scaled to size 13.39188pt on input line 397.
 LaTeX Font Info:    Font shape `T1/fnc/bx/sc' in size <14.4> not available
-(Font)              Font shape `T1/fnc/b/sc' tried instead on input line 372.
+(Font)              Font shape `T1/fnc/b/sc' tried instead on input line 397.
 LaTeX Font Info:    Font shape `T1/fnc/b/sc' will be
-(Font)              scaled to size 13.39188pt on input line 372.
+(Font)              scaled to size 13.39188pt on input line 397.
  (./hw.toc
 
 Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
@@ -2421,18 +2447,18 @@ LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.374 \newpage
+l.399 \newpage
                [1
 
 ]pdfTeX warning (ext4): destination with the same identifier (name{page.ii}) ha
 s been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.393 \import
-             {chapters/chapter05/}{chap05.tex} [2
+l.419 \import
+             {chapters/chapter06/}{chap06.tex} [2
 
 ]
-(./chapters/chapter05/chap05.tex
+(./chapters/chapter06/chap06.tex
 LaTeX Font Info:    Font shape `T1/fnc/m/sc' will be
 (Font)              scaled to size 10.18341pt on input line 5.
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
@@ -2451,27 +2477,57 @@ LaTeX Font Info:    Font shape `T1/fnc/m/it' will be
 
 ]
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 9.29993pt on input line 95.
+(Font)              scaled to size 6.50995pt on input line 78.
+LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
+(Font)              scaled to size 6.32394pt on input line 79.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 6.25598pt on input line 79.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 6.25598pt on input line 79.
+LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
+(Font)              scaled to size 9.29993pt on input line 116.
 LaTeX Font Info:    Font shape `T1/fnc/m/sc' will be
-(Font)              scaled to size 9.29993pt on input line 95.
- [2] [3] [4]
-Overfull \hbox (15.76523pt too wide) in paragraph at lines 193--194
-[]\T1/fnc/m/n/10.95 (-20) Knowing that $\FML/fncm/m/it/10.95 ^^A\FML/fncmi/m/it
-/10.95 T[] \FMS/fncm/m/n/10.95 Å \T1/fnc/m/n/10.95 (-20) 3000 [][]\FML/fncmi/m/
-it/10.95 F$\T1/fnc/m/n/10.95 (-20) , that $\FML/fncmi/m/it/10.95 R[] \FMS/fncm/
-m/n/10.95 Å \T1/fnc/m/n/10.95 (-20) 0\FML/fncmi/m/it/10.95 :\T1/fnc/m/n/10.95 (
--20) 5\FML/fncmi/m/it/10.95 in \FMS/fncm/m/n/10.95 Å \T1/fnc/m/n/10.95 (-20) 0\
-FML/fncmi/m/it/10.95 :\T1/fnc/m/n/10.95 (-20) 5 \FMS/fncm/m/n/10.95 ^^C \T1/fnc
-/m/n/10.95 (-20) 0\FML/fncmi/m/it/10.95 :\T1/fnc/m/n/10.95 (-20) 083\FML/fncmi/
-m/it/10.95 ft$ \T1/fnc/m/n/10.95 (-20) and that $\FML/fncmi/m/it/10.95 k[] \FMS
-/fncm/m/n/10.95 Å \T1/fnc/m/n/10.95 (-20) 1\FML/fncmi/m/it/10.95 :\T1/fnc/m/n/1
-0.95 (-20) 1 \FML/fncmi/m/it/10.95 Btu:h[]:ft[]:[][]F[]$\T1/fnc/m/n/10.95 (-20)
- ,
- []
+(Font)              scaled to size 9.29993pt on input line 116.
+ [2]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[5] [6] [7] [8] [9] [10]) [11] [12
+ [3]
+[4] (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2015/06/04 1.6 listings language file
+)
+LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
+(Font)              scaled to size 7.43994pt on input line 188.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 7.35999pt on input line 189.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 7.35999pt on input line 189.
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 189.
 
-] (./hw.bbl
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+Package microtype Info: Loading generic settings for font family
+(microtype)             `cmtt' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+LaTeX Font Info:    Try loading font information for TS1+fnc on input line 195.
+
+
+(/usr/share/texlive/texmf-dist/tex/latex/fouriernc/ts1fnc.fd
+File: ts1fnc.fd 2005/12/13 font definitions for TS1/fnc.
+)
+LaTeX Font Info:    Font shape `TS1/fnc/m/n' will be
+(Font)              scaled to size 7.43994pt on input line 195.
+Package microtype Info: Loading generic settings for font family
+(microtype)             `fnc' (encoding: TS1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [5]
+[6]) (./hw.bbl
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
 (nag)                Use \scshape or \textsc instead on input line 4.
@@ -2485,48 +2541,46 @@ This document will not have a glossary.
 
 Package nag Warning: 2 complaints in total.
 
-[13
+[7
+
 
 ]
 \tf@toc=\write10
 \openout10 = `hw.toc'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 409.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 409.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 435.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 435.
  (./hw.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 409.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 409.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 435.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 435.
 Package rerunfilecheck Info: File `hw.out' has not changed.
-(rerunfilecheck)             Checksum: 3ECDCB3E2CE53209E70D92E1F646A220;955.
+(rerunfilecheck)             Checksum: 3CCE7601EA433905437279DACCA42E27;299.
 
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 2.01195pt have occurred.
 
-
-LaTeX Warning: There were multiply-defined labels.
-
  ) 
 Here is how much of TeX's memory you used:
- 42821 strings out of 493029
- 822671 string characters out of 6136234
- 1104627 words of memory out of 5000000
- 45298 multiletter control sequences out of 15000+600000
- 95694 words of font info for 227 fonts, out of 8000000 for 9000
+ 44667 strings out of 493029
+ 847873 string characters out of 6136234
+ 1275429 words of memory out of 5000000
+ 47138 multiletter control sequences out of 15000+600000
+ 107740 words of font info for 233 fonts, out of 8000000 for 9000
  1146 hyphenation exceptions out of 8191
- 52i,17n,80p,10374b,764s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
-e/texmf-dist/fonts/type1/public/fourier/fourier-mex.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/public/fourier/fourier-ml.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/public/fourier/fourier-mlit.pfb></usr/share/texlive/texmf-dist/fo
-nts/type1/public/fourier/fourier-ms.pfb></usr/share/texlive/texmf-dist/fonts/ty
-pe1/urw/ncntrsbk/uncb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/ncnt
-rsbk/uncr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/ncntrsbk/uncri8a
-.pfb>
-Output written on hw.pdf (17 pages, 129114 bytes).
+ 52i,13n,83p,10374b,2468s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/texliv
+e/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/t
+ype1/public/fourier/fourier-mex.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+public/fourier/fourier-ml.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
+/fourier/fourier-ms.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt0800.
+pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/ncntrsbk/uncb8a.pfb></usr/sh
+are/texlive/texmf-dist/fonts/type1/urw/ncntrsbk/uncr8a.pfb></usr/share/texlive/
+texmf-dist/fonts/type1/urw/ncntrsbk/uncri8a.pfb>
+Output written on hw.pdf (11 pages, 121178 bytes).
 PDF statistics:
- 355 PDF objects out of 1000 (max. 8388607)
- 323 compressed objects within 4 object streams
- 95 named destinations out of 1000 (max. 500000)
- 42626 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 234 PDF objects out of 1000 (max. 8388607)
+ 209 compressed objects within 3 object streams
+ 105 named destinations out of 1000 (max. 500000)
+ 46138 words of extra memory for PDF output out of 51595 (max. 10000000)
 

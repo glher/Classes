@@ -1,0 +1,265 @@
+%
+% File: chap01.tex
+%
+\let\textcircled=\pgftextcircled
+\chapter{Reactor Heat Generation}
+\label{chap:intro}
+
+\initial{S}everal exercises from the book written by M. M. El Wakil~\cite{book01} are tackled in this homework. The problems in this section relate to the fifth chapter of the book, covering the subject of heat conduction in reactor elements.
+
+%=======
+\section{[G1] - Fine mesh cruciform}
+\label{prob51}
+
+\subsection{Problem}
+\textit{Calculate the temperature in a cruciform with a mesh $\Delta x = \Delta y = 0.1$.}
+
+\subsection{Solution}
+
+We can define the origin, taken at the center of the cruciform, to be $T(0,0)$. By symmetry, we know that $T(i,j) = T(-i,j)$ and $T(i,j) = T(i,-j)$. Consequently, the solution will be complete when $T(i,j), i \in [0, 11], j \in [0,1]$ are computed. By symmetry, we also know that $T(0,1) = T(1,0)$, so we can get rid of $T(0,1)$ in our computation.
+
+We can approximate the temperature at these discrete points by using Equation~\ref{eq61}, knowing that $\Delta x = \Delta y$.
+
+\begin{equation}\label{eq61}
+T_n = \frac{T_{n+\Delta x} + T_{n-\Delta x} + T_{n+\Delta y} + T_{n-\Delta y}}{4} + \frac{\Delta T_g}{2}
+\end{equation}
+
+Where, in the case of uniform heat generation:
+
+\begin{conditions}
+\Delta T_g & $\frac{(\Delta x)^2 q'''}{2k}$
+\end{conditions}
+
+In our case, we consider $q''' = \text{\num{1e7}}$ and $k = 19.84$. Consequently, $\Delta T_g = 17.5\ {}^\circ F$. We also consider a surface temperature of $600\ {}^\circ F$.
+
+Our goal is to solve the matrix Equation~\ref{eq62} for $x$.
+
+\begin{equation}\label{eq62}
+A . x = b
+\end{equation}
+
+We can calculate a few values in order to construct the matrice $A$ and $b$, using Equation~\ref{eq61}. We can obtain:
+
+\begin{equation}\label{eq63}
+T(0,0) = T(1,0) + \frac{\Delta T_g}{2} \implies T(0,0) - T(1,0) = \frac{\Delta T_g}{2}
+\end{equation}
+
+\begin{equation}\label{eq64}
+T(1,0) = \frac{T(0,0) + T(2,0) + 2T(1,1)}{4} + \frac{\Delta T_g}{2} \implies T(1,0) - \frac{T(0,0)}{4} - \frac{T(2,0)}{4} - \frac{T(1,1)}{2} = \frac{\Delta T_g}{2}
+\end{equation}
+
+\begin{equation}\label{eq65}
+T(1,1) = \frac{2T(1,0) + 2T(2,1)}{4} + \frac{\Delta T_g}{2} \implies T(1,1) - \frac{T(1,0)}{2} - \frac{T(2,1)}{2} = \frac{\Delta T_g}{2}
+\end{equation}
+
+\begin{equation}\label{eq66}
+T(2,0) = \frac{T(1,0) + T(3,0) + 2T(2, 1)}{4} + \frac{\Delta T_g}{2} \implies T(2,0) - \frac{T(1,0)}{4} - \frac{T(3,0)}{4} - \frac{T(2,1)}{2} = \frac{\Delta T_g}{2}
+\end{equation}
+
+\begin{equation}\label{eq67}
+\begin{aligned}
+T(2,1) = \frac{T(1,1) + T(3,1) + T_S + T(2,0)}{4} + \frac{\Delta T_g}{2} \\ \implies T(2,1) - \frac{T(1,1)}{4} - \frac{T(3,1)}{4} - \frac{T(2,0)}{4} = \frac{T_S}{4} + \frac{\Delta T_g}{2}
+\end{aligned}
+\end{equation}
+
+$T(i,0)\ \text{and}\ T(i,1)\ \text{for}\ i \in [2,10]$ will be identical, given the geometry of the problem.
+
+\begin{equation}\label{eq68}
+T(11,0) = \frac{T(10,0) + 2T(11,1) + T_S}{4} + \frac{\Delta T_g}{2} \implies T(11,0) - \frac{T(11,1)}{2} - \frac{T(10,0)}{4} = \frac{T_S}{4} + \frac{\Delta T_g}{2}
+\end{equation}
+
+\begin{equation}\label{eq69}
+T(11,1) = \frac{T(11,0) + T(10,1) + 2T_S}{4} + \frac{\Delta T_g}{2} \implies T(11,1) - \frac{T(11,0)}{4} - \frac{T(10,1)}{4} = \frac{T_S + \Delta T_g}{2}
+\end{equation}
+
+Consequently, we can write $A$:
+
+\setcounter{MaxMatrixCols}{30}
+\tiny
+\[
+A_{0 \rightarrow 11}=
+  \begin{bmatrix}
+1     & -1    & 0     & 0     & 0     & 0     & 0     & 0     & 0     & 0     & 0     & 0     & 0     & 0     & 0 &     \\
+-0.25 & 1     & -0.5  & -0.25 & 0     & 0     & 0     & 0     & 0     & 0     & 0     & 0     & 0     & 0     & 0 &     \\
+0     & -0.5  & 1     & 0     & -0.5  & 0     & 0     & 0     & 0     & 0     & 0     & 0     & 0     & 0     & 0 &      \\
+0     & -0.25 & 0     & 1     & -0.5  & -0.25 & 0     & 0     & 0     & 0     & 0     & 0     & 0     & 0     & 0 &      \\
+0     & 0     & -0.25 & -0.25 & 1     & 0     & -0.25 & 0     & 0     & 0     & 0     & 0     & 0     & 0     & 0 &      \\
+0     & 0     & 0     & -0.25 & 0     & 1     & -0.5  & -0.25 & 0     & 0     & 0     & 0     & 0     & 0     & 0 & \dots     \\
+0     & 0     & 0     & 0     & -0.25 & -0.25 & 1     & 0     & -0.25 & 0     & 0     & 0     & 0     & 0     & 0 &      \\
+0     & 0     & 0     & 0     & 0     & -0.25 & 0     & 1     & -0.5  & -0.25 & 0     & 0     & 0     & 0     & 0 &      \\
+0     & 0     & 0     & 0     & 0     & 0     & -0.25 & -0.25 & 1     & 0     & -0.25 & 0     & 0     & 0     & 0 &      \\
+0     & 0     & 0     & 0     & 0     & 0     & 0     & -0.25 & 0     & 1     & -0.5  & -0.25 & 0     & 0     & 0 &      \\
+0     & 0     & 0     & 0     & 0     & 0     & 0     & 0     & -0.25 & -0.25 & 1     & 0     & -0.25 & 0     & 0 &      \\
+0     & 0     & 0     & 0     & 0     & 0     & 0     & 0     & 0     & -0.25 & 0     & 1     & -0.5  & -0.25 & 0 &      \\
+  \end{bmatrix}
+\]
+
+
+
+
+\tiny
+\[
+A_{12 \rightarrow 22}=
+  \begin{bmatrix}
+     & 0     & -0.25 & -0.25 & 1     & 0     & -0.25 & 0     & 0     & 0     & 0     & 0     & 0     & 0     & 0     \\
+     & 0     & 0     & -0.25 & 0     & 1     & -0.5  & -0.25 & 0     & 0     & 0     & 0     & 0     & 0     & 0     \\
+     & 0     & 0     & 0     & -0.25 & -0.25 & 1     & 0     & -0.25 & 0     & 0     & 0     & 0     & 0     & 0     \\
+     & 0     & 0     & 0     & 0     & -0.25 & 0     & 1     & -0.5  & -0.25 & 0     & 0     & 0     & 0     & 0     \\
+     & 0     & 0     & 0     & 0     & 0     & -0.25 & -0.25 & 1     & 0     & -0.25 & 0     & 0     & 0     & 0     \\
+ \dots    & 0     & 0     & 0     & 0     & 0     & 0     & -0.25 & 0     & 1     & -0.5  & -0.25 & 0     & 0     & 0     \\
+     & 0     & 0     & 0     & 0     & 0     & 0     & 0     & -0.25 & -0.25 & 1     & 0     & -0.25 & 0     & 0     \\
+     & 0     & 0     & 0     & 0     & 0     & 0     & 0     & 0     & -0.25 & 0     & 1     & -0.5  & -0.25 & 0     \\
+     & 0     & 0     & 0     & 0     & 0     & 0     & 0     & 0     & 0     & -0.25 & -0.25 & 1     & 0     & -0.25 \\
+     & 0     & 0     & 0     & 0     & 0     & 0     & 0     & 0     & 0     & 0     & -0.25 & 0     & 1     & -0.5  \\
+     & 0     & 0     & 0     & 0     & 0     & 0     & 0     & 0     & 0     & 0     & 0     & -0.25 & -0.25 & 1        
+  \end{bmatrix}
+\]
+
+\normalsize
+And we can also write $b$:
+
+\tiny
+\[
+b =
+  \begin{bmatrix}
+8.75 \\
+8.75 \\
+8.75 \\
+8.75\\
+158.75\\
+8.75\\
+158.75\\ 
+8.75\\
+158.75\\ 
+8.75\\
+158.75\\ 
+8.75 \\
+158.75 \\
+8.75 \\
+158.75\\
+8.75 \\
+158.75 \\
+8.75 \\
+158.75 \\
+8.75\\
+158.75\\ 
+158.75 \\
+308.75
+   \end{bmatrix}
+\]
+
+\normalsize
+
+
+We can now solve Equation~\ref{eq62}, using Python. The python script is given in~\ref{py1}. We obtain the following results (Equation~\ref{eq610}):
+
+\begin{equation}\label{eq610}
+\begin{aligned}
+T(0,0) = 723.8 \\
+T(1,0) = 715.1 \\
+T(1,1) = 703.2 \\
+T(2,0) = 695.1 \\
+T(2,1) = 673.8 \\
+T(3,0) = 682.5 \\
+T(3,1) = 662.0 \\
+T(4,0) = 675.9 \\
+T(4,1) = 656.8 \\
+T(5,0) = 672.5 \\
+T(5,1) = 654.3 \\
+T(6,0) = 670.6 \\
+T(6,1) = 652.9 \\
+T(7,0) = 668.9 \\
+T(7,1) = 651.8 \\
+T(8,0) = 666.7 \\
+T(8,1) = 650.2 \\
+T(9,0) = 662.5 \\
+T(9,1) = 647.2 \\
+T(10,0) = 654.0 \\
+T(10,1) = 641.1 \\
+T(11,0) = 636.3 \\
+T(11,1) = 628.1
+\end{aligned}
+\end{equation}
+
+
+\newpage
+\subsubsection{Python script}
+\label{py1}
+\begin{lstlisting}[language=python]
+import numpy as np
+
+m = 23
+dx = 0.1
+deltax, k, qtriple = (dx/12), 19.84, 1.e7
+ts = 600.
+dtg = (0.5*deltax**2)*qtriple/k
+
+amat = np.zeros((m,m))
+b = np.zeros(m)
+    
+amat[0,0] = 1.
+amat[0,1] = -1.
+b[0] = dtg/2.
+
+amat[1,0] = -0.25
+amat[1,1] = 1.
+amat[1,2] = -0.5
+amat[1,3] = -0.25
+b[1] = dtg/2.
+
+
+amat[2,1] = -0.5
+amat[2,2] = 1.
+amat[2,4] = -0.5
+b[2] = dtg/2.
+
+for i in range(3, m, 2):
+    try:
+        amat[i,i-2] = -0.25
+        amat[i,i] = 1.
+        amat[i,i+1] = -0.5
+        amat[i,i+2] = -0.25
+        b[i] = dtg/2.
+    except IndexError:
+        break
+
+for i in range(4, m, 2):
+    try:
+        amat[i,i-2] = -0.25
+        amat[i,i-1] = -0.25
+        amat[i,i] = 1.
+        amat[i,i+2] = -0.25
+        b[i] = ts/4. + dtg/2.
+    except IndexError:
+        break
+
+amat[m-1,m-1] = 1.
+amat[m-1,m-2] = -0.25
+amat[m-1,m-3] = -0.25
+b[m-1] = ts/2. + dtg/2.
+
+
+amat[m-2,m-2] = 1.
+amat[m-2,m-1] = -0.5
+amat[m-2,m-4] = -0.25
+b[m-2] = ts/4. + dtg/2.
+
+ysol = np.linalg.solve(amat,b)
+
+print('Temperature solution:')
+
+temp = []
+for i in range(12):
+    for j in range(2):
+        if i == 0 and j == 1:
+            continue
+        temp.append("T(%s,%s)" % (i, j))
+        
+for i,t in enumerate(temp):
+    print("%s = %.1f" % (t, ysol[i]))
+    
+# check of solution: 
+if not np.allclose(np.dot(amat, ysol), b):
+    print("Solution does not match!")
+\end{lstlisting}
+\newpage

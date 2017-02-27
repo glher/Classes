@@ -201,6 +201,31 @@
 \usepackage{algorithm}
 \usepackage[noend]{algpseudocode}
 \usepackage{kbordermatrix}
+\usepackage{listings}
+\definecolor{listinggray}{gray}{0.9}
+\definecolor{lbcolor}{rgb}{0.9,0.9,0.9}
+\lstset{
+ backgroundcolor=\color{lbcolor},
+ tabsize=4,
+ rulecolor=,
+ language=matlab,
+ basicstyle=\scriptsize,
+ upquote=true,
+ aboveskip={1.5\baselineskip},
+ columns=fixed,
+ showstringspaces=false,
+ extendedchars=true,
+ breaklines=true,
+ prebreak = \raisebox{0ex}[0ex][0ex]{\ensuremath{\hookleftarrow}},
+ frame=single,
+ showtabs=false,
+ showspaces=false,
+ showstringspaces=false,
+ identifierstyle=\ttfamily,
+ keywordstyle=\color[rgb]{0,0,1},
+ commentstyle=\color[rgb]{0.133,0.545,0.133},
+ stringstyle=\color[rgb]{0.627,0.126,0.941},
+}
 
 
 
@@ -390,7 +415,8 @@
 %\import{chapters/chapter02/}{chap02.tex}
 %\import{chapters/chapter03/}{chap03.tex}
 %\import{chapters/chapter04/}{chap04.tex}
-\import{chapters/chapter05/}{chap05.tex}
+%\import{chapters/chapter05/}{chap05.tex}
+\import{chapters/chapter06/}{chap06.tex}
 %
 %
 % And the appendix goes here
