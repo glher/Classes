@@ -5,11 +5,102 @@
 \chapter{Reactor Heat Generation}
 \label{chap:intro}
 
-\initial{S}everal exercises from the book written by M. M. El Wakil~\cite{book01} are tackled in this homework. The problems in this section relate to the fifth chapter of the book, covering the subject of heat conduction in reactor elements.
+\initial{S}everal exercises from the book written by M. M. El Wakil~\cite{book01} are tackled in this homework. The problems in this section relate to the sixth and seventh chapter of the book, covering the subject of heat conduction in reactor elements.
 
 %=======
-\section{[G1] - Fine mesh cruciform}
+\section{[6-20] - Variable heat generation}
 \label{prob51}
+
+\subsection{Problem}
+\textit{A cylindrical fuel elment, 0.06 ft in diameter using $UO_2$ as fuel material, generates \num{5e6} $Btu.h^{-1}.ft^{-3}$ at its surface when that surface is at $2000\ {}^\circ F^{-1}$. The thermal conductivity may be considered constant at $1.25\ Btu.h^{-1}.ft^{-1}.{}^\circ F^{-1}$. How much hotter would the center of this element operate if the heat generation increases by 1 percent for each 1000 ${}^\circ F^{-1}$ temperature rise above surface conditions instead of being uniform at the above value?}
+
+\subsection{Solution}
+
+In the uniform cylinder, we know Equation~\ref{eq611}.
+
+\begin{equation}\label{eq611}
+T_m = T_s + \frac{q'''R^2}{4k_f}
+\end{equation}
+
+Consequently, $T_m = 2900\ {}^\circ F^{-1}$.
+
+Now, if the heat generation depends on the temperature following the given relation, then we can write Equation~\ref{eq612}.
+
+\begin{equation}\label{eq612}
+q''' = q'''_s + 10^{-5}q'''_s\Delta T
+\end{equation}
+
+For each 1000 ${}^\circ F^{-1}$ temperature increase, q''' will gain 1 percent.
+
+We can now solve the Poisson equation for $T' = q'''_s + 10^{-5}q'''_s\Delta T$. The solution is given by Equation~\ref{eq613}.
+
+
+\begin{equation}\label{eq613}
+T' = AJ_0(\sqrt{\frac{10^{-5}q'''_s}{k_f}} r) + BY_0(\sqrt{\frac{10^{-5}q'''_s}{k_f}} r)
+\end{equation}
+
+We know two boundary conditions. First and foremost, the temperature needs to be finite at the center of the cylinder, $r=0$. Thus, considering that $Y_0(0) \rightarrow -\infty$, $B=0$. Next, we know that at the boundary, $q''' = \text{\num{5e6}}\ Btu.h^{-1}.ft^{-3}$. Consequently, since we have $T' = q'''$, we have Equation~\ref{eq614} at $R = 0.03\ ft$.
+
+
+\begin{equation}\label{eq614}
+AJ_0(\sqrt{\frac{10^{-5}q'''_s}{k_f}} R) = \text{\num{5e6}}
+\end{equation}
+
+Solving for $A$, we obtain $A = \text{\num{5.045e6}}$.
+
+So, we now have Equation~\ref{eq615}.
+
+
+\begin{equation}\label{eq615}
+\text{\num{5.045e6}} * J_0(\sqrt{\frac{10^{-5}q'''_s}{k_f}} r) = q'''_s + 10^{-5}q'''_s\Delta T
+\end{equation}
+
+At $r=0$, since $J_0(0) = 1$, we can write Equation~\ref{eq616}.
+
+\begin{equation}\label{eq616}
+\text{\num{5.045e6}} = \text{\num{5e6}} + 10^{-5} * \text{\num{5e6}} * \Delta T
+\end{equation}
+
+Finally, we obtain $\Delta T = T_m - T_s = 906.2\ {}^\circ F^{-1}$, hence $T_m = 2906.2\ {}^\circ F^{-1}$. If we take into account the given change in heat generation, we obtain a maximum temperature $6.2\ {}^\circ F^{-1}$ hotter.
+
+\section{7-1 - Outer square corner}
+\label{prob62}
+
+\subsection{Problem}
+\textit{Derive the finite difference equation of temperature for a nodal point at the outer square corner of a body with heat generation, having thermal conductivity $k$, and cooled by a fluid at $T_f$ with a uniform heat transfer coefficient $h$.}
+
+\subsection{Solution}
+
+We can write the heat balance for a node $n$ on a corner, $q_g + q_{xo} + q_{xi} + q_{yo} + q_{yi}$. In our case, $q_{xo} = h(\Delta x)(T_f - T_n)$ and $q_{yo} = h(\Delta y)(T_f - T_n)$.
+
+So, we can write Equation~\ref{eq617}, considering $\Delta x = \Delta y$.
+
+\begin{equation}\label{eq617}
+\frac{1}{2}q'''(\Delta x)^2 + k[(T_{n-\Delta x} - T_n) + (T_{n-\Delta y} - T_n)] + 2h\Delta x(T_f - T_n) = 0
+\end{equation}
+
+So, we can divide by k and reorganize.
+
+\begin{equation}\label{eq618}
+\frac{1}{2k}q'''(\Delta x)^2 + [(T_{n-\Delta x} - T_n) + (T_{n-\Delta y} - T_n)] + 2\frac{h\Delta x}{k}(T_f - T_n) = 0
+\end{equation}
+
+We can recognize the Biot number, $Bi_{\Delta x} = \frac{h\Delta x}{k}$, and $\Delta T_g = \frac{q'''(\Delta x)^2}{k}$.
+
+\begin{equation}\label{eq619}
+\frac{\Delta T_g}{2} + T_{n-\Delta x} + T_{n-\Delta y} - 2T_n + 2Bi_{\Delta x}T_f -  2Bi_{\Delta x}T_n = 0
+\end{equation}
+
+And so:
+
+\begin{equation}\label{eq620}
+T_n = \frac{\Delta T_g}{4Bi_{\Delta x} + 4} + \frac{T_{n-\Delta x} + T_{n-\Delta y} + 2Bi_{\Delta x}T_f}{2Bi_{\Delta x} + 2}
+\end{equation}
+
+
+
+\section{[G1] - Fine mesh cruciform}
+\label{prob63}
 
 \subsection{Problem}
 \textit{Calculate the temperature in a cruciform with a mesh $\Delta x = \Delta y = 0.1$.}
