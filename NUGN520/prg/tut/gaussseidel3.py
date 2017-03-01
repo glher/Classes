@@ -4,7 +4,7 @@
 
 # initialize guesses
 t1, t2, t3, t4, t5, t6 = 500., 500., 500., 500., 500., 500.
-print 'temperature solution (degrees F):'
+print('temperature solution (degrees F):')
 # iterate:
 for i in range(16):
     t1=t2+35
@@ -14,6 +14,5 @@ for i in range(16):
     t5=.25*(t4+t6)+335.
     t6=.25*t5+485.
     if i % 5 == 0:
-        print 'number of iterations: ', i+1
-        print t1, t2, t3, t4, t5, t6
-        print 
+        print('number of iterations: ', i+1)
+        print(t1, t2, t3, t4, t5, t6)
