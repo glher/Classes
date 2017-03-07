@@ -12,7 +12,7 @@
 \label{prob51}
 
 \subsection{Problem}
-\textit{A cylindrical fuel elment, 0.06 ft in diameter using $UO_2$ as fuel material, generates \num{5e6} $Btu.h^{-1}.ft^{-3}$ at its surface when that surface is at $2000\ {}^\circ F^{-1}$. The thermal conductivity may be considered constant at $1.25\ Btu.h^{-1}.ft^{-1}.{}^\circ F^{-1}$. How much hotter would the center of this element operate if the heat generation increases by 1 percent for each 1000 ${}^\circ F^{-1}$ temperature rise above surface conditions instead of being uniform at the above value?}
+\textit{A cylindrical fuel elment, 0.06 ft in diameter using $UO_2$ as fuel material, generates \num{5e6} $Btu.h^{-1}.ft^{-3}$ at its surface when that surface is at $2000\ {}^\circ F$. The thermal conductivity may be considered constant at $1.25\ Btu.h^{-1}.ft^{-1}.{}^\circ F^{-1}$. How much hotter would the center of this element operate if the heat generation increases by 1 percent for each 1000 ${}^\circ F$ temperature rise above surface conditions instead of being uniform at the above value?}
 
 \subsection{Solution}
 
@@ -22,7 +22,7 @@ In the uniform cylinder, we know Equation~\ref{eq611}.
 T_m = T_s + \frac{q'''R^2}{4k_f}
 \end{equation}
 
-Consequently, $T_m = 2900\ {}^\circ F^{-1}$.
+Consequently, $T_m = 2900\ {}^\circ F$.
 
 Now, if the heat generation depends on the temperature following the given relation, then we can write Equation~\ref{eq612}.
 
@@ -30,20 +30,18 @@ Now, if the heat generation depends on the temperature following the given relat
 q''' = q'''_s + 10^{-5}q'''_s\Delta T
 \end{equation}
 
-For each 1000 ${}^\circ F^{-1}$ temperature increase, q''' will gain 1 percent.
-
-We can now solve the Poisson equation for $T' = q'''_s + 10^{-5}q'''_s\Delta T$. The solution is given by Equation~\ref{eq613}.
+For each 1000 ${}^\circ F$ temperature increase, q''' will gain 1 percent. Hence, we can now solve the Poisson equation for $T' = q'''_s + 10^{-5}q'''_s\Delta T$. The solution is given by Equation~\ref{eq613}, following the book.
 
 
 \begin{equation}\label{eq613}
-T' = AJ_0(\sqrt{\frac{10^{-5}q'''_s}{k_f}} r) + BY_0(\sqrt{\frac{10^{-5}q'''_s}{k_f}} r)
+T' = AJ_0 \left( \sqrt{\frac{10^{-5}q'''_s}{k_f}} r \right) + BY_0 \left( \sqrt{\frac{10^{-5}q'''_s}{k_f}} r\right)
 \end{equation}
 
 We know two boundary conditions. First and foremost, the temperature needs to be finite at the center of the cylinder, $r=0$. Thus, considering that $Y_0(0) \rightarrow -\infty$, $B=0$. Next, we know that at the boundary, $q''' = \text{\num{5e6}}\ Btu.h^{-1}.ft^{-3}$. Consequently, since we have $T' = q'''$, we have Equation~\ref{eq614} at $R = 0.03\ ft$.
 
 
 \begin{equation}\label{eq614}
-AJ_0(\sqrt{\frac{10^{-5}q'''_s}{k_f}} R) = \text{\num{5e6}}
+AJ_0 \left( \sqrt{\frac{10^{-5}q'''_s}{k_f}} R \right) = \text{\num{5e6}}
 \end{equation}
 
 Solving for $A$, we obtain $A = \text{\num{5.045e6}}$.
@@ -52,7 +50,7 @@ So, we now have Equation~\ref{eq615}.
 
 
 \begin{equation}\label{eq615}
-\text{\num{5.045e6}} * J_0(\sqrt{\frac{10^{-5}q'''_s}{k_f}} r) = q'''_s + 10^{-5}q'''_s\Delta T
+\text{\num{5.045e6}} * J_0 \left( \sqrt{\frac{10^{-5}q'''_s}{k_f}} r \right) = q'''_s + 10^{-5}q'''_s\Delta T
 \end{equation}
 
 At $r=0$, since $J_0(0) = 1$, we can write Equation~\ref{eq616}.
@@ -61,7 +59,7 @@ At $r=0$, since $J_0(0) = 1$, we can write Equation~\ref{eq616}.
 \text{\num{5.045e6}} = \text{\num{5e6}} + 10^{-5} * \text{\num{5e6}} * \Delta T
 \end{equation}
 
-Finally, we obtain $\Delta T = T_m - T_s = 906.2\ {}^\circ F^{-1}$, hence $T_m = 2906.2\ {}^\circ F^{-1}$. If we take into account the given change in heat generation, we obtain a maximum temperature $6.2\ {}^\circ F^{-1}$ hotter.
+Finally, we obtain $\Delta T = T_m - T_s = 906.2\ {}^\circ F$, hence $T_m = 2906.2\ {}^\circ F$. If we take into account the given change in heat generation, we obtain a maximum temperature $6.2\ {}^\circ F$ hotter.
 
 \section{7-1 - Outer square corner}
 \label{prob62}

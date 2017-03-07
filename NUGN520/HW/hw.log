@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.8.24)  28 FEB 2017 16:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.8.24)  6 MAR 2017 18:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2412,7 +2412,7 @@ LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
 (Font)              scaled to size 11.15991pt on input line 30.
 LaTeX Font Info:    Font shape `T1/fnc/m/sc' will be
 (Font)              scaled to size 11.15991pt on input line 32.
- <logos/CSM.png, id=51, 306.14375pt x 309.155pt>
+ <logos/CSM.png, id=27, 306.14375pt x 309.155pt>
 File: logos/CSM.png Graphic file (type png)
 
 <use logos/CSM.png>
@@ -2454,11 +2454,11 @@ l.399 \newpage
 s been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.419 \import
-             {chapters/chapter06/}{chap06.tex} [2
+l.420 \import
+             {chapters/chapter07/}{chap07.tex} [2
 
 ]
-(./chapters/chapter06/chap06.tex
+(./chapters/chapter07/chap07.tex
 LaTeX Font Info:    Font shape `T1/fnc/m/sc' will be
 (Font)              scaled to size 10.18341pt on input line 5.
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
@@ -2473,36 +2473,44 @@ LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
 (Font)              scaled to size 11.15991pt on input line 14.
 LaTeX Font Info:    Font shape `T1/fnc/m/it' will be
 (Font)              scaled to size 10.18341pt on input line 15.
+
+<chapters/chapter07/fig/schema.pdf, id=54, 317.185pt x 189.70876pt>
+File: chapters/chapter07/fig/schema.pdf Graphic file (type pdf)
+
+<use chapters/chapter07/fig/schema.pdf>
+Package pdftex.def Info: chapters/chapter07/fig/schema.pdf used on input line 2
+3.
+(pdftex.def)             Requested size: 317.1842pt x 189.70828pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
  [1
 
 ]
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 9.29993pt on input line 78.
-LaTeX Font Info:    Font shape `T1/fnc/m/sc' will be
-(Font)              scaled to size 9.29993pt on input line 78.
- [2] [3]
+(Font)              scaled to size 6.50995pt on input line 67.
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 6.50995pt on input line 169.
-LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 6.32394pt on input line 170.
+(Font)              scaled to size 6.32394pt on input line 68.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 6.25598pt on input line 170.
+(Font)              scaled to size 6.25598pt on input line 68.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 6.25598pt on input line 170.
- [4]
-Underfull \vbox (badness 4765) has occurred while \output is active []
+(Font)              scaled to size 6.25598pt on input line 68.
+LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
+(Font)              scaled to size 9.29993pt on input line 82.
+LaTeX Font Info:    Font shape `T1/fnc/m/sc' will be
+(Font)              scaled to size 9.29993pt on input line 82.
 
- [5]
-[6] (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+[2 <./chapters/chapter07/fig/schema.pdf>] [3]
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2015/06/04 1.6 listings language file
 )
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 7.43994pt on input line 279.
+(Font)              scaled to size 7.43994pt on input line 127.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 7.35999pt on input line 280.
+(Font)              scaled to size 7.35999pt on input line 128.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 7.35999pt on input line 280.
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 280.
+(Font)              scaled to size 7.35999pt on input line 128.
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 128.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
@@ -2512,14 +2520,14 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             `cmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-LaTeX Font Info:    Try loading font information for TS1+fnc on input line 286.
+LaTeX Font Info:    Try loading font information for TS1+fnc on input line 133.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/fouriernc/ts1fnc.fd
 File: ts1fnc.fd 2005/12/13 font definitions for TS1/fnc.
 )
 LaTeX Font Info:    Font shape `TS1/fnc/m/n' will be
-(Font)              scaled to size 7.43994pt on input line 286.
+(Font)              scaled to size 7.43994pt on input line 133.
 Package microtype Info: Loading generic settings for font family
 (microtype)             `fnc' (encoding: TS1).
 (microtype)             For optimal results, create family-specific settings.
@@ -2527,8 +2535,10 @@ Package microtype Info: Loading generic settings for font family
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [7]
-[8]) (./hw.bbl
+ [4]
+[5]) [6
+
+] (./hw.bbl
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
 (nag)                Use \scshape or \textsc instead on input line 4.
@@ -2542,34 +2552,28 @@ This document will not have a glossary.
 
 Package nag Warning: 2 complaints in total.
 
-[9
-
+[7
 
 ]
 \tf@toc=\write10
 \openout10 = `hw.toc'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 435.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 435.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 436.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 436.
  (./hw.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 435.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 435.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 436.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 436.
 Package rerunfilecheck Info: File `hw.out' has not changed.
-(rerunfilecheck)             Checksum: CFB56C26F276B475DE32603BDF7FB243;693.
-
-
-LaTeX Font Warning: Size substitutions with differences
-(Font)              up to 2.01195pt have occurred.
-
+(rerunfilecheck)             Checksum: 8F541723BF993EFBDABF4C1D2A2EE842;281.
  ) 
 Here is how much of TeX's memory you used:
- 44722 strings out of 493029
- 848486 string characters out of 6136234
- 1276015 words of memory out of 5000000
- 47156 multiletter control sequences out of 15000+600000
- 108700 words of font info for 246 fonts, out of 8000000 for 9000
+ 44551 strings out of 493029
+ 845172 string characters out of 6136234
+ 1307025 words of memory out of 5000000
+ 47020 multiletter control sequences out of 15000+600000
+ 95547 words of font info for 205 fonts, out of 8000000 for 9000
  1146 hyphenation exceptions out of 8191
- 52i,13n,83p,10374b,2468s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 52i,13n,83p,10374b,2470s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/texliv
 e/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/t
 ype1/public/fourier/fourier-mex.pfb></usr/share/texlive/texmf-dist/fonts/type1/
@@ -2578,10 +2582,10 @@ public/fourier/fourier-ml.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
 pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/ncntrsbk/uncb8a.pfb></usr/sh
 are/texlive/texmf-dist/fonts/type1/urw/ncntrsbk/uncr8a.pfb></usr/share/texlive/
 texmf-dist/fonts/type1/urw/ncntrsbk/uncri8a.pfb>
-Output written on hw.pdf (13 pages, 134327 bytes).
+Output written on hw.pdf (11 pages, 139823 bytes).
 PDF statistics:
- 294 PDF objects out of 1000 (max. 8388607)
- 267 compressed objects within 3 object streams
- 123 named destinations out of 1000 (max. 500000)
- 46186 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 265 PDF objects out of 1000 (max. 8388607)
+ 219 compressed objects within 3 object streams
+ 92 named destinations out of 1000 (max. 500000)
+ 43071 words of extra memory for PDF output out of 51595 (max. 10000000)
 
