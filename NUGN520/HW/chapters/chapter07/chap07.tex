@@ -193,7 +193,7 @@ if not np.allclose(np.dot(amat, ysol), b):
 \end{lstlisting}
 \newpage
 
-\section{[7-13] - }
+\section{[7-13] - Heat flux}
 \label{prob72}
 
 \subsection{Problem}
@@ -246,3 +246,43 @@ q''_y\bigg\rvert_{x=0, y=b} = 2kCba^2
 \end{equation}
 
 So, we obtain $q''_x = \text{\num{2.5e4}}\ Btu.h^{-1}.ft^{-2}$ and $q''_y = \text{\num{5.0e4}}\ Btu.h^{-1}.ft^{-2}$.
+
+\section{[8-1] - Cool down time}
+\label{prob73}
+
+\subsection{Problem}
+\textit{A 2 in. diam. steel ball initially at a uniform $850{}^\circ F$, is suddenly subjected to an environment at $200{}^\circ F$. The natural convection heat transfer coefficient is $2\ Btu.h^{-1}.ft^{-2}.{}^\circ F^{-1}$. Find the time necessary for the ball to cool down to $300{}^\circ F$.}
+
+\subsection{Solution}
+
+The book~\cite{book01} gives us the relationship between the temperature in a two-bodies problem, Equation~\ref{eq715}.
+
+\begin{equation}\label{eq715}
+\frac{T_f - T(t)}{T_f - T_i} = e^{-t/\tau}
+\end{equation}
+
+Where:
+\begin{conditions}
+\tau & $\frac{c_1 \rho_1 V_1}{hA_1}$ \\
+1 & index relative to the cooling body
+\end{conditions}
+
+Knowing that the cooling body is a steel ball, we can obtain its density and specific heat capacity. Knowing it is a sphere, we can obtain its surface area and volume. The heat transfer coefficient being known, we can thus calculate $\tau = \frac{0.12 * 490 * \frac{4\pi * (0.0833)^3}{3}}{2 * 4\pi * (0.0833)^2} = 0.816$. Consequently, we have Equation~\ref{eq716}.
+
+\begin{equation}\label{eq716}
+\frac{200 - 300}{200 - 850} = 0.154 = e^{-t/\tau}
+\end{equation}
+
+\begin{equation}\label{eq717}
+t = -\tau \ln (0.154) = 1.528\ h
+\end{equation}
+
+The ball will cool down to $300{}^\circ F$ in $1.528\ h$, or roughly an hour and a half.
+
+\section{[8-4] - }
+\label{prob74}
+
+\subsection{Problem}
+\textit{A flat-plate fuel element $1.25 * 0.25$ in. in cross section is initially at a uniform $1000{}^\circ F$. Suddenly heat was generated at the rate of \num{1.5e7} $Btu.h^{-1}.ft^{-3}$. All surfaces were maintained at $1000{}^\circ F$. Find by a numerical technique the time it takes the element to reach a maximum temperature $99.5\%$ of the way to maximum steady-statetemperature. $k=1.085\ Btu.h^{-1}.ft^{-1}.{}^\circ F^{-1}$. $c = 0.06\ Btu.lb^-1.{}^\circ F^{-1}$. $\rho = 740 lb.ft^{-3}$.}
+
+\subsection{Solution}
