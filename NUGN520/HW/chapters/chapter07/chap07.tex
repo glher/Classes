@@ -107,16 +107,16 @@ The equation $A.x = b$ can thus be solved, using Python. The python script is gi
 
 \begin{equation}\label{eq76}
 \begin{aligned}
-T(0,0) = 1000.0 \\
-T(0,1) = 1000.0 \\
-T(1,0) = 804.0 \\
-T(1,1) = 740.9\\
-T(2,0) = 705.3\\
-T(2,1) = 665.0\\
-T(3,0) = 658.5\\
-T(3,1) = 635.7\\
-T(4,0) = 628.3\\
-T(4,1) = 617.8\\
+T(0,0) = 1000.0\\
+T(0,1) = 1000.0\\
+T(1,0) = 797.5\\
+T(1,1) = 736.6\\
+T(2,0) = 696.6\\
+T(2,1) = 659.4\\
+T(3,0) = 650.1\\
+T(3,1) = 630.3\\
+T(4,0) = 623.3\\
+T(4,1) = 614.5\\
 \end{aligned}
 \end{equation}
 
@@ -130,7 +130,7 @@ import numpy as np
 m = 10    # size of system is m x m
 
 dx = 0.12
-deltax, k, qtriple, h = (dx/10)**2, 10., 2.e6, 100.    # BG units
+deltax, k, qtriple, h = (dx/12)**2, 10., 2.e6, 100.    # BG units
 tb = 1000.
 ts = 600.
 dtg = (0.5*deltax)*qtriple/k
@@ -279,10 +279,170 @@ t = -\tau \ln (0.154) = 1.528\ h
 
 The ball will cool down to $300{}^\circ F$ in $1.528\ h$, or roughly an hour and a half.
 
-\section{[8-4] - }
+\section{[8-4] - Unsteady fuel element}
 \label{prob74}
 
 \subsection{Problem}
-\textit{A flat-plate fuel element $1.25 * 0.25$ in. in cross section is initially at a uniform $1000{}^\circ F$. Suddenly heat was generated at the rate of \num{1.5e7} $Btu.h^{-1}.ft^{-3}$. All surfaces were maintained at $1000{}^\circ F$. Find by a numerical technique the time it takes the element to reach a maximum temperature $99.5\%$ of the way to maximum steady-statetemperature. $k=1.085\ Btu.h^{-1}.ft^{-1}.{}^\circ F^{-1}$. $c = 0.06\ Btu.lb^-1.{}^\circ F^{-1}$. $\rho = 740 lb.ft^{-3}$.}
+\textit{A flat-plate fuel element $1.25 * 0.25$ in. in cross section is initially at a uniform $1000{}^\circ F$. Suddenly heat was generated at the rate of \num{1.5e7} $Btu.h^{-1}.ft^{-3}$. All surfaces were maintained at $1000{}^\circ F$. Find by a numerical technique the time it takes the element to reach a maximum temperature $99.5\%$ of the way to maximum steady-state temperature. $k=1.085\ Btu.h^{-1}.ft^{-1}.{}^\circ F^{-1}$. $c = 0.06\ Btu.lb^-1.{}^\circ F^{-1}$. $\rho = 740 lb.ft^{-3}$.}
 
 \subsection{Solution}
+
+The surface temperatures staying at $T_s = 1000{}^\circ F$, and using a symmetry argument, only five temperatures are to be obtained in a mesh with $\Delta x = \Delta y = 0.125$ in. Those are all temperatutes in the inner part of the plate.
+
+The book~cite{book01} tells us that in this case, the temperature at a time $t+\Delta t$ is given by Equation~\ref{eq718}.
+
+\begin{equation}\label{eq718}
+T_n^{t+\Delta t} = (1-4Fo)T_n^t + Fo(T_{n+\Delta x} + T_{n-\Delta x} + T_{n+\Delta y} + T_{n-\Delta y}) + 2Fo\Delta T_g
+\end{equation}
+
+Consequently, we can obtain the next timestep temperature for each point in our design. This system is solved using the python script given in~\ref{py2}.
+
+The steady-state solutions are obtained using the largest possible time steps, for $Fo=0.25$. We obtain the following steady-state temperature:
+
+\begin{equation}\label{eq719}
+\begin{aligned}
+T(1,1) = 1274.5\\
+T(2,1) = 1348.1\\
+T(3,1) = 1367.8\\
+T(4,1) = 1373.0\\
+T(5,1) = 1374.0\\
+\end{aligned}
+\end{equation}
+
+The $99.5\%$ value of the maximum temperature is thus $1367{}^\circ F$. By raffining the time step, using $Fo=0.1$, we can see that this happens at the 18th step. This corresponds to a time of $18 * ]frac{(\Delta x)^2 * 0.1}{\alpha} = \frac{\text{\num{1.085e-5}}}{\alpha}$. The thermal diffusivity $\alpha$ can be obtained using the relation~\ref{eq720}.
+
+\begin{equation}\label{eq720}
+\alpha = \frac{k}{\rho c}
+\end{equation}
+
+We obtain $\alpha = 0.024$. This gives us a time $t = 0.0004\ h = 1.6\ s$ necessary to reach $99.5\%$ of the maximum steady temperature.
+
+\newpage
+\subsubsection{Python script}
+\label{py2}
+\begin{lstlisting}[language=python]
+# initialize temp. values
+t11, t21, t31, t41, t51 = 1000., 1000., 1000., 1000., 1000.
+dx = 0.125
+deltax, k, qtriple = (dx/12)**2, 1.085, 1.5e7    # BG units
+ts = 1000.
+dtg2 = (0.5*deltax)*qtriple/(2*k)
+fo=0.25
+print('temperature solution (degrees F):')
+# iterate:
+for i in range(21):
+    t11n = (1-4*fo)*t11+fo*(t21+3*ts) + 2*fo*dtg2
+    t21n = (1-4*fo)*t21+fo*(t31+t11+2*ts) + 2*fo*dtg2
+    t31n = (1-4*fo)*t31+fo*(t41+t21+2*ts) + 2*fo*dtg2
+    t41n = (1-4*fo)*t41+fo*(t51+t31+2*ts) + 2*fo*dtg2
+    t51n = (1-4*fo)*t51+fo*(2*t41+2*ts) + 2*fo*dtg2
+    # roll values
+    t11, t21, t31, t41, t51 = t11n, t21n, t31n, t41n, t51n
+    if i % 5 == 0:
+        print('number of time steps: ', i+1)
+        print(t11, t21, t31, t41, t51)
+\end{lstlisting}
+\newpage
+
+\section{[H1] - Trigonomy solution}
+\label{prob75}
+
+\subsection{Problem}
+\textit{Let $T(x,y) = C \cos \left(\frac{\pi}{2a}x \right) \cos \left(\frac{\pi}{2b}y \right)$ and consider the steady-state heat conduction problem (7-34) and (7-35) of the textbook. (a) By using the approximate analytic method of section 7-13, complete the solution for the coefficient $C$ that was begun in class. (b) Let $a = b$ so that the domain becomes a square. With $x$ and $y$ in terms of $a$, and $T$ in units of $\frac{q'''a^2}{k}$, generate (i) a surface plot of the approximate solution, and (ii) a contour plot of the approximate solution. You may use software of your choice, whether it is Mathematica, Matlab, Python, or other.}
+
+\subsection{Solution}
+
+We assume a solution of the form $T(x,y) = C \cos \left(\frac{\pi}{2a}x \right) \cos \left(\frac{\pi}{2b}y \right)$. This solution verifies Equation~\ref{eq721}.
+
+\begin{equation}\label{eq721}
+\int_0^b \frac{\partial T}{\partial x}\bigg\rvert_{x=a} dy + \int_0^a \frac{\partial T}{\partial y}\bigg\rvert_{y=b} dx + \frac{q'''ab}{k} = 0
+\end{equation}
+
+We can solve the partial differential first.
+
+\begin{equation}\label{eq722}
+\frac{\partial T}{\partial x}\bigg\rvert_{x=a} = -C \frac{\pi}{2a} \sin \left(\frac{\pi}{2a}x \right) \cos \left(\frac{\pi}{2b}y \right) \bigg\rvert_{x=a} = -C \frac{\pi}{2a}\cos \left(\frac{\pi}{2b}y \right)
+\end{equation}
+
+
+\begin{equation}\label{eq723}
+\frac{\partial T}{\partial x}\bigg\rvert_{x=a} = -C \frac{\pi}{2b}\cos \left(\frac{\pi}{2a}x \right)
+\end{equation}
+
+Integrating, we obtain:
+
+\begin{equation}\label{eq724}
+\int_0^b \frac{\partial T}{\partial x}\bigg\rvert_{x=a} dy = -C \int_0^b \frac{\pi}{2a}\cos \left(\frac{\pi}{2b}y \right) dy
+\end{equation}
+
+\begin{equation}\label{eq725}
+\int_0^b \frac{\partial T}{\partial x}\bigg\rvert_{x=a} dy = -C \frac{b}{a}
+\end{equation}
+
+
+\begin{equation}\label{eq726}
+\int_0^a \frac{\partial T}{\partial y}\bigg\rvert_{y=b} dx = -C \frac{a}{b}
+\end{equation}
+
+Consequently, replacing in Equation~\ref{eq721} and reorganizing:
+
+
+\begin{equation}\label{eq726}
+C = \frac{q'''(ab)^2}{k(a^2 + b^2)}
+\end{equation}
+
+If $a = b$, then we have $C = \frac{q'''a^2}{2k}$.
+
+The surface and contour are plotted using the python script given in~\ref{py3}. They are visible on Figure~\ref{fig72} and Figure~\ref{fig73}.
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=1]{fig/figure_1.png}
+\caption{Surface plot}
+\label{fig72}
+\end{figure}
+
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=1]{fig/figure_2.png}
+\caption{Contour plot}
+\label{fig73}
+\end{figure}
+
+
+
+
+
+\newpage
+\subsubsection{Python script}
+\label{py3}
+\begin{lstlisting}[language=python]
+from pylab import *
+from mpl_toolkits.mplot3d import Axes3D
+
+# x in units of a, y in units of b, temp. T in units of q'''a^2/k.
+
+fig = figure()
+ax = Axes3D(fig)             # create 3D axes
+x = np.arange(-1, 1.01, 0.1)
+y = np.arange(-1, 1.01, 0.1)
+x, y = np.meshgrid(x, y)
+z = 0.5 * np.cos(np.pi*x/2) * np.cos(np.pi*y/2)
+ax.plot_surface(x, y, z, rstride=2, cstride=4, cmap=cm.hot)
+xlabel('x')
+ylabel('y')
+title('exact temperature solution')
+
+show()
+
+CS = contour(x, y, z)
+clabel(CS, inline=0, fontsize=12)
+title('exact temperature solution')
+xlabel('x')
+ylabel('y')
+show()
+
+# PS: import * is not recommended (cf import of numpy as np included in the background, confusing) I left it because it works.
+\end{lstlisting}
+\newpage

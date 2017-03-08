@@ -23,10 +23,9 @@ X = np.arange(-1, 1, 0.5)
 Y = np.arange(-1, 1, 0.5)
 X, Y = np.meshgrid(X, Y)
 Z = temp(X,Y,200)
-print X
-print Y
-print Z
-
+print(X)
+print(Y)
+print(Z)
 ax.plot_surface(X, Y, Z, rstride=2, cstride=4, cmap=cm.hot)
 xlabel('x')
 ylabel('y')

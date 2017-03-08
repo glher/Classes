@@ -3,7 +3,7 @@ import numpy as np
 m = 10    # size of system is m x m
 
 dx = 0.12
-deltax, k, qtriple, h = (dx/10)**2, 10., 2.e6, 100.    # BG units
+deltax, k, qtriple, h = (dx/12)**2, 10., 2.e6, 100.    # BG units
 tb = 1000.
 ts = 600.
 dtg = (0.5*deltax)*qtriple/k

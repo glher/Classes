@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.8.24)  7 MAR 2017 11:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.9.11)  7 MAR 2017 17:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1979,7 +1979,7 @@ Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
 \ALG@tmplength=\skip314
 )
 Document Style - pseudocode environments for use with the `algorithmicx' style
-) (/home/glher_a/texmf/tex/latex/kbordermatrix.sty
+) (/home/glher/texmf/tex/latex/commonstuff/kbordermatrix.sty
 Package: kbordermatrix 2011/09/21 Bordered matrix with brackets
 \kbcolsep=\skip315
 \kbrowsep=\skip316
@@ -2189,7 +2189,11 @@ Package glossaries Info: Writing glossary file hw.glo on input line 368.
 \openout8 = `hw.acn'.
 
 Package glossaries Info: Writing glossary file hw.acn on input line 368.
- (./hw.aux)
+ (./hw.aux
+
+LaTeX Warning: Label `eq726' multiply defined.
+
+)
 \openout1 = `hw.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 371.
@@ -2207,8 +2211,7 @@ LaTeX Font Info:    ... okay on input line 371.
 LaTeX Font Info:    Checking defaults for FML/fncmi/m/it on input line 371.
 LaTeX Font Info:    Try loading font information for FML+fncmi on input line 37
 1.
-
-(/usr/share/texlive/texmf-dist/tex/latex/fouriernc/fmlfncmi.fd
+ (/usr/share/texlive/texmf-dist/tex/latex/fouriernc/fmlfncmi.fd
 File: fmlfncmi.fd 2005/12/20 Fontinst v1.928 font definitions for FML/fncmi.
 )
 LaTeX Font Info:    ... okay on input line 371.
@@ -2412,7 +2415,7 @@ LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
 (Font)              scaled to size 11.15991pt on input line 30.
 LaTeX Font Info:    Font shape `T1/fnc/m/sc' will be
 (Font)              scaled to size 11.15991pt on input line 32.
- <logos/CSM.png, id=63, 306.14375pt x 309.155pt>
+ <logos/CSM.png, id=75, 306.14375pt x 309.155pt>
 File: logos/CSM.png Graphic file (type png)
 
 <use logos/CSM.png>
@@ -2474,7 +2477,7 @@ LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
 LaTeX Font Info:    Font shape `T1/fnc/m/it' will be
 (Font)              scaled to size 10.18341pt on input line 15.
 
-<chapters/chapter07/fig/schema.pdf, id=99, 317.185pt x 189.70876pt>
+<chapters/chapter07/fig/schema.pdf, id=114, 317.185pt x 189.70876pt>
 File: chapters/chapter07/fig/schema.pdf Graphic file (type pdf)
 
 <use chapters/chapter07/fig/schema.pdf>
@@ -2536,7 +2539,38 @@ Package microtype Info: Loading generic settings for font family
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [4]
-[5] [6] [7]) [8] (./hw.bbl
+[5] [6] [7] [8] [9]
+<chapters/chapter07/fig/figure_1.png, id=342, 462.528pt x 346.896pt>
+File: chapters/chapter07/fig/figure_1.png Graphic file (type png)
+
+<use chapters/chapter07/fig/figure_1.png>
+Package pdftex.def Info: chapters/chapter07/fig/figure_1.png used on input line
+ 400.
+(pdftex.def)             Requested size: 462.52686pt x 346.89514pt.
+
+Overfull \hbox (14.52686pt too wide) in paragraph at lines 400--401
+ [][] 
+ []
+
+[10] <chapters/chapter07/fig/figure_2.png, id=355, 462.528pt x 346.896pt>
+File: chapters/chapter07/fig/figure_2.png Graphic file (type png)
+
+<use chapters/chapter07/fig/figure_2.png>
+Package pdftex.def Info: chapters/chapter07/fig/figure_2.png used on input line
+ 408.
+(pdftex.def)             Requested size: 462.52686pt x 346.89514pt.
+
+Overfull \hbox (14.52686pt too wide) in paragraph at lines 408--409
+ [][] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [11 <./chapters/chapter07/fig/figure_1.png>] [12 <./chapters/chapter07/fig/fig
+ure_2.png>] [13]) [14
+
+] (./hw.bbl
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
 (nag)                Use \scshape or \textsc instead on input line 4.
@@ -2550,8 +2584,7 @@ This document will not have a glossary.
 
 Package nag Warning: 2 complaints in total.
 
-[9
-
+[15
 
 ]
 \tf@toc=\write10
@@ -2563,19 +2596,22 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 436.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 436.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 436.
 Package rerunfilecheck Info: File `hw.out' has not changed.
-(rerunfilecheck)             Checksum: 164885F7E63E5ECA0BF701FD6403E17B;850.
+(rerunfilecheck)             Checksum: 919D767981D292D80C44FCEBEA52CFF0;1066.
 
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 2.01195pt have occurred.
 
+
+LaTeX Warning: There were multiply-defined labels.
+
  ) 
 Here is how much of TeX's memory you used:
- 44755 strings out of 493029
- 848879 string characters out of 6136234
- 1307765 words of memory out of 5000000
- 47171 multiletter control sequences out of 15000+600000
- 112383 words of font info for 264 fonts, out of 8000000 for 9000
+ 44909 strings out of 493029
+ 850923 string characters out of 6136234
+ 1308558 words of memory out of 5000000
+ 47238 multiletter control sequences out of 15000+600000
+ 117470 words of font info for 276 fonts, out of 8000000 for 9000
  1146 hyphenation exceptions out of 8191
  52i,13n,83p,10374b,2470s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/texliv
@@ -2587,10 +2623,10 @@ rier/fourier-ms.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt0800.pfb>
 </usr/share/texlive/texmf-dist/fonts/type1/urw/ncntrsbk/uncb8a.pfb></usr/share/
 texlive/texmf-dist/fonts/type1/urw/ncntrsbk/uncr8a.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/urw/ncntrsbk/uncri8a.pfb>
-Output written on hw.pdf (13 pages, 156100 bytes).
+Output written on hw.pdf (19 pages, 302758 bytes).
 PDF statistics:
- 352 PDF objects out of 1000 (max. 8388607)
- 302 compressed objects within 4 object streams
- 114 named destinations out of 1000 (max. 500000)
- 46215 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 482 PDF objects out of 1000 (max. 8388607)
+ 421 compressed objects within 5 object streams
+ 185 named destinations out of 1000 (max. 500000)
+ 46249 words of extra memory for PDF output out of 51595 (max. 10000000)
 
