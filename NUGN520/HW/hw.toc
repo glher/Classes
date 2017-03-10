@@ -14,9 +14,9 @@
 \contentsline {section}{\numberline {1.4}[8-4] - Unsteady fuel element}{8}{section.1.4}
 \contentsline {subsection}{\numberline {1.4.1}Problem}{8}{subsection.1.4.1}
 \contentsline {subsection}{\numberline {1.4.2}Solution}{8}{subsection.1.4.2}
-\contentsline {subsubsection}{\numberline {1.4.2.1}Python script}{9}{subsubsection.1.4.2.1}
-\contentsline {section}{\numberline {1.5}[H1] - Trigonomy solution}{10}{section.1.5}
-\contentsline {subsection}{\numberline {1.5.1}Problem}{10}{subsection.1.5.1}
-\contentsline {subsection}{\numberline {1.5.2}Solution}{10}{subsection.1.5.2}
-\contentsline {subsubsection}{\numberline {1.5.2.1}Python script}{13}{subsubsection.1.5.2.1}
+\contentsline {subsubsection}{\numberline {1.4.2.1}Python script}{10}{subsubsection.1.4.2.1}
+\contentsline {section}{\numberline {1.5}[H1] - Trigonomy solution}{11}{section.1.5}
+\contentsline {subsection}{\numberline {1.5.1}Problem}{11}{subsection.1.5.1}
+\contentsline {subsection}{\numberline {1.5.2}Solution}{11}{subsection.1.5.2}
+\contentsline {subsubsection}{\numberline {1.5.2.1}Python script}{14}{subsubsection.1.5.2.1}
 \contentsline {chapter}{Bibliography}{15}{section*.2}

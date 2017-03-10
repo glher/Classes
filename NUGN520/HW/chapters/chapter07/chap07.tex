@@ -283,64 +283,110 @@ The ball will cool down to $300{}^\circ F$ in $1.528\ h$, or roughly an hour and
 \label{prob74}
 
 \subsection{Problem}
-\textit{A flat-plate fuel element $1.25 * 0.25$ in. in cross section is initially at a uniform $1000{}^\circ F$. Suddenly heat was generated at the rate of \num{1.5e7} $Btu.h^{-1}.ft^{-3}$. All surfaces were maintained at $1000{}^\circ F$. Find by a numerical technique the time it takes the element to reach a maximum temperature $99.5\%$ of the way to maximum steady-state temperature. $k=1.085\ Btu.h^{-1}.ft^{-1}.{}^\circ F^{-1}$. $c = 0.06\ Btu.lb^-1.{}^\circ F^{-1}$. $\rho = 740 lb.ft^{-3}$.}
+\textit{A flat-plate fuel element $1.25 * 0.25$ in. in cross section is initially at a uniform $1000{}^\circ F$. Suddenly heat was generated at the rate of \num{1.5e7} $Btu.h^{-1}.ft^{-3}$. All surfaces were maintained at $1000{}^\circ F$. Find by a numerical technique the time it takes the element to reach a maximum temperature $99.5\%$ of the way to maximum steady-state temperature. $k=1.085\ Btu.h^{-1}.ft^{-1}.{}^\circ F^{-1}$. $c = 0.06\ Btu.lb^{-1}.{}^\circ F^{-1}$. $\rho = 740 lb.ft^{-3}$.}
 
 \subsection{Solution}
 
-The surface temperatures staying at $T_s = 1000{}^\circ F$, and using a symmetry argument, only five temperatures are to be obtained in a mesh with $\Delta x = \Delta y = 0.125$ in. Those are all temperatutes in the inner part of the plate.
+The surface temperatures staying at $T_s = 1000{}^\circ F$, and using a symmetry argument, only five temperatures are to be obtained in a mesh with $\Delta x = \Delta y = 0.125$ in. For precision, I decided to refine the mesh (the impact is minimal), using $\Delta x = 0.0625$. Those are all temperatures in the inner part of the plate.
 
-The book~cite{book01} tells us that in this case, the temperature at a time $t+\Delta t$ is given by Equation~\ref{eq718}.
+The book~\cite{book01} tells us that in this case, the temperature at a time $t+\Delta t$ is given by Equation~\ref{eq718}.
 
 \begin{equation}\label{eq718}
-T_n^{t+\Delta t} = (1-4Fo)T_n^t + Fo(T_{n+\Delta x} + T_{n-\Delta x} + T_{n+\Delta y} + T_{n-\Delta y}) + 2Fo\Delta T_g
+T_n^{t+\Delta t} = (1-4Fo)T_n^t + Fo(T_{n+\Delta x}^t + T_{n-\Delta x}^t + T_{n+\Delta y}^t + T_{n-\Delta y}^t) + 2Fo\Delta T_g
 \end{equation}
 
 Consequently, we can obtain the next timestep temperature for each point in our design. This system is solved using the python script given in~\ref{py2}.
 
 The steady-state solutions are obtained using the largest possible time steps, for $Fo=0.25$. We obtain the following steady-state temperature:
-
+\tiny
 \begin{equation}\label{eq719}
 \begin{aligned}
-T(1,1) = 1274.5\\
-T(2,1) = 1348.1\\
-T(3,1) = 1367.8\\
-T(4,1) = 1373.0\\
-T(5,1) = 1374.0\\
+T(0,0) = 1000.0\\
+T(0,1) = 1000.0\\
+T(0,2) = 1000.0\\
+T(1,0) = 1000.0\\
+T(1,1) = 1300.8\\
+T(1,2) = 1388.6\\
+T(2,0) = 1000.0\\
+T(2,1) = 1439.5\\
+T(2,2) = 1577.7\\
+T(3,0) = 1000.0\\
+T(3,1) = 1504.4\\
+T(3,2) = 1668.2\\
+T(4,0) = 1000.0\\
+T(4,1) = 1535.1\\
+T(4,2) = 1711.3\\
+T(5,0) = 1000.0\\
+T(5,1) = 1549.5\\
+T(5,2) = 1731.7\\
+T(6,0) = 1000.0\\
+T(6,1) = 1556.4\\
+T(6,2) = 1741.3\\
+T(7,0) = 1000.0\\
+T(7,1) = 1559.6\\
+T(7,2) = 1745.9\\
+T(8,0) = 1000.0\\
+T(8,1) = 1561.1\\
+T(8,2) = 1748.0\\
+T(9,0) = 1000.0\\
+T(9,1) = 1561.7\\
+T(9,2) = 1748.9\\
+T(10,0) = 1000.0\\
+T(10,1) = 1561.9\\
+T(10,2) = 1749.2\\
 \end{aligned}
 \end{equation}
-
-The $99.5\%$ value of the maximum temperature is thus $1367{}^\circ F$. By raffining the time step, using $Fo=0.1$, we can see that this happens at the 18th step. This corresponds to a time of $18 * ]frac{(\Delta x)^2 * 0.1}{\alpha} = \frac{\text{\num{1.085e-5}}}{\alpha}$. The thermal diffusivity $\alpha$ can be obtained using the relation~\ref{eq720}.
+\normalsize
+The $99.5\%$ value of the maximum temperature is thus $1740.5{}^\circ F$. By refining the time step, using $Fo=0.1$, we can see that this happens at the 74th step. This corresponds to a time of $74 * \frac{(\Delta x)^2 * 0.1}{\alpha} = \frac{\text{\num{0.0289}}}{\alpha}$. The thermal diffusivity $\alpha$ can be obtained using the relation~\ref{eq720}.
 
 \begin{equation}\label{eq720}
 \alpha = \frac{k}{\rho c}
 \end{equation}
 
-We obtain $\alpha = 0.024$. This gives us a time $t = 0.0004\ h = 1.6\ s$ necessary to reach $99.5\%$ of the maximum steady temperature.
+We obtain $\alpha = 0.024\ ft^{-2}$. This gives us a time $t = 1.2\ h$ necessary to reach $99.5\%$ of the maximum steady temperature.
 
 \newpage
 \subsubsection{Python script}
 \label{py2}
 \begin{lstlisting}[language=python]
 # initialize temp. values
-t11, t21, t31, t41, t51 = 1000., 1000., 1000., 1000., 1000.
-dx = 0.125
+t11, t21, t31, t41, t51, t61, t71, t81, t91, t101 = 1000., 1000., 1000., 1000., 1000., 1000., 1000., 1000., 1000., 1000.
+t12, t22, t32, t42, t52, t62, t72, t82, t92, t102 = 1000., 1000., 1000., 1000., 1000., 1000., 1000., 1000., 1000., 1000.
+dx = 0.125/2
 deltax, k, qtriple = (dx/12)**2, 1.085, 1.5e7    # BG units
 ts = 1000.
-dtg2 = (0.5*deltax)*qtriple/(2*k)
+dtg2 = (0.5*deltax)*qtriple/(k)
 fo=0.25
 print('temperature solution (degrees F):')
 # iterate:
-for i in range(21):
-    t11n = (1-4*fo)*t11+fo*(t21+3*ts) + 2*fo*dtg2
-    t21n = (1-4*fo)*t21+fo*(t31+t11+2*ts) + 2*fo*dtg2
-    t31n = (1-4*fo)*t31+fo*(t41+t21+2*ts) + 2*fo*dtg2
-    t41n = (1-4*fo)*t41+fo*(t51+t31+2*ts) + 2*fo*dtg2
-    t51n = (1-4*fo)*t51+fo*(2*t41+2*ts) + 2*fo*dtg2
+for i in range(51):
+    t11n = (1-4*fo)*t11+fo*(t21+2*ts+t12) + 2*fo*dtg2
+    t21n = (1-4*fo)*t21+fo*(t31+t11+t22+ts) + 2*fo*dtg2
+    t31n = (1-4*fo)*t31+fo*(t41+t21+t32+ts) + 2*fo*dtg2
+    t41n = (1-4*fo)*t41+fo*(t51+t31+t42+ts) + 2*fo*dtg2
+    t51n = (1-4*fo)*t51+fo*(t61+t41+t52+ts) + 2*fo*dtg2
+    t61n = (1-4*fo)*t61+fo*(t71+t51+t62+ts) + 2*fo*dtg2
+    t71n = (1-4*fo)*t71+fo*(t81+t61+t72+ts) + 2*fo*dtg2
+    t81n = (1-4*fo)*t81+fo*(t91+t71+t82+ts) + 2*fo*dtg2
+    t91n = (1-4*fo)*t91+fo*(t101+t81+t92+ts) + 2*fo*dtg2
+    t101n = (1-4*fo)*t101+fo*(2*t91+ts+t102) + 2*fo*dtg2
+
+    t12n = (1-4*fo)*t12+fo*(2*t11+ts+t22) + 2*fo*dtg2
+    t22n = (1-4*fo)*t22+fo*(t12+t32+2*t21) + 2*fo*dtg2
+    t32n = (1-4*fo)*t32+fo*(t22+t42+2*t31) + 2*fo*dtg2
+    t42n = (1-4*fo)*t42+fo*(t32+t52+2*t41) + 2*fo*dtg2
+    t52n = (1-4*fo)*t52+fo*(t42+t62+2*t51) + 2*fo*dtg2
+    t62n = (1-4*fo)*t62+fo*(t52+t72+2*t61) + 2*fo*dtg2
+    t72n = (1-4*fo)*t72+fo*(t62+t82+2*t71) + 2*fo*dtg2
+    t82n = (1-4*fo)*t82+fo*(t72+t92+2*t81) + 2*fo*dtg2
+    t92n = (1-4*fo)*t92+fo*(t82+t102+2*t91) + 2*fo*dtg2
+    t102n = (1-4*fo)*t102+fo*(2*t92+2*t101) + 2*fo*dtg2
     # roll values
-    t11, t21, t31, t41, t51 = t11n, t21n, t31n, t41n, t51n
+    t11, t21, t31, t41, t51, t61, t71, t81, t91, t101 = t11n, t21n, t31n, t41n, t51n, t61n, t71n, t81n, t91n, t101n
+    t12, t22, t32, t42, t52, t62, t72, t82, t92, t102 = t12n, t22n, t32n, t42n, t52n, t62n, t72n, t82n, t92n, t102n
     if i % 5 == 0:
         print('number of time steps: ', i+1)
-        print(t11, t21, t31, t41, t51)
+        print(t12, t22, t32, t42, t52, t62, t72, t82, t92, t102)
 \end{lstlisting}
 \newpage
 
