@@ -337,13 +337,13 @@ T(10,2) = 1749.2\\
 \end{aligned}
 \end{equation}
 \normalsize
-The $99.5\%$ value of the maximum temperature is thus $1740.5{}^\circ F$. By refining the time step, using $Fo=0.1$, we can see that this happens at the 74th step. This corresponds to a time of $74 * \frac{(\Delta x)^2 * 0.1}{\alpha} = \frac{\text{\num{0.0289}}}{\alpha}$. The thermal diffusivity $\alpha$ can be obtained using the relation~\ref{eq720}.
+The $99.5\%$ value of the maximum temperature is thus $1740.5{}^\circ F$. By refining the time step, using $Fo=0.1$, we can see that this happens at the 74th step. This corresponds to a time of $74 * \frac{(\Delta x)^2 * 0.1}{\alpha} = \frac{\text{\num{0.0002}}}{\alpha}$. The thermal diffusivity $\alpha$ can be obtained using the relation~\ref{eq720}.
 
 \begin{equation}\label{eq720}
 \alpha = \frac{k}{\rho c}
 \end{equation}
 
-We obtain $\alpha = 0.024\ ft^{2}.h^{-1}$. This gives us a time $t = 1.2\ h$ necessary to reach $99.5\%$ of the maximum steady temperature.
+We obtain $\alpha = 0.024\ ft^{2}.h^{-1}$. This gives us a time $t = 0.0084\ h = 30 \ s$ necessary to reach $99.5\%$ of the maximum steady temperature.
 
 \newpage
 \subsubsection{Python script}
