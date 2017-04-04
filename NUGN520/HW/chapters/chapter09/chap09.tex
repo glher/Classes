@@ -1,0 +1,265 @@
+%
+% File: chap01.tex
+%
+\let\textcircled=\pgftextcircled
+\chapter{Heat transfer and fluid flow, nonmetallic coolants}
+\label{chap:intro}
+
+\initial{S}everal exercises from the book written by M. M. El Wakil~\cite{book01} are tackled in this homework. The problems in this section relate to the ninth chapter of the book, covering the subject of heat transfer and fluid flow, for nonmetallic coolants.
+
+%=======
+\section{[9-3] - Nitrogen-cooled reactor}
+\label{prob91}
+
+
+\subsection{Problem}
+\textit{A nitrogen-cooled reactor uses $UO_2$ fuel. The fuel elements are $0.5\ in$ in diameter and are encased in a graphite can $0.1\ in$ thick. At a particular cross section the coolant pressure and bulk temperature are 6 atm and $1000{}^\circ F$. The stream velocity is 375 fps. At the same section the volumetric thermal source strength is \num{2e6} $Btu.h^{-1}.ft^{-3}$ and the maximum fuel temperature is $5000{}^\circ F$. Determine (a) the heat-transfer coefficient and (b) the necessary equivalent diameter of the coolant channel. Neglect contact resistance between the fuel and the graphite. Use $k_g = 35\ Btu.h^{-1}.ft^{-1}.{}^\circ F^{-1}$ (aged).}
+
+\subsection{Solution}
+
+We can use Equation 5.38a from the book~\cite{book01}, which states, for a cylindrical fuel element with cladding and coolant:
+
+\begin{equation}
+T_{f,m} - T_b = \frac{q''' r_f^2}{2 k_f} + q'''r_f\left( \frac{r_w - r_f}{k_g} + \frac{1}{h} \right)
+\end{equation}
+
+Where:
+
+\begin{conditions}
+T_{f,m} & Maximum temperature in the fuel \\
+T_b & Coolant bulk temperature \\
+r_f & Fuel radius position \\
+r_w & Wall radius position \\
+k_g & Aged thermal conductivity of graphite
+\end{conditions}
+
+We can reorganize the terms to express $h$. Doing so gives us:
+
+
+\begin{equation}
+h = \frac{1}{((5000 - 1000 - \frac{1}{2e6*(0.25/12)} \left( \frac{2e6*(0.25/12)^2}{2*1.1} \right) - \frac{(0.1/12)}{35}}
+\end{equation}
+
+And so, $h = 11.6\ Btu.h^{-1}.ft^{-2}.{}^\circ F^{-1}$.
+
+We can now use the Dittus-Boelter equation, $Nu = 0.023Re^{0.8}Pr^{0.4}$, to compute the equivalent diameter needed. The bulk properties are used in this correlation.
+
+This equation translates to:
+
+\begin{equation}
+\frac{hD_e}{k} = 0.023 \left( \frac{D_e v \rho}{\mu} \right)^{0.8} \left( \frac{c_p \mu}{k} \right)^{0.4} 
+\end{equation}
+
+This gives:
+
+
+\begin{equation}
+D_e = \left( 0.023 \left( \frac{k}{h} \frac{v \rho}{\mu} \right)^{0.8} \left( \frac{c_p \mu}{k} \right)^{0.4} \right)^5
+\end{equation}
+
+Using data from tables of Nitrogen at 6 atn and $1000{}^\circ F$, we get:
+
+\begin{conditions}
+k & ?\\
+v & $375\ fps = x\ fph$\\
+\rho & $0.16\ lb.ft^{-3} $\\
+\mu & $8.76\ lb.ft^{-1}.h^{-1}$\\
+c_p & $0.27\ Btu.lb^{-1}.{}^\circ F^{-1}$\\
+h & $11.6\ Btu.h^{-1}.ft^{-2}.{}^\circ F^{-1}$
+\end{conditions}
+
+
+
+\section{[9-6] - W'/q}
+\label{prob92}
+
+
+\subsection{Problem}
+\textit{Ligth liquid water is used as a reactor coolant. In a particular channel, the average bulk temperature is $300{}^\circ F$. Determine the percent change in $W'/q$ if it were to be used in the same channel, with the same mass-flow rate, the same mean temperature between cladding and coolant, but at average bulk temperature of $200{}^\circ F$ and $400{}^\circ F$. Assume saturated conditions in all cases.}
+
+\subsection{Solution}
+
+Equation 9.9 from the book~\cite{book01} can be used. It states:
+
+
+\begin{equation}
+\frac{W'}{q} = 7.07*10^{-14} \left( \frac{1}{D_e^{0.2}} \right) \left( \frac{v^{2.8}}{h\Delta T_m} \right) \rho^{0.8} \mu^{0.2} = \alpha \rho^{0.8} \mu^{0.2}
+\end{equation}
+
+$\alpha$ can be taken as a constant given the data. The only variable is the change in bulk temperature, implying a change in density and viscosity. The table from the appendix gives the following data:
+
+\begin{conditions}
+\rho(200{}^\circ F) & $60.1\ lb.ft^{-3}$ \\
+\rho(300{}^\circ F) & $57.3\ lb.ft^{-3}$\\
+\rho(400{}^\circ F) & $53.6\ lb.ft^{-3}$\\
+\mu(200{}^\circ F) & $0.74\ lb.ft^{-1}.h^{-1}$\\
+\mu(300{}^\circ F) & $0.45\ lb.ft^{-1}.h^{-1}$\\
+\mu(400{}^\circ F) & $0.33\ lb.ft^{-1}.h^{-1}$
+\end{conditions}
+
+So, we get :
+
+\begin{equation}
+\frac{W'}{q}\bigg\rvert_{T_b = 300{}^\circ F} = 21.7 \alpha
+\end{equation}
+
+
+\begin{equation}
+\frac{W'}{q}\bigg\rvert_{T_b = 200{}^\circ F} = 24.9 \alpha = 11.1\% \frac{W'}{q}\bigg\rvert_{T_b = 300{}^\circ F}
+\end{equation}
+
+
+\begin{equation}
+\frac{W'}{q}\bigg\rvert_{T_b = 400{}^\circ F} = 19.4 \alpha = -10.6\% \frac{W'}{q}\bigg\rvert_{T_b = 300{}^\circ F}
+\end{equation}
+
+\section{[J1] - Temperature distribution}
+\label{prob93}
+
+
+\subsection{Problem}
+\textit{For pressure driven laminar flow between parallel plates of separation $h$, the velocity components are $u = U(1-y^2/h^2)$, $v = w = 0$, where $U$ is the centerline velocity. Similarly to the example done in class, use an energy equation to find the temperature distribution $T(y)$ for a constant wall temperature $T_w$.}
+
+
+\subsection{Solution}
+We can write the energy equation:
+
+\begin{equation}
+\rho c_p \left( \frac{\partial T}{\partial t} + \vec{v}.\nabla T \right) = k \nabla^2 T + \mu \Phi + \dot{q}
+\end{equation}
+
+In a steady state, with constant heat generation and no dissipation terms, we can write:
+
+
+\begin{equation}
+\rho c_p \left( \vec{v}.\nabla T \right) = k \nabla^2 T
+\end{equation}
+
+In 2-D cartesian coordinates:
+
+\begin{equation}
+\rho c_p \left( u\frac{\partial T}{\partial x} + v\frac{\partial T}{\partial y} \right) = k \left( \frac{\partial^2 T}{\partial x^2} + \frac{\partial^2 T}{\partial y^2} \right)
+\end{equation}
+
+Noting that $\alpha = \frac{k}{\rho c_p}$, and that $v = 0$, we can write:
+
+
+\begin{equation}
+\frac{u}{\alpha} \frac{\partial T}{\partial x} = \frac{\partial^2 T}{\partial x^2} + \frac{\partial^2 T}{\partial y^2}
+\end{equation}
+
+We can assume that the rate of change of temperature in the x-direction will be negligible compared to the rate of change in temperature in the y-direction, thus, $\frac{\partial^2 T}{\partial x^2} << \frac{\partial^2 T}{\partial y^2}$. We can now sustitute the velocity distribution $u(y)$:
+
+
+\begin{equation}
+\frac{U}{\alpha} \left( 1 - \frac{y^2}{h^2} \right) \frac{\partial T}{\partial x} = \frac{\partial^2 T}{\partial y^2}
+\end{equation}
+
+Integration with respect to y, we obtain:
+
+\begin{equation}
+\frac{\partial T}{\partial y} = \frac{U}{\alpha} \frac{\partial T}{\partial x} \left( y - \frac{y^3}{3h^2} \right) + C_1
+\end{equation}
+
+Knowing the symmetry boundary condition $\frac{\partial T}{\partial y}\bigg\rvert_{y = 0} = 0$, we can set $C_1 = 0$. Integrating a second time:
+
+
+\begin{equation}
+T(y) = \frac{U}{2\alpha} \frac{\partial T}{\partial x} \left( y^2 - \frac{y^4}{6h^2} \right) + C_2
+\end{equation}
+
+Knowing the boundary condition $T(y = 0) = T_m$, we can set $C_2 = T_m$. However, this implies knowing $T_m$. Another boundary condition states that $T(y = h/2) = T_w$, $T_w$ being the temperature at the plate surface. In that case, $C_2 = T_m = T_w - \frac{23}{192}\frac{U}{\alpha}\frac{\partial T}{\partial x} h^2$.
+
+And so,
+
+
+\begin{equation}
+T(y) = \frac{U}{2\alpha} \frac{\partial T}{\partial x} \left( y^2 - \frac{y^4}{6h^2} \right) + T_w - \frac{23}{192}\frac{U}{\alpha}\frac{\partial T}{\partial x} h^2
+\end{equation}
+
+
+\section{[J2] - }
+\label{prob94}
+
+
+\subsection{Problem}
+\textit{Consider steady laminar fluid flow in a fixed duct of equilateral triangular cross section. Take the side length as $s$ and the center of the triangle at the origin, with one side parallel to the $x$ axis. (a) Write the equations of the line segments defining the sides of the triangle. (b) Using from (a) a product form for the velocity of the fluid, develop a solution of the Navier-Stokes equation. Gravity may be ignored.}
+
+\subsection{Solution}
+
+The equation defining the segments of the triangle are:
+
+
+\begin{equation}
+y = -\frac{s}{2\sqrt{3}}
+\end{equation}
+
+\begin{equation}
+y = x\sqrt{3} + \frac{s}{\sqrt{3}}
+\end{equation}
+
+\begin{equation}
+y = -x\sqrt{3} + \frac{s}{\sqrt{3}}
+\end{equation}
+
+We can then define the section of the triangle to be:
+
+\begin{equation}
+S(x,y) = \left( y + \frac{s}{2\sqrt{3}} \right) \left( y + x\sqrt{3} - \frac{s}{\sqrt{3}} \right) \left( y - x\sqrt{3} - \frac{s}{\sqrt{3}} \right)
+\end{equation}
+
+The Navier-Stokes equation can be written:
+
+\begin{equation}
+\mu \left( \frac{\partial^2 v_z}{\partial x^2} + \frac{\partial^2 v_z}{\partial y^2} \right) = \frac{\partial p}{\partial z}
+\end{equation}
+
+We can assume that the velocity in the z-direction depends on the section, so that:
+
+\begin{equation}
+v_z = C_1 S(x,y)
+\end{equation}
+
+And so:
+
+\begin{equation}
+\frac{\partial^2 v_z}{\partial x^2} = C_1 (-6y - s\sqrt{3})
+\end{equation}
+
+\begin{equation}
+\frac{\partial^2 v_z}{\partial y^2} = C_1 (6y - s\sqrt{3})
+\end{equation}
+
+
+\begin{equation}
+\frac{\partial^2 v_z}{\partial x^2} + \frac{\partial^2 v_z}{\partial y^2} = - 2 C_1 s\sqrt{3}
+\end{equation}
+
+Substituting this equation into the Navier-Stokes equation:
+
+
+\begin{equation}
+- 2 C_1 s\sqrt{3} = \frac{1}{\mu}\frac{\partial p}{\partial z} \implies C_1 = \frac{1}{2\mu s\sqrt{3}}\frac{\partial p}{\partial z}
+\end{equation}
+
+And consequently,
+
+
+\begin{equation}
+v_z = \frac{1}{2\mu s\sqrt{3}}\frac{\partial p}{\partial z} \left( y + \frac{s}{2\sqrt{3}} \right) \left( y + x\sqrt{3} - \frac{s}{\sqrt{3}} \right) \left( y - x\sqrt{3} - \frac{s}{\sqrt{3}} \right)
+\end{equation}
+
+\section{[J3] - }
+\label{prob95}
+
+
+\subsection{Problem}
+\textit{Scaling for the Navier-Stokes (NS) equation.  Consider the NS equation with gravity neglected, $\rho \frac{d\vec{V}}{dt} = - \nabla p + \mu \nabla^2 \vec{V}$. Suppose that $p(\vec{x}, t)$ and $\vec{V}(\vec{x}, t)$ solve these equations. There are scaling relationships, $\vec{V_{\tau}} = \tau^{\alpha} \vec{V} (\tau^{\beta} \vec{x}, \tau^{\gamma} t)$ and $p_{\tau} = \tau^{\delta} p (\tau^{\beta} \vec{x}, \tau^{\gamma} t)$ for any positive $\tau$, such that $p_{\tau}$ and $\vec{V_{\tau}}$ also solve the NS equation. (a) What are the relations between the exponents $\alpha, \beta, \gamma, \text{and} \delta$ for this scaling to hold? (b) The equation of continuity also holds, $\nabla \cdot \vec{V_{\tau}} = 0$. Does this impose any further condition on the four exponents? Why or why not?}
+
+\subsection{Solution}
+
+
+
+
+
+

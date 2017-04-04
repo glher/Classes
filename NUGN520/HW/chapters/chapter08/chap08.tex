@@ -1,0 +1,310 @@
+%
+% File: chap01.tex
+%
+\let\textcircled=\pgftextcircled
+\chapter{Heat transfer and fluid flow, nonmetallic coolants}
+\label{chap:intro}
+
+\initial{S}everal exercises from the book written by M. M. El Wakil~\cite{book01} are tackled in this homework. The problems in this section relate to the ninth chapter of the book, covering the subject of heat transfer and fluid flow, for nonmetallic coolants.
+
+%=======
+\section{[9-1] - Heat transfer and neutron flux}
+\label{prob81}
+
+\subsection{Problem}
+\textit{A research reactor core is cubical, 20 ft on the side. The fuel elements are 1-in.-diameter solid natural uranium metal rods, placed horizontally in the center of 3-in.-diameter graphite holes. Air is the coolant, forced at atmospheric pressure and an initial velovity of 15 fps. For the centermost fuel element, air enters at $80{}^\circ F$ and leaves at $190{}^\circ F$. Its surface temperature averages $425{}^\circ F$. Calculate (a) the heat-transfer coefficient, and (b) the maximum neutron flux in the core, neglecting cladding and extrapolation lengths.}
+
+\subsection{Solution}
+
+The heat transfer coefficient is given by Equation~\ref{eq81}.
+
+\begin{equation}\label{eq81}
+h = \frac{q}{A_s(T_w - T_f)}
+\end{equation}
+
+Where:
+\begin{conditions}
+A_s & Surface area \\
+T_w & Surface temperature \\
+T_f & Fluid temperature
+\end{conditions}
+
+The surface temperature is known, $T_w = 425{}^\circ F$. The fluid temperature changes along the x-direction. An average along this dimension can approximate this value, and so $T_f = \frac{190 + 80}{2} = 135{}^\circ F$. The surface area is given by $A_s = L * P = 2 \pi r_i * L$, $r_i$ being the radius of the fuel rod, and L the length of the rod.
+
+Consequently, the only unknown is $q$, which can be obtained by using Equation~\ref{eq82}.
+
+\begin{equation}\label{eq82}
+q = \dot{m}c_p(T_{f,f} - T_{f,i})
+\end{equation}
+
+Where:
+\begin{conditions}
+T_{f,f} & Final fluid temperature \\
+T_{f,i} & Initial fluid temperature \\
+\dot{m} & Mass flow rate
+\end{conditions}
+
+The mass flow rate is given by Equation~\ref{eq83}. In this case, $v = 15\ fps = 54000\ fph$, and the density of air at an average of $135{}^\circ F$ can be taken to be $\rho = 0.07\ lb.ft^{-3}$. The cross section area is $A_c = \pi(R^2 - r_i^2)$, where $R$ is the radius of the graphite hole.
+
+\begin{equation}\label{eq83}
+\dot{m} = \rho v A_c = 0.07 * 54000 * \pi(0.125^2-0.042^2) = 164.6\ lb.h^{-1}
+\end{equation}
+
+At the average fluid temperature, $c_p = 0.24\ Btu.lb^{-1}.{}^\circ F^{-1}$. We can thus write:
+
+\begin{equation}\label{eq84}
+q = 164.6*0.24*(190-80) = 4345.4\ Btu.h^{-1}
+\end{equation}
+
+\begin{equation}\label{eq85}
+h = \frac{4345.4}{2\pi * 0.042 * 20 * (425 - 135)} = 2.84\ Btu.h^{-1}.ft^{-2}.{}^\circ F^{-1}
+\end{equation}
+
+Now, in order to calculate the neutron flux, we can use Equation~\ref{eq86}.
+
+\begin{equation}\label{eq86}
+\phi = \frac{q'''}{GN\sigma c}
+\end{equation}
+
+G is the energy per fission, taken to be 190 MeV, $c$ is a conversion factor ($c = \text{\num{1.5477e-8}}$).
+
+The cross-section can be calculated using the correlation $\sigma = 0.8862 * \sigma_0 * (\frac{T_0}{T})^{0.5} = 0.8862 * \text{\num{577.1e-24}} * (\frac{293}{T})^{0.5}$.
+
+N is the number density, $N = \frac{N_A e \rho}{M_f}$, in which $\rho$ depends (slightly) on the temperature.
+
+Hence, in order to compute $\sigma$ and N, the maximum fuel temperature, at $r=0$, must be obtained (to then compute the maximum neutron flux). This is done using Equation~\ref{eq87} (equation 5.27 in~\cite{book01}.
+
+\begin{equation}\label{eq87}
+T_m = T_s + \frac{q'''}{2k_f}s^2
+\end{equation}
+
+$k_f$ is equal to $15.9\ Btu.h^{-1}.ft^{-1}.{}^\circ F^{-1}$ in our case, and $s = 0.042\ ft$. So, we obtain $T_m = 1202\ {}^\circ F^{-1}$. The density of uranium at this temperature is $\rho = 18.33\ g.cm^{-3}$, and the cross-section is calculated to be $\sigma = 252.5\ b$. The number density can thus be derived, and $N = \text{\num{3.29e20}}$.
+
+
+Finally, we can calculate $q'''$ from $q$:
+
+\begin{equation}\label{eq88}
+q''' = \frac{q}{V} = \frac{q}{\frac{4}{3}\pi r_i^3} = \text{\num{1.4e7}}\ Btu.h^{-1}.ft^{-3}
+\end{equation}
+
+And now, we can compute the maximum neutron flux, $\phi = \text{\num{5.74e13}}\ s^{-1}.cm^{-2}$.
+
+
+\section{[9-2] - Heat transfer and pumping power}
+\label{prob82}
+
+\subsection{Problem}
+\textit{Compare the heat transfer coefficients and the pumping power (hp) per 1000-ft length of 1-in.-ID smooth-drawn tubing of the following coolant: air at 10 atm, 100 fps, and $400{}^\circ F$ ; and water at 20 fps and $400{}^\circ F$.}
+
+\subsection{Solution}
+
+We can use the Dittus-Boelter correlation to obtain h by calculating the Nusselt number, Equation~\ref{eq89}
+
+\begin{equation}\label{eq89}
+Nu = 0.023Re^{0.8}Pr^{0.4} = \frac{hD_e}{k}
+\end{equation}
+
+All the unknown can be obtained in tables. Finding the data for air at 10 atm is however very challenging and cumbersome, especially in imperial units. The following data~\cite{nasaair10atm} was used:
+
+\begin{conditions}
+k & $0.9\ cal.cm^{-1}.s^{-1}.K^{-1} = 217.7\ Btu.h^{-1}.ft^{-1}.{}^\circ F^{-1}$ \\
+D_e & $1\ in = 0.083\ ft = 2.54\ cm$ \\
+v & $100\ fps = 360000\ fph = 3048\ cm.s^{-1}$ \\
+\rho & $0.5\ lb.ft^{-3} = 0.008 g.cm^{-3}$ \\
+\mu & $2.6\ g.cm^{-1}.s^{-1}$ \\
+c_p & $0.246\ cal.g^{-1}.K^{-1}$
+\end{conditions}
+
+This allows us to obtain $Re = 12.6$ and $Pr = 0.705$, and consequently, $h = 398.2\ Btu.h^{-1}.ft^{-2}.{}^\circ F^{-1}$.
+
+The pumping power is given by Equation~\ref{eq810}.
+
+\begin{equation}\label{eq810}
+W = \Delta p A_c v = \frac{f}{8g_c} L \rho D_e v^3
+\end{equation}
+
+$g_c = \text{\num{4.17e8}}\ lb_m.ft.lb_f^{-1}.h^{-2}$. The Reynolds number corresponds to a laminar flow, hence a Moody friction factor of $f = \frac{Re}{64} = 0.197$. This gives us a pumping power $W = \text{\num{1.2e8}}\ ft.lb.h^{-1} = 58.5\ hp$.
+
+
+For the water at $400{}^\circ F$, we have:
+
+\begin{conditions}
+k & $0.3809\ Btu.h^{-1}.ft^{-1}.{}^\circ F^{-1}$ \\
+D_e & $1\ in = 0.083\ ft$ \\
+v & $20\ fps = 72000\ fph$ \\
+\rho & $53.648\ lb.ft^{-3}$ \\
+\mu & $0.327\ lb.h^{-1}.ft^{-1}$ \\
+c_p & $1.0794\ Btu.lb^{-1}.{}^\circ F^{-1}$
+\end{conditions}
+
+This gives us, using Equation~\ref{eq89}, $Re = \text{\num{9.8e5}}$ and $h = 6354\ Btu.h^{-1}.ft^{-2}.{}^\circ F^{-1}$. Hence, $f = 0.012$ from the Moody chart, and $W = \text{\num{6.0e6}}\ ft.lb.h^{-1} = 3.1\ hp$.
+
+\section{[I1] - Eucken formula}
+\label{prob83}
+
+\subsection{Problem}
+\textit{By using the Eucken formula, estimate the thermal conductivity of argon at 600 and 1200 K.}
+
+\subsection{Solution}
+
+The Eucken formula states that:
+
+\begin{equation}\label{eq811}
+k = \left( c_p + \frac{5}{4}\frac{R}{M} \right) \mu (T)
+\end{equation}
+
+For a monatomic gas, we have $c_p = \frac{5}{2}\frac{R}{M}$, and consequently, the Eucken formula reduces to Equation~\ref{eq812}.
+
+\begin{equation}\label{eq812}
+k = \frac{15}{4}\frac{R}{M} \mu (T) = 3.75 \frac{R}{M} \mu (T)
+\end{equation}
+
+$R$ is the gas constant, $R=8.314\ J.K^{-1}.mol^{-1}$, and M is the molecular mass of Argon, $M = 39.948\ g.mol^{-1} = \text{\num{39.948e-3}}\ kg.mol^{-1}$. A table gave the viscosity $\mu = \text{\num{3.9e-5}}\ Pa.s$ at 600K.
+
+\begin{equation}\label{eq813}
+k = \frac{3.75*8.314*\text{\num{3.9e-5}}}{\text{\num{39.948e-3}}} = 0.03\ W.m^{-1}.K^{-1}
+\end{equation}
+
+
+No data was found for the viscosity of Argon at 1200K, but the value of the thermal conductivity could be obtained in the exact same way by replacing the value of $\mu (T)$.
+
+\section{[I2] - Euler equation}
+\label{prob85}
+
+\subsection{Problem}
+\textit{Show that we can also write the Euler equation for inviscid fluid flow as $\frac{\partial}{\partial t}\nabla \times \vec{V} = \nabla \times (\vec{V} \times \nabla \times \vec{V})$.}
+
+\subsection{Solution}
+
+The Navier-Stokes equation can be written:
+
+\begin{equation}\label{eq824}
+\mu \nabla^2 \vec{v} + \rho \vec{g} - \nabla p = \rho \frac{d\vec{v}}{dt}
+\end{equation}
+
+Euler equation is obtained when $\mu = 0$:
+
+\begin{equation}\label{eq825}
+\rho \vec{g} - \nabla p = \rho \frac{d\vec{v}}{dt}
+\end{equation}
+
+We can take the curl of this equation. The curl of a gradient, and of a constant, is zero, so $\nabla \times (\rho \vec{g}) = 0$ and $\nabla \times (\nabla p) = 0$. Consequently:
+
+\begin{equation}\label{eq826}
+\nabla \times \left( \rho \frac{d\vec{v}}{dt} \right) = 0
+\end{equation}
+
+We know that:
+
+\begin{equation}\label{eq827}
+\frac{d\vec{v}}{dt} = \frac{\partial \vec{v}}{\partial t} + \vec{v} \cdot \nabla \vec{v}
+\end{equation}
+
+So, Equation~\ref{eq826} can be written, with $\rho = cst$:
+
+\begin{equation}\label{eq828}
+\nabla \times \left( \frac{\partial \vec{v}}{\partial t} + \vec{v} \cdot \nabla \vec{v} \right) = 0
+\end{equation}
+
+By seeing that $\nabla \times \left( \frac{\partial \vec{v}}{\partial t} \right) = \frac{\partial \nabla \vec{v}}{\partial t}$, and developing the expression, we can write:
+
+
+\begin{equation}\label{eq829}
+\frac{\partial}{\partial t}\nabla \times \vec{v} + \nabla \times (\vec{v} \times \nabla \times \vec{v}) = 0
+\end{equation}
+
+We can now use the relations~\ref{eq830} and~\ref{eq831} to replace the expression in Equation~\ref{eq829} and obtain Equation~\ref{eq832}.
+
+\begin{equation}\label{eq830}
+\frac{1}{2}\nabla v^2 = \vec{v} \times (\nabla \times \vec{v}) + (\vec{v} \cdot \nabla)\vec{v}
+\end{equation}
+
+\begin{equation}\label{eq831}
+(\vec{v} \cdot \nabla)\vec{v} = \frac{1}{2}\nabla v^2 - \vec{v} \times (\nabla \times \vec{v})
+\end{equation}
+
+
+\begin{equation}\label{eq832}
+\nabla \times \left( \frac{\partial \vec{v}}{\partial t} + \frac{1}{2}\nabla v^2 - \vec{v} \times (\nabla \times \vec{v}) \right) = 0
+\end{equation}
+
+Knowing that $\nabla \times \left( \frac{1}{2}\nabla v^2 \right) = 0$, we can obtain:
+
+
+\begin{equation}\label{eq833}
+\nabla \times \left( \frac{\partial \vec{v}}{\partial t} - \vec{v} \times (\nabla \times \vec{v}) \right) = 0
+\end{equation}
+
+And so:
+
+\begin{equation}\label{eq833}
+\frac{\partial \vec{v}}{\partial t} = \vec{v} \times (\nabla \times \vec{v})
+\end{equation}
+
+
+\section{[I3] - Parallel flat plates}
+\label{prob84}
+
+\subsection{Problem}
+\textit{Consider laminar fluid flow between two flat plates of infinite width. Take the plates as located at $y= 0$ and $y_0$. (a) Develop, or otherwise write, the parabolic solution for the x-component of velocity $v_x(y)$. (b) Calculate the average speed $v_{avg}$ by integrating from $y= 0$ to $y=y_0$. Then rewrite the result of part (a) for $v_x(y)$ by using $v_{avg}$.}
+
+\subsection{Solution}
+
+The following equation needs to be solved:
+
+\begin{equation}\label{eq814}
+\rho \frac{d \vec{v}}{dt} = - \nabla P + \mu \nabla^2 \vec{v}
+\end{equation}
+
+In this equation, $P = p + \rho \psi$. We can consider a uniform $P$ gradient in the x-direction, so that $\frac{dP}{dx} = -G$. Moreover, $\frac{d \vec{v}}{dt} = 0$. Consequently, Equation~\ref{eq814} becomes:
+
+\begin{equation}\label{eq815}
+\nabla^2 \vec{v} = \frac{\nabla P}{\mu}
+\end{equation}
+
+And, for the x-direction,
+
+
+\begin{equation}\label{eq816}
+\frac{\partial^2 v_x}{\partial y^2} = \frac{-G}{\mu}
+\end{equation}
+
+Integrating once, we obtain:
+
+\begin{equation}\label{eq817}
+\frac{\partial v_x}{\partial y} = \frac{-G}{\mu}y + C_1
+\end{equation}
+
+Knowing that the speed profile will be maximum at $y=\frac{y_0}{2}$, we have $\frac{\partial v_x}{\partial y} \bigg\rvert_{y=y_0/2} = 0$. Consequently, $C_1 = \frac{Gy_0}{2\mu}$, and we can write:
+
+\begin{equation}\label{eq818}
+\frac{\partial v_x}{\partial y} = \frac{G}{\mu} \left( \frac{y_0}{2} - y \right)
+\end{equation}
+
+Integrating a second time,
+
+\begin{equation}\label{eq819}
+v_x = \frac{G}{\mu}\frac{y_0}{2}y - \frac{G}{2\mu}y^2 + C_2
+\end{equation}
+
+Knowing that $v_x(0) = v_x(y_0) = 0$, we can obtain $C_2 = 0$, and finally write:
+
+\begin{equation}\label{eq820}
+v_x = \frac{G}{2\mu}y(y_0 - y)
+\end{equation}
+
+The average velocity can be obtained by using:
+
+\begin{equation}\label{eq821}
+v_{avg} = \frac{\int_0^{y_0} v_x(y) dy}{\int_0^{y_0} dy} = \frac{1}{y_0} \int_0^{y_0} \frac{G}{2\mu}y(y_0 - y) dy
+\end{equation}
+
+\begin{equation}\label{eq822}
+v_{avg} = \frac{G}{2\mu y_0} \left[ \frac{y_0y^2}{2} - \frac{y^3}{3} \right]_0^{y_0} = \frac{G}{12\mu} y_0^2
+\end{equation}
+
+Thus, we can write:
+
+\begin{equation}\label{eq823}
+v_x = \frac{6v_{avg}}{y_0^2}y(y_0 - y)
+\end{equation}
