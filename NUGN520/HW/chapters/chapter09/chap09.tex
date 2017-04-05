@@ -178,7 +178,7 @@ T(y) = \frac{U}{2\alpha} \frac{\partial T}{\partial x} \left( y^2 - \frac{y^4}{6
 \end{equation}
 
 
-\section{[J2] - }
+\section{[J2] - Triangular pipe}
 \label{prob94}
 
 
@@ -202,22 +202,16 @@ y = x\sqrt{3} + \frac{s}{\sqrt{3}}
 y = -x\sqrt{3} + \frac{s}{\sqrt{3}}
 \end{equation}
 
-We can then define the section of the triangle to be:
+We can then use the three equations above to guess a solution that automatically satisfies all three zero velocity boundary conditions at the three wall. The solution would thus be of the form:
 
 \begin{equation}
-S(x,y) = \left( y + \frac{s}{2\sqrt{3}} \right) \left( y + x\sqrt{3} - \frac{s}{\sqrt{3}} \right) \left( y - x\sqrt{3} - \frac{s}{\sqrt{3}} \right)
+v_z = C_1 S(x,y) = C_1 \left( y + \frac{s}{2\sqrt{3}} \right) \left( y + x\sqrt{3} - \frac{s}{\sqrt{3}} \right) \left( y - x\sqrt{3} - \frac{s}{\sqrt{3}} \right)
 \end{equation}
 
 The Navier-Stokes equation can be written:
 
 \begin{equation}
 \mu \left( \frac{\partial^2 v_z}{\partial x^2} + \frac{\partial^2 v_z}{\partial y^2} \right) = \frac{\partial p}{\partial z}
-\end{equation}
-
-We can assume that the velocity in the z-direction depends on the section, so that:
-
-\begin{equation}
-v_z = C_1 S(x,y)
 \end{equation}
 
 And so:
@@ -254,12 +248,52 @@ v_z = \frac{1}{2\mu s\sqrt{3}}\frac{\partial p}{\partial z} \left( y + \frac{s}{
 
 
 \subsection{Problem}
-\textit{Scaling for the Navier-Stokes (NS) equation.  Consider the NS equation with gravity neglected, $\rho \frac{d\vec{V}}{dt} = - \nabla p + \mu \nabla^2 \vec{V}$. Suppose that $p(\vec{x}, t)$ and $\vec{V}(\vec{x}, t)$ solve these equations. There are scaling relationships, $\vec{V_{\tau}} = \tau^{\alpha} \vec{V} (\tau^{\beta} \vec{x}, \tau^{\gamma} t)$ and $p_{\tau} = \tau^{\delta} p (\tau^{\beta} \vec{x}, \tau^{\gamma} t)$ for any positive $\tau$, such that $p_{\tau}$ and $\vec{V_{\tau}}$ also solve the NS equation. (a) What are the relations between the exponents $\alpha, \beta, \gamma, \text{and} \delta$ for this scaling to hold? (b) The equation of continuity also holds, $\nabla \cdot \vec{V_{\tau}} = 0$. Does this impose any further condition on the four exponents? Why or why not?}
+\textit{Scaling for the Navier-Stokes (NS) equation.  Consider the NS equation with gravity neglected, $\rho \frac{d\vec{V}}{dt} = - \nabla p + \mu \nabla^2 \vec{V}$. Suppose that $p(\vec{x}, t)$ and $\vec{V}(\vec{x}, t)$ solve these equations. There are scaling relationships, $\vec{V_{\tau}} = \tau^{\alpha} \vec{V} (\tau^{\beta} \vec{x}, \tau^{\gamma} t)$ and $p_{\tau} = \tau^{\delta} p (\tau^{\beta} \vec{x}, \tau^{\gamma} t)$ for any positive $\tau$, such that $p_{\tau}$ and $\vec{V_{\tau}}$ also solve the NS equation. (a) What are the relations between the exponents $\alpha, \beta, \gamma, \text{ and } \delta$ for this scaling to hold? (b) The equation of continuity also holds, $\nabla \cdot \vec{V_{\tau}} = 0$. Does this impose any further condition on the four exponents? Why or why not?}
 
 \subsection{Solution}
 
+The Navier-Stokes equation, with gravity neglected, is:
+
+\begin{equation}
+\rho \left( \frac{\partial \vec{v}}{\partial t} + \vec{v}.\nabla \vec{v} \right) = -\nabla p + \mu \nabla^2 \vec{v}
+\end{equation}
+
+We have various scaling propositions:
+
+\begin{conditions}
+\vec{v_{\tau}} & $\tau^{\alpha} \vec{v}$ \\
+p_{\tau} & $\tau^{\delta} p$ \\
+\vec{x_{\tau}} & $\tau^{\beta} \vec{x}$ \\
+t_{\tau} & $\tau^{\gamma} t$
+\end{conditions}
+
+We can now rewrite the Navier-Stokes equation:
+
+\begin{equation}
+\rho \tau^{\alpha + \gamma - \beta} \left( \frac{\partial \vec{v_{\tau}}}{\partial t_{\tau}} + \vec{v_{\tau}}.\nabla_{\tau} \vec{v_{\tau}} \right) = - \tau^{2\alpha - \delta} \nabla_{\tau} p_{\tau} + \tau^{\alpha + \beta} \mu \nabla_{\tau}^2 \vec{v_{\tau}}
+\end{equation}
+
+Knowing that $\vec{v_{\tau}}$ and $p_{\tau}$ verifies the Navier-Stokes equation, we can deduce that:
 
 
+\begin{equation*}
+\begin{cases} \tau^{\alpha + \gamma - \beta} & = 1 \\ \tau^{2\alpha - \delta} & = 1 \\ \tau^{\alpha + \beta} & = 1 \end{cases} \quad
+\implies \begin{cases} (\alpha + \gamma - \beta)*\ln(\tau) & = 1 \\ (2\alpha - \delta)*\ln(\tau) & = 1 \\ (\alpha + \beta)*\ln(\tau) & = 1 \end{cases} \quad
+\implies \begin{cases} \tau = 1 & \text{ or:} \\ \alpha + \gamma - \beta & = 0 \\ 2\alpha - \delta & = 0 \\ \alpha + \beta & = 0 \end{cases} \quad
+\implies \begin{cases} \gamma & = -2\alpha \\ \delta & = 2\alpha  \\ \beta & = - \alpha \end{cases} \quad
+\end{equation*}
 
 
+We also know that the continuity equation (for an incompressible flow in this case) holds:
 
+\begin{equation}
+\nabla \cdot \vec{v_{\tau}} = \nabla \cdot \vec{v} = 0
+\end{equation}
+
+Considering only the x-direction:
+
+\begin{equation}
+\nabla \cdot \vec{v_{\tau}} = \tau^{-\alpha}\tau^{-beta}\frac{\partial \vec{v_{x, \tau}}}{\partial x_{\tau}} = 0
+\end{equation}
+
+The term $\tau{-\alpha - \beta}$ simplifies out of the equation. Consequently, we haven't gained any insight on the scaling parameters.
