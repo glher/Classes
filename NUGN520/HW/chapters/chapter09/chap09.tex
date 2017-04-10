@@ -17,10 +17,10 @@
 
 \subsection{Solution}
 
-We can use Equation 5.38a from the book~\cite{book01}, which states, for a cylindrical fuel element with cladding and coolant:
+We can use Equation 5.51a from the book~\cite{book01}, which states, for a cylindrical fuel element with cladding and coolant:
 
 \begin{equation}
-T_{f,m} - T_b = \frac{q''' r_f^2}{2 k_f} + q'''r_f\left( \frac{r_w - r_f}{k_g} + \frac{1}{h} \right)
+T_{f,m} - T_b = \frac{q''' r_f^2}{4 k_f} + \frac{q'''r_f^2}{2} \left( \frac{1}{k_g} \ln \left( \frac{r_f + r_w}{r_f} \right) + \frac{1}{h(r_f + r_w)} \right)
 \end{equation}
 
 Where:
@@ -37,12 +37,12 @@ We can reorganize the terms to express $h$. Doing so gives us:
 
 
 \begin{equation}
-h = \frac{1}{((5000 - 1000 - \frac{1}{2e6*(0.25/12)} \left( \frac{2e6*(0.25/12)^2}{2*1.1} \right) - \frac{(0.1/12)}{35}}
+h = \frac{1}{ \left( \left( 5000 - 1000 - \frac{\text{\num{2e6}} * (0.25/12)^2}{4 * 1.1} \right) * \frac{2}{\text{\num{2e6}} * (0.25/12)^2} - \left( \frac{1}{35} \ln \left( \frac{0.35/12}{0.25/12} \right) \right) \right) * \frac{0.35}{12}}
 \end{equation}
 
-And so, $h = 11.6\ Btu.h^{-1}.ft^{-2}.{}^\circ F^{-1}$.
+And so, $h = 3.9\ Btu.h^{-1}.ft^{-2}.{}^\circ F^{-1}$.
 
-We can now use the Dittus-Boelter equation, $Nu = 0.023Re^{0.8}Pr^{0.4}$, to compute the equivalent diameter needed. The bulk properties are used in this correlation.
+We can now use the Dittus-Boelter equation, $Nu = 0.023Re^{0.8}Pr^{0.4}$, to compute the equivalent diameter needed. The Nitrogen bulk properties are used in this correlation, except for the fact that the free-stream temperature must be replaced by the adiabatic wall temperature $T_{fa}$.
 
 This equation translates to:
 
@@ -53,22 +53,53 @@ This equation translates to:
 This gives:
 
 
-\begin{equation}
+\begin{equation}\label{eq910}
 D_e = \left( 0.023 \left( \frac{k}{h} \frac{v \rho}{\mu} \right)^{0.8} \left( \frac{c_p \mu}{k} \right)^{0.4} \right)^5
 \end{equation}
 
-Using data from tables of Nitrogen at 6 atn and $1000{}^\circ F$, we get:
+The adiabiatic wall temperature can be obtained using the Mach number $M$ and the recovery factor $F_R$. Indeed, Equation 9-41 of the book~\cite{book01} gives:
+
+
+\begin{equation}
+T_{fa} = F_R (T_{fs} - T_f) + T_f
+\end{equation}
+
+Equation 9-40 gives:
+
+\begin{equation}
+T_{fs} = T_f \left( 1 + \frac{\gamma-1}{2}M \right)
+\end{equation}
+
+And the Mach number is given by Equation 9-37:
+
+\begin{equation}
+M = \frac{v}{\sqrt{\gamma R g_c T_f}}
+\end{equation}
+
+Where:
 
 \begin{conditions}
-k & ?\\
-v & $375\ fps = x\ fph$\\
+\gamma & $1.4$ for Nitrogen \\
+R & $54.99\ ft.lb_f/lb_m$ \\
+T_f & $1459.7\ {}^\circ R$ \\
+g_c & \num{4.17e8} \\
+v & \num{1.35e6} fph
+\end{conditions}
+
+We thus obtain $M = 0.197$, $T_{fs} = 1007.8\ {}^\circ F$ and, using $F_R = 0.89$, $T_{fa} = 1006.9\ {}^\circ F$.
+
+Using data from tables of Nitrogen at 6 atm and $1006.9{}^\circ F$, we get values extremely similar to the ones at $1000{}^\circ F$:
+
+\begin{conditions}
+k & $32.3\ Btu.h^{-1}.ft^{-1}.{}^\circ F^{-1}$\\
+v & $375\ fps = \text{\num{1.35e6}}\ fph$\\
 \rho & $0.16\ lb.ft^{-3} $\\
 \mu & $8.76\ lb.ft^{-1}.h^{-1}$\\
 c_p & $0.27\ Btu.lb^{-1}.{}^\circ F^{-1}$\\
-h & $11.6\ Btu.h^{-1}.ft^{-2}.{}^\circ F^{-1}$
+h & $3.9\ Btu.h^{-1}.ft^{-2}.{}^\circ F^{-1}$
 \end{conditions}
 
-
+This data, when plugged into Equation~\ref{eq910} gives an erroneous number for the equivalent diameter, with the very high velocity causing the diameter to be way too high to get to the given heat transfer coefficient.
 
 \section{[9-6] - W'/q}
 \label{prob92}
@@ -243,7 +274,7 @@ And consequently,
 v_z = \frac{1}{2\mu s\sqrt{3}}\frac{\partial p}{\partial z} \left( y + \frac{s}{2\sqrt{3}} \right) \left( y + x\sqrt{3} - \frac{s}{\sqrt{3}} \right) \left( y - x\sqrt{3} - \frac{s}{\sqrt{3}} \right)
 \end{equation}
 
-\section{[J3] - }
+\section{[J3] - Scaling of the Navier-Stokes equation}
 \label{prob95}
 
 
@@ -264,14 +295,22 @@ We have various scaling propositions:
 \vec{v_{\tau}} & $\tau^{\alpha} \vec{v}$ \\
 p_{\tau} & $\tau^{\delta} p$ \\
 \vec{x_{\tau}} & $\tau^{\beta} \vec{x}$ \\
-t_{\tau} & $\tau^{\gamma} t$
+t_{\tau} & $\tau^{\gamma} t$ \\
+\nabla_{\tau} & $\tau^{-\beta}\nabla$
 \end{conditions}
 
 We can now rewrite the Navier-Stokes equation:
 
 \begin{equation}
-\rho \tau^{\alpha + \gamma - \beta} \left( \frac{\partial \vec{v_{\tau}}}{\partial t_{\tau}} + \vec{v_{\tau}}.\nabla_{\tau} \vec{v_{\tau}} \right) = - \tau^{2\alpha - \delta} \nabla_{\tau} p_{\tau} + \tau^{\alpha + \beta} \mu \nabla_{\tau}^2 \vec{v_{\tau}}
+\rho \tau^{\gamma - \alpha} \left( \frac{\partial \vec{v_{\tau}}}{\partial t_{\tau}} \right) + \rho \tau^{\beta - 2\alpha} \left( \vec{v_{\tau}}.\nabla_{\tau} \vec{v_{\tau}} \right) = - \tau^{\beta - \delta} \nabla_{\tau} p_{\tau} + \tau^{2\beta - \alpha} \mu \nabla_{\tau}^2 \vec{v_{\tau}}
 \end{equation}
+
+Multiplying both sides by $\frac{\tau^{2\alpha - \beta}}{\rho}$, we obtain the dimensionless:
+
+\begin{equation}
+\tau^{\alpha + \gamma - \beta} \left( \frac{\partial \vec{v_{\tau}}}{\partial t_{\tau}} \right) + \vec{v_{\tau}}.\nabla_{\tau} \vec{v_{\tau}} = - \frac{1}{\rho}\tau^{2\alpha - \delta} \nabla_{\tau} p_{\tau} + \tau^{\alpha + \beta} \frac{\mu}{\rho} \nabla_{\tau}^2 \vec{v_{\tau}}
+\end{equation}
+
 
 Knowing that $\vec{v_{\tau}}$ and $p_{\tau}$ verifies the Navier-Stokes equation, we can deduce that:
 
@@ -293,7 +332,7 @@ We also know that the continuity equation (for an incompressible flow in this ca
 Considering only the x-direction:
 
 \begin{equation}
-\nabla \cdot \vec{v_{\tau}} = \tau^{-\alpha}\tau^{-beta}\frac{\partial \vec{v_{x, \tau}}}{\partial x_{\tau}} = 0
+\nabla \cdot \vec{v_{\tau}} = \tau^{-\alpha}\tau^{-\beta}\frac{\partial \vec{v_{x, \tau}}}{\partial x_{\tau}} = 0
 \end{equation}
 
 The term $\tau{-\alpha - \beta}$ simplifies out of the equation. Consequently, we haven't gained any insight on the scaling parameters.
