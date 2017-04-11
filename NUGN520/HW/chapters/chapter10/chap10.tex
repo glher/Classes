@@ -8,7 +8,7 @@
 \initial{S}everal exercises from the book written by M. M. El Wakil~\cite{book01} are tackled in this homework. The problems in this section relate to the tenth chapter of the book, covering the subject of heat transfer and fluid flow, for metallic coolants.
 
 %=======
-\section{[10-1] - }
+\section{[10-1] - Turbulent coolant tube}
 \label{prob101}
 
 
@@ -17,11 +17,45 @@
 
 \subsection{Solution}
 
+Martinelli provides solutions for the temperature gradient in pipe flow for various Reynolds and Prandtl number (and conveniently, $Re = 10^6$ and $Pr = 0$ is one of these solutions), seen in Figure 9-3 of the book~\cite{book01}.
 
+We thus obtain, for $Pr=0$ and $Re = 10^6$:
 
+\begin{equation}
+\frac{T_w - T(y)}{T_w-T_c} = \frac{y}{r_0}
+\end{equation}
 
+Knowing $T_w = 1000{}^\circ F$ and also knowing $T(y=r_0/2) = 900{}^\circ F$, we can now easily solve the next equation for $T_c$:
 
-\section{[10-7] - }
+\begin{equation}
+\frac{T_w - T(y=r_0/2)}{T_w-T_c} = \frac{1}{2}
+\end{equation}
+
+\begin{equation}
+T_c = 2*(900+500-1000) = 800{}^\circ F
+\end{equation}
+
+This is expected, we have a linear profile. In this case, the bulk temperature can be taken to be the average temperature in the channel, thus $T_f = 900{}^\circ F$. The book also states that (p. 236) "in highly turbulent flow, the temrature profile is fairly flat  over much of the cross-section, and the bulk temperature is taken as equal to the temperature at the center of the channel", so $T_f$ could also be taken as $800{}^\circ F$.
+
+Considering a constant heat flux along the tube wall, we can use the Lyon-Martinelli correlation:
+
+\begin{equation}
+Nu = 7 + 0.025Pe^{0.8}
+\end{equation}
+
+$Pe = Re.Pr = 0$ in our case, so, $Nu = \frac{hD_e}{k} = 7$.
+
+From this, we can obtain $h = \frac{7k}{D_e} = \frac{7 * 50}{1/12} = 4200\ Btu.h^{-1}.ft^{-2}.{}^\circ F^{-1}$.
+
+We can now calculate the heat flux, using:
+
+\begin{equation}
+q''_w = h(T_f - T_w)
+\end{equation}
+
+Consequently, $q''_w = - 4200 * (100) = -\text{\num{4.2e6}}\ Btu.h^{-1}.ft^{-2}$
+
+\section{[10-7] - Fluid-fueled reactor}
 \label{prob102}
 
 
