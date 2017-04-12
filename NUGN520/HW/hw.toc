@@ -4,7 +4,7 @@
 \contentsline {section}{\numberline {1.1}[10-1] - Turbulent coolant tube}{1}{section.1.1}
 \contentsline {subsection}{\numberline {1.1.1}Problem}{1}{subsection.1.1.1}
 \contentsline {subsection}{\numberline {1.1.2}Solution}{1}{subsection.1.1.2}
-\contentsline {section}{\numberline {1.2}[10-7] - Fluid-fueled reactor}{2}{section.1.2}
-\contentsline {subsection}{\numberline {1.2.1}Problem}{2}{subsection.1.2.1}
+\contentsline {section}{\numberline {1.2}[10-7] - Fluid-fueled reactor}{3}{section.1.2}
+\contentsline {subsection}{\numberline {1.2.1}Problem}{3}{subsection.1.2.1}
 \contentsline {subsection}{\numberline {1.2.2}Solution}{3}{subsection.1.2.2}
 \contentsline {chapter}{Bibliography}{5}{section*.2}

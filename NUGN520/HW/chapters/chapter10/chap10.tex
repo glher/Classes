@@ -35,7 +35,17 @@ Knowing $T_w = 1000{}^\circ F$ and also knowing $T(y=r_0/2) = 900{}^\circ F$, we
 T_c = 2*(900+500-1000) = 800{}^\circ F
 \end{equation}
 
-This is expected, we have a linear profile. In this case, the bulk temperature can be taken to be the average temperature in the channel, thus $T_f = 900{}^\circ F$. The book also states that (p. 236) "in highly turbulent flow, the temrature profile is fairly flat  over much of the cross-section, and the bulk temperature is taken as equal to the temperature at the center of the channel", so $T_f$ could also be taken as $800{}^\circ F$.
+This is expected, we have a linear profile. In this case, the bulk temperature can be taken to be the average temperature in the channel, thus $T_f = 900{}^\circ F$. The book also states that (p. 236) "in highly turbulent flow, the temperature profile is fairly flat  over much of the cross-section, and the bulk temperature is taken as equal to the temperature at the center of the channel", so $T_f$ could also be taken as $800{}^\circ F$. Alternatively, the bulk temperature can be obtained from Figure 10-12. However, this requires to know the value of $\frac{q'''r_0^2}{k}$. This value can be obtained from Figure 10-11, by taking the temperature at the wall. Indeed:
+
+\begin{equation}
+10*\frac{T_w - T_c}{q'''r_0^2/k} = 2 \implies \frac{q'''r_0^2}{k} = \frac{T_w - T_c}{0.2} = 1000
+\end{equation}
+
+Plugging this into the data for Figure 10-12, we get:
+
+\begin{equation}
+\frac{T_w - T_f}{q'''r_0^2/k} = 10^{-2} \implies T_f = 990{}^\circ F
+\end{equation}
 
 Considering a constant heat flux along the tube wall, we can use the Lyon-Martinelli correlation:
 
@@ -54,6 +64,8 @@ q''_w = h(T_f - T_w)
 \end{equation}
 
 Consequently, $q''_w = - 4200 * (100) = -\text{\num{4.2e6}}\ Btu.h^{-1}.ft^{-2}$
+
+This value for the heat flux changes with the bulk temperature chosen.
 
 \section{[10-7] - Fluid-fueled reactor}
 \label{prob102}
