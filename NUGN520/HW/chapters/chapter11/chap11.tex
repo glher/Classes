@@ -1,0 +1,55 @@
+%
+% File: chap01.tex
+%
+\let\textcircled=\pgftextcircled
+\chapter{Heat transfer and fluid flow, nonmetallic coolants}
+\label{chap:intro}
+
+\initial{S}everal exercises from the book written by M. M. El Wakil~\cite{book01} are tackled in this homework. The problems in this section relate to the eleventh chapter of the book, covering the subject of heat transfer with change in phase.
+
+%=======
+\section{[11-1] - Liquid superheat}
+\label{prob101}
+
+
+\subsection{Problem}
+\textit{If the surface tension between the liquid and vapor for water at $212{}^\circ F$ is \num{4.03e-3} $lb_f/ft$, calculate the amount of liquid superheat necessary to generate a \num{4.68e-3} in. diameter bubble at atmospheric pressure (average).}
+
+\subsection{Solution}
+
+
+According to Equation~\ref{eq111} :
+
+\begin{equation}\label{eq111}
+p_g - p_f = \frac{4\sigma_{fg}}{D}
+\end{equation}
+
+We know that the liquid is at atmospheric pressure, $p_f = 1\ atm = 14.7\ psi$. We also know that the surface tension is \num{4.03e-3} $lb_f/ft$ and that the diameter of the bubble is \num{4.68e-3} in., or \num{3.9e-4} ft. Consequently, we can obtain the required pressure inside the bubble, $p_g = 14.7 + \frac{4\sigma}{D} * c = 15.3\ psi$, $c$ being a conversion factor from $lb/ft^2$ to $psi$.
+
+
+According to tables, a steam pressure of $15.3\ psi$ gives a saturated temperature equal to $214{}^\circ F$. We can thus assume with a reasonable error margin that this will be the minimum required temperature for the superheated liquid around the bubble.
+
+Thus, compared to the reference temperature of $212{}^\circ F$, we have an amount of superheated liquid of around $2{}^\circ F$.
+
+
+
+\subsection{Problem}
+\textit{In an experiment on pool boiling of water, the heat flux and water temperature and pressure were simultaneously increased so that saturation boiling occured at all times. Burnout occured when the pressure reached 300 psia. Assuming for simplicity that burnout heat transfer occurred solely by radiation, and that the radiation heat transfer coefficient is $200\ Btu.h^{-1}.ft^{-2}.{}^\circ F^{-1}$, estimate the temperature of the heating surface at burnout.} 
+
+\subsection{Solution}
+
+
+We can use Equation 11-5 from the reference book to compute the heat flux. We will consider a standard gravity field, and data at burnout pressure, $300\ psi$.
+
+\begin{equation}
+q_c'' = 143 h_{fg} \rho_g \left( \frac{\rho_f - \rho_g}{\rho_g} \right)^{0.6} \left( \frac{g}{g_c} \right)^{0.25}
+\end{equation}
+
+In our case, $h_{fg} = 970.4\ Btu/lb$, $\rho_f = 52.919\ lb.ft^{-3}$ and $\rho_g = 0.648\ lb.ft^{-3}$. $g$ and $g_c$ have the same value, and will be used only for dimensional purposes. Then, we obtain $q_c''$ equal to \num{1.25e6} $Btu.ft^{-2}.h^{-1}$.
+
+Using the relation $q'' = h\Delta T$, we can, knowing $h$, $T_f$ and $q''_c$, estimate the surface temperature when the burnout occurs. $T_f$ is taken as the saturated temperature at a pressure of 300 psi, $T_f = 417{}^\circ F$.
+
+\begin{equation}
+T_s = T_f + \frac{q_c''}{h} = 417 + 6250 = 6667{}^\circ F
+\end{equation}
+
