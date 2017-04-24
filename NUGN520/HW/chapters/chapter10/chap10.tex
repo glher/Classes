@@ -81,7 +81,7 @@ This value for the heat flux changes with the bulk temperature chosen.
 
 In order to compute the wall temperature $T_w$, we can use Equation 10-22 of the book~\cite{book01}.
 
-\begin{equation}
+\begin{equation}\label{eq102}
 T_w = T_f + \frac{q'''r_0^2}{k}\frac{11F-8}{48}
 \end{equation}
 
@@ -100,3 +100,13 @@ Using Figure 10-9, we can obtain that:
 \end{equation}
 
 Consequently, we can obtain $T_c = 565{}^\circ F$.
+
+Using Equation~\ref{eq102}, we can compute $F$, which is $1 - \text{fraction of heat generated that is transferred}$ for a given maximum $T_w$.
+
+In our case, $T_w = 700{}^\circ F$. And so:
+
+\begin{equation}
+\frac{48}{11} \left( (T_w - T_f) \frac{k}{q'''r_0^2} + \frac{8}{48} \right) = F 
+\end{equation}
+
+This gives us $F = 0.2$. Consequently, the fraction of the heat generated within the moving fluid that needs to be removed is $0.8$.
