@@ -24,14 +24,16 @@ According to Equation~\ref{eq111} :
 p_g - p_f = \frac{4\sigma_{fg}}{D}
 \end{equation}
 
-We know that the liquid is at atmospheric pressure, $p_f = 1\ atm = 14.7\ psi$. We also know that the surface tension is \num{4.03e-3} $lb_f/ft$ and that the diameter of the bubble is \num{4.68e-3} in., or \num{3.9e-4} ft. Consequently, we can obtain the required pressure inside the bubble, $p_g = 14.7 + \frac{4\sigma}{D} * c = 15.3\ psi$, $c$ being a conversion factor from $lb/ft^2$ to $psi$.
+We know that the liquid is at atmospheric pressure, $p_f = 1\ atm = 14.7\ psi$. We also know that the surface tension is \num{4.03e-3} $lb_f/ft$ and that the diameter of the bubble is \num{4.68e-3} in., or \num{3.9e-4} ft. Consequently, we can obtain the required pressure inside the bubble, $p_g = 14.7 + \frac{4\sigma}{D} * c = 15.0\ psi$, $c = 1/144$ being a conversion factor from $lb/ft^2$ to $psi$.
 
 
-According to tables, a steam pressure of $15.3\ psi$ gives a saturated temperature equal to $214{}^\circ F$. We can thus assume with a reasonable error margin that this will be the minimum required temperature for the superheated liquid around the bubble.
+According to tables, a steam pressure of $15\ psi$ gives a saturated temperature equal to $213{}^\circ F$. The vapor and the liquid must be at thermal equilibrium. We can thus assume with a reasonable margin of error that this will be the minimum required temperature for the superheated liquid around the bubble.
 
-Thus, compared to the reference temperature of $212{}^\circ F$, we have an amount of superheated liquid of around $2{}^\circ F$.
+Thus, compared to the reference temperature of $212{}^\circ F$, we have an amount of superheated liquid of around $1{}^\circ F$.
 
 
+\section{[11-2] - Burnout temperature}
+\label{prob101}
 
 \subsection{Problem}
 \textit{In an experiment on pool boiling of water, the heat flux and water temperature and pressure were simultaneously increased so that saturation boiling occured at all times. Burnout occured when the pressure reached 300 psia. Assuming for simplicity that burnout heat transfer occurred solely by radiation, and that the radiation heat transfer coefficient is $200\ Btu.h^{-1}.ft^{-2}.{}^\circ F^{-1}$, estimate the temperature of the heating surface at burnout.} 
@@ -51,5 +53,40 @@ Using the relation $q'' = h\Delta T$, we can, knowing $h$, $T_f$ and $q''_c$, es
 
 \begin{equation}
 T_s = T_f + \frac{q_c''}{h} = 417 + 6250 = 6667{}^\circ F
+\end{equation}
+
+
+
+\section{[K1] - Ideal gas law}
+\label{prob101}
+
+\subsection{Problem}
+\textit{For an ideal gas in isothermal conditions, considering $\frac{dT}{dt} = 0$, find the expression for $\frac{d\rho}{dt}$.} 
+
+\subsection{Solution}
+
+The ideal gas law can be written:
+
+\begin{equation}
+PM = \rho RT
+\end{equation}
+
+Consequently,
+
+
+\begin{equation}
+\rho = \frac{PM}{RT}
+\end{equation}
+
+The temperature and molar mass being constant with respect to time:
+
+\begin{equation}
+\frac{d\rho}{dt} = \frac{M}{RT}\frac{dP}{dt}
+\end{equation}
+
+From the ideal gas law, we can see that $\frac{M}{RT} = \frac{\rho}{P}$. Finally, we can write:
+
+\begin{equation}
+\frac{d\rho}{dt} = \frac{\rho}{P}\frac{dP}{dt}
 \end{equation}
 
