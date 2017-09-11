@@ -1,0 +1,84 @@
+%
+% File: chap01.tex
+%
+\let\textcircled=\pgftextcircled
+\chapter{Heat transfer and fluid flow, nonmetallic coolants}
+\label{chap:intro}
+
+\initial{S}everal exercises from the book written by M. M. El Wakil~\cite{book01} are tackled in this homework. The problems in this section relate to the eleventh chapter of the book, covering the subject of heat transfer with change in phase.
+
+%=======
+\section{[11-7] - Maximum volumetric thermal source strength}
+\label{prob111}
+
+
+\subsection{Problem}
+\textit{Liquid sodium flows at 20 fps and $700{}^\circ C$ inside a 4-ft long hollow cylindrical fuel element having diameters 1 and 0.5 in. respectively. The outside surface of the element may be considered insulated. Using a safety factor of 2, what should be the highest value of volumetric thermal source strength to avoid burnout?}
+
+\subsection{Solution}
+
+
+The critical heat flux is given by correlations obtained by Lowdermilk, Lanzo and Siegel. These correlations depend on the ratio $\frac{G}{(L/D)^2}$.
+
+In our case, we have $G = \rho v$. $\rho$ is given in table 10-2 of the book~\cite{book01}. $G = 48.88 * 20 * 3600 = 3519360\ lb.ft^{-3}.h^{-1}$. The length-diameter ratio is $\frac{L}{D_e}$. Here, the equivalent diameter is given by Equation 9-35 of the book, $D_e = D_2 - D_1 = 0.5\ in$. Consequently, the ratio $\frac{G}{(L/D)^2} = 381.9$.
+
+We must thus use the correlation 11-20:
+
+\begin{equation}
+q_c'' = 140 G^{0.5}D^{-0.2}\left( \frac{L}{D} \right)^{-0.15}
+\end{equation}
+
+We consequently obtain $q_c'' = 250070\ Btu.h^{-1}.ft^{-2}$.
+
+The surface area through which heat can be transferred is $S = 2\pi r_1h + 2\pi r_1^2 \approx 2\pi r_1h = 0.53\ ft^2$. The volume is $V = \pi r_2^2h - \pi r_1^2h = 0.016 ft^{3}$.
+
+Consequently, the volumetric thermal source strength is:
+
+\begin{equation}
+q'''_c = \frac{S}{V}q''_c = \text{\num{8.3e6}}\ Btu.h^{-1}.ft^{-3}
+\end{equation}
+
+Using the safety margin, we get a maximum volumetric thermal source strength of $q'''_c = \text{\num{4.1e6}}\ Btu.h^{-1}.ft^{-3}$.
+
+
+\section{[11-9] - Heat transfer and mass flow rates}
+\label{prob112}
+
+\subsection{Problem}
+\textit{Saturated steam at 1000 psia enters the top of a 1 in. diameter, 12 ft long vertical tube at 10 fps. The tube walls are held at $530{}^\circ F$. Estimate the heat transfer, Btu/hr, and the mass flow rates of steam and water at the tube exit, lb/hr. Tafe $f = 0.015$.} 
+
+\subsection{Solution}
+
+
+We can use Equation 11-37, the only equation to feature the friction factor. This correlation was obtained for different parameters (8 ft long tube instead of 12 feet, velocity higher than 90 fps instead of 10, diameter 0.5 in instead of 1 in). Its validity can thus be questioned, since we are not particularly in a high vapor velocity scenario.
+
+Knowing that saturated steam at 1000 psia is at $546{}^\circ F$, we can obtain the temperature at which the properties need to be calculated, $T_l = 0.25T_s + 0.75T_w = 534{}^\circ F$.
+
+\begin{equation}
+\bar{h} = 0.046\bar{G}\left( \frac{c_{p_l}^2\rho_l f}{\rho_g Pr_l}\right)^{0.5}
+\end{equation}
+
+From tables, we can obtain $Re = \frac{Dv\rho}{\mu} = \frac{(1/12) * 10 * 3600 * 2.27}{0.048} = \text{\num{1.4e5}}$. We have a turbulent flow. $Pr_l = 0.83$, $c_{p_l} = 1.2\ Btu.lb^{-1}.{}^\circ F^{-1}$, $\rho_g = 2.27\ lb.ft^{-3}$ and $\rho_l = 48\ lb.ft^{-3}$.
+
+\begin{equation}
+\bar{G} = \frac{G_1^2 + G_1G_2 + G_2^2}{3}
+\end{equation}
+
+$G_1 = \rho_g v = 2.27 * 36000 = 81818\ lb.ft^{-3}.h^{-1}$. In the absence of information about $G_2$ (no velocity or ratio of vapor/liquid given at the bottom of the tube), we will assume $G_1 = G_2$, and thus $\bar{G} = G_1$. 
+
+We consequently obtain $\bar{h} = 2549\ Btu.h^{-1}.ft^{-2}.{}^\circ F^{-1}$. Using the fact that:
+
+\begin{equation}
+h = \frac{q}{A\Delta T} \implies q = hA\Delta T
+\end{equation}
+
+We can obtain $q = \bar{h} * \left( 2\pi r h + 2 \pi r^2 \right) \Delta T = 2549 * \pi * (546 - 530) = \text{\num{1.3e5}}\ Btu.h^{-1}$.
+
+We can now link the Reynolds number to the mass flow rate, using $\dot{m} = \rho\dot{V}=\rho A v$.
+
+\begin{equation}
+Re = \frac{Dv\rho}{\mu} = \frac{\dot{m} D}{A\mu}
+\end{equation}
+
+Consequently, knowing $Re = \text{\num{1.4e5}}$, we can obtain $\dot{m} = \frac{A \mu Re}{D} = \frac{\pi * (0.5/12)^2 * 0.048 * \text{\num{1.4e5}}}{(1/12)} = 440\ lb.h^{-1}$.
+

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.8.24)  26 APR 2017 09:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.8.24)  1 MAY 2017 09:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2189,14 +2189,7 @@ Package glossaries Info: Writing glossary file hw.glo on input line 368.
 \openout8 = `hw.acn'.
 
 Package glossaries Info: Writing glossary file hw.acn on input line 368.
- (./hw.aux
-
-LaTeX Warning: Label `prob101' multiply defined.
-
-
-LaTeX Warning: Label `prob101' multiply defined.
-
-)
+ (./hw.aux)
 \openout1 = `hw.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 371.
@@ -2214,7 +2207,8 @@ LaTeX Font Info:    ... okay on input line 371.
 LaTeX Font Info:    Checking defaults for FML/fncmi/m/it on input line 371.
 LaTeX Font Info:    Try loading font information for FML+fncmi on input line 37
 1.
- (/usr/share/texlive/texmf-dist/tex/latex/fouriernc/fmlfncmi.fd
+
+(/usr/share/texlive/texmf-dist/tex/latex/fouriernc/fmlfncmi.fd
 File: fmlfncmi.fd 2005/12/20 Fontinst v1.928 font definitions for FML/fncmi.
 )
 LaTeX Font Info:    ... okay on input line 371.
@@ -2418,7 +2412,7 @@ LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
 (Font)              scaled to size 11.15991pt on input line 30.
 LaTeX Font Info:    Font shape `T1/fnc/m/sc' will be
 (Font)              scaled to size 11.15991pt on input line 32.
- <logos/CSM.png, id=51, 306.14375pt x 309.155pt>
+ <logos/CSM.png, id=39, 306.14375pt x 309.155pt>
 File: logos/CSM.png Graphic file (type png)
 
 <use logos/CSM.png>
@@ -2460,11 +2454,11 @@ l.399 \newpage
 s been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.424 \import
-             {chapters/chapter11/}{chap11.tex} [2
+l.425 \import
+             {chapters/chapter12/}{chap12.tex} [2
 
 ]
-(./chapters/chapter11/chap11.tex
+(./chapters/chapter12/chap12.tex
 LaTeX Font Info:    Font shape `T1/fnc/m/sc' will be
 (Font)              scaled to size 10.18341pt on input line 5.
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
@@ -2483,9 +2477,9 @@ LaTeX Font Info:    Font shape `T1/fnc/m/it' will be
 
 ]
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 9.29993pt on input line 72.
+(Font)              scaled to size 9.29993pt on input line 77.
 LaTeX Font Info:    Font shape `T1/fnc/m/sc' will be
-(Font)              scaled to size 9.29993pt on input line 72.
+(Font)              scaled to size 9.29993pt on input line 77.
  [2]) [3] [4
 
 ] (./hw.bbl
@@ -2508,24 +2502,25 @@ Package nag Warning: 2 complaints in total.
 \tf@toc=\write10
 \openout10 = `hw.toc'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 440.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 440.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 441.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 441.
  (./hw.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 440.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 440.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 441.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 441.
 Package rerunfilecheck Info: File `hw.out' has not changed.
-(rerunfilecheck)             Checksum: 0B7A1F81327038419FB80F06A13B0350;709.
+(rerunfilecheck)             Checksum: E696251A839A8E68F277D3369873335B;560.
 
 
-LaTeX Warning: There were multiply-defined labels.
+LaTeX Font Warning: Size substitutions with differences
+(Font)              up to 2.01195pt have occurred.
 
  ) 
 Here is how much of TeX's memory you used:
- 43906 strings out of 493029
- 837793 string characters out of 6136234
- 1122105 words of memory out of 5000000
- 46470 multiletter control sequences out of 15000+600000
- 74192 words of font info for 161 fonts, out of 8000000 for 9000
+ 44042 strings out of 493029
+ 840693 string characters out of 6136234
+ 1123203 words of memory out of 5000000
+ 46595 multiletter control sequences out of 15000+600000
+ 94219 words of font info for 211 fonts, out of 8000000 for 9000
  1146 hyphenation exceptions out of 8191
  52i,13n,80p,10374b,764s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
@@ -2536,10 +2531,10 @@ nts/type1/public/fourier/fourier-ms.pfb></usr/share/texlive/texmf-dist/fonts/ty
 pe1/urw/ncntrsbk/uncb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/ncnt
 rsbk/uncr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/ncntrsbk/uncri8a
 .pfb>
-Output written on hw.pdf (9 pages, 87630 bytes).
+Output written on hw.pdf (9 pages, 90340 bytes).
 PDF statistics:
- 153 PDF objects out of 1000 (max. 8388607)
- 131 compressed objects within 2 object streams
- 29 named destinations out of 1000 (max. 500000)
- 39530 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 137 PDF objects out of 1000 (max. 8388607)
+ 115 compressed objects within 2 object streams
+ 25 named destinations out of 1000 (max. 500000)
+ 42578 words of extra memory for PDF output out of 42996 (max. 10000000)
 

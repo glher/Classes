@@ -1,13 +1,10 @@
 \select@language {english}
 \par \penalty \@M \unhbox \voidb@x \hbox {}\hfill {\nag@@warning@vi \bfseries Page}\par \penalty \@M 
 \contentsline {chapter}{\chapternumberline {1}Heat transfer and fluid flow, nonmetallic coolants}{1}{chapter.1}
-\contentsline {section}{\numberline {1.1}[11-1] - Liquid superheat}{1}{section.1.1}
+\contentsline {section}{\numberline {1.1}[11-7] - Maximum volumetric thermal source strength}{1}{section.1.1}
 \contentsline {subsection}{\numberline {1.1.1}Problem}{1}{subsection.1.1.1}
 \contentsline {subsection}{\numberline {1.1.2}Solution}{1}{subsection.1.1.2}
-\contentsline {section}{\numberline {1.2}[11-2] - Burnout temperature}{2}{section.1.2}
+\contentsline {section}{\numberline {1.2}[11-9] - Heat transfer and mass flow rates}{2}{section.1.2}
 \contentsline {subsection}{\numberline {1.2.1}Problem}{2}{subsection.1.2.1}
 \contentsline {subsection}{\numberline {1.2.2}Solution}{2}{subsection.1.2.2}
-\contentsline {section}{\numberline {1.3}[K1] - Ideal gas law}{2}{section.1.3}
-\contentsline {subsection}{\numberline {1.3.1}Problem}{2}{subsection.1.3.1}
-\contentsline {subsection}{\numberline {1.3.2}Solution}{2}{subsection.1.3.2}
 \contentsline {chapter}{Bibliography}{5}{section*.2}
