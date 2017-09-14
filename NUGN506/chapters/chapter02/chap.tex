@@ -1,0 +1,194 @@
+%
+% File: chap01.tex
+%
+\let\textcircled=\pgftextcircled
+\chapter{Nuclear Fuel Resources, Mining and Milling}
+\label{chap:intro}
+
+\initial{S}everal problems related to the nuclear fuel resources, the mining and the milling of said resources, are presented in this homework. Exercises 2.1 through 2.6 are considered..
+
+%=======
+\section{Problem 2-1}
+\label{prob21}
+
+
+\subsection{Problem}
+\textit{Is the statement "The U.S. has 1,300,000 tons of uranium resources" complete?}
+
+\subsection{Solution}
+
+This statement is not complete. Indeed, it does not categorize the form, local abundance or ease of mining associated with this number. These considerations are primordial to assess the cost and possibility of accessing the uranium resources.
+
+\section{Problem 2-2}
+\label{prob22}
+
+\subsection{Problem}
+\textit{A figure from the book shows the discovery rate of U3O8, per foot drilled, in a certain price range. Based on these data, estimate the total amount of uranium that can be recovered in this price range.}
+
+\subsection{Solution}
+
+The trend can be approximated by $R = 17.6e^{-0.014F}$, where $R$ is lb/ft and $F$ is the amount of feet drilled.
+
+Consequently, the amount of uranium that could be mined can be approximated by:
+
+\begin{equation}
+U = \int_0^{1.6e10} 17.6e^{-0.014x} x dx
+\end{equation}
+
+We obtain $U \approx 90000\ lbs$
+
+
+\section{Problem 2-3}
+\label{prob23}
+
+
+\subsection{Problem}
+\textit{Assuming Equation 2.1 from the book is correct, what fraction of the earth's uranium can be found within the first 1000 m of the earth's crust?}
+
+\subsection{Solution}
+
+Equation 2.1 states:
+
+\begin{equation}
+U(z) = U_0 e^{-z/6300}
+\end{equation}
+
+$U_0 \approx 2.8\ ppm$. Consequently, with $z_a = 1000\ m$, $U(z_a) = 2.8 * e^{-10/63} = 2.4\ ppm$. Within the first 1000 m, 85\% of the Uranium contained in the earth can be found.
+
+
+\section{Problem 2-4}
+\label{prob24}
+
+
+\subsection{Problem}
+\textit{In 1976, the U.S. nuclear industry needed about 10,000 tons of U3O8. Assuming that enrichment and tails requirements do not change and the industry increases at a rate of $x\%$ per year, how long would it take for the $\$130/kgU$ resserves to be exhausted? Assume that the reserves are 600,000 tons of U3O8. After you develop the equation for the time, obtain numerical results for various values of x.}
+
+We can write the solution to this problem, and solve for N:
+
+\begin{equation}
+\sum_{n=0}^N (1+x)^n = \frac{R}{U_0}
+\end{equation}
+
+Unfortunately, there is no easy way, that i can think of, to solve this equation.
+
+For x = 2\%, the reserve can last 39 years. For x = 4\%, it can last 30 years, and for x = 6\%, it can last 25 years.
+
+
+\section{Problem 2-5}
+\label{prob25}
+
+
+\subsection{Problem}
+\textit{Assume that a decision is made to start ordering reactors at a constant rate per year from 1990 until 2030, at which time orders will stop, so that all known uranium reserves of 2.3 million tons (with prices up to \$260/kgU) will be used up. Assume the following: (a) All plants are identical and need 150 tons of natural uranium per year, (b) it takes 10 years to build a plant, (c) every plant has a 30-y lifetime, (d) there are 120 plants operating in 1990 and (e) reactors operating in 1990 start retiring in 2000, at a  rate of 10 a year. Calculate how many reactor per year could be ordered and the maximum number of reactors operating at any single time.}
+
+The model, taking into account the various constraints, shows that 11 plants a year would use 2,308,500 tons of Uranium over the whole "nuclear period". The maximum numbers of nuclear reactors operating at any given time would be 330, from 2029 to 2040, a time at which the nuclear reactor is maximum is stable due to the amount of reactor coming online being equal to the amount of reactors being taken offline.
+
+{\tiny
+\begin{table}[]
+\centering
+\caption{Model evolution - 11 plants a year - 1990 to 2030}
+\label{my-label}
+\begin{tabular}{ccc}
+\multicolumn{1}{c}{Year} & \# reactors & Uranium needs (tons) \\
+1990                     & 120         & 18,000               \\
+1991                     & 120         & 18,000               \\
+1992                     & 120         & 18,000               \\
+1993                     & 120         & 18,000               \\
+1994                     & 120         & 18,000               \\
+1995                     & 120         & 18,000               \\
+1996                     & 120         & 18,000               \\
+1997                     & 120         & 18,000               \\
+1998                     & 120         & 18,000               \\
+1999                     & 120         & 18,000               \\
+2000                     & 121         & 18,150               \\
+2001                     & 122         & 18,300               \\
+2002                     & 123         & 18,450               \\
+2003                     & 124         & 18,600               \\
+2004                     & 125         & 18,750               \\
+2005                     & 126         & 18,900               \\
+2006                     & 127         & 19,050               \\
+2007                     & 128         & 19,200               \\
+2008                     & 129         & 19,350               \\
+2009                     & 130         & 19,500               \\
+2010                     & 131         & 19,650               \\
+2011                     & 132         & 19,800               \\
+2012                     & 143         & 21,450               \\
+2013                     & 154         & 23,100               \\
+2014                     & 165         & 24,750               \\
+2015                     & 176         & 26,400               \\
+2016                     & 187         & 28,050               \\
+2017                     & 198         & 29,700               \\
+2018                     & 209         & 31,350               \\
+2019                     & 220         & 33,000               \\
+2020                     & 231         & 34,650               \\
+2021                     & 242         & 36,300               \\
+2022                     & 253         & 37,950               \\
+2023                     & 264         & 39,600               \\
+2024                     & 275         & 41,250               \\
+2025                     & 286         & 42,900               \\
+2026                     & 297         & 44,550               \\
+2027                     & 308         & 46,200               \\
+2028                     & 319         & 47,850               \\
+2029                     & 330         & 49,500               \\
+2030                     & 330         & 49,500               
+\end{tabular}
+\end{table}}
+
+{\tiny
+\begin{table}[]
+\centering
+\caption{Model evolution - 11 plants a year - 2030 to 2070}
+\label{my-label}
+\begin{tabular}{ccc}
+\multicolumn{1}{c}{Year} & \# reactors & Uranium needs (tons) \\
+2031                     & 330         & 49,500               \\
+2032                     & 330         & 49,500               \\
+2033                     & 330         & 49,500               \\
+2034                     & 330         & 49,500               \\
+2035                     & 330         & 49,500               \\
+2036                     & 330         & 49,500               \\
+2037                     & 330         & 49,500               \\
+2038                     & 330         & 49,500               \\
+2039                     & 330         & 49,500               \\
+2040                     & 330         & 49,500               \\
+2041                     & 319         & 47,850               \\
+2042                     & 308         & 46,200               \\
+2043                     & 297         & 44,550               \\
+2044                     & 286         & 42,900               \\
+2045                     & 275         & 41,250               \\
+2046                     & 264         & 39,600               \\
+2047                     & 253         & 37,950               \\
+2048                     & 242         & 36,300               \\
+2049                     & 231         & 34,650               \\
+2050                     & 220         & 33,000               \\
+2051                     & 209         & 31,350               \\
+2052                     & 198         & 29,700               \\
+2053                     & 187         & 28,050               \\
+2054                     & 176         & 26,400               \\
+2055                     & 165         & 24,750               \\
+2056                     & 154         & 23,100               \\
+2057                     & 143         & 21,450               \\
+2058                     & 132         & 19,800               \\
+2059                     & 121         & 18,150               \\
+2060                     & 110         & 16,500               \\
+2061                     & 99          & 14,850               \\
+2062                     & 88          & 13,200               \\
+2063                     & 77          & 11,550               \\
+2064                     & 66          & 9,900                \\
+2065                     & 55          & 8,250                \\
+2066                     & 44          & 6,600                \\
+2067                     & 33          & 4,950                \\
+2068                     & 22          & 3,300                \\
+2069                     & 11          & 1,650                \\
+2070                     & 0           & 0                   
+\end{tabular}
+\end{table}}
+
+\section{Problem 2-6}
+\label{prob26}
+
+
+\subsection{Problem}
+\textit{How many 1000 MWe LWRs can the world reserves of uranium serve? Consider the price category up to \$80/kgU. Assume that each reactor needs 150 tons of natural uranium per year and has a lifetime of 30 years. Also assume annual refuelings of one third of the core.}
+
+THe World RAR reserve under \$80/kgU are 3,429,000 tons, as of 2009. We assume that each reactor needs 50 tons a year for refueling, so a need for 1600 tons over its lifetime (150 + 29*50). Consequently, the toal world RAR reserve inferior to \$80/kgU could fuel a little shy of 2150 1000 MWe LWRs.
