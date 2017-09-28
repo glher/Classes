@@ -1,0 +1,392 @@
+%
+% File: chap01.tex
+%
+\let\textcircled=\pgftextcircled
+\chapter{Nuclear Fuel Resources, Mining and Milling}
+\label{chap:intro}
+
+\initial{S}everal problems related to the nuclear fuel resources, the mining and the milling of said resources, are presented in this homework. Exercises 2.1 through 2.6 are considered..
+
+%=======
+\section{Problem 3-1}
+\label{prob31}
+
+
+\subsection{Problem}
+\textit{An enrichment plant has a throughput of 32,000 kgU/day and produces 26,000 kgU as tails. What is the enrichment of the product if the feed is natural uranium and the tails are 0.25\%?}
+
+\subsection{Solution}
+
+We know, using the books notations, that:
+
+\begin{equation}
+F - P = W
+\end{equation}
+
+And that:
+
+\begin{equation}
+x_fF = x_pP + x_wW
+\end{equation}
+
+Consequently, knowing $F=32000\ kgU/day$ and $W=26000\ kgU/day$, we can obtain $P=6000\ kgU/day$.
+
+Then product enrichment is then given by:
+
+\begin{equation}
+x_p = \frac{x_fF - x_wW}{P} = \frac{0.711*32000-0.25*26000}{6000} = 2.7\%
+\end{equation}
+
+
+
+\section{Problem 3-2}
+\label{prob32}
+
+\subsection{Problem}
+\textit{A gaseous diffusion plant uses natural uranium feed and enriches it to 2.9\% of U-235. If th efeed stream is 35,000 kgU/day and the product is 6000 kgU/day, what is the value of the tails and the amount of uranium per day going into tails?}
+
+\subsection{Solution}
+
+We can deduce the amount of tails from the feed and product quantities, $W = F-P = 29000\ kgU/day$.
+
+Then, we can obtain the tails assay:
+
+
+\begin{equation}
+x_w = \frac{x_fF - x_pP}{W} = \frac{0.711*35000-2.9*6000}{29000} = 0.258\%
+\end{equation}
+
+
+\section{Problem 3-3}
+\label{prob33}
+
+\subsection{Problem}
+\textit{Show that the SWU factor can also be written as $SF = V(x_p) - V(x_w) - \frac{F}{P}\left[V(x_f)-V(x_w)\right]$.}
+
+\subsection{Solution}
+
+
+Equation 3.11 gives us:
+
+\begin{equation}
+SF = V(x_p) + \frac{W}{P}V(x_w) - \frac{F}{P}V(x_f)
+\end{equation}
+
+We can recall that $W = F-P$. Plugging this back in the above equation, we easily obtain the desired form of the equation.
+
+
+\section{Problem 3-4}
+\label{prob34}
+
+\subsection{Problem}
+\textit{Show that the ratio of the mass of natural uranium feed to the mass of U-235 in the enriched product is given by: $\frac{x_p-x_w}{x_f-x_w}\frac{1}{x_p}$. Calculate this ratio of natural uranium feed, 3\% enrichment, 0.2\% tails.}
+
+\subsection{Solution}
+
+
+This ratio is given by $\frac{F}{x_pP}$. Indeed, the mass of the product if P, and thus the mass of the U-235 in the product is $x_pP$, as $x_p$ represents the weight percentage of U-235.
+
+Using equation 3.6 from the book:
+
+\begin{equation}
+\frac{F}{P} = \frac{x_p - x_w}{x_f - x_w}
+\end{equation}
+
+We can divide this equation by $x_p$ to obtain the ratio of the mass of natural uranium feed to the mass of U-235 in the enriched product.
+
+
+\section{Problem 3-5}
+\label{prob35}
+
+\subsection{Problem}
+\textit{The gaseous diffusion method has been proposed for use in producing $BF_3$ enriched to 90\% in B-10. How many kilograms of $BF_3$ feed (natural boron) are needed to produce 1 kg of enriched product with 8\% tails?}
+
+\subsection{Solution}
+
+Natural Boron is enriched at 19.9\% in B-10. Using equation 3.6 from the book:
+
+\begin{equation}
+\frac{F}{P} = \frac{x_p - x_w}{x_f - x_w}
+\end{equation}
+
+We can write:
+
+\begin{equation}
+F = P\frac{x_p - x_w}{x_f - x_w} = \frac{90 - 8}{19.9 - 8} = 6.89\ kg
+\end{equation}
+
+We need a feed of 6.89 kg of $BF_3$.
+
+\section{Problem 3-6}
+\label{prob36}
+
+\subsection{Problem}
+\textit{Assume that HEU from weapons dismantlement containing 90\% U-235 is blended with depleted uranium with 0.2\% U-235. Under these conditions, how many kilograms of 4\% enriched fuel can be made per kilogram of HEU?}
+
+\subsection{Solution}
+
+
+We must have by downblending:
+
+\begin{equation}
+\frac{1*90 + 0.2x}{1+x} = 4
+\end{equation}
+
+This gives us $x = 22.6\ kg$, and consequently, we can produce $23.6\ kg$ of uranium enriched at 4\% with 1 kg of 90\% enriched uranium.
+
+
+\section{Problem 3-10}
+\label{prob310}
+
+\subsection{Problem}
+\textit{Prove equation 3-20}
+
+\subsection{Solution}
+
+Equation 3-20 states:
+
+\begin{equation}
+\frac{PF}{PS} = \frac{(x_f-x_w)(1-2x_w)}{x_w(1-x_w} + (1-2x_f)\ln \left[ \frac{x_w(1-x_f)}{x_f(1-x_w)} \right]
+\end{equation}
+
+That's where I kind of regret doing this in LateX, but here it goes.
+
+We want to calculate the derivative of equation 3-18 that's equal to zero. Equation 3-18 states that:
+
+\begin{equation}
+PE = [PU + PC]\frac{F}{P} + PS*SF
+\end{equation}
+
+Knowing that $SF = V(x_p) + \frac{W}{P}V(x_w) - \frac{F}{P}V(x_f)$, we can rewrite:
+
+\begin{equation}
+PE = [PU + PC - PS*V(x_f)]\frac{F}{P} + PS*[V(x_p)+\frac{W}{P}V(x_w)]
+\end{equation}
+
+Now, we can obtain the derivatives with respect to $x_w$.
+
+\begin{equation}
+\frac{d[V(x_p)+\frac{W}{P}V(x_w)]}{dx_w} = \frac{x_p-x_f}{(x_f-x_w)^2}V(x_w) + \frac{x_p-x_f}{x_f-x_w}\left[\frac{1-2x_w+2(x_w-1)x_w\ln \left(\frac{x_w}{1-x_w}\right)}{x_w(x_w-1)}\right]
+\end{equation}
+
+We can also obtain the derivative for the first part, contianing $F/P$.
+
+
+\begin{equation}
+\frac{d[PU+PC-PS*V(x_f)]F/P}{dx_w} = [PU+PC-PS*V(x_f)]\frac{x_p-x_f}{(x_f-x_w)^2}
+\end{equation}
+
+Now, the derivative of Equation 3-18 is zero if both side are opposite, thus:
+
+\begin{equation}
+[PU+PC-PS*V(x_f)]\frac{x_p-x_f}{(x_f-x_w)^2} = -PS\left[ \frac{x_p-x_f}{(x_f-x_w)^2}V(x_w) + \frac{x_p-x_f}{x_f-x_w}\left[\frac{1-2x_w+2(x_w-1)x_w\ln \left(\frac{x_w}{1-x_w}\right)}{x_w(x_w-1)}\right] \right]
+\end{equation}
+
+The factor $(x_p-x_f)$ simplifies away.
+
+\begin{equation}
+[PU+PC-PS*V(x_f)]\frac{1}{(x_f-x_w)^2} = -PS\left[ \frac{1}{(x_f-x_w)^2}V(x_w) + \frac{1}{x_f-x_w}\left[\frac{1-2x_w+2(x_w-1)x_w\ln \left(\frac{x_w}{1-x_w}\right)}{x_w(x_w-1)}\right] \right]
+\end{equation}
+
+Moving $PS$ on the left hand size and multiplying by $(x_f-x_w)^2$:
+
+
+\begin{equation}
+\frac{PU+PC-PS*V(x_f)}{PS} = V(x_w) + (x_f-x_w)\frac{1-2x_w}{x_w(x_w-1)} +(x_f-x_w)* 2\ln \left(\frac{x_w}{1-x_w}\right)
+\end{equation}
+
+Reorganizing again:
+
+\begin{equation}
+- \frac{PU+PC}{PS} = -V(x_f) + V(x_w) + (x_f-x_w)\frac{1-2x_w}{x_w(x_w-1)} +(x_f-x_w)* 2\ln \left(\frac{x_w}{1-x_w}\right)
+\end{equation}
+
+\begin{equation}
+\frac{PU+PC}{PS} = (x_f-x_w)\frac{1-2x_w}{x_w(1-x_w)} + V(x_f) - V(x_w) - (x_f-x_w)* 2\ln \left(\frac{x_w}{1-x_w}\right)
+\end{equation}
+
+\begin{equation}
+\frac{PU+PC}{PS} = (x_f-x_w)\frac{1-2x_w}{x_w(1-x_w)} + (2x_f-1)\ln\left(\frac{x_f}{1-x_f}\right) - (2x_w-1)\ln\left(\frac{x_w}{1-x_w}\right) - (x_f-x_w)* 2\ln \left(\frac{x_w}{1-x_w}\right)
+\end{equation}
+
+
+\begin{equation}
+\frac{PU+PC}{PS} = (x_f-x_w)\frac{1-2x_w}{x_w(1-x_w)} - \ln\left(\frac{x_w}{1-x_w}\right) \left[ 2(x_f-x_w) + (2x_w-1)\right] + (2x_f-1)\ln\left(\frac{x_f}{1-x_f}\right)
+\end{equation}
+
+\begin{equation}
+\frac{PU+PC}{PS} = (x_f-x_w)\frac{1-2x_w}{x_w(1-x_w)} - \ln\left(\frac{x_w}{1-x_w}\right) \left[ 2x_f-1\right] + (2x_f-1)\ln\left(\frac{x_f}{1-x_f}\right)
+\end{equation}
+
+\begin{equation}
+\frac{PU+PC}{PS} = (x_f-x_w)\frac{1-2x_w}{x_w(1-x_w)} + (2x_f-1)\ln\left(\frac{\frac{x_f}{1-x_f}}{\frac{x_w}{1-x_w}}\right)
+\end{equation}
+
+
+\begin{equation}
+\frac{PU+PC}{PS} = \frac{PF}{PS} =  (x_f-x_w)\frac{1-2x_w}{x_w(1-x_w)} + (2x_f-1)\ln\left(\frac{x_w(1-x_f)}{x_f(1-x_w)}\right)
+\end{equation}
+
+
+
+\section{Problem 3-12}
+\label{prob312}
+
+\subsection{Problem}
+\textit{Using the prices listed, calculate, for 1980 and for 2010, the value of tails that minimizes the cost of enriched uranium.}
+
+\subsection{Solution}
+
+We can use Equation 3-20 from the book, with $PF = PU+PC$. Doing so and considering a feed of natural uranium, we obtain, in 1980, an optimal tail assay of 0.256\%, and in 2010, an optimal tail assay of 0.219\%.
+
+\section{Problem 3-13}
+\label{prob313}
+
+\subsection{Problem}
+\textit{Assuming that the price per SWU is \$80 and the cost of conversion is \$4/kgU, what is the price of the U3O8 (\$/lbs U3O8) beyond whihc it will cost less to enrich the already mined, purified, and converted (to UF6) tails that contain 0.2\% U-235 rather than mine new uranium? Assume the product will be 3\% enriched in U-235 and the new tails will be 0.1\%.}
+
+\subsection{Solution}
+
+First, we can calculate the ratio $F/P$ and the associated $SF$ for both cases, depleted uranium feed and natural uranium feed.
+
+\begin{equation}
+\frac{F}{P}_{dep} = \frac{x_p - x_w}{x_f - x_w} = 29
+\end{equation}
+
+
+\begin{equation}
+\frac{F}{P}_{nat} = \frac{x_p - x_w}{x_f - x_w} = 5.48
+\end{equation}
+
+Consequently, this gives:
+
+
+\begin{equation}
+SF_{dep} = V(x_p) - V(x_w) - \frac{F}{P}\left[V(x_f)-V(x_w)\right] = 16.68
+\end{equation}
+
+
+\begin{equation}
+SF_{nat} = V(x_p) - V(x_w) - \frac{F}{P}\left[V(x_f)-V(x_w)\right] = 4.31
+\end{equation}
+
+Now, we can consider the equation 3-19.
+
+\begin{equation}
+PE = \left[\frac{PU}{1-l_c} + PC\right]\frac{F}{P} + PS*SF
+\end{equation}
+
+The conversion loss, $l_c$, will be taken as 0.5\%.
+
+Consequently, for the depleted uranium feed, we have free depleted UF6, and thus no need for conversion services:
+\begin{equation}
+PE_{dep} = PS*SF = 1334.4
+\end{equation}
+
+And for the natural uranium feed:
+\begin{equation}
+PE_{nat} = \left[\frac{PU}{1-l_c} + PC\right]\frac{F}{P} + PS*SF = 5.48\frac{PU}{1-l_c} + 366.72
+\end{equation}
+
+The cost effectiveness of using the depleted reserve will occur when $PU_{dep} = PU_{nat}$. That is:
+
+\begin{equation}
+PU = (1-l_c)\frac{1334.4-366.72}{5.48} = 175.7
+\end{equation}
+
+When the price of Uranium is in excess of 175.7 \$/kgU, or 67.6 \$/lb U3O8, the depleted uranium feed is more advantageous.
+
+\section{Problem 3-14}
+\label{prob314}
+
+\subsection{Problem}
+\textit{Repeat problem 3-13 assuming that the government will charge a price equal to 10\% of the price of fresh UF6 for the 0.2\% tails.}
+
+\subsection{Solution}
+
+The price of fesh UF6 is equal to $\frac{PU}{1-l_c}+PC$. In this case, with a conversion loss of 0.5\%, this means that the tails are available for $PDU = 8.44\ \$/kgU$. Plugging that back in the equations previously derived:
+
+\begin{equation}
+PE_{dep} = PDU\frac{F}{P} + PS*SF = 1579.16
+\end{equation}
+
+This gives:
+
+\begin{equation}
+PU = (1-l_c)\frac{1579.16-366.72}{5.48} = 220.1
+\end{equation}
+
+When the price of Uranium is in excess of 220.1 \$/kgU, or 84.7 \$/lb U3O8, the depleted uranium feed is more advantageous.
+
+\section{Problem 3-15}
+\label{prob315}
+
+\subsection{Problem}
+\textit{Repeat problem 3-13 assuming enriched product of 4.5\% and cost of tails given in problem 3-14.}
+
+\subsection{Solution}
+
+And we go again. Modifying the enrichment of the product changes the $F/P$ ratio, as well as the $SF$.
+
+\begin{equation}
+\frac{F}{P}_{dep} = \frac{x_p - x_w}{x_f - x_w} = 44
+\end{equation}
+
+
+\begin{equation}
+\frac{F}{P}_{nat} = \frac{x_p - x_w}{x_f - x_w} = 8.41
+\end{equation}
+
+Consequently, this gives:
+
+
+\begin{equation}
+SF_{dep} = V(x_p) - V(x_w) - \frac{F}{P}\left[V(x_f)-V(x_w)\right] = 16.19
+\end{equation}
+
+
+\begin{equation}
+SF_{nat} = V(x_p) - V(x_w) - \frac{F}{P}\left[V(x_f)-V(x_w)\right] = 3.82
+\end{equation}
+
+And finally:
+
+
+\begin{equation}
+PE_{dep} = PDU\frac{F}{P} + PS*SF = 1666.6
+\end{equation}
+
+\begin{equation}
+PE_{nat} = \left[\frac{PU}{1-l_c} + PC\right]\frac{F}{P} + PS*SF = 8.41\frac{PU}{1-l_c} + 339.2
+\end{equation}
+
+This gives:
+
+\begin{equation}
+PU = (1-l_c)\frac{1666.6-339.2}{8.41} = 157.0
+\end{equation}
+
+When the price of Uranium is in excess of 157 \$/kgU, or 60.4 \$/lb U3O8, the depleted uranium feed is more advantageous.
+
+\section{Problem 3-16}
+\label{prob316}
+
+\subsection{Problem}
+\textit{It is stated in section 3-6 that in the US, 700,000 t of UF6, tails of the enrichment process, are stored. How many kilograms of fuel enriched to 4.5\% in U-235 can be produced if these tails are reinserted into the enrichment process? Assume that the tails contains 2.5\% U-235 and that the new tails will go down to 0.15\%. At current prices, what would be the cost of 1 kg of such enriched fuel without consideration fabrication)?}
+
+\subsection{Solution}
+
+The problem certainly contains a typo, since tails of 2.5\% are nonsensical. Let's assume that the author meant 0.25\%.
+
+We obtain a ratio $F/P = 43.5$ and $SF = 18.92$. Consequently, if 700,000 tons of DUF6 is reintroduced, we can obtain 16092 tons of UF6 enriched at 4.5\%.
+
+The current cost of DUF6 is not given, but we can assume that the US government would be keen to get rid of it to avoid the costly deconversion and stabilization process. We will consider that PS = 150 \$, PU and PC being irrelevant here. This number is obtained from the table given in problem 3-12 for 2010.
+
+Then, we can calculate PE:
+
+\begin{equation}
+PE = PS*SF = 2838
+\end{equation}
+
+The enriched fuel would thus cost 2838 \$/kgU.
+
