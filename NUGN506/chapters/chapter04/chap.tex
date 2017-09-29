@@ -1,0 +1,39 @@
+%
+% File: chap01.tex
+%
+\let\textcircled=\pgftextcircled
+\chapter{Nuclear Fuel Fabrication}
+\label{chap:intro}
+
+\initial{S}everal problems related to the fuel fabrication are tackled in this fourth homework. These are the problems 4-3 and 4-4 from the textbook.
+
+%=======
+\section{Problem 4-3}
+\label{prob43}
+
+
+\subsection{Problem}
+\textit{Calculate the cost of nuclear fuel fabricated and delivered on-site using the following data: Cost of natural uranium, 60\$/lb; U3O8 enrichment, 4.2\%; conversion, \$11.50/kgU; tails, 0.25\%; price of SWU, \$110; conversion loss, 0.6\%; fabrication and transportation cost, \$230/kgU; fabrication loss, 0.7\%.}
+
+\subsection{Solution}
+
+Equation 4.1 in the book states that:
+
+\begin{equation}
+FF = \left[ \frac{PU}{(1-l_c)(1-l_f)} + \frac{PC}{(1-l_f)} \right] \frac{F}{P} + \frac{PS}{(1-l_f)}*SF + PF
+\end{equation}
+
+In the data, $PU$ is given in \$/lbU3O8. $PU = \$60/lbU3O8 = \$156/kgU$.
+
+Plugging the numbers in, we obtain the cost of nuclear fuel fabricated and delivered on-site $FF = \$2375$.
+
+\section{Problem 4-4}
+\label{prob44}
+
+
+\subsection{Problem}
+\textit{If the enrichment changes by 0.4\%, that is, goes from 4.2\% to 4.6\%, by what percentage does the cost of fuel in problem 4-3 change?}
+
+\subsection{Solution}
+
+We can change the enrichment to 4.6\% in Equation 4.1 (present in the factor $F/P$, itself present in the factor $SF$. This causes the cost of nuclear fuel fabricated and delivered on-site to increase to $FF = \$2615$. This represents a change of 10.1\%.
