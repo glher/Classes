@@ -1,0 +1,31 @@
+%
+% File: chap01.tex
+%
+\let\textcircled=\pgftextcircled
+\chapter{Learning Measurement 1}
+\label{chap:intro}
+
+\initial{T}he extra-credit problems for the first learning measurement exercise is tackled in this document.
+
+%=======
+\section{Extra Credit}
+\label{probec}
+
+
+\subsection{Problem}
+\textit{Thermal neutron fission of U-235 produces nuclides of the A = 132 isobar in 4.31\% of all fissions. This isobar includes the radioactive doubly-magic nuclide Sn-132 with Z = 50, N = 82 and a half-life of 39.7 seconds, but Te-132 has the highest independent fission yield for A = 132. Why aren't significant amounts of Cs-132 and Ba-132 (or Cs-131 or Ba-133 for the A = 131 or A = 133 isobars, respectively) observed in the cumulative fission yield when neighboring nuclides like Cs-133 and Ba-134 are?
+[Hint: It has nothing to do with magic numbers as Te-132 is the most probable fission product.]}
+
+\subsection{Solution}
+
+The cumulative fission yield is different from the independent fission yield. The cumulativie fission yield also consider the decay of the precursors to form a nuclide of interest. In our case, we know that Te-132 has the highest independent fission yield for $A = 132$. According the the chart of the nuclides, it beta decay to I-132, I-132 then can beta decay to a stable Xe-132, or lose its excited state. Consequently, this decay chain does not produce any element with more protons than Xenon, and thus no Cs-133 or Ba-133. Similarly for $A = 131$ or $A = 133$, the decay chains stop at the elements Xe-131 and Cs-133 respectively.
+
+Consequently, the cumulative fission yield for A132-isobars Cs-132 and Ba-132 are "only" their independent fission yield. In the meantime, Cs-133 and Ba-134 can also be created by the $\beta -$ decay chains:
+
+\begin{equation}
+{}^{133}I \rightarrow {}^{133}Xe \rightarrow {}^{133}Cs
+\end{equation}
+
+\begin{equation}
+{}^{134}Cs \rightarrow {}^{134}Ba
+\end{equation}

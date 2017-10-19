@@ -1,0 +1,99 @@
+%
+% File: chap01.tex
+%
+\let\textcircled=\pgftextcircled
+\chapter{Nuclear Fuel Fabrication}
+\label{chap:intro}
+
+\initial{S}everal problems related to the reactor flux and power are considered in this homework.
+
+%=======
+\section{Problem 5-1}
+\label{prob51}
+
+
+\subsection{Problem}
+\textit{A cylindrical thermal reactor with a radius of 1.8 m and a height of 3.8 m operates at a power of 1100 MWe with a thermal conversion efficiency (MWth --> MWe) of 33\%. The reactor is fueled with 95 tons of uranium enriched to 3.0 wt\% U-235. Assume 200 MeV released per fission and a U-235 fission cross section of 470 b for the neutron spectrum in this reactor. What is the average neutron flux?}
+
+\subsection{Solution}
+
+We can first obtain the number of fission needed to get 1 joule or 1 Watt-second, considering $E_f = 200\ MeV$. One fission releases $200 * \text{\num{1.602177e-13}} = \text{\num{3.2044e-11}}$ Watt-seconds. That is, you need $1/\text{\num{3.2044e-11}} = \text{\num{3.1207e10}}$ fission events to generate $1$ Watt-second.
+
+We can then link the reactor power $P$ to the flux $\phi$ using:
+
+\begin{equation}
+P = \frac{\phi * \Sigma_f * V}{\text{\num{3.1207e10}}}
+\end{equation}
+
+And so, the flux is given by:
+
+\begin{equation}
+\phi = \frac{P * \text{\num{3.1207e10}}}{\Sigma_f * V}
+\end{equation}
+
+The volume is $V = \text{\num{3.868e7}}\ cm^3$. $P = \text{\num{3.3e9}}\ Wth$.
+
+The microscopic cross-section is $\sigma_f = 470\ b$. We can obtain the macroscopic cross-section using $\Sigma_f = \sigma_f * \rho$, where $\rho$ is the atomic density in the fuel. We will consider here a classical reactor with a pin radius of $0.505\ cm$, a cladding with a width of $0.04\ cm$ and a lattice size of $1.4\ cm$. Considering a 3\% enriched UO2 fuel with a density of $10.1\ g.cm^{-3}$, water-moderated ($0.8\ g.cm^{-3}$), HT9 cladding reactor ($7.874\ g.cm^{-3}$), we can homogenize the reactor core (neglecting the absence of fuel in the control rods and some other geometric effects) and compute that we have $\text{\num{4.44e22}}\ atoms.cm^{-3}$ (full calculation details available upon request). Consequently, $\Sigma_f = \text{\num{470e-24}} * \text{\num{4.44e22}} = 20.86 cm^{-1}$.
+
+Plugging all this in the previous equation, we can obtain:
+
+
+\begin{equation}
+\phi = \frac{\text{\num{3.3e9}} * \text{\num{3.1207e10}}}{20.86 * \text{\num{3.868e7}}} = \text{\num{1.276e11}}\ n.cm^{-2}.s^{-1}
+\end{equation}
+
+I could also (probably should) have used the amount of UO2 present (95 tons) to compute the atomic density of UO2 within the given volume:
+
+The atomic weight of UO2 is 270 g/mol. The density of the fuel in the active reactor core is $\text{\num{95e6}} / \text{\num{3.868e7}} = 2.456\ g.cm^{-3}$. Consequently, the atomic density in the reactor is $\frac{\rho N_A}{M} = \frac{2.456 * \text{\num{6.022e23}}}{270} = \text{\num{5.478e21}}\ atoms.cm^{-3}$. Using this value, we can obtain $\Sigma_f = \text{\num{470e-24}} * \text{\num{5.478e21}} = 2.57 cm^{-1}$, which eventually gives us a flux of $\phi = \text{\num{1.03e12}}\ n.cm^{-2}.s^{-1}$.
+
+\section{Problem 5-2}
+\label{prob52}
+
+
+\subsection{Problem}
+\textit{Calculate the macroscopic (n,$\gamma$) cross section ($\Sigma_{\gamma}$) of natural uranium in the form of uranium metal (density = 18.95 g/cm 3 ) for reactions in the resonance region of the neutron spectrum.}
+
+\subsection{Solution}
+
+We'll neglect the U-234 presence in the uranium metal, and consider natural uranium (0.711\% U-235, 99.289\% U-238). In the resonance region, $\sigma_{\gamma, U8} = 277\ b$, while $\sigma_{\gamma, U5} = 140\ b$.
+
+We can calculate the total macroscopic cross-section using:
+
+\begin{equation}
+\Sigma_{\gamma} = \sigma_{\gamma, U8} * N_{U8} + \sigma_{\gamma, U5} * N_{U5}
+\end{equation}
+
+$N_{U8}$ and $N_{U5}$ can be obtained from the metal density:
+
+\begin{equation}
+N_{U5} = \frac{e*\rho N_A}{M} = \frac{e*\rho N_A}{(1-e)*238.0289 + e*235.0439}
+\end{equation}
+
+\begin{equation}
+N_{U8} = \frac{(1-e)*\rho N_A}{M} = \frac{(1-e)*\rho N_A}{(1-e)*238.0289 + e*235.0439}
+\end{equation}
+
+With a natural enrichement, $M = (1-e)*238.0289 + e*235.0439 = 238.0077\ g/mol$
+
+This gives us $N_{U8} = \frac{0.99289 * 18.95 * N_A}{238.0077} = \text{\num{4.76e22}}\ atoms.cm^{-3}$ and $N_{U5} = \frac{0.00711 * 18.95 * N_A}{238.0077} = \text{\num{3.41e20}}\ atoms.cm^{-3}$.
+
+And consequently, $\Sigma_{\gamma} = \text{\num{277e-24}} * \text{\num{4.76e22}} + \text{\num{140e-24}} * \text{\num{3.41e20}} = 13.23\ cm^{-1}$
+
+
+\subsection{Problem}
+\textit{Calculate the mass of Pu-239 produced in a reactor operating for one year with an average flux of $\text{\num{1.2e12}}\ n.cm^{-2}.s^{-1}$, loaded with 90 tons of uranium enriched to 3 wt\% U-235. For
+cross sections, assume that for U-238 $\sigma_c = 2.1\ b$ and $\sigma_a = 2.3\ b$ and for Pu-239 $\sigma_a = 600 b$ and the half-life of Pu-239 is 24,400 years.}
+
+\subsection{Solution}
+
+Pu-239 is created by capture of a neutron on U-238 and beta decay of the resulting U-239 with a short half-life. Consequently, we can consider that every neutron capture by U-238 results in Pu-239. The reaction rate for the neutron capture by U-238 is $R = \phi * \sigma_c = \text{\num{1.2e12}} * \text{\num{2.1e-24}} = \text{\num{2.52e-12}} s^{-1}$. We can multiply by the number of U-238 atoms present in the fuel to compute the number of Pu-239 created per second.
+
+\begin{equation}
+N_{U8} = \frac{(1-e)*\rho V N_A}{M} = \frac{(1-e)* m * N_A}{(1-e)*238.0289 + e*235.0439} = \frac{0.97 * \text{\num{90e6}} * N_A}{237.94} = \text{\num{2.21e29}}
+\end{equation}
+
+Consequently, every second, we will have created $N_{U8} * R = \text{\num{5.57e17}}$ atoms of Pu-239 in the reactor. However, the Pu-239 would decay, with a half-life of 24,400 years, and it would also absorb neutrons.
+
+These losses are given by $(\lambda + \sigma_{a, Pu239}*\phi) * N_{Pu-239}$. We can calculate the losses to be $(\frac{\ln(2)}{T_{1/2}} + \sigma_{a, Pu239}*\phi) * N_{Pu-239} = \text{\num{4e8}}$, the impact of the natural radioactive decay is negligible.
+
+Consequently, the losses to capture and radioactive decay are negligible compared to the production of Pu-239, and we create \num{1.76e25} atoms of Pu-239 after one year, that is $\text{\num{1.76e25}} * 239.05216 * 1.66054e-24\ g = 6.99\ kg$.

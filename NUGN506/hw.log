@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.9.11)  29 SEP 2017 11:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.23)  19 OCT 2017 15:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1979,7 +1979,7 @@ Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
 \ALG@tmplength=\skip314
 )
 Document Style - pseudocode environments for use with the `algorithmicx' style
-) (/home/glher/texmf/tex/latex/commonstuff/kbordermatrix.sty
+) (/home/glher_a/texmf/tex/latex/kbordermatrix.sty
 Package: kbordermatrix 2011/09/21 Bordered matrix with brackets
 \kbcolsep=\skip315
 \kbrowsep=\skip316
@@ -2412,7 +2412,7 @@ LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
 (Font)              scaled to size 11.15991pt on input line 30.
 LaTeX Font Info:    Font shape `T1/fnc/m/sc' will be
 (Font)              scaled to size 11.15991pt on input line 32.
- <logos/CSM.png, id=39, 306.14375pt x 309.155pt>
+ <logos/CSM.png, id=47, 306.14375pt x 309.155pt>
 File: logos/CSM.png Graphic file (type png)
 
 <use logos/CSM.png>
@@ -2455,9 +2455,9 @@ s been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.414 \import
-             {chapters/chapter04/}{chap.tex} [2
+             {chapters/chapter05/}{chap.tex} [2
 
-] (./chapters/chapter04/chap.tex
+] (./chapters/chapter05/chap.tex
 LaTeX Font Info:    Font shape `T1/fnc/m/sc' will be
 (Font)              scaled to size 10.18341pt on input line 5.
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
@@ -2472,18 +2472,21 @@ LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
 (Font)              scaled to size 11.15991pt on input line 15.
 LaTeX Font Info:    Font shape `T1/fnc/m/it' will be
 (Font)              scaled to size 10.18341pt on input line 16.
+[1
 
-Underfull \vbox (badness 1377) has occurred while \output is active []
-
- [1
-
-])
+]
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 9.29993pt on input line 431.
+(Font)              scaled to size 9.29993pt on input line 74.
 LaTeX Font Info:    Font shape `T1/fnc/m/sc' will be
-(Font)              scaled to size 9.29993pt on input line 431.
+(Font)              scaled to size 9.29993pt on input line 74.
+ [2]
+LaTeX Font Info:    Font shape `T1/fnc/m/it' will be
+(Font)              scaled to size 7.71893pt on input line 85.
+LaTeX Font Info:    Font shape `T1/fnc/m/it' will be
+(Font)              scaled to size 4.6314pt on input line 85.
+) [3] [4
 
-[2] (./hw.bbl
+] (./hw.bbl
 
 Package natbib Warning: Empty `thebibliography' environment on input line 3.
 
@@ -2496,8 +2499,7 @@ This document will not have a glossary.
 
 Package nag Warning: 1 complaints in total.
 
-[3
-
+[5
 
 ]
 \tf@toc=\write10
@@ -2509,26 +2511,32 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 439.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 439.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 439.
 Package rerunfilecheck Info: File `hw.out' has not changed.
-(rerunfilecheck)             Checksum: B631AFE191084C067BAE45B3B636B45E;463.
+(rerunfilecheck)             Checksum: 29110F1DABB33721B92F78160232747D;585.
+
+
+LaTeX Font Warning: Size substitutions with differences
+(Font)              up to 2.01195pt have occurred.
+
  ) 
 Here is how much of TeX's memory you used:
- 43871 strings out of 493029
- 837413 string characters out of 6136234
- 1119994 words of memory out of 5000000
- 46462 multiletter control sequences out of 15000+600000
- 71127 words of font info for 149 fonts, out of 8000000 for 9000
+ 44055 strings out of 493029
+ 840864 string characters out of 6136234
+ 1123993 words of memory out of 5000000
+ 46596 multiletter control sequences out of 15000+600000
+ 97699 words of font info for 220 fonts, out of 8000000 for 9000
  1146 hyphenation exceptions out of 8191
- 52i,12n,80p,10374b,764s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 52i,13n,80p,10374b,764s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
-e/texmf-dist/fonts/type1/public/fourier/fourier-mex.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/public/fourier/fourier-ms.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/urw/ncntrsbk/uncb8a.pfb></usr/share/texlive/texmf-dist/fonts/type
-1/urw/ncntrsbk/uncr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/ncntrs
-bk/uncri8a.pfb>
-Output written on hw.pdf (7 pages, 76055 bytes).
+e/texmf-dist/fonts/type1/public/fourier/fourier-ml.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/fourier/fourier-mlit.pfb></usr/share/texlive/texmf-di
+st/fonts/type1/public/fourier/fourier-ms.pfb></usr/share/texlive/texmf-dist/fon
+ts/type1/urw/ncntrsbk/uncb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw
+/ncntrsbk/uncr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/ncntrsbk/un
+cri8a.pfb>
+Output written on hw.pdf (9 pages, 89495 bytes).
 PDF statistics:
- 110 PDF objects out of 1000 (max. 8388607)
- 93 compressed objects within 1 object stream
- 17 named destinations out of 1000 (max. 500000)
- 39506 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 141 PDF objects out of 1000 (max. 8388607)
+ 120 compressed objects within 2 object streams
+ 27 named destinations out of 1000 (max. 500000)
+ 43618 words of extra memory for PDF output out of 51595 (max. 10000000)
 
