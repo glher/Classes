@@ -1,0 +1,125 @@
+%
+% File: chap01.tex
+%
+\let\textcircled=\pgftextcircled
+\chapter{Nuclear Fuel Fabrication}
+\label{chap:intro}
+
+\initial{S}everal problems related to the reactor flux and power are considered in this homework.
+
+%=======
+\section{Problem 6-1}
+\label{prob61}
+
+
+\subsection{Problem}
+\textit{Prove that if a utility pays 1 mill/kWhe for disposal of used fuel, it is equivalent to \$253/kgU. Assume a burnup of 33,000 MWd/t and an average thermal efficiency of 32\%}
+
+\subsection{Solution}
+
+A utility pays 1 mill for every $kWh_e$. Considering the efficiency, this means that they pay 1 mill for every $3.125\ kWh_{th}$ they produce in disposal of used fuel. How much uranium is needed to produce $3.125\ kWh_{th} = 0.13\ kWd_{th} = 0.00013\ MWd_{th}$ ?
+
+The plant produces 33,000 MWd per tons of uranium, so \num{3.94e-6} kg are needed to produce $1\ kWh_e$. Paying 1 mill for \num{3.94e-6} kgU means that the price of uranium is 253.8 \$/kgU
+
+
+\section{Problem 6-2}
+\label{prob62}
+
+
+\subsection{Problem}
+\textit{A utility is given the choice of paying 1.2 mill/kWhe for a used fuel disposal fee or \$300/kgU at 35,000 MWd/t burnup and 32\% efficiency. Which choice is more economical?}
+
+\subsection{Solution}
+
+If the utility picks the 1.2 mill/kWhe option, this translates to, as seen previously (with 35,000 instead of 33,000 MWd/t) : 323.1 \$/kgU. The utility should pick the flat fee.
+
+
+
+\section{Problem 6-3}
+\label{prob63}
+
+
+\subsection{Problem}
+\textit{The initial enrichment of uranium in LWRs is 3\% and the final (at discharge after 3 years in the core) is 0.8\%. Based on these numbers, calculate the average thermal neutron flux in a LWR.}
+
+\subsection{Solution}
+
+The burnup is 73.3\%, as it is the percentage of U-235 that has been consumed. We'll consider $\sigma_a = 685\ b$ for U-235, and a thermal group approximation.
+
+We know that:
+
+\begin{equation}
+\frac{dN_5}{dt} = -sigma_a * \phi * N_5
+\end{equation}
+
+Consequently:
+
+\begin{equation}
+\frac{N_5(1-0.733)}{3 * 86400 * 365.25} = \text{\num{685e-24}} * \phi * N_5
+\end{equation}
+
+Rearranging:
+
+
+\begin{equation}
+\phi = \frac{1-0.733}{3 * 86400 * 365.25 * \text{\num{685e-24}}}
+\end{equation}
+
+And so, the average flux is $\phi = \text{\num{4.11e12}}$. This is based on several consequential approximations: the absorption cross-section of U-235, the negligibility of the fast group in the reactor, and the burnup of only U-235.
+
+\section{Problem 6-4}
+\label{prob64}
+
+
+\subsection{Problem}
+\textit{What are the availability and capacity factor for a reactor that had the power history shown in Problem 6.4 from the book?}
+
+\subsection{Solution}
+
+The availability factor is $91.7\%$, as the plant was operational 11 months out of 12. The capacity factor is $67.5\%$.
+
+\section{Problem 6-5}
+\label{prob65}
+
+
+\subsection{Problem}
+\textit{Calculate the EFPD for the operating history shown in Problem 6.5 from the book}
+
+\subsection{Solution}
+
+$30.4375 * [2*1 + 1*0.75 + 1*0.5 + 4*1] = 220.7\ EFPD$
+
+The operating history shows a EFPD of 220.7 days.
+
+
+\section{Problem 6-6}
+\label{prob66}
+
+
+\subsection{Problem}
+\textit{A nuclear power plant uses 87 tons of uranium in its core. The first core consists of three equal batches with enrichments of 2.5\%, 2.9\%, and 3.1\%. For subsequent cycles, the reactor uses batches with enrichment equal to 2.6\% and 3.2\% in alternate years. One-third of the core is discharged each year and is replaced by new fuel. Assume a 30-year lifetime and 0.2\% tails during the life of the plant. Calculate (a) the number of SWUs needed for the first core, the number of SWUs every year after the first cycle, and the total SWUs over the life of the plant; (b) the amount of U3O8 and UF6 needed for the first core, every year after, and the total over the life of the plant ; (c) assume the following prices and calculate the cost of the first core and the cost of the fuel per year for the life of the plant [U3O8: \$65/kg, conversion: \$7/kg with 0.5\% loss, SWU: \$105, fabrication and transportation: \$250/kg with 0.8\% loss]}
+
+\subsection{Solution}
+
+
+
+\section{Problem 6-7}
+\label{prob67}
+
+
+\subsection{Problem}
+\textit{Is it possible for the availability and capacity factors to be equal? Explain your answer. Take into account the real operating conditions of a reactor.}
+
+\subsection{Solution}
+
+
+
+\section{Problem 6-8}
+\label{prob68}
+
+
+\subsection{Problem}
+\textit{A nuclear power plant operated for a year with a 69\% capacity factor. What is the burnup of the fuel if the core contains 95 tons of uranium and has been designed to produce 1200 MWe with a 32\% efficiency? What will be the average burnup, over the life of the plant, if one-third of the core is replaced every year? Assume a 30-year life for the plant and a constant capacity factor and efficiency.}
+
+\subsection{Solution}
+
