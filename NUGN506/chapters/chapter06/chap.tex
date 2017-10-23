@@ -2,10 +2,10 @@
 % File: chap01.tex
 %
 \let\textcircled=\pgftextcircled
-\chapter{Nuclear Fuel Fabrication}
+\chapter{In-Core Fuel Management}
 \label{chap:intro}
 
-\initial{S}everal problems related to the reactor flux and power are considered in this homework.
+\initial{S}everal problems related to the in-core fuel management are tackled in this homework. The subjects of availability factor, capacity factor, cost of fuel and burnup are notably considered.
 
 %=======
 \section{Problem 6-1}
@@ -49,23 +49,23 @@ The burnup is 73.3\%, as it is the percentage of U-235 that has been consumed. W
 We know that:
 
 \begin{equation}
-\frac{dN_5}{dt} = -sigma_a * \phi * N_5
+\frac{dN_5}{dt} = -\sigma_a * \phi * N_5
 \end{equation}
 
 Consequently:
 
 \begin{equation}
-\frac{N_5(1-0.733)}{3 * 86400 * 365.25} = \text{\num{685e-24}} * \phi * N_5
+\frac{N_5(1-0.266)}{3 * 86400 * 365.25} = \text{\num{685e-24}} * \phi * N_5
 \end{equation}
 
 Rearranging:
 
 
 \begin{equation}
-\phi = \frac{1-0.733}{3 * 86400 * 365.25 * \text{\num{685e-24}}}
+\phi = \frac{1-0.266}{3 * 86400 * 365.25 * \text{\num{685e-24}}}
 \end{equation}
 
-And so, the average flux is $\phi = \text{\num{4.11e12}}$. This is based on several consequential approximations: the absorption cross-section of U-235, the negligibility of the fast group in the reactor, and the burnup of only U-235.
+And so, the average flux is $\phi = \text{\num{1.13e13}}$. This is based on several consequential approximations: the absorption cross-section of U-235, the negligibility of the fast group in the reactor, and the burnup of only U-235.
 
 \section{Problem 6-4}
 \label{prob64}
@@ -101,6 +101,98 @@ The operating history shows a EFPD of 220.7 days.
 
 \subsection{Solution}
 
+(a) We know that 29 tons of Uranium in the first core is enriched at 2.5\%:
+
+The SWUs needed to get this is given by:
+
+\begin{equation}
+SWU = PV(x_p) + WV(x_w) - FV(x_f)
+\end{equation}
+
+We now need to calculate P, W, and F, knowing that $x_w = 0.002$, $x_f = 0.00711$ and $x_{p,1} = 0.025$.
+
+P is given by $P = 87/3 = 29$ tons. Consequently:
+
+\begin{equation}
+F_1 = P\frac{x_{p,1} - x_w}{x_f - x_w} = 29\frac{0.025-0.002}{0.00711-0.002} = 130.5\ \text{tons}
+\end{equation}
+
+From that, we can deduce $W_1 = 130.5 - 29 = 101.5$ tons.
+
+Finally, we can calculate the SWU needed for this particular batch of the first core:
+
+\begin{equation}
+SWU_1 = 29*v(0.025) + 101.5*v(0.002) - 130.5*v(0.00711) = 93.6 tSWU
+\end{equation}
+
+In the same way, we can calculate the SWU needed for the other two batches of the first core:
+
+\begin{equation}
+F_2 = P\frac{x_{p,2} - x_w}{x_f - x_w} = 29\frac{0.029-0.002}{0.00711-0.002} = 153.2\ \text{tons}
+\end{equation}
+
+\begin{equation}
+SWU_2 = 29*v(0.029) + 124.2*v(0.002) - 153.2*v(0.00711) = 118.5\ tSWU
+\end{equation}
+
+
+
+\begin{equation}
+F_3 = P\frac{x_{p,3} - x_w}{x_f - x_w} = 29\frac{0.031-0.002}{0.00711-0.002} = 164.6\ \text{tons}
+\end{equation}
+
+\begin{equation}
+SWU_3 = 29*v(0.031) + 135.6*v(0.002) - 164.6*v(0.00711) = 131.3\ tSWU
+\end{equation}
+
+We can sum the three SWU obtained to get the total SWU needed for the first core, $343.4$ tSWU.
+
+To simplify things, we'll consider that the cycle length is one year, with no significant downtime for refueling.
+
+A 2.6\% batch reload would necessitate:
+
+\begin{equation}
+F_4 = P\frac{x_{p,4} - x_w}{x_f - x_w} = 29\frac{0.026-0.002}{0.00711-0.002} = 136.2\ \text{tons}
+\end{equation}
+
+\begin{equation}
+SWU_4 = 29*v(0.026) + 107.2*v(0.002) - 136.2*v(0.00711) = 99.8\ tSWU
+\end{equation}
+
+A 3.2\% batch reload would necessitate:
+
+\begin{equation}
+F_5 = P\frac{x_{p,5} - x_w}{x_f - x_w} = 29\frac{0.032-0.002}{0.00711-0.002} = 170.3\ \text{tons}
+\end{equation}
+
+\begin{equation}
+SWU_5 = 29*v(0.032) + 141.3*v(0.002) - 170.3*v(0.00711) = 137.7\ tSWU
+\end{equation}
+
+We'll have 15 reloads at 2.6\% and 14 reloads at 3.2\%, and so the total SWU over the life of the reactor is $343.3 + 14*137.7 + 15*99.8 = 3768.1$ tSWU.
+
+
+(b) We can now calculate the amount of U3O8 and UF6 needed for the first core. We need $F = 448.3$ tons of feed UF6, as seen previously. This corresponds to 378.3 tons of U3O8 with a 0.5\% conversion loss. Over the life of the plant, we need $448.3 + 15 * 136.2 + 14 * 170.3 = 4875.5$ tons of UF6. This corresponds to $4113.7$ tons of U3O8.
+
+(c) We can now calculate the costs. We now that we need 378.3 tons of U3O8, at \$65/kg, and 343.4 tSWU at \$105. So, in order to get the enriched fuel needed for the first core, we need \$24,589,500 for the U3O8 and \$36,057,000 for the enrichment. We have 87 tons of fuel to fabricate and transport for the first core, at \$250/kg with 0.8\% loss. To fabricate and transport 87 tons, we thus need to have 1.008 times the amount of fuel, which directly translates to an 0.8\% increase in the cost of the U3O8 and subsequent enrichment.
+
+Finally:
+
+\begin{equation}
+1.008 * (\$24,589,500 + \$36,057,000) + 87,000 * \$250 = \$82,881,672
+\end{equation}
+
+The first core will cost a total of \$82,881,672.
+
+For a 2.6\% reload, we need $1.008 * (99.8 * 1000 * \$105 + 136.2 * 1000 * \$65) = \$19,486,656$. For a 3.2\% reload, we need $1.008 * (137.7 * 1000 * 105 + 170.3 * 1000 * 65) = \$25,732,224$. In each case, we also need \$7,250,000 for fuel fabrication and transportation.
+
+So, over 30 years:
+
+\begin{equation}
+\$82,881,672 + 15 * \$19,486,656 + 14 * \$25,732,224 + 29 * \$7,250,000 = \$945,682,648
+\end{equation}
+
+The fuel will cost a little less than a billion dollar over the 30-year lifespan of the plant. This comes at a cost of around \$600,000 per assembly assuming a common 157-assemblies 1000MWe reactor.
 
 
 \section{Problem 6-7}
@@ -112,6 +204,7 @@ The operating history shows a EFPD of 220.7 days.
 
 \subsection{Solution}
 
+By definition, it is not possible. Indeed, a nuclear reactor needs to ramp up over the course of a week, which would impact the capacity factor but not the availability factor.
 
 
 \section{Problem 6-8}
@@ -123,3 +216,10 @@ The operating history shows a EFPD of 220.7 days.
 
 \subsection{Solution}
 
+The burnup is given by:
+
+\begin{equation}
+BU = \frac{P_0 CF T}{U_M} = \frac{3750 * 0.69 * 365.25}{95} = 9948.3\ MWd/t
+\end{equation}
+
+After 3 years, the plant reaches an equilibrium and the average burnup is constant, at 19896.6 MWd/t. When one batch reaches the maximum burnup before discharge after 3 years, the core contains one batch at 9948.3 MWd/t, one at 19896.6 MWd/t and one at 29844.9 MWd/t. Then, the rotation makes it so that the higher burnup batch is removed, a new one is introduced, and we again have the same batch burnup configuration after an additional year.
