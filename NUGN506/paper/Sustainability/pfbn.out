@@ -1,0 +1,35 @@
+\BOOKMARK [1][-]{section.1}{Introduction}{}% 1
+\BOOKMARK [1][-]{section.2}{Background}{}% 2
+\BOOKMARK [2][-]{subsection.2.1}{Prognostics and Health Management}{section.2}% 3
+\BOOKMARK [2][-]{subsection.2.2}{Bayesian network}{section.2}% 4
+\BOOKMARK [2][-]{subsection.2.3}{Functional model}{section.2}% 5
+\BOOKMARK [2][-]{subsection.2.4}{PHM in risk and reliability analyses}{section.2}% 6
+\BOOKMARK [3][-]{subsubsection.2.4.1}{PHM-potential methods}{subsection.2.4}% 7
+\BOOKMARK [3][-]{subsubsection.2.4.2}{Non-PHM methods}{subsection.2.4}% 8
+\BOOKMARK [2][-]{subsection.2.5}{Human Reliability Analysis}{section.2}% 9
+\BOOKMARK [1][-]{section.3}{Methodology}{}% 10
+\BOOKMARK [2][-]{subsection.3.1}{Logical Functional model}{section.3}% 11
+\BOOKMARK [2][-]{subsection.3.2}{Databases}{section.3}% 12
+\BOOKMARK [2][-]{subsection.3.3}{Trees computing}{section.3}% 13
+\BOOKMARK [2][-]{subsection.3.4}{PHM hardware positions}{section.3}% 14
+\BOOKMARK [2][-]{subsection.3.5}{Bayesian network nodes}{section.3}% 15
+\BOOKMARK [2][-]{subsection.3.6}{Bayesian network algorithm}{section.3}% 16
+\BOOKMARK [2][-]{subsection.3.7}{Engineering decision framework}{section.3}% 17
+\BOOKMARK [1][-]{section.4}{Case study}{}% 18
+\BOOKMARK [2][-]{subsection.4.1}{Logical functional model}{section.4}% 19
+\BOOKMARK [2][-]{subsection.4.2}{Critical nodes}{section.4}% 20
+\BOOKMARK [2][-]{subsection.4.3}{Spanning trees}{section.4}% 21
+\BOOKMARK [2][-]{subsection.4.4}{PHM hardware inventory}{section.4}% 22
+\BOOKMARK [2][-]{subsection.4.5}{Population of the databases}{section.4}% 23
+\BOOKMARK [2][-]{subsection.4.6}{Results}{section.4}% 24
+\BOOKMARK [1][-]{section.5}{Discussions and future work}{}% 25
+\BOOKMARK [1][-]{section.6}{Conclusion}{}% 26
+\BOOKMARK [2][-]{subsection.6.1}{Software}{section.6}% 27
+\BOOKMARK [2][-]{subsection.6.2}{Trees computing}{section.6}% 28
+\BOOKMARK [2][-]{subsection.6.3}{Method name}{section.6}% 29
+\BOOKMARK [2][-]{subsection.6.4}{APA citation}{section.6}% 30
+\BOOKMARK [2][-]{subsection.6.5}{Bayesian algorithm description}{section.6}% 31
+\BOOKMARK [2][-]{subsection.6.6}{Nodes}{section.6}% 32
+\BOOKMARK [2][-]{subsection.6.7}{Blind submission}{section.6}% 33
+\BOOKMARK [2][-]{subsection.6.8}{Biographies}{section.6}% 34
+\BOOKMARK [2][-]{subsection.6.9}{Funding}{section.6}% 35

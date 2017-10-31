@@ -1,0 +1,58 @@
+This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: pfbn.aux
+The style file: apacite.bst
+Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
+Reallocated global_strs (elt_size=20001) to 20 items from 10.
+Reallocated glb_str_end (elt_size=4) to 20 items from 10.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Database file #1: pfbn.bib
+apacite.bst [2013/07/21 v6.03 APA bibliography style]
+Warning--No address in iea_solar
+You've used 6 entries,
+            6951 wiz_defined-function locations,
+            1306 strings with 11490 characters,
+and the built_in function-call counts, 10832 in all, are:
+= -- 1342
+> -- 98
+< -- 503
++ -- 485
+- -- 12
+* -- 684
+:= -- 2097
+add.period$ -- 25
+call.type$ -- 6
+change.case$ -- 102
+chr.to.int$ -- 0
+cite$ -- 13
+duplicate$ -- 227
+empty$ -- 423
+format.name$ -- 114
+if$ -- 2080
+int.to.chr$ -- 0
+int.to.str$ -- 18
+missing$ -- 0
+newline$ -- 144
+num.names$ -- 48
+pop$ -- 155
+preamble$ -- 1
+purify$ -- 24
+quote$ -- 0
+skip$ -- 755
+stack$ -- 0
+substring$ -- 596
+swap$ -- 155
+text.length$ -- 39
+text.prefix$ -- 0
+top$ -- 1
+type$ -- 480
+warning$ -- 1
+while$ -- 37
+width$ -- 0
+write$ -- 167
+(There was 1 warning)

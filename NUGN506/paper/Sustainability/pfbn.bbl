@@ -1,0 +1,158 @@
+\begin{thebibliography}{}
+
+\bibitem [\protect \citeauthoryear {%
+Boccard%
+}{%
+Boccard%
+}{%
+{\protect \APACyear {2009}}%
+}]{%
+wind_cf}
+\APACinsertmetastar {%
+wind_cf}%
+\begin{APACrefauthors}%
+Boccard, N.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2009}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Capacity factor of wind power realized values vs.
+  estimates}} {{Capacity factor of wind power realized values vs.
+  estimates}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{{Energy Policy}}{37}{}{2679 -- 2688}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Kempton%
+\ \BBA {} Tomic%
+}{%
+Kempton%
+\ \BBA {} Tomic%
+}{%
+{\protect \APACyear {2005}}%
+}]{%
+solar_peak}
+\APACinsertmetastar {%
+solar_peak}%
+\begin{APACrefauthors}%
+Kempton, W.%
+\BCBT {}\ \BBA {} Tomic, J.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2005}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Vehicle-to-grid power implementation: From stabilizing
+  the grid to supporting large-scale renewable energy}} {{Vehicle-to-grid power
+  implementation: From stabilizing the grid to supporting large-scale renewable
+  energy}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{{Journal of Power Sources}}{144}{}{280 -- 294}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Masson%
+\ \BBA {} Brunisholz%
+}{%
+Masson%
+\ \BBA {} Brunisholz%
+}{%
+{\protect \APACyear {2016}}%
+}]{%
+iea_solar}
+\APACinsertmetastar {%
+iea_solar}%
+\begin{APACrefauthors}%
+Masson, G.%
+\BCBT {}\ \BBA {} Brunisholz, M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2016}{}{}.
+\newblock
+\APACrefbtitle {SNAPSHOT OF GLOBAL PHOTOVOLTAIC MARKETS} {Snapshot of global
+  photovoltaic markets}\ \APACbVolEdTR{}{\BTR{}\ \BNUM\ Report IEA PVPS
+  T1-31:2017}.
+\newblock
+\APACaddressInstitution{}{International Energy Agency - Photovoltaic Power
+  Systems Programme}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Paish%
+}{%
+Paish%
+}{%
+{\protect \APACyear {2002}}%
+}]{%
+hydro_small}
+\APACinsertmetastar {%
+hydro_small}%
+\begin{APACrefauthors}%
+Paish, O.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2002}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Small hydro power: technology and current status}}
+  {{Small hydro power: technology and current status}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{{Renewable and Sustainable Energy Reviews}}{6}{}{537 --
+  556}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Reichelstan%
+\ \BBA {} Yorston%
+}{%
+Reichelstan%
+\ \BBA {} Yorston%
+}{%
+{\protect \APACyear {2013}}%
+}]{%
+solar_comp}
+\APACinsertmetastar {%
+solar_comp}%
+\begin{APACrefauthors}%
+Reichelstan, S.%
+\BCBT {}\ \BBA {} Yorston, M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2013}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{The Prospects for Cost Competitive Solar PV Power}}
+  {{The Prospects for Cost Competitive Solar PV Power}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{{Energy Policy}}{55}{}{117 -- 127}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Wolsink%
+}{%
+Wolsink%
+}{%
+{\protect \APACyear {2000}}%
+}]{%
+wind_perf}
+\APACinsertmetastar {%
+wind_perf}%
+\begin{APACrefauthors}%
+Wolsink, M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2000}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Wind power and the NIMBY-myth: institutional capacity
+  and the limited signicance of public support}} {{Wind power and the
+  NIMBY-myth: institutional capacity and the limited signicance of public
+  support}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{{Renewable Energy}}{21}{}{49 -- 64}.
+\PrintBackRefs{\CurrentBib}
+
+\end{thebibliography}
