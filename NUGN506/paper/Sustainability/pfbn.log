@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.10.5)  31 OCT 2017 17:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.10.5)  6 NOV 2017 11:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -741,15 +741,18 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
 LaTeX Font Info:    Font shape `OT1/ptm/bx/sc' in size <10> not available
 (Font)              Font shape `OT1/ptm/b/sc' tried instead on input line 63.
 
-Overfull \hbox (6.42653pt too wide) in paragraph at lines 87--88
-\OT1/ptm/m/n/10 con's low cost, rea-son-able ef-fi-ciency and widespread use ma
-kes
+Overfull \hbox (6.42642pt too wide) in paragraph at lines 63--68
+\OT1/ptm/m/n/10 Fukushima ac-ci-dent. This pa-per in-tro-duces a method to quic
+kly
  []
 
 
-Overfull \hbox (4.99678pt too wide) in paragraph at lines 87--88
-\OT1/ptm/m/n/10 new, more ef-fi-cient tech-nol-ogy. Short of a con-se-quen-tial
- break-
+Underfull \vbox (badness 1048) has occurred while \output is active []
+
+
+Overfull \hbox (12.1069pt too wide) in paragraph at lines 76--77
+\OT1/ptm/m/n/10 Daichi nu-clear power plant in March of 2011 (Braun & Volkholz,
+
  []
 
 
@@ -760,19 +763,43 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 ]
-Overfull \hbox (0.11589pt too wide) in paragraph at lines 96--97
+Overfull \hbox (6.42653pt too wide) in paragraph at lines 90--91
+\OT1/ptm/m/n/10 con's low cost, rea-son-able ef-fi-ciency and widespread use ma
+kes
+ []
+
+
+Overfull \hbox (16.7568pt too wide) in paragraph at lines 90--91
+\OT1/ptm/m/n/10 new, more ef-fi-cient tech-nol-ogy(Oliver & Jack-son, 1999; Van
+ Sark,
+ []
+
+
+Overfull \hbox (0.11589pt too wide) in paragraph at lines 99--100
 \OT1/ptm/m/n/10 more ge-o-graph-i-cally lim-ited than so-lar en-ergy source. A 
 wind
  []
 
 
-Overfull \hbox (2.20662pt too wide) in paragraph at lines 110--111
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (5.91696pt too wide) in paragraph at lines 118--119
+[]\OT1/ptm/m/n/10 Nuclear en-ergy is strongly de-pen-dent on pub-lic opin-ion, 
+guided
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [2]
+Overfull \hbox (2.20662pt too wide) in paragraph at lines 131--132
 []\OT1/ptm/m/n/10 Amongst the main three re-new-able en-ergy sources, so-lar, w
 ind
  []
 
 
-Overfull \hbox (1.34586pt too wide) in paragraph at lines 110--111
+Overfull \hbox (1.34586pt too wide) in paragraph at lines 131--132
 \OT1/ptm/m/n/10 and hy-dro-elec-tric, so-lar has con-sis-tently beaten in-stall
 ed capc-
  []
@@ -783,34 +810,33 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 125.
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [2]
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 183.
-
-
-Overfull \hbox (27.84503pt too wide) in paragraph at lines 187--198
- [][] 
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 216.
+               Default added (so using `tbp') on input line 156.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [3]
-Overfull \hbox (2.06671pt too wide) in paragraph at lines 242--243
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 214.
+
+
+Overfull \hbox (42.99413pt too wide) in paragraph at lines 218--229
+ [][] 
+ []
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 247.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [4]
+Overfull \hbox (2.06671pt too wide) in paragraph at lines 273--274
 []\OT1/ptm/m/n/10 Along this rea-son-ing line, var-i-ous game chang-ing events 
 could
  []
@@ -818,43 +844,52 @@ could
 
 Underfull \vbox (badness 4846) has occurred while \output is active []
 
- [4]
-(./pfbn.bbl
-Underfull \hbox (badness 1057) in paragraph at lines 68--82
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [5]
+[6
+
+] (./pfbn.bbl
+Underfull \hbox (badness 1057) in paragraph at lines 305--319
 []\OT1/ptm/m/n/10 Masson, G., & Brun-isholz, M.  (2016).  \OT1/ptm/m/it/10 Snap
 -shot of
  []
 
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
 )
 - LAST -
-Extra skip:6.0pt
-Left:124.0pt/2.16492pt
-Right:118.0pt/2.16492pt
-Output:124.0pt
- [5
+Extra skip:18.02501pt
+Left:352.0pt/2.16492pt
+Right:333.97499pt/2.16492pt
+Output:352.98749pt
+ [7
 
-] (./pfbn.aux) ) 
+]
+(./pfbn.aux) ) 
 Here is how much of TeX's memory you used:
- 15582 strings out of 493029
- 299073 string characters out of 6136234
- 333365 words of memory out of 5000000
- 18934 multiletter control sequences out of 15000+600000
+ 15647 strings out of 493029
+ 300591 string characters out of 6136234
+ 339160 words of memory out of 5000000
+ 18999 multiletter control sequences out of 15000+600000
  27507 words of font info for 62 fonts, out of 8000000 for 9000
  1145 hyphenation exceptions out of 8191
  43i,14n,46p,10372b,511s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texlive/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/u
-rw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a
-.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on pfbn.pdf (5 pages, 111846 bytes).
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/
+share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/
+texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texliv
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texlive/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw
+/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.p
+fb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on pfbn.pdf (7 pages, 123864 bytes).
 PDF statistics:
- 57 PDF objects out of 1000 (max. 8388607)
- 40 compressed objects within 1 object stream
+ 65 PDF objects out of 1000 (max. 8388607)
+ 46 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1010,12 +1010,12 @@
 
 % set up correct header based on publication
 \DeclareOption{IJPHM}{%
-\fancyhead[C]{\small{\textsc{Fake International Journal of Nuclear Power Sustainability}}}%
+\fancyhead[C]{\small{\textsc{Fictitious International Journal of Nuclear Power Sustainability}}}%
 \renewcommand{\headrulewidth}{0pt}%					% Remove head ruler
 \fancyfoot[R]{{\small{\thepage}}}% --- footer all pages
 \fancypagestyle{plain}{% --- first page header and footer content
    \fancyhead[C]{}% --- Clear first page header
-   \fancyfoot[L]{\small{Fake International Journal of Nuclear Power Sustainability, ISSN2153-2648, \publicationYear~\paperNumber}} % --- Write first page footer (Journal Only)
+   \fancyfoot[L]{\small{Fictitious International Journal of Nuclear Power Sustainability, ISSN2153-2648, \publicationYear~\paperNumber}} % --- Write first page footer (Journal Only)
    }
 }
 
@@ -1025,7 +1025,7 @@
 \fancyfoot[R]{{\small{\thepage}}}% --- footer all pages
 \fancypagestyle{plain}{% --- first page header and footer content
 	\fancyhead[C]{}% --- Clear first page header
-	\fancyfoot[L]{\small{Fake International Journal of Nuclear Power Sustainability, ISSN2153-2648, \publicationYear~\paperNumber}}%	% --- Write first page footer (Journal Only)
+	\fancyfoot[L]{\small{Fictitious International Journal of Nuclear Power Sustainability, ISSN2153-2648, \publicationYear~\paperNumber}}%	% --- Write first page footer (Journal Only)
 	}
 }
 
@@ -1035,7 +1035,7 @@
 \fancyfoot[R]{{\small{\thepage}}}% --- footer all pages
 \fancypagestyle{plain}{% --- first page header and footer content
 	\fancyhead[C]{}% --- Clear first page header
-	\fancyfoot[L]{\small{Fake International Journal of Nuclear Power Sustainability, ISSN2153-2648, \publicationYear~\paperNumber}}%	% --- Write first page footer (Journal Only)
+	\fancyfoot[L]{\small{Fictitious International Journal of Nuclear Power Sustainability, ISSN2153-2648, \publicationYear~\paperNumber}}%	% --- Write first page footer (Journal Only)
 	}
 }
 

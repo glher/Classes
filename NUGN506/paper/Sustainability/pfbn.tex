@@ -61,16 +61,19 @@
 
 % Abstract
 \begin{abstract}%   %NOTE: Deleting the percentage after "{abstract}" may be lead to an extra leading space in the first line of the abstract, and this should be prevented.
-The energy market is evolving rapidly, with the development of fully renewable energy.
+The energy market is evolving rapidly, with the often under-predicted development of fully renewable energy. Solar energy is the fastest growing energy source today. The place of the nuclear industry is thus questioned, as it faces high investment costs and temperate public enthusiasm after the Fukushima accident.
+This paper introduces a method to quickly estimate the likelihood of the development of an energy grid scenario, based on various factors such as environment concerns, public opinion, political interests, initial costs and future profit margins. The objective of this method is to approximately quantify the sustainability of nuclear power in today's and tomorrow's energy markets, during the next fifty years.
+The method is based on defined factors and the benefit values of each scenario on said factors when compared to a reference case. The paper shows that the current nuclear generation of reactors is most likely to be used in conjonction with renewable energy sources for the next fifty years. The next most probable scenario replaces current nuclear power station with a closed-cycle, using Burn\&Breed reactors.
+All the most likely scenarios show a phasing out of the fossil fuel electricity generation in the next fifty years, replaced by renewable energy. The share of nuclear power is not projected to increase but is projected to remain relatively stable.
 \end{abstract}
 
 
 
 \section{Introduction}
 \label{sec:intro}
-The energy market landscape is changing. Several factors can be considered to explain this phenomenon, notably the development of new technology and the growing importance of public opinion. The research and population interests in the energy generation domain is relatively recent and exacerbated by indirect drivers such as climate change, fear and fossil supply uncertainty, among others. Wind energy installed capacity has already surpassed that of Nuclear, and solar energy is on its way to do the same within the next couple years. Of course, when it comes to wind or solar energy, installed capacity is much higher than actual electricity production.
+The energy market landscape is changing, though governmental policies have not officially caught up to this fact in countries such as the United States~\citep{fershee2008changing}. Several factors can be considered to explain this phenomenon, notably the development of new technology and the growing importance of public opinion, fighting established production and lobbying. The research and population interests in the energy generation domain is relatively recent and exacerbated by indirect drivers such as climate change, fear and fossil supply uncertainty, among others~\citep{farhar1979public}. Wind energy installed capacity has already surpassed that of Nuclear, and solar energy is on its way to do the same within the next couple years. Of course, when it comes to wind or solar energy, installed capacity is much higher than actual electricity production.
 
-In the meantime, the nuclear industry was severely hit by a loss of public trust following the accident at the Fukushima-Daichi nuclear power plant in March of 2011. This sparked political agendas to push the energy debate in the center of their campaign platforms in several influent countries. Public perception is that no progress is seemingly made in the disposal of waste products. The nuclear industry now faces a hostile public opinion often pushed by social media and conventional medias. Combined with excitement about solar and wind energy and their lowering costs, the long-term place of nuclear in the energy landscape can be considered in jeopardy.
+In the meantime, the nuclear industry was severely hit by a loss of public trust following the accident at the Fukushima-Daichi nuclear power plant in March of 2011~\citep{braun2011fukushima}. This sparked political agendas to push the energy debate in the center of their campaign platforms in several influent countries. Public perception is that no progress is seemingly made in the disposal of waste products. The nuclear industry now faces a hostile public opinion often pushed by social media and conventional medias. Combined with excitement about solar and wind energy and their lowering costs, the long-term place of nuclear in the energy landscape can be considered in jeopardy.
 
 This paper proposes a method to find the energy mix with the highest chance of success based on several factors (public, politics, economics, technology) and assume an organic evolution of the market toward this scenario. The future of nuclear power in the evolving energy mix will consequently be computed.
 
@@ -84,9 +87,9 @@ Section~\ref{sec:bkgd} presents the background necessary for the present paper. 
 
 The solar energy, and more specifically Photovoltaic (PV) technology, is expanding at a near-exponential rate. In the year 2016, installed solar energy capacity expanded by close to 34\%, jumping from 227 GW to 303 GW~\citep{iea_solar}. The main contributor countries were China, India, and the United States. If the expansion rate continues at similar levels, the installed power capacity of solar energy will surpass the nuclear capacity in a couple of years, even though the actual electricity generation will be much lower, due to the inherent limitation of solar energy and its capacity factor of 24\% in a best case scenario in the US Southwest~\citep{solar_comp} as opposed to around 85\% for nuclear.
 
-Solar energy may be showing its limits when it comes to efficiency and deployable technology. Indeed, Photovoltaic elements using Silicon dominate the solar energy market. Silicon's low cost, reasonable efficiency and widespread use makes it a high barrier (mostly due to cost) to enter the market for new, more efficient technology. Short of a consequential breakthrough, solar can be thought to have reached its individual cells potential.
+Solar energy may be showing its limits when it comes to efficiency and deployable technology. Indeed, Photovoltaic elements using Silicon dominate the solar energy market. Silicon's low cost, reasonable efficiency and widespread use makes it a high barrier (mostly due to cost) to enter the market for new, more efficient technology\citep{oliver1999market,van2007analysis}. Short of a consequential breakthrough, solar can be thought to have reached its individual cells potential.
 
-Solar present several important advantages over other forms of energy. The main one is its versatility. It can be installed on the top of building, on various surfaces, and can be made to be form-fitting. Organic PV are also a potential huge additional market, as despite low efficiency, it can be processed on low cost substrates with standard coating processes. Moreover, solar energy benefits from an interesting coolness factor and has the full support of public opinion.
+Solar present several important advantages over other forms of energy. The main one is its versatility. It can be installed on the top of building, on various surfaces, and can be made to be form-fitting. Organic PV are also a potential huge additional market, as despite low efficiency, it can be processed on low cost substrates with standard coating processes~\citep{kalowekamo2009estimating}. Moreover, solar energy benefits from an interesting coolness factor and has the full support of public opinion.
 
 Solar energy production can easily be predicted a day in advance, with slight unpredictable variations due to cloud coverage. However, it is a diurnal technology, with a peak around noon. This can be problematic for two main reasons. The current electrical grid is not made to account for such variations and has next to no electricity storage ability, and the peak production time of solar energy happens during the least demanding time of day from an electricity point of view~\citep{solar_peak}.
 
@@ -100,22 +103,50 @@ Wind powered energy source does not exhibits the same public support as solar en
 
 \subsection{Hydroelectric energy market}
 
-Hydroelectric energy is almost at capacity in most countries. However, it can be used as a storage unit for excess energy from other sources, with pumped storage technology. This demonstrates a non-negligible benefit of this power source: readily available power on very short notice. As such, until the advent of efficient battery storage in the grid, hydroelectric power is one of the few energy sources, with coal/gas to a lesser extent, to be able to respond to unexpected peak demand from the grid. 
+Hydroelectric energy is almost at capacity in most countries. However, it can be used as a storage unit for excess energy from other sources, with pumped storage technology. This demonstrates a non-negligible benefit of this power source: readily available power on very short notice. As such, until the advent of efficient battery storage in the grid, hydroelectric power is one of the few energy sources, with coal/gas to a lesser extent, to be able to respond to unexpected peak demand from the grid~\citep{bueno2005technical}. 
 
-The highest producing electricity plants in the world are hydroelectric dams, but small hydroelectric units are considered for development~\citep{hydro_small}.
+The highest producing electricity plants in the world are hydroelectric dams, but small hydroelectric units are considered for development~\citep{hydro_small} and could be an important factor in the development of a renewable-based grid.
+
+\subsection{Nuclear energy market}
+
+An old generation of nuclear reactors dominates the nuclear energy market today. The current nuclear fleet is mainly composed of pressurized water reactors (PWR) and boiling water reactors (BWR), using a once-through uranium cycle. Countries such as France have a partially closed fuel cycle, with reprocessing of used UOX fuel to obtain MOX fuel, while some, such as Canada, use a different kind of reactors with the CANDU, powered by natural uranium moderated by heavy water.
+
+This varied landscape displays one common trait, the production of radioactive waste. This has a negative impact on the industry, as it is one of the main concerns of the public opinion about nuclear energy, along with potential accidents and proliferation issues. The public opinion is ambivalent about nuclear energy~\citep{publicnuclear}.
+
+A potential future for the nuclear energy lies in the closed cycle strategy, where Burn\&Breed fast spectrum reactors are used in addition to the traditionnal fleet, creating more fuel than they use to generate power. However, this development require consequential long-term investment and present several technology issues, notably materials adequacy~\citep{salvatores2005nuclear}.
+
+Nuclear energy is strongly dependent on public opinion, guided by unexpected events and external factors (economics, environment, ...). Predicting the future health of the nuclear industry is a difficult task, as forecasts can change within the span of a couple of years. In 2009,~\cite{nuclearok} predicted a steady increase of the nuclear share in the energy market, the "nuclear renaissance" phenomenon. In 2011, after the accident at Fukushima,~\cite{nuclearnok} showed that the development of new plants was stalled and foresaw only modest uprate and life extension of the current fleet for the future.
+
+\subsection{Environmental impacts}
+
+Climate change has been demonstrated for a long time, and the impact of fossil fuels and other human factors on the climate have been shown~\citep{karl2003modern}. This issue is at the heart of a lot of debate in the public opinion and political races. A carbon neutral energy grid should thus be privileged in the future. Renewables energy sources and nuclear energy meet this criterium.
+
+However, different feared environmental impacts are to be considered even for those "clean" energy sources. Current nuclear energy presents the waste problem, as well as the dire impact of an nuclear power plant accident, as demonstrated by Chernobyl or Fukushima. Wind turbines are often criticized for their inaesthetic and wildlife impact. Hydroelectric power can displace or endanger whole cities.
+
+The environment will be a deciding factor when it comes to the future electrical grid. The position of public opinion and their ability to accept compromises will be paramount.
 
 
 \subsection{Review}
 
-Amongst the main three renewable energy sources, solar, wind and hydroelectric, solar has consistently beaten installed capcity projections, while wind has not. Hydroelectric is almost at full capacity in most countries. The difficulty in integrating solar and wind to the grid is their difficult predictability, low capacicity factor and unhelpful peak hours. As long as these problems remain, the grid cannot be stable enough to expand the use of such energy sources, and a base load is required.
+Amongst the main three renewable energy sources, solar, wind and hydroelectric, solar has consistently beaten installed capcity projections, while wind has not. Hydroelectric is almost at full capacity in most countries. One of the difficulty in integrating solar and wind energy to the grid lies in their unpredictability, low capacicity factor and unhelpful peak hours. As long as these problems remain, the grid cannot be stable enough to expand the use of such energy sources, and a base load is required. Advances are being made to solve these issues~\citep{lund2007renewable}.
 
 This generates the loss of renewable electricity when the demand is lower than production. Additionally, the renewable energy produced is sold at the lowest cost to the grid, due to the low demand. Efficient storage technology would be a game changer for the renewable sources, but until then, base loads are necessary.
+
+Environmental impacts are of utmost importance when evaluating the future electrical grid. This factor will be one of the main drivers, as it fuels public opinion and thus orientate political views.
 
 
 \section{Methodology}
 \label{sec:meth}
 
-This section introduces the methodology that is developed in this paper. The goal of the methodology is to determine the most likely scenario according to a given crude simulation of the world, and to compute the most favorable importance of various factors in the success and sustainability of nuclear energy in the future.
+This section introduces the methodology that is developed in this paper. The goal of the methodology is to determine the most likely scenario according to a given crude simulation of the world, and to compute the most favorable importance of various factors in the success and sustainability of nuclear energy in the future. A 50 years projection is considered, as the unknown scientific development and likelihood of game changing events is thought by the author to become too high after such time.
+
+\subsection{Grid issues}
+
+The variability of solar and wind powered energy sources is exarcerbated by the difficulty, both tehnologically and economically, to follow the load with nuclear plants. A fast reacting power source has to be available to compensate for sudden variation in both energy demands and energy productions. Currently, such an action is performed by fossil-fueled energy sources and hydroelectric power.
+
+As long as efficient and economically sound energy storage is not available in the grid, this issue will continue the statu quo. If energy storage becomes available, this would radically disrupt the current energy grid.
+
+Such a breakthrough technology cannot be planned for efficiently within the proposed method, and is thus not considered. Instead, pumped hydroelectric energy storage is taken to supply the storage needs for the grid.
 
 \subsection{Factors}
 
@@ -177,7 +208,7 @@ Without funding, no project can expect to survive and get to the scaled prototyp
 \subsection{Scenarios}
 \label{sec:lfm}
 
-Several representative scenarios are developed and will be compared to one another given an identical set of factors and weigths.
+Several representative scenarios are developed and will be compared to one another given an identical set of factors and weigths. The scenarios are given in Table~\ref{tab2}.
 
 \setlength\extrarowheight{10pt}
 \begin{table*}[]
@@ -187,7 +218,7 @@ Several representative scenarios are developed and will be compared to one anoth
 \begin{tabular}{|c|l|}
 \hline
 Scenario & \multicolumn{1}{c|}{Description}                                                                                                            \\ \hline
-Sc1      & \pbox{20cm}{This corresponds to the current scenario. The percentage of electricity generation are kept the same with increasing \\ demand.}                \\ \hline
+Sc1      & \pbox{20cm}{This corresponds to the current scenario. The percentage shares of electricity generation are kept the same with increasing \\ demand.}                \\ \hline
 Sc2      & \pbox{20cm}{In this scenario, 50\% of the nuclear power is replaced by renewable sources.}                                                               \\ \hline
 Sc3      & \pbox{20cm}{In this scenario, the nuclear power plants are phased out and replaced by a nuclear closed cycle, the parts of renewable \\ and fossils stay the same} \\ \hline
 Sc4      & \pbox{20cm}{Fossil fuel is replaced by renewable sources}                 \\ \hline
@@ -201,7 +232,7 @@ The scenarios consider the current industrialized technology. It does not consid
 
 \subsection{Review}
 
-Several factors, their associated importance (weigths) are defined. The impact of various scenarios on these factors is estimated and a scenario global score is obtained to compute its likelihood of being chosen.
+Several factors, their associated importance (weigths) are defined. The impact of various scenarios on these factors is estimated and a global score is obtained for each scenario to represent its likelihood of being developed.
 
 \section{Case study}
 \label{sec:study}
@@ -231,7 +262,7 @@ Sc7      & 5  & -4 & -2 & 3  & 5  & -3 & 1.62  \\ \hline
 \end{table}
 
 
-The results, with the given weigths, show that the most likely scenario to pan out would be an energy mix between Gen III nuclear and renewables energy. Behind this comes the same scenario with a nuclear closed cycle (Gen IV) replacing the current nuclear power.
+The results are given in Table~\ref{tab3}. With the given weigths defined in this paper, the results show that the most likely scenario to pan out would be an energy mix between Gen III nuclear and renewables energy. Behind this comes the same scenario with a nuclear closed cycle (Gen IV) replacing the current nuclear power.
 
 \section{Discussions and future work}
 \label{sec:fut}
@@ -239,15 +270,15 @@ With current technology or slightly improved ones, but without considering break
 
 It is interesting to note that another nuclear accident would likely severely shift public opinion against the nuclear industry. In such a case, the scenario containing nuclear would see a lower score, and Scenarios 2 (renewable instead of nuclear) and 7 (fully renewable) would become more likely.
 
-Along this reasoning line, various game changing events could be considered in the methodology. A game theory algorithm could then be applied to the different scenario to give enlightening results. This would be the subject of future work.
+Along this reasoning line, various game changing events could be considered in the methodology. Future work include the application of a game theory algorithm on the problem to select the most likely scenario. Different actors would be identified, according to the factors defined in this paper. The most important players would be the public, the politics, the scientists (environmental and nuclear) and the investors. The game theory algorithm would identify the best scenario for all the various participants, based on their willingness to compromise. External events would be introduced at random times to calculate their impacts and potential ways to mitigate their effects beforehand.
 
 
 \section{Conclusion}
 \label{sec:conclusion}
 
-In its current state, nuclear power can be considered sustainable. A fully-closed nuclear fuel cycle, with waste burner, and breeder-burner reactors, could encounter a lot of difficulties to enter the energy market. Indeed, the high technological hurdles (notably material-wise) and high upfront cost might not make this technology worth the risk.
+In its current state, nuclear power can be considered sustainable. A fully-closed nuclear fuel cycle, with waste burner, and breeder-burner reactors, could encounter a lot of difficulties to enter the energy market, from an economic standpoint mostly. Indeed, the high technological hurdles (notably material-wise) and high upfront cost might not make this technology worth the investment risk. This is exarcerbated by the growing public belief that fully renewables energy will be able to fulfill all the electricity grid needs in the future, based on breakthrough that are seen as likely but as yet unproven.
 
-Any significant event such as a volcano eruption, nuclear accident, or a breakthrough discovery would impact the different scenarios and should be considered, along with a likelihood of happenstance.
+Any significant event such as a big volcano eruption, nuclear accident, or a breakthrough discovery would impact the different scenarios and should be considered, along with a likelihood of happenstance.
 
 
 \section*{Acknowledgment}
@@ -269,8 +300,12 @@ This work was supported by my precious free time. Any opinions or findings of th
 \section*{Acronyms}
 
 \begin{tabular}{ l  l }
-    $PWR$           &Pressurized Water Reactor\\
-    $PV$          &Photovoltaic
+    $BWR$         &Boiling Water Reactors\\
+    $CANDU$       &Canada Deuterium Uranium\\
+    $MOX$         &Mixed Oxide Fuel\\
+    $PWR$         &Pressurized Water Reactor\\
+    $PV$          &Photovoltaic\\
+    $UOX$         &Uranium Oxide Fuel
  \end{tabular}
 
 

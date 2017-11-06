@@ -1,6 +1,33 @@
 \begin{thebibliography}{}
 
 \bibitem [\protect \citeauthoryear {%
+Adamantiadesa%
+\ \BBA {} Kessides%
+}{%
+Adamantiadesa%
+\ \BBA {} Kessides%
+}{%
+{\protect \APACyear {2009}}%
+}]{%
+nuclearok}
+\APACinsertmetastar {%
+nuclearok}%
+\begin{APACrefauthors}%
+Adamantiadesa, A.%
+\BCBT {}\ \BBA {} Kessides, I.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2009}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Nuclear power for sustainable development: Current
+  status and future prospects}} {{Nuclear power for sustainable development:
+  Current status and future prospects}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{{Energy Policy}}{37}{}{5149 -- 5166}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Boccard%
 }{%
 Boccard%
@@ -22,6 +49,193 @@ Boccard, N.%
   estimates}}.{\BBCQ}
 \newblock
 \APACjournalVolNumPages{{Energy Policy}}{37}{}{2679 -- 2688}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Braun%
+\ \BBA {} Volkholz%
+}{%
+Braun%
+\ \BBA {} Volkholz%
+}{%
+{\protect \APACyear {2011}}%
+}]{%
+braun2011fukushima}
+\APACinsertmetastar {%
+braun2011fukushima}%
+\begin{APACrefauthors}%
+Braun, M.%
+\BCBT {}\ \BBA {} Volkholz, P.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2011}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Fukushima Daiichi Accident} {Fukushima daiichi
+  accident}.{\BBCQ}
+\newblock
+
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Bueno%
+\ \BBA {} Carta%
+}{%
+Bueno%
+\ \BBA {} Carta%
+}{%
+{\protect \APACyear {2005}}%
+}]{%
+bueno2005technical}
+\APACinsertmetastar {%
+bueno2005technical}%
+\begin{APACrefauthors}%
+Bueno, C.%
+\BCBT {}\ \BBA {} Carta, J.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2005}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Technical--economic analysis of wind-powered pumped
+  hydrostorage systems. Part I: model development} {Technical--economic
+  analysis of wind-powered pumped hydrostorage systems. part i: model
+  development}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Solar Energy}{78}{3}{382--395}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Farhar%
+, Weis%
+, Unseld%
+\BCBL {}\ \BBA {} Burns%
+}{%
+Farhar%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {1979}}%
+}]{%
+farhar1979public}
+\APACinsertmetastar {%
+farhar1979public}%
+\begin{APACrefauthors}%
+Farhar, B\BPBI C.%
+, Weis, P.%
+, Unseld, C\BPBI T.%
+\BCBL {}\ \BBA {} Burns, B\BPBI A.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1979}{}{}.
+\newblock
+\APACrefbtitle {Public opinion about energy: A literature review} {Public
+  opinion about energy: A literature review}\ \APACbVolEdTR{}{\BTR{}}.
+\newblock
+\APACaddressInstitution{}{Solar Energy Research Inst., Golden, CO (USA)}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Fershee%
+}{%
+Fershee%
+}{%
+{\protect \APACyear {2008}}%
+}]{%
+fershee2008changing}
+\APACinsertmetastar {%
+fershee2008changing}%
+\begin{APACrefauthors}%
+Fershee, J\BPBI P.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2008}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Changing resources, changing market: The impact of a
+  national renewable portfolio standard on the US energy industry} {Changing
+  resources, changing market: The impact of a national renewable portfolio
+  standard on the us energy industry}.{\BBCQ}
+\newblock
+
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Joskow%
+\ \BBA {} Parsons%
+}{%
+Joskow%
+\ \BBA {} Parsons%
+}{%
+{\protect \APACyear {2012}}%
+}]{%
+nuclearnok}
+\APACinsertmetastar {%
+nuclearnok}%
+\begin{APACrefauthors}%
+Joskow, P.%
+\BCBT {}\ \BBA {} Parsons, J.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2012}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{The Future of Nuclear Power After Fukushima}} {{The
+  Future of Nuclear Power After Fukushima}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{{Econ. Energy Environ. Policy}}{1}{}{99 -- 113}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Kalowekamo%
+\ \BBA {} Baker%
+}{%
+Kalowekamo%
+\ \BBA {} Baker%
+}{%
+{\protect \APACyear {2009}}%
+}]{%
+kalowekamo2009estimating}
+\APACinsertmetastar {%
+kalowekamo2009estimating}%
+\begin{APACrefauthors}%
+Kalowekamo, J.%
+\BCBT {}\ \BBA {} Baker, E.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2009}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Estimating the manufacturing cost of purely organic
+  solar cells} {Estimating the manufacturing cost of purely organic solar
+  cells}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Solar Energy}{83}{8}{1224--1231}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Karl%
+\ \BBA {} Trenberth%
+}{%
+Karl%
+\ \BBA {} Trenberth%
+}{%
+{\protect \APACyear {2003}}%
+}]{%
+karl2003modern}
+\APACinsertmetastar {%
+karl2003modern}%
+\begin{APACrefauthors}%
+Karl, T\BPBI R.%
+\BCBT {}\ \BBA {} Trenberth, K\BPBI E.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2003}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Modern global climate change} {Modern global climate
+  change}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{science}{302}{5651}{1719--1723}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -53,6 +267,29 @@ Kempton, W.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Lund%
+}{%
+Lund%
+}{%
+{\protect \APACyear {2007}}%
+}]{%
+lund2007renewable}
+\APACinsertmetastar {%
+lund2007renewable}%
+\begin{APACrefauthors}%
+Lund, H.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2007}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Renewable energy strategies for sustainable development}
+  {Renewable energy strategies for sustainable development}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Energy}{32}{6}{912--919}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Masson%
 \ \BBA {} Brunisholz%
 }{%
@@ -78,6 +315,32 @@ Masson, G.%
 \newblock
 \APACaddressInstitution{}{International Energy Agency - Photovoltaic Power
   Systems Programme}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Oliver%
+\ \BBA {} Jackson%
+}{%
+Oliver%
+\ \BBA {} Jackson%
+}{%
+{\protect \APACyear {1999}}%
+}]{%
+oliver1999market}
+\APACinsertmetastar {%
+oliver1999market}%
+\begin{APACrefauthors}%
+Oliver, M.%
+\BCBT {}\ \BBA {} Jackson, T.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1999}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {The market for solar photovoltaics} {The market for
+  solar photovoltaics}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Energy Policy}{27}{7}{371--385}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -128,6 +391,91 @@ Reichelstan, S.%
   {{The Prospects for Cost Competitive Solar PV Power}}.{\BBCQ}
 \newblock
 \APACjournalVolNumPages{{Energy Policy}}{55}{}{117 -- 127}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Salvatores%
+}{%
+Salvatores%
+}{%
+{\protect \APACyear {2005}}%
+}]{%
+salvatores2005nuclear}
+\APACinsertmetastar {%
+salvatores2005nuclear}%
+\begin{APACrefauthors}%
+Salvatores, M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2005}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Nuclear fuel cycle strategies including partitioning and
+  transmutation} {Nuclear fuel cycle strategies including partitioning and
+  transmutation}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Nuclear Engineering and Design}{235}{7}{805--816}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Van~Sark%
+, Brandsen%
+, Fleuster%
+\BCBL {}\ \BBA {} Hekkert%
+}{%
+Van~Sark%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2007}}%
+}]{%
+van2007analysis}
+\APACinsertmetastar {%
+van2007analysis}%
+\begin{APACrefauthors}%
+Van~Sark, W.%
+, Brandsen, G.%
+, Fleuster, M.%
+\BCBL {}\ \BBA {} Hekkert, M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2007}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Analysis of the silicon market: Will thin films profit?}
+  {Analysis of the silicon market: Will thin films profit?}{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Energy Policy}{35}{6}{3121--3125}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Whitfield%
+, Rosa%
+, Dan%
+\BCBL {}\ \BBA {} Dietz%
+}{%
+Whitfield%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2009}}%
+}]{%
+publicnuclear}
+\APACinsertmetastar {%
+publicnuclear}%
+\begin{APACrefauthors}%
+Whitfield, S\BPBI C.%
+, Rosa, E\BPBI A.%
+, Dan, A.%
+\BCBL {}\ \BBA {} Dietz, T.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2009}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {The Future of Nuclear Power: Value Orientations and Risk
+  Perception} {The future of nuclear power: Value orientations and risk
+  perception}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Risk Analysis}{29}{3}{425--437}.
+\newblock
+\begin{APACrefDOI} \doi{10.1111/j.1539-6924.2008.01155.x} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
