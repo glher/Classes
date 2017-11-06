@@ -1,0 +1,59 @@
+9/20/2016 11:58:15 AM
+Reformatting: Analysis
+Reformatting: EndState
+Reformatting: EvAttr
+Reformatting: Event
+Reformatting: EvModel
+Reformatting: EventCng
+Reformatting: Eventree
+Reformatting: Family
+Reformatting: Gate
+Reformatting: Graphics
+Reformatting: Histgram
+Reformatting: Reports
+Reformatting: Sequence
+Reformatting: Slice
+Reformatting: SliceRul
+Reformatting: System
+Reformatting: Phase
+Reformatting: Cat1
+Reformatting: Cat2
+Reformatting: Cat3
+Reformatting: Cat4
+Reformatting: Cat5
+Reformatting: Cat6
+Reformatting: Cat7
+Reformatting: Cat8
+Reformatting: Cat9
+Reformatting: CatLabel
+Reformatting: CatCng
+Reformatting: EvCat
+Reformatting: EvtGroup
+Reformatting: UserInfo
+Processing Fault Tree/Sequence/End State Cut Sets
+Reformatting: Results
+Deleting blank analysis type Results records.
+Data Base recovery complete...
+Event refers to an invalid template - Reference was cleared.->AUTO_DETECT_NEUTRON01 
+Count:        1 Total:        1  POWER-EXCURSION         
+Processing Sequence Logic
+Count:        1 Total:        7  04                      
+Count:        7 Total:        7  13                      
+Sequence Logic Fault Trees Cross-References Rebuilt.
+Processing Event Tree Logic
+Processing Fault Tree Logic
+Count:        1 Total:        7  AUTO_DETECT_NEUTRON     
+Count:        7 Total:        7  MANU_RODS_FALL          
+Fault Tree Logic Cross-References Rebuilt.
+Loading Cut Sets...   
+Processing Project Rules
+ASTRID                  
+Processing Basic Events
+Processing Template Events
+Processing Basic Events
+Reformatting Current Event Data
+Processing record     1 -  of 33 total records
+Processing record    33 -  of 33 total records
+Event data set to base case (no changes)
+Successful Completion
+Project recovery complete!

@@ -1,0 +1,8 @@
+<Project name="ProjName">
+  <!--This file associates systems with their relevant diagram files-->
+  <Systems>&#xD;
+    <SysName>&#xD;
+      <Diagram>ProjName-SysName-#.png</Diagram>&#xD;
+    </SysName>&#xD;
+  </Systems>
+</Project>
