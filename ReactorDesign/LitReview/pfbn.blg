@@ -1,0 +1,80 @@
+This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: pfbn.aux
+The style file: apacite.bst
+Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
+Reallocated global_strs (elt_size=20001) to 20 items from 10.
+Reallocated glb_str_end (elt_size=4) to 20 items from 10.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Database file #1: pfbn.bib
+apacite.bst [2013/07/21 v6.03 APA bibliography style]
+Warning--No address in anderson1983power
+Warning--No address in beall1962final
+Warning--`others' not consistent with 6th ed. of the APA Manual
+Warning--No journal in borgesprimary
+Warning--No journal in daye1967snap
+Warning--No address in dean1985heat
+Warning--No address in dochat1992free
+Warning--No journal in edwards2012overview
+Warning--No address in haslett1995space
+Warning--No journal in houts2014safe
+Warning--No journal in houts2017low
+Warning--No journal in ii2016engine
+Warning--No journal in ledbetter1969nerva
+Warning--No address in lords1994snap
+Warning--No address in lyon1973performance
+Warning--No address in doe0071
+Warning--No address in ohlenkamp1966snap
+Warning--No address in powell1985high
+Warning--No address in reid1999heat
+Warning--No journal in taylor2005prometheus
+Warning--`others' not consistent with 6th ed. of the APA Manual
+Warning--No journal in venneri2013nuclear
+Warning--No address in wollman2006prometheus
+You've used 54 entries,
+            6951 wiz_defined-function locations,
+            1538 strings with 19338 characters,
+and the built_in function-call counts, 109740 in all, are:
+= -- 13911
+> -- 903
+< -- 5260
++ -- 5579
+- -- 106
+* -- 6829
+:= -- 19706
+add.period$ -- 246
+call.type$ -- 54
+change.case$ -- 873
+chr.to.int$ -- 0
+cite$ -- 129
+duplicate$ -- 2913
+empty$ -- 4124
+format.name$ -- 1465
+if$ -- 20976
+int.to.chr$ -- 0
+int.to.str$ -- 162
+missing$ -- 0
+newline$ -- 1316
+num.names$ -- 400
+pop$ -- 2242
+preamble$ -- 1
+purify$ -- 208
+quote$ -- 0
+skip$ -- 6901
+stack$ -- 0
+substring$ -- 6229
+swap$ -- 1598
+text.length$ -- 201
+text.prefix$ -- 0
+top$ -- 1
+type$ -- 5184
+warning$ -- 23
+while$ -- 538
+width$ -- 0
+write$ -- 1662
+(There were 23 warnings)

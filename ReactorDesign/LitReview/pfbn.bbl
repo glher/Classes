@@ -1,0 +1,1434 @@
+\begin{thebibliography}{}
+
+\bibitem [\protect \citeauthoryear {%
+Anderson%
+\ \protect \BOthers {.}}{%
+Anderson%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {1983}}%
+}]{%
+anderson1983power}
+\APACinsertmetastar {%
+anderson1983power}%
+\begin{APACrefauthors}%
+Anderson, R.%
+, Atkins, D.%
+, Bost, D.%
+, Berman, B.%
+, Clinger, D.%
+, Determan, W.%
+\BDBL {}Harty, R.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1983}{}{}.
+\newblock
+\APACrefbtitle {Power plant system assessment. Final report. SP-100 Program}
+  {Power plant system assessment. final report. sp-100 program}\
+  \APACbVolEdTR{}{\BTR{}}.
+\newblock
+\APACaddressInstitution{}{Rockwell International Corp., Canoga Park, CA (USA).
+  Energy Systems Group}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Beall%
+\ \BBA {} Hulin%
+}{%
+Beall%
+\ \BBA {} Hulin%
+}{%
+{\protect \APACyear {1962}}%
+}]{%
+beall1962final}
+\APACinsertmetastar {%
+beall1962final}%
+\begin{APACrefauthors}%
+Beall, J.%
+\BCBT {}\ \BBA {} Hulin, M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1962}{}{}.
+\newblock
+\APACrefbtitle {The Final Report on the SNAP 2 Experimental Reactor (SER)
+  Operation and Test Program} {The final report on the snap 2 experimental
+  reactor (ser) operation and test program}\ \APACbVolEdTR{}{\BTR{}}.
+\newblock
+\APACaddressInstitution{}{Atomics International, Canoga Park, Calif.}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Board%
+, Council%
+\BCBL {}\ \protect \BOthers {.}}{%
+Board%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2006}}%
+}]{%
+board2006priorities}
+\APACinsertmetastar {%
+board2006priorities}%
+\begin{APACrefauthors}%
+Board, S\BPBI S.%
+, Council, N\BPBI R.%
+\BCBL {}\ \BOthersPeriod {.}\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{2006}.
+\newblock
+\APACrefbtitle {Priorities in Space Science Enabled by Nuclear Power and
+  Propulsion} {Priorities in space science enabled by nuclear power and
+  propulsion}.
+\newblock
+\APACaddressPublisher{}{National Academies Press}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Borges%
+, Braz~Filho%
+\BCBL {}\ \BBA {} Guimar{\~a}es%
+}{%
+Borges%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {{\protect \bibnodate {}}}}%
+}]{%
+borgesprimary}
+\APACinsertmetastar {%
+borgesprimary}%
+\begin{APACrefauthors}%
+Borges, E\BPBI M.%
+, Braz~Filho, F\BPBI A.%
+\BCBL {}\ \BBA {} Guimar{\~a}es, L\BPBI N.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{{\protect \bibnodate {}}}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Primary loop simulation of the SP-100 space nuclear
+  reactor} {Primary loop simulation of the sp-100 space nuclear
+  reactor}.{\BBCQ}
+\newblock
+
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Craft%
+\ \BBA {} King%
+}{%
+Craft%
+\ \BBA {} King%
+}{%
+{\protect \APACyear {2011}}%
+}]{%
+craft2011reactivity}
+\APACinsertmetastar {%
+craft2011reactivity}%
+\begin{APACrefauthors}%
+Craft, A\BPBI E.%
+\BCBT {}\ \BBA {} King, J\BPBI C.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2011}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Reactivity control schemes for fast spectrum space
+  nuclear reactors} {Reactivity control schemes for fast spectrum space nuclear
+  reactors}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Nuclear Engineering and Design}{241}{5}{1516--1528}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Daye%
+}{%
+Daye%
+}{%
+{\protect \APACyear {1967}}%
+}]{%
+daye1967snap}
+\APACinsertmetastar {%
+daye1967snap}%
+\begin{APACrefauthors}%
+Daye, C.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1967}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {SNAP-8 performance study - Final report} {Snap-8
+  performance study - final report}.{\BBCQ}
+\newblock
+
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Dean%
+, El-Genk%
+, Louie%
+\BCBL {}\ \BBA {} Woodall%
+}{%
+Dean%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {1985}}%
+}]{%
+dean1985heat}
+\APACinsertmetastar {%
+dean1985heat}%
+\begin{APACrefauthors}%
+Dean, V.%
+, El-Genk, M.%
+, Louie, D.%
+\BCBL {}\ \BBA {} Woodall, D.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1985}{}{}.
+\newblock
+\APACrefbtitle {Heat Pipe Space Nuclear Reactor Design Assessment. Volume 1.
+  Design Status of the SP-100 Heat Pipe Space Nuclear Reactor System} {Heat
+  pipe space nuclear reactor design assessment. volume 1. design status of the
+  sp-100 heat pipe space nuclear reactor system}\ \APACbVolEdTR{}{\BTR{}}.
+\newblock
+\APACaddressInstitution{}{NEW MEXICO UNIV ALBUQUERQUE DEPT OF CHEMICAL AND
+  NUCLEAR ENGINEERING}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Demuth%
+}{%
+Demuth%
+}{%
+{\protect \APACyear {2003}}%
+}]{%
+demuth2003sp100}
+\APACinsertmetastar {%
+demuth2003sp100}%
+\begin{APACrefauthors}%
+Demuth, S\BPBI F.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2003}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {SP100 space reactor design} {Sp100 space reactor
+  design}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Progress in Nuclear Energy}{42}{3}{323--359}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Dochat%
+}{%
+Dochat%
+}{%
+{\protect \APACyear {1992}}%
+}]{%
+dochat1992free}
+\APACinsertmetastar {%
+dochat1992free}%
+\begin{APACrefauthors}%
+Dochat, G.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1992}{}{}.
+\newblock
+\APACrefbtitle {Free-piston Stirling component test power converter test
+  results and potential Stirling applications} {Free-piston stirling component
+  test power converter test results and potential stirling applications}\
+  \APACbVolEdTR{}{\BTR{}}.
+\newblock
+\APACaddressInstitution{}{SAE Technical Paper}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Edwards%
+}{%
+Edwards%
+}{%
+{\protect \APACyear {2012}}%
+}]{%
+edwards2012overview}
+\APACinsertmetastar {%
+edwards2012overview}%
+\begin{APACrefauthors}%
+Edwards, D.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2012}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {An Overview of the Jupiter Icy Moons Orbiter (JIMO)
+  Mission, Environments, and Materials Challenges} {An overview of the jupiter
+  icy moons orbiter (jimo) mission, environments, and materials
+  challenges}.{\BBCQ}
+\newblock
+
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+M.~El-Genk%
+, Hatton%
+, Fox%
+\BCBL {}\ \BBA {} Tournier%
+}{%
+M.~El-Genk%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2005}}%
+}]{%
+el2005score}
+\APACinsertmetastar {%
+el2005score}%
+\begin{APACrefauthors}%
+El-Genk, M.%
+, Hatton, S.%
+, Fox, C.%
+\BCBL {}\ \BBA {} Tournier, J\BHBI M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2005}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {SCoRe—Concepts of Liquid Metal Cooled Space Reactors
+  for Avoidance of Single-Point Failure} {Score—concepts of liquid metal
+  cooled space reactors for avoidance of single-point failure}.{\BBCQ}
+\newblock
+\BIn{} \APACrefbtitle {AIP Conference Proceedings} {Aip conference
+  proceedings}\ (\BVOL~746, \BPGS\ 473--484).
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+M\BPBI S.~El-Genk%
+, Saber%
+\BCBL {}\ \BBA {} Caillat%
+}{%
+M\BPBI S.~El-Genk%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2002}}%
+}]{%
+el2002performance}
+\APACinsertmetastar {%
+el2002performance}%
+\begin{APACrefauthors}%
+El-Genk, M\BPBI S.%
+, Saber, H\BPBI H.%
+\BCBL {}\ \BBA {} Caillat, T.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2002}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {A performance comparison of SiGe and skutterudite based
+  segmented thermoelectric devices} {A performance comparison of sige and
+  skutterudite based segmented thermoelectric devices}.{\BBCQ}
+\newblock
+\BIn{} \APACrefbtitle {AIP conference proceedings} {Aip conference
+  proceedings}\ (\BVOL~608, \BPGS\ 1007--1015).
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+M\BPBI S.~El-Genk%
+\ \BBA {} Xue%
+}{%
+M\BPBI S.~El-Genk%
+\ \BBA {} Xue%
+}{%
+{\protect \APACyear {1992}}%
+}]{%
+el1992decay}
+\APACinsertmetastar {%
+el1992decay}%
+\begin{APACrefauthors}%
+El-Genk, M\BPBI S.%
+\BCBT {}\ \BBA {} Xue, H.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1992}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Decay heat removal by natural circulation in a 550-kW
+  (electric) SP-100 power system for a lunar outpost} {Decay heat removal by
+  natural circulation in a 550-kw (electric) sp-100 power system for a lunar
+  outpost}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Nuclear technology}{100}{3}{271--286}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Engler%
+}{%
+Engler%
+}{%
+{\protect \APACyear {1987}}%
+}]{%
+engler1987atomic}
+\APACinsertmetastar {%
+engler1987atomic}%
+\begin{APACrefauthors}%
+Engler, R\BPBI E.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1987}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Atomic Power in Space: A History} {Atomic power in
+  space: A history}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{US Department of Energy Report DEAC01-NE32117}{}{}{}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Fraas%
+\ \BBA {} Michel%
+}{%
+Fraas%
+\ \BBA {} Michel%
+}{%
+{\protect \APACyear {1966}}%
+}]{%
+fraas1966comparison}
+\APACinsertmetastar {%
+fraas1966comparison}%
+\begin{APACrefauthors}%
+Fraas, A.%
+\BCBT {}\ \BBA {} Michel, J.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1966}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Comparison of 1-, 2-and 3-Loop Systems for Nuclear
+  Turbine-Generator Space Power Plants of 300 kW to 5 MW of Electrical Output}
+  {Comparison of 1-, 2-and 3-loop systems for nuclear turbine-generator space
+  power plants of 300 kw to 5 mw of electrical output}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Oak Ridge National Laboratory report
+  ORNL-TM-1366}{}{}{}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Haslett%
+}{%
+Haslett%
+}{%
+{\protect \APACyear {1995}}%
+}]{%
+haslett1995space}
+\APACinsertmetastar {%
+haslett1995space}%
+\begin{APACrefauthors}%
+Haslett, R.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1995}{}{}.
+\newblock
+\APACrefbtitle {Space Nuclear Thermal Propulsion Program.} {Space nuclear
+  thermal propulsion program.}\ \APACbVolEdTR{}{\BTR{}}.
+\newblock
+\APACaddressInstitution{}{GRUMMAN AEROSPACE CORP BETHPAGE NY}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Hatch%
+, Regan%
+\BCBL {}\ \BBA {} Powell%
+}{%
+Hatch%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {1960}}%
+}]{%
+hatch1960fluidized}
+\APACinsertmetastar {%
+hatch1960fluidized}%
+\begin{APACrefauthors}%
+Hatch, L.%
+, Regan, W.%
+\BCBL {}\ \BBA {} Powell, J.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1960}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Fluidized bed for rocket propulsion} {Fluidized bed for
+  rocket propulsion}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Nucleonics (US) Ceased publication}{18}{}{}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+House%
+}{%
+House%
+}{%
+{\protect \APACyear {1964}}%
+}]{%
+house1964development}
+\APACinsertmetastar {%
+house1964development}%
+\begin{APACrefauthors}%
+House, W\BPBI C.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1964}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {The Development of Nuclear Rocket Propulsion in the
+  United States} {The development of nuclear rocket propulsion in the united
+  states}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of the British Interplanetary
+  Society}{19}{}{306--318}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Houts%
+\ \protect \BOthers {.}}{%
+Houts%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2014}}%
+}]{%
+houts2014safe}
+\APACinsertmetastar {%
+houts2014safe}%
+\begin{APACrefauthors}%
+Houts, M\BPBI G.%
+, Kim, T.%
+, Emrich, W\BPBI J.%
+, Hickman, R\BPBI R.%
+, Broadway, J\BPBI W.%
+, Gerrish, H\BPBI P.%
+\BCBL {}\ \BBA {} Doughty, G\BPBI E.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2014}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Safe, Affordable, Nuclear Thermal Propulsion Systems}
+  {Safe, affordable, nuclear thermal propulsion systems}.{\BBCQ}
+\newblock
+
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Houts%
+, Mitchell%
+\BCBL {}\ \BBA {} Aschenbrenner%
+}{%
+Houts%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2017}}%
+}]{%
+houts2017low}
+\APACinsertmetastar {%
+houts2017low}%
+\begin{APACrefauthors}%
+Houts, M\BPBI G.%
+, Mitchell, D\BPBI P.%
+\BCBL {}\ \BBA {} Aschenbrenner, K.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2017}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Low-Enriched Uranium Nuclear Thermal Propulsion Systems}
+  {Low-enriched uranium nuclear thermal propulsion systems}.{\BBCQ}
+\newblock
+
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Houts%
+, Poston%
+\BCBL {}\ \BBA {} Emrich~Jr%
+}{%
+Houts%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {1997}}%
+}]{%
+houts1997heatpipe}
+\APACinsertmetastar {%
+houts1997heatpipe}%
+\begin{APACrefauthors}%
+Houts, M\BPBI G.%
+, Poston, D\BPBI I.%
+\BCBL {}\ \BBA {} Emrich~Jr, W\BPBI J.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1997}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Heatpipe power system and heatpipe bimodal system design
+  and development options} {Heatpipe power system and heatpipe bimodal system
+  design and development options}.{\BBCQ}
+\newblock
+\BIn{} \APACrefbtitle {AIP Conference Proceedings} {Aip conference
+  proceedings}\ (\BVOL~387, \BPGS\ 1317--1322).
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+II%
+\ \protect \BOthers {.}}{%
+II%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2016}}%
+}]{%
+ii2016engine}
+\APACinsertmetastar {%
+ii2016engine}%
+\begin{APACrefauthors}%
+II, C\BPBI R\BPBI J.%
+, Levack, D\BPBI J.%
+, Jennings, T.%
+, Guley, M.%
+, Eades, M.%
+\BCBL {}\ \BBA {} Patel, V.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2016}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Engine Design Attributes Relative to HEU and LEU Core
+  Approaches for a Small Thrust NTP} {Engine design attributes relative to heu
+  and leu core approaches for a small thrust ntp}.{\BBCQ}
+\newblock
+
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+King%
+\ \BBA {} El-Genk%
+}{%
+King%
+\ \BBA {} El-Genk%
+}{%
+{\protect \APACyear {2006}}%
+}]{%
+king2006solid}
+\APACinsertmetastar {%
+king2006solid}%
+\begin{APACrefauthors}%
+King, J\BPBI C.%
+\BCBT {}\ \BBA {} El-Genk, M\BPBI S.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2006}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Solid-Core, Gas-Cooled Reactor for Space and Surface
+  Power} {Solid-core, gas-cooled reactor for space and surface power}.{\BBCQ}
+\newblock
+\BIn{} \APACrefbtitle {AIP Conference Proceedings} {Aip conference
+  proceedings}\ (\BVOL~813, \BPGS\ 298--307).
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+King%
+\ \BBA {} El-Genk%
+}{%
+King%
+\ \BBA {} El-Genk%
+}{%
+{\protect \APACyear {2009}}%
+}]{%
+king2009thermal}
+\APACinsertmetastar {%
+king2009thermal}%
+\begin{APACrefauthors}%
+King, J\BPBI C.%
+\BCBT {}\ \BBA {} El-Genk, M\BPBI S.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2009}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Thermal-hydraulic and neutronic analyses of the
+  submersion-subcritical, safe space (S 4) reactor} {Thermal-hydraulic and
+  neutronic analyses of the submersion-subcritical, safe space (s 4)
+  reactor}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Nuclear Engineering and Design}{239}{12}{2809--2819}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Ledbetter%
+, Eaton%
+\BCBL {}\ \BBA {} Habas%
+}{%
+Ledbetter%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {1969}}%
+}]{%
+ledbetter1969nerva}
+\APACinsertmetastar {%
+ledbetter1969nerva}%
+\begin{APACrefauthors}%
+Ledbetter, D.%
+, Eaton, D.%
+\BCBL {}\ \BBA {} Habas, L.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1969}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {NERVA-Contributing Today and Tomorrow}
+  {Nerva-contributing today and tomorrow}.{\BBCQ}
+\newblock
+
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Lee%
+, Lim%
+, Han%
+\BCBL {}\ \BBA {} {\v{C}}erba%
+}{%
+Lee%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2015}}%
+}]{%
+lee2015neutronic}
+\APACinsertmetastar {%
+lee2015neutronic}%
+\begin{APACrefauthors}%
+Lee, H\BPBI C.%
+, Lim, H\BPBI S.%
+, Han, T\BPBI Y.%
+\BCBL {}\ \BBA {} {\v{C}}erba, {\v{S}}.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2015}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {A neutronic feasibility study on a small LEU fueled
+  reactor for space applications} {A neutronic feasibility study on a small leu
+  fueled reactor for space applications}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Annals of Nuclear Energy}{77}{}{35--46}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Lords%
+}{%
+Lords%
+}{%
+{\protect \APACyear {1994}}%
+}]{%
+lords1994snap}
+\APACinsertmetastar {%
+lords1994snap}%
+\begin{APACrefauthors}%
+Lords, R.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1994}{}{}.
+\newblock
+\APACrefbtitle {SNAP and AI Fuel Summary Report} {Snap and ai fuel summary
+  report}\ \APACbVolEdTR{}{\BTR{}}.
+\newblock
+\APACaddressInstitution{}{Westinghouse Idaho Nuclear Co., Inc., Idaho Falls, ID
+  (United States)}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Ludewig%
+, Manning%
+\BCBL {}\ \BBA {} Raseman%
+}{%
+Ludewig%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {1974}}%
+}]{%
+ludewig1974feasibility}
+\APACinsertmetastar {%
+ludewig1974feasibility}%
+\begin{APACrefauthors}%
+Ludewig, H.%
+, Manning, A\BPBI J.%
+\BCBL {}\ \BBA {} Raseman, C\BPBI J.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1974}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Feasibility of rotating fluidized bed reactor for rocket
+  propulsion} {Feasibility of rotating fluidized bed reactor for rocket
+  propulsion}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{J. Spacecraft}{11}{}{65--71}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Ludewig%
+\ \protect \BOthers {.}}{%
+Ludewig%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {1996}}%
+}]{%
+ludewig1996design}
+\APACinsertmetastar {%
+ludewig1996design}%
+\begin{APACrefauthors}%
+Ludewig, H.%
+, Powell, J.%
+, Todosow, M.%
+, Maise, G.%
+, Barletta, R.%
+\BCBL {}\ \BBA {} Schweitzer, D.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1996}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Design of particle bed reactors for the space nuclear
+  thermal propulsion program} {Design of particle bed reactors for the space
+  nuclear thermal propulsion program}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Progress in Nuclear Energy}{30}{1}{1--65}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Lyon%
+}{%
+Lyon%
+}{%
+{\protect \APACyear {1973}}%
+}]{%
+lyon1973performance}
+\APACinsertmetastar {%
+lyon1973performance}%
+\begin{APACrefauthors}%
+Lyon, L\BPBI L.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1973}{}{}.
+\newblock
+\APACrefbtitle {Performance of (U, Zr) C-Graphite (Composite) and of (U, Zr) C
+  (Carbide) Fuel Elements in the Nuclear Furnace 1 Test Reactor} {Performance
+  of (u, zr) c-graphite (composite) and of (u, zr) c (carbide) fuel elements in
+  the nuclear furnace 1 test reactor}\ \APACbVolEdTR{}{\BTR{}}.
+\newblock
+\APACaddressInstitution{}{Los Alamos Scientific Lab., N. Mex.(USA)}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Matthews%
+\ \BBA {} Chidester%
+}{%
+Matthews%
+\ \BBA {} Chidester%
+}{%
+{\protect \APACyear {1993}}%
+}]{%
+matthews1993fuels}
+\APACinsertmetastar {%
+matthews1993fuels}%
+\begin{APACrefauthors}%
+Matthews, R.%
+\BCBT {}\ \BBA {} Chidester, K.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1993}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Fuels for space nuclear power and propulsion} {Fuels for
+  space nuclear power and propulsion}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Transactions of the American Nuclear Society;(United
+  States)}{68}{CONF-930601--}{}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Nam%
+, Venneri%
+, Kim%
+, Chang%
+\BCBL {}\ \BBA {} Jeong%
+}{%
+Nam%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2016}}%
+}]{%
+nam2016preliminary}
+\APACinsertmetastar {%
+nam2016preliminary}%
+\begin{APACrefauthors}%
+Nam, S\BPBI H.%
+, Venneri, P.%
+, Kim, Y.%
+, Chang, S\BPBI H.%
+\BCBL {}\ \BBA {} Jeong, Y\BPBI H.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2016}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Preliminary conceptual design of a new moderated reactor
+  utilizing an LEU fuel for space nuclear thermal propulsion} {Preliminary
+  conceptual design of a new moderated reactor utilizing an leu fuel for space
+  nuclear thermal propulsion}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Progress in Nuclear Energy}{91}{}{183--207}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+\APACcitebtitle {Nuclear Power in Space, {DOE/NE-0071}}}{%
+\APACcitebtitle {Nuclear Power in Space, {DOE/NE-0071}}}{%
+{\protect \APACyear {1990}}%
+}]{%
+doe0071}
+\APACinsertmetastar {%
+doe0071}%
+\APACrefbtitle {Nuclear Power in Space, {DOE/NE-0071}} {Nuclear power in space,
+  {DOE/NE-0071}}\ \APACbVolEdTR{}{\BTR{}}.
+\newblock
+\APACrefYearMonthDay{1990}{}{}.
+\newblock
+\APACaddressInstitution{}{Department of Energy, Office of Nuclear Energy,
+  Science and Technology}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+\APACcitebtitle {Nuclear Reactors and Radioisotopes for Space}}{%
+\APACcitebtitle {Nuclear Reactors and Radioisotopes for Space}}{%
+{\protect \APACyear {{\protect \bibnodate {}}}}%
+}]{%
+webworldnuclear}
+\APACinsertmetastar {%
+webworldnuclear}%
+\APACrefbtitle {Nuclear Reactors and Radioisotopes for Space.} {Nuclear
+  reactors and radioisotopes for space.}
+\newblock
+\APACrefYearMonthDay{{\protect \bibnodate {}}}{}{}.
+\newblock
+\APAChowpublished
+  {\url{http://www.world-nuclear.org/information-library/non-power-nuclear-applications/transport/nuclear-reactors-for-space.aspx}}.
+\newblock
+\APACrefnote{Accessed: 2017-11-17}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Ohlenkamp%
+, Wade%
+\BCBL {}\ \BBA {} Sexton%
+}{%
+Ohlenkamp%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {1966}}%
+}]{%
+ohlenkamp1966snap}
+\APACinsertmetastar {%
+ohlenkamp1966snap}%
+\begin{APACrefauthors}%
+Ohlenkamp, R.%
+, Wade, B.%
+\BCBL {}\ \BBA {} Sexton, I.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1966}{}{}.
+\newblock
+\APACrefbtitle {SNAP 10A COMPONENT QUALIFICATION PROGRAM FINAL REPORT} {Snap
+  10a component qualification program final report}\ \APACbVolEdTR{}{\BTR{}}.
+\newblock
+\APACaddressInstitution{}{Atomics International, Canoga Park, Calif.}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Patel%
+, Eades%
+, Venneri%
+\BCBL {}\ \BBA {} Joyner~II%
+}{%
+Patel%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2016}}%
+}]{%
+patel2016comparing}
+\APACinsertmetastar {%
+patel2016comparing}%
+\begin{APACrefauthors}%
+Patel, V.%
+, Eades, M\BPBI J.%
+, Venneri, P\BPBI F.%
+\BCBL {}\ \BBA {} Joyner~II, C\BPBI R.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2016}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Comparing Low Enriched Fuel to Highly Enriched Fuel for
+  use in Nuclear Thermal Propulsion Systems} {Comparing low enriched fuel to
+  highly enriched fuel for use in nuclear thermal propulsion systems}.{\BBCQ}
+\newblock
+\BIn{} \APACrefbtitle {52nd AIAA/SAE/ASEE Joint Propulsion Conference} {52nd
+  aiaa/sae/asee joint propulsion conference}\ (\BPG~4887).
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+D.~Poston%
+}{%
+D.~Poston%
+}{%
+{\protect \APACyear {2015}}%
+}]{%
+postoncermet}
+\APACinsertmetastar {%
+postoncermet}%
+\begin{APACrefauthors}%
+Poston, D.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2015}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Reactor Design Comparison of 25-klb Composite and Cermet
+  Fueled NTRs} {Reactor design comparison of 25-klb composite and cermet fueled
+  ntrs}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Nuclear and Emerging Technologies for Space}{}{}{}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+D\BPBI I.~Poston%
+}{%
+D\BPBI I.~Poston%
+}{%
+{\protect \APACyear {2001}}%
+}]{%
+poston2001heatpipe}
+\APACinsertmetastar {%
+poston2001heatpipe}%
+\begin{APACrefauthors}%
+Poston, D\BPBI I.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2001}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {The heatpipe-operated Mars exploration reactor (HOMER)}
+  {The heatpipe-operated mars exploration reactor (homer)}.{\BBCQ}
+\newblock
+\BIn{} \APACrefbtitle {AIP Conference Proceedings} {Aip conference
+  proceedings}\ (\BVOL~552, \BPGS\ 797--804).
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+D\BPBI I.~Poston%
+, Kapernick%
+\BCBL {}\ \BBA {} Guffee%
+}{%
+D\BPBI I.~Poston%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2002}}%
+}]{%
+poston2002design}
+\APACinsertmetastar {%
+poston2002design}%
+\begin{APACrefauthors}%
+Poston, D\BPBI I.%
+, Kapernick, R\BPBI J.%
+\BCBL {}\ \BBA {} Guffee, R\BPBI M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2002}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Design and analysis of the SAFE-400 space fission
+  reactor} {Design and analysis of the safe-400 space fission reactor}.{\BBCQ}
+\newblock
+\BIn{} \APACrefbtitle {AIP Conference Proceedings} {Aip conference
+  proceedings}\ (\BVOL~608, \BPGS\ 578--588).
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Powell%
+\ \BBA {} Horn%
+}{%
+Powell%
+\ \BBA {} Horn%
+}{%
+{\protect \APACyear {1985}}%
+}]{%
+powell1985high}
+\APACinsertmetastar {%
+powell1985high}%
+\begin{APACrefauthors}%
+Powell, J\BPBI R.%
+\BCBT {}\ \BBA {} Horn, F.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1985}{}{}.
+\newblock
+\APACrefbtitle {High power density reactors based on direct cooled particle
+  beds} {High power density reactors based on direct cooled particle beds}\
+  \APACbVolEdTR{}{\BTR{}}.
+\newblock
+\APACaddressInstitution{}{Brookhaven National Lab., Upton, NY (USA)}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Qualls%
+\ \BBA {} Werner%
+}{%
+Qualls%
+\ \BBA {} Werner%
+}{%
+{\protect \APACyear {2017}}%
+}]{%
+qualls2017steps}
+\APACinsertmetastar {%
+qualls2017steps}%
+\begin{APACrefauthors}%
+Qualls, A\BPBI L.%
+\BCBT {}\ \BBA {} Werner, J.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2017}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Steps in the development of nuclear thermal propulsion
+  fuels} {Steps in the development of nuclear thermal propulsion fuels}.{\BBCQ}
+\newblock
+\BIn{} \APACrefbtitle {Aerospace Conference, 2017 IEEE} {Aerospace conference,
+  2017 ieee}\ (\BPGS\ 1--6).
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Reid%
+, Sena%
+, Merrigan%
+, Elder%
+\BCBL {}\ \BBA {} Martinez%
+}{%
+Reid%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {1999}}%
+}]{%
+reid1999heat}
+\APACinsertmetastar {%
+reid1999heat}%
+\begin{APACrefauthors}%
+Reid, R.%
+, Sena, J.%
+, Merrigan, M.%
+, Elder, M.%
+\BCBL {}\ \BBA {} Martinez, A.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1999}{}{}.
+\newblock
+\APACrefbtitle {Heat Pipe Development for Advanced Energy Transport Concepts,
+  Phase II----Final Report Covering the Period October 1, 1997, to September
+  30, 1998, Los Alamos National Laboratory} {Heat pipe development for advanced
+  energy transport concepts, phase ii----final report covering the period
+  october 1, 1997, to september 30, 1998, los alamos national laboratory}\
+  \APACbVolEdTR{}{\BTR{}}.
+\newblock
+\APACaddressInstitution{}{Progress Report LA-13549-PR}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+\APACcitebtitle {{Rover/NERVA-Derived Near-Term Nuclear Propulsion - FY92}}}{%
+\APACcitebtitle {{Rover/NERVA-Derived Near-Term Nuclear Propulsion - FY92}}}{%
+{\protect \APACyear {{\protect \bibnodate {}}}}%
+}]{%
+presrovernerva}
+\APACinsertmetastar {%
+presrovernerva}%
+\APACrefbtitle {{Rover/NERVA-Derived Near-Term Nuclear Propulsion - FY92}.}
+  {{Rover/NERVA-Derived Near-Term Nuclear Propulsion - FY92}.}
+\newblock
+\APACrefYearMonthDay{{\protect \bibnodate {}}}{}{}.
+\newblock
+\APAChowpublished
+  {\url{http://www.alternatewars.com/BBOW/Space_Engines/1992_NERVA_Derived_Engines.pdf}}.
+\newblock
+\APACrefnote{Accessed: 2017-11-17}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+\APACcitebtitle {{SNAP Overview}}}{%
+\APACcitebtitle {{SNAP Overview}}}{%
+{\protect \APACyear {{\protect \bibnodate {}}}}%
+}]{%
+websnap}
+\APACinsertmetastar {%
+websnap}%
+\APACrefbtitle {{SNAP Overview}.} {{SNAP Overview}.}
+\newblock
+\APACrefYearMonthDay{{\protect \bibnodate {}}}{}{}.
+\newblock
+\APAChowpublished
+  {\url{https://www.etec.energy.gov/Operations/Major_Operations/SNAP_Overview.html}}.
+\newblock
+\APACrefnote{Accessed: 2017-11-17}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Stewart%
+\ \BBA {} Schnitzler%
+}{%
+Stewart%
+\ \BBA {} Schnitzler%
+}{%
+{\protect \APACyear {2013}}%
+}]{%
+stewart2013comparison}
+\APACinsertmetastar {%
+stewart2013comparison}%
+\begin{APACrefauthors}%
+Stewart, M.%
+\BCBT {}\ \BBA {} Schnitzler, B\BPBI G.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2013}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {A Comparison of Materials Issues for Cermet and
+  Graphite-Based NTP Fuels} {A comparison of materials issues for cermet and
+  graphite-based ntp fuels}.{\BBCQ}
+\newblock
+\BIn{} \APACrefbtitle {49th AIAA Joint Propulsion Conference, AIAA 2013} {49th
+  aiaa joint propulsion conference, aiaa 2013}\ (\BVOL\ 3999).
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Taub%
+}{%
+Taub%
+}{%
+{\protect \APACyear {1975}}%
+}]{%
+taub1975review}
+\APACinsertmetastar {%
+taub1975review}%
+\begin{APACrefauthors}%
+Taub, J.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1975}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {A review of fuel element development for nuclear rocket
+  engines} {A review of fuel element development for nuclear rocket
+  engines}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Los Alamos National Lab., Rept. LA-5931, Los Alamos,
+  NM}{}{}{}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Taylor%
+}{%
+Taylor%
+}{%
+{\protect \APACyear {2005}}%
+}]{%
+taylor2005prometheus}
+\APACinsertmetastar {%
+taylor2005prometheus}%
+\begin{APACrefauthors}%
+Taylor, R.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2005}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Prometheus Project final report} {Prometheus project
+  final report}.{\BBCQ}
+\newblock
+
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+P.~Venneri%
+\ \protect \BOthers {.}}{%
+P.~Venneri%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2014}}%
+}]{%
+venneridesign}
+\APACinsertmetastar {%
+venneridesign}%
+\begin{APACrefauthors}%
+Venneri, P.%
+, Deason, W.%
+, Husemeyer, P.%
+, Rosaire, C.%
+, Howe, S.%
+, Kim, Y.%
+\BCBL {}\ \BBA {} O{'}brien, R.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2014}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Design of a tungsten cermet LEU-NTR} {Design of a
+  tungsten cermet leu-ntr}.{\BBCQ}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+P.~Venneri%
+, Kim%
+, Husemeyer%
+\BCBL {}\ \protect \BOthers {.}}{%
+P.~Venneri%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2013}}%
+}]{%
+venneri2013nuclear}
+\APACinsertmetastar {%
+venneri2013nuclear}%
+\begin{APACrefauthors}%
+Venneri, P.%
+, Kim, Y.%
+, Husemeyer, P.%
+\BCBL {}\ \BOthersPeriod {.}\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2013}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Nuclear thermal rocket design using LEU tungsten fuel}
+  {Nuclear thermal rocket design using leu tungsten fuel}.{\BBCQ}
+\newblock
+
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+P\BPBI F.~Venneri%
+\ \BBA {} Kim%
+}{%
+P\BPBI F.~Venneri%
+\ \BBA {} Kim%
+}{%
+{\protect \APACyear {2015}}%
+}]{%
+venneri2015feasibility}
+\APACinsertmetastar {%
+venneri2015feasibility}%
+\begin{APACrefauthors}%
+Venneri, P\BPBI F.%
+\BCBT {}\ \BBA {} Kim, Y.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2015}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {A feasibility study on low-enriched uranium fuel for
+  nuclear thermal rockets--I: Reactivity potential} {A feasibility study on
+  low-enriched uranium fuel for nuclear thermal rockets--i: Reactivity
+  potential}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Progress in Nuclear Energy}{83}{}{406--418}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Voss%
+}{%
+Voss%
+}{%
+{\protect \APACyear {1984}}%
+}]{%
+voss1984snap}
+\APACinsertmetastar {%
+voss1984snap}%
+\begin{APACrefauthors}%
+Voss, S\BPBI S.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1984}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Snap reactor overview} {Snap reactor overview}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Air Force Weapons Laboratory, Kirtland Air Force Base,
+  New Mexico}{}{}{103}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Weitzberg%
+}{%
+Weitzberg%
+}{%
+{\protect \APACyear {2003}}%
+}]{%
+weitzberg2003liquid}
+\APACinsertmetastar {%
+weitzberg2003liquid}%
+\begin{APACrefauthors}%
+Weitzberg, A.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2003}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Liquid metal cooled reactor for space power} {Liquid
+  metal cooled reactor for space power}.{\BBCQ}
+\newblock
+\BIn{} \APACrefbtitle {AIP Conference Proceedings} {Aip conference
+  proceedings}\ (\BVOL~654, \BPGS\ 420--428).
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Wollman%
+\ \BBA {} Zika%
+}{%
+Wollman%
+\ \BBA {} Zika%
+}{%
+{\protect \APACyear {2006}}%
+}]{%
+wollman2006prometheus}
+\APACinsertmetastar {%
+wollman2006prometheus}%
+\begin{APACrefauthors}%
+Wollman, M.%
+\BCBT {}\ \BBA {} Zika, M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2006}{}{}.
+\newblock
+\APACrefbtitle {Prometheus Project Reactor Module Final Report. Knolls Atomic
+  Power Laboratory and Bettis Atomic Power Laboratory} {Prometheus project
+  reactor module final report. knolls atomic power laboratory and bettis atomic
+  power laboratory}\ \APACbVolEdTR{}{\BTR{}}.
+\newblock
+\APACaddressInstitution{}{SPP-67110--0008}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Wright%
+\ \BBA {} Lipinski%
+}{%
+Wright%
+\ \BBA {} Lipinski%
+}{%
+{\protect \APACyear {2003}}%
+}]{%
+wright2003pin}
+\APACinsertmetastar {%
+wright2003pin}%
+\begin{APACrefauthors}%
+Wright, S\BPBI A.%
+\BCBT {}\ \BBA {} Lipinski, R\BPBI J.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2003}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Pin-Type Gas Cooled Reactor for Nuclear Electric
+  Propulsion} {Pin-type gas cooled reactor for nuclear electric
+  propulsion}.{\BBCQ}
+\newblock
+\BIn{} \APACrefbtitle {AIP Conference Proceedings} {Aip conference
+  proceedings}\ (\BVOL~654, \BPGS\ 408--419).
+\PrintBackRefs{\CurrentBib}
+
+\end{thebibliography}

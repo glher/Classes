@@ -1,0 +1,466 @@
+\documentclass{article}
+
+\usepackage{setspace}
+\usepackage{apacite}
+\usepackage{lipsum}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{kbordermatrix}
+\usepackage{mathrsfs}
+\usepackage{subcaption}
+\usepackage{multirow}
+\usepackage{siunitx}
+\usepackage{pbox}
+\usepackage [autostyle, english = american]{csquotes}
+%\usepackage{draftwatermark}
+\usepackage{booktabs}% http://ctan.org/pkg/booktabs
+\usepackage[hyphens,spaces,obeyspaces]{url}
+
+\newcommand{\tabitem}{~~\llap{\textbullet}~~}
+%\SetWatermarkText{Draft-5}
+%\SetWatermarkScale{1}
+\MakeOuterQuote{"}
+\hyphenation{Bay-es-ian
+             data-base
+             data-bases
+             Sw-ain}
+\newenvironment{conditions}
+  {\par\vspace{\abovedisplayskip}\noindent\begin{tabular}{>{$}l<{$} @{${}={}$} l}}
+  {\end{tabular}\par\vspace{\belowdisplayskip}}
+\captionsetup{font=doublespacing}% Double-spaced float captions
+
+\doublespacing% Double-spaced document text
+
+
+\title{
+\textsc{Reactor Design - Literature review}\\[2.6cm]
+{\LARGE \bfseries Nuclear Power for Space Propulsion Systems}\\{\Large\bfseries Mission to the Oort cloud}
+}
+
+\author{
+D. Fish 
+\and 
+S. Kerber
+\and
+R. France
+\and
+G. L'Her
+}
+
+\date{
+\textsc{Supervisor:} Jeffrey King\\[1em]
+\today
+}
+
+\begin{document}
+
+\maketitle
+\newpage
+
+\begin{abstract}%   %NOTE: Deleting the percentage after "{abstract}" may be lead to an extra leading space in the first line of the abstract, and this should be prevented.
+This paper reviews the state of nuclear propulsion systems for space power applications.
+\end{abstract}
+\newpage
+
+
+
+\section{Introduction}
+\label{sec:intro}
+Introduction placeholder (policy, goal, etc)
+
+100kW
+
+\section{Mission specifications}
+
+
+\section{Space Nuclear Power: A history}
+\label{sec:bkgd}
+
+
+Nuclear power was first introduced to the space industry in the mid 1950's as radioisotope thermoelectric generators, or RTGs~\cite{doe0071}. The main idea is to use the heat produced by decaying isotopes and turn it into electricity. The most common radioisotopes used are Plutonium-238, Polonium-210, Cesium-137, and Americium-241[2],~\cite{webworldnuclear}. Plutonium-238 is the most common material used, providing a decay heat of 0.56 W/g and having a half-life of around 87.7 years~\cite{webworldnuclear}. Thermocouples convert this heat into electricity, which is used to power the onboard instrumentation. The maximum thermocouple efficiency was only around 10\%~\cite{engler1987atomic}. RTGs have no moving parts, are relatively light weight, do not use solar power, and the fissions do not cause chain reactions, meaning these RTGs will be reliable in space and output relatively constant amounts of power~\cite{engler1987atomic}. In 1961, the United States launched its first RTG: The SNAP-3 which provided only 2.7 watts~\cite{doe0071}. Even though these RTGs are reliable and long lasting, they do not produce large amounts of power. For example, the Cassini mission to Saturn launched in 1997 used 3 RTG units which only provided 850 watts~\cite{doe0071}. If more power is required, such as sending people to Mars, another power source should be considered.
+
+\begin{figure}[]
+	\centering
+	\includegraphics[height=0.35\textheight]{fig/img1}
+	\caption[SNAP comparisons]{SNAP comparisons}
+	\label{fig1}
+\end{figure}
+
+    An alternative to RTGs and the main focus of this background section will be on nuclear power from fission. The first United States program to implement fission was the Systems for Nuclear Auxiliary Power, or SNAP program, which started in the late 1950's~\ref{fig1}. The goal was to develop light, compact, and reliable atomic electric devices~\cite{voss1984snap}. This consisted of quite a few RTGs and four fission reactors: The SNAP Experimental Reactor or SER, SNAP-2, SNAP-8, and SNAP-10, with only the SNAP 10 reactor being fitted with a thermoelectric conversion system~\cite{websnap}. The SER used a hydride uranium-zirconium alloy enriched to 93\% U-235 as a fuel source, operating at 50 kWth~\cite{voss1984snap}. One of the advantages to this fuel is that the hydrogen acts both as the fuel and a moderator~\cite{voss1984snap}. This fuel was formed into rods and contained inside 0.01 inch thick stainless steel tubes~\cite{beall1962final}. These tubes were 0.975 inches in diameter and 14 inches long total, with 1.5 inches of beryllium on the top and bottom of the fuel and 0.5 inches of stainless steel used as an end cap. A diagram of this fuel rod is shown in Figure~\ref{appA}. 61 of these rods were arranged in a hexagonal shape to form the core, with six beryllium shims used to fill void space and act as a reflector~\cite{lords1994snap}. A diagram of the core is shown in Figure~\ref{appB}. There were three control drums used, which could not be scrammed, to control reactivity by changing reflectivity surface, with a maximum insertion rate of 2.5 cents/s and a total worth of \$3.82 over a 180° range~\cite{lords1994snap}. Three safety elements with around \$5.40 in reactivity each and a maximum insertion rate of 6 cents/s could be scrammed through releasing magnet power~\cite{lords1994snap}. The system was cooled with eutectic NaK containing 78 wt\% potassium, which had an outlet temperature of 1200°F~\cite{beall1962final}. The main goal of the SER was to determine stability and safety of the reactor~\cite{voss1984snap}. Criticality was achieved and the reactor was operated for around 6,000 hours, with no visible damage from operation seen in the fuel rods, so the SER was considered a success~\cite{beall1962final}.  However, there were some problems that needed to be addressed. There was a problem with heater bundles in the secondary coolant loops failing, with three total failings across 11 months of testing. Noise could cause scrams to be initiated, and thermocouples were constantly failing.
+
+\begin{figure}[]
+	\centering
+	\includegraphics[height=0.35\textheight]{fig/appA}
+	\caption[SER Fuel rod]{SER Fuel rod~\cite{lords1994snap}}
+	\label{appA}
+\end{figure}
+
+\begin{figure}[]
+	\centering
+	\includegraphics[height=0.45\textheight]{fig/appB}
+	\caption[SER Coe Configuration]{SER Coe Configuration~\cite{lords1994snap}}
+	\label{appB}
+\end{figure}
+
+
+    SNAP-2 produced around 55 kWth, which was predicted to output 3.5 kWe using a Mercury-Rankine cycle~\cite{voss1984snap}. Unlike the SER, the SNAP-2 used 10\% enriched uranium, but ultimately kept the same hydride uranium-zirconium alloy as a fuel source~\cite{ohlenkamp1966snap}. It only had 37 fuel rods in total. There were no major problems during its lifetime, it was used to help characterize long term reactivity loss, xenon poisoning, and hydrogen redistribution~\cite{voss1984snap}. The SNAP-8 was a 600kWth reactor designed to produce 35 kWe with a maximum temperature of 1300°F~\cite{daye1967snap}. After 1,000 hours of testing, the power was increased from 600 kWth to 1 MWth for 431 hours~\cite{voss1984snap}. This 1 MWth test resulted in 72 of 211 fuel elements cracking from stress due to fuel swelling at temperatures above design parameters~\cite{voss1984snap}. 
+
+
+    The SNAP-10A was the first and only nuclear reactor powered system that the United States launched. It was smaller than all the previous SNAP reactors in terms of power and weight. The SNAP-10A used the a hydrided uranium-zirconium alloy as a fuel~\cite{lords1994snap}.  Each fuel pin contained approximately 128g of U-235, 11.8g of U-238, 24.6g of H, and 1215g of Zr~\cite{voss1984snap}. A burnable poison of Sm2O3 was added to a few fuel elements in order to adjust the excess reactivity. The core had 37 fuel elements arranged in a triangular array, a beryllium reflector, and four semi-cylindrical drums with \$4.30 of reactivity each~\cite{voss1984snap},~\cite{ohlenkamp1966snap}. At launch, two of the control drums were inserted immediately and the other two were stepped in half a degree every 150 seconds, so the reactor would reach criticality seven hours after start up~\cite{voss1984snap}. Shielding was implemented in the form of lithium hydride cast inside a stainless steel case and weighed 98.6 kg~\cite{ohlenkamp1966snap}. The coolant was NaK at 1010°F which was delivered at 13.2 gpm by a thermoelectric pump~\cite{ohlenkamp1966snap}. A honeycomb aluminum heat shield was used to keep the NaK above 75°F during prelaunch so it wouldn't freeze and block the pipes~\cite{ohlenkamp1966snap}. PbTe thermoelectric elements were initially used for power conversion due to high performance, but had some disadvantages: high sublimation rates at high temperature and low strength and brittleness~\cite{voss1984snap}. They were replaced with SiGe alloyed thermocouples with lower performance, but had some advantages: low vapor pressure at high temperature, good mechanical integrity, and stability at temperatures greater than required on the SNAP-10A~\cite{voss1984snap}. No serious component failures were seen during the testing period, partly due to the redundancy in the system~\cite{ohlenkamp1966snap}. The total launch weight of the system was 436.4 kg and ended up producing over 600 We after launch on April 3rd, 1965~\cite{websnap}. After 43 days, the system shut down due to a high voltage failure~\cite{websnap}. The SNAP-10A reactor is shown in Figure~\ref{appC} with the thermodynamic cycle shown in Figure~\ref{appD}. 
+
+
+\begin{figure}[]
+	\centering
+	\includegraphics[height=0.45\textheight]{fig/appC}
+	\caption[Cross section view of Snap-10A reactor]{Cross section view of Snap-10A reactor~\cite{websnap}}
+	\label{appC}
+\end{figure}
+
+
+\begin{figure}[]
+	\centering
+	\includegraphics[height=0.45\textheight]{fig/appD}
+	\caption[Thermodynamic cycle of SNAP-10A reactor]{Thermodynamic cycle of SNAP-10A reactor~\cite{websnap}}
+	\label{appD}
+\end{figure}
+
+
+
+    Even though it wasn't possible to test the SNAP-10A in the same conditions as space, no new environmental interactions were observed, so no modifications needed to be made to the system~\cite{ohlenkamp1966snap}. However, through the ground testing done, there were several systems or components that needed to be re-designed: such as the NaK pump, the thermoelectric modules, expansion compensator, and temperature switches~\cite{voss1984snap}. Even though the power output of the SNAP-10A was low, the systems created and research done is still relevant and reliable. For example the SiGe thermocouples were chosen despite not being the best for the SNAP-10A because of their predicted growth potential~\cite{voss1984snap}. 
+
+
+    The SP-100 space nuclear reactor was run from 1983 to 1992 with a projected power range of 10s to 100s of kWe for systems lighter than 3,000 kg that was operable at full power for seven years with an overall reliability of 95\%~\cite{borgesprimary},~\cite{anderson1983power}. The reactor was capable of making 2.4 MWth using 858 fuel pins and 3 safety rods~\cite{demuth2003sp100}. These fuel pins are arranged into a triangular lattice with a pitch to diameter ratio of 1.07, shown in Figure~\ref{appE}~\cite{el1992decay}. The safety rods are composed of a combination of B4C and BeO, shown in Figure~\ref{appF}~\cite{demuth2003sp100}. The core was cooled with liquid lithium which is coupled to 4 dynamic energy conversion engines, either a Brayton or a Stirling power converter~\cite{el1992decay}. For shielding, B4C and LiH were used for neutron shielding and depleted U was used for gamma shielding~\cite{demuth2003sp100}. A picture of the core is shown in Figure~\ref{appG} with a diagram of the fuel pins displayed in Figure~\ref{appH} and the shielding layout shown in Figure~\ref{appI}.
+
+
+\begin{figure}[]
+	\centering
+	\includegraphics[height=0.45\textheight]{fig/appE}
+	\caption[SP-100 Fuel Pin Lattice]{SP-100 Fuel Pin Lattice~\cite{el1992decay}}
+	\label{appE}
+\end{figure}
+
+
+\begin{figure}[]
+	\centering
+	\includegraphics[height=0.45\textheight]{fig/appF}
+	\caption[SP-100 Safety Rod Drive Assembly]{SP-100 Safety Rod Drive Assembly~\cite{anderson1983power}}
+	\label{appF}
+\end{figure}
+
+\begin{figure}[]
+	\centering
+	\includegraphics[height=0.45\textheight]{fig/appG}
+	\caption[SP-100 core cross section]{SP-100 core cross section~\cite{anderson1983power}}
+	\label{appG}
+\end{figure}
+
+\begin{figure}[]
+	\centering
+	\includegraphics[height=0.45\textheight]{fig/appH}
+	\caption[SP-100 Fuel Pin Configuration]{SP-100 Fuel Pin Configuration~\cite{el1992decay}}
+	\label{appH}
+\end{figure}
+
+\begin{figure}[]
+	\centering
+	\includegraphics[height=0.45\textheight]{fig/appI}
+	\caption[SP-100 Shielding Layout]{SP-100 Shielding Layout~\cite{anderson1983power}}
+	\label{appI}
+\end{figure}
+
+
+As there were so many different constraints on this program, a few new things had to be done. Usually UO2 fuel is used in reactors, but because of the mass constraints UN was chosen instead, with a theoretical density of 94\% and enriched to 93.5\%~\cite{demuth2003sp100}. Some advantages to UN is that it has a high thermal conductivity, high uranium density, and low fission gas release~\cite{el1992decay}. Instead of stainless steel used as the fuel pin cladding a new material: bonded Nb-1Zr/Re was used~\cite{el1992decay}. This new material is more chemically inert with respect to the fuel and fission gases and is more compatible with the lithium coolant~\cite{demuth2003sp100}. Since the reactor needed to have a reliability above 95\%, the reactor was designed to~\cite{demuth2003sp100}:
+\begin{enumerate}
+\item Achieve full power with 1 heat rejection loop inoperative
+\item Achieve full power with 1 control reflector stuck open
+\item Have redundancy in the safety rod motors, brakes, and clutches
+\item Accommodate fission gas leakage due to failure of 1\% of the fuel pins
+\item Have excess thermoelectric area to account for lifetime degradation
+\item Have a minimum of 2 circuits each with 2 sensors for every signal of critical importance
+\end{enumerate}
+
+For safety, the reactor was designed to remain inactive after submerging and flooding the core and ensure the dispersion of radioactive materials upon reentry met the nuclear safety requirements~\cite{anderson1983power}.
+
+
+    Some of the problems encountered with the SP-100 were the materials and the coolant. Since UN was used as the fuel, other cladding materials needed to be used, which led to the invention of the rhenium lined Nb-1\% Zr cladding. There also needed to be mass minimizations, which is why UN was chosen as the fuel and Li was chosen as a coolant. For safety reasons, Li was to be launched as a solid and thawed later~\cite{anderson1983power}. Liquid lithium has a volume of more than 25\% the volume of solid lithium, and the entire vessel had to be designed around repeated freeze and thaw cycles~\cite{anderson1983power}. NaK, a more common coolant, was still used in auxiliary cooling and thawing system because of its lower melting point~\cite{anderson1983power}. The SP-100 was terminated early and was able to achieve its goal of 100 kWe, but had a final mass of 4600 kg~\cite{anderson1983power}.
+
+
+    The SNAP-10A and SP-100 were examples of what could happen if nuclear power was used for powering satellites. Nuclear power can also be used for propulsion and powering satellites at the same time, which would be bimodal systems. Two programs kicked off nuclear thermal rockets: Nuclear Engine for Rocket Vehicle Application or NERVA by the US Atomic Energy Commission and NASA, and Project Rover by the Los Alamos Scientific Laboratory. Project Rover was split into three different phases: Kiwi, Phoebus, and Pewee. However, the Pewee was only used to test new fuels, and they didn't try to maximize the specific impulses, so these reactors will be skipped over[16]. NERVA's designs were based on one of the Project Rover's Kiwi systems. Both Project Rover and NERVA were terminated in 1972. One of the main attractions of nuclear rockets is that they can achieve more than twice the specific impulse of the best chemical rockets[16]. It also has the capability to start, stop, and restart if necessary, which chemical rockets cannot do[16]. The best nuclear rockets will have a high exit gas temperature and the propellent should have low molecular weight, meaning hydrogen is the best choice[16]. A table displaying all the reactors tested, the dates of the tests, the maximum power achieved, and the time at maximum power is shown in Figure~\ref{appJ}.
+
+
+\begin{figure}[]
+	\centering
+	\includegraphics[height=0.45\textheight]{fig/appJ}
+	\caption[Project Rover and NERVA Propulsion Tests]{Project Rover and NERVA Propulsion Tests [18]}
+	\label{appJ}
+\end{figure}
+
+    The Kiwi rocket had a total of eight different prototypes built and tested, but they were all epithermal reactors[16]. The Kiwi propulsion systems were split into two series: the Kiwi-A series and the Kiwi-B series~\cite{house1964development}. The main difference between these two was that the Kiwi-A series used gaseous hydrogen as its propellent and the Kiwi-B series used liquid hydrogen~\cite{house1964development}. The first Kiwi reactor tested was the Kiwi A reactor, which was tested in 1959[16]. This reactor was intended to produce 100 MW of power but instead achieved 70 MW and operated for 300 seconds[18]. The propellent, gaseous hydrogen, left with a flow rate of 3.2 kg/s[16]. The nozzle was a double walled nickel, designed for sonic flow at the throat[16]. The fuel used was UO2 loaded graphite plates, used graphite as a reflector, and was encased in an aluminum pressure shell[16]. At high temperatures (around 2,000 K), the UO2 reacted with the surrounding carbon, converting it to UC2[16]. A graphite plate, which was supposed to contain the carbon wool insulation and prevent gas from bypassing, inside the reactor shattered during operation and was ejected out the nozzle[16]. This caused the gas outlet temperature to increase, which ultimately melted the UC2 that had formed, as it has a lower melting point than UO2[16]. Despite this, the test was still considered a success, as it showed the possibility of a high temperature nuclear propulsion reactor. 
+
+
+    The next Kiwi-A series reactor was the Kiwi A' reactor. This reactor also operated for around 300 seconds, but at a high power of 88 MW[18]. One of the main differences between this reactor and the original Kiwi A reactor was the fuel. The Kiwi A' used UO2 fuel elements inside graphite modules which contained 4 coolant channels[16]. During operation, fuel modules were ejected from the core, but the reactor continued to operate at the designated power, with these ejection only causing short perturbations[16]. During the inspection after operation, it was found that 4 other fuel modules had cracks and would likely have also been ejected if it had been operated longer[16]. 
+    The last Kiwi-A series reactor was the Kiwi A3 reactor, which operated at just above 100 MW for around 300 seconds and was launched to test the structural integrity of different core materials at operating conditions[18]. Nothing was ejected from the core during these tests, but some of the fuel elements were cracked[16]. The carbon wool insulation, core, and reflector were found to be in very bad shape as well[16]. Overall, the Kiwi-A series could be considered a success, as they were able to demonstrate a structurally sound reactor that could be precisely controlled and tested. 
+
+
+    The next reactors were the Kiwi-B series that mostly used liquid hydrogen as its propellent. The exception was the first reactor, the Kiwi B1A, which still used gaseous hydrogen[16]. This reactor was designed to be the same size as the Kiwi A, but output 10 times as much power[18]. The Kiwi B1A achieved around 250 MW for around 30 seconds before a hydrogen fire near the nozzle stopped the test early[18]. The average hydrogen mass flow at full power was 9.1 kg/s and the reactor achieved an ideal specific impulse of over 750 seconds[16]. Some of the major differences were a beryllium reflector, pyrographite as insulation, a regeneratively-cooled nozzle, 7 coolant holes per fuel element, hexagonal graphite modules, and fuel elements coated in NbC for corrosion resistance[16]. 
+
+
+    Kiwi B1B was the next reactor tested, and the first one to be tested with liquid hydrogen. It was rated for 1100 MW but only operated at around 900 MW for a few seconds[18]. Its main objective was to investigate cryogenic hydrogen during reactor start up[16]. They were worried that the hydrogen may be flowing through as a 2-phase solution. Kiwi B1B's run was stopped early due to fuel elements being ejected from the core and small hydrogen fire started[16]. 11 modules were ejected and an addition 50 were broken, causing the B1B to stop being worked on[16]. The main differences between B1A and B1B were: there were more core periphery modules and it used full length fuel elements when the B1A used half-length elements[16]. 
+The next reactor, the Kiwi B4A, had its run prematurely ended when it ejected its core[18]. It used a new hexagonal fuel element with a flat to flat dimension of 0.75 inches and a length of 52 inches, which became the standard fuel element used[16]. This element used UO2 and had 19 coolant holes, and was coated in NbC for corrosion resistance[16]. It was later found that core vibrations from hydrogen flow caused the fuel elements to fracture[18]. 
+
+
+The Kiwi B4A's successor was the Kiwi B4D which aimed to eliminate these core vibrations. It reached full power at 1000 MW for around a minute before a hydrogen leak, which caused a fire, stopped the test early[18]. This time, the fire didn't break any fuel elements and no mechanical damage was seen on the inside of the core[16]. The Kiwi B4D included leaf springs for lateral core support and was started completely automatically[16]. This reactor had a gas exit temperature of 2,222 K, a thrust of 45,851 lbf, and a vacuum specific impulse of 780 seconds~\cite{presrovernerva}.
+The last Kiwi reactor was the Kiwi B4E which operated at over 900 MW for over 8 minutes, which was by far the most successful Kiwi iteration[18]. The exiting gas temperature was 2,389 K with a propellent flow rate of 31.8 kg/s, a thrust of 45,851 lbf, and a vacuum specific impulse of 820 seconds[16],~\cite{presrovernerva}. It was operated again at almost 900 MW for another 2.5 minutes which confirmed the same gas temperature and propellent rate[16],[18]. Two images of the reactor are shown in Appendices K and L. The main differences were: All fuel elements were loaded were graphite with pyrocarbon UC2 beads and a different nozzle, the Rocketdyne nozzle, was used[16]. The coolant holes were slightly smaller in diameter and different uranium loading were used to try to flatten the radial power distribution[16].
+
+
+    This successful Kiwi B4E reactor was the baseline for the NRX classes of engines, or the engines used in the NERVA program. The first engine made was the NRX A2, which was tested in 1964 and ran at 1,100 MW for 40 seconds with a propellent flow of 71 lb/s[18],~\cite{ledbetter1969nerva}. The reactor contained 1626 fuel elements and had a vacuum specific impulse 811 seconds[16]. Despite a successful test and no ejections, corrosion from hydrogen was found on the fuel elements near the hot end of the core, leading to decision to coat this area with NbC in the next iteration[16].
+
+
+    The next reactor was the NRX A3, which was operated for 8 minutes total, with max power of 1,122 MW for 3.5 minutes[18]. The reactor core contained 1626 fuel elements containing 172 kg of enriched uranium[16]. A Be reflector was used along with 12 Be control drums[16]. The full power run achieved a vacuum specific impulse of at least 800 seconds and had a calculated thrust of 53,400 lb with a propellent flow rate of 71 lb/s[16],~\cite{ledbetter1969nerva}. One of the major changes in this engine was the external NbC coating in the outermost row of the core periphery, which lead to less corrosion[16]. However, there were pinhole formations in the fuel elements that the NbC did not seem to have an effect on[16]. 
+
+
+    The NRX/EST was the first NERVA reactor to test all the major engine components, and ran at a max power of 1,100 MW multiple times, as it was tested 11 times[16],[18]. It was estimated to have a propellent flow rate of 71 lb/s and operable at full power for 30 minutes~\cite{ledbetter1969nerva}. The core contained 1584 fuel elements containing 176 kg of enriched uranium[16]. An Aerojet nozzle was implemented, which was a steel-jacketed U-tube type[16]. A bleed port was used to move some hot gases to the turbopump[16].
+
+
+    The NRX A5 was essentially the same core as the NRX/EST, except two core periphery rows of fuel elements were coated in NbC[16]. This reactor reached a maximum power of 1,140 MW and ran for 15.5 minutes on day and 14.5 minutes 2 weeks later[18]. It had a propellent flow rate of 71 lb/s and was operable at full power for up to 30 minutes~\cite{ledbetter1969nerva}. It was discovered that the more weight loss a fuel element incurred, the more likely they were to break[16].
+
+
+    The next reactor in line was the NRX A6, which had a goal of running as long as it could or until it reached one hour. The reactor operated at 1,150 MW for 62 minutes with a propellent flow rate of 72 lb/s[18],~\cite{ledbetter1969nerva}. The NRX A6 has the same general configuration as the NRX 5A, except it removed the graphite inner reflector and changed the fuel loading and coating[16]. A lighter coating of NbC was applied to improve adherence and a Mo overcoating was applied to reduce corrosion[16]. It was also the first reactor to achieve all of its objectives, with the only core damage being fuel rods cracking due to a 200°C temperature spike towards the end of the run and a reflector cracking[16].
+
+
+    The last Nerva reactor is the XE-PRIME, which was rated for 1,140 MW, a chamber pressure of 560 psi, a chamber temperature of 2,272 K, a thrust of 55,430 lb, propellent flow rate of 70lb/s, and a vacuum specific impulse of 710 seconds[16]. This was the most rigorously tested reactor, with 28 restarted in 1969[18]. The reason for this is it was designed for flight more so than testing, and did not utilize the independent liquid hydrogen feed system all the other reactors used[16]. This reactor was still using the fuel from the NRX A5, so it was supposed to be testing other components[18].
+
+
+    Phoebus was the next series in Project Rover, designed to be higher power and longer lasting than the Kiwi reactors, but still based off the Kiwi B4E. There were three total Phoebus reactors: Phoebus 1A, Phoebus 1B, and Phoebus 2A, which were all epithermal reactors[16]. Phoebus 1A's goal was to be a 5,000 MW reactor, but its first test was only at 1100 MW for 10.5 minutes, when it ran out of propellent[18]. Full power resulted in a propellent flowrate of 31.4 kg/s and fuel temperature of 2,444 K[16]. The thrust was 66,993 lbf and had a vacuum specific impulse of 835 seconds~\cite{presrovernerva}. The Phoebus 1A had a larger power density due to it increasing the diameter of the coolant flow channels in the fuel elements in order to reduce thermal stress and core pressure drop[16]. Its core contained 1534 full-length hexagonal fuel elements, using the same pyrolytic-graphite UC2 particles as the Kiwi B4E[16]. However, it used 27 different UC2 loadings to further flatten the radial power distribution.
+
+
+    Phoebus 1B was only rated for 1500 MW and ran above 1250 MW for over 30 minutes with a max power of 1450 MW, resulting in an exit gas temperature of 2,444 K [16],[18]. This reactor core had 1498 full length fuel elements with a thinner NbC coating[16]. Phoebus 1B achieved the highest power density, of around 1 MW per fuel element. The thrust was 66,993 lbf and had a vacuum specific impulse of 828 seconds~\cite{presrovernerva}.
+
+
+    The Phoebus 2A was the most powerful rocket, achieving over 4000 MW for over 12 minutes[18]. Once again the power density was increased by enlarging the diameter of the coolant flow channels and also by making it a two pass regenerative cooling system by diverting 10\% of the liquid hydrogen to the core.[16] The core had 4789 fuel elements overcoated in a small amount of Mo to reduce corrosion in the graphite[16]. This reactor was capable of 805 seconds of impulse in space and 250,251 lbf of thrust[18],~\cite{presrovernerva}. 
+    
+
+Project Timberwind was initially started as part of the Star Wars program but later transferred to the air force and lasted from 1987 to 1992. Its goal was to achieve a specific impulse of 1000 seconds and have a thrust to weight ratio of 25:1, as the last NERVA rocket had a thrust to weight ratio of around 5:1~\cite{haslett1995space}. Project Timberwind used a particle bed reactor, with 4 different designs ranging from 400 to 2,000 MW~\cite{ludewig1996design}. Generally, in nuclear rocket systems, a high propellent pressure is needed to overcome the high pressure drop that occurs in the core~\cite{ludewig1996design}. This is why a pressurized bed reactor was chosen, as fuel elements composed of randomly packed spheres can minimize the pressure drop across the bed~\cite{ludewig1996design}. An example of the particle beds and the fuel it used are shown in Figure~\ref{appM}. Particle Bed Propulsion Reactors are heterogenous, have complicated symmetry, and have high neutron leakage, making analysis unique~\cite{ludewig1996design}. The most difficult issues were the temperature of the fuel (3500 K) and the thermal-hydraulic and structural performance of the fuel elements~\cite{haslett1995space}. The Soviet Union had created a mixed carbide fuel that was stable up to 4000 K~\cite{haslett1995space}. A slightly modified mixed carbide fuel was created, called the infiltrated kernel. It was lighter than mixed carbide fuel and performed better~\cite{haslett1995space}. An image of the fuel is shown in Figure~\ref{appN}. This fuel still had problems, when the UC2 became molten it would dissolve the buffer in five minutes and attack the ZrC coating, but the due to time and funding constraints, this issue was never fixed~\cite{haslett1995space}.
+
+
+\begin{figure}[]
+	\centering
+	\includegraphics[height=0.45\textheight]{fig/appM}
+	\caption[Project Timberwind's Fuel Particle, Fuel Element, and Particle Bed Reactor]{Project Timberwind's Fuel Particle, Fuel Element, and Particle Bed Reactor~\cite{ludewig1996design}}
+	\label{appM}
+\end{figure}
+
+\begin{figure}[]
+	\centering
+	\includegraphics[height=0.35\textheight]{fig/appN}
+	\caption[Infiltrated Kernel]{Infiltrated Kernel~\cite{haslett1995space}}
+	\label{appN}
+\end{figure}
+
+The coolant, hydrogen, undergoes large temperature gradients, entering at 30 K and leaving at over 3,000 K~\cite{ludewig1996design}. The coolant enters the bed in a stainless steel cold frit and exits the bed in a TaC hot frit coated in graphite, with TaC being more durable than the traditional NbC~\cite{ludewig1996design}. The moderator used was Be/7LiH/H with a small Be reflector~\cite{haslett1995space}. The core consisted of 37 fuel elements, even though 61 fuel elements was superior from a neutronics standpoint, because it was much cheaper~\cite{haslett1995space}. 
+There were 3 different Timberwind engines were designed but never tested or launched, Timberwind 45, 75, and 250~\cite{board2006priorities}. It was not fully declassified, but the 3 specifications of the target engines are shown in Table~\ref{appO}~\cite{board2006priorities}.
+
+\begin{table}[]
+\centering
+\caption{Project Timberwind's Planned Specifications}
+\label{appO}
+\begin{tabular}{|l|c|c|c|}
+\hline
+\multicolumn{1}{|c|}{}         & Timberwind 45 & Timberwind 75 & Timberwind 250 \\ \hline
+Diameter (ft)                  & 13.94         & 5.67          & 28.5           \\ \hline
+Vacuum thrust (lbf)            & 99208         & 165347        & 551142         \\ \hline
+Sea level thrust (lbf)         & 88305         & 147160        & 429902         \\ \hline
+Vacuum specific impulse (s)    & 1000          & 1000          & 1000           \\ \hline
+Sea level specific impulse (s) & 890           & 890           & 780            \\ \hline
+Engine mass (lb)               & 3300          & 5500          & 8300           \\ \hline
+Thrust to weight ratio         & 30            & 30            & 30             \\ \hline
+Burn time (s)                  & 449           & 357           & 493            \\ \hline
+Propellants                    & $LH_2$        & $LH_2$        & $LH_2$         \\ \hline
+\end{tabular}
+\end{table}
+
+
+
+The Heatpipe-Operated Mars Exploration Reactor or HOMER and the Safe Affordable Fission Engine or SAFE are both systems that work off the heatpipe power system, which Los Alamos National Lab has been researching since 1994~\cite{poston2001heatpipe}. These heatpipe power systems will generally be low power, in the kWe range, and are designed to be bimodal~\cite{houts1997heatpipe}. The goal of heatpipe power systems are to be: safe, reliable, long lived, modular, testable, versatile, easily fabricable, able to store fuel separately, able to be built with existing technology, bimodal, dual use (civilian and military), low mass, low cost, and be quick to develop, meaning they work off existing technology~\cite{houts1997heatpipe}. These systems will use either UN or UO2 as fuel and have low burnup~\cite{houts1997heatpipe}. They typically operate around 1300 K and can use several different energy conversion systems~\cite{houts1997heatpipe}. If operating below 100 kWth, radiation heat can be adequately removed through finned heatpipes~\cite{houts1997heatpipe}. An example of a heatpipe power system is shown in Figure~\ref{appP}. 
+
+
+\begin{figure}[]
+	\centering
+	\includegraphics[height=0.45\textheight]{fig/appP}
+	\caption[Heatpipe Power System Reactor Example]{Heatpipe Power System Reactor Example~\cite{poston2001heatpipe}}
+	\label{appP}
+\end{figure}
+
+The HOMER system contains stainless steel clad UO2 fuel pins that are structurally and thermally bonded to SS/Na heatpipes~\cite{poston2001heatpipe}. The UO2 is 90\% theoretical density and 97\% enriched~\cite{poston2001heatpipe}. Heat is transferred from the fuel pins to the heatpipes, and the heatpipes move the heat to an out-of-core power conversion system, so there is no pumped loop system~\cite{poston2001heatpipe}. It is designed to stay sub-critical even if submerged in water~\cite{poston2001heatpipe}. For a 20 kWe HOMER system assuming 20\% conversion efficiency, the core needs 57 heatpipes, 152 fuel pins which results in 128 kg UO2, and 8 BeO pins, with a total reactor mass of 385 kg~\cite{poston2001heatpipe}. Heat would be removed with a radiator and the shielding is dependent on the type of mission. The mass distribution for this system in shown in Figure~\ref{appQ}. 
+
+
+\begin{figure}[]
+	\centering
+	\includegraphics[height=0.15\textheight]{fig/appQ}
+	\caption[HOMER Mass Breakdown]{HOMER Mass Breakdown~\cite{poston2001heatpipe}}
+	\label{appQ}
+\end{figure}
+
+    The SAFE-400 is a specific SAFE reactor that produces 400 kWth and uses a Brayton power system to get 100 kWe~\cite{poston2002design}. The core consists of 127 Mo modules and a Mo/Na heatpipe is at the center of each module surrounded by three Mo tubes that contain rhenium clad UN~\cite{poston2002design}. The UN is 96\% theoretical density and 97\% enriched~\cite{poston2002design}. Mo is chosen because of its high strength at high temperatures, its high thermal conductivity, and its good neutronics properties~\cite{poston2002design}. However, Mo is also difficult to make and weld, does not have a lot of information in the US irradiation database, and it brittle at low temperatures~\cite{poston2002design}. The reflectors and control drums are composed of Nb-1Zr clad Be~\cite{poston2002design}. Unlike the HOMER, the SAFE-400 uses a heatpipe to gas heat exchanger~\cite{poston2002design}. In general, this heat exchanger gas is made of 72\% He and 28\% Xe~\cite{webworldnuclear}. An example of the reactor core is shown in Figures~\ref{appR1} and~\ref{appR2}. Like the HOMER systems, the SAFE systems remain subcritical even when submerged.
+
+
+\begin{figure}[]
+	\centering
+	\includegraphics[height=0.45\textheight]{fig/appR1}
+	\caption[SAFE-400 Reactor Design]{SAFE-400 Reactor Design~\cite{poston2002design}}
+	\label{appR1}
+\end{figure}
+
+
+\begin{figure}[]
+	\centering
+	\includegraphics[height=0.35\textheight]{fig/appR2}
+	\caption[SAFE-400 Reactor Design - Detailed]{SAFE-400 Reactor Design - detailed~\cite{poston2002design}}
+	\label{appR2}
+\end{figure}
+ 
+    One of the more recent developments is Project Prometheus, which was started in 2003 but discontinued in 2005~\cite{taylor2005prometheus}. One of the main objectives was to launch a nuclear electric propulsion powered spaceship to explore the 3 icy moons of Jupiter and end in orbit around Europa~\cite{edwards2012overview}. A picture of the spaceship is shown in Figure~\ref{appS}. One of the initial problems encountered was the lack of characterization of materials at high temperatures and no existing fuel system would work for the long mission planned~\cite{wollman2006prometheus}. On top of this, there is no fast neutron spectrum test reactors in the United States that can test structural and fuel materials~\cite{wollman2006prometheus}. Several technologies needed to be advanced, and the team looked into~\cite{taylor2005prometheus}:
+\begin{enumerate}
+\item Space Reactor
+\item Power Conversion
+\item Heat Rejection
+\item Electric Propulsion
+\item High Power Telecommunications
+\item Radiation Hardened Parts and Electronics
+\item Low Thrust Trajectory Tools
+\end{enumerate}
+
+
+\begin{figure}[]
+	\centering
+	\includegraphics[height=0.45\textheight]{fig/appS}
+	\caption[Jupiter Icy Moon Spaceship]{Jupiter Icy Moon Spaceship~\cite{edwards2012overview}}
+	\label{appS}
+\end{figure}
+
+Since Project Prometheus only operated for a few years, many of these systems were not completed, and there is only information of what was tested. The types of reactors being tested were liquid metal, heatpipe, and gas cooled reactors~\cite{wollman2006prometheus}. The possible coolants were liquid alkali metals like Li, non-alkaala metals like Pb-Bi, molten salts like F, and gas like He-Xe~\cite{wollman2006prometheus}. The fuel material was planned to be UO2, UN, or UC/UC2 in fuel pellets similar to TRISO or in ceramic or metallic spheres~\cite{wollman2006prometheus}. Cladding and core would be refractory metal alloys like Nb or Re, conventional metal alloys like stainless steel, and SiC ceramics~\cite{wollman2006prometheus}. The power conversion was a Brayton type and two main types were investigated: super alloys in inert gases and IN-792, Hast-X, IN-617, and MA956 in air~\cite{taylor2005prometheus}. Heatpipes were planned for heat rejection, using water heatpipes, high temperature organic, and ceramic materials~\cite{taylor2005prometheus}. Heat rejection would use coolants such as NaK, water, or Li~\cite{wollman2006prometheus}.
+
+
+    The electric propulsion systems were completed, showing that either NEXIS or HiPEP could give the required specific impulse of 6,000 to 9,000 seconds, have an efficiency greater than 65\%, and had power levels of 20 to 40 kW~\cite{taylor2005prometheus}. The high power telecommunicators were to be two 180W Ka-Band Traveling Wave Tubes or a 250W Traveling Wave Tube~\cite{taylor2005prometheus}. Progress was made in finding radiation hardened electronics/parts, completing the Honeywell Rad Hard ASIC fabrication line, the Rad Hard ASICs for IEEE 1394A and 12C data bases, the Rad Hard power control mixed signals ASICs, and the RAD750 processor development~\cite{taylor2005prometheus}. On top of this, radiation models for valves and pressure transducers for the propellent management were completed~\cite{taylor2005prometheus}. For low thrust trajectory tools, dynamic prototype software tools were designed~\cite{taylor2005prometheus}.
+
+
+    Several shielding configurations and materials were tried, including an Al/Ta shield material which was found to give the same properties as pure Al with 10\% less mass. The other materials used were the usual BeO, B4C, LiH~\cite{wollman2006prometheus}. The initial shield mass was estimated to be 1500 kg for the final design, but was expected to decrease as models and configurations were developed~\cite{taylor2005prometheus}. A full list of materials considered with developmental concerns is available in Figure~\ref{appT} with the pros and cons of fuel materials listed in Figure~\ref{appU}. 
+
+
+\begin{figure}[]
+	\centering
+	\includegraphics[height=0.85\textheight]{fig/appT}
+	\caption[JIMO Materials and Developmental Concerns]{JIMO Materials and Developmental Concerns~\cite{wollman2006prometheus}}
+	\label{appT}
+\end{figure}
+
+\begin{figure}[]
+	\centering
+	\includegraphics[height=0.45\textheight]{fig/appU}
+	\caption[Pros and Cons of Fuel Types considered on the JIMO]{Pros and Cons of Fuel Types considered on the JIMO~\cite{wollman2006prometheus}}
+	\label{appU}
+\end{figure}
+
+
+
+
+
+
+
+
+
+
+
+
+
+\section{Reactor Design Options}
+
+Two broad design categories have been considered throughout history for space nuclear reactor programs, direct propulsion and electric propulsion. Direct propulsion consists in ejecting a high speed jet of gas from the rocket, similar to a chemically-propelled system. Within these categories, different system have been developed to various degrees of experimental testing. The main designs options seen in the literature are Gas Cooled Reactors, Heat Pipe Cooled Reactors and Liquid Metal Cooled Reactors.
+
+\subsection{Heat pipe cooled reactors}
+
+The heat pipe design was developed by Los Alamos, with a goal of 100 kWe in a space environment for 7 years. Heat pipe reactors operate in a fast spectrum and are cooled by heat pipes with working fluid such as Lithium, in the case of the 1982 SP-100 design. Heat pipes designs offer a redundancy in the heat removal, which would avoid single point failure, an important consideration for a space mission. Heat pipes are a closed circuit containing a fluid. During the reactor operation, the fluid is evaporated, travel through the reactor, and is condensed at the end and transfer the heat~\cite{reid1999heat,dean1985heat}.
+
+Other more recent design have been proposed. The SAFE series, with notably the SAFE-400 concept~\cite{poston2002design} have shown great promises at nuclear eletric propulsion, coupled with a 100 kWe Brayton power system.
+
+One issue identified with this design rest in the fuel swelling limiting the burnup. Better fuel materials need to be developed. Fuel materials options are dicussed in section~\ref{fuelmat} of this report. Fission gas can also be problematic from a pressurization view point as well as poisoning the core.
+
+This type of reactor also present a number of technical challenges. The integration would be complex, with the routing of the heat pipes. The mass would have to be increased to account for a bigger shield. Finally, the reactor would operate at very high temperatures, impacting the available alloys and their characteristics for the heat pipes~\cite{el2005score}. 
+
+\subsection{Liquid metal cooled reactors}
+
+Several design using liquid metal as a coolant have been proposed. The LM concept used Lithium as a coolant. It aimed at delivering 100 kWe for over ten years and was based on electrical propulsion. The goal of this concept was to reuse as much components and research from SP-100 projects as possible~\cite{weitzberg2003liquid}. The SCoRE reactor concept use a liquid metal coolant in a compartimentalized design avoiding single point failures, in order to mix the reliability advantages of a heat pipes system with the simplicity of a liquid metal cooled design~\cite{el2005score}.
+
+\subsection{Gas cooled reactors}
+
+A pin-type gas cooled reactor was designed to operate at 100 kWe for at least seven years~\cite{wright2003pin}, using Helium and Xenon gas and being used as a nuclear electric propulsion system. Similarly to the SCoRE liquid metal reactor concept, the solid‐core, gas‐cooled, Submersion‐Subcritical Safe Space ($S^4$) reactor was designed to avoid single point failure and approach the risk and reliability values of the heat pipes reactor systems~\cite{king2006solid,king2009thermal}. Reactivity control schemes were compared on this design~\cite{craft2011reactivity}.
+
+Gas-cooled reactors are inherently less efficient and less integrable with energy conversion systems that require high heat fluxes~\cite{el2002performance,fraas1966comparison,dochat1992free}.
+
+Various particle bed reactor designs cooled by a gas propellant have been developed for space nuclear thermal propulsion~\cite{hatch1960fluidized,ludewig1974feasibility,powell1985high}. The more recent PBR nuclear rocket aims at a specific impulse of 1000s and a competitive engine thrust/weight ratio with existing chemical rockets~\cite{ludewig1996design}.
+
+
+\subsection{Fuel materials}
+\label{fuelmat}
+
+Over the years, several fuel options have been considered in a space nuclear power thermal rocket, each with its own set of advantages and inconvenients. No one option clearly demonstrated superiority over its competition. Different fuel choices can be considered, mainly in terms of neutron spectrum and fuel enrichment.
+
+First, cermet and composite fuel will be considered. Next, HEU and LEU will be compared based on existing research. The research related to the spectrum used in various proposed design will then be considered, and finally tied to potential coolants.
+
+\subsubsection{Fuel material types}
+
+In Nuclear Thermal Propulsion (NTP) cores, mainly two types of fuel have been researched, composite and cermet. A third type has been considered, uranium nitride forms~\cite{matthews1993fuels}. Composite fuels are a carbon-based mixture of uranium with a material such as zirconium. Cermet fuels are a mixture of ceramic, usually tungsten, and uranium dioxide. The main strength of composite fuels resides in their neutronic properties, while cermet fuels have excellent thermal and material properties~\cite{postoncermet}, but lower neutronic performances due to the tungsten large absorption cross section~\cite{venneridesign}. Graphite-based fuel have been extensively tested during the NERVA and ROVER projects~\cite{taub1975review,lyon1973performance}. Cermet fuel experiments have been limited, but some informative failure data has been published~\cite{stewart2013comparison}.
+
+More research is needed into both types of considered fuel, in order to assess their capabilities and their potential performance within an NTP system~\cite{qualls2017steps}.
+
+\subsubsection{Fuel enrichment}
+
+For a long time, high enriched uranium fuel was thought to be necessary, in order to have a high-energy reactor while minimizing the size. It was believed that highly enriched uranium (HEU) cores would always allow for more compact reactor designs, one of the goal for a potential use as space power~\cite{patel2016comparing}. This fuel however comes with two main disadvantages. Due to the use of HEU, any related research would have to be under strict national government review, barring market entry to private companies, and the risk of proliferation would be non-negligible~\cite{venneri2015feasibility}. The use of low enriched uranium (LEU) would consequently lower the global cost of a project and facilitate development~\cite{houts2014safe}.
+
+The neutron economy in a HEU-fueled reactor is high, since most of the uranium is now fissile. This means that the probability of fissioning uranium is high enough that the neutron spectrum does not need to be softened much and the parasitic absorption by various core material is of lower concerns.
+
+However, in recent years, it was shown that LEU fuel could demonstrate similar performance as HEU fuel nuclear thermal porpulsion system~\cite{ii2016engine,patel2016comparing}. NASA estimates that LEU fuel might be the only path toward an game-changing operative NTP system~\cite{houts2017low}.
+
+Several preliminary designs using LEU have been proposed. One preliminary design showed the performance of using tungsten-cermet fuel~\cite{venneri2013nuclear}. A simple homogeneous model was modelled to compare a variety of fuel types, ranging from lithium hydride to zirconium hydride with uranium metal fuel~\cite{lee2015neutronic}. KANUTER-LEU was developed to be a small-size NTP system~\cite{nam2016preliminary}.
+
+Interestingly, thorium was not considered as a potential fuel for a NTP system. Research in fuel materials for space power application with a Thorium-Uranium cycle.
+
+
+
+\subsection{Electrical system needs}
+
+\subsection{Propulsion system needs}
+
+
+
+
+
+
+
+\section{Conclusions}
+
+
+
+\section*{Acronyms}
+
+\begin{tabular}{ l  l }
+    $BWR$         &Boiling Water Reactors\\
+    $CANDU$       &Canada Deuterium Uranium\\
+    $MOX$         &Mixed Oxide Fuel\\
+    $PWR$         &Pressurized Water Reactor\\
+    $PV$          &Photovoltaic\\
+    $UOX$         &Uranium Oxide Fuel
+ \end{tabular}
+
+
+\clearpage
+% Bibliography
+% ---------------------------------------------------------------------------------
+\bibliographystyle{apacite}
+\bibliography{pfbn}
+% ---------------------------------------------------------------------------------
+
+
+\end{document}
+
+

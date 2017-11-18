@@ -1,0 +1,171 @@
+\typeout{IJPHM template}
+\typeout{Template version updated November 25, 2013}
+
+% Please send questions regarding the Latex templates to Indranil Roychoudhury (indranil.roychoudhury@nasa.gov) or Matthew Daigle (matthew.j.daigle@nasa.gov).
+ 
+
+\documentclass[IJPHM, 2017, 29]{PHMSociety}
+
+%Declare Packages
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{kbordermatrix}
+\usepackage{mathrsfs}
+\usepackage{subcaption}
+\usepackage{multirow}
+\usepackage{siunitx}
+\usepackage{pbox}
+\usepackage [autostyle, english = american]{csquotes}
+%\usepackage{draftwatermark}
+\usepackage{booktabs}% http://ctan.org/pkg/booktabs
+\usepackage[hyphens,spaces,obeyspaces]{url}
+\newcommand{\tabitem}{~~\llap{\textbullet}~~}
+%\SetWatermarkText{Draft-5}
+%\SetWatermarkScale{1}
+\MakeOuterQuote{"}
+\hyphenation{Bay-es-ian
+             data-base
+             data-bases
+             Sw-ain}
+\newenvironment{conditions}
+  {\par\vspace{\abovedisplayskip}\noindent\begin{tabular}{>{$}l<{$} @{${}={}$} l}}
+  {\end{tabular}\par\vspace{\belowdisplayskip}}
+
+\begin{document}
+\renewcommand{\kbldelim}{[}% Left delimiter
+\renewcommand{\kbrdelim}{]}% Right delimiter
+
+% Paper Title
+\title{A Review of Space Nuclear Power}
+
+% Authors List
+\author{%			
+	Guillaume L'Her\authorNumber{1}
+	Devon Fish\authorNumber{1}
+	Ryan France\authorNumber{1}
+	Sam Kerber\authorNumber{1}
+}
+
+% Author Affiliations
+\address{% This is a tabular environment so each affiliation needs to be separated by "\\" or "\tabularnewline"
+	\affiliation{{1}}{Colorado School of Mines, Golden, CO, 80401, USA}{ %add emails 
+		} % emails input
+}
+
+% Create the title
+\maketitle
+\pagestyle{fancy}
+\thispagestyle{plain}
+
+
+% PHM Society Distribution License Information, provide first author's name "FirstName LastName"
+%\phmLicenseFootnote{Guillaume L'Her}
+
+% Abstract
+\begin{abstract}%   %NOTE: Deleting the percentage after "{abstract}" may be lead to an extra leading space in the first line of the abstract, and this should be prevented.
+Abstract placeholder
+\end{abstract}
+
+
+
+\section{Introduction}
+\label{sec:intro}
+Introduction placeholder (policy, goal, etc)
+
+100kW
+
+
+\section{Space Nuclear Power: A history}
+\label{sec:bkgd}
+
+~\cite{king2009thermal} presented a fast spectrum NTP design, the $S^4$ prototype. Reactivity control schemes were compared on this design~\citep{craft2011reactivity}.
+
+\section{Fuel materials}
+
+Over the years, several fuel options have been considered in a space nuclear power thermal rocket, each with its own set of advantages and inconvenients. No one option clearly demonstrated superiority over its competition. Different fuel choices can be considered, mainly in terms of neutron spectrum and fuel enrichment.
+
+First, cermet and composite fuel will be considered. Next, HEU and LEU will be compared based on existing research. The research related to the spectrum used in various proposed design will then be considered, and finally tied to potential coolants.
+
+\subsection{Fuel material types}
+
+In Nuclear Thermal Propulsion (NTP) cores, mainly two types of fuel have been researched, composite and cermet. A third type has been considered, uranium nitride forms~\citep{matthews1993fuels}. Composite fuels are a carbon-based mixture of uranium with a material such as zirconium. Cermet fuels are a mixture of ceramic, usually tungsten, and uranium dioxide. The main strength of composite fuels resides in their neutronic properties, while cermet fuels have excellent thermal and material properties~\citep{postoncermet}, but lower neutronic performances due to the tungsten large absorption cross section~\citep{venneridesign}. Graphite-based fuel have been extensively tested during the NERVA and ROVER projects~\citep{taub1975review,lyon1973performance}. Cermet fuel experiments have been limited, but some informative failure data has been published~\citep{stewart2013comparison}.
+
+More research is needed into both type of considered fuel, in order to assess their capabilities and their potential performance within an NTP system~\citep{qualls2017steps}.
+
+\subsection{Fuel enrichment}
+
+For a long time, high enriched uranium fuel was thought to be necessary, in order to have a high-energy reactor while minimizing the size. It was believed that highly enriched uranium (HEU) cores would always allow for more compact reactor designs, one of the goal for a potential use as space power~\citep{patel2016comparing}. This fuel however comes with two main disadvantages. Due to the use of HEU, any related research would have to be under strict national government review, barring market entry to private companies, and the risk of proliferation would be non-negligible~\citep{venneri2015feasibility}. The use of low enriched uranium (LEU) would consequently lower the global cost of a project and facilitate development~\citep{houts2014safe}.
+
+The neutron economy in a HEU-fueled reactor is high, since most of the uranium is now fissile. This means that the probability of fissioning uranium is high enough that the neutron spectrum does not need to be softened much and the parasitic absorption by various core material is of lower concerns.
+
+However, in recent years, it was shown that LEU fuel could demonstrate similar performance as HEU fuel nuclear thermal porpulsion system~\citep{ii2016engine,patel2016comparing}. NASA estimates that LEU fuel might be the only path toward an game-changing operative NTP system~\citep{houts2017low}.
+
+Several preliminary designs using LEU have been proposed. One preliminary design showed the performance of using tungsten-cermet fuel~\citep{venneri2013nuclear}. A simple homogeneous model was modelled to compare a variety of fuel types, ranging from lithium hydride to zirconium hydride with uranium metal fuel~\citep{lee2015neutronic}. KANUTER-LEU was developed to be a small-size NTP system~\citep{nam2016preliminary}.
+
+Interestingly, thorium was not considered as a potential fuel for a NTP system. Research in fuel materials for space power application with a Thorium-Uranium cycle.
+
+
+\subsection{Review}
+
+~\cite{patel2016comparing} show that 
+
+\section{Design options}
+
+
+
+\section{Heat conversion}
+
+
+
+\section{Mission specifications}
+
+
+
+
+\section{Conclusions}
+
+
+
+
+
+
+\section*{Acknowledgment}
+This work was supported by our precious free time. Any opinions or findings of this work are the responsibility of the author.
+
+
+
+
+\section*{Nomenclature}
+
+\begin{tabular}{ l  l }
+    \textbf{F}           &Factor\\
+    \textbf{$S_F$}           &Score of a factor\\
+    \textbf{$W_F$}           &Weigth of a factor\\
+    \textbf{$S_t$}           &Total scenario score\\
+ \end{tabular}
+
+
+\section*{Acronyms}
+
+\begin{tabular}{ l  l }
+    $BWR$         &Boiling Water Reactors\\
+    $CANDU$       &Canada Deuterium Uranium\\
+    $MOX$         &Mixed Oxide Fuel\\
+    $PWR$         &Pressurized Water Reactor\\
+    $PV$          &Photovoltaic\\
+    $UOX$         &Uranium Oxide Fuel
+ \end{tabular}
+
+
+\clearpage
+% Bibliography
+% ---------------------------------------------------------------------------------
+\bibliographystyle{apacite}
+\PHMbibliography{pfbn}
+% ---------------------------------------------------------------------------------
+
+
+
+\end{document}
+
+
