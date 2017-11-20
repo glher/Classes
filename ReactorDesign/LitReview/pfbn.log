@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.10.5)  17 NOV 2017 22:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.10.5)  20 NOV 2017 08:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -26,9 +26,17 @@ File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 (/usr/share/texlive/texmf-dist/tex/latex/setspace/setspace.sty
 Package: setspace 2011/12/19 v6.7a set line spacing
 )
+(/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count87
+\float@exts=\toks14
+\float@box=\box26
+\@float@everytoks=\toks15
+\@floatcapt=\box27
+)
 (/usr/share/texlive/texmf-dist/tex/latex/apacite/apacite.sty
 Package: apacite 2013/07/21 v6.03 APA citation
-\c@BibCnt=\count87
+\c@BibCnt=\count88
 \bibleftmargin=\skip43
 \bibindent=\skip44
 \bibparsep=\skip45
@@ -37,14 +45,14 @@ Package: apacite 2013/07/21 v6.03 APA citation
 )
 (/usr/share/texlive/texmf-dist/tex/latex/lipsum/lipsum.sty
 Package: lipsum 2014/07/27 v1.3 150 paragraphs of Lorem Ipsum dummy text
-\c@lips@count=\count88
+\c@lips@count=\count89
 )
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
 
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
-\KV@toks@=\toks14
+\KV@toks@=\toks16
 )
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2016/01/03 v1.0q Standard LaTeX Graphics (DPC,SPQR)
@@ -66,7 +74,7 @@ Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
 Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 )
-\Gread@gobject=\count89
+\Gread@gobject=\count90
 ))
 \Gin@req@height=\dimen103
 \Gin@req@width=\dimen104
@@ -81,7 +89,7 @@ Package: amstext 2000/06/29 v2.01 AMS text
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks15
+\@emptytoks=\toks17
 \ex@=\dimen105
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
@@ -91,41 +99,41 @@ Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 1999/12/14 v2.01 operator names
 )
-\inf@bad=\count90
+\inf@bad=\count91
 LaTeX Info: Redefining \frac on input line 199.
-\uproot@=\count91
-\leftroot@=\count92
+\uproot@=\count92
+\leftroot@=\count93
 LaTeX Info: Redefining \overline on input line 297.
-\classnum@=\count93
-\DOTSCASE@=\count94
+\classnum@=\count94
+\DOTSCASE@=\count95
 LaTeX Info: Redefining \ldots on input line 394.
 LaTeX Info: Redefining \dots on input line 397.
 LaTeX Info: Redefining \cdots on input line 518.
-\Mathstrutbox@=\box26
-\strutbox@=\box27
+\Mathstrutbox@=\box28
+\strutbox@=\box29
 \big@size=\dimen107
 LaTeX Font Info:    Redeclaring font encoding OML on input line 630.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 631.
-\macc@depth=\count95
-\c@MaxMatrixCols=\count96
+\macc@depth=\count96
+\c@MaxMatrixCols=\count97
 \dotsspace@=\muskip10
-\c@parentequation=\count97
-\dspbrk@lvl=\count98
-\tag@help=\toks16
-\row@=\count99
-\column@=\count100
-\maxfields@=\count101
-\andhelp@=\toks17
+\c@parentequation=\count98
+\dspbrk@lvl=\count99
+\tag@help=\toks18
+\row@=\count100
+\column@=\count101
+\maxfields@=\count102
+\andhelp@=\toks19
 \eqnshift@=\dimen108
 \alignsep@=\dimen109
 \tagshift@=\dimen110
 \tagwidth@=\dimen111
 \totwidth@=\dimen112
 \lineht@=\dimen113
-\@envbody=\toks18
+\@envbody=\toks20
 \multlinegap=\skip49
 \multlinetaggap=\skip50
-\mathdisplay@stack=\toks19
+\mathdisplay@stack=\toks21
 LaTeX Info: Redefining \[ on input line 2735.
 LaTeX Info: Redefining \] on input line 2736.
 )
@@ -157,10 +165,11 @@ Package caption3 Info: TeX engine: e-TeX on input line 67.
 \caption@parindent=\dimen119
 \caption@hangindent=\dimen120
 )
-\c@ContinuedFloat=\count102
+\c@ContinuedFloat=\count103
+Package caption Info: float package is loaded.
 )
-\c@subfigure=\count103
-\c@subtable=\count104
+\c@subfigure=\count104
+\c@subtable=\count105
 )
 (/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
 \bigstrutjot=\dimen121
@@ -179,24 +188,24 @@ L3 Module: l3tl 2015/09/29 v6121 L3 Token lists
 L3 Module: l3str 2016/01/03 v6357 L3 Strings
 L3 Module: l3seq 2015/08/05 v5777 L3 Sequences and stacks
 L3 Module: l3int 2016/01/05 v6366 L3 Integers
-\c_max_int=\count105
-\l_tmpa_int=\count106
-\l_tmpb_int=\count107
-\g_tmpa_int=\count108
-\g_tmpb_int=\count109
+\c_max_int=\count106
+\l_tmpa_int=\count107
+\l_tmpb_int=\count108
+\g_tmpa_int=\count109
+\g_tmpb_int=\count110
 L3 Module: l3quark 2015/08/17 v5855 L3 Quarks
 L3 Module: l3prg 2015/11/01 v6216 L3 Control structures
-\g__prg_map_int=\count110
+\g__prg_map_int=\count111
 L3 Module: l3clist 2015/09/02 v5901 L3 Comma separated lists
 L3 Module: l3token 2015/11/11 v6249 L3 Experimental token manipulation
 L3 Module: l3prop 2016/01/05 v6366 L3 Property lists
 L3 Module: l3msg 2015/09/28 v6113 L3 Messages
 L3 Module: l3file 2015/12/03 v6317 L3 File and I/O operations
-\l_iow_line_count_int=\count111
-\l__iow_target_count_int=\count112
-\l__iow_current_line_int=\count113
-\l__iow_current_word_int=\count114
-\l__iow_current_indentation_int=\count115
+\l_iow_line_count_int=\count112
+\l__iow_target_count_int=\count113
+\l__iow_current_line_int=\count114
+\l__iow_current_word_int=\count115
+\l__iow_current_indentation_int=\count116
 L3 Module: l3skip 2016/01/05 v6366 L3 Dimensions and skips
 \c_zero_dim=\dimen122
 \c_max_dim=\dimen123
@@ -217,26 +226,26 @@ L3 Module: l3skip 2016/01/05 v6366 L3 Dimensions and skips
 \g_tmpa_muskip=\muskip15
 \g_tmpb_muskip=\muskip16
 L3 Module: l3keys 2015/11/17 v6284 L3 Key-value interfaces
-\g__keyval_level_int=\count116
-\l_keys_choice_int=\count117
+\g__keyval_level_int=\count117
+\l_keys_choice_int=\count118
 L3 Module: l3fp 2015/08/25 v5890 L3 Floating points
-\c__fp_leading_shift_int=\count118
-\c__fp_middle_shift_int=\count119
-\c__fp_trailing_shift_int=\count120
-\c__fp_big_leading_shift_int=\count121
-\c__fp_big_middle_shift_int=\count122
-\c__fp_big_trailing_shift_int=\count123
-\c__fp_Bigg_leading_shift_int=\count124
-\c__fp_Bigg_middle_shift_int=\count125
-\c__fp_Bigg_trailing_shift_int=\count126
+\c__fp_leading_shift_int=\count119
+\c__fp_middle_shift_int=\count120
+\c__fp_trailing_shift_int=\count121
+\c__fp_big_leading_shift_int=\count122
+\c__fp_big_middle_shift_int=\count123
+\c__fp_big_trailing_shift_int=\count124
+\c__fp_Bigg_leading_shift_int=\count125
+\c__fp_Bigg_middle_shift_int=\count126
+\c__fp_Bigg_trailing_shift_int=\count127
 L3 Module: l3box 2015/08/09 v5822 L3 Experimental boxes
-\c_empty_box=\box28
-\l_tmpa_box=\box29
-\l_tmpb_box=\box30
-\g_tmpa_box=\box31
-\g_tmpb_box=\box32
+\c_empty_box=\box30
+\l_tmpa_box=\box31
+\l_tmpb_box=\box32
+\g_tmpa_box=\box33
+\g_tmpb_box=\box34
 L3 Module: l3coffins 2015/08/06 v5789 L3 Coffin code layer
-\l__coffin_internal_box=\box33
+\l__coffin_internal_box=\box35
 \l__coffin_internal_dim=\dimen128
 \l__coffin_offset_x_dim=\dimen129
 \l__coffin_offset_y_dim=\dimen130
@@ -244,14 +253,14 @@ L3 Module: l3coffins 2015/08/06 v5789 L3 Coffin code layer
 \l__coffin_y_dim=\dimen132
 \l__coffin_x_prime_dim=\dimen133
 \l__coffin_y_prime_dim=\dimen134
-\c_empty_coffin=\box34
-\l__coffin_aligned_coffin=\box35
-\l__coffin_aligned_internal_coffin=\box36
-\l_tmpa_coffin=\box37
-\l_tmpb_coffin=\box38
-\l__coffin_display_coffin=\box39
-\l__coffin_display_coord_coffin=\box40
-\l__coffin_display_pole_coffin=\box41
+\c_empty_coffin=\box36
+\l__coffin_aligned_coffin=\box37
+\l__coffin_aligned_internal_coffin=\box38
+\l_tmpa_coffin=\box39
+\l_tmpb_coffin=\box40
+\l__coffin_display_coffin=\box41
+\l__coffin_display_coord_coffin=\box42
+\l__coffin_display_pole_coffin=\box43
 \l__coffin_display_offset_dim=\dimen135
 \l__coffin_display_x_dim=\dimen136
 \l__coffin_display_y_dim=\dimen137
@@ -266,7 +275,7 @@ L3 Module: l3candidates 2016/01/14 v6376 L3 Experimental additions to l3kernel
 \l__box_bottom_new_dim=\dimen143
 \l__box_left_new_dim=\dimen144
 \l__box_right_new_dim=\dimen145
-\l__box_internal_box=\box42
+\l__box_internal_box=\box44
 \l__coffin_bounding_shift_dim=\dimen146
 \l__coffin_left_corner_dim=\dimen147
 \l__coffin_right_corner_dim=\dimen148
@@ -278,15 +287,15 @@ L3 Module: l3luatex 2015/11/11 v6250 L3 Experimental LuaTeX-specific functions
 )
 (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3pdfmode.def
 File: l3pdfmode.def 2015/11/11 v6250 L3 Experimental driver: PDF mode
-\l__driver_color_stack_int=\count127
+\l__driver_color_stack_int=\count128
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
 Package: xparse 2016/01/19 v6377 L3 Experimental document command parser
-\l__xparse_current_arg_int=\count128
-\l__xparse_m_args_int=\count129
-\l__xparse_mandatory_args_int=\count130
-\l__xparse_processor_int=\count131
-\l__xparse_v_nesting_int=\count132
+\l__xparse_current_arg_int=\count129
+\l__xparse_m_args_int=\count130
+\l__xparse_mandatory_args_int=\count131
+\l__xparse_processor_int=\count132
+\l__xparse_v_nesting_int=\count133
 )
 Package: siunitx 2016/03/01 v2.6q A comprehensive (SI) units package
 
@@ -294,36 +303,36 @@ Package: siunitx 2016/03/01 v2.6q A comprehensive (SI) units package
 Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
 \col@sep=\dimen153
 \extrarowheight=\dimen154
-\NC@list=\toks20
+\NC@list=\toks22
 \extratabsurround=\skip61
 \backup@length=\skip62
 )
 (/usr/share/texlive/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
 Package: l3keys2e 2016/01/19 v6377 LaTeX2e option processing using LaTeX3 keys
 )
-\l__siunitx_tmp_box=\box43
+\l__siunitx_tmp_box=\box45
 \l__siunitx_tmp_dim=\dimen155
-\l__siunitx_tmp_int=\count133
-\l__siunitx_number_mantissa_length_int=\count134
-\l__siunitx_number_uncert_length_int=\count135
-\l__siunitx_round_int=\count136
-\l__siunitx_process_decimal_int=\count137
-\l__siunitx_process_uncertainty_int=\count138
-\l__siunitx_process_fixed_int=\count139
-\l__siunitx_process_integer_min_int=\count140
-\l__siunitx_process_precision_int=\count141
-\l__siunitx_group_min_int=\count142
-\l__siunitx_angle_marker_box=\box44
-\l__siunitx_angle_unit_box=\box45
+\l__siunitx_tmp_int=\count134
+\l__siunitx_number_mantissa_length_int=\count135
+\l__siunitx_number_uncert_length_int=\count136
+\l__siunitx_round_int=\count137
+\l__siunitx_process_decimal_int=\count138
+\l__siunitx_process_uncertainty_int=\count139
+\l__siunitx_process_fixed_int=\count140
+\l__siunitx_process_integer_min_int=\count141
+\l__siunitx_process_precision_int=\count142
+\l__siunitx_group_min_int=\count143
+\l__siunitx_angle_marker_box=\box46
+\l__siunitx_angle_unit_box=\box47
 \l__siunitx_angle_marker_dim=\dimen156
 \l__siunitx_angle_unit_dim=\dimen157
-\l__siunitx_unit_int=\count143
-\l__siunitx_unit_denominator_int=\count144
-\l__siunitx_unit_numerator_int=\count145
-\l__siunitx_unit_prefix_int=\count146
-\l__siunitx_unit_prefix_base_int=\count147
-\l__siunitx_unit_prefix_gram_int=\count148
-\l__siunitx_number_product_int=\count149
+\l__siunitx_unit_int=\count144
+\l__siunitx_unit_denominator_int=\count145
+\l__siunitx_unit_numerator_int=\count146
+\l__siunitx_unit_prefix_int=\count147
+\l__siunitx_unit_prefix_base_int=\count148
+\l__siunitx_unit_prefix_gram_int=\count149
+\l__siunitx_number_product_int=\count150
 \c__siunitx_one_fill_skip=\skip63
 \l__siunitx_table_unit_align_skip=\skip64
 \l__siunitx_table_exponent_dim=\dimen158
@@ -335,10 +344,10 @@ Package: l3keys2e 2016/01/19 v6377 LaTeX2e option processing using LaTeX3 keys
 \l__siunitx_table_fill_pre_dim=\dimen164
 \l__siunitx_table_fill_post_dim=\dimen165
 \l__siunitx_table_fill_mid_dim=\dimen166
-\l__siunitx_table_pre_box=\box46
-\l__siunitx_table_post_box=\box47
-\l__siunitx_table_mantissa_box=\box48
-\l__siunitx_table_result_box=\box49
+\l__siunitx_table_pre_box=\box48
+\l__siunitx_table_post_box=\box49
+\l__siunitx_table_mantissa_box=\box50
+\l__siunitx_table_result_box=\box51
 \l__siunitx_table_number_align_skip=\skip65
 \l__siunitx_table_text_align_skip=\skip66
 .................................................
@@ -469,15 +478,15 @@ Package: pbox 2011/12/07 v1.2 Dynamic parboxes
 
 (/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count150
-\calc@Bcount=\count151
+\calc@Acount=\count151
+\calc@Bcount=\count152
 \calc@Adimen=\dimen167
 \calc@Bdimen=\dimen168
 \calc@Askip=\skip67
 \calc@Bskip=\skip68
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count152
+\calc@Ccount=\count153
 \calc@Cskip=\skip69
 )
 (/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
@@ -490,15 +499,15 @@ Package: csquotes 2016/01/31 v5.1g context-sensitive quotations (JAW)
 
 (/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2015/08/02 v2.2a e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count153
+\etb@tempcnta=\count154
 )
-\csq@reset=\count154
-\csq@gtype=\count155
-\csq@glevel=\count156
-\csq@qlevel=\count157
-\csq@maxlvl=\count158
-\csq@tshold=\count159
-\csq@ltx@everypar=\toks21
+\csq@reset=\count155
+\csq@gtype=\count156
+\csq@glevel=\count157
+\csq@qlevel=\count158
+\csq@maxlvl=\count159
+\csq@tshold=\count160
+\csq@ltx@everypar=\toks23
 
 (/usr/share/texlive/texmf-dist/tex/latex/csquotes/csquotes.def
 File: csquotes.def 2016/01/31 v5.1g csquotes generic definitions (JAW)
@@ -524,12 +533,12 @@ Package: booktabs 2005/04/14 v1.61803 publication quality tables
 \cmidrulesep=\dimen176
 \cmidrulekern=\dimen177
 \defaultaddspace=\dimen178
-\@cmidla=\count160
-\@cmidlb=\count161
+\@cmidla=\count161
+\@cmidlb=\count162
 \@aboverulesep=\dimen179
 \@belowrulesep=\dimen180
-\@thisruleclass=\count162
-\@lastruleclass=\count163
+\@thisruleclass=\count163
+\@lastruleclass=\count164
 \@thisrulewidth=\dimen181
 )
 (/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
@@ -542,24 +551,24 @@ Package csquotes Info: ... none found.
 
 
 Package csquotes Warning: No multilingual support.
-(csquotes)                Cannot enable multilingual quotes on input line 55.
+(csquotes)                Cannot enable multilingual quotes on input line 56.
 
 (./pfbn.aux)
 \openout1 = `pfbn.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-\c@maskedRefs=\count164
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+\c@maskedRefs=\count165
  (/usr/share/texlive/texmf-dist/tex/latex/apacite/english.apc
 File: english.apc 2013/07/21 v6.03 apacite language file
 LaTeX Info: Redefining \BPBI on input line 129.
@@ -567,17 +576,17 @@ LaTeX Info: Redefining \BHBI on input line 130.
 )
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count165
+\scratchcounter=\count166
 \scratchdimen=\dimen182
-\scratchbox=\box50
-\nofMPsegments=\count166
-\nofMParguments=\count167
-\everyMPshowfont=\toks22
-\MPscratchCnt=\count168
+\scratchbox=\box52
+\nofMPsegments=\count167
+\nofMParguments=\count168
+\everyMPshowfont=\toks24
+\MPscratchCnt=\count169
 \MPscratchDim=\dimen183
-\MPnumerator=\count169
-\makeMPintoPDFobject=\count170
-\everyMPtoPDFconversion=\toks23
+\MPnumerator=\count170
+\makeMPintoPDFobject=\count171
+\everyMPtoPDFconversion=\toks25
 ) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 )
@@ -636,360 +645,597 @@ Dictionary: translator-basic-dictionary, Language: English
 (/usr/share/texlive/texmf-dist/tex/latex/siunitx/siunitx-abbreviations.cfg
 File: siunitx-abbreviations.cfg 2016/03/01 v2.6q siunitx: Abbreviated units
 )
-Package csquotes Info: Making character " active on input line 55.
-\c__siunitx_mathsf_int=\count171
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 55.
+Package csquotes Info: Making character " active on input line 56.
+\c__siunitx_mathsf_int=\count172
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 56.
 
 (/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-\c__siunitx_mathtt_int=\count172
+\c__siunitx_mathtt_int=\count173
  [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2]
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./pfbn.toc)
+\tf@toc=\write3
+\openout3 = `pfbn.toc'.
+
+ [2] (./pfbn.lof [3])
+\tf@lof=\write4
+\openout4 = `pfbn.lof'.
+
+ [4]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 82.
+               Default added (so using `tbp') on input line 85.
 
-<fig/img1.png, id=15, 587.19376pt x 425.59pt>
-File: fig/img1.png Graphic file (type png)
- <use fig/img1.png>
-Package pdftex.def Info: fig/img1.png used on input line 84.
-(pdftex.def)             Requested size: 265.6056pt x 192.50336pt.
- [3]
-Missing character: There is no ¬ in font cmr10!
-Missing character: There is no ∞ in font cmr10!
-Missing character: There is no ¬ in font cmr10!
-Missing character: There is no ∞ in font cmr10!
- [4 <./fig/img1.png (PNG copy)>]
+<fig/oortcloud.jpg, id=20, 5452.37pt x 3036.34375pt>
+File: fig/oortcloud.jpg Graphic file (type jpg)
+ <use fig/oortcloud.jpg>
+Package pdftex.def Info: fig/oortcloud.jpg used on input line 87.
+(pdftex.def)             Requested size: 345.59769pt x 192.50336pt.
 
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 91.
-
-<fig/appA.png, id=23, 757.83125pt x 373.395pt>
-File: fig/appA.png Graphic file (type png)
- <use fig/appA.png>
-Package pdftex.def Info: fig/appA.png used on input line 93.
-(pdftex.def)             Requested size: 390.69797pt x 192.50336pt.
-
-Overfull \hbox (45.69797pt too wide) in paragraph at lines 93--94
+Overfull \hbox (0.59769pt too wide) in paragraph at lines 87--88
  [][] 
  []
 
+[5] [6 <./fig/oortcloud.jpg>]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 98.
+               Default added (so using `tbp') on input line 116.
 
-<fig/appB.png, id=24, 524.96124pt x 515.9275pt>
-File: fig/appB.png Graphic file (type png)
- <use fig/appB.png>
-Package pdftex.def Info: fig/appB.png used on input line 100.
-(pdftex.def)             Requested size: 251.82634pt x 247.49832pt.
-Missing character: There is no ¬ in font cmr10!
-Missing character: There is no ∞ in font cmr10!
- [5] [6 <./fig/appA.png (PNG copy)> <./fig/appB.png (PNG copy)>]
-Missing character: There is no ¬ in font cmr10!
-Missing character: There is no ∞ in font cmr10!
-Missing character: There is no ¬ in font cmr10!
-Missing character: There is no ∞ in font cmr10!
- [7]
+<fig/SCoRE.png, id=27, 835.12pt x 400.49625pt>
+File: fig/SCoRE.png Graphic file (type png)
+ <use fig/SCoRE.png>
+Package pdftex.def Info: fig/SCoRE.png used on input line 118.
+(pdftex.def)             Requested size: 401.41373pt x 192.50336pt.
 
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 112.
-
-<fig/appC.png, id=35, 803.0pt x 642.4pt>
-File: fig/appC.png Graphic file (type png)
- <use fig/appC.png>
-Package pdftex.def Info: fig/appC.png used on input line 114.
-(pdftex.def)             Requested size: 309.37038pt x 247.49832pt.
-
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 120.
-
-<fig/appD.png, id=36, 595.22375pt x 416.55624pt>
-File: fig/appD.png Graphic file (type png)
- <use fig/appD.png>
-Package pdftex.def Info: fig/appD.png used on input line 122.
-(pdftex.def)             Requested size: 353.65846pt x 247.49832pt.
-
-Overfull \hbox (8.65846pt too wide) in paragraph at lines 122--123
+Overfull \hbox (56.41373pt too wide) in paragraph at lines 118--119
  [][] 
  []
 
-[8 <./fig/appC.png>] [9 <./fig/appD.png>]
+[7] [8 <./fig/SCoRE.png>]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 135.
+               Default added (so using `tbp') on input line 132.
 
-<fig/appE.png, id=43, 469.755pt x 477.785pt>
-File: fig/appE.png Graphic file (type png)
- <use fig/appE.png>
-Package pdftex.def Info: fig/appE.png used on input line 137.
-(pdftex.def)             Requested size: 243.33502pt x 247.49832pt.
-
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 143.
-
-<fig/appF.png, id=44, 323.2075pt x 352.31625pt>
-File: fig/appF.png Graphic file (type png)
- <use fig/appF.png>
-Package pdftex.def Info: fig/appF.png used on input line 145.
-(pdftex.def)             Requested size: 227.04758pt x 247.49832pt.
-
+<fig/appP.png, id=37, 464.73625pt x 452.69125pt>
+File: fig/appP.png Graphic file (type png)
+ <use fig/appP.png>
+Package pdftex.def Info: fig/appP.png used on input line 134.
+(pdftex.def)             Requested size: 254.08109pt x 247.49832pt.
+ [9 <./fig/appP.png (PNG copy)>]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 150.
+               Default added (so using `tbp') on input line 142.
 
-<fig/appG.png, id=45, 666.49pt x 421.575pt>
-File: fig/appG.png Graphic file (type png)
- <use fig/appG.png>
-Package pdftex.def Info: fig/appG.png used on input line 152.
-(pdftex.def)             Requested size: 391.29343pt x 247.49832pt.
+<fig/appQ.png, id=41, 510.90875pt x 174.6525pt>
+File: fig/appQ.png Graphic file (type png)
+ <use fig/appQ.png>
+Package pdftex.def Info: fig/appQ.png used on input line 144.
+(pdftex.def)             Requested size: 241.3277pt x 82.49664pt.
+ [10 <./fig/appQ.png (PNG copy)>]
 
-Overfull \hbox (46.29343pt too wide) in paragraph at lines 152--153
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 156.
+
+<fig/appR1.png, id=46, 528.97626pt x 370.38374pt>
+File: fig/appR1.png Graphic file (type png)
+ <use fig/appR1.png>
+Package pdftex.def Info: fig/appR1.png used on input line 158.
+(pdftex.def)             Requested size: 353.47595pt x 247.49832pt.
+
+Overfull \hbox (8.47595pt too wide) in paragraph at lines 158--159
  [][] 
  []
-
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 157.
-
-<fig/appH.png, id=46, 528.97626pt x 735.74875pt>
-File: fig/appH.png Graphic file (type png)
- <use fig/appH.png>
-Package pdftex.def Info: fig/appH.png used on input line 159.
-(pdftex.def)             Requested size: 177.94466pt x 247.49832pt.
 
 
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 164.
 
-<fig/appI.png, id=47, 594.22pt x 333.245pt>
-File: fig/appI.png Graphic file (type png)
- <use fig/appI.png>
-Package pdftex.def Info: fig/appI.png used on input line 166.
-(pdftex.def)             Requested size: 441.32985pt x 247.49832pt.
+<fig/appR2.png, id=47, 540.0175pt x 271.0125pt>
+File: fig/appR2.png Graphic file (type png)
+ <use fig/appR2.png>
+Package pdftex.def Info: fig/appR2.png used on input line 166.
+(pdftex.def)             Requested size: 383.59637pt x 192.50336pt.
 
-Overfull \hbox (96.32985pt too wide) in paragraph at lines 166--167
+Overfull \hbox (38.59637pt too wide) in paragraph at lines 166--167
  [][] 
  []
 
-[10] [11 <./fig/appE.png (PNG copy)>] [12 <./fig/appF.png (PNG copy)>] [13 <./f
-ig/appG.png (PNG copy)>] [14 <./fig/appH.png (PNG copy)>] [15 <./fig/appI.png (
-PNG copy)>] [16]
+[11 <./fig/appR1.png (PNG copy)>] [12 <./fig/appR2.png (PNG copy)>]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 184.
+
+<fig/appM.png, id=56, 799.98875pt x 485.815pt>
+File: fig/appM.png Graphic file (type png)
+ <use fig/appM.png>
+Package pdftex.def Info: fig/appM.png used on input line 186.
+(pdftex.def)             Requested size: 407.54942pt x 247.49832pt.
+
+Overfull \hbox (62.54942pt too wide) in paragraph at lines 186--187
+ [][] 
+ []
+
 
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 191.
 
-<fig/appJ.png, id=70, 963.6pt x 688.5725pt>
-File: fig/appJ.png Graphic file (type png)
- <use fig/appJ.png>
-Package pdftex.def Info: fig/appJ.png used on input line 193.
-(pdftex.def)             Requested size: 346.35172pt x 247.49832pt.
-
-Overfull \hbox (1.35172pt too wide) in paragraph at lines 193--194
- [][] 
- []
-
-[17] [18 <./fig/appJ.png (PNG copy)>] [19] [20] [21]
-Missing character: There is no ¬ in font cmr10!
-Missing character: There is no ∞ in font cmr10!
- [22] [23] [24]
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 246.
-
-<fig/appM.png, id=96, 799.98875pt x 485.815pt>
-File: fig/appM.png Graphic file (type png)
- <use fig/appM.png>
-Package pdftex.def Info: fig/appM.png used on input line 248.
-(pdftex.def)             Requested size: 407.54942pt x 247.49832pt.
-
-Overfull \hbox (62.54942pt too wide) in paragraph at lines 248--249
- [][] 
- []
-
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 253.
-
-<fig/appN.png, id=97, 621.32124pt x 345.29pt>
+<fig/appN.png, id=57, 621.32124pt x 345.29pt>
 File: fig/appN.png Graphic file (type png)
  <use fig/appN.png>
-Package pdftex.def Info: fig/appN.png used on input line 255.
+Package pdftex.def Info: fig/appN.png used on input line 193.
 (pdftex.def)             Requested size: 346.40167pt x 192.50336pt.
 
-Overfull \hbox (1.40167pt too wide) in paragraph at lines 255--256
+Overfull \hbox (1.40167pt too wide) in paragraph at lines 193--194
  [][] 
  []
 
-[25 <./fig/appM.png (PNG copy)>]
+[13] [14 <./fig/appM.png (PNG copy)> <./fig/appN.png>]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 263.
+               Default added (so using `tbp') on input line 201.
 
 
-Overfull \hbox (34.41725pt too wide) in paragraph at lines 267--280
+Overfull \hbox (34.41725pt too wide) in paragraph at lines 205--218
  [][] 
  []
 
-[26 <./fig/appN.png>]
+[15] [16] [17]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 287.
+               Default added (so using `tbp') on input line 256.
 
-<fig/appP.png, id=107, 464.73625pt x 452.69125pt>
-File: fig/appP.png Graphic file (type png)
- <use fig/appP.png>
-Package pdftex.def Info: fig/appP.png used on input line 289.
-(pdftex.def)             Requested size: 254.08109pt x 247.49832pt.
-
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 297.
-
-<fig/appQ.png, id=108, 510.90875pt x 174.6525pt>
-File: fig/appQ.png Graphic file (type png)
- <use fig/appQ.png>
-Package pdftex.def Info: fig/appQ.png used on input line 299.
-(pdftex.def)             Requested size: 241.3277pt x 82.49664pt.
- [27]
-[28 <./fig/appP.png (PNG copy)> <./fig/appQ.png (PNG copy)>]
+<fig/img1.png, id=75, 587.19376pt x 425.59pt>
+File: fig/img1.png Graphic file (type png)
+ <use fig/img1.png>
+Package pdftex.def Info: fig/img1.png used on input line 258.
+(pdftex.def)             Requested size: 265.6056pt x 192.50336pt.
+ [18] [19 <./fig/img1.png (PNG copy)>]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 307.
+               Default added (so using `tbp') on input line 265.
 
-<fig/appR1.png, id=117, 528.97626pt x 370.38374pt>
-File: fig/appR1.png Graphic file (type png)
- <use fig/appR1.png>
-Package pdftex.def Info: fig/appR1.png used on input line 309.
-(pdftex.def)             Requested size: 353.47595pt x 247.49832pt.
+<fig/appA.png, id=84, 757.83125pt x 373.395pt>
+File: fig/appA.png Graphic file (type png)
+ <use fig/appA.png>
+Package pdftex.def Info: fig/appA.png used on input line 267.
+(pdftex.def)             Requested size: 390.69797pt x 192.50336pt.
 
-Overfull \hbox (8.47595pt too wide) in paragraph at lines 309--310
+Overfull \hbox (45.69797pt too wide) in paragraph at lines 267--268
  [][] 
  []
 
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 315.
+               Default added (so using `tbp') on input line 272.
 
-<fig/appR2.png, id=118, 540.0175pt x 271.0125pt>
-File: fig/appR2.png Graphic file (type png)
- <use fig/appR2.png>
-Package pdftex.def Info: fig/appR2.png used on input line 317.
-(pdftex.def)             Requested size: 383.59637pt x 192.50336pt.
+<fig/appB.png, id=85, 524.96124pt x 515.9275pt>
+File: fig/appB.png Graphic file (type png)
+ <use fig/appB.png>
+Package pdftex.def Info: fig/appB.png used on input line 274.
+(pdftex.def)             Requested size: 251.82634pt x 247.49832pt.
+ [20 <./fig/appA.png (PNG copy)>] [21 <./fig/appB.png (PNG copy)>] [22]
 
-Overfull \hbox (38.59637pt too wide) in paragraph at lines 317--318
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 286.
+
+<fig/appC.png, id=95, 803.0pt x 642.4pt>
+File: fig/appC.png Graphic file (type png)
+ <use fig/appC.png>
+Package pdftex.def Info: fig/appC.png used on input line 288.
+(pdftex.def)             Requested size: 309.37038pt x 247.49832pt.
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 294.
+
+<fig/appD.png, id=96, 595.22375pt x 416.55624pt>
+File: fig/appD.png Graphic file (type png)
+ <use fig/appD.png>
+Package pdftex.def Info: fig/appD.png used on input line 296.
+(pdftex.def)             Requested size: 353.65846pt x 247.49832pt.
+
+Overfull \hbox (8.65846pt too wide) in paragraph at lines 296--297
  [][] 
  []
 
-[29] [30 <./fig/appR1.png (PNG copy)> <./fig/appR2.png (PNG copy)>]
+[23 <./fig/appC.png>] [24 <./fig/appD.png>]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 334.
+               Default added (so using `tbp') on input line 309.
 
-<fig/appS.png, id=125, 825.0825pt x 502.87875pt>
+<fig/appE.png, id=103, 469.755pt x 477.785pt>
+File: fig/appE.png Graphic file (type png)
+ <use fig/appE.png>
+Package pdftex.def Info: fig/appE.png used on input line 311.
+(pdftex.def)             Requested size: 243.33502pt x 247.49832pt.
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 317.
+
+<fig/appF.png, id=104, 323.2075pt x 352.31625pt>
+File: fig/appF.png Graphic file (type png)
+ <use fig/appF.png>
+Package pdftex.def Info: fig/appF.png used on input line 319.
+(pdftex.def)             Requested size: 227.04758pt x 247.49832pt.
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 324.
+
+<fig/appG.png, id=105, 666.49pt x 421.575pt>
+File: fig/appG.png Graphic file (type png)
+ <use fig/appG.png>
+Package pdftex.def Info: fig/appG.png used on input line 326.
+(pdftex.def)             Requested size: 391.29343pt x 247.49832pt.
+
+Overfull \hbox (46.29343pt too wide) in paragraph at lines 326--327
+ [][] 
+ []
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 331.
+
+<fig/appH.png, id=106, 528.97626pt x 735.74875pt>
+File: fig/appH.png Graphic file (type png)
+ <use fig/appH.png>
+Package pdftex.def Info: fig/appH.png used on input line 333.
+(pdftex.def)             Requested size: 177.94466pt x 247.49832pt.
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 338.
+
+<fig/appI.png, id=107, 594.22pt x 333.245pt>
+File: fig/appI.png Graphic file (type png)
+ <use fig/appI.png>
+Package pdftex.def Info: fig/appI.png used on input line 340.
+(pdftex.def)             Requested size: 441.32985pt x 247.49832pt.
+
+Overfull \hbox (96.32985pt too wide) in paragraph at lines 340--341
+ [][] 
+ []
+
+[25] [26 <./fig/appE.png (PNG copy)>] [27 <./fig/appF.png (PNG copy)>] [28 <./f
+ig/appG.png (PNG copy)>] [29 <./fig/appH.png (PNG copy)>] [30 <./fig/appI.png (
+PNG copy)>] [31]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 364.
+
+<fig/appV.png, id=131, 2509.375pt x 1841.88126pt>
+File: fig/appV.png Graphic file (type png)
+ <use fig/appV.png>
+Package pdftex.def Info: fig/appV.png used on input line 366.
+(pdftex.def)             Requested size: 337.18112pt x 247.49832pt.
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 373.
+
+<fig/appX.png, id=132, 2509.375pt x 1483.5425pt>
+File: fig/appX.png Graphic file (type png)
+ <use fig/appX.png>
+Package pdftex.def Info: fig/appX.png used on input line 375.
+(pdftex.def)             Requested size: 418.62381pt x 247.49832pt.
+
+Overfull \hbox (73.62381pt too wide) in paragraph at lines 375--376
+ [][] 
+ []
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 382.
+
+<fig/appJ.png, id=133, 963.6pt x 688.5725pt>
+File: fig/appJ.png Graphic file (type png)
+ <use fig/appJ.png>
+Package pdftex.def Info: fig/appJ.png used on input line 384.
+(pdftex.def)             Requested size: 346.35172pt x 247.49832pt.
+
+Overfull \hbox (1.35172pt too wide) in paragraph at lines 384--385
+ [][] 
+ []
+
+[32] [33 <./fig/appV.png>] [34 <./fig/appX.png>] [35 <./fig/appJ.png (PNG copy)
+>] [36] [37] [38]
+Overfull \hbox (27.74031pt too wide) in paragraph at lines 411--412
+\OT1/cmr/m/n/10 nium []Finseth, 1991). A Be re-flec-tor was used along with 12 
+Be con-trol drums []Finseth,
+ []
+
+[39] [40] [41] [42]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 447.
+
+<fig/appS.png, id=168, 825.0825pt x 502.87875pt>
 File: fig/appS.png Graphic file (type png)
  <use fig/appS.png>
-Package pdftex.def Info: fig/appS.png used on input line 336.
+Package pdftex.def Info: fig/appS.png used on input line 449.
 (pdftex.def)             Requested size: 406.06912pt x 247.49832pt.
 
-Overfull \hbox (61.06912pt too wide) in paragraph at lines 336--337
+Overfull \hbox (61.06912pt too wide) in paragraph at lines 449--450
  [][] 
  []
 
-[31 <./fig/appS.png (PNG copy)>] [32]
+[43 <./fig/appS.png (PNG copy)>]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 350.
+               Default added (so using `tbp') on input line 463.
 
-<fig/appT.png, id=133, 728.7225pt x 845.1575pt>
+<fig/appT.png, id=173, 728.7225pt x 845.1575pt>
 File: fig/appT.png Graphic file (type png)
  <use fig/appT.png>
-Package pdftex.def Info: fig/appT.png used on input line 352.
+Package pdftex.def Info: fig/appT.png used on input line 465.
 (pdftex.def)             Requested size: 403.10033pt x 467.50336pt.
 
-Overfull \hbox (58.10033pt too wide) in paragraph at lines 352--353
+Overfull \hbox (58.10033pt too wide) in paragraph at lines 465--466
  [][] 
  []
 
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 357.
+               Default added (so using `tbp') on input line 470.
 
-<fig/appU.png, id=134, 693.59125pt x 597.23125pt>
+<fig/appU.png, id=174, 693.59125pt x 597.23125pt>
 File: fig/appU.png Graphic file (type png)
  <use fig/appU.png>
-Package pdftex.def Info: fig/appU.png used on input line 359.
+Package pdftex.def Info: fig/appU.png used on input line 472.
 (pdftex.def)             Requested size: 287.43283pt x 247.49832pt.
- [33]
-[34 <./fig/appT.png (PNG copy)>] [35 <./fig/appU.png (PNG copy)>]
+ [44]
+[45 <./fig/appT.png (PNG copy)>] [46 <./fig/appU.png (PNG copy)>] [47]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 498.
+
+<fig/appAA.png, id=191, 2509.375pt x 1411.2725pt>
+File: fig/appAA.png Graphic file (type png)
+ <use fig/appAA.png>
+Package pdftex.def Info: fig/appAA.png used on input line 500.
+(pdftex.def)             Requested size: 440.06616pt x 247.49832pt.
+
+Overfull \hbox (95.06616pt too wide) in paragraph at lines 500--501
+ [][] 
+ []
+
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
-Missing character: There is no ê in font cmr10!
+Missing character: There is no ú in font cmr10!
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
-Missing character: There is no ê in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ê in font cmr10!
- [36] [37]
-[38] [39] [40] (./pfbn.bbl
+Missing character: There is no ù in font cmr10!
+[48] [49 <./fig/appAA.png>] [50] [51]
+<fig/appW.png, id=206, 2509.375pt x 1778.645pt>
+File: fig/appW.png Graphic file (type png)
+ <use fig/appW.png>
+Package pdftex.def Info: fig/appW.png used on input line 524.
+(pdftex.def)             Requested size: 349.16588pt x 247.49832pt.
+
+Overfull \hbox (4.16588pt too wide) in paragraph at lines 524--525
+ [][] 
+ []
+
+<fig/appY.png, id=207, 2509.375pt x 1821.80624pt>
+File: fig/appY.png Graphic file (type png)
+ <use fig/appY.png>
+Package pdftex.def Info: fig/appY.png used on input line 532.
+(pdftex.def)             Requested size: 340.89525pt x 247.49832pt.
+
+Underfull \hbox (badness 2020) in paragraph at lines 533--533
+[]\OT1/cmr/m/n/10 Figure 27: |Char-ac-ter-is-tics for 337 kN (75,000 lbf) NERVA
+ type en-
+ []
+
+[52 <./fig/appW.png>] <fig/appZ.png, id=212, 1570.86874pt x 2509.375pt>
+File: fig/appZ.png Graphic file (type png)
+
+<use fig/appZ.png>
+Package pdftex.def Info: fig/appZ.png used on input line 540.
+(pdftex.def)             Requested size: 154.91486pt x 247.49832pt.
+ [53 <./fig/appY.png>] [54 <./fig/appZ.png>]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 560.
+
+<fig/table1.png, id=219, 2543.5025pt x 787.94376pt>
+File: fig/table1.png Graphic file (type png)
+ <use fig/table1.png>
+Package pdftex.def Info: fig/table1.png used on input line 562.
+(pdftex.def)             Requested size: 355.07884pt x 109.99832pt.
+
+Overfull \hbox (10.07884pt too wide) in paragraph at lines 562--563
+ [][] 
+ []
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 567.
+
+<fig/table2.png, id=220, 1433.355pt x 1489.565pt>
+File: fig/table2.png Graphic file (type png)
+ <use fig/table2.png>
+Package pdftex.def Info: fig/table2.png used on input line 569.
+(pdftex.def)             Requested size: 291.08391pt x 302.50168pt.
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 574.
+
+<fig/table3.png, id=221, 1764.5925pt x 1885.0425pt>
+File: fig/table3.png Graphic file (type png)
+ <use fig/table3.png>
+Package pdftex.def Info: fig/table3.png used on input line 576.
+(pdftex.def)             Requested size: 283.14833pt x 302.50168pt.
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 581.
+
+<fig/table3bis.png, id=222, 1432.35126pt x 1170.3725pt>
+File: fig/table3bis.png Graphic file (type png)
+
+<use fig/table3bis.png>
+Package pdftex.def Info: fig/table3bis.png used on input line 583.
+(pdftex.def)             Requested size: 235.58466pt x 192.50336pt.
+ [55] [56 <./fig/table1.png> <./fig/table2.png>]
+[57 <./fig/table3.png>]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 606.
+
+<fig/table4.png, id=233, 1435.3625pt x 681.54625pt>
+File: fig/table4.png Graphic file (type png)
+ <use fig/table4.png>
+Package pdftex.def Info: fig/table4.png used on input line 608.
+(pdftex.def)             Requested size: 405.42496pt x 192.50336pt.
+
+Overfull \hbox (60.42496pt too wide) in paragraph at lines 608--609
+ [][] 
+ []
+
+[58 <./fig/table3bis.png>]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 622.
+
+<fig/table5.png, id=237, 1435.3625pt x 695.59875pt>
+File: fig/table5.png Graphic file (type png)
+ <use fig/table5.png>
+Package pdftex.def Info: fig/table5.png used on input line 624.
+(pdftex.def)             Requested size: 397.21176pt x 192.50336pt.
+
+Overfull \hbox (52.21176pt too wide) in paragraph at lines 624--625
+ [][] 
+ []
+
+[59 <./fig/table4.png>]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 637.
+
+<fig/figure1.png, id=241, 1048.91875pt x 1019.81pt>
+File: fig/figure1.png Graphic file (type png)
+ <use fig/figure1.png>
+Package pdftex.def Info: fig/figure1.png used on input line 639.
+(pdftex.def)             Requested size: 254.56255pt x 247.49832pt.
+
+[60 <./fig/table5.png>] [61 <./fig/figure1.png>]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 647.
+
+<fig/figure2.png, id=249, 1433.355pt x 1519.6775pt>
+File: fig/figure2.png Graphic file (type png)
+ <use fig/figure2.png>
+Package pdftex.def Info: fig/figure2.png used on input line 649.
+(pdftex.def)             Requested size: 233.4314pt x 247.49832pt.
+
+[62 <./fig/figure2.png>]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 660.
+
+<fig/table6.png, id=253, 1275.76625pt x 724.7075pt>
+File: fig/table6.png Graphic file (type png)
+ <use fig/table6.png>
+Package pdftex.def Info: fig/table6.png used on input line 662.
+(pdftex.def)             Requested size: 435.68199pt x 247.49832pt.
+
+Overfull \hbox (90.68199pt too wide) in paragraph at lines 662--663
+ [][] 
+ []
+
+[63 <./fig/table6.png>]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 672.
+
+<fig/figure3.png, id=257, 1167.36125pt x 1324.95pt>
+File: fig/figure3.png Graphic file (type png)
+ <use fig/figure3.png>
+Package pdftex.def Info: fig/figure3.png used on input line 674.
+(pdftex.def)             Requested size: 218.06032pt x 247.49832pt.
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 682.
+
+<fig/table7.png, id=258, 1375.1375pt x 846.16125pt>
+File: fig/table7.png Graphic file (type png)
+ <use fig/table7.png>
+Package pdftex.def Info: fig/table7.png used on input line 684.
+(pdftex.def)             Requested size: 402.22086pt x 247.49832pt.
+
+Overfull \hbox (57.22086pt too wide) in paragraph at lines 684--685
+ [][] 
+ []
+
+[64 <./fig/figure3.png>] [65 <./fig/table7.png>]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 696.
+
+<fig/figure4.png, id=265, 1816.7875pt x 1453.43pt>
+File: fig/figure4.png Graphic file (type png)
+ <use fig/figure4.png>
+Package pdftex.def Info: fig/figure4.png used on input line 698.
+(pdftex.def)             Requested size: 309.34879pt x 247.49832pt.
+
+[66 <./fig/figure4.png>] [67] [68] (./pfbn.bbl [69
+
+]
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no î in font cmr10!
- [41
-
-] [42] [43]
-Underfull \hbox (badness 10000) in paragraph at lines 903--912
-[]\OT1/cmr/m/it/10 Nuclear re-ac-tors and ra-dioiso-topes for space.  \OT1/cmr/
-m/n/10 (n.d.[]).  $\OT1/cmtt/m/n/10 http ://
+ [70] [71]
+Underfull \hbox (badness 2961) in paragraph at lines 1054--1063
+\OT1/cmtt/m/n/10 courses / 3927 / files / folder / Lectures [] ?preview = 23601
+01111$\OT1/cmr/m/n/10 .  (Ac-
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 903--912
-\OT1/cmtt/m/n/10 www [] .world [] -nuclear [] .org / information [] -library / 
-non [] -power [] -nuclear []
- []
-
-[44]
-Underfull \hbox (badness 2189) in paragraph at lines 1145--1154
+[72] [73] [74]
+Underfull \hbox (badness 2189) in paragraph at lines 1708--1717
 []\OT1/cmr/m/it/10 Rover/NERVA-Derived Near-Term Nu-clear Propul-sion - FY92.  
 \OT1/cmr/m/n/10 (n.d.[]).
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1145--1154
+Underfull \hbox (badness 10000) in paragraph at lines 1708--1717
 \OT1/cmtt/m/n/10 http :// www [] .alternatewars [] .com / BBOW / Space [] []Eng
 ines / 1992 [] []NERVA []
  []
 
-[45]) [46] (./pfbn.aux) ) 
+[75]) [76] (./pfbn.aux) ) 
 Here is how much of TeX's memory you used:
- 14719 strings out of 493029
- 290631 string characters out of 6136234
- 410575 words of memory out of 5000000
- 18093 multiletter control sequences out of 15000+600000
- 14695 words of font info for 57 fonts, out of 8000000 for 9000
+ 15005 strings out of 493029
+ 295467 string characters out of 6136234
+ 416634 words of memory out of 5000000
+ 18351 multiletter control sequences out of 15000+600000
+ 14088 words of font info for 55 fonts, out of 8000000 for 9000
  1145 hyphenation exceptions out of 8191
- 42i,8n,42p,10372b,523s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,8n,44p,10372b,527s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsf
 onts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx
-9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb
-></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr
-/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/
-texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/font
-s/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmtt10.pfb>
-Output written on pfbn.pdf (46 pages, 3281072 bytes).
+m/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcs
+c10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pf
+b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share
+/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texliv
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmtt10.pfb>
+Output written on pfbn.pdf (76 pages, 14897176 bytes).
 PDF statistics:
- 220 PDF objects out of 1000 (max. 8388607)
- 138 compressed objects within 2 object streams
+ 351 PDF objects out of 1000 (max. 8388607)
+ 213 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
- 101 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 201 words of extra memory for PDF output out of 10000 (max. 10000000)
 
